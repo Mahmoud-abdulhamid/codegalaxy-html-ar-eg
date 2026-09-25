@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "7",
+  "title": "فهم HTML Elements و End Tags",
+  "course": "HTML",
+  "objectives": [
+    "التعرف على هيكلية HTML Elements",
+    "فهم أهمية End Tags في بناء الصفحة",
+    "التمييز بين العناصر العادية و Empty Elements",
+    "تطبيق قواعد الكتابة الصحيحة للـ Elements"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_elements.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في HTML Elements",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ بِنَاءِ الصَّفْحَاتِ بِاسْتِخْدَام Elements، وَأَهَمِّيَّةِ الِالتِزَامِ بِقَوَاعِد Start Tag و End Tag لِضَمَانِ عَرْضِ الْمُحْتَوَى بِشَكْلٍ صَحِيحٍ دَاخِل Web Browser.",
+        "caption_text": "مرحبا بكم في درس اليوم حول HTML Elements وكيفية بناء هيكل صفحات الويب بشكل احترافي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML تعتمد على Elements لبناء المحتوى",
+          "كل Element يتكون من Start Tag ومحتوى و End Tag",
+          "فهم هذه القواعد أساسي لكل مطور ويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "قواعد كتابة Elements",
+      "narration": {
+        "spoken_text": "لِكُلِّ Element فِي HTML هَيْكَلٌ مُحَدَّدٌ. نَبْدَأُ بِـ Start Tag، ثُمَّ نَضَعُ الْمُحْتَوَى، وَنَنْتَهِي بِـ End Tag. لَاحِظْ أَنَّ End Tag تَحْتَوِي عَلَى شَرْطَة مَائِلَة قَبْلَ اسْم Tag، وَهَذَا ضَرُورِيٌّ لِتَفْهَمَ الْمُتَصَفِّحَاتُ نِهَايَة الْعُنْصُرِ.",
+        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag التي تحتوي على شرطة مائلة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "example.html",
+        "code": "<h1>هذا عنوان الصفحة</h1>\n<p>هذه فقرة نصية.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    },
+    {
+      "id": "anatomy",
+      "title": "تشريح الـ Elements",
+      "narration": {
+        "spoken_text": "فِي هَذَا الْمِثَالِ، نَرَى h1 و p. Tag h1 هُو Start Tag، وَيَلِيهِ الْمُحْتَوَى، ثُمَّ نَغْلِقُهُ بِـ h1. نَفْسُ الْقَاعِدَةِ تَنْطَبِقُ عَلَى p. هَذَا التَّنْظِيمُ هُوَ مَا يَجْعَلُ كَوْد HTML مَقْرُوءاً وَمُنَظَّماً لِـ Web Browser.",
+        "caption_text": "شرح تفصيلي لكيفية كتابة العناصر البرمجية باستخدام Start Tag و End Tag."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "الجزء",
+          "الوصف",
+          "مثال"
+        ],
+        "rows": [
+          [
+            "Start Tag",
+            "بداية العنصر",
+            "<h1>"
+          ],
+          [
+            "Content",
+            "المحتوى المرئي",
+            "العنوان"
+          ],
+          [
+            "End Tag",
+            "نهاية العنصر",
+            "</h1>"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    },
+    {
+      "id": "empty_elements",
+      "title": "مفهوم Empty Elements",
+      "narration": {
+        "spoken_text": "هُنَاكَ بَعْضُ الْعَنَاصِرِ الَّتِي لَا تَحْتَوِي عَلَى مُحْتَوَى دَاخِلِيٍّ، وَنُسَمِّيهَا Empty Elements. مِثَالٌ عَلَى ذَلِكَ هُو br الَّذِي يُسْتَخْدَمُ لِإِحْدَاثِ سَطْرٍ جَدِيدٍ. هَذِهِ الْعَنَاصِرُ لَا تَحْتَاجُ إِلَى End Tag لِأَنَّهَا لَا تُغَلِّفُ نَصّاً.",
+        "caption_text": "Empty Elements أو Empty Elements لا تحتوي على محتوى ولا تتطلب End Tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "empty.html",
+        "code": "<p>سطر أول<br>سطر ثانٍ</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَا أَصْدِقَائِي، احْرِصُوا دائماً عَلَى إِغْلَاقِ التَّاجَاتِ بِشَكْلٍ صَحِيحٍ. الْكَوْدُ النَّظِيفُ يُسَاعِد Web Browser عَلَى عَرْضِ الصَّفْحَةِ بِدِقَّة. تَذَكَّرُوا أَنَّ HTML5 تَسْمَحُ بِبَعْضِ التَّسَاهُلِ، لَكِنَّ الْكِتَابَة الْمِعْيَارِيَّة هِيَ الْأَفْضَلُ لِتَجَنُّبِ الْأَخْطَاءِ فِي الْمُسْتَقْبَلِ.",
+        "caption_text": "أفضل الممارسات البرمجية تتطلب الالتزام بالمعايير القياسية لكتابة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "دائما أغلق التاجات التي لها محتوى",
+          "استخدم الحروف الصغيرة لكتابة التاجات",
+          "تأكد من ترتيب العناصر بشكل متداخل صحيح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا دَرْسَ الْيَوْمَ حَوْل HTML Elements. أَدْعُوكُمْ لِتَجْرِبَةِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُمَارَسَةِ كِتَابَةِ التَّاجَاتِ. لَا تَتَرَدَّدُوا فِي زِيَارَةِ الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَحْدِيَاتٍ إِضَافِيَّة. إِلَى اللِّقَاءِ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "شكرا لمتابعتكم، لا تنسوا ممارسة كتابة الأكواد وتجربة التحديات المتاحة في الرابط."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع مفاهيم Start Tag و End Tag",
+          "تدرب على استخدام Empty Elements",
+          "تابع الدورة لتتعلم المزيد عن Attributes"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ]
+    }
+  ]
+}
