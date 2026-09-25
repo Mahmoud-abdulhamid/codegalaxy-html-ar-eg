@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "2",
+  "title": "شرح شامل للغة HTML وبناء هيكل الصفحة",
+  "course": "HTML",
+  "objectives": [
+    "التعرف على لغة HTML ومفهوم Markup Language",
+    "فهم بنية Elements و Tags ووظيفة Start Tag و End Tag",
+    "كتابة الهيكل الأساسي لمستند HTML5 مع DOCTYPE",
+    "استيعاب دور Web Browsers في عرض محتوى صفحات الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_intro.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-6ac9f93ca725247b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_intro.asp",
+      "source_url": "https://www.w3schools.com/html/html_intro.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الدرس وأهمية HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى لُغَة HTML الَّتِي تُعَدُّ لُغَة Markup Language الْأَسَاسِيَّة لِإِنْشَاءِ صَفَحَاتِ الْوِيبِ وَتَصْمِيمِ هَيَاكِلِهَا بِكُلِّ احْتِرَافِيَّة.",
+        "caption_text": "مرحبا بكم في دورة HTML. سنتعرف اليوم على لغة HTML باعتبارها لغة Markup الأساسية لإنشاء صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لبناء هيكل صفحات الويب",
+          "تعد لغة HTML الأساس القياسي لتطوير الويب",
+          "ندرس أحدث المعايير العالمية في HTML5"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "القواعد والمفاهيم الأساسية",
+      "narration": {
+        "spoken_text": "تَتَكَوَّنُ أَيُّ صَفْحَةِ وِيبٍ مِنْ مَجْمُوعَة مِنَ الْعَنَاصِرِ تُسَمَّى Elements. يَعْتَمِدُ الْعُنْصُرُ عَلَى Start Tag وَمُحْتَوَى وَثُمَّ End Tag، وَتَعْمَل Tags عَلَى إِخْبَارِ الْمُتَصَفِّحِ بِكَيْفِيَّةِ عَرْضِ الْبَيَانَاتِ.",
+        "caption_text": "تتكون عناصر HTML من Start Tag ومحتوى ثم End Tag."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر يتكون من Start Tag ومحتوى وEnd Tag",
+          "بعض العناصر لا تحتوي على محتوى وتسمى Empty Elements",
+          "Empty Elements مثل br لا تحتاج إلى End Tag"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة الكود الأساسي الأول الجزء الأول",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي فِي هَذَا الْمِثَالِ كَيْفَ نَبْدَأُ الْمُسْتَنَدَ بِـ DOCTYPE html ثُمَّ عُنْصُر html الرَّئِيسِيَّ، وَنَنْتَقِلُ إِلَى قِسْم head لِتَحْدِيد title الْخَاصِ بِالصَّفْحَةِ.",
+        "caption_text": "يبدأ المستند بتعريف DOCTYPE html ثم عنصر html ويحتوي head على title."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "كتابة الكود الأساسي الأول الجزء الثاني",
+      "narration": {
+        "spoken_text": "نُتَابِعُ بَقِيَّة الْكُودِ حَيْثُ نَفْتَحُ قِسْم body لِكِتَابَةِ الْمُحْتَوَى الْمَرْئِيِّ، مِثْلَ اسْتِخْدَام h1 لِلْعَنَاوِينِ الرَّئِيسِيَّةِ و p لِلْفِقَرَاتِ النَّصِّيةِ.",
+        "caption_text": "نكتب المحتوى المرئي داخل body باستخدام عناصر مثل h1 و p."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة المخرجات في المتصفح",
+      "narration": {
+        "spoken_text": "تُحَدِّدُ مُتَصَفِّحَاتُ الْوِيبِ مِثْل Chrome و Edge و Firefox كَيْفِيَّة قِرَاءَةِ هَذِهِ الْمُسْتَنَدَاتِ وَعَرْضِهَا لِلْمُسْتَخْدِمِ، حَيْثُ تَخْتَفِي Tags وَلَا تَظْهَرُ لِلْمُسْتَخْدِمِ بَيْنَمَا يَظْهَرُ الْمُحْتَوَى.",
+        "caption_text": "تعمل متصفحات الويب على قراءة ملفات HTML وعرض المحتوى للمستخدم بدون إظهار Tags."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML page rendered in browser"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "هيكل صفحة الويب وتفاصيل تقنية",
+      "narration": {
+        "spoken_text": "يُظْهِرُ هَيْكَلُ الصَّفْحَةِ أَنَّ الْمُحْتَوَى الْمَوْجُودَ دَاخِل body يَظْهَرُ فِي الْمُتَصَفِّحِ، بَيْنَمَا يَظْهَرُ الْمُحْتَوَى دَاخِل title فِي شَرِيطِ عُنْوَانِ الْمُتَصَفِّحِ أَوْ لِسَانِ تَبْوِيبِ الصَّفْحَةِ.",
+        "caption_text": "المحتوى داخل body يظهر في صفحة المتصفح بينما يظهر title في شريط العنوان."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المحتوى داخل body يظهر في نافذة المتصفح",
+          "المحتوى داخل title يظهر في شريط العنوان أو التبويب",
+          "Empty Elements مثل br لا تملك End Tag"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "تاريخ وتطور HTML5",
+      "narration": {
+        "spoken_text": "مُنْذُ الْأَيَّامِ الْأُولَى لِشَبَكَة World Wide Web ظَهَرَتْ إِصْدَارَاتٌ عَدِيدَة مِنْ لُغَة HTML، وَتَعْتَمِدُ دَوْرَاتُنَا التَّدْرِيبِيَّة الْيَوْمَ عَلَى أَحْدَثِ مَعَايِير HTML5 الْقِيَاسِيَّةِ.",
+        "caption_text": "تطورات لغة HTML أدت إلى اعتماد أحدث معايير HTML5 القياسية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تطورات عديدة شهدتها لغة HTML منذ بدايات الويب",
+          "نعتمد في هذا الشرح أحدث معايير HTML5 القياسية",
+          "تضمن المعايير الحديثة توافقية أفضل مع المتصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "خُلَاصَة دَرْسِنَا الْيَوْمِ أَنَّ لُغَة HTML هِيَ الْأَسَاسُ لِبِنَاءِ الْوِيبِ، وَنَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكُوادِ بِأَنْفُسِكُمْ عَبْرَ الرَّوَابِطِ الْمَوْجُودَةِ فِي صُنْدُوقِ الْوَصْفِ.",
+        "caption_text": "خلاصة الدرس: HTML هي أساس الويب ونشجعكم على تجربة الأكواد بأنفسكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "HTML هي الأساس لبناء صفحات الويب",
+          "فهم Tags و Elements يسهل كتابة الأكواد",
+          "جرب كتابة الأكواد بنفسك لتثبيت المعلومات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    }
+  ]
+}
