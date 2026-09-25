@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "4",
+  "title": "أساسيات لغة HTML وبناء هيكل الصفحة",
+  "course": "HTML",
+  "objectives": [
+    "فهم الهيكل الأساسي لمستند HTML",
+    "التعرف على دور DOCTYPE HTML",
+    "استخدام Headings و Paragraphs في المحتوى",
+    "التعامل مع Attributes في Links و Images"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_basic.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-2247fb329ae2a3f0.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_basic.asp",
+      "source_url": "https://www.w3schools.com/html/html_basic.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ فِي دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة بِنَاءِ صَفْحَاتِ الْوِيبِ بِاسْتِخْدَامِ الْهَيْكَلِ الْأَسَاسِيِّ لِلُغَة HTML، وَسَنَسْتَعْرِضُ مَفَاهِيمَ مُهِمَّة مِثْل Tags و Elements لِتَكُونَ بَدَايَتُكُمْ قَوِيَّة وَمُحْتَرِفَة فِي هَذَا الْمَجَالِ.",
+        "caption_text": "مرحبا بكم في دورة HTML لتعلم أساسيات بناء صفحات الويب باستخدام Tags و Elements."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML هي الأساس لبناء هيكل صفحات الويب",
+          "سنتعرف على كيفية كتابة أول مستند HTML",
+          "لا تقلق إذا واجهت مصطلحات جديدة في البداية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "الهيكل الأساسي للمستند",
+      "narration": {
+        "spoken_text": "كُلُّ مُسْتَنَد HTML يَبْدَأُ بِـ DOCTYPE HTML لِتَحْدِيدِ نَوْعِ الْمُسْتَنَدِ. بَعْدَ ذَلِكَ نَسْتَخْدِم html كَـ Root Element، وَيَنْقَسِمُ الْمُحْتَوَى إِلَى قِسْم head لِلْمَعْلُومَاتِ الْعَامَّةِ، وَقِسْم body لِكِتَابَةِ الْمُحْتَوَى الْمَرْئِيِّ الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يتكون مستند HTML من DOCTYPE HTML و Root Element يضم head و body."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "headings_paragraphs",
+      "title": "استخدام Headings و Paragraphs",
+      "narration": {
+        "spoken_text": "لِتَنْظِيمِ النُّصُوصِ نَسْتَخْدِم Headings مِنْ h1 إِلَى h6، حَيْث h1 هُوَ الْأَهَمُّ. كَمَا نَسْتَخْدِم p لِتَعْرِيفِ الْفِقَرَاتِ. هَذِه Elements تُسَاعِدُ الْمُتَصَفِّحَ عَلَى فَهْمِ تَرْتِيبِ وَأَهَمِّيَّةِ الْمُحْتَوَى دَاخِلَ الصَّفْحَةِ بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "نستخدم Headings من h1 إلى h6 لتنظيم العناوين، و p لتعريف الفقرات النصية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "content.html",
+        "code": "<h1>This is heading 1</h1>\n<h2>This is heading 2</h2>\n<p>This is a paragraph.</p>\n<p>Another paragraph.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "links_images",
+      "title": "الروابط والصور و Attributes",
+      "narration": {
+        "spoken_text": "لِإِضَافَةِ رَوَابِطَ نَسْتَخْدِم a مَع Attribute يُسَمَّى href. أَمَّا الصُّوَرُ فَنَسْتَخْدِم img مَع Attributes مِثْل src لِمَسَارِ الصُّورَةِ، و alt لِلنَّصِّ الْبَدِيلِ، بِالْإِضَافَةِ إِلَى width و height لِتَحْدِيدِ أَبْعَادِ الصُّورَةِ.",
+        "caption_text": "نستخدم Attributes لإضافة معلومات إضافية للعناصر مثل الروابط والصور."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "media.html",
+        "code": "<a href=\"https://www.w3schools.com\">\nThis is a link</a>\n<img src=\"image.jpg\" alt=\"Text\"\nwidth=\"104\" height=\"142\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "view_source",
+      "title": "كيفية فحص الكود",
+      "narration": {
+        "spoken_text": "يُمْكِنُكُمْ رُؤْيَة كُودِ أَيِّ صَفْحَةِ وِيبٍ بِالضَّغْطِ عَلَى CTRL + U، أَوْ بِاسْتِخْدَامِ خَاصِيَّة Inspect عِنْدَ النَّقْرِ بِزِرِّ الْفَأْرَةِ الْأَيْمَنِ. هَذِهِ الْأَدَوَاتُ تُسَاعِدُ الْمُطَوِّرِينَ عَلَى فَهْمِ كَيْفِيَّةِ بِنَاءِ الصَّفْحَاتِ وَتَعْدِيلِ الْعَنَاصِرِ مُبَاشَرَة.",
+        "caption_text": "يمكن فحص كود HTML لأي صفحة عبر خيار Inspect في المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام اختصار CTRL + U لعرض كود الصفحة",
+          "استخدام خيار Inspect لفحص العناصر",
+          "إمكانية تعديل HTML و CSS مباشرة في المتصفح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ الْهَيْكَلَ الْأَسَاسِيَّ لِـ HTML، وَكَيْفِيَّة اسْتِخْدَام Headings و Paragraphs، وَأَهَمِّيَّة Attributes فِي الروابط والصور. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِتَعْزِيزِ مَهَارَاتِكُمُ الْبَرْمَجِيَّةِ وَتَطْوِيرِ مَوَاقِعِكُمْ.",
+        "caption_text": "تعلمنا أساسيات HTML بما في ذلك Headings و Paragraphs و Attributes."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Headings و Paragraphs لتنظيم المحتوى",
+          "استخدام Attributes لإضافة خصائص للعناصر",
+          "ممارسة كتابة الكود هي مفتاح الاحتراف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    }
+  ]
+}
