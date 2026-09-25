@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "3",
+  "title": "شرح محررات النصوص وكيفية كتابة وحفظ صفحات HTML",
+  "course": "HTML",
+  "objectives": [
+    "تعرف محررات النصوص البسيطة والمحترفة لتطوير الويب",
+    "تعلم خطوات فتح وتجهيز Notepad على نظام Windows",
+    "تعلم خطوات فتح وتجهيز TextEdit على نظام Mac",
+    "كتابة وحفظ أول صفحة HTML مع تحديد ترميز UTF-8",
+    "معاينة صفحات الويب داخل Web Browser واستخدام W3Schools Online Editor"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_editors.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-9ae3f0e937f69fd9.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_editors.asp",
+      "source_url": "https://www.w3schools.com/html/html_editors.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-ee343008910d6e78.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_editors.asp",
+      "source_url": "https://www.w3schools.com/html/html_editors.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة محررات النصوص",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى الطَّرِيقَةِ الْأَمْثَلِ لِكِتَابَةِ الأَكْوَادِ وَاسْتِخْدَامِ مُحَرِّرَاتِ النُّصُوصِ البَسِيطَةِ.",
+        "caption_text": "مرحبا بكم في درس محررات النصوص وكيفية كتابة وتشغيل صفحات HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "نحتاج إلى محرر نصوص بسيط لتعلم لغة HTML",
+          "يمكن إنشاء وتعديل صفحات الويب عبر HTML editors",
+          "استخدام Text editor بسيط هو الطريقة الأفضل للتعلم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_editors_choice",
+      "title": "اختيار المححر المناسب",
+      "narration": {
+        "spoken_text": "عِنْدَ بَدْءِ تَعَلُّمِ لُغَة HTML نَنْصَحُ بِاسْتِخْدَامِ مُحَرِّرِ نَصُوصٍ بَسِيطٍ مِثْل Notepad عَلَى أنظِمَة PC أَوْ TextEdit عَلَى أنظِمَة Mac لِضَمَانِ فَهْمِ كُلِّ سَطْرٍ بَرْمَجِيٍّ.",
+        "caption_text": "ننصح باستخدام Notepad أو TextEdit البسيط لتعلم لغة HTML بefاعلية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تفضيل برامج النصوص البسيطة على المحررات المعقدة للمبتدئين",
+          "برنامج Notepad المخصص لأجهزة PC",
+          "برنامج TextEdit المخصص لأجهزة Mac"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_notepad_steps",
+      "title": "فتح برنامج Notepad",
+      "narration": {
+        "spoken_text": "لِفَتْحِ بَرْنَامِج Notepad عَلَى أنظِمَة Windows الثَّامِنَةِ أَوْ مَا بَعْدَهَا، اقْتَحِ شَاشَة الابتِدَاءِ واكْتُبْ Notepad، أَوْ اِبْحَثْ عَنْهُ فِي قَائِمَةِ البَرَامِجِ لِلأَنْظِمَةِ القَدِيمَةِ.",
+        "caption_text": "خطوات فتح برنامج Notepad على أجهزة الكمبيوتر لنظام Windows."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "فتح Start Screen وكتابة Notepad في نظام Windows 8 وما بعده",
+          "الوصول عبر Start ثم Programs ثم Accessories في الإصدارات القديمة",
+          "تجهيز بيئة العمل لكتابة كود HTML الأول"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_textedit_steps",
+      "title": "فتح وتعديل إعدادات TextEdit",
+      "narration": {
+        "spoken_text": "فِي أَنْظِمَة Mac، افْتَحْ Finder ثُمَّ Applications ثُمَّ TextEdit. احْرِصْ عَلَى تَغْيِيرِ الإِعْدَادَاتِ لِجَعْلِ النَّصِّ عَادِيّاً وَضَبْطِ عَرْضِ مِلَفَّات HTML.",
+        "caption_text": "خطوات فتح وتعديل تفضيلات برنامج TextEdit على أجهزة Mac."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الانتقال عبر Finder ثم Applications ثم TextEdit",
+          "اختيار Plain Text من قسم Preferences ثم Format",
+          "تفعيل خيار عرض ملفات HTML كأكواد برمجية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_write_html",
+      "title": "كتابة أول كود HTML",
+      "narration": {
+        "spoken_text": "سَنَكْتُبُ الْآنَ كُود HTML البَسِيطَ هَذَا، الَّذِي يَبْدَأُ بِتَعْرِيف DOCTYPE HTML ثُمَّ العُنْصُر html، وَبِدَاخِلِهِ قِسْم body الَّذِي يَحْتَوِي عَلَى h1 و p.",
+        "caption_text": "كتابة الهيكل الأساسي الأول لصفحة الويب داخل محرر النصوص."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.htm",
+        "code": "<!DOCTYPE html>\n<html>\n<body>\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_save_file",
+      "title": "حفظ ملف HTML",
+      "narration": {
+        "spoken_text": "بَعْدَ كِتَابَةِ الكُودِ، احْفَظِ المِلَفَّ عَبْرَ النَّفْرِ عَلَى File ثُمَّ Save as، وَتَسْمِيَتِهِ بِاسْم index.htm مَعَ ضَبْطِ التُّرْمِيزِ عَلَى UTF-8 لِضَمَانِ قِرَاءَةِ الحُرُوفِ بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "حفظ الملف بامتداد .htm أو .html وتحديد ترميز UTF-8."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختيار File ثم Save as من قائمة محرر النصوص",
+          "تسمية الملف index.htm أو index.html",
+          "ضبط الترميز على UTF-8 كأفضل ممارسة لملفات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_view_browser",
+      "title": "معاينة الصفحة في المتصفح",
+      "narration": {
+        "spoken_text": "لِعَرْضِ النَّتِيجَةِ، افْتَحِ المِلَفَّ المَحْفُوظَ فِي مُتَصَفِّحِ الويب المُفَضَّلِ لَدَيْكَ بِالنَّفْرِ الْمُزْدَوِجِ عَلَيْهِ، لِتَرَى العُنْوَانَ وَالفِقْرَة يَقُومَانِ بِالظُّهُورِ.",
+        "caption_text": "فتح ملف HTML المحفوظ داخل متصفح الويب لمعاينة النتيجة النهائية."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة صفحة الويب الأولى في متصفح الإنترنت"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_online_editor",
+      "title": "محرر W3Schools المباشر",
+      "narration": {
+        "spoken_text": "تَسْتَطِيعُ أَيْضاً اسْتِخْدَامَ مُحَرِّر W3Schools Online Editor الْمَجَّانِيِّ لِتَجْرِبَةِ الأَكْوَادِ بِسُرْعَة عَالِيَة وَرُؤْيَةِ النَّتِيجَةِ فَوْراً دُونَ حَاجَة لِلتَّثْبِيتِ.",
+        "caption_text": "استخدام محرر W3Schools Online Editor لتجربة الأكواد بشكل فوري."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "tryit.html",
+              "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n</body>\n</html>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "This is a Heading\nThis is a paragraph.",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_conclusion",
+      "title": "خلاصة الدرس والممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ الدَّرْسِ، تَعَرَّفْنَا عَلَى أَهَمِّيَّةِ مُحَرِّرَاتِ النُّصُوصِ البَسِيطَةِ وَكَيْفِيَّةِ حِفْظِ المِلَفَّاتِ وَعَرْضِهَا. تَدَرَّبُوا جَيِّداً وَجَرِّبُوا الأَكْوَادَ بِأَنْفُسِكُمْ.",
+        "caption_text": "خلاصة الدرس: أهمية استخدام محررات النصوص البسيطة لتطوير مهارات لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Text editors بسيطة يسرع عملية تعلم لغة HTML",
+          "أهمية تحديد ترميز UTF-8 للملفات",
+          "إمكانية استخدام W3schools Spaces لحفظ وتطوير المواقع أونلاين"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    }
+  ]
+}
