@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "5",
+  "title": "HTML Basic Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "اختبار الفهم العملي لأساسيات HTML",
+    "تطبيق المهارات البرمجية في تحديات حقيقية",
+    "كتابة هيكل صفحات الويب بشكل صحيح"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_basic.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة تحديات البرمجة",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْعَمَلِيِّ مِنْ دَوْرَةِ لُغَة HTML. سَنَقُومُ الْيَوْمَ بِاخْتِبَارِ فَهْمِنَا لِلْأَسَاسِيَّاتِ مِنْ خِلَالِ حِلِّ تَحَدِّيَاتِ الْكُودِ الْمُعْتَمَدَةِ لِبِنَاءِ صَفَحَاتِ وَيْبٍ سَلِيمَة وَمُتَكَامِلَة.",
+        "caption_text": "مرحبا بكم في درس اختبار أساسيات HTML وتطبيق التحديات البرمجية العملية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مرحبا بكم في تحديات لغة HTML",
+          "اختبار المهارات والمفاهيم الأساسية",
+          "تطبيق عملي لبناء صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "فهم متطلبات التحدي",
+      "narration": {
+        "spoken_text": "يَهْدِفُ هَذَا التَّحَدِّي إِلَى قِيَاسِ مَدَى إِتْقَانِكَ لِكِتَابَةِ عناصر HTML الأَسَاسِيَّةِ. يَتَمَكَّنُ الْمُطَوِّرُ مِنْ تَعْزِيزِ مَهَارَاتِهِ بِتَطْبِيقِ الْأَكْوَادِ بِنَفْسِهِ لِتَحَقُّقٍ أَدَقَّ مِنَ الْمَفَاهِيمِ.",
+        "caption_text": "يهدف التحدي إلى قياس إتقانك لكتابة عناصر HTML وتطوير مهاراتك."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختبار فهم عناصر HTML الأساسية",
+          "تطبيق عملي مباشر لتثبيت المعلومات",
+          "التحقق من صحة البنية البرمجية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة هيكل DOCTYPE HTML",
+      "narration": {
+        "spoken_text": "نَبْدَأُ أَيَّ مُسْتَنَد HTML بِكَاتَبَة DOCTYPE HTML فِي السَّطْرِ الْأَوَّلِ. هَذَا يُخْبِر Web Browser أَنَّنَا نَسْتَخْدِمُ الْإِصْدَارَ الْخَامِسَ الْحَدِيثَ لِلُغَةِ الْعَرْضِ.",
+        "caption_text": "نبدأ أي مستند بكتابة <!DOCTYPE html> لإعلام Web Browser بالإصدار."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Challenge</title>\n  </head>\n</body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "استخدام Root Element",
+      "narration": {
+        "spoken_text": "يُعْتَبَرُ عنصر html هُو Root Element الَّذِي يَحْتَوِي جَمِيع Tags و Elements الْأُخْرَى دَاخِلَ الْمُسْتَنَدِ بَدْءاً مِنَ الرَّأْسِ وَحَتَّى الْجِسْمِ الْمَرْئِيِّ.",
+        "caption_text": "يعتبر عنصر <html> هو Root Element الحاضن لكافة العناصر الأخرى."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "structure.html",
+        "code": "<html>\n  <!-- Root Element -->\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "إعداد قسم head وتحديد title",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى قِسْم head لِتَضْمِين title الصَّفْحَةِ. يَظْهَرُ هَذَا الْعُنْوَانُ دَائِماً فِي عِصَابَةِ التَّابِ الْخَاصَّةِ بِـ Web Browser أَثْنَاءَ التَّصَفُّحِ.",
+        "caption_text": "ننتقل إلى قسم <head> لتحديد عنوان الصفحة عبر عنصر <title>."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "head.html",
+        "code": "<head>\n  <title>HTML Challenge</title>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "بناء محتوى body الرئيسي",
+      "narration": {
+        "spoken_text": "نَكْتُبُ الْمُحْتَوَى الْمَرْئِيَّ ضِمْنَ قِسْم body مِثْلَ الْعَنَاوِينِ الْكَبِيرَةِ بِاِسْتِخْدَام h1 وَالنُّصُوصِ التَّعْبِيرِيَّةِ بِوَاسِطَة p لِتَقْدِيمِ تَجْرِبَة تَفَاعُلِيَّة رَائِعَة.",
+        "caption_text": "نكتب المحتوى المرئي ضمن قسم <body> مثل عناوين <h1> وفقرات <p>."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "body.html",
+        "code": "<body>\n  <h1>Welcome</h1>\n  <p>Basic Challenge</p>\n</body>",
+        "highlight_lines": [],
+        "output": "Welcome\nBasic Challenge",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "احْرِصْ دَائِماً عَلَى إِغْلَاقِ كُلِّ Start Tag بِوَاسِطَة End Tag مُنَاسِبٍ. الِإلْتِزَامُ بِهَذِهِ الْقَوَاعِدِ الْهَنْدَسِيَّةِ يَمْنَعُ الْأَخْطَاءَ وَيَضْمَنُ ظُهُورَ الصَّفْحَةِ بِشَكْلٍ مِثَالِيٍّ فِي Chrome.",
+        "caption_text": "احرص دائما على إغلاق كل Start Tag بواسطة End Tag مناسب لتفادي الأخطاء."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إغلاق جميع Tags بالشكل الصحيح",
+          "الالتزام ببنية المستند القياسية",
+          "اختبار الكود داخل Web Browser"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس والتحدي",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدِ انْتَهَيْنَا مِنْ تَقْدِيمِ هَذَا التَّحَدِّي الْأَسَاسِيِّ. نَدْعُوكُمْ لِتَجْرِبَةِ الْأَكْوَادِ بِنُفُوسِكُمْ مِنْ خِلَالِ الرَّابِطِ فِي الْوَصْفِ مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "بهذا نكون قد انتهينا من التحدي الأساسي ونقاط التدريب مع المدرب محمود عبدالحميد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ملخص تطبيق تحديات لغة HTML",
+          "تجربة الأكواد عبر رابط المصدر",
+          "تابعوا الدورة مع المدرب محمود عبدالحميد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    }
+  ]
+}
