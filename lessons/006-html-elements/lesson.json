@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "6",
+  "title": "HTML Elements and Structure",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم HTML Elements وبنيتها الأساسية.",
+    "التعرف على Nested HTML Elements وعلاقتها بالوثيقة.",
+    "فهم Empty Elements Empty Elements واستخدام Tag مثل br.",
+    "تطبيق أفضل الممارسات البرمجية وأهمية إغلاق Tags."
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_elements.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-71f63f81ffbac98a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_elements.asp",
+      "source_url": "https://www.w3schools.com/html/html_elements.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن عناصر HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَفْهُوم HTML Elements وَكَيْفَ تَتَكَوَّنُ مِنْ Start Tag و Content ثُمَّ End Tag لِبِنَاءِ صَفَحَاتِ الْوِيبِ بِشَكْلٍ سَلِيمٍ وَمُنَظَّمٍ.",
+        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag لبناء صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعريف HTML Elements في صفحات الويب",
+          "دور Start Tag و End Tag في تحديد الحدود",
+          "أهمية محتوى العنصر Content داخل الوثيقة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_2_nested",
+      "title": "العناصر المتداخلة Nested Elements",
+      "narration": {
+        "spoken_text": "جَمِيعُ مُسْتَنَدَاتِ لُغَة HTML تَتَكَوَّنُ مِنْ Nested HTML Elements. يَعْنِي هَذَا أَنَّ Elements يُمْكِنُ أَنْ تَحْتَوَى دَاخِلَهَا على Elements أُخْرَى لِتَكْوِينِ الْهَيْكَلِ الْكَامِلِ لِصَفْحَةِ الْوِيبِ.",
+        "caption_text": "تتكون مستندات HTML من عناصر متداخلة Nested HTML Elements تحتوي عناصر أخرى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Nested HTML Elements في المستندات",
+          "احتواء العناصر على عناصر فرعية أخرى",
+          "بناء الهيكل الشامل للصفحة بواسطة التداخل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_3_code_1",
+      "title": "الكود الأساسي الأول",
+      "narration": {
+        "spoken_text": "لِنَنْتَقِلْ إِلَى هَذَا الْمِثَالِ العَمَلِيِّ. يَبْدَأُ الْمُسْتَنَدُ بِتَعْرِيف DOCTYPE HTML ثُمَّ يَلِيه Root Elementي html الَّذِي يَحْتَوِي دَاخِلَهُ قِسْم body.",
+        "caption_text": "يبدأ المستند بتعريف DOCTYPE HTML ثم عنصر html الجذري وعنصر body."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<body>\n  <h1>My First Heading</h1>\n<p>My first paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3
+        ],
+        "output": "My First Heading\nMy first paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_4_elements_explained",
+      "title": "شرح أجزاء الكود بالتفصيل",
+      "narration": {
+        "spoken_text": "يُمَثِّلُ العُنْصُر html عُنْصُرَ الْجِذْر Root Element، ثُمَّ يَأْتِي قِسْم body لِتَحْدِيدِ الْمُحْتَوَى الْمَرْئِيِّ. دَاخِل body نَجِد h1 لِلْعُنْوَانِ الرَّئِيسِيِّ و p لِكِتَابَةِ الْفِقْرَاتِ النَّصِيَّةِ.",
+        "caption_text": "عنصر html هو الجذر، بينما body يحتوى على h1 للعنوان و p للفقرة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر html يعتبر Root Element للمستند",
+          "عنصر body يحدد محتوى صفحة الويب",
+          "عنصرا h1 و p لتمييز العناوين والفقرات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_5_empty_elements",
+      "title": "شرح Empty Elements Empty Elements",
+      "narration": {
+        "spoken_text": "بَعْض Elements لَيْسَ لَهَا أَيُّ مُحْتَوَى وَتُسَمَّى Empty Elements مِثْل Tag br. هَذِهِ الْعَنَاصِرُ لَيْسَ لَهَا End Tag بَلْ تُسْتَخْدَمُ لِإِدْخَالِ سَطْرٍ جَدِيدٍ.",
+        "caption_text": "Empty Elements Empty Elements ليس لها محتوى ولا تحتوي على End Tag مثل br."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "empty.html",
+        "code": "<p>This is a <br> paragraph with a line break.</p>",
+        "highlight_lines": [
+          1
+        ],
+        "output": "This is a \nparagraph with a line break.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_6_case_sensitivity",
+      "title": "حساسية حالة الحروف Case Sensitivity",
+      "narration": {
+        "spoken_text": "لُغَة HTML لَيْسَتْ حَسَّاسَة لِحَالَةِ الْحُرُوف Case Sensitive، فَهَا هُو Tag P الْكَبِيرُ يُعْطِي نَفْسَ التَّأْثِيرِ لِلتَّاج p الصَّغِيرِ، وَلَكِنَّ الْمُؤَسِّسِينَ يُوصُونَ بِاسْتِخْدَامِ الْحُرُوفِ الصَّغِيرَةِ دَائِماً.",
+        "caption_text": "Tags في HTML ليست حساسة لحالة الحروف ولكن يفضل استخدام الحروف الصغيرة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML ليست حساسة لحالة الحروف Case Sensitive",
+          "استخدام <P> يعطي نفس النتيجة مثل <p>",
+          "التوصية البرمجية باعتماد الحروف الصغيرة دائما"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_7_summary",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَذَكَّرْ دَائِماً عَدَمَ إِهْم End Tag لِتَفَادِي الْحُدُوثِ الْمُتَوَقِّعِ لِلْأَخْطَاءِ، وَاحْرِصْ عَلَى تَنْظِيمِ الْعَنَاصِرِ وَتَبَنِّي مَعَايِيرِ الْوِيبِ الْحَدِيثَةِ مَعَ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة الدرس: احرص دائما على كتابة End Tag وتنظيم عناصر HTML بشكل سليم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجنب إهمال End Tag لمنع الأخطاء غير المتوقعة",
+          "الالتزام بكتابة أسماء العناصر بأحرف صغيرة",
+          "مراجعة المراجع الشاملة لتطوير مهارات HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ]
+    }
+  ]
+}
