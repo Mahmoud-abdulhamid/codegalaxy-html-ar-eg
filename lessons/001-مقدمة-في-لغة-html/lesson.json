@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "1",
+  "title": "مقدمة شاملة في لغة HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم الدور الأساسي للغة HTML في بناء صفحات الويب",
+    "التعرف على الهيكل البرمجي للمستند",
+    "التعامل مع Tags و Elements بشكل صحيح",
+    "تطبيق مثال عملي لبناء صفحة ويب بسيطة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/default.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-ee343008910d6e78.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/default.asp",
+      "source_url": "https://www.w3schools.com/html/default.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "ما هي لغة HTML؟",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَوْرَة HTML. هَذِهِ اللُّغَة هِيَ الْمِعْيَارُ الْأَسَاسِيُّ لِتَصْمِيمِ وَبِنَاءِ صَفَحَاتِ الويب. بِوَاسِطَتِهَا نَقُومُ بِتَحْدِيدِ هَيْكَلِ الْمُحْتَوَى الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ دَاخِل Web Browser، وَهِيَ لُغَة سَهْلَة وَمُمْتِعَة فِي التَّعَلُّمِ.",
+        "caption_text": "تعد HTML اللغة القياسية لبناء صفحات الويب وتحديد هيكل المحتوى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "HTML هي لغة Markup Language أساسية للويب",
+          "تستخدم لبناء هيكل صفحات الويب",
+          "تتميز بسهولة التعلم والتطبيق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "المفاهيم الأساسية",
+      "narration": {
+        "spoken_text": "تَعْتَمِدُ لُغَة HTML عَلَى اسْتِخْدَام Tags لِتَنْظِيمِ الْمُحْتَوَى. يَتَكَوَّنُ كُلُّ Element مِنْ Start Tag و End Tag، وَبَيْنَهُمَا يَكُونُ الْمُحْتَوَى. هَذِهِ الْعَنَاصِرُ هِيَ اللَّبِنَاتُ الْأَسَاسِيَّة لِأَيِّ صَفْحَةِ ويب نَقُومُ بِبِنَائِهَا.",
+        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم Tags لتحديد أجزاء الصفحة",
+          "يتكون Element من Start Tag و End Tag",
+          "المحتوى يوضع بين Tags"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "الهيكل الأساسي للمستند",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَةِ الْكُودِ. يَبْدَأُ الْمُسْتَنَدُ بِـ DOCTYPE HTML لِتَحْدِيدِ نَوْعِ الْمُسْتَنَدِ. ثُمَّ نَسْتَخْدِم Tagَ html كَعُنْصُرٍ جِذْرِيٍّ، وَدَاخِلَهُ نَضَعُ قِسْم head الَّذِي يَحْتَوِي عَلَى title الصَّفْحَةِ، وَقِسْم body لِلْمُحْتَوَى الْمَرْئِيِّ.",
+        "caption_text": "الهيكل الأساسي للمستند يبدأ بـ DOCTYPE HTML ثم العناصر الرئيسية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "إضافة المحتوى المرئي",
+      "narration": {
+        "spoken_text": "الْآنَ نَكْتُبُ الْمُحْتَوَى دَاخِل body. نَسْتَخْدِم h1 لِكِتَابَةِ عُنْوَانٍ رَئِيسِيٍّ، وَنَسْتَخْدِم p لِكِتَابَةِ فَقْرَة نَصِّيَّة. لَاحِظْ كَيْفَ نَقُومُ بِإِغْلَاقِ كُلِّ Tagَاتِ بِاسْتِخْدَام End Tag لِضَمَانِ صِحَّةِ الْكُودِ وَتَنْظِيمِهِ.",
+        "caption_text": "نستخدم h1 للعناوين و p للفقرات داخل قسم <body>."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "output",
+      "title": "معاينة النتيجة",
+      "narration": {
+        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي Web Browser مِثْل Chrome أَوْ Edge، سَيَظْهَرُ الْعُنْوَانُ بِحَجْمٍ كَبِيرٍ، وَتَظْهَرُ الْفَقْرَة تَحْتَهُ بِشَكْلٍ مُنَسَّقٍ. هَذِهِ هِيَ الْخُطْوَة الْأُولَى لِتُصْبِحَ مُطَوِّرَ ويب مُحْتَرِفاً.",
+        "caption_text": "هكذا تظهر النتيجة النهائية للكود داخل المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "صورة توضح نتيجة كود HTML في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "نصائح للمطورين",
+      "narration": {
+        "spoken_text": "تَذَكَّرْ دَائِماً أَهَمِّيَّة التَّدْرِيبِ الْمُسْتَمِرِّ. يُمْكِنُكَ اسْتِخْدَامُ مَوَارِد W3Schools لِتَجْرِبَةِ الْأَكْوَادِ بِنَفْسِكَ، وَحَلِّ التَّمَارِينِ لِتَطْوِيرِ مَهَارَاتِكَ. لَا تَتَرَدَّدْ فِي مُمَارَسَةِ الْكِتَابَةِ الْيَدَوِيَّةِ لِتَتَمَكَّنَ مِنَ الْأَسَاسِيَّاتِ بِشَكْلٍ عَمِيقٍ وَمُتْقَنٍ.",
+        "caption_text": "الممارسة المستمرة هي مفتاح التميز في تعلم البرمجة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم محرر الأكواد للتجربة العملية",
+          "حل التمارين لتعزيز المعرفة",
+          "راجع المراجع التقنية بانتظام"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَسَاسِيَّات HTML. أَدْعُوكُمْ لِزِيَارَةِ الرَّابِطِ فِي الْوَصْفِ لِتَجْرِبَةِ الْأَكْوَادِ وَمُتَابَعَةِ دَوْرَتِنَا. شُكْراً لِمُتَابَعَتِكُمْ، وَأَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ لِلتَّعَمُّقِ أَكْثَرَ فِي عَالَمِ تَطْوِيرِ الْوِيبِ.",
+        "caption_text": "شكرا لمتابعتكم، استمروا في التعلم والتطبيق العملي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع الرابط في الوصف للتطبيق",
+          "تابع الدروس القادمة في الدورة",
+          "ابدأ رحلتك في تطوير الويب اليوم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    }
+  ]
+}
