@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "23",
+  "title": "تعلم ألوان RGB و RGBA في HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية تمثيل الألوان باستخدام نظام RGB في صفحات HTML",
+    "التعرف على درجات الألوان الأساسية الأحمر والأخضر والأزرق",
+    "استخدام قناة الشفافية Alpha عبر نظام RGBA",
+    "تطبيق درجات الألوان وتدريجات الرمادي باحترافية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_colors_rgb.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة ألوان RGB و RGBA",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ تَحْدِيدِ الْأَلْوَانِ بِاسْتِخْدَامِ نِظَامَيْ RGB و RGBA لِإِثْرَاءِ صَفَحَاتِ الْوِيبِ بِأَلْوَانٍ جَذَّابَة وَدَقِيقَة.",
+        "caption_text": "مرحبا بكم في دورة HTML. سنتعرف اليوم على كيفية تحديد الألوان باستخدام نظامي RGB و RGBA."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحديد الألوان بدقة في صفحات الويب",
+          "استخدام نظام RGB لخلط الألوان الأساسية",
+          "إضافة الشفافية عبر قناة Alpha في RGBA"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "مفهوم نظام RGB",
+      "narration": {
+        "spoken_text": "يُمَمِّثِلُ نِظَام RGB مَصَادِرَ الضَّوْءِ الثَّلَاثَةِ وَهِيَ الْأَحْمَرُ وَالْأَخْضَرُ وَالْأَزْرَقُ. يُحَدِّدُ كُلُّ مُعَامِلٍ شِدَّة اللَّوْنِ بِقِيمَة تَتَرَاوَحُ بَيْنَ الصِّفْرِ وَمِئَتَيْنِ وَخَمْسَة وَخَمْسِينَ.",
+        "caption_text": "يمثل نظام RGB مصادر الضوء الثلاثة: الأحمر، الأخضر، والأزرق بقيم بين 0 و255."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "قيم المعاملات تتراوح بين 0 و255",
+          "إجمالي عدد الألوان المحتملة ضخم جدا",
+          "الصيغة العامة هي rgb(red, green, blue)"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "أمثلة الألوان الأساسية",
+      "narration": {
+        "spoken_text": "لِعَرْضِ اللَّوْنِ الْأَحْمَرِ بِشَكْلٍ كَامِلٍ، نَجْعَلُ قِيمَة الْأَحْمَرِ مِئَتَيْنِ وَخَمْسَة وَخَمْسِينَ وَبَاقِي الْمُعَامِلَاتِ صِفْراً. وَبِالنِّسْبَةِ لِلَّوْنِ الْأَخْضَرِ نَجْعَلُ مِئَتَيْنِ وَخَمْسَة وَخَمْسِينَ لِلْأَخْضَرِ وَحْدَهُ.",
+        "caption_text": "لعرض اللون الأحمر نضع القيمة 255 للأحمر وباقي المعاملات صفر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "rgb_examples.html",
+        "code": "rgb(255, 0, 0);\nrgb(0, 255, 0);\nrgb(0, 0, 255);",
+        "highlight_lines": [],
+        "output": "Red, Green, Blue colors",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "عرض الأسود والأبيض",
+      "narration": {
+        "spoken_text": "لِعَرْضِ اللَّوْنِ الْأَسْوَدِ نَضَعُ جَمِيعَ الْمُعَامِلَاتِ عِنْدَ الصِّفْرِ. وَلِعَرْضِ اللَّوْنِ الْأَبْيَضِ نَضَعُ جَمِيعَ الْمُعَامِلَاتِ عِنْدَ أَقْصَى قِيمَة وَهِيَ مِئَتَانِ وَخَمْسَة وَخَمْسُونَ لِكُلٍّ مِنْهَا.",
+        "caption_text": "لعرض اللون الأسود نضع كافة القيم صفرا، وللأبيض نضعها 255."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "black_white.html",
+        "code": "rgb(0, 0, 0);\nrgb(255, 255, 255);",
+        "highlight_lines": [],
+        "output": "Black and White colors",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "تدريجات الرمادي",
+      "narration": {
+        "spoken_text": "تُحَدَّدُ دَرَجَاتُ اللَّوْنِ الرِّمَادِيِّ غَالِباً بِاسْتِخْدَامِ قِيَمٍ مُتَسَاوِيَة لِجَمِيعِ الْمُعَامِلَاتِ الثَّلَاثَةِ لِلْأَحْمَرِ وَالْأَخْضَرِ وَالْأَزْرَقِ، مِمَّا يُعْطِينَا تَدْرِيجَاتٍ مُتَوَازِنَة وَرَائِعَة.",
+        "caption_text": "تحدد درجات الرمادي باستخدام قيم متساوية للمتغيرات الثلاثة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "gray_shades.html",
+        "code": "rgb(60, 60, 60);\nrgb(120, 120, 120);\nrgb(200, 200, 200);",
+        "highlight_lines": [],
+        "output": "Shades of gray",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "مفهوم نظام RGBA",
+      "narration": {
+        "spoken_text": "نِظَام RGBA هُوَ امْتِدَادٌ لِنِظَام RGB مَضْفُوفاً إِلَيْهِ قَنَاة الشَّفَافِيَة Alpha. تُحَدِّدُ هَذِهِ الْقَنَاة دَرَجَة التَّشَفُّفِ لِلَّوْنِ بَدْءاً مِنَ الصِّفْرِ حَتَّى الْوَاحِدِ الصَّحِيحِ.",
+        "caption_text": "نظام RGBA هو امتداد لـ RGB مضافا إليه قناة الشفافية Alpha."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "القيم من 0.0 تعني شفاف تماما",
+          "القيمة 1.0 تعني غير شفاف على الإطلاق",
+          "الصيغة rgba(red, green, blue, alpha)"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أمثلة عملية على RGBA",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ كَيْفَ نَكْتُبُ كُود RGBA فِي صَفَحَاتِنَا. نُحَدِّدُ الْأَلْوَانَ الثَّلَاثَة ثُمَّ نُضِيفُ قِيمَة الشَّفَافِيَةِ فِي الْأَخِيرِ لِتَحْقِيقِ تَأْثِيرَاتٍ بَصَرِيَّة رَائِعَة فِي مَوَاقِعِنَا.",
+        "caption_text": "نكتب كود RGBA بتحديد الألوان الثلاثة مع إضافة قيمة الشفافية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "rgba_example.html",
+        "code": "rgba(255, 0, 0, 0.3);\nrgba(0, 255, 0, 0.6);\nrgba(0, 0, 255, 1.0);",
+        "highlight_lines": [],
+        "output": "Transparent colors",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ اسْتِخْدَامِ أَنْوَاعِ الْأَلْوَان RGB و RGBA فِي لُغَة HTML. نَنْصَحُكُمْ بِتَجْرِبَةِ الْأَكْوَدِ بِنُفُوسِكُمْ عَبْرَ الرَّابِطِ الْمُورَدِ فِي الْوَصْفِ.",
+        "caption_text": "تعرفنا على ألوان RGB و RGBA. ننصحكم بتجربة الأكواد بأنفسكم عبر الابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إتقان تمثيل الألوان الضوئية في HTML",
+          "التحكم في الشفافية باستخدام Alpha",
+          "تطوير مهارات التصميم وتجربة الأكواد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_rgb.asp"
+      ]
+    }
+  ]
+}
