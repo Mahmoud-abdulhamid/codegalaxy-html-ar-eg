@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "27",
+  "title": "تنسيق صفحات الويب باستخدام CSS",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم Cascading Style Sheets",
+    "التعرف على طرق إضافة CSS إلى HTML",
+    "تطبيق Inline CSS و Internal CSS",
+    "استخدام الخصائص الأساسية مثل الألوان والخطوط",
+    "التحكم في المسافات باستخدام Border و Padding و Margin"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_css.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في CSS",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ سَنَتَعَلَّمُ كَيْفَ نُضِيفُ الْجَمَالَ إِلَى صَفَحَاتِنَا بِاسْتِخْدَام CSS، وَهِيَ اخْتِصَارٌ لِـ Cascading Style Sheets، لِتَحْكُمَ فِي تَصْمِيمِ وَتَنْسِيقِ الْعَنَاصِرِ بِكُلِّ سُهُولَة.",
+        "caption_text": "تستخدم لغة CSS لتنسيق وتصميم عناصر صفحات الويب بشكل احترافي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "CSS تعني Cascading Style Sheets",
+          "تتحكم في تخطيط وألوان وأحجام العناصر",
+          "توفر الكثير من الجهد في تنسيق الصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "css_methods",
+      "title": "طرق إضافة CSS",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا إِضَافَة CSS إِلَى مُسْتَنَدَات HTML بِثَلَاثِ طُرُقٍ رَئِيسِيَّة. الْأُولَى هِي Inline CSS، وَالثَّانِيَة هِي Internal CSS، وَالثَّالِثَة هِي External CSS، وَكُلُّ طَرِيقَة لَهَا اسْتِخْدَامَاتُهَا الْخَاصَّة فِي مَشَارِيعِ الْوِيبِ.",
+        "caption_text": "توجد ثلاث طرق رئيسية لإضافة CSS إلى مستندات HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "Inline CSS داخل عنصر HTML",
+          "Internal CSS داخل قسم head",
+          "External CSS في ملفات منفصلة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "inline_css",
+      "title": "تطبيق Inline CSS",
+      "narration": {
+        "spoken_text": "نَبْدَأُ بِـ Inline CSS، حَيْثُ نَسْتَخْدِم Attribute style مُبَاشَرَة دَاخِل Element. هَذِهِ الطَّرِيقَة تُفِيدُ فِي تَطْبِيقِ تَنْسِيقٍ فَرِيدٍ لِعُنْصُرٍ وَاحِدٍ فَقَطْ، كَمَا نَرَى فِي هَذَا الْمِثَالِ لِتَلْوِين h1 و p.",
+        "caption_text": "نستخدم Attribute style لتطبيق تنسيق مباشر على عنصر واحد."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<h1 style=\"color:blue;\">Blue</h1>\n<p style=\"color:red;\">Red</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "internal_css",
+      "title": "استخدام Internal CSS",
+      "narration": {
+        "spoken_text": "لِتَنْسِيقِ صَفْحَة كَامِلَة، نَسْتَخْدِم Internal CSS دَاخِلَ قِسْم head بِاسْتِخْدَام Tag style. هَذَا يُتِيحُ لَنَا تَحْدِيدَ خَصَائِصَ لِجَمِيعِ الْعَنَاصِرِ مِثْل body أَوْ h1 فِي مَكَانٍ وَاحِدٍ.",
+        "caption_text": "يتم تعريف Internal CSS داخل عنصر style في قسم head."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "style.html",
+        "code": "<head>\n<style>\nbody {background: powderblue;}\nh1 {color: blue;}\np {color: red;}\n</style>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "css_properties",
+      "title": "خصائص CSS الأساسية",
+      "narration": {
+        "spoken_text": "تُوَفِّرُ لَنَا CSS خَصَائِصَ مُتَعَدِّدَة مِثْل color لِلَّوْنِ، وَfont-family لِنَوْعِ الْخَطِّ، وَfont-size لِحَجْمِ النَّصِّ. هَذِهِ الْخَصَائِصُ تُعْطِي تَحَكُّماً كَامِلاً فِي مَظْهَرِ الْمُحْتَوَى الْمَعْرُوضِ دَاخِلَ الْمُتَصَفِّحِ.",
+        "caption_text": "تستخدم خصائص CSS للتحكم في ألوان وأحجام وأنواع الخطوط."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "styles.css",
+        "code": "h1 {\n  color: blue;\n  font-family: verdana;\n  font-size: 300%;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "box_model",
+      "title": "التحكم في المسافات",
+      "narration": {
+        "spoken_text": "لِتَنْظِيمِ الْعَنَاصِرِ، نَسْتَخْدِم border لِإِضَافَةِ إِطَارٍ، وَpadding لِلْمَسَافَةِ دَاخِلَ الْإِطَارِ، وَmargin لِلْمَسَافَةِ خَارِجَ الْإِطَارِ. هَذِهِ الْأَدَوَاتُ ضَرُورِيَّة لِتَحْسِينِ التَّخْطِيطِ الْعَامِّ لِصَفْحَةِ الْوِيبِ.",
+        "caption_text": "تستخدم خصائص border و padding و margin للتحكم في المسافات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "box.css",
+        "code": "p {\n  border: 2px solid blue;\n  padding: 30px;\n  margin: 50px;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَسَاسِيَّات CSS. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُتَابَعَةِ دَوْرَة CSS لِتَعَلُّمِ الْمَزِيدِ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "استمر في ممارسة كتابة أكواد CSS لتطوير مهاراتك في تصميم الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع خصائص CSS الأساسية",
+          "جرب تطبيق الأكواد بنفسك",
+          "تابع دروس CSS المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_css.asp"
+      ]
+    }
+  ]
+}
