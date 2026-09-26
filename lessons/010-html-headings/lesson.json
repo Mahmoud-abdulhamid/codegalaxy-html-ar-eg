@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "10",
+  "title": "HTML Headings",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم استخدام Headings في لغة HTML",
+    "التعرف على المستويات الستة من h1 إلى h6",
+    "تطبيق أفضل الممارسات لتحسين محركات البحث SEO",
+    "التحكم في الحجم باستخدام الـ style attribute و CSS"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_headings.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-c79d628ec582a393.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_headings.asp",
+      "source_url": "https://www.w3schools.com/html/html_headings.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-ce4f4c53935d2513.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_headings.asp",
+      "source_url": "https://www.w3schools.com/html/html_headings.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-1634072edeb1ed16.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_headings.asp",
+      "source_url": "https://www.w3schools.com/html/html_headings.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة حول HTML Headings",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى Headings وَهِيَ العَنَاوِينُ وَالعَنَاوِينُ الفَرْعِيَّة الَّتِي نَعْرِضُهَا عَلَى صَفْحَةِ الويب.",
+        "caption_text": "تعتبر العناوين أساسية لعرض العناوين الرئيسية والفرعية على صفحة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعريف Headings وعلاقتها بعرض العناوين",
+          "أهمية تنظيم المحتوى للقارئ ومحركات البحث",
+          "استخدام العناصر لإنشاء هرمية واضحة للمستند"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "مستويات العناوين من h1 إلى h6",
+      "narration": {
+        "spoken_text": "تُعَرَّف Headings فِي لُغَة HTML بِاسْتِخْدَامِ العَنَاصِرِ مِنْ h1 إِلَى h6. العُنْصُر h1 يُمَثِّلُ العُنْوَانَ الأَهَمَّ عَلَى الإِطْلَاقِ، بَيْنَمَا h6 يُمَثِّلُ العُنْوَانَ الأَقَلَّ أَهَمِّيَّة.",
+        "caption_text": "يتم تحديد العناوين باستخدام العناصر من h1 إلى h6 حسب الأهمية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر h1 يمثل العنوان الأهم في الصفحة",
+          "العنصر h6 يمثل العنوان الأقل أهمية",
+          "المتصفحات تضيف مسافة بيضاء تلقائية قبل وبعد العنوان"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة الكود الأساسي للعناوين",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي فِي هَذَا المِثَالِ كَيْفَ نَكْتُبُ المُسْتَوَيَاتِ السِّتَّة لِلْعَنَاوِينِ. نَبْدَأُ مِنْ h1 ثُمَّ نَتَدَرَّجُ حَتَّى نَصِلَ إِلَى h6 بِكُلِّ سُهُولَة وَوُضُوحٍ.",
+        "caption_text": "مثال عملي يوضح كتابة المستويات الستة للعناوين في HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "headings.html",
+        "code": "<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>",
+        "highlight_lines": [],
+        "output": "Heading 1\nHeading 2\nHeading 3\nHeading 4\nHeading 5\nHeading 6",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "معاينة المخرجات في المتصفح",
+      "narration": {
+        "spoken_text": "تُعْرَضُ النَّتِيجَة فِي الWeb Browser بِأَحْجَامٍ مُتَفَاوِتَة. يَظْهَر h1 بِأَكْبَرِ حَجْمٍ، بَيْنَمَا تَتَدَرَّجُ الأَحْجَامُ فِي الصِّغَرِ تَبَاعاً حَتَّى نَصِلَ إِلَى h6.",
+        "caption_text": "معاينة شكل العناوين الستة عند عرضها داخل متصفح الويب."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML Headings Output Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "أهمية العناوين لمحركات البحث SEO",
+      "narration": {
+        "spoken_text": "تَسْتَخْدِمُ سَرْش إنجينز العَنَاوِينَ لِفَهْرَسَةِ هَيْكَلِ وَمُحْتَوَى صَفَحَاتِكَ. يَقُومُ المُسْتَخْدِمُونَ بِتَصَفُّحِ الصَّفْحَةِ بِسُرْعَة مِنْ خِلَالِ عَنَاوِينِهَا، لِذَلِكَ فَالتَّرْتِيبُ الهَرَمِيُّ مُهِمٌّ جِدّاً.",
+        "caption_text": "تستخدم محركات البحث العناوين لفهرسة هيكل محتوى صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مساعدة محركات البحث في فهرسة محتوى الصفحة",
+          "تمكين المستخدمين من قراءة سريعة لهيكل المستند",
+          "الحفاظ على التسلسل المنطقي من h1 إلى h3"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "مثال عملي لهيكل مستند حقيقي",
+      "narration": {
+        "spoken_text": "إِلَيْكَ هَذَا المِثَالَ الوَاقِعِيَّ لِبِنَاءِ دَلِيلِ سَفَرٍ. نَسْتَخْدِم h1 لِلْعُنْوَانِ الرَّئِيسِيِّ، ثُمَّ h2 لِلْقَارَّاتِ، ثُمَّ h3 لِلدُّوَلِ تَحْتَ كُلِّ قَارَّة بِنِظَامٍ رَائِعٍ.",
+        "caption_text": "مثال عملي يوضح هيكلة دليل سفر باستخدام عناصر العناوين المتعددة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "travel.html",
+        "code": "<h1>Travel Guide</h1>\n<h2>Europe</h2>\n<h3>France</h3>\n<h3>Italy</h3>\n<h2>Asia</h2>\n<h3>India</h3>\n<h3>Thailand</h3>",
+        "highlight_lines": [],
+        "output": "Travel Guide\n  Europe\n    France\n    Italy\n  Asia\n    India\n    Thailand",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "التحكم في الحجم باستخدام Style",
+      "narration": {
+        "spoken_text": "يَمْتَلِكُ كُلُّ عُنْوَانٍ حَجْماً افْتِرَاضِيّاً. وَلَكِنْ يُمْكِنُكَ تَحْدِيدُ الحَجْمِ لِأَيِّ عُنْوَانٍ بِاسْتِخْدَام style attribute مَعَ خَاصِيَّة CSS font-size.",
+        "caption_text": "يمكن تحديد حجم أي عنوان باستخدام style attribute وخاصية font-size."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "styled_heading.html",
+        "code": "<h1 style=\"font-size:60px;\">\n  Heading 1\n</h1>",
+        "highlight_lines": [],
+        "output": "Heading 1 (60px)",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "أفضل الممارسات البرمجية والخلاصة",
+      "narration": {
+        "spoken_text": "تَذَكَّرْ دَائِماً أَنْ تَسْتَخْدِمَ عُنْصُراً وَاحِداً مِنْ نَوْع h1 فِي الصَّفْحَةِ الوَاحِدَةِ. وَلَا تَسْتَخْدِمِ العَنَاوِينَ فَقَطْ لِجَعْلِ النَّصِّ كَبِيراً أَوْ عَارِضاً، بَلْ لِلتَّنْظِيمِ. كَانَ مَعَكُمْ مَحْمُودُ عَبْدِالحَمِيدِ.",
+        "caption_text": "استخدم h1 مرة واحدة في الصفحة ولا تستخدم العناوين لتكبير النصوص فقط."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم عنصر h1 واحد فقط لكل صفحة ويب",
+          "استخدم Headings للعناوين فقط وليس لتكبير النص",
+          "راجع مرجع Tags للاستزادة وتطوير مهاراتك"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_headings.asp"
+      ]
+    }
+  ]
+}
