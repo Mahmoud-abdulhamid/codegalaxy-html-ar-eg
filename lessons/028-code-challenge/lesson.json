@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "28",
+  "title": "تحدي البرمجة في HTML و CSS",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية دمج CSS داخل ملفات HTML",
+    "التعرف على بنية Internal Style Sheet",
+    "تطبيق مهارات التنسيق البرمجي",
+    "التعامل مع تحديات الكود الاحترافية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_css.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في تحديات HTML و CSS",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة HTML. سَنَقُومُ الْيَوْمَ بِخَوْضِ تَحَدٍّ بَرْمَجِيٍّ مُهِمٍّ لِاخْتِبَارِ مَهَارَاتِكُمْ فِي دَمْج CSS مَع HTML لِتَحْسِينِ مَظْهَرِ صَفَحَاتِ الْوِيبِ بِشَكْلٍ احْتِرَافِيٍّ.",
+        "caption_text": "أهلا بكم في درس تحدي البرمجة لدمج CSS مع HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحدي مهارات HTML و CSS",
+          "استخدام Internal Style Sheet",
+          "تطبيق التنسيقات داخل ملف HTML",
+          "تحسين مظهر عناصر الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "مفهوم Internal Style Sheet",
+      "narration": {
+        "spoken_text": "لِتَنْفِيذِ تَحَدِّي Internal Style Sheet، نَحْتَاجُ إِلَى اسْتِخْدَام Element يُسَمَّى style دَاخِلَ قِسْم head. هَذَا التَّقْنِيَّة تَسْمَحُ لَنَا بِكِتَابَةِ كُود CSS مُبَاشَرَة دَاخِلَ مَلَفِّ HTML لِتَنْسِيقِ الْعَنَاصِرِ بِسُهُولَة.",
+        "caption_text": "نستخدم عنصر style داخل head لتعريف التنسيقات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام <style> داخل <head>",
+          "كتابة CSS مباشرة في ملف HTML",
+          "فصل التنسيق عن هيكل الصفحة",
+          "سهولة التحكم في مظهر العناصر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    },
+    {
+      "id": "code_structure",
+      "title": "هيكل الكود الأساسي",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَبْدَأُ بِـ DOCTYPE HTML ثُمَّ نَفْتَح Element بِاسْم html. دَاخِل head نَضَع style، وَفِي body نَكْتُبُ الْمُحْتَوَى. هَذَا هُوَ الْهَيْكَلُ الْأَسَاسِيُّ لِأَيِّ صَفْحَةِ وِيبٍ نَقُومُ بِتَنْسِيقِهَا.",
+        "caption_text": "الهيكل الأساسي لملف HTML مع عنصر style."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {background: blue;}\n</style>\n</head>\n<body>\n<h1>Hello</h1>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    },
+    {
+      "id": "explanation",
+      "title": "شرح Selector و Declaration",
+      "narration": {
+        "spoken_text": "فِي كُود CSS، نَسْتَخْدِم Selector مِثْل body لِتَحْدِيدِ الْعُنْصُرِ الْمُرَادِ تَنْسِيقُهُ. بَعْدَ ذَلِكَ، نَكْتُب Declaration دَاخِلَ أَقْوَاسٍ مَجْعَدَة، وَتَتَكَوَّنُ مِنْ Property مِثْل background و Value مِثْل blue لِتَحْدِيدِ الْخَصَائِصِ الْجَمَالِيَّةِ.",
+        "caption_text": "تتكون قواعد CSS من Selector و Declarations."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "المصطلح",
+          "الوظيفة",
+          "مثال"
+        ],
+        "rows": [
+          [
+            "Selector",
+            "تحديد العنصر",
+            "body"
+          ],
+          [
+            "Property",
+            "الخاصية المراد تغييرها",
+            "background"
+          ],
+          [
+            "Value",
+            "قيمة الخاصية",
+            "blue"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "يَجِبُ عَلَيْنَا دَائِماً التَّأَكُّدُ مِنْ إِغْلَاقِ كُلِّ Tags بِشَكْلٍ صَحِيحٍ. كَمَا يُفَضَّلُ تَنْظِيمُ كُود CSS لِيَكُونَ مَقْرُوءاً، وَهَذَا يُسَاعِدُ فِي صِيَانَةِ الصَّفْحَةِ مُسْتَقْبَلاً عِنْدَ التَّوَسُّعِ فِي مَشَارِيعِ الويب الْكَبِيرَةِ.",
+        "caption_text": "التنظيم الجيد للكود يسهل عملية الصيانة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إغلاق جميع Tags بدقة",
+          "تنظيم كود CSS لسهولة القراءة",
+          "استخدام مسافات بادئة واضحة",
+          "الالتزام بمعايير HTML5"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة وتطبيق عملي",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا شَرْحَ هَذَا التَّحَدِّي. أَدْعُوكُمْ لِزِيَارَةِ الرَّابِطِ فِي الْوَصْفِ لِتَجْرِبَةِ الْأَكْوَادِ بِنَفْسِكُمْ وَتَطْوِيرِ مَهَارَاتِكُمْ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ مَعَ مَحْمُود عَبْدِ الْحَمِيد.",
+        "caption_text": "قم بزيارة الرابط في الوصف لتطبيق التحدي بنفسك."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "طبق التحدي عبر الرابط المرفق",
+          "مارس كتابة CSS داخل HTML",
+          "تابع دورتنا لتطوير مهاراتك",
+          "شكرا لمتابعتكم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_css.asp"
+      ]
+    }
+  ]
+}
