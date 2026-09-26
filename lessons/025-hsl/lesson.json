@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "25",
+  "title": "HTML HSL and HSLA Colors",
+  "course": "HTML",
+  "objectives": [
+    "فهم نظام الألوان HSL في لغة HTML",
+    "تحديد قيم Hue و Saturation و Lightness",
+    "استخدام قناة الشفافية Alpha عبر HSLA"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_colors_hsl.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة ألوان HSL",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى أَنْوَاعِ الْأَلْوَانِ بِاسْتِخْدَام HSL وَهِيَ تَعْنِي Hue, Saturation, and Lightness.",
+        "caption_text": "تعرف على نظام HSL لتحديد الألوان في صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "نظام HSL يمثل Hue و Saturation و Lightness",
+          "يوفر طريقة بديلة وأكثر مرونة لتحديد الألوان",
+          "يدعم قناة الشفافية Alpha من خلال نظام HSLA"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "قاعدة HSL الأساسية",
+      "narration": {
+        "spoken_text": "نَكْتُبُ قِيمَة اللَّوْنِ بِلُغَة HTML بِالشَّكْلِ التَّالِي hsl(hue, saturation, lightness). يُمَثِّل Hue دَرَجَة اللَّوْنِ فِي دَائِرَةِ الْأَلْوَانِ مِنْ صِفْرٍ إِلَى ثَلَاثِ مِئَة وَسِتِّينَ.",
+        "caption_text": "الصيغة الأساسية لاستخدام دالة hsl في تنسيق عناصر الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "styles.css",
+        "code": "background-color: hsl(0, 100%, 50%);",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "شرح قيمة Hue",
+      "narration": {
+        "spoken_text": "تَمْثِيل Hue يَكُونُ كَدَرَجَة عَلَى دَائِرَةِ الْأَلْوَانِ. عِنْدَمَا تَكُونُ الْقِيمَة صِفْراً يَكُونُ اللَّوْنُ أَحْمَرَ، وَعِنْدَ مِئَة وَعِشْرِينَ يَكُونُ أَخْضَرَ، وَعِنْدَ مِئَتَيْنِ وَأَرْبَعِينَ يَكُونُ أَزْرَقَ.",
+        "caption_text": "Hue يحدد زاوية اللون على عجلة الألوان من 0 إلى 360 درجة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "0 درجة تمثل اللون الأحمر",
+          "120 درجة تمثل اللون الأخضر",
+          "240 درجة تمثل اللون الأزرق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح قيمة Saturation",
+      "narration": {
+        "spoken_text": "أَمَّا Saturation فَهِيَ النِّسْبَة الْمِئْوِيَّة لِإِشْبَاعِ اللَّوْنِ. الصِّفْرُ بِالمائَةِ يَعْنِي لَوْناً رَادِكِيّاً رَمَادِيّاً، وَالمائَة بِالمائَةِ تَعْنِي اللَّوْنَ الْكَامِلَ النَّقِيَّ بِدُونَ أَيِّ تَعْدِيلٍ.",
+        "caption_text": "Saturation تعبر عن درجة كثافة ونقاء اللون بنسبة مئوية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "100 بالمائة تعني لونا نقيا كاملا",
+          "50 بالمائة تعني لونا باهتا جزئيا",
+          "0 بالمائة تعني لونا رماديا بالكامل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح قيمة Lightness",
+      "narration": {
+        "spoken_text": "وَنَنْتَقِلُ إِلَى Lightness الَّتِي تُحَدِّدُ مِقْدَارَ الْإِضَاءَةِ أَوْ السُّطُوعِ لِلَّوْنِ. صِفْرٌ بِالمائَةِ يَعْنِي اللَّوْنَ الْأَسْوَدَ، وَخَمْسُونَ بِالمائَةِ تَعْنِي إِضَاءَة عَادِيَّة، وَمِئَة بِالمائَةِ تَعْنِي اللَّوْنَ الْأَبْيَضَ.",
+        "caption_text": "Lightness تتحكم في سطوع اللون من الأسود إلى الأبيض."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "0 بالمائة تعني اللون الأسود تماما",
+          "50 بالمائة تعني الإضاءة العادية للون",
+          "100 بالمائة تعني اللون الأبيض التام"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "الدرجات الرمادية Shades of Gray",
+      "narration": {
+        "spoken_text": "لِصُنْعِ تَدَرُّجَاتِ الرَّمَادِيِّ، نَجْعَلُ قِيمَة Hue و Saturation تُسَاوِيَانِ الصِّفْرَ، ثُمَّ نَتَحَكَّمُ فِي Lightness مِنْ صِفْرٍ وَحَتَّى مِئَة بِالمائَةِ لِلْحُصُولِ عَلَى النَّتِيجَةِ.",
+        "caption_text": "تحديد تدرجات الرمادي بتثبيت Hue و Saturation على صفر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "styles.css",
+        "code": "background-color: hsl(0, 0%, 50%);",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "استخدام نظام HSLA",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى HSLA وَهُوَ امْتِدَادٌ لِنِظَام HSL مَعَ وُجُودِ قَنَاة Alpha لِتَحْدِيدِ الشَّفَّافِيَّةِ بِقِيمَة تَتَرَاوَحُ بَيْنَ صِفْرٍ نُقْطَةِ صِفْرٍ وَوَاحِدٍ صَحِيحٍ.",
+        "caption_text": "نظام HSLA يضيف قناة Alpha للتحكم في شفافية العناصر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "styles.css",
+        "code": "background-color: hsla(0, 100%, 50%, 0.5);",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ اسْتِخْدَامِ أَنْوَاع HSL و HSLA فِي لُغَة HTML لِتَحْدِيدِ الْأَلْوَانِ وَالشَّفَّافِيَّةِ بِطَرِيقَة احْتِرَافِيَّة مُمَيَّزَة مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة استخدام أقسام HSL و HSLA لتنسيق صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام HSL لتحديد الألوان بدقة عبر Hue و Saturation و Lightness",
+          "ضبط درجات الرمادي عبر تصفير Hue و Saturation",
+          "إضافة الشفافية للعناصر عبر قناة Alpha في نظام HSLA"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hsl.asp"
+      ]
+    }
+  ]
+}
