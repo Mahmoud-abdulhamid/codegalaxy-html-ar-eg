@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "20",
+  "title": "التعليقات في لغة HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم أهمية كتابة التعليقات في لغة HTML",
+    "تعلم الصيغة الصحيحة لكتابة Start Tag و End Tag للتعليقات",
+    "استخدام التعليقات لإخفاء المحتوى المؤقت",
+    "تطبيق التعليقات في عملية debugging واكتشاف الأخطاء"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_comments.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-9b41ce2f2ab02bba.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_comments.asp",
+      "source_url": "https://www.w3schools.com/html/html_comments.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-c6fa249198cd6a28.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_comments.asp",
+      "source_url": "https://www.w3schools.com/html/html_comments.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-1567487d15a22217.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_comments.asp",
+      "source_url": "https://www.w3schools.com/html/html_comments.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن التعليقات في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ كِتَابَة Comments وَأَهَمِّيَّتِهَا فِي تَوْثِيقِ الصَّفْحَةِ وَتَنْظِيمِ الشِّفْرَةِ الْمَصْدَرِيَّةِ بِدُونِ ظُهُورِهَا فِي Web Browser.",
+        "caption_text": "تعرف على أهمية كتابة التعليقات لتثبيت الملاحظات وتوثيق الشفرة المصدرية لصفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لا تظهر تعليقات HTML داخل Web Browser",
+          "تساعد في توثيق الشفرة المصدرية بوضوح",
+          "تسهل قراءة الكود للمطورين الآخرين"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_2_syntax",
+      "title": "الصيغة الأساسية للتعليقات",
+      "narration": {
+        "spoken_text": "لِنَتَعَرَّفَ عَلَى صِيغَةِ كِتَابَة Comments. نُلَاحِظُ وُجُودَ عَلاَمَةِ التَّعَجُّب exclamation point فِي Start Tag بَيْنَمَا لَا تُوجَدُ فِي End Tag، وَهَذَا شَرْطٌ أَسَاسِيٌّ لِعَمَلِهَا بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "تتطلب صيغة التعليق علامة تعجب في بداية Tag فقط دون نهايته."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "comment_syntax.html",
+        "code": "<!-- Write your comments here -->",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_3_add_comments",
+      "title": "إضافة الملاحظات والتنبيهات",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِم Comments لِوَضْع notifications وَreminders دَاخِلَ الشِّفْرَةِ الْبَرْمَجِيَّةِ، هَذَا يُسَاعِدُنَا كَثِيراً عِنْدَ الْعَوْدَةِ لِتَعْدِيلِ الصَّفْحَةِ مُسْتَقْبَلاً أَوْ تَنْظِيمِ عَنَاصِر HTML.",
+        "caption_text": "تتيح لك التعليقات وضع التنبيهات والتذكيرات ضمن الشفرة البرمجية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "add_comments.html",
+        "code": "<!-- This is a comment -->\n\n<p>This is a paragraph.</p>\n\n<!-- Remember to add more information here -->",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_4_hide_content",
+      "title": "إخفاء المحتوى مؤقتا",
+      "narration": {
+        "spoken_text": "يُمْكِنُ أَيْضاً اسْتِخْدَام Comments لِإِخْفَاء Content مُؤَقَّتاً. كُلُّ مَا يُوجَدُ بَيْنَ عَلاَمَتَيِ الْفَتْحِ وَالْإِغْلَاقِ سَيَتِمُّ إِخْفَاؤُهُ تَمَاماً مِنَ الْعَرْضِ عَلَى الشَّاشَةِ.",
+        "caption_text": "تستخدم التعليقات لإخفاء المحتوى المؤقت ومنع عرضه في المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "hide_content.html",
+        "code": "  <p>This is a paragraph.</p>\n\n<!-- <p>This is another paragraph \n  </p> -->\n\n<p>This is a paragraph too.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_5_debugging",
+      "title": "استخدام التعليقات في اكتشاف الأخطاء",
+      "narration": {
+        "spoken_text": "تُعْتَدُّ Comments أَدَاة مِثَالِيَّة لِعَمَلِيَّة debugging. نَسْتَطِيعُ تَعْلِيقَ أَسْطُرِ الشِّفْرَةِ وَاحِداً تِلْوَ الْآخَرِ لِلْبَحْثِ عَنِ الْأَخْطَاءِ وَمُعَالَجَتِهَا بِكُفَاءَة عَالِيَة.",
+        "caption_text": "تساعد التعليقات في فحص الأخطاء وعزل أجزاء الكود لتسهيل عملية الـ debugging."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "debugging_example.html",
+        "code": "  <p>This is a paragraph.</p>\n<!--\n<p>Look at this cool \n  image:</p>\n\n<img border=\"0\" src=\"pic_trulli.jpg\" \nalt=\"Trulli\">\n-->\n<p>This is a paragraph too.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_6_inline_comments",
+      "title": "إخفاء المحتوى ضمن السطر الواحد",
+      "narration": {
+        "spoken_text": "لَيْسَ هَذَا فَحَسْبُ، بَلْ نَسْتَطِيعُ أَيْضاً اسْتِخْدَام Comments لِإِخْفَاءِ أَجْزَاءٍ مُحَدَّدَة فِي مُنْتَصَفِ سَطْرٍ مُعَيَّنٍ مِنَ الشِّفْرَةِ بِلُغَة HTML.",
+        "caption_text": "يمكنك أيضا إخفاء أجزاء محددة في منتصف السطر البرمجي باستخدام التعليقات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "inline_comment.html",
+        "code": "  <p>This <!-- great text --> is a paragraph.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_7_visual_output",
+      "title": "معاينة النتيجة في المتصفح",
+      "narration": {
+        "spoken_text": "نُلَاحِظُ فِي هَذِهِ الصُّورَةِ النَّاتِجَةِ عَنِ الْعَرْضِ أَنَّ التَّعْلِيقَاتِ لَا تَظْهَرُ نِهَائِيّاً فِي مُتَصَفِّح Chrome أَوْ Edge بَيْنَمَا يَظْهَرُ النَّصُّ الْعَادِيُّ فَقَطْ لِلْمُسْتَخْدِمِ.",
+        "caption_text": "عرض النتيجة المرئية وتأكيد عدم ظهور التعليقات للمستخدم النهائي في المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "صورة توضح معاينة صفحة الويب وعدم ظهور التعليقات فيها"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    },
+    {
+      "id": "scene_8_conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى أَهَمِّيَّةِ التَّعْلِيقَاتِ فِي تَوْثِيقِ الشِّفْرَةِ، وَإِخْفَاءِ الْمُحْتَوَى الْمُؤَقَّتِ، وَمُسَاعَدَةِ الْمُطَوِّرِينَ فِي عَمَلِيَّة debugging. نَتَوَقَّعُ مِنْكُمْ تَجْرِبَة هَذِهِ الْأَكْوَادِ بِأَنْفُسِكُمْ.",
+        "caption_text": "خلاصة شاملة حول استخدام التعليقات وأهميتها الاحترافية في تطوير صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "التعليقات تحسن تنظيم الكود وتوثيقه",
+          "تستخدم لإخفاء العناصر بشكل مؤقت",
+          "أداة أساسية في الـ debugging وفحص الأخطاء"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_comments.asp"
+      ]
+    }
+  ]
+}
