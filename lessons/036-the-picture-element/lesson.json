@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "36",
+  "title": "شرح HTML picture Element بالتفصيل",
+  "course": "HTML",
+  "objectives": [
+    "تعريف عنصر picture في HTML ودوره المرن",
+    "فهم استخدام source و srcset وأهمية media attribute",
+    "معرفة أسباب استخدام picture لتحسين Bandwidth ودعم Format Support",
+    "تطبيق أمثلة عملية وعرض img كعنصر افتراضي أساسي"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_images_picture.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-ee339ce5fc2b6b78.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_images_picture.asp",
+      "source_url": "https://www.w3schools.com/html/html_images_picture.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-736af5477b69d2a0.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_images_picture.asp",
+      "source_url": "https://www.w3schools.com/html/html_images_picture.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة عن picture Element",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى picture Element وَكَيْفَ يُمَكِّنُنَا مِنْ عَرْضِ صُوَرٍ مُخْتَلِفَة لِأَجْهِزَة أَوْ أَحْجَامِ شَاشَاتٍ مُتَنَوِّعَة بِكُلِّ مُرُونَة.",
+        "caption_text": "تعرف على عنصر picture في HTML لعرض صور مختلفة حسب حجم الشاشة أو الجهاز."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تتعرف في هذا الدرس على عنصر picture الجديد",
+          "يعرض صورا مختلفة تناسب أحجام الشاشات والأجهزة",
+          "يوفر مرونة فائقة للمطورين في تحديد موارد الصور"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_concept",
+      "title": "مفهوم picture و source و srcset",
+      "narration": {
+        "spoken_text": "يَحْتَوِي عُنْصُر picture عَلَى عُنْصُرٍ أَوْ أَكْثَرَ مِنْ source elements. كُلُّ عُنْصُرٍ يُحَدِّدُ صُورَة مُخْتَلِفَة عَبْر srcset attribute، بَيْنَمَا يُحَدِّد media attribute مَتَى تَكُونُ الصُّورَة مُنَاسِبَة حَسَبَ الشَّاشَةِ.",
+        "caption_text": "يحتوي عنصر picture على عناصر source مع Attributes srcset و media لتحديد الصورة المناسبة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر picture يحتوي على عدة عناصر source",
+          "تستخدم Attribute srcset للإشارة إلى مسار ملف الصورة",
+          "تستخدم Attribute media لتحديد الشرط المناسب للشاشة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_code_part1",
+      "title": "كتابة هيكل picture لأحجام الشاشات الجزء الأول",
+      "narration": {
+        "spoken_text": "لِنَنْتَقِلْ إِلَى كِتَابَةِ الْكُودِ. نَبْدَأُ بِتَعْرِيف picture Element ثُمَّ نُضِيفُ أَوَّل source element لِلشَّاشَاتِ الْوَاسِعَةِ مِثْل min-width سِتّ مِائَة وَخَمْسِينَ بِكْسِل.",
+        "caption_text": "نبدأ كتابة هيكل picture مع أول عنصر source للشاشات الواسعة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "picture_example.html",
+        "code": "<picture>\n  <source media=\"(min-width: 650px)\"\n          srcset=\"img_food.jpg\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_code_part2",
+      "title": "استكمال كود picture مع img الاحتياطية",
+      "narration": {
+        "spoken_text": "نُتَبِعُ ذَلِكَ بِإِضَافَة source ثَانٍ لِلشَّاشَاتِ الأُخْرَى، وَالأَهَمُّ هُوَ وَضْع img element فِي النِّهَايَةِ كَعُنْصُرٍ اِفْتِرَاضِيٍّ تَدْعَمُهُ جَمِيعُ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "نضيف عنصر source الثاني وعنصر img الأساسي في نهاية picture element."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "picture_example.html",
+        "code": "  <source media=\"(min-width: 465px)\"\n          srcset=\"img_car.jpg\">\n  <img src=\"img_girl.jpg\">\n</picture>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_output_render",
+      "title": "معاينة النتيجة المرئية للصور",
+      "narration": {
+        "spoken_text": "يُظْهِرُ لَنَا هَذَا الْمِثَالُ كَيْفَ يَقُومُ الْمُتَصَفِّحُ بِاخْتِيَارِ الصُّورَةِ الْمُنَاسِبَةِ بِنَاءً عَلَى مَقَاسَاتِ الْعَرْضِ الْمُحَدَّدَةِ فِي media attribute بِدِقَّة.",
+        "caption_text": "يعرض المتصفح الصورة الملائمة تلقائيا بناء على القياسات وحجم الشاشة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة عنصر picture في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_purposes_bandwidth",
+      "title": "أسباب الاستخدام لتحسين Bandwidth",
+      "narration": {
+        "spoken_text": "مِنْ أَهَمِّ أَسْهَامَات picture element تَحْسِين Bandwidth. فَعِنْدَمَا يَكُونُ الْجِهَازُ بِصُحْبَةِ شَاشَة صَغِيرَة، لَا حَاجَة لِتَحْمِيلِ صُورَة ضَخْمَة، فَيَتَمَكَّنُ الْمُتَصَفِّحُ مِنْ اِخْتِيَارِ الأَنْسَبِ.",
+        "caption_text": "توفير Bandwidth وعدم تحميل صور ضخمة على الشاشات الصغيرة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجنب تحميل صور كبيرة الحجم على الأجهزة ذات الشاشات الصغيرة",
+          "يختار المتصفح أول source يطابق القيم ويتجاهل الباقي",
+          "يساهم بشكل فعال في زيادة سرعة تحميل صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_format_support",
+      "title": "دعم صيغ الصور المختلفة Format Support",
+      "narration": {
+        "spoken_text": "الْفَائِدَة الثَّانِيَة هِي Format Support. يُمْكِنُكَ إِضَافَة صُوَرٍ بِصِيَغٍ مُخْتَلِفَة، وَسَيَسْتَخْدِمُ الْمُتَصَفِّحُ أَوَّلَ صِيغَة يَتَعَرَّفُ عَلَيْهَا وَيَتَجَاهَلُ مَا بَعْدَهَا.",
+        "caption_text": "دعم صيغ متعددة للصور لضمان التوافقية مع جميع المتصفحات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إضافة صور بصيغ حديثة ومتعددة داخل عنصر picture",
+          "يختار المتصفح أول صيغة يفهمها ويدعمها مباشرة",
+          "يعالج مشكلة عدم دعم بعض المتصفحات لصيغ معينة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    },
+    {
+      "id": "scene_conclusion",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَذَكَّرْ دَائِماً وَضْع img element كَعُنْصُرٍ أَخِيرٍ دَاخِل picture لِضَمَانِ عَمَلِ الصَّفْحَةِ لَدَى الْمُتَصَفِّحَاتِ الْقَدِيمَةِ. نَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "خلاصة درس picture element وأهمية وضع img في النهاية دائما."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "دائما ضع عنصر img كآخر ابن داخل picture element",
+          "يستخدم img عند عدم دعم المتصفح لعنصر picture",
+          "تابع معنا دورة HTML للمزيد من المهارات المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_picture.asp"
+      ]
+    }
+  ]
+}
