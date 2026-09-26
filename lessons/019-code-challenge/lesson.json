@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "19",
+  "title": "HTML Quotations and Abbreviations Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "اختبار فهم عناصر الاقتباس والاختصار في HTML",
+    "تطبيق عناصر مثل blockquote وq وabbr بكفاءة",
+    "حل التحديات البرمجية الخاصة بنصوص الاقتباس"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_quotations.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة تحدي الاقتباسات",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا التَّدْرِيبِ العَمَلِيِّ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ كَيْفَ نَخْتَبِرُ مَهَارَاتِنَا فِي استِخْدَامِ عَنَاصِر Quotations واختبارات الاختصارات بِأُسْلُوبٍ احترافي.",
+        "caption_text": "مرحبا بكم في هذا التدريب العملي لاختبار مهارات الاقتباس في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختبار فهم عناصر HTML Quotations",
+          "تطبيق تحديات برمجية حية",
+          "فهم كيفية تنسيق النصوص المقتبسة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_concepts",
+      "title": "فهم عناصر الاقتباس",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِمُ فِي لُغَة HTML عِدَّة عَنَاصِرَ مُهِمَّة لِلنُّصُوصِ المقتبسة، مِثْل blockquote للاقتباسات الطويلة، وq للاقتباسات القصيرة داخل السطر، إضافة إلى عنصر abbr لتعريف الاختصارات بدقة.",
+        "caption_text": "نستخدم عناصر blockquote وq وabbr للتعامل مع الاقتباسات والاختصارات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام blockquote للاقتباسات الطويلة",
+          "استخدام q للاقتباسات القصيرة",
+          "استخدام abbr لتعريف الاختصارات البرمجية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_code_one",
+      "title": "كتابة اقتباس طويل",
+      "narration": {
+        "spoken_text": "لِنَبْدَأِ العَمَلَ بِكِتَابَةِ عُنْصُر blockquote لِعَرْضِ اقتباس طويل داخل صفحة الويب، مَعَ تَحْدِيدِ مَصْدَرِ الاقتباس باستخدام Attribute cite بالشكل الصحيح.",
+        "caption_text": "نكتب عنصر blockquote لتضمين اقتباس طويل مع تحديد المصدر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<blockquote cite=\"http://www.worldwildlife.org\">\nFor 50 years, WWF has...\n</blockquote>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_code_two",
+      "title": "كتابة اقتباس قصير",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى إِضَافَةِ اقتباس قصير داخل فقرة عادية باستخدام عنصر q، لِيُحِيطَ المُتَصَفِّحُ النَّصَّ المقتبس بعلامات التنصيص تلقائياً ودون عناء.",
+        "caption_text": "نستخدم عنصر q لإضافة اقتباس قصير داخل فقرة نصية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<p>WWF's goal is to:\n<q>Build a future where...</q>\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_code_three",
+      "title": "اختصار الكلمات",
+      "narration": {
+        "spoken_text": "وَلِتَحْسِينِ تَجْرِبَةِ المُسْتَخْدِمِ، نَسْتَخْدِمُ عنصر abbr مَع Attribute title لِتَوْضِيحِ المَعْنَى الكَامِلِ لِأَيِّ اختصار نصي يظهر للقارئ عند تمرير المؤشر.",
+        "caption_text": "نستخدم عنصر abbr مع Attribute title لتوضيح معاني الاختصارات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<p>The <abbr title=\"World Wildlife Fund\">\nWWF</abbr> was formed in 1961.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_code_four",
+      "title": "تضمين العبارات المعكوسة",
+      "narration": {
+        "spoken_text": "نَتَعَرَّفُ أَيْضاً عَلَى كَيْفِيَّةِ استخدام عنصر bdo لِتَغْيِيرِ اتجاه اتجاهات النصوص وعرضها بصورة معكوسة عند الحاجة لتنسيق اللغات المختلفة في المتصفح.",
+        "caption_text": "نستخدم عنصر bdo لتغيير اتجاه عرض النصوص في صفحة الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<p><bdo dir=\"rtl\">\nThis text will be written from right to left\n</bdo></p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "يَجِبُ دَائِماً الحِرْصُ على استخدام العناصر الدلالية المناسبة في مكانها الصحيح، لِأَنَّ ذَلِكَ يُسَاعِدُ مُحَرِّكَاتِ البحث على فهم محتوى صفحتك واختباراتك بدقة.",
+        "caption_text": "احرص على استخدام العناصر الدلالية لتحسين محركات البحث وتجربة المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام العناصر الدلالية المناسبة",
+          "كتابة Attribute cite بانتظام مع الاقتباسات",
+          "تسهيل قراءة الكود للمطورين الآخرين"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    },
+    {
+      "id": "scene_conclusion",
+      "title": "خلاصة الدرس والتحدي",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدِ انْتَهَيْنَا مِنْ شَرْحِ وَتَطْبِيقِ تَحَدِّيَاتِ الاقتباسات والاختصارات في لغة HTML. نَدْعُوكُمْ لِزِيَارَةِ الرَّابِطِ في الوصف لتجربة المزيد من التمارين.",
+        "caption_text": "انتهى درس تحدي الاقتباسات والاختصارات في HTML. تابعونا للمزيد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ملخص شامل لعناصر الاقتباس والاختصار",
+          "تطبيق عملي ناجح لتحديات W3Schools",
+          "تابع دورة HTML للمزيد من المهارات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      ]
+    }
+  ]
+}
