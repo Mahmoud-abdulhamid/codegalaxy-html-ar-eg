@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "16",
+  "title": "HTML Text Formatting Elements",
+  "course": "HTML",
+  "objectives": [
+    "تعلم استخدام عناصر تنسيق النصوص في HTML",
+    "الفرق بين b و strong لتغميق الخط",
+    "استخدام sub و sup للنص السفلي والعلوي",
+    "تمييز النصوص باستخدام mark و del و ins"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_formatting.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-6566dc7f864b6dcd.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_formatting.asp",
+      "source_url": "https://www.w3schools.com/html/html_formatting.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-1838c84f108720f3.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_formatting.asp",
+      "source_url": "https://www.w3schools.com/html/html_formatting.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-7e558125acb7dd18.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_formatting.asp",
+      "source_url": "https://www.w3schools.com/html/html_formatting.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن تنسيق النصوص في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كيفية استخدام Elements لتنسيق النصوص وإعطائها معاني خاصة داخل صفحات الويب.",
+        "caption_text": "تحتوي لغة HTML على عناصر مخصصة لتنسيق النصوص بمعان خاصة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لتنسيق النصوص بكفاءة عالية",
+          "توفر عناصر خاصة لإبراز الأهمية والدلالة",
+          "تساعد في تحسين تجربة القراءة وتوضيح المحتوى"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_2_bold",
+      "title": "عناصر تغميق الخط b و strong",
+      "narration": {
+        "spoken_text": "لِتَعْيِينِ نَصٍّ غَامِقٍ، نَسْتَخْدِم Tag المُسَمَّى b أَوْ Tag المُسَمَّى strong. الْفَرْقُ هُوَ أَنَّ strong يُضِيفُ أَهَمِّيَة دَلَالِيَّة لِلْمُحْتَوَى بَيْنَمَا b يُغَيِّرُ الْمَظْهَرَ فَقَطْ.",
+        "caption_text": "العناصر b و strong تستخدم لتغميق النص بأساليب مختلفة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "bold.html",
+        "code": "<b>This text is bold</b>\n<strong>Important!</strong>",
+        "highlight_lines": [],
+        "output": "This text is bold Important!",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_3_italic",
+      "title": "عناصر الخط المائل i و em",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى عَنَاصِرِ الْخَطِّ الْمَائِلِ مِثْل i و em. يَسْتَخْدِمُ الْعُنْصُر i لِلْمُصْطَلَحَاتِ التِّقْنِيَّةِ، بَيْنَمَا em يُحَدِّدُ نَصّاً مُؤَكَّداً يَقْرَؤُهُ قَارِئُ الشَّاشَةِ بِنَبْرَة خَاصَّة.",
+        "caption_text": "العناصر i و em تعرض النص بخط مائل لدلالات مختلفة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "italic.html",
+        "code": "<i>This is italic</i>\n<em>Emphasized text</em>",
+        "highlight_lines": [],
+        "output": "This is italic Emphasized text",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_4_small_mark",
+      "title": "عناصر التصغير والتحديد small و mark",
+      "narration": {
+        "spoken_text": "إِذَا أَرَدْنَا عَرْضَ نَصٍّ أَصْغَرَ حَجْماً نَسْتَخْدِم small، وَلِتَمْيِيزِ النُّصُوصِ أَوْ تَسْلِيطِ الضَّوْءِ عَلَيْهَا نَسْتَخْدِمُ الْعُنْصُر mark الَّذِي يَضَعُ خَلْفِيَة مُلَوَّنَة تَحْتَ النَّصِّ.",
+        "caption_text": "استخدام small لتصغير النص و mark لتسليط الضوء عليه."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "small_mark.html",
+        "code": "<small>Smaller text</small>\n<mark>Highlighted milk</mark>",
+        "highlight_lines": [],
+        "output": "Smaller text Highlighted milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_5_del_ins",
+      "title": "عناصر الحذف والإضافة del و ins",
+      "narration": {
+        "spoken_text": "لِعَرْضِ نَصٍّ تَمَّ حَذْفُهُ مِنَ الْمُسْتَنَدِ نَسْتَخْدِم del حَيْثُ يَظْهَرُ فَوْقَهُ خَطٌّ يَتَوَسَّطُهُ، وَلِلنُّصُوصِ الْمُضَافَةِ حَدِيثاً نَسْتَخْدِم ins لِيَظْهَرَ تَحْتَهَا خَطٌّ يُفِيدُ الْإِضَافَة.",
+        "caption_text": "العنصر del يحذف نصا بخط يتوسطه، و ins يضيف خطا تحته."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "del_ins.html",
+        "code": "<p>Color <del>blue</del> <ins>red</ins></p>",
+        "highlight_lines": [],
+        "output": "Color blue red",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_6_sub_sup",
+      "title": "النصوص السفلية والعلوية sub و sup",
+      "narration": {
+        "spoken_text": "نَسْتَعْمِل sub لِلنُّصُوصِ السُّفْلِيَّةِ مِثْلَ الصِّيَغِ الْكِيمْيَائِيَّةِ مِثْل H2O، بَيْنَمَا نَسْتَعْمِل sup لِلنُّصُوصِ الْعُلْوِيَّةِ مِثْلَ الْمُعَادَلَاتِ الرِّيَاضِيَّةِ أَوْ الْحَوَاشِي.",
+        "caption_text": "العناصر sub و sup تستخدم للنصوص السفلية والعلوية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "sub_sup.html",
+        "code": "<p>H<sub>2</sub>O</p>\n<p>E=MC<sup>2</sup></p>",
+        "highlight_lines": [],
+        "output": "H2O E=MC2",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_7_visual_demo",
+      "title": "معاينة التنسيقات في المتصفح",
+      "narration": {
+        "spoken_text": "تَظْهَرُ هَذِهِ الصُّورَة كَيْفَ يَعْرِض Web Browser مُخْتَلَفَ هَذِهِ التَّنْسِيقَاتِ بِشَكْلٍ مَرْئِيٍّ وَوَاضِحٍ لِلْمُسْتَخْدِمِ لِتَسْهِيلِ قِرَاءَةِ الْمُحْتَوَى.",
+        "caption_text": "صورة توضح معاينة عناصر التنسيق في المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML Text Formatting Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَهَمِّ Elements الْخَاصَّةِ بِتَنْسِيقِ النُّصُوصِ فِي HTML. نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِمُتَابَعَةِ الْمَزِيدِ مِنَ الْمَهَارَاتِ الْمُمْتِعَةِ مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة درس تنسيق النصوص في HTML وكيفية توظيفها بكفاءة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام b و strong لتغميق الخط",
+          "استخدام i و em لإمالة النصوص",
+          "استخدام del و ins للحذف والإضافة",
+          "استخدام sub و sup للنصوص السفلية والعلوية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_formatting.asp"
+      ]
+    }
+  ]
+}
