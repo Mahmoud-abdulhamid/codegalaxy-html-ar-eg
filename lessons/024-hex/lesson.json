@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "24",
+  "title": "HTML HEX and HEXA Colors",
+  "course": "HTML",
+  "objectives": [
+    "فهم نظام الألوان HEX في HTML",
+    "التعرف على هيكل #RRGGBB",
+    "تعلم كيفية استخدام HEXA مع قناة Alpha",
+    "تطبيق الشفافية باستخدام القيم السداسية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_colors_hex.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في ألوان HEX",
+      "narration": {
+        "spoken_text": "مَرْحَبًاً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة تَحْدِيدِ الْأَلْوَانِ بِاسْتِخْدَامِ نِظَام HEX، وَهُوَ نِظَامٌ يَعْتَمِدُ عَلَى الْقِيَمِ السُّدَاسِيَّةِ عَشْرِيَّة لِتَمْثِيلِ الْأَلْوَانِ الْأَسَاسِيَّةِ الْأَحْمَرِ وَالْأَخْضَرِ وَالْأَزْرَقِ.",
+        "caption_text": "نظام الألوان HEX يعتمد على القيم السداسية عشرية لتمثيل الألوان في صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "نظام HEX يستخدم قيم #RRGGBB",
+          "RR يمثل اللون الأحمر",
+          "GG يمثل اللون الأخضر",
+          "BB يمثل اللون الأزرق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    },
+    {
+      "id": "hex_structure",
+      "title": "هيكل قيم HEX",
+      "narration": {
+        "spoken_text": "تَتَرَاوَحُ الْقِيَمُ فِي نِظَام HEX بَيْنَ 00 و FF، حَيْثُ تُعَادِلُ 00 الْقِيمَة صفر و FF تُعَادِلُ 255 بِالنِّظَامِ الْعَشْرِيِّ. هَذَا يَسْمَحُ لَنَا بِإِنْشَاءِ مَلَايِينِ الْأَلْوَانِ الْمُخْتَلِفَةِ بِدِقَّة عَالِيَة جِدًّاً دَاخِلَ الْمُتَصَفِّحِ.",
+        "caption_text": "تتراوح قيم HEX بين 00 و FF لتمثيل شدة كل لون أساسي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "/* أمثلة على قيم HEX */\ncolor: #ff0000; /* أحمر خالص */\ncolor: #00ff00; /* أخضر خالص */\ncolor: #000000; /* اللون الأسود */\ncolor: #ffffff; /* اللون الأبيض */",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    },
+    {
+      "id": "gray_shades",
+      "title": "درجات اللون الرمادي",
+      "narration": {
+        "spoken_text": "لِلْحُصُولِ عَلَى دَرَجَاتِ اللَّوْنِ الرَّمَادِيِّ، نَقُومُ بِضَبْطِ قِيَمِ الْأَحْمَرِ وَالْأَخْضَرِ وَالْأَزْرَقِ لِتَكُونَ مُتَسَاوِيَة تَمَامًاً. كُلَّمَا زَادَتْ هَذِهِ الْقِيَمُ الْمُتَسَاوِيَة، اقْتَرَبَ اللَّوْنُ مِنَ الْأَبْيَضِ، وَكُلَّمَا قَلَّتْ اقْتَرَبَ مِنَ الْأَسْوَدِ الدَّاكِنِ.",
+        "caption_text": "تتساوى قيم R و G و B لإنتاج درجات اللون الرمادي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "gray.css",
+        "code": "/* درجات الرمادي */\ncolor: #333333; /* رمادي داكن */\ncolor: #888888; /* رمادي متوسط */\ncolor: #cccccc; /* رمادي فاتح */",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    },
+    {
+      "id": "hexa_intro",
+      "title": "مفهوم HEXA و Alpha",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى HEXA، وَهُوَ امْتِدَادٌ لِنِظَام HEX يُضِيفُ قَنَاة Alpha لِلتَّحَكُّمِ فِي الشَّفَافِيَّةِ. الصِّيغَة هِي #rrggbbaa، حَيْثُ يُحَدِّدُ الْجُزْءُ الْأَخِير aa دَرَجَة الشَّفَافِيَّةِ مِنْ 00 لِلشَّفَافِيَّةِ الْكَامِلَةِ إِلَى FF لِعَدَمِ الشَّفَافِيَّةِ.",
+        "caption_text": "نظام HEXA يضيف قناة Alpha للتحكم في شفافية اللون."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الصيغة: #rrggbbaa",
+          "aa يمثل قناة Alpha",
+          "00 تعني شفافية كاملة",
+          "FF تعني غير شفاف تماما",
+          "80 تعني شفافية بنسبة 50"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    },
+    {
+      "id": "hexa_example",
+      "title": "تطبيق عملي على HEXA",
+      "narration": {
+        "spoken_text": "لَاحِظُوا فِي هَذَا الْمِثَالِ كَيْفَ نَسْتَخْدِم HEXA لِتَحْدِيدِ لَوْنٍ مَعَ شَفَافِيَّة مُعَيَّنَة. اسْتِخْدَامُ 80 فِي نِهَايَةِ الْكُودِ يَجْعَلُ الْعُنْصُرَ شِبْهَ شَفَّافٍ، مِمَّا يَمْنَحُ تَصَامِيمَكُمْ مُرُونَة كَبِيرَة فِي التَّعَامُلِ مَعَ الْخَلْفِيَّاتِ الْمُتَدَاخِلَةِ.",
+        "caption_text": "استخدام HEXA مع قيمة 80 يمنح شفافية بنسبة 50."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "hexa.css",
+        "code": "/* مثال على HEXA */\n/* أحمر مع شفافية 50% */\ncolor: #ff000080;",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ الْفَرْقَ بَيْن HEX و HEXA وَكَيْفِيَّة التَّحَكُّمِ فِي الْأَلْوَانِ وَالشَّفَافِيَّةِ بِدِقَّة. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْقِيَمِ فِي مَشَارِيعِكُمُ الْبَرْمَجِيَّةِ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَعْزِيزِ مَهَارَاتِكُمْ فِي تَصْمِيمِ وَاجِهَاتِ الْوِيبِ.",
+        "caption_text": "مارسوا كتابة قيم HEX و HEXA لتتقنوا التحكم في ألوان صفحاتكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "HEX يستخدم 6 خانات للألوان",
+          "HEXA يستخدم 8 خانات مع Alpha",
+          "القيم بين 00 و FF",
+          "جربوا الأكواد بأنفسكم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors_hex.asp"
+      ]
+    }
+  ]
+}
