@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "35",
+  "title": "استخدام الصور كخلفية في HTML",
+  "course": "HTML",
+  "objectives": [
+    "تعلم كيفية إضافة صور كخلفية للعناصر",
+    "التحكم في تكرار الصور باستخدام CSS",
+    "ضبط حجم الخلفية لتغطية كامل العنصر",
+    "تثبيت صورة الخلفية أثناء التمرير"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_images_background.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-3aa0aead93550a46.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "",
+      "source_url": "https://www.w3schools.com/html/html_images_background.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول صور الخلفية",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة إِضَافَةِ صُورَة كَخَلْفِيَّة لِأَيِّ Element فِي HTML، وَذَلِكَ بِاسْتِخْدَامِ خَصَائِص CSS لِتَحْسِينِ الْمَظْهَرِ الْبَصَرِيِّ لِصَفَحَاتِ الْوِيبِ بِشَكْلٍ احْتِرَافِيٍّ وَجَذَّابٍ.",
+        "caption_text": "يمكن إضافة صورة كخلفية لأي Element في HTML باستخدام خصائص CSS."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "صور الخلفية تعزز التصميم البصري",
+          "يمكن تطبيقها على أي Element",
+          "تعتمد على خصائص CSS مثل background-image"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "inline_style",
+      "title": "إضافة الخلفية عبر Attribute",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا إِضَافَة صُورَة كَخَلْفِيَّة لِعُنْصُرٍ مُعَيَّنٍ مِثْل p بِاسْتِخْدَام style Attribute. نَقُومُ بِتَحْدِيد background-image وَإِسْنَادِ مَسَارِ الصُّورَةِ دَاخِلَ دَالَّة url، وَهَذِهِ الطَّرِيقَة مُبَاشِرَة وَسَرِيعَة لِتَطْبِيقِ التَّنْسِيقَاتِ عَلَى عُنْصُرٍ وَاحِدٍ.",
+        "caption_text": "استخدام style Attribute لإضافة صورة خلفية لعنصر p."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<p style=\"background-image: url('img_girl.jpg');\">\n  هذا النص يحتوي على صورة خلفية.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "style_element",
+      "title": "استخدام قسم style",
+      "narration": {
+        "spoken_text": "بَدَلاً مِنَ التَّنْسِيقِ الْمُبَاشِرِ، نُفَضِّلُ اسْتِخْدَام style Element دَاخِلَ قِسْم head. هَذَا يُسَاعِدُنَا فِي تَنْظِيمِ الْأَكْوَادِ وَتَطْبِيقِ التَّنْسِيقِ عَلَى كَافَّةِ الْعَنَاصِرِ مِنَ النَّوْعِ نَفْسِهِ بِكُلِّ سُهُولَة وَاحْتِرَافِيَّة.",
+        "caption_text": "تحديد صورة الخلفية داخل style Element في قسم head."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "style.html",
+        "code": "<style>\n  p {\n    background-image: url('img_girl.jpg');\n  }\n</style>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "body_background",
+      "title": "خلفية الصفحة بالكامل",
+      "narration": {
+        "spoken_text": "إِذَا أَرَدْتُمْ تَطْبِيقَ صُورَةِ خَلْفِيَّة عَلَى كَامِلِ الصَّفْحَةِ، فَيَجِبُ عَلَيْنَا اسْتِهْدَاف body Element. عِنْدَ تَطْبِيقِ هَذِهِ الْخَاصِّيَّةِ عَلَى body، سَتَظْهَرُ الصُّورَة خَلْفَ كُلِّ الْمُحْتَوَيَاتِ الْمَوْجُودَةِ فِي صَفْحَتِكُمْ.",
+        "caption_text": "تطبيق صورة الخلفية على كامل الصفحة عبر body Element."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "body.html",
+        "code": "<style>\n  body {\n    background-image: url('img_girl.jpg');\n  }\n</style>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "background_repeat",
+      "title": "التحكم في تكرار الصورة",
+      "narration": {
+        "spoken_text": "فِي الْحَالَةِ الِافْتِرَاضِيَّةِ، إِذَا كَانَتِ الصُّورَة أَصْغَرَ مِنَ الْعُنْصُرِ، فَإِنَّهَا تَتَكَرَّرُ. لِمَنْعِ هَذَا التَّكْرَارِ، نَسْتَخْدِمُ خَاصِّيَّة background-repeat مَعَ الْقِيمَة no-repeat، لِتَظْهَرَ الصُّورَة مَرَّة وَاحِدَة فَقَطْ دَاخِلَ الْعُنْصُرِ.",
+        "caption_text": "استخدام background-repeat لمنع تكرار صورة الخلفية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "repeat.css",
+        "code": "body {\n  background-image: url('img.jpg');\n  background-repeat: no-repeat;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "background_size",
+      "title": "تغطية وتمديد الخلفية",
+      "narration": {
+        "spoken_text": "لِجَعْلِ الصُّورَةِ تُغَطِّي الْعُنْصُرَ بِالْكَامِلِ، نَسْتَخْدِم background-size بِقِيمَة cover. كَمَا نُضِيف background-attachment بِقِيمَة fixed لِتَثْبِيتِ الصُّورَةِ، أَوْ نَسْتَخْدِمُ 100 100 لِتَمْدِيدِ الصُّورَةِ حَسَبَ أَبْعَادِ الْمُتَصَفِّحِ.",
+        "caption_text": "استخدام background-size و background-attachment للتحكم في عرض الخلفية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "cover.css",
+        "code": "body {\n  background-image: url('img.jpg');\n  background-size: cover;\n  background-attachment: fixed;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ كَيْفِيَّة التَّحَكُّمِ فِي صُوَرِ الْخَلْفِيَّةِ بِاسْتِخْدَام CSS. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَتَطْوِيرِ مَهَارَاتِكُمْ فِي تَصْمِيمِ الصَّفَحَاتِ. لَا تَتَرَدَّدُوا فِي زِيَارَةِ الرَّوَابِطِ الْمُوَضَّحَةِ لِلتَّعَمُّقِ أَكْثَرَ فِي خَصَائِص CSS.",
+        "caption_text": "مارسوا كتابة الأكواد لتطوير مهاراتكم في تصميم صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام background-image للصور",
+          "استخدام no-repeat لمنع التكرار",
+          "استخدام cover لتغطية كامل المساحة",
+          "استخدام fixed لتثبيت الخلفية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_images_background.asp"
+      ]
+    }
+  ]
+}
