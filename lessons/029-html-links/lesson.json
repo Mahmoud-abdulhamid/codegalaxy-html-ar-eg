@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "29",
+  "title": "تعلم إنشاء الروابط التشعبية باستخدام HTML Links",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم Hyperlinks وكيفية الربط بين صفحات الويب",
+    "استخدام a tag مع attribute من نوع href لتحديد الوجهة",
+    "التحكم في فتح الروابط عبر target attribute ونطاقات URLs",
+    "دمج الصور والبريد الإلكتروني وأزرار JavaScript داخل الروابط"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_links.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-1416c6f5882a20ad.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_links.asp",
+      "source_url": "https://www.w3schools.com/html/html_links.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-6c5e0f80814c8908.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_links.asp",
+      "source_url": "https://www.w3schools.com/html/html_links.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-81c620dc4b407be4.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_links.asp",
+      "source_url": "https://www.w3schools.com/html/html_links.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة عن HTML Links",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِنْشَاءِ الرَّوَابِطِ التَّشَعُبِيَّةِ وَكَيْفَ تُتِيحُ لِلْمُسْتَخْدِمِينَ الِانْتِقَالَ بِسَلَاسَة بَيْنَ صَفَحَاتِ الْوِيبِ الْمُخْتَلِفَةِ بِكُلِّ سُهُولَة.",
+        "caption_text": "تعتبر الروابط التشعبية أساسية في صفحات الويب لتسهيل التنقل."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تتواجد الروابط في جميع صفحات الويب تقريبا",
+          "تسمح Links للمستخدمين بالتنقل بسلاسة",
+          "تتحول مؤشرات الفأرة تلقائيا إلى شكل يد عند المرور فوقها"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_syntax",
+      "title": "الصيغة الأساسية وبنية الروابط",
+      "narration": {
+        "spoken_text": "لِإِنْشَاءِ رَابِطٍ تشعبي، نَسْتَخْدِم a tag. الْعُنْصُرُ الْأَهَمُّ هُنَا هُو href attribute الَّذِي يُحَدِّدُ عُنْوَانَ الْوِجْهَةِ الْمَطْلُوبَةِ، بَيْنَمَا النَّصُّ الظَّاهِرِيُّ يُسَمَّى link text وَيَظْهَرُ لِلْقَارِئِ مُبَاشَرَة.",
+        "caption_text": "يستخدم a tag لتعريف الرابط مع attribute من نوع href."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "link_syntax.html",
+        "code": "<a href=\"url\">\n  link text\n</a>",
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_example",
+      "title": "مثال عملي على الروابط الخارجية",
+      "narration": {
+        "spoken_text": "شَاهِدْ هَذَا الْمِثَالَ الْعَمَلِيَّ لِرَابِطٍ يَتَوَجَّهُ إِلَى مَوْقِع W3Schools. يَتَمَيَّزُ الْمُتَصَفِّحُ بِعَرْضِ الرَّوَابِطِ بِشَكْلٍ افْتِرَاضِيٍّ بِلَوْنٍ مُمَيَّزٍ وَتَحْتَهُ خَطٌّ لِتَمْيِيزِهِ عَنْ بَاقِي النُّصُوصِ.",
+        "caption_text": "مثال عملي لإنشاء رابط يوجه المستخدم إلى موقع خارجي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "external_link.html",
+        "code": "<a href=\"https://www.w3schools.com/\">\n  Visit W3Schools.com!\n</a>",
+        "highlight_lines": [
+          1
+        ],
+        "output": "Visit W3Schools.com!",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_target",
+      "title": "التحكم في نافذة العرض عبر target Attribute",
+      "narration": {
+        "spoken_text": "بِدُونِ إِضَافَاتٍ، تُفْتَحُ الصَّفْحَة الْمَوْصُولَة فِي نَفْسِ نَافِذَةِ الْمُتَصَفِّحِ الْحَالِيَّةِ. وَلَكِنْ، إِذَا أَرَدْتَ فَتْحَهَا فِي تَبْوِيبٍ جَدِيدٍ، يُمْكِنُكَ اسْتِخْدَام target attribute مَعَ قِيمَة _blank.",
+        "caption_text": "يحدد target attribute المكان الذي سيتم فيه فتح المستند المرتبط."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "target_attr.html",
+        "code": "<a href=\"https://www.w3schools.com/\"\n   target=\"_blank\">\n  Visit W3Schools!\n</a>",
+        "highlight_lines": [
+          2
+        ],
+        "output": "Opens in new tab",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_urls",
+      "title": "الفرق بين Absolute URLs وRelative URLs",
+      "narration": {
+        "spoken_text": "فِي الرَّوَابِطِ، نَسْتَخْدِم absolute URL لِعَنَاوِينِ الْوِيبِ الْكَامِلَةِ الَّتِي تَتَضَمَّنُ الْبَرُوتوكول وَالنِّطَاقَ. أَمَّا relative URL فَتُسْتَخْدَمُ لِلرَّوَابِطِ الْمَحَلِّيَّةِ دَاخِلَ نَفْسِ الْمَوْقِعِ بِدُونِ الْحَاجَةِ لِتَكْرَارِ الْعُنْوَانِ.",
+        "caption_text": "الفرق بين الروابط المطلقة والروابط النسبية في المواقع."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "urls_example.html",
+        "code": "<h2>Absolute URLs</h2>\n<p><a href=\"https://www.google.com/\">Google</a></p>\n<h2>Relative URLs</h2>\n<p><a href=\"html_images.asp\">HTML Images</a></p>",
+        "highlight_lines": [
+          2,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_media_links",
+      "title": "استخدام الصور والبريد الإلكتروني كروابط",
+      "narration": {
+        "spoken_text": "لَا يَقْتَصِرُ الرَّابِطُ عَلَى النُّصُوصِ فَقَطْ يُمْكِنُكَ وَضْع img tag دَاخِل a tag لِتُصْبِحَ الصُّورَة رَابِطاً، كَمَا يَحْدُثُ عِنْدَ اسْتِخْدَام mailto لِفَتْحِ بَرْنَامَجِ الْبَرِيدِ.",
+        "caption_text": "يمكن تحويل الصور أو عناوين البريد الإلكتروني إلى روابط تشعبية فعالة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "image_link.html",
+        "code": "<a href=\"default.asp\">\n  <img src=\"smiley.gif\" alt=\"Tutorial\" \n       style=\"width:42px;height:42px;\">\n</a>",
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_buttons",
+      "title": "استخدام الأزرار والعناوين التوضيحية Link Titles",
+      "narration": {
+        "spoken_text": "وَإِذَا أَرَدْتَ اسْتِخْدَام button كرانط، فَيُمْكِنُكَ الِاسْتِعَانَة بِبَعْضِ أَكْوَاد JavaScript لِتَحْدِيدِ الوَظِيفَةِ. كَمَا يُتِيحُ لَنَا title attribute إِضَافَة مَعْلُومَاتٍ تَظْهَرُ كَـ tooltip عِنْدَ تَحْرِيكِ الْمُؤَشِّرِ فَوْقَ الْعُنْصُرِ.",
+        "caption_text": "استخدام الأزرار مع JavaScript وإضافة عناوين توضيحية باستخدام title."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "button_title.html",
+        "code": "<button onclick=\"document.location='default.asp'\">\n  HTML Tutorial\n</button>\n<a href=\"url\" title=\"More info\">Link</a>",
+        "highlight_lines": [
+          1,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    },
+    {
+      "id": "scene_summary",
+      "title": "خلاصة الدرس وأفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ بِنَاءِ الرَّوَابِطِ التَّشَعُبِيَّةِ بِاحْتِرَافِيَّة تَامَّة. نَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ لِاسْتِكْمَالِ رِحْلَتِنَا الْمُمْتِعَةِ فِي تَعَلُّمِ مَهَارَاتِ تَصْمِيمِ وَتَطْوِيرِ الْوِيبِ مَعَ كُودِ جَلَاكْسِي.",
+        "caption_text": "ملخص شامل لأهم مهارات التعامل مع HTML Links."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام a tag وhref attribute للربط الأساسي",
+          "التحكم في النوافذ عبر target attribute",
+          "استخدام Absolute URLs والروابط النسبية Relative URLs",
+          "تضمين الصور والأزرار وتخصيص عناوين العناصر بـ title"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_links.asp"
+      ]
+    }
+  ]
+}
