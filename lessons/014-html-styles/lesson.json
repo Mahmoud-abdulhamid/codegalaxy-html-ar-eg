@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "14",
+  "title": "HTML Styles",
+  "course": "HTML",
+  "objectives": [
+    "فهم استخدام style attribute لإضافة تنسيقات CSS للعناصر",
+    "تعلم تطبيق background-color و color",
+    "استخدام font-family و font-size لتنسيق النصوص",
+    "تطبيق text-align لمحاذاة النصوص أفقيا"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_styles.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-e2f84f3cedb2d379.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_styles.asp",
+      "source_url": "https://www.w3schools.com/html/html_styles.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-a616244baff67848.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_styles.asp",
+      "source_url": "https://www.w3schools.com/html/html_styles.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-22f2c31566bd002f.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_styles.asp",
+      "source_url": "https://www.w3schools.com/html/html_styles.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة حول HTML Styles",
+      "narration": {
+        "spoken_text": "مَرْحَبًا بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِضَافَةِ تَنْسِيقَاتٍ مُمَيِّزَة لِلْعَنَاصِرِ بِاسْتِخْدَام style attribute لِتَغْيِيرِ الْأَلْوَانِ وَالْأَحْجَامِ.",
+        "caption_text": "تعلم كيفية استخدام style attribute لإضافة تنسیقات CSS إلى عناصر HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لتصميم صفحات الويب",
+          "يضيف style attribute مظهرا جماليا للعناصر",
+          "نتعلم التحكم بالألوان والخطوط والأحجام"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_syntax",
+      "title": "الصيغة العامة لـ style attribute",
+      "narration": {
+        "spoken_text": "تَتَمُّ كِتَابَة style attribute دَاخِلَ أَيِّ Tag بِالصِّيغَةِ التَّالِيَةِ: property نُقْطَتَانِ ثُمَّ value. هَذَا يُتِيحُ لَنَا دَمْجَ قَوَاعِد CSS مُبَاشَرَة دَاخِلَ الْعُنْصُرِ.",
+        "caption_text": "الصيغة العامة لكتابة التنسيق باستخدام style attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "syntax.html",
+        "code": "<tagname\n  style=\"property:value;\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_bg_color",
+      "title": "تغيير لون خلفية الصفحة",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى background-color property وَالَّتِي تُحَدِّدُ لَوْنَ خَلْفِيَّةِ الْعُنْصُرِ مِثْل body، لِنَجْعَلَ لَوْنَ الصَّفْحَةِ بِأَكْمَلِهَا بِدَرَجَة powderblue الْجَمِيلَةِ.",
+        "caption_text": "تحديد لون الخلفية باستخدام background-color داخل عنصر body."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "bg_color.html",
+        "code": "<body style=\"background-color:powderblue;\">\n  <h1>This is a heading</h1>\n  <p>This is a paragraph.</p>\n</body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_multi_bg",
+      "title": "خلفيات متعددة للعناصر",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا تَطْبِيق background-color عَلَى عَنَاصِرَ مُخْتَلِفَة فِي نَفْسِ الصَّفْحَةِ، مِثْلَ إِعْطَاءِ الْعُنْصُر h1 لَوْنَ خَلْفِيَّة powderblue، وَعُنْصُر p لَوْن tomato.",
+        "caption_text": "تطبيق خلفيات مختلفة لعنصرين مستقلين في صفحة HTML واحدة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "multi_bg.html",
+        "code": "<body>\n  <h1 style=\"background-color:powderblue;\">\n    This is a heading\n  </h1>\n  <p style=\"background-color:tomato;\">\n    This is a paragraph.\n  </p>\n</body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_text_color",
+      "title": "تغيير لون النصوص",
+      "narration": {
+        "spoken_text": "تُتِيحُ لَنَا property المُسَمَّى color التَّحَكُّمَ فِي لَوْنِ النَّصِّ دَاخِلَ أَيِّ Element، حَيْثُ نَكْتُب color: blue لعنوان الرَّئِيسِيِّ و color: red لِلْفَقْرَةِ.",
+        "caption_text": "استخدام خاصية color لتغيير لون النصوص داخل العناصر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "text_color.html",
+        "code": "<h1 style=\"color:blue;\">\n  This is a heading\n</h1>\n<p style=\"color:red;\">\n  This is a paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_fonts",
+      "title": "تنسيق الخطوط عبر font-family",
+      "narration": {
+        "spoken_text": "تَسْتَطِيعُ تَحْدِيدَ نَوْعِ الْخَطِّ المُسْتَخْدَمِ فِي الْعُنْصُرِ عَبْر font-family property، مِثْلَ اسْتِخْدَامِ خَطِّ verdana لِلْعُنْوَانِ و courier لِلْفَقْرَةِ الْعَادِيَّةِ.",
+        "caption_text": "تغيير نوع خط النص باستخدام خصائص CSS داخل HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "fonts.html",
+        "code": "<h1 style=\"font-family:verdana;\">\n  This is a heading\n</h1>\n<p style=\"font-family:courier;\">\n  This is a paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_text_size",
+      "title": "التحكم في حجم النصوص",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا تَعْدِيلُ حَجْمِ النَّصِّ بِاسْتِخْدَام font-size property، حَيْثُ نُحَدِّدُ النِّسَبَ الْمِئَوِيَّة مِثْلَ ثَلَاثُمِائَة بِالْمِائَةِ لِلْعُنْوَانِ وَمِائَة وَسِتِّينَ بِالْمِائَةِ لِلْفَقْرَةِ.",
+        "caption_text": "ضبط أحجام النصوص باستخدام النسبة المئوية في font-size."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "text_size.html",
+        "code": "<h1 style=\"font-size:300%;\">\n  This is a heading\n</h1>\n<p style=\"font-size:160%;\">\n  This is a paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_text_align",
+      "title": "محاذاة النصوص أفقيا",
+      "narration": {
+        "spoken_text": "أَمَّا property المُسَمَّى text-align فَيُتِيحُ لَنَا مُحَاذَاة النُّصُوصِ أُفُقِيًّاً دَاخِلَ الْعُنْصُرِ، وَجَعْلَ الْعُنْوَانِ وَالْفَقْرَةِ فِي الْمُنْتَصَفِ بِاسْتِخْدَامِ قِيمَة center.",
+        "caption_text": "محاذاة النصوص في منتصف الصفحة باستخدام text-align."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "text_align.html",
+        "code": "<h1 style=\"text-align:center;\">\n  Centered Heading\n</h1>\n<p style=\"text-align:center;\">\n  Centered paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    },
+    {
+      "id": "scene_summary",
+      "title": "خلاصة الدرس وتطبيقات العمل",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا الْيَوْمَ عَلَى ميزة style attribute وَكَيْفِيَّةِ تَطْبِيقِ خَصَائِص CSS المُخْتَلِفَةِ لِتَلْوِينِ الْخَلْفِيَّاتِ، وَتَغْيِيرِ الْأَلْوَانِ، وَأَحْجَامِ الْخُطُوطِ، وَمُحَاذَاةِ النُّصُوصِ بِاحْتِرَافِيَّة.",
+        "caption_text": "ملخص شامل لكل ما تعلمناه حول تنسيق عناصر HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام style attribute للتنسيق المباشر",
+          "تغيير background-color و color",
+          "ضبط font-family و font-size و text-align"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_styles.asp"
+      ]
+    }
+  ]
+}
