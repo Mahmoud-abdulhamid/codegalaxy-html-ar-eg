@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "15",
+  "title": "HTML Styles Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام Attribute من نوع style في HTML",
+    "تطبيق التنسيقات المباشرة على Elements",
+    "التعرف على بنية الـ CSS داخل HTML",
+    "حل تحديات البرمجة الخاصة بتنسيق النصوص"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_styles.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول HTML Styles",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة تَحْسِينِ مَظْهَرِ صَفَحَاتِ الْوِيبِ بِاسْتِخْدَام Attribute الْخَاصِّ بِـ style، وَهُوَ مَهَارَة أَسَاسِيَّة لِكُلِّ مُطَوِّرٍ يَرْغَبُ فِي التَّحَكُّمِ بِتَصْمِيمِ الْعَنَاصِرِ مُبَاشَرَة.",
+        "caption_text": "مرحبا بكم في درس HTML Styles حيث نتعلم التحكم في مظهر العناصر باستخدام Attribute المسمى style."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام style Attribute لتنسيق العناصر",
+          "تغيير الألوان والخطوط والأحجام",
+          "فهم كيفية دمج CSS داخل HTML",
+          "تطبيق التحديات البرمجية العملية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "مفهوم الـ Style Attribute",
+      "narration": {
+        "spoken_text": "تُسْتَخْدَم Attribute الَّتِي تُسَمَّى style لِإِضَافَةِ تَصْمِيمَات CSS إِلَى Elements. نَقُومُ بِكِتَابَتِهَا دَاخِل Start Tag، وَتَتَكَوَّنُ مِنْ Property و Value. هَذِهِ الطَّرِيقَة تُسَاعِدُنَا فِي تَغْيِيرِ مَظْهَرِ الْعُنْصُرِ بِسُرْعَة وَدِقَّة عَالِيَة.",
+        "caption_text": "يتم إضافة style Attribute داخل Start Tag لتحديد خصائص التصميم مثل اللون أو الحجم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "البنية: <tag style=\"property: value\">",
+          "تستخدم لتغيير لون النص عبر color",
+          "تستخدم لتغيير حجم الخط عبر font-size",
+          "تستخدم لتغيير لون الخلفية عبر background-color"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    },
+    {
+      "id": "code_example",
+      "title": "تطبيق عملي على Style",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَقُومُ بِتَطْبِيقِ تَغْيِيرِ لَوْنِ الْخَلْفِيَّةِ لِعُنْصُر body، وَتَغْيِيرِ لَوْنِ النَّصِّ لِعُنْصُر h1. لَاحِظْ كَيْفَ نَكْتُب Property و Value بَيْنَ عَلَامَتَيِ التَّنْصِيصِ دَاخِل style Attribute بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "مثال يوضح تطبيق style على عناصر body و h1 لتغيير الألوان."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body style=\"background-color: powderblue;\">\n<h1 style=\"color: blue;\">\nهذا عنوان ملون\n</h1>\n<p style=\"color: red;\">\nهذه فقرة بنص أحمر\n</p>\n</body>",
+        "highlight_lines": [],
+        "output": "يظهر العنوان باللون الأزرق والنص باللون الأحمر والخلفية زرقاء فاتحة",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    },
+    {
+      "id": "syntax_details",
+      "title": "قواعد كتابة الـ Styles",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَنْتَبِهَ لِقَوَاعِدِ الْكِتَابَةِ. بَعْدَ كُلِّ Property نَضَعُ نُقْطَة وَفَاصِلَة، وَنَفْصِلُ بَيْن Property و Value بِعَلَامَةِ النِّقَاطِ الرَّأْسِيَّةِ. هَذِهِ الْقَوَاعِدُ ضَرُورِيَّة لِكَيْ يَقْرَأ Web Browser التَّنْسِيقَاتِ بِشَكْلٍ صَحِيحٍ دُونَ أَيِّ أَخْطَاءٍ.",
+        "caption_text": "قواعد كتابة CSS داخل HTML تتطلب دقة في استخدام الفواصل والنقاط الرأسية."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "المصطلح",
+          "الوظيفة",
+          "مثال"
+        ],
+        "rows": [
+          [
+            "Property",
+            "الخاصية المراد تغييرها",
+            "color"
+          ],
+          [
+            "Value",
+            "القيمة الجديدة للخاصية",
+            "blue"
+          ],
+          [
+            "Syntax",
+            "طريقة الربط",
+            "property: value"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ أَنْ نَفْصِلَ التَّنْسِيقَاتِ فِي مِلَفٍّ خَارِجِيٍّ عِنْدَمَا يَكْبُرُ الْمَشْرُوعُ. لَكِنْ فِي التَّحَدِّيَاتِ الْبَسِيطَةِ، يُعَدُّ اسْتِخْدَام style Attribute وَسِيلَة مُمْتَازَة لِتَعَلُّمِ كَيْفِيَّةِ تَأْثِير CSS عَلَى Elements بِشَكْلٍ مُبَاشِرٍ وَسَرِيعٍ.",
+        "caption_text": "استخدام style Attribute مفيد للتعلم، ولكن يفضل استخدام ملفات CSS خارجية للمشاريع الكبيرة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم style للنماذج السريعة",
+          "افصل CSS في ملفات خارجية للمشاريع الكبيرة",
+          "حافظ على نظافة الكود وتنسيقه",
+          "جرب تغيير القيم لرؤية النتائج فورا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا كَيْفَ نُضِيفُ لَمَسَاتٍ جَمَالِيَّة لِصَفْحَاتِنَا. أَدْعُوكُمْ لِتَجْرِبَةِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُحَاوَلَةِ حَلِّ التَّحَدِّيَاتِ الْمَوْجُودَةِ فِي الرَّابِطِ الْمُدْرَجِ فِي الْوَصْفِ لِتَثْبِيتِ الْمَعْلُومَاتِ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "قم بتجربة الأكواد وحل التحديات لتعزيز مهاراتك في HTML و CSS."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تمت تغطية style Attribute",
+          "تم شرح كيفية كتابة الخصائص والقيم",
+          "تم توضيح أهمية الدقة في الـ Syntax",
+          "شجعنا على التطبيق العملي المستمر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_styles.asp"
+      ]
+    }
+  ]
+}
