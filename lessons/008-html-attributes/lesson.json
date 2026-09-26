@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "8",
+  "title": "HTML Attributes",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم HTML attributes ودورها في توفير معلومات إضافية عن Elements",
+    "التعرف على استخدام Attributes الأساسية مثل href و src و alt و style و lang و title",
+    "الفرق بين Absolute URL و Relative URL في مسارات الصور",
+    "أفضل الممارسات البرمجية مثل استخدام الحروف الصغيرة والقيم المحاطة بعلامات التنصيص"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_attributes.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-64623088e712fa7f.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_attributes.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-2e9ce00a3006331b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_attributes.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-7ab0a46734aafb36.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_attributes.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة Attributes",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى HTML attributes وَكَيْفَ تُوَفِّرُ مَعْلُومَاتٍ إِضَافِيَّة عَنْ Elements دَاخِلَ صَفْحَةِ الويب.",
+        "caption_text": "تعلم كيفية استخدام HTML attributes لتوفير معلومات إضافية عن Elements."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم HTML attributes لتوفير معلومات إضافية عن Elements",
+          "تكتب دائما داخل Start Tag للعنصر",
+          "تتكون عادة من name و value مثل name=\"value\""
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "شرح The href Attribute",
+      "narration": {
+        "spoken_text": "نَبْدَأُ مَع href attribute. الرَّمْز a يَعْرِف hyperlink، وَخَاصِيَّة href تُحَدِّدُ عُنْوَان URL لِلصَّفْحَةِ الْمَقْصُودَةِ عِنْدَ النَّفَرِ عَلَى الرَّابِطِ.",
+        "caption_text": "تحديد الروابط باستخدام a tag و href attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "link.html",
+        "code": "<a href=\"https://www.w3schools.com\">\n  Visit W3Schools\n</a>",
+        "highlight_lines": [],
+        "output": "Visit W3Schools",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "شرح The src Attribute",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ إِلَى img tag وَسَخْم src attribute لِإِدْرَاجِ الصُّوَرِ فِي صَفْحَةِ الويب، حَيْثُ نُحَدِّدُ إِمَّا مَسَاراً مُطْلَقا Absolute URL أَوْ مَسَاراً نِسْبِيّا Relative URL.",
+        "caption_text": "استخدام img tag مع src attribute لعرض الصور."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "image.html",
+        "code": "<img src=\"img_girl.jpg\">\n<img src=\"/images/img_girl.jpg\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح Width, Height and Alt Attributes",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ تَتَحَوَّلَ الصُّوَرِ أَيْضاً إِلَى width و height attributes لِتَحْدِيدِ الْأَبْعَادِ بِالْبِكْسِلْ، كَمَا نَسْتَخْدِم alt attribute الضَّرُورِيَّ لِوَصْفِ الصُّورَةِ عِنْدَ تَعَذُّرِ عَرْضِهَا.",
+        "caption_text": "تحديد الأبعاد باستخدام width و height والنص البديل عبر alt attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "dimensions.html",
+        "code": "<img src=\"img_girl.jpg\"\n     width=\"500\"\n     height=\"600\"\n     alt=\"Girl with a jacket\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح The style and lang Attributes",
+      "narration": {
+        "spoken_text": "تَسْتَخْدِم style attribute لِإِضَافَةِ تَنْسِيقَاتٍ مِثْلِ اللَّوْنِ وَالْخَطِّ، بَيْنَمَا نُضَمِّن lang attribute دَاخِل html tag لِتَحْدِيدِ لُغَةِ الصَّفْحَةِ لِمُسَاعَدَةِ مُحَرِّكَاتِ الْبَحْثِ.",
+        "caption_text": "تطبيق التنسيق عبر style وتحديد لغة الصفحة عبر lang attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "style-lang.html",
+        "code": "<html lang=\"en\">\n<body>\n  <p style=\"color:red;\">\n    This is a red paragraph.\n  </p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": "This is a red paragraph. (in red color)",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "شرح The title Attribute",
+      "narration": {
+        "spoken_text": "خَاصِيَّة title تُعَرِّفُ مَعْلُومَاتٍ إِضَافِيَّة عَنِ الْعُنْصُرِ، وَتَظْهَرُ كَنَصٍّ تَوْضِيحِيٍّ Tooltip عِنْدَ مُرُورِ مُؤَشِّرِ الْفَأْرَةِ فَوْقَ الْعُنْصُرِ فِي الْمُتَصَفِّحِ.",
+        "caption_text": "عرض معلومات إضافية كرمز توضيحي Tooltip باستخدام title attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "title.html",
+        "code": "<p title=\"I'm a tooltip\">\n  This is a paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": "This is a paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "شرح Best Practices for Attributes",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ الْهَنْدَسِيَّةِ هُوَ اسْتِخْدَامُ الْحُرُوفِ الصَّغِيرَةِ لِأَسْمَاء Attributes، وَوَضْعُ الْقِيَمِ بَيْنَ عَلَامَاتِ تَنْصِيسٍ مُزْدَوِجَة أَوْ فَرْدِيَّة لِتَفَادِي الْأَخْطَاءِ دَاخِلَ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "أفضل الممارسات: استخدام الحروف الصغيرة وإحاطة القيم بعلامات التنصيص."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "توصي W3C دائما باستخدام الحروف الصغيرة لأسماء Attributes",
+          "يجب دائما إحاطة قيم Attributes بعلامات تنصيص Quotes",
+          "استخدام علامات التنصيص المفردة أو المزدوجة عند احتواء القيمة على علامات أخرى"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا فِي هَذَا الدَّرْسِ عَلَى أَهَمِّيَّة HTML attributes وَكَيْفِيَّةِ اسْتِخْدَام href و src و alt و style و lang و title لِبِنَاءِ صَفَحَاتِ وَيْبٍ احْتِرَافِيَّة وَآمِنَة.",
+        "caption_text": "خلاصة شاملة لمهارات استخدام Attributes في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "Attributes تمنح Elements مرونة وقدرات وظيفية متقدمة",
+          "استخدام المسارات النسبية يمنع انكسار الروابط عند تغيير النطاق",
+          "الالتزام بالمعايير القياسية يضمن توافقية عالية مع جميع المتصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_attributes.asp"
+      ]
+    }
+  ]
+}
