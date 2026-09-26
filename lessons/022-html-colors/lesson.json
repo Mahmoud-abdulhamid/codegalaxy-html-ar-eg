@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "22",
+  "title": "تعلم ألوان HTML وتنسيق الخلفيات والنصوص والحدود",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام أسماء الألوان المعرفة مسبقا في HTML",
+    "تطبيق خاصية background-color لتغيير لون خلفية Elements",
+    "تنسيق لون النص وborders باستخدام خاصية style",
+    "التعرف على قيم الألوان المتقدمة مثل RGB و HEX و HSL"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_colors.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-b5c4221f64bacb77.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_colors.asp",
+      "source_url": "https://www.w3schools.com/html/html_colors.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-b1b9501f70bbc886.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_colors.asp",
+      "source_url": "https://www.w3schools.com/html/html_colors.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-8b9b80c29ab28128.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_colors.asp",
+      "source_url": "https://www.w3schools.com/html/html_colors.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة ألوان HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML، سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ تَحْدِيدِ الْأَلْوَانِ لِعَنَاصِرِ صَفْحَةِ الْوِيبِ، فَهُنَاكَ طُرُقٌ مُتَعَدِّدَة مِثْلَ اسْتِخْدَامِ أَسْمَاءِ الْأَلْوَانِ الصَّرِيحَةِ أَوْ قِيَم RGB و HEX و HSL و RGBA.",
+        "caption_text": "تحدد ألوان HTML باستخدام أسماء الألوان المعرفة مسبقا أو قيم RGB و HEX و HSL."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم الألوان لتحسين المظهر البصري لصفحات الويب",
+          "يدعم متصفح الويب مائة وأربعين اسما قياسيا للألوان",
+          "يمكن تحديد الألوان باستخدام الأسماء أو القيم الرقمية",
+          "تمنحنا أنظمة الألوان مرونة كاملة في التصميم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "تنسيق لون الخلفية",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى كَيْفِيَّةِ تَحْدِيدِ لَوْنِ الْخَلْفِيَّةِ لِعَنَاصِر HTML، نَسْتَخْدِمُ خَاصِيَة background-color دَاخِل Attribute style، وَلَاحِظْ كَيْفَ نُطَبِّقُ ذَلِكَ عَمَلِيّاً.",
+        "caption_text": "يمكنك ضبط لون خلفية عناصر HTML باستخدام خاصية style ودالة background-color."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "background.html",
+        "code": "<h1 style=\n\"background-color:\nDodgerBlue;\">\nHello World\n</h1>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "output": "Hello World بخلفية زرقاء",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "تنسيق لون النصوص",
+      "narration": {
+        "spoken_text": "بِإِمْكَانِنَا أَيْضاً تَغْيِيرُ لَوْنِ النَّصِّ بِنَفْسِ الطَّرِيقَةِ تَقْرِيباً، فَاسْتِخْدَامُ خَاصِيَة color يُتِيحُ لَنَا تَمْيِيزَ الْعَنَاصِرِ وَالْفِقْرَاتِ بِأَلْوَانٍ جَذَّابَة مِثْل Tomato و MediumSeaGreen.",
+        "caption_text": "تستطيع تغيير لون النصوص مباشرة عبر خاصية color وإعطائها اسم اللون المناسب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "textcolor.html",
+        "code": "<p style=\n\"color:\nTomato;\">\nLorem ipsum...\n</p>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "output": "Lorem ipsum بلون الطماطم",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "تنسيق حدود العناصر",
+      "narration": {
+        "spoken_text": "لَا تَقْتَصِرُ التَّنْسِيقَاتُ عَلَى الْخَلْفِيَّاتِ وَالنُّصُوصِ فَقَحْ، بَلْ يُمْكِنُ أَيْضاً تِلْوِينُ الْحُدُودِ الْمُحِيطَةِ بِالْعَنَاصِرِ بِاسْتِخْدَامِ خَاصِيَة border مَعَ حَدَسِ السُّمْكِ وَالنَّوْعِ وَاللَّوْنِ.",
+        "caption_text": "يمكنك تعيين لون حدود العناصر باستخدام خاصية border مع تحديد السمك والنوع."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "bordercolor.html",
+        "code": "<h1 style=\n\"border:2px\nsolid\nTomato;\">\nHello\n</h1>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "output": "عنصر يحمل حدودا بلون الطماطم",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة النتيجة المرئية",
+      "narration": {
+        "spoken_text": "تَشَاهِدُونَ الْآنَ النَّتِيجَة الْمَرْئِيَّة عِنْدَ تَنْفِيذِ هَذِهِ الْأَكْوَادِ فِي الْمُتَصَفِّحِ، كَيْفَ تَبْدُو الْعَنَاصِرُ بِخَلْفِيَّاتٍ وَأَلْوَانٍ مُتَنَوِّعَة تَجْذِبُ انْتِبَاهَ الْمُسْتَخْدِمِ.",
+        "caption_text": "صورة المعاينة توضح ظهور العناصر في المتصفح بالخلفيات والألوان المختلفة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة ألوان العناصر في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "قيم الألوان المتقدمة",
+      "narration": {
+        "spoken_text": "إِلَى جَانِبِ أَسْمَاءِ الْأَلْوَانِ، تَدْعَمُ لُغَة HTML قِيَم RGB و HEX و HSL، وَهِيَ تَمْنَحُ الْمُطَوِّرَ تَحَكُّماً هَائِلاً فِي دَرَجَاتِ الْأَلْوَانِ بِدَقَّة عَالِيَة جِدّاً.",
+        "caption_text": "يمكن تحديد الألوان أيضا باستخدام قيم RGB أو HEX أو HSL للحصول على دقة أكبر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "colorvalues.html",
+        "code": "<h1 style=\n\"background-color:\nrgb(255,\n99, 71);\">\n...</h1>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "output": "خلفية محددة بقيم RGB",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "قنوات الشفافية والـ Alpha",
+      "narration": {
+        "spoken_text": "وَأَخِيراً، يُمْكِنُنَا اسْتِخْدَامُ قِيَم RGBA و HSLA لِإِضَافَةِ قَنَاةِ الشَّفَافِيَّةِ أَوْ مَا يُسَمَّى Alpha channel، وَهَذَا يُسَاعِدُنَا فِي تَصْمِيمِ وَوَاجِهَاتٍ أَكْثَرَ احْتِرَافِيَّة.",
+        "caption_text": "تضيف قيم RGBA و HSLA قناة الشفافية إلى اللون لإنشاء تأثيرات بصرية رائعة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تدعم صيغ RGBA و HSLA تحديد نسبة الشفافية",
+          "تتراوح قيمة الشفافية بين الصفر والواحد الصحيح",
+          "تفيد الشفافية في تداخل العناصر والخلفيات",
+          "تعتبر أدوات أساسية للمصممين المحترفين"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا فِي هَذَا الدَّرْسِ عَلَى طُرُقِ تَحْدِيدِ الْأَلْوَانِ فِي HTML، سَوَاءٌ بِالْأَسْمَاءِ أَوْ بِقِيَم RGB و HEX و HSL وَقَنَوَاتِ الشَّفَافِيَّةِ، نَنْتَظِرُ تَجَارِبَكُمُ الرَّائِعَة وَنَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "بهذا نكون قد تعرفنا على كافة طرق تلوين العناصر وتنسيقها باحترافية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام أسماء الألوان المعرفة مسبقا",
+          "تنسيق الخلفيات والنصوص والحدود بخاصية style",
+          "استخدام القيم الرقمية RGB و HEX",
+          "التحكم بالشفافية عبر RGBA و HSLA"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_colors.asp"
+      ]
+    }
+  ]
+}
