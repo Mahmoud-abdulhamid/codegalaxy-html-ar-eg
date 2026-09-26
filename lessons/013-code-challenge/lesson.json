@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "13",
+  "title": "HTML Paragraphs Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "اختبار الفهم العملي لفقرات HTML",
+    "تطبيق مفاهيم Paragraphs و Breaks",
+    "التعامل مع النصوص المنسقة مسبقا"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro_scene",
+      "title": "مقدمة تحدي فقرات HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بكم يا أصدقائي في هذا الدرس العملي الجديد من دورة HTML، سنقوم اليوم بحل تحدي البرمجة الخاص بفقرات النصوص والمزيد من العناصر الهامة.",
+        "caption_text": "مرحبا بكم في درس جديد لاختبار مهارات فقرات HTML وتطبيق التحديات البرمجية بأسلوب عملي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختبار المهارات في لغة HTML",
+          "التركيز على فقرات النصوص والعناصر",
+          "تطبيق التحديات البرمجية بشكل عملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "challenge_overview",
+      "title": "فهم تحدي الفقرات",
+      "narration": {
+        "spoken_text": "يُتيح لنا هذا التحدي اختبار مدى استيعابنا لموضوع Paragraphs وكيفية تنسيق النصوص داخل صفحة الويب باستخدام Tags المناسبة بدقة عالية.",
+        "caption_text": "يتيح لنا التحدي اختبار استيعاب فقرات HTML وكيفية تنسيق النصوص باستخدام Tags المناسبة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تقييم الفهم الحقيقي لـ Paragraphs",
+          "استخدام Tag p لتنظيم النصوص",
+          "تحسين بنية صفحات الويب وتنسيقها"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "code_structure",
+      "title": "كتابة هيكل التحدي البرمجي",
+      "narration": {
+        "spoken_text": "لَنُلْقِ نظرة على الهيكل الأساسي الذي سنستخدمه في كتابة الكود البرمجي لحل التحدي، حيث نبدأ دائماً بتعريف DOCTYPE HTML وتجهيز العناصر الأساسية.",
+        "caption_text": "هيكل الكود الأساسي لحل التحدي مع تعريف DOCTYPE وتجهيز عناصر المستند."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Challenge</title>\n</head>\n<body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "adding_paragraphs",
+      "title": "إضافة فقرات النصوص",
+      "narration": {
+        "spoken_text": "نُتابع كتابة الكود من خلال إضافة فقرات النصوص باستخدام الرمز p لضمان ظهور النصوص بشكل مُرَتَّب وواضح للمستخدم داخل المتصفح أثناء التصفح.",
+        "caption_text": "إضافة فقرات النصوص باستخدام Tag p لتنظيم محتوى صفحة الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "paragraphs.html",
+        "code": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "using_breaks_and_pre",
+      "title": "استخدام Breaks والنصوص المنسقة",
+      "narration": {
+        "spoken_text": "يمكننا أيضاً استخدام Tag br لإحداث سطر جديد بدون إنشاء فقرة جديدة، أو استخدام pre لعرض النصوص المُنَسَّقَة مسبقاً كما هي تماماً.",
+        "caption_text": "استخدام Tag br لإضافة سطر جديد واستخدام pre للنصوص المنسقة مسبقا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "breaks.html",
+        "code": "<p>First line<br>Second line</p>\n<pre>Preformatted text</pre>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "closing_html",
+      "title": "إنهاء وتغليف هيكل الصفحة",
+      "narration": {
+        "spoken_text": "بعد الانتهاء من كتابة جميع الفقرات والعناصر المطلوبة في التحدي، نقوم بإغلاق Tag body وأيضا Tag html لضمان صحة الكود وسلامته البرمجية.",
+        "caption_text": "إغلاق Tags body و html لإنهاء صفحة الويب البرمجية بشكل صحيح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "close.html",
+        "code": "</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "تذكروا دائماً أهمية إغلاق Tags بشكل صحيح، والحرص على كتابة أكواد نظيفة ومنظمة لتسهيل قراءتها وصيانتها في المستقبل القريب.",
+        "caption_text": "أفضل الممارسات تشمل إغلاق Tags بانتظام وكتابة أكواد نظيفة ومنظمة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الالتزام بإغلاق كل Start Tag بـ End Tag",
+          "الحفاظ على تنسيق الأسطر والمسافات البادئة",
+          "مراجعة الكود قبل تنفيذه في المتصفح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    },
+    {
+      "id": "conclusion_scene",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "بهذا نكون قد أتممنا حل تحدي الفقرات بنجاح تام، أدعوكم لتجربة الأكواد بأنفسكم من خلال الرابط الموجود في وصف الفيديو، وإلى اللقاء في الدرس القادم.",
+        "caption_text": "خلاصة الدرس مع دعوة لتجربة الأكواد بأنفسكم من خلال الرابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إتمام التحدي بنجاح وتطبيق عملي شامل",
+          "تجربة الأكواد من الرابط في الوصف",
+          "انتظار الدرس القادم لاستكمال دورة HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      ]
+    }
+  ]
+}
