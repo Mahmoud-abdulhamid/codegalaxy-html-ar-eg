@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "32",
+  "title": "HTML Hyperlinks Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء الروابط باستخدام a Element",
+    "التعرف على أهمية Attribute المسمى href",
+    "تطبيق مهارات الربط بين صفحات الويب",
+    "إتقان بناء الروابط التشعبية في HTML5"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_links.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في الروابط التشعبية",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِنْشَاءِ الروابط التشعبية Hyperlinks، وَهِيَ الْعُنْصُرُ الْأَهَمُّ لِلتَّنَقُّلِ بَيْنَ صَفَحَاتِ الْوِيبِ وَرَبْطِ الْمُحْتَوَى بَعْضِهِ بِبَعْضٍ بِشَكْلٍ احْتِرَافِيٍّ.",
+        "caption_text": "مرحبا بكم في درس الروابط التشعبية Hyperlinks في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الروابط هي أساس تصفح الويب",
+          "نستخدم a Element لإنشاء الروابط",
+          "الروابط تربط بين الصفحات والمواقع"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    },
+    {
+      "id": "syntax",
+      "title": "قواعد كتابة الروابط",
+      "narration": {
+        "spoken_text": "لِكِتَابَةِ رَابِطٍ نَسْتَخْدِم a Element. هَذَا الْعُنْصُرُ يَتَطَلَّب Attribute مُهِمّاً جِدّاً يُسَمَّى href، وَهُوَ الَّذِي يُحَدِّدُ وِجْهَة الرَّابِطِ. لَاحِظْ أَنَّنَا نَضَعُ الرَّابِطَ بَيْن Start Tag و End Tag لِتَظْهَرَ النَّصُّ الْقَابِلُ لِلنَّقْرِ.",
+        "caption_text": "نستخدم a Element مع Attribute المسمى href لتحديد وجهة الرابط."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<a href=\"url\">\n  هذا هو نص الرابط\n</a>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    },
+    {
+      "id": "example",
+      "title": "تطبيق عملي للروابط",
+      "narration": {
+        "spoken_text": "لِنُطَبِّقْ مِثَالاً عَمَلِيّاً. إِذَا أَرَدْنَا رَبْطَ صَفْحَتِنَا بِمَوْقِع W3Schools، نَكْتُبُ الْكُودَ التَّالِي. نَضَعُ رَابِطَ الْمَوْقِعِ دَاخِلَ قِيمَة href، وَنَكْتُبُ النَّصَّ الَّذِي سَيَظْهَرُ لِلْمُسْتَخْدِمِ بَيْنَ التَّاجزِ.",
+        "caption_text": "مثال عملي لكيفية كتابة رابط لموقع خارجي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "example.html",
+        "code": "<a href=\"https://www.w3schools.com\">\n  زيارة موقع W3Schools\n</a>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "خصائص إضافية للروابط",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً إِضَافَة Attribute آخَرَ يُسَمَّى target. عِنْدَمَا نَضَعُ قِيمَة blank_ مَعَ شَرْطَة سُفْلِيَّة، سَيَفْتَحُ الرَّابِطُ فِي Tab جَدِيدَة فِي Web Browser، وَهَذَا يُسَاعِدُ فِي الْحِفَاظِ عَلَى بَقَاءِ الْمُسْتَخْدِمِ فِي صَفْحَتِكَ الْأَصْلِيَّةِ.",
+        "caption_text": "استخدام target=\"_blank\" لفتح الرابط في صفحة جديدة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "target.html",
+        "code": "<a href=\"https://google.com\" \n   target=\"_blank\">\n  فتح في صفحة جديدة\n</a>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ أَنْ يَكُونَ نَصُّ الرَّابِطِ وَاضِحاً وَمُعَبِّراً عَنِ الْمُحْتَوَى. تَجَنَّبْ كِتَابَة كَلِمَاتٍ غَامِضَة مِثْلَ اضْغَطْ هُنَا، بَلِ اجْعَلِ النَّصَّ يَصِفُ الصَّفْحَة الَّتِي سَيَنْتَقِلُ إِلَيْهَا الْمُسْتَخْدِمُ بِشَكْلٍ مُبَاشِرٍ.",
+        "caption_text": "نصائح لتحسين تجربة المستخدم في الروابط."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم نصوصا وصفية للروابط",
+          "تأكد من صحة الروابط في href",
+          "استخدم target عند الحاجة فقط",
+          "اختبر الروابط في Web Browser"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا أَنَّ a Element هُوَ الْأَدَاة الرَّئِيسِيَّة لِلرَّبْطِ. لَا تَنْسَوْا تَجْرِبَة الْأَكْوَادِ بِنَفْسِكُمْ وَمُتَابَعَة التَّحَدِّيَاتِ لِتَطْوِيرِ مَهَارَاتِكُمْ فِي HTML. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "خلاصة: الروابط هي جوهر الويب، استمروا في التدريب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلمنا استخدام a Element",
+          "فهمنا أهمية href Attribute",
+          "تعرفنا على target Attribute",
+          "أهمية النصوص الوصفية للروابط"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_links.asp"
+      ]
+    }
+  ]
+}
