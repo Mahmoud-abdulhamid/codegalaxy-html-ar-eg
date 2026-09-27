@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "40",
+  "title": "تعلم كيفية استخدام HTML Page Title وأهميته في تحسين محركات البحث SEO",
+  "course": "HTML",
+  "objectives": [
+    "فهم الأهمية الكبيرة لعنوان الصفحة في لغة HTML",
+    "معرفة مكان وضع العنصر <title> داخل قسم <head>",
+    "ربط اختيار العنوان الجيد بتحسين ترتيب نتائج البحث SEO"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_page_title.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-29cb6823734f45e8.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_page_title.asp",
+      "source_url": "https://www.w3schools.com/html/html_page_title.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro_scene",
+      "title": "مقدمة عن أهمية عنوان الصفحة",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِضَافَةِ عُنْوَانٍ لِصَفْحَةِ الويب وَأَهَمِّيَّتِهِ الْقُصْوَى لِلْمُسْتَخْدِمِينَ وَمَحَرَّكَاتِ الْبَحْثِ بِدِقَّة وَاحْتِرَافِيَّة عَالِيَة.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML للتعرف على أهمية عنوان الصفحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية عنوان الصفحة في مستندات HTML",
+          "وصف معنى ومحتوى صفحة الويب بدقة",
+          "تحسين تجربة المستخدم ومحركات البحث"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "title_element_concept",
+      "title": "مفهوم العنصر title",
+      "narration": {
+        "spoken_text": "يُسْتَخْدَمُ العُنْصُر title فِي لُغَة HTML لِإِضَافَةِ عُنْوَانٍ أَسَاسِيٍّ لِصَفْحَتِكَ. هَذَا العُنْصُرُ يَظْهَرُ بَدِيعاً فِي شَرِيطِ العُنْوَانِ الخاص بِالْمُتَصَفِّحِ أَوْ فِي لِسَانِ التَّصَفُّحِ المفتوح لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يستخدم العنصر title لإضافة عنوان لصفحتك يظهر في شريط المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر title يحدد عنوان صفحة الويب",
+          "يظهر بوضوح في شريط عنوان المتصفح",
+          "يساعد الزائر على معرفة محتوى الصفحة فورا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "code_example_part1",
+      "title": "كتابة الهيكل الأساسي مع head و title",
+      "narration": {
+        "spoken_text": "لُنَاحِظْ مَعِي هَذَا المِثَالَ الْبَرْمَجِيَّ. يَبْدَأُ الْمُسْتَنَدُ بِتَعْرِيف DOCTYPE html ثُمَّ Root Elementي html، وَدَاخِلَ قِسْم head نَكْتُبُ العُنْصُر title مَعَ النَّصِّ المراد عَرْضُهُ كَعُنْوَانٍ.",
+        "caption_text": "نكتب العنصر title داخل قسم head ضمن الهيكل الأساسي لمستند HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Tutorial</title>\n</head>",
+        "highlight_lines": [
+          3,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "code_example_part2",
+      "title": "إكمال هيكل الصفحة مع body",
+      "narration": {
+        "spoken_text": "بَعْدَ إغلاق قِسْم head نَنْتَقِلُ إِلَى قِسْم body وَالَّذِي يَحْتَوِي عَلَى مُحْتَوَى المُسْتَنَدِ المرئي. هَكَذَا يَتَكَامَلُ الكود لِيُعْطِيَ صَفْحَة ويب مُتَكَمِّلَة وَمُنَظَّمَة تَمَاماً.",
+        "caption_text": "نستكمل الكود بفتح قسم body لكتابة محتوى المستند المرئي للزوار."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n  <p>The content of the document......</p>\n</body>\n</html>",
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "browser_output_scene",
+      "title": "معاينة النتيجة في المتصفح",
+      "narration": {
+        "spoken_text": "تُوَضِّحُ هَذِهِ الصُّورَة كَيْفَ يَظْهَرُ عُنْوَانُ الصفحة في شريط المتصفح. العبارة المكتوبة داخل العُنْصُر title تُمثِّلُ العنوان الرئيسي للنافذة أو اللسان بوضوح تام.",
+        "caption_text": "تظهر المعاينة المرئية للعنوان في شريط عنوان المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة عنوان الصفحة في متصفح الويب"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "seo_importance_scene",
+      "title": "أهمية عنوان الصفحة لتحسين محركات البحث SEO",
+      "narration": {
+        "spoken_text": "يُعْتَبَرُ العُنْوَانُ فِي غَايَةِ الْأَهْمِيَّةِ لِتَحْسِينِ مَحَرَّكَاتِ الْبَحْثِ والمعروف ب SEO. خوارزميات محركات البحث تَسْتَخْدِمُ نَصَّ العنوان لِتَحْدِيدِ الترتيب وعرض الصفحات في نتائج البحث.",
+        "caption_text": "عنوان الصفحة مهم جدا للـ SEO وخوارزميات محركات البحث."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنوان الدقيق يعزز أداء محركات البحث SEO",
+          "تستخدم الخوارزميات النص لتحديد ترتيب النتائج",
+          "يجذب انتباه المستخدمين في صفحات البحث"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "best_practices_scene",
+      "title": "أفضل الممارسات لاختيار العنوان",
+      "narration": {
+        "spoken_text": "اِحْرِصْ دَائِماً عَلَى أَنْ يَكُونَ العُنْوَانُ دَقِيقاً وَمُعَبِّراً عَنْ مُحْتَوَى الصفحة بِأَعْلَى دَرَجَة مُمْكِنَة. العناوين الواضحة تُسَاعِدُ الزُّوَّارَ وَالْمُتَصَفِّحِينَ عَلَى فَهْمِ مَوْضُوعِ الصفحة سَرِيعاً.",
+        "caption_text": "احرص على جعل العنوان دقيقا ومعبرا عن المحتوى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اجعل العنوان دقيقا ومرتبطا بالمحتوى",
+          "تجنب العناوين الغامضة أو القصيرة جدا",
+          "اختر كلمات مفتاحية تعبر عن الصفحة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    },
+    {
+      "id": "conclusion_scene",
+      "title": "خلاصة الدرس ودعوة للتطبيق",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّةِ اسْتِخْدَامِ العُنْصُر title بِطَرِيقَة صَحِيحَة. نَنْصَحُكُمْ بِزِيَارَةِ مَرْجِع Tags لِلْمَزِيدِ مِنَ التَّطْبِيقَاتِ وَالْمُلَاحَظَاتِ العمليَّةِ.",
+        "caption_text": "خلاصة الدرس: أهمية استخدام العنصر title ودعوة لزيارة مرجع الـ Tags."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مراجعة شاملة لاستخدام العنصر title",
+          "أهمية وضع العنصر داخل قسم head",
+          "تابع معنا باقي الدروس لتطوير مهاراتك"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_page_title.asp"
+      ]
+    }
+  ]
+}
