@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "88",
+  "title": "مقارنة لغة HTML مع XHTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم الفرق بين HTML و XHTML",
+    "معرفة أهمية استخدام <!DOCTYPE html> HTML في المستندات",
+    "الالتزام بالقواعد الصارمة مثل إغلاق Tags وحالة الأحرف"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_xhtml.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-02de8a1c72ad0e1a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_xhtml.asp",
+      "source_url": "https://www.w3schools.com/html/html_xhtml.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-807407febafcc3e4.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_xhtml.asp",
+      "source_url": "https://www.w3schools.com/html/html_xhtml.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-9d0316e0e8cbdea7.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_xhtml.asp",
+      "source_url": "https://www.w3schools.com/html/html_xhtml.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن XHTML ومفهومها الأساسي",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى لُغَة XHTML وَهِيَ نُسْخَة أَكْثَرُ صَارِمَة تَعْتَمِدُ عَلَى XML.",
+        "caption_text": "تعتبر XHTML نسخة أكثر صرامة وأقرب إلى لغة XML مقارنة بلغة HTML التقليدية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعتبر XHTML نسخة صارمة معتمدة على XML",
+          "تهدف إلى جعل كود الويب أكثر مرونة",
+          "توفر آلية دقيقة للتعامل مع الأخطاء"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_2_why_xhtml",
+      "title": "لماذا نستخدم XHTML ومعالجة الأخطاء",
+      "narration": {
+        "spoken_text": "تَتَمَيَّزُ لُغَة XML بِأَنَّ جَمِيعَ الْمُسْتَنَدَاتِ فِيهَا يَجِبُ أَنْ تَكُونَ مَكْتُوبَة بِشَكْلٍ سَلِيمٍ تَمَاماً. تَتَجَاهَلُ مُتَصَفِّحَاتُ الْوِبّ عَادَة الْأَخْطَاءَ فِي صَفَحَات HTML، لَكِنَّ XHTML تَعْرِضُ قَوَاعِدَ صَارِمَة لِلتَّعَامُلِ مَعَ الْأَخْطَاءِ.",
+        "caption_text": "تتطلب XHTML معالجة دقيقة للأخطاء بخلاف متصفحات الويب التي تتجاهل أخطاء HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تتطلب XHTML أن تكون المستندات مصاغة بشكل سليم",
+          "تتجاهل متصفحات الويب أخطاء HTML أحيانا",
+          "تقدم XHTML معالجة أخطاء أكثر صرامة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_3_doctype_mandatory",
+      "title": "إلزامية استخدام <!DOCTYPE html> والعناصر الأساسية",
+      "narration": {
+        "spoken_text": "مِنَ الضَّرُورِيِّ وُجُودُ تَعْرِيفِ دُوكْ تَايْبْ فِي مُسْتَنَدَات XHTML، مَعَ ضَرُورَة وُجُودِ عَنَاصِر html و head و title و body وَتَحْدِيد xmlns فِي Tag html.",
+        "caption_text": "يجب أن يحتوي مستند XHTML على تعريف DOCTYPE والعناصر الأساسية للغة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعريف DOCTYPE إلزامي في مستندات XHTML",
+          "يجب حضور عناصر html و head و title و body",
+          "استخدام Attribute xmlns لتحديد النطاق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_4_example_code_part1",
+      "title": "مثال عملي لهيكل مستند XHTML القسم الأول",
+      "narration": {
+        "spoken_text": "نَرَى الْآنَ مِثَالاً عَمَلِيّاً لِمُسْتَنَد XHTML بِحُدُودِهِ الدُّنْيَا المطلوبَه. نَبْدَأُ بِتَعْرِيفِ دُوكْ تَايْبْ ثُمَّ فَتْح Tag html.",
+        "caption_text": "هيكل مستند XHTML يبدأ بتعريف DOCTYPE وفتح عنصر html مع Attribute النطاق."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "xhtml_example.html",
+        "code": "<!DOCTYPE html PUBLIC\n  \"-//W3C//DTD XHTML 1.1//EN\"\n  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_5_example_code_part2",
+      "title": "مثال عملي لهيكل مستند XHTML القسم الثاني",
+      "narration": {
+        "spoken_text": "نُتَابِعُ بَقِيَّة الْمِثَالِ حَيْثُ نَكْتُبُ قِسْم head مَعَ عُنْوَانِ الصَّفْحَة title، ثُمَّ قِسْم body لِلْمُحْتَوَى.",
+        "caption_text": "نكمل هيكل المستند بإضافة قسم head وtitle ثم قسم <body> body."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "xhtml_example.html",
+        "code": "<head>\n  <title>Title of document</title>\n</head>\n<body>\n  some content here...\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_6_nesting_and_closing",
+      "title": "قواعد تداخل العناصر وإغلاقها",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ تَتَدَاخَلَ الْعَنَاصِرُ فِي XHTML بِشَكْلٍ سَلِيمٍ تَمَاماً، كَمَا يَجِبُ إِغْلَاقُ جَمِيعِ الْعَنَاصِرِ، بِمَا فِي ذَلِكَ الْعَنَاصِرُ الْفَارِغَة مِثْل br و hr.",
+        "caption_text": "تتطلب XHTML تداخلا سليما للعناصر وإغلاقا تاما لجميع Tags وEmpty Elements."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يجب تداخل العناصر بشكل صحيح داخل بعضها",
+          "إغلاق جميع العناصر بلا استثناء",
+          "إغلاق Empty Elements مثل <br /> و <hr />"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_7_lowercase_and_quotes",
+      "title": "حالة الأحرف وخصائص Tags",
+      "narration": {
+        "spoken_text": "يَجِبُ كِتَابَة أَسْمَاءِ الْعَنَاصِرِ و Attributes بِالْأَحْرُفِ الصَّغِيرَة حَصْراً، كَمَا يَجِبُ وَضْعُ الْقِيَمِ بَيْنَ عَلَامَتَيْ تَنْصِيسٍ، وَتَجَنُّبِ تَصْغِير Attributes.",
+        "caption_text": "أسماء العناصر و Attributes يجب أن تكون بحروف صغيرة، وتوضع القيم بين علامات تنصيص."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أسماء العناصر و Attributes بأحرف صغيرة lowercase",
+          "قيم Attributes يجب أن تكون بين علامات تنصيص quotes",
+          "منع تصغير Attributes attribute minimization نهائيا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي النِّهَايَه، تَعَلَّمْنَا أَنَّ XHTML تَفْرِضُ قَوَاعِدَ صَارِمَة لِضَمَانِ جُودَة وَكَفَاءَة كُودِ الْوِبّ. نَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ لِلتَّمَرُّسِ أَكْثَرَ.",
+        "caption_text": "خلاصة قواعد XHTML الصارمة لضمان كتابة كود ويب نظيف وقابل للصيانة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تضمن قواعد XHTML كود ويب قياسيا ومنظما",
+          "الالتزام بالإغلاق وحالة الأحرف الصغيرة",
+          "تابع معنا الدروس القادمة لتطوير مهاراتك"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_xhtml.asp"
+      ]
+    }
+  ]
+}
