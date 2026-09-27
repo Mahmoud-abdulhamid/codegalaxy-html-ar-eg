@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "51",
+  "title": "HTML Unordered Lists and Custom Markers",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء Unordered Lists باستخدام ul و li",
+    "تخصيص أشكال Markers باستخدام خاصية list-style-type في CSS",
+    "تطبيق القوائم المتداخلة Nested Lists داخل عناصر HTML",
+    "بناء قوائم أفقية Horizontal Lists لإنشاء قوائم التنقل Navigation Menus"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_lists_unordered.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-68b902e79702478a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_unordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_unordered.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-9b2cca855a505e4b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_unordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_unordered.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-8ea9019bf3a1f319.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_unordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_unordered.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة القوائم غير المرتبة",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML، سَنَتَعَرَّفُ الْيَوْمَ عَلَى الطَّرِيقَة الصَّحِيحَة لإنشاء Unordered Lists وكيفية تنظيم العناصر بواسطة ul و li لتقديم محتوى احترافي.",
+        "caption_text": "تعرف على كيفية إنشاء القوائم غير المرتبة باستخدام عناصر HTML الأساسية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام عنصر ul لتعريف القائمة غير المرتبة",
+          "استخدام عنصر li لتعريف كل عنصر داخل القائمة",
+          "عرض النقاط السوداء الصغيرة بشكل افتراضي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "كتابة هيكل القائمة الأساسي",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الآنَ لِرُؤْيَة الْمِثَالِ الأوَّلِ، نَبْدَأُ الْقَائِمَة بِاستخدام Start Tag للوسم ul، ثُمَّ نَضَعُ كُلَّ عنصر داخل li مِثْل Coffee و Tea و Milk قبل إغلاق Tag.",
+        "caption_text": "يبدأ هيكل القائمة ب Tag ul ويحتوي على عناصر li المتعددة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "unordered_list.html",
+        "code": "<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>",
+        "highlight_lines": [],
+        "output": "• Coffee\n• Tea\n• Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "تخصيص أشكال الأيقونات بـ CSS",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا تَخْصِيصُ شَكْلِ الْعَلَامَاتِ الْمُجَاوِرَة لِلْعَنَاصِرِ بِاسْتِخْدَامِ خَاصِيَّة list-style-type في لغة CSS، لِتَحْدِيدِ قِيَمٍ مِثْل disc أو circle أو square أو إزَالَتِهَا تَمَاماً بِوَضْع none.",
+        "caption_text": "استخدام خاصية list-style-type لتغيير شكل الرموز بجانب العناصر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "list_styles.html",
+        "code": "<ul style=\"list-style-type:circle;\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>",
+        "highlight_lines": [],
+        "output": "◦ Coffee\n◦ Tea\n◦ Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "إنشاء القوائم المتداخلة Nested Lists",
+      "narration": {
+        "spoken_text": "لَدَيْنَا أَيْضاً إِمْكَانِيَّة تَدَاخُلِ الْقَوَائِمِ، حَيْثُ يُمْكِنُ أَنْ يَحْتَرِيَ عنصر li عَلَى قَائِمَة جَدِيدَة داخليَه، لِتَضْمِينِ عَنَاصِرَ فَرْعِيَّة مِثْل Black tea و Green tea بِدَاخِلِ قَائِمَة الشَّايِ.",
+        "caption_text": "يمكن تضمين قائمة داخلية بالكامل داخل عنصر li فرعي."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "nested_list.html",
+              "code": "<ul>\n  <li>Coffee</li>\n  <li>Tea\n    <ul>\n      <li>Black tea</li>\n      <li>Green tea</li>\n    </ul>\n  </li>\n  <li>Milk</li>\n</ul>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "• Coffee\n• Tea\n  - Black tea\n  - Green tea\n• Milk",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "بناء القوائم الأفقية للتنقل",
+      "narration": {
+        "spoken_text": "بِاسْتِخْدَامِ قَوَاعِد CSS الْمُتَقَدِّمَه، نَسْتَطِيعُ تَحْوِيلَ الْقَوَائِمِ الْعَادِيَّة إِلَى قَوَائِمَ أُفُقِيَّة Horizontal Lists، لِإِنْشَاءِ قَوَائِمِ تَنَقُّلٍ احْتِرَافِيَّة Navigation Menus تَظْهَرُ جَنْباً إِلَى جَنْبٍ.",
+        "caption_text": "تنسيق القوائم أفقيا لإنشاء شريط التنقل العلوي للمواقع."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "horizontal_menu.html",
+        "code": "<ul>\n  <li><a href=\"#home\">Home</a></li>\n  <li><a href=\"#news\">News</a></li>\n  <li><a href=\"#contact\">Contact</a></li>\n</ul>",
+        "highlight_lines": [],
+        "output": "Home | News | Contact",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "معاينة النتيجة المرئية للموقع",
+      "narration": {
+        "spoken_text": "تُظْهِرُ لَنَا صُورَة الْمُعَايَنَة هَذِهِ كَيْفَ يَبْدُو شَرِيطُ التَّنَقُّلِ الْأُفُقِيِّ دَاخِلَ مُتَصَفِّحِ الْوِبِّ بَعْدَ تَطْبِيقِ خَصَائِصِ الْعَرْضِ وَالطَّفْوِ وَخَصَائِصِ الْأَلْوَانِ الْمُظْلِمَة عَبْرَ لُغَة CSS.",
+        "caption_text": "معاينة شكل شريط التنقل الأفقي بعد تطبيق التنسيقات."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_3",
+        "alt": "Horizontal navigation menu rendered in browser"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى أَهَمِّيَّة اسْتِخْدَام Unordered Lists وَتَنْظِيمِهَا بِمُرُونَة عاليَه، نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِاسْتِكْمَالِ بَاقِي مَهَارَات HTML مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة شاملة لمفاهيم القوائم غير المرتبة وتطبيقاتها."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إتقان استخدام ul و li في هيكلة البيانات",
+          "التحكم الكامل بأشكال Markers عبر CSS",
+          "بناء قوائم تنقل أفقية متقدمة وفعالة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_unordered.asp"
+      ]
+    }
+  ]
+}
