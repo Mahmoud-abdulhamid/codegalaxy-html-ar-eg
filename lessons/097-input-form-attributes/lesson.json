@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "97",
+  "title": "HTML Input form Attributes",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية ربط عناصر input بنماذج form خارجية",
+    "التعرف على Attributes التحكم في معالجة البيانات",
+    "التحكم في طرق الإرسال والتحقق من البيانات",
+    "تخصيص وجهة عرض استجابة النموذج"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_form_attributes_form.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في Attributes النماذج",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة اسْتِخْدَام Attributes مُتَقَدِّمَة لِعُنْصُر input، وَالَّتِي تُتِيحُ لَنَا التَّحَكُّمَ بِشَكْلٍ دَقِيقٍ فِي كَيْفِيَّة إِرْسَالِ بَيَانَاتِ النَّمَاذِجِ وَمُعَالَجَتِهَا فِي صَفْحَة الْوِبّ.",
+        "caption_text": "سنتعرف اليوم على Attributes HTML المتقدمة التي تمنحنا تحكما كاملا في عناصر input داخل نماذج الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "التحكم في ارتباط input بالنماذج",
+          "تخصيص مسارات المعالجة",
+          "تحديد طرق الإرسال والترميز",
+          "إدارة التحقق من صحة البيانات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "form_attribute",
+      "title": "استخدام Attribute form",
+      "narration": {
+        "spoken_text": "تُسْتَخْدَم Attribute form لِرَبْطِ عُنْصُر input بِنَمُوذَجٍ مُعَيَّنٍ حَتَّى لَوْ كَانَ الْعُنْصُرُ خَارِجَ نِطَاقِ هَذَا النَّمُوذَجِ. يَجِبُ أَنْ تَتَطَابَقَ قِيمَة هَذِه Attribute مَعَ مُعَرِّف id الْخَاصِّ بِعُنْصُر form الْمَقْصُودِ.",
+        "caption_text": "تسمح Attribute form بربط عنصر input بنموذج محدد حتى لو كان خارج نطاق Tag form الأساسي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form id=\"form1\" action=\"/save\">\n  <input type=\"text\" name=\"fname\">\n</form>\n<input type=\"text\" form=\"form1\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "formaction",
+      "title": "شرح Attribute formaction",
+      "narration": {
+        "spoken_text": "تُحَدِّد Attribute formaction مَسَارَ الْمِلَفِّ الَّذِي سَيُعَالِجُ الْبَيَانَاتِ عِنْدَ إِرْسَالِ النَّمُوذَجِ. هَذِه Attribute تَتَجَاوَز Attribute action الْأَصْلِيَّة فِي النَّمُوذَجِ، وَتَعْمَلُ مَعَ أَنْوَاع input مِثْل submit و image.",
+        "caption_text": "تستخدم formaction لتحديد مسار معالجة مختلف لكل زر إرسال داخل نفس النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "action.html",
+        "code": "<form action=\"/default\">\n  <input type=\"submit\" value=\"Submit\">\n  <input type=\"submit\" \n    formaction=\"/admin\"\n    value=\"Submit as Admin\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "formenctype",
+      "title": "شرح Attribute formenctype",
+      "narration": {
+        "spoken_text": "تُسْتَخْدَم Attribute formenctype لِتَحْدِيدِ كَيْفِيَّة تَرْمِيزِ بَيَانَاتِ النَّمُوذَجِ عِنْدَ الْإِرْسَالِ، وَذَلِكَ عِنْدَ اسْتِخْدَامِ طَرِيقَة post. هَذِه Attribute تُعَدِّلُ طَرِيقَة التَّرْمِيزِ الافتراضية لِتُسَهِّلَ رَفْعَ الْمِلَفَّاتِ مَثَلاً.",
+        "caption_text": "تحدد formenctype كيفية ترميز البيانات عند إرسال النموذج باستخدام طريقة post."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "encoding.html",
+        "code": "<form method=\"post\">\n  <input type=\"submit\" value=\"Submit\">\n  <input type=\"submit\" \n    formenctype=\"multipart/form-data\"\n    value=\"Upload\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "formmethod",
+      "title": "شرح Attribute formmethod",
+      "narration": {
+        "spoken_text": "تُعَرِّف Attribute formmethod طَرِيقَة HTTP الْمُسْتَخْدَمَة لِإِرْسَالِ الْبَيَانَاتِ، سَوَاءً كَانَت get أَوْ post. هَذِه Attribute تَتَجَاوَز Attribute method الْخَاصَّة بِالْعُنْصُرِ الْأُمِّ form، وَتُعْطِي مَرُونَة فِي التَّعَامُلِ مَعَ طَلَبَاتِ الْخَادِمِ.",
+        "caption_text": "تتيح formmethod تحديد طريقة إرسال البيانات لكل زر إرسال بشكل مستقل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "method.html",
+        "code": "<form method=\"get\">\n  <input type=\"submit\" value=\"GET\">\n  <input type=\"submit\" \n    formmethod=\"post\"\n    value=\"POST\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "formtarget",
+      "title": "شرح Attribute formtarget",
+      "narration": {
+        "spoken_text": "تُحَدِّد Attribute formtarget مَكَانَ عَرْضِ الِاسْتِجَابَة بَعْدَ إِرْسَالِ النَّمُوذَجِ، مِثْلَ فَتْحِ صَفْحَة جَدِيدَة بِاسْتِخْدَامِ القيمة _blank. هَذِه Attribute تُعَدُّ أَدَاة قَوِيَّة لِتَوْجِيهِ الْمُسْتَخْدِمِ بَعْدَ التَّفَاعُلِ مَعَ النَّمُوذَجِ.",
+        "caption_text": "تحدد formtarget نافذة عرض الاستجابة بعد إرسال النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "target.html",
+        "code": "<form>\n  <input type=\"submit\" value=\"Submit\">\n  <input type=\"submit\" \n    formtarget=\"_blank\"\n    value=\"New Window\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "validation",
+      "title": "التحقق من البيانات",
+      "narration": {
+        "spoken_text": "أَخِيراً، نَذْكُر Attribute formnovalidate الَّتِي تَمْنَعُ التَّحَقُّقَ مِنَ الْبَيَانَاتِ عِنْدَ الْإِرْسَالِ. هَذَا مُفِيدٌ عِنْدَ وُجُودِ أَزْرَارِ إِرْسَالٍ لَا تَتَطَلَّبُ تَحَقُّقاً صَارِماً، مِثْلَ زِرِّ الْإِلْغَاءِ أَوْ حِفْظِ الْمُسَوَّدَاتِ.",
+        "caption_text": "تستخدم formnovalidate لتعطيل التحقق من صحة البيانات عند إرسال النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "validate.html",
+        "code": "<form>\n  <input type=\"email\">\n  <input type=\"submit\" value=\"Submit\">\n  <input type=\"submit\" \n    formnovalidate\n    value=\"Draft\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ غَطَّيْنَا أَهَمَّ Attributes النَّمَاذِجِ فِي HTML. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِتَرَوْا كَيْفَ تُغَيِّرُ هَذِه Attributes مِنْ سُلُوكِ النَّمَاذِجِ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "لقد استعرضنا Attributes التحكم في النماذج. جربوا الأكواد بأنفسكم لتعزيز فهمكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "form: للربط الخارجي",
+          "formaction: لتغيير مسار المعالجة",
+          "formmethod: لتحديد طريقة الإرسال",
+          "formnovalidate: لتعطيل التحقق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes_form.asp"
+      ]
+    }
+  ]
+}
