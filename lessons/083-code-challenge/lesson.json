@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "83",
+  "title": "HTML Entities and Reserved Characters",
+  "course": "HTML",
+  "objectives": [
+    "فهم أهمية HTML Entities في صفحات الويب",
+    "التعرف على كيفية كتابة الرموز المحجوزة",
+    "تطبيق مهارات التعامل مع الرموز الخاصة",
+    "تجنب أخطاء العرض في المتصفح"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_entities.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول HTML Entities",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة التَّعَامُلِ مَعَ الرُّمُوزِ الْمَحْجُوزَة فِي لُغَة الْوِبّ، وَذَلِكَ بِاسْتِخْدَامِ مَا نُسَمِّيه HTML Entities لِضَمَانِ عَرْضِ الْمُحْتَوَى بِشَكْلٍ صَحِيحٍ دَاخِلَ الْمُتَصَفِّحْ.",
+        "caption_text": "مرحبا بكم في درس HTML Entities. سنتعلم اليوم كيفية التعامل مع الرموز المحجوزة في لغة الويب لضمان عرض المحتوى بشكل صحيح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "HTML Entities تستخدم لتمثيل الرموز المحجوزة",
+          "تمنع المتصفح من الخلط بين الرموز والـ Tags",
+          "ضرورية لعرض علامات مثل < و > و &",
+          "تضمن توافق المحتوى مع جميع المتصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    },
+    {
+      "id": "reserved_chars",
+      "title": "الرموز المحجوزة في HTML",
+      "narration": {
+        "spoken_text": "بَعْضُ الرُّمُوزِ لَهَا مَعْنًى خَاصٌّ فِي HTML مِثْلَ عَلَامَة الْأَصْغَرِ مِنْ وَالْأَكْبَرِ مِنْ. إِذَا كَتَبْنَاهَا مُبَاشَرَه، قَدْ يَظُنُّ الْمُتَصَفِّحْ أَنَّهَا Start Tag، لِذَا نَسْتَخْدِم Entities لِتَمْثِيلِهَا بِشَكْلٍ آمِنٍ.",
+        "caption_text": "الرموز مثل < و > لها معنى خاص في HTML. نستخدم Entities لتمثيلها بأمان وتجنب تعارضها مع الـ Tags."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "الرمز",
+          "الوصف",
+          "Entity"
+        ],
+        "rows": [
+          [
+            "<",
+            "Less than",
+            "&lt"
+          ],
+          [
+            ">",
+            "Greater than",
+            "&gt"
+          ],
+          [
+            "&",
+            "Ampersand",
+            "&amp"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    },
+    {
+      "id": "code_example",
+      "title": "تطبيق عملي على الرموز",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَقُومُ هُنَا بِعَرْضِ جُمْلَة تَحْتَوِي عَلَى رُمُوزٍ خَاصَّه. نُحِيطُ النَّصَّ بِـ p Element، وَنَسْتَخْدِمُ &lt وَ &gt لِكِتَابَة عِبَارَة تَتَضَمَّنُ هَذِهِ الرُّمُوزَ دُونَ أَنْ يَعْتَبِرَهَا الْمُتَصَفِّحْ كَـ Tags.",
+        "caption_text": "نستخدم p Element لعرض نص يحتوي على رموز خاصة باستخدام Entities لضمان ظهورها كرموز نصية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<p> 5 &lt; 10 </p>\n<p> 10 &gt; 5 </p>\n<p> HTML &amp; CSS </p>",
+        "highlight_lines": [],
+        "output": "5 < 10\n10 > 5\nHTML & CSS",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    },
+    {
+      "id": "browser_rendering",
+      "title": "كيف يفسر المتصفح الرموز",
+      "narration": {
+        "spoken_text": "عِنْدَمَا يَقْرَأُ الْمُتَصَفِّحْ مِثْل Chrome أَوْ Edge هَذِه Entities، فَإِنَّهُ يَقُومُ بِتَحْوِيلِهَا تِلْقَائِيّاً إِلَى الرَّمْزِ الْمَقْصُودِ. هَذِهِ هِيَ الطَّرِيقَة الْمِثَالِيَّة لِتَجَنُّبِ أَيِّ تَدَاخُلٍ بَيْنَ مُحْتَوَى الصَّفْحَة وَبِنْيَة Markup Language.",
+        "caption_text": "يقوم المتصفح بتحويل Entities إلى الرموز المقابلة لها، مما يضمن عرض المحتوى بشكل سليم دون تداخل مع بنية الصفحة."
+      },
+      "visual": {
+        "type": "diagram",
+        "nodes": [
+          {
+            "id": "code",
+            "label": "HTML Code (&lt)",
+            "active": false
+          },
+          {
+            "id": "browser",
+            "label": "Web Browser",
+            "active": false
+          },
+          {
+            "id": "render",
+            "label": "Rendered Symbol (<)",
+            "active": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "code",
+            "target": "browser",
+            "label": ""
+          },
+          {
+            "source": "browser",
+            "target": "render",
+            "label": ""
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَجِبُ دَائِماً اسْتِخْدَام Entities عِنْدَ كِتَابَة نُصُوصٍ تَتَضَمَّنُ رُمُوزاً خَاصَّه. هَذَا يُعَدُّ مِنْ أَفْضَلِ الْمُمَارَسَاتِ لِضَمَانِ أَمْنِ وَسَلَامَة الصَّفْحَه، وَيُسَاعِدُ فِي تَجَنُّبِ أَيِّ أَخْطَاءٍ غَيْرِ مَقْصُودَة فِي عَرْضِ الْمُحْتَوَى لِلْمُسْتَخْدِمِ.",
+        "caption_text": "استخدام Entities هو أفضل ممارسة لضمان أمن وسلامة الصفحة وتجنب أخطاء العرض."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم Entities للرموز المحجوزة دائما",
+          "تحقق من صحة الكود باستخدام المتصفح",
+          "تجنب كتابة الرموز الخاصة مباشرة",
+          "حافظ على نظافة الكود البرمجي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا أَهَمِّيَّة HTML Entities وَكَيْفِيَّة اسْتِخْدَامِهَا. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "تعلمنا أهمية HTML Entities وكيفية استخدامها. جربوا الأكواد بأنفسكم عبر الرابط في الوصف. شكرا لمتابعتكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "HTML Entities تحمي بنية الصفحة",
+          "تستخدم لتمثيل الرموز الخاصة",
+          "ضرورية لكل مطور ويب",
+          "جرب التحدي في الرابط أدناه"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_entities.asp"
+      ]
+    }
+  ]
+}
