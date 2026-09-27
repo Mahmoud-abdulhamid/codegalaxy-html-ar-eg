@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "54",
+  "title": "HTML Lists Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "اختبار فهم لغة HTML من خلال تحدي القوائم",
+    "الفرق بين Ordered Lists و Unordered Lists",
+    "تطبيق المهارات العملية باستخدام Elements و Tags"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_lists.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة تحدي القوائم",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى تَحَدِّي الْقَوَائِمِ وَكَيْفَ نَخْتَبِرُ مَهَارَاتِنَا فِي بِنَاء Lists بِطَرِيقَة صَحِيحَه.",
+        "caption_text": "مرحبا بكم في درس تحدي القوائم في لغة HTML وكيف نختبر مهاراتنا البرمجية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مرحبا بكم في تحدي لغة HTML الجديد",
+          "التركيز على القوائم البرمجية Ordered و Unordered",
+          "اختبار المهارات العملية لإنشاء الـ Lists"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "مفهوم القوائم المرتبة وغير المرتبة",
+      "narration": {
+        "spoken_text": "نَحْتَاجُ فِي صَفْحَاتِ الْوِبّ إِلَى تَنْظِيمِ الْمُحْتَوَى بَوَاسِطَة Lists. لَدَيْنَا نَوْعَانِ رَئِيسِيَّانِ، الْأَوَّلُ هُو Unordered Lists وَالثَّانِي هُو Ordered Lists لِتَرْتِيبِ الْعَنَاصِرِ بدقَه.",
+        "caption_text": "نحتاج في تصميم صفحات الويب إلى استخدام القوائم بنوعيها المرتبة وغير المرتبة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام الـ Lists لتنظيم وترتيب محتوى صفحات الويب",
+          "القوائم غير المرتبة تستخدم الـ Tags المناسبة",
+          "القوائم المرتبة تنظم العناصر بأرقام تسلسلية واضحة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة هيكل القوائم البرلمجي",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي كَيْفَ نَكْتُب Tags الْخَاصَّة بِالْقَوَائِمِ. نَسْتَخْدِم Element مُحَدَّدَة لِإِنْشَاءِ الْقَائِمَة ثُمَّ نُضِيفُ عَنَاصِرَ بِدَاخِلِهَا لِتَكْمِلَة Markup Language بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "شرح هيكل القوائم البرمجي وكيفية كتابة الـ Elements و Tags داخل المستند."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "lists_challenge.html",
+        "code": "<ul>\n  item one\n  item two\n</ul>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "استكمال تفاصيل عناصر القائمة",
+      "narration": {
+        "spoken_text": "لِكِتَابَة الْعَنَاصِرِ بِدَاخِلِ أَيَّة قَائِمَة فِي لُغَة HTML، نَسْتَخْدِم Start Tag و End Tag مُخَصَّصَة لِكُلِّ عُنْصُرٍ، مِمَّا يَجْعَلُ الْمُتَصَفِّحَ يَعْرِضُهَا بِصُورَة مُرَتَّبَة وَمُنَظَّمَة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "نستخدم الـ Tags المناسبة داخل القائمة لضمان ظهور العناصر بشكل منظم في المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "list_items.html",
+        "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n</ol>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة المخرجات في متصفح الويب",
+      "narration": {
+        "spoken_text": "عِنْدَمَا نَفْتَحُ هَذَا الْكُودَ فِي وِبّ Browser مِثْل Chrome أَوْ Firefox، سَنَرَى كَيْفَ تَتَحَوَّل Elements إِلَى نِقَاطٍ أَوْ أَرْقَامٍ مَرْئِيَّة تُلَبِّي مُتَطَلَّبَاتِ التَّحَدِّي بِكَفَاءَة عَالِيَه.",
+        "caption_text": "كيف تظهر عناصر القوائم عند تشغيل الكود وتصفحه في متصفحات الويب المختلفة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عرض القوائم المرتبة وغير المرتبة في Web Browser",
+          "التحقق من صحة الـ Tags وتنفيذ التحدي بنجاح",
+          "تجربة الأكواد بأنفسكم لضمان استيعاب المفهوم بالكامل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "أفضل الممارسات البرمجية للتحدي",
+      "narration": {
+        "spoken_text": "يَجِبُ عَلَيْنَا دَائِماً الِاحْتِرَافُ فِي كِتَابَة Attributes و Tags بِدُونِ أَخْطَاءٍ. اِحْرِصْ عَلَى إِغْلَاقِ كُلِّ Start Tag بِـ End Tag مُنَاسِبَة لِتَفَادِي أَيَّة مُشْكِلَة فِي عَرْضِ الصَّفْحَه.",
+        "caption_text": "أهم الممارسات البرمجية لكتابة الـ Tags والـ Elements بطريقة صحيحة وخالية من الأخطاء."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "حرص المطور على إغلاق كافة الـ Tags بإتقان",
+          "التأكد من توافق الأكواد مع معايير HTML الحديثة",
+          "اختبار التحديات البرمجية بشكل دوري لتثبيت المعلومة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس ودعوة للتطبيق",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، نَكُونُ قَدِ اجْتَبْنَا تَحَدِّي الْقَوَائِمِ بِنَجَاحٍ وَتَعَرَّفْنَا عَلَى كَيْفِيَّة تَوْظِيف Lists. أَدْعُوكُمْ لِتَجْرِيبِ الْمَزِيدِ مِنَ الْأَكْواديَّة وَرَابِطِ الْمَصْدَرِ الْمَوْجُودِ فِي الْوَصْفِ.",
+        "caption_text": "خلاصة درس تحدي القوائم في لغة HTML مع دعوة لمواصلة التطبيق العملي للبرمجة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إنهاء تحدي القوائم البرمجية في لغة HTML بنجاح",
+          "مراجعة دورية لجميع مفاهيم الـ Lists والـ Elements",
+          "تابعوا الدروس القادمة لتطوير مهاراتكم في تطوير الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_lists.asp"
+      ]
+    }
+  ]
+}
