@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "86",
+  "title": "HTML Character Sets and Encoding",
+  "course": "HTML",
+  "objectives": [
+    "Understand the importance of charset in HTML pages",
+    "Learn how to use UTF-8 character encoding",
+    "Explore legacy character sets like ASCII and ANSI",
+    "Compare HTML4 and HTML5 character set declarations"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_charset.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-89af9cce90444516.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_charset.asp",
+      "source_url": "https://www.w3schools.com/html/html_charset.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-431708e97649bb96.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_charset.asp",
+      "source_url": "https://www.w3schools.com/html/html_charset.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-3f0a34f4d80e12d7.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_charset.asp",
+      "source_url": "https://www.w3schools.com/html/html_charset.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "شرح Introduction to Character Sets",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَحْدِيد character set فِي صَفْحَة الْوِبّ لِضَمَانِ عَرْضِ النُّصُوصِ بِشَكْلٍ صَحِيحٍ ودُونِ أَيِّ أَخْطَاءٍ.",
+        "caption_text": "مرحبا بكم في درس تشفير الحروف في لغة HTML وكيفية تحديد character set المناسب لصفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعريف مفاهيم ترميز الحروف Character Sets",
+          "أهمية تحديد charset في متصفح الويب",
+          "معايير التشفير الحديثة والقديمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "شرح The HTML charset Attribute",
+      "narration": {
+        "spoken_text": "لِكَيْ يَعْرِضَ مُتَصَفِّحْ الْوِبّ صَفْحَة HTML بِشَكْلٍ صَحِيحٍ، يَجِبُ أَنْ يَعْرِفَ أَيَّ character set يَسْتَخْدِمُ. يَتِمُّ تَحْدِيدُ ذَلِكَ دَاخِل meta tag بِاسْتِخْدَام Attribute charset بِدِقَّه.",
+        "caption_text": "لكي يعرض متصفح الويب صفحة HTML بشكل صحيح، يجب أن يعرف أي character set يستخدم عبر meta tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<meta charset=\"UTF-8\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "شرح The UTF-8 Character Set",
+      "narration": {
+        "spoken_text": "تُشَجِّعُ مُوَاصَفَات HTML مُطَوِّعِي الْوِبّ عَلَى اسْتِخْدَام UTF-8 CHARACTER SET. يُغَطِّي UTF-8 تَقْرِيباً كُلَّ الْحُرُوفِ وَالرُّمُوزِ الْمَوْجُودَة فِي الْعَالَمِ أَجْمَعَ دُونَ اسْتِثْنَاءٍ.",
+        "caption_text": "تشجع مواصفات HTML مطوري الويب على استخدام UTF-8 لأنه يغطي تقريبا كل الحروف والرموز في العالم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "UTF-8 هو المعيار العالمي الموصى به",
+          "يدعم جميع اللغات والرموز العالمية",
+          "يكتب بسهولة داخل عنصر meta"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح The ASCII Character Set",
+      "narration": {
+        "spoken_text": "كَان ASCII أَوَّلَ مِعْيَارٍ لِتَشْفِيرِ الْحُرُوفِ عَلَى شَبَكَة الْوِبّ. لَقَدْ حَدَّدَ مِئَة وَثَمَانِيَة وَعِشْرِينَ حَرْفاً لاتِينِيّاً مُخْتَلِفاً مِمَّا يَعْنِي أَنَّهُ مَحْدُودُ التَّنَوُّعِ جِدّاً.",
+        "caption_text": "كان ASCII أول معيار لتشفير الحروف على شبكة الويب وحدد 128 حرفا لاتينيا مختلفا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ASCII هو أول معيار تشفير للويب",
+          "يدعم 128 حرفا لاتينيا فقط",
+          "لا يدعم الحروف العربية أو الآسيوية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح The ANSI Character Set",
+      "narration": {
+        "spoken_text": "أَمَّا تَشْفِير ANSI الْمَعْرُوفُ بِـ Windows-1252 فَكَانَ أَوَّلَ مِعْيَارِ تَشْفِيرٍ لِنِظَامِ وَينْدُوزْ. نَرَاهُ مَكْتُوباً بِهَذَا الشَّكْلِ دَاخِلَ مَفْعُولِ التَّشْفِيرِ لِلصَّفْحَه.",
+        "caption_text": "أما تشفير ANSI أو Windows-1252 فكان أول تشفير خاص بنظام التشغيل Windows."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "ansi.html",
+        "code": "<meta charset=\"Windows-1252\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "شرح The ISO-8859-1 Character Set",
+      "narration": {
+        "spoken_text": "كَانَ التَّشْفِيرُ الِافْتِرَاضِيُّ لِلْغَة HTML فِي إِصْدَارِهَا الرَّابِعِ هُو ISO-8859-1، وَقَدْ دَعَمَ هَذَا التَّشْفِيرُ مِئَتَيْنِ وَسِتَّة وَخَمْسِينَ حَرْفاً مُخْتَلِفاً.",
+        "caption_text": "كان التشفير الافتراضي لإصدار HTML 4 هو ISO-8859-1 وقد دعم 256 حرفا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "html4.html",
+        "code": "<meta http-equiv=\"Content-Type\"\ncontent=\"text/html;charset=ISO-8859-1\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "شرح HTML 5 vs HTML 4 Examples",
+      "narration": {
+        "spoken_text": "فِي إِصْدَار HTML 5 أَصْبَحَتْ كِتَابَة التَّشْفِيرِ أَبْسَطَ وَأَسْهَلَ كَثِيراً، حَيْثُ نَكْتُب Attribute charset مُبَاشَرَة دَاخِل meta tag دُونَ حَاجَة لِكِتَابَة تَقَارِيرَ طَوِيلَه.",
+        "caption_text": "في HTML 5 أصبحت كتابة التشفير أبسط بكثير مقارنة بالطريقة القديمة في HTML 4."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "html5.html",
+        "code": "<meta charset=\"ISO-8859-1\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "شرح HTML UTF-8 Character Categories",
+      "narration": {
+        "spoken_text": "يُغَطِّي مِعْيَار UTF-8 فِئَاتٍ وَاسِعَة مِثْل Basic Latin و Latin Extended بِإِضَافَة عَلاَمَاتِ التَّرْقِيمِ وَالسُّمُوزِ الرِّيَاضِيَّة وَالرُّمُوزِ الدُّولِيَّة الأُخْرَى فِي الْعَالَمِ.",
+        "caption_text": "يغطي معيار UTF-8 فئات واسعة مثل Basic Latin وعلامات الترقيم والرموز العالمية المختلفة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Basic Latin and Latin Extended",
+          "مفهوم Diacritical Marks and Punctuation",
+          "مفهوم Super and Subscript and Braille"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    },
+    {
+      "id": "scene_9",
+      "title": "شرح Conclusion and Best Practices",
+      "narration": {
+        "spoken_text": "خِتَاماً يَا أَصْدِقَائِي، احْرِصُوا دَائِماً عَلَى اسْتِخْدَامِ التَّشْفِيرِ الْعَالَمِيِّ UTF-8 فِي جَمِيعِ مَشَارِيعِ الْوِبّ لِضَمَانِ عَرْضِ نُصُوصِكُمْ بِكُلِّ لُغَاتِ الْعَالَمِ بِدُونِ أَيِّ مُشْكِلَه. كَانَ مَعَكُمْ مَحْمُودُ عَبْدِالْحَمِيدِ.",
+        "caption_text": "احرص دائما على استخدام UTF-8 في جميع مشاريع الويب لضمان توافقية عرض النصوص."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "دائما استخدم UTF-8 للمشاريع الجديدة",
+          "تأكد من وضع meta charset في قسم head",
+          "تابع معنا باقي دورة HTML عبر CodeGalaxy"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_charset.asp"
+      ]
+    }
+  ]
+}
