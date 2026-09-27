@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "56",
+  "title": "HTML Block and Inline Elements Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم الفرق الجوهري بين Block Elements و Inline Elements",
+    "التعرف على كيفية استخدام div و span في بناء صفحات الويب",
+    "تطبيق المهارات البرمجية من خلال تحديات عملية",
+    "التحكم في هيكلة المحتوى داخل مستند HTML"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_blocks.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول عناصر الويب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ سَنَتَعَرَّفُ عَلَى مَفْهُومٍ جَوْهَرِيٍّ فِي تَصْمِيمِ صَفَحَاتِ الْوِبّ، وَهُوَ الْفَرْقُ بَيْن Block Elements و Inline Elements، وَكَيْفَ نُوَظِّفُهُمَا لِبِنَاءِ هَيْكَلٍ مُنَظَّمٍ لِلْمُحْتَوَى.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. اليوم سنتعرف على الفرق بين Block Elements و Inline Elements وكيفية توظيفهما لبناء هيكل منظم للمحتوى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "فهم طبيعة Block Elements",
+          "استكشاف خصائص Inline Elements",
+          "تطبيق تحديات عملية باستخدام div و span"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "القواعد الأساسية للعناصر",
+      "narration": {
+        "spoken_text": "تَنْقَسِمُ الْعَنَاصِرُ فِي لُغَة HTML إِلَى نَوْعَيْنِ رَئِيسِيَّيْنِ. الْعَنَاصِرُ مِنْ نَوْع Block تَحْجِزُ سَطْراً كَامِلاً وَتَبْدَأُ دَائِماً فِي سَطْرٍ جَدِيدٍ، بَيْنَمَا الْعَنَاصِرُ مِنْ نَوْع Inline تَأْخُذُ فَقَطْ مِقْدَارَ الْمَسَاحَة الَّتِي يَحْتَاجُهَا الْمُحْتَوَى دَاخِلَ السَّطْرِ.",
+        "caption_text": "تنقسم العناصر في لغة HTML إلى نوعين رئيسيين. العناصر من نوع Block تحجز سطرا كاملا، بينما العناصر من نوع Inline تأخذ فقط مقدار المساحة التي يحتاجها المحتوى."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "نوع العنصر",
+          "السلوك",
+          "أمثلة"
+        ],
+        "rows": [
+          [
+            "Block",
+            "سطر جديد",
+            "div, h1, p"
+          ],
+          [
+            "Inline",
+            "نفس السطر",
+            "span, a, img"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    },
+    {
+      "id": "div_element",
+      "title": "استخدام div كعنصر Block",
+      "narration": {
+        "spoken_text": "يُعَدُّ div عُنْصُراً حَاوِياً مِنْ نَوْع Block. نَسْتَخْدِمُهُ لِتَجْمِيعِ الْعَنَاصِرِ مَعاً وَتَنْظِيمِ تَخْطِيطِ الصَّفْحَه. لَاحِظْ كَيْفَ يَبْدَأُ كُلُّ div فِي سَطْرٍ مُسْتَقِلٍّ، مِمَّا يَمْنَحُنَا تَحَكُّماً كَامِلاً فِي تَوْزِيعِ الْمُحْتَوَى دَاخِلَ هَيْكَلِ الصَّفْحَه.",
+        "caption_text": "يعد div عنصرا حاويا من نوع Block. نستخدمه لتجميع العناصر معا وتنظيم تخطيط الصفحة، حيث يبدأ كل div في سطر مستقل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<div>\n  <h1>العنوان</h1>\n  <p>فقرة نصية</p>\n</div>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    },
+    {
+      "id": "span_element",
+      "title": "استخدام span كعنصر Inline",
+      "narration": {
+        "spoken_text": "أَمَّا عُنْصُر span فَهُوَ عُنْصُرٌ مِنْ نَوْع Inline. نَسْتَخْدِمُهُ لِتَحْدِيدِ جُزْءٍ صَغِيرٍ مِنَ النَّصِّ أَوْ تَطْبِيقِ تَنْسِيقَاتٍ مُعَيَّنَة دُونَ التَّأْثِيرِ عَلَى تَدَفُّقِ النَّصِّ الْعَامِّ، فَهُوَ لَا يُسَبِّبُ انْتِقَالاً إِلَى سَطْرٍ جَدِيدٍ.",
+        "caption_text": "عنصر span هو عنصر من نوع Inline. نستخدمه لتحديد جزء صغير من النص أو تطبيق تنسيقات معينة دون التأثير على تدفق النص العام."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<p>هذا نص <span>مميز</span>\nداخل الفقرة.</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "عِنْدَ كِتَابَة كُود HTML، احْرِصْ عَلَى اسْتِخْدَام div لِلْهَيْكَلَة الْكُبْرَى، و span لِلتَّعَامُلِ مَعَ الْأَجْزَاءِ الدَّقِيقَه. هَذَا التَّنْظِيمُ يُسَهِّلُ عَلَيْكَ لَاحِقاً عَمَلِيَّة التَّنْسِيقِ بِاسْتِخْدَام CSS وَيَجْعَلُ الْكُودَ أَكْثَرَ قَابِلِيَّة لِلصِّيَانَة وَالْفَهْمِ.",
+        "caption_text": "احرص على استخدام div للهيكلة الكبرى، و span للتعامل مع الأجزاء الدقيقة. هذا التنظيم يسهل عملية التنسيق بـ CSS ويجعل الكود أكثر قابلية للصيانة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم div للحاويات الكبيرة",
+          "استخدم span للنصوص المحددة",
+          "حافظ على نظافة الكود",
+          "التزم بالمعايير القياسية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة وتحدي",
+      "narration": {
+        "spoken_text": "لَقَدْ تَعَلَّمْنَا الْيَوْمَ الْفَرْقَ بَيْن Block و Inline. أَدْعُوكُمْ لِزِيَارَة رَابِطِ الْمَصْدَرِ فِي الْوَصْفِ لِتَجْرِبَة التَّحَدِّيَاتِ الْعَمَلِيَّة بِنَفْسِكُمْ. مَعَ تَحِيَّاتِي، مَحْمُود عَبْدِ الْحَمِيد، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "لقد تعلمنا اليوم الفرق بين Block و Inline. أدعوكم لزيارة رابط المصدر في الوصف لتجربة التحديات العملية بنفسكم. مع تحياتي، محمود عبد الحميد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع مفاهيم Block و Inline",
+          "طبق التحديات في الرابط أدناه",
+          "استمر في ممارسة البرمجة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      ]
+    }
+  ]
+}
