@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "90",
+  "title": "HTML Forms Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "Understand the structure of HTML forms code challenges",
+    "Test your knowledge of Form Elements and Tags",
+    "Apply best practices in building interactive web forms"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_forms.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة تحدي النماذج في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML، سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة اجْتِيَازِ تَحَدِّيَات Form Elements وَاصْتِعْمَال Tags بِكَفَاءَة عَالِيَة لِبِنَاءِ نَمَاذِجِ وَبٍّ احْتِرَافِيَّه.",
+        "caption_text": "مرحبا بكم في درس تحدي النماذج في لغة HTML وفهم طريقة اختبار المهارات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختبار فهمك الحقيقي لعناصر النماذج في HTML",
+          "التدرب على كتابة Form Elements و Attributes بدقة",
+          "تطبيق التمارين العملية لترسيخ مهارات تطوير الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "أهمية اختبارات البرمجة للنماذج",
+      "narration": {
+        "spoken_text": "تُمَثِّلُ اخْتِبَارَات Form Elements جُزْءاً أَسَاسِيّاً لِتَقْيِيمِ مَهَارَاتِ الْمُطَوِّرِ فِي بِنَاءِ وِجَهَاتِ التَّوَاصُلِ مَعَ الْمُسْتَخْدِمِ فِي صَفَحَاتِ الْوِبّ، مِمَّا يُسَاعِدُ فِي تَحْسِينِ تَرْكِيب Markup Language وَتَحِيقِ تَجْرِبَة مُسْتَخْدِمٍ مِثَالِيَّه.",
+        "caption_text": "أهمية اختبارات Form Elements في تقييم مهارات تطوير صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تقييم القدرة على التعامل مع عناصر HTML الأساسية",
+          "فهم آلية جمع البيانات عبر Web Browser",
+          "ضمان الالتزام بمعايير لغة HTML5 الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "بنية عناصر النماذج الأساسية",
+      "narration": {
+        "spoken_text": "عِنْدَمَا نَبْدَأُ فِي حَلِّ التَّحَدِّيَاتِ، نَحْتَاجُ إِلَى فَهْمِ كَيْفِيَّة كِتَابَة Start Tag و End Tag لِكُلِّ عُنْصُرٍ، مِثْلَ اسْتِخْدَام Element الْخَاصِّ بِإِنْشَاءِ النَّمَاذِجِ وَتَضْمِينِ الْحُقُولِ الْمُخْتَلِفَة دَاخِلَ صَفَحَاتِ الْوِبّ بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "فهم بنية Start Tag و End Tag عند إنشاء عناصر النماذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_structure.html",
+        "code": "<form>\n  <!-- Form elements go here -->\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "إضافة حقول الإدخال والأزرار",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى إِضَافَة الْعَنَاصِرِ الْفَعَّالَة مِثْلِ حُقُولِ الْإِدْخَالِ وَأَزْرَارِ الْإِرْسَالِ، حَيْثُ نَسْتَخْدِم Tags مُتَعَدِّدَة لِتَكْوِينِ نَوْعِيَّة الْبَيَانَاتِ الْمَطْلُوبَة مِنْ مُسْتَخْدِمِ صَفْحَة الْوِبّ بِكُلِّ سُهُولَه.",
+        "caption_text": "إضافة حقول الإدخال والأزرار داخل النموذج البرمجي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_elements.html",
+        "code": "<form>\n  <label for=\"fname\">First name:</label><br>\n  <input type=\"text\" id=\"fname\" name=\"fname\">\n</form>",
+        "highlight_lines": [],
+        "output": "First name: [ text input field ]",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "استعراض النتيجة في المتصفح",
+      "narration": {
+        "spoken_text": "بَعْدَ اكْتِمَالِ كِتَابَة الْكُودِ وَتَفْعِيل Attributes الْمُنَاسِبَه، نَقُومُ بِفَحْصِ النَّتِيجَة الدَّقِيقَة دَاخِلَ وِبّ Browser مِثْل Chrome أَوْ Firefox لِلتَّأَكُّدِ مِنْ أَنَّ الْعَنَاصِرَ تَعْمَلُ بِشَكْلٍ سَلِيمٍ وَمِثَالِيٍّ.",
+        "caption_text": "فحص وتحقق النتيجة في المتصفح للتأكد من سلامة عناصر النموذج."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "معاينة تفاعل المستخدم مع الحقول النصية",
+          "التأكد من مطابقة الكود لمعايير W3Schools",
+          "اختبار استجابة عناصر الويب على المتصفحات المختلفة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "أفضل الممارسات البرمجية للنماذج",
+      "narration": {
+        "spoken_text": "لِضَمَانِ جَوْدَة الْكُودِ الْبَرْمَجِيِّ، يَجِبُ عَلَيْكَ دَائِماً الْإِلْتِزَامُ بِتَسْمِيَة Attributes بِدِقَّة وَوَضْعِ الْعَلَامَاتِ التَّوْضِيحِيَّة لِتَحْسِينِ إِمْكَانِيَّة الْوُصُولِ وَسُهُولَة قِرَاءَة صَفَحَاتِ الْوِبّ لِجَمِيعِ الْمُسْتَخْدِمِينَ دُونَ اسْتِثْنَاءٍ.",
+        "caption_text": "تطبيق أفضل الممارسات البرمجية لضمان جودة عناصر النماذج."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Attributes الدلالية مثل id و name بانتظام",
+          "ربط عناصر label بحقول input بصورة صحيحة",
+          "الحفاظ على تنظيم هيكل كود HTML نظيفا وواضحا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة اجْتِيَازِ تَحَدِّيَات Form Elements بِكفاءَه، أَدْعُوكُمْ لِزِيَارَة الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَجْرِبَة التَّحَدِّيَاتِ بِنَفْسِكُمْ وَتَطْوِيرِ مَهَارَاتِكُمْ مَعَ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة الدرس ودعوة لتجربة التحديات البرمجية من رابط الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مراجعة شاملة لتمارين النماذج في لغة HTML",
+          "التدرب المستمر لاكتساب الاحترافية في تطوير الويب",
+          "تابعونا للمزيد من الدروس الممتعة في CodeGalaxy"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_forms.asp"
+      ]
+    }
+  ]
+}
