@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "74",
+  "title": "HTML Layout Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية بناء هيكل صفحات الويب",
+    "التعرف على العناصر الأساسية لتنظيم المحتوى",
+    "تطبيق المهارات في تحدي برمجي عملي",
+    "استخدام العناصر الدلالية في HTML5"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_layout.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في هيكلة صفحات الويب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة بِنَاءِ هَيْكَلٍ مُنَظَّمٍ لِصَفْحَة الْوِبّ، وَذَلِكَ مِنْ خِلَالِ خَوْضِ تَحَدِّي بَرْمَجِيٍّ عَمَلِيٍّ لِتَطْبِيقِ مَا تَعَلَّمْنَاهُ عَنْ تَنْظِيمِ الْعَنَاصِرِ دَاخِلَ الصَّفْحَه.",
+        "caption_text": "مرحبا بكم في درس اليوم حول بناء هيكل صفحات الويب باستخدام HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلم تنظيم هيكل صفحة الويب",
+          "استخدام العناصر الدلالية في HTML5",
+          "تطبيق تحدي برمجي عملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "المفاهيم الأساسية للهيكل",
+      "narration": {
+        "spoken_text": "لِتَنْظِيمِ صَفْحَة الْوِبّ، نَعْتَمِدُ عَلَى Elements مُحَدَّدَة مِثْل header و nav و section و footer. هَذِهِ الْعَنَاصِرُ تُسَاعِدُ الْمُتَصَفِّحْ وَالْمُسْتَخْدِمَ عَلَى فَهْمِ تَرْتِيبِ الْمُحْتَوَى بِشَكْلٍ مَنْطِقِيٍّ وَسَلِيمٍ دَاخِلَ بِنْيَة HTML5.",
+        "caption_text": "نستخدم عناصر مثل header و nav و section و footer لتنظيم محتوى الصفحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام header للترويسة",
+          "استخدام nav للقوائم",
+          "استخدام section للمحتوى",
+          "استخدام footer للتذييل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    },
+    {
+      "id": "code_part_1",
+      "title": "كتابة هيكل الصفحة الجزء الأول",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. نَبْدَأُ دَائِماً بِتَعْرِيفِ دُوكْ تَايْبْ HTML، ثُمَّ نَفْتَحُ عُنْصُر html. دَاخِلَ قِسْم head نَضَع title، وَفِي قِسْم body نَبْدَأُ بِإِنْشَاء header لِوَضْعِ عُنْوَانٍ رَئِيسِيٍّ بِاسْتِخْدَام h1.",
+        "caption_text": "نبدأ بكتابة الكود الأساسي مع تعريف DOCTYPE وفتح العناصر الرئيسية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Layout</title>\n</head>\n<body>\n<header>\n<h1>My Page</h1>\n</header>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    },
+    {
+      "id": "code_part_2",
+      "title": "استكمال هيكل الصفحة",
+      "narration": {
+        "spoken_text": "نُكْمِلُ الْآنَ بِإِضَافَة قِسْم nav لِلرَّوَابِطِ، ثُمَّ نُضِيف section لِتَضَمُّنِ الْمُحْتَوَى الرَّئِيسِيِّ وَفَقَرَاتٍ بِاسْتِخْدَام p. هَذَا التَّرْتِيبُ يَجْعَلُ الصَّفْحَة مَقْرُوءَة وَمُنَظَّمَة لِأَيِّ وِبّ Browser يَقُومُ بِعَرْضِهَا.",
+        "caption_text": "نضيف عناصر nav و section لتنظيم الروابط والمحتوى الرئيسي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<nav>Link</nav>\n<section>\n<p>Main Content</p>\n</section>\n<footer>\n<p>Footer</p>\n</footer>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "مِنْ أَهَمِّ الْمُمَارَسَاتِ هِيَ الْحِرْصُ عَلَى إِغْلَاقِ كُلِّ Closing Tag بِشَكْلٍ صَحِيحٍ. تَأَكَّدْ دَائِماً مِنْ تَنْسِيقِ الْكُودِ بِشَكْلٍ مُرَتَّبٍ لِيَسْهُلَ عَلَيْكَ وَعَلَى غَيْرِكَ قِرَاءَتُهُ وَتَعْدِيلُهُ فِي الْمُسْتَقْبَلِ.",
+        "caption_text": "احرص دائما على إغلاق العناصر بشكل صحيح وتنسيق الكود بوضوح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إغلاق جميع العناصر بشكل صحيح",
+          "استخدام المسافات البادئة للتنظيم",
+          "كتابة كود نظيف وسهل القراءة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "لَقَدْ تَعَلَّمْنَا الْيَوْمَ كَيْفِيَّة بِنَاءِ هَيْكَلٍ لِصَفْحَة الْوِبّ. أَدْعُوكُمْ لِتَجْرِبَة هَذَا التَّحَدِّي بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدِيُو، وَتَطْبِيقِ مَا تَعَلَّمْتُمُوهُ لِتُصْبِحُوا مُطَوِّرِي وِبٍّ مُحْتَرِفِينَ.",
+        "caption_text": "شكرا لمتابعتكم، جربوا التحدي بأنفسكم عبر الرابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع مفاهيم HTML Layout",
+          "قم بحل التحدي البرمجي",
+          "استمر في ممارسة البرمجة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_layout.asp"
+      ]
+    }
+  ]
+}
