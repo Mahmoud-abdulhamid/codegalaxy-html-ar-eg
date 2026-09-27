@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "114",
+  "title": "Server-Sent Events API",
+  "course": "HTML",
+  "objectives": [
+    "فهم آلية عمل Server-Sent Events API",
+    "التعرف على كيفية استقبال التحديثات التلقائية من السيرفر",
+    "استخدام EventSource في صفحات الويب",
+    "كتابة كود السيرفر لإرسال البيانات بتنسيق text/event-stream"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_serversentevents.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-5b08b8bee84f6d78.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "",
+      "source_url": "https://www.w3schools.com/html/html5_serversentevents.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول Server-Sent Events",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى تِقْنِيَة Server-Sent Events الَّتِي تُتِيحُ لِصَفْحَة الْوِبّ اسْتِقْبَالَ التَّحْدِيثَاتِ تِلْقَائِيّاً مِنَ السِّيرْفَرِ دُونَ الْحَاجَة لِطَلَبِهَا يَدَوِيّاً فِي كُلِّ مَرَّه.",
+        "caption_text": "تسمح تقنية Server-Sent Events ببدء تحديثات تلقائية من السيرفر إلى صفحة الويب عبر اتصال HTTP."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحديثات تلقائية من السيرفر إلى المتصفح",
+          "تستخدم في تطبيقات مثل أخبار البورصة ونتائج الرياضة",
+          "تعتمد على اتصال HTTP مستمر",
+          "تغني عن طلب البيانات المتكرر من العميل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "مفاهيم أساسية",
+      "narration": {
+        "spoken_text": "لِتَفْعِيلِ هَذِهِ الْخَاصِّيَّة نَسْتَخْدِمُ كَائِن EventSource. هَذَا الْكَائِنُ هُوَ الْمَسْؤُولُ عَنِ الْاتِّصَالِ بِالسِّيرْفَرِ وَالِاسْتِمَاعِ إِلَى الرَّسَائِلِ الْقَادِمَه. يَنْبَغِي عَلَيْنَا أَيْضاً التَّأَكُّدُ مِنْ دَعْمِ الْمُتَصَفِّحْ لِهَذِهِ التِّقْنِيَة قَبْلَ بَدْءِ الْعَمَلِ.",
+        "caption_text": "يستخدم الكائن EventSource لاستقبال إشعارات الأحداث المرسلة من السيرفر."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام EventSource للاتصال بالسيرفر",
+          "التحقق من دعم المتصفح عبر typeof EventSource",
+          "الاستماع للأحداث عبر onmessage",
+          "تحديث واجهة المستخدم بناء على البيانات المستلمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "client_code",
+      "title": "كود العميل JavaScript",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَقُومُ أَوَّلاً بِالتَّحَقُّقِ مِنْ دَعْم EventSource، ثُمَّ نُنْشِئُ مِثَالاً جَدِيداً يَتَّصِلُ بِمَلَف demo_sse.php. عِنْدَ وُصُولِ رِسَالَه، نَقُومُ بِتَحْدِيثِ عُنْصُر result بِإِضَافَة الْبَيَانَاتِ الْجَدِيدَه.",
+        "caption_text": "كود JavaScript للتحقق من دعم المتصفح والاتصال بالسيرفر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "script.js",
+        "code": "if(typeof(EventSource) !== \"undefined\") {\n  var source = new EventSource(\"demo_sse.php\");\n  source.onmessage = function(event) {\n    document.getElementById(\"result\").innerHTML += \n    event.data + \"<br>\";\n  };\n} else {\n  alert(\"No support!\");\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "server_code",
+      "title": "كود السيرفر PHP",
+      "narration": {
+        "spoken_text": "لِكَيْ يَعْمَلَ هَذَا الْمِثَالُ، يَحْتَاجُ السِّيرْفَرُ لِإِرْسَالِ بَيَانَاتٍ بِتَنْسِيق text event-stream. نَقُومُ بِضَبْطِ الْهيدرِ الْمُنَاسِبِ، ثُمَّ نَسْتَخْدِمُ دَالَّة echo لِإِرْسَالِ الْبَيَانَاتِ مَسْبُوقَة بِكَلِمَة data، وَنَسْتَخْدِم flush لِضَمَانِ إِرْسَالِ الْمُحْتَوَى فَوْراً.",
+        "caption_text": "إعداد السيرفر لإرسال البيانات بتنسيق text/event-stream."
+      },
+      "visual": {
+        "type": "code",
+        "language": "php",
+        "filename": "demo_sse.php",
+        "code": "<?php\nheader('Content-Type: text/event-stream');\nheader('Cache-Control: no-cache');\n$time = date('r');\necho \"data: The server time is: {$time}\\n\\n\";\nflush();\n?>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "visual_output",
+      "title": "معاينة النتيجة",
+      "narration": {
+        "spoken_text": "فِي هَذِهِ الصُّورَه، نَرَى كَيْفَ تَتَجَمَّعُ التَّحْدِيثَاتُ فِي صَفْحَة الْوِبّ. كُلَّمَا أَرْسَلَ السِّيرْفَرُ بَيَانَاتٍ جَدِيدَه، تَنْضَافُ إِلَى الْقَائِمَة دُونَ أَنْ نَقُومَ بِتَحْدِيثِ الصَّفْحَة يَدَوِيّاً، وَهَذَا هُوَ الْجَوْهَرُ الْأَسَاسِيُّ لِتِقْنِيَة Server-Sent Events.",
+        "caption_text": "تظهر البيانات المحدثة تلقائيا في المتصفح عند وصولها من السيرفر."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "Server-Sent Events output example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "ملاحظات هندسية",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَتَذَكَّرَ أَنَّ هَذِهِ التِّقْنِيَة تَعْمَلُ فِي اتِّجَاهٍ وَاحِدٍ فَقَطْ، مِنَ السِّيرْفَرِ إِلَى الْعَمِيلِ. إِذَا كُنْتُمْ بِحَاجَة لِتَبَادُلِ الْبَيَانَاتِ فِي الِاتِّجَاهَيْنِ، فَقَدْ تَكُونُ تِقْنِيَة WebSockets خِيَاراً أَفْضَلَ لِمَشَارِيعِكُمْ فِي الْمُسْتَقْبَلِ.",
+        "caption_text": "ملاحظة: SSE مخصصة للاتصال أحادي الاتجاه من السيرفر للعميل."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "SSE تدعم الاتصال أحادي الاتجاه فقط",
+          "استخدم WebSockets للاتصال ثنائي الاتجاه",
+          "تأكد من إغلاق الاتصال عند عدم الحاجة",
+          "تعامل مع أخطاء الاتصال في كود JavaScript"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ وَصَلْنَا إِلَى نِهَايَة دَرْسِنَا الْيَوْمَ. تَعَلَّمْنَا كَيْفَ نَسْتَخْدِم Server-Sent Events لِجَعْلِ صَفَحَاتِ الْوِبّ أَكْثَرَ تَفَاعُلِيَّه. أَدْعُوكُمْ لِتَجْرِبَة الْأَكْوَادِ بِنَفْسِكُمْ وَمُشَاهَدَة النَّتَائِجِ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "شكرا لمتابعتكم، استمروا في ممارسة البرمجة وتطوير مهاراتكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تمت تغطية مفاهيم SSE",
+          "تم شرح كود العميل والسيرفر",
+          "تم توضيح أهمية EventSource",
+          "راجعوا الروابط في الوصف للتطبيق العملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_serversentevents.asp"
+      ]
+    }
+  ]
+}
