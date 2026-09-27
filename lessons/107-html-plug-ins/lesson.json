@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "107",
+  "title": "HTML Plug-ins and Embedded Objects",
+  "course": "HTML",
+  "objectives": [
+    "فهم دور Plug-ins في متصفحات الويب",
+    "التعرف على عنصر object واستخداماته",
+    "التعرف على عنصر embed واستخداماته",
+    "تجنب استخدام التقنيات القديمة غير المدعومة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_object.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-772c985d9505326d.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_object.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول Plug-ins",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ نَتَحَدَّثُ عَنْ Plug-ins، وَهِيَ بَرَامِجُ حَاسُوبِيَّة تَمَّ تَصْمِيمُهَا لِتَوْسِيعِ وَظَائِفِ مُتَصَفِّحْ الْوِبّ، لِتَقُومَ بِأَدْوَارٍ مُتَعَدِّدَة مِثْلَ عَرْضِ الْأَفْلَامِ أَوْ تَشْغِيلِ بَرَامِج Java.",
+        "caption_text": "تعد Plug-ins برامج حاسوبية مصممة لتوسيع الوظائف القياسية لمتصفح الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "توسيع وظائف متصفح الويب",
+          "استخدامات متعددة مثل تشغيل Java applets",
+          "عرض ملفات الوسائط المتعددة",
+          "تحذير: معظم المتصفحات الحديثة لم تعد تدعم هذه التقنيات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    },
+    {
+      "id": "object_element",
+      "title": "عنصر object",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ إِلَى عُنْصُر object، وَهُوَ عُنْصُرٌ مَدْعُومٌ مِنْ جَمِيعِ الْمُتَصَفِّحَاتِ. يُسْتَخْدَمُ هَذَا الْعُنْصُرُ لِتَعْرِيفِ كَائِنٍ مُضَمَّنٍ دَاخِلَ مُسْتَنَد HTML، وَقَدْ صُمِّمَ أَصْلًا لِتَضْمِين Plug-ins، لَكِنَّهُ يُمْكِنُ أَيْضاً تَضْمِينُ صَفَحَات HTML أُخْرَى.",
+        "caption_text": "يستخدم عنصر object لتعريف كائن مضمن داخل مستند HTML وهو مدعوم من جميع المتصفحات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يدعم تضمين Plug-ins مثل PDF readers",
+          "يمكن استخدامه لتضمين ملفات HTML",
+          "يعد عنصرا مرنا في هيكلة صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    },
+    {
+      "id": "object_code",
+      "title": "مثال على عنصر object",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ هَذَا الْمِثَالَ لِتَضْمِينِ صَفْحَة HTML دَاخِلَ صَفْحَة أُخْرَى. نُحَدِّدُ الْعَرْضَ بِـ 100 وَالِارْتِفَاعَ بِـ 500px، ثُمَّ نَضَعُ مَسَارَ الْمِلَفِّ فِي خَاصِيَّة data. لَاحِظْ كَيْفَ نَكْتُبُ الْكُودَ بِشَكْلٍ مُنَظَّمٍ وَسَلِيمٍ.",
+        "caption_text": "مثال يوضح كيفية تضمين ملف HTML داخل صفحة باستخدام عنصر object."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<object \n  width=\"100%\" \n  height=\"500px\" \n  data=\"snippet.html\">\n</object>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    },
+    {
+      "id": "embed_element",
+      "title": "عنصر embed",
+      "narration": {
+        "spoken_text": "أَمَّا عُنْصُر embed، فَهُوَ أَيْضاً يُعَرِّفُ كَائِنَاتٍ مُضَمَّنَه. لَقَدْ دَعَمَتْهُ مُتَصَفِّحَاتُ الْوِبّ لِفَتْرَة طَوِيلَه، وَرَغْمَ أَنَّهُ لَمْ يَكُنْ جُزْءاً مِنَ الْمَعَايِيرِ قَبْل HTML5، إِلَّا أَنَّهُ أَصْبَحَ الْآنَ مَدْعُوماً فِي جَمِيعِ الْمُتَصَفِّحَاتِ الرَّئِيسِيَّه.",
+        "caption_text": "عنصر embed هو وسيلة أخرى لتضمين الكائنات في صفحات الويب وأصبح جزءا من معايير HTML5."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مدعوم في جميع المتصفحات الرئيسية",
+          "يستخدم لتضمين الكائنات في مستند HTML",
+          "لم يكن جزءا من مواصفات HTML قبل HTML5"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    },
+    {
+      "id": "embed_code",
+      "title": "مثال على عنصر embed",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نُنَوِّهَ إِلَى أَنَّ عُنْصُر embed لَا يَمْتَلِك Closing Tag، وَلَا يُمْكِنُهُ احْتِوَاءُ نَصٍّ بَدِيلٍ. فِي هَذَا الْمِثَالِ، نَقُومُ بِتَضْمِينِ صُورَة بَسِيطَة عَبْرَ خَاصِيَّة src، وَهِيَ طَرِيقَة مُبَاشِرَة وَسَرِيعَة لِلْعَرْضِ.",
+        "caption_text": "مثال يوضح استخدام عنصر embed لتضمين صورة، مع ملاحظة أنه لا يحتوي على Closing Tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<embed src=\"audi.jpeg\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "ملاحظات هامة",
+      "narration": {
+        "spoken_text": "خِتَاماً، يَا أَصْدِقَائِي، تَذَكَّرُوا أَنَّ مُعْظَمَ الْمُتَصَفِّحَاتِ الْحَدِيثَة لَمْ تَعُدْ تَدْعَم Java Applets أَوْ ActiveX. لِذَا، يُفَضَّلُ دائماً الْبَحْثُ عَنِ الْبَدَائِلِ الْحَدِيثَة لِتَضْمِينِ الْمُحْتَوَى لِضَمَانِ تَوَافُقِيَّة صَفَحَاتِ الْوِبّ الْخَاصَّة بِكُمْ مَعَ جَمِيعِ الْمُسْتَخْدِمِينَ.",
+        "caption_text": "يجب الحذر من استخدام التقنيات القديمة والبحث دائما عن البدائل الحديثة لضمان توافقية الموقع."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجنب Java Applets و ActiveX",
+          "استخدم البدائل الحديثة لـ Flash",
+          "اختبر دائما توافقية الكود في المتصفحات الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_object.asp"
+      ]
+    }
+  ]
+}
