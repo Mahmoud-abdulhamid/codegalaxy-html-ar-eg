@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "105",
+  "title": "استخدام عنصر audio في HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية دمج ملفات الصوت في صفحات الويب باستخدام audio",
+    "التعرف على Attributes controls و autoplay و muted",
+    "استخدام عنصر source لتوفير صيغ صوتية متعددة",
+    "معرفة كيفية التعامل مع دعم المتصفحات لملفات الصوت"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_audio.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-7e0079273c5f1cfa.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_audio.asp",
+      "source_url": "https://www.w3schools.com/html/html5_audio.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول عنصر audio",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة إِدْرَاجِ الْمَلَفَّاتِ الصَّوْتِيَّة دَاخِلَ صَفْحَة الْوِبّ بِاسْتِخْدَامِ عُنْصُر audio، وَهُوَ عُنْصُرٌ قَوِيٌّ يُتِيحُ لَنَا تَشْغِيلَ الْمُحْتَوَى الصَّوْتِيِّ بِسُهُولَة دُونَ الْحَاجَة إِلَى إِضَافَاتٍ خَارِجِيَّه.",
+        "caption_text": "يستخدم عنصر audio في HTML لتشغيل ملفات الصوت مباشرة داخل صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر audio مخصص لتشغيل الصوت",
+          "يدعم صيغا متعددة مثل MP3 و OGG",
+          "يوفر تحكما كاملا للمستخدم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    },
+    {
+      "id": "basic_syntax",
+      "title": "الهيكل الأساسي لعنصر audio",
+      "narration": {
+        "spoken_text": "لِكِتَابَة هَذَا الْعُنْصُرِ، نَسْتَخْدِم Start Tag و End Tag. نُضِيف Attribute controls لِتَظْهَرَ أَدَوَاتُ التَّحَكُّمِ مِثْلَ زِرِّ التَّشْغِيلِ وَمُسْتَوَى الصَّوْتِ. هَذِه Attribute ضَرُورِيَّة لِيَتَمَكَّنَ الْمُسْتَخْدِمُ مِنَ التَّفَاعُلِ مَعَ الْمِلَفِّ الصَّوْتِيِّ.",
+        "caption_text": "نستخدم Attribute controls لإظهار أدوات التحكم الأساسية للمستخدم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<audio controls>\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\n  Your browser does not support.\n</audio>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    },
+    {
+      "id": "source_element",
+      "title": "استخدام عنصر source",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِمُ عُنْصُر source دَاخِل audio لِتَحْدِيدِ مَسَارِ الْمِلَفِّ الصَّوْتِيِّ عَبْر Attribute src. يُمْكِنُنَا إِضَافَة أَكْثَرَ مِنْ مِلَفٍّ بِصِيَغٍ مُخْتَلِفَه، حَيْثُ يَقُومُ الْمُتَصَفِّحْ بِاخْتِيَارِ أَوَّلِ صِيغَة يَدْعَمُهَا، وَهَذَا يَضْمَنُ تَوَافُقِيَّة عَالِيَة مَعَ جَمِيعِ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "عنصر source يسمح بتحديد ملفات صوتية بديلة لضمان التوافق."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "source.html",
+        "code": "<audio controls>\n  <source src=\"horse.ogg\" type=\"audio/ogg\">\n  <source src=\"horse.mp3\" type=\"audio/mpeg\">\n</audio>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    },
+    {
+      "id": "autoplay_muted",
+      "title": "Attributes التشغيل التلقائي",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا إِضَافَة Attribute autoplay لِتَشْغِيلِ الصَّوْتِ تِلْقَائِيّاً. لَكِنْ لَاحِظْ أَنَّ مُعْظَمَ الْمُتَصَفِّحَاتِ الْحَدِيثَة تَمْنَعُ ذَلِكَ إِذَا كَانَ الصَّوْتُ مُرْتَفِعاً. لِذَلِكَ، نَسْتَخْدِم Attribute muted مَع autoplay لِضَمَانِ عَمَلِهِ بِشَكْلٍ صَحِيحٍ دُونَ إِزْعَاجِ الْمُسْتَخْدِمِ.",
+        "caption_text": "Attribute autoplay تشغل الصوت تلقائيا، وmuted تجعله صامتا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "autoplay.html",
+        "code": "<audio controls autoplay muted>\n  <source src=\"audio.mp3\" type=\"audio/mpeg\">\n</audio>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    },
+    {
+      "id": "browser_support",
+      "title": "دعم المتصفحات",
+      "narration": {
+        "spoken_text": "تَدْعَمُ مُتَصَفِّحَاتُ الْوِبّ الْحَدِيثَة مِثْل Chrome و Firefox و Edge عُنْصُر audio بِشَكْلٍ كَامِلٍ. إِذَا لَمْ يَدْعَمِ الْمُتَصَفِّحْ هَذَا الْعُنْصُرَ، فَسَيَظْهَرُ النَّصُّ الْمَوْجُودُ بَيْن Start Tag و End Tag لِتَنْبِيهِ الْمُسْتَخْدِمِ بِذَلِكَ.",
+        "caption_text": "المتصفحات الحديثة تدعم عنصر audio بشكل كامل."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Browser",
+          "Support",
+          "Version"
+        ],
+        "rows": [
+          [
+            "Chrome",
+            "YES",
+            "4.0"
+          ],
+          [
+            "Firefox",
+            "YES",
+            "3.5"
+          ],
+          [
+            "Edge",
+            "YES",
+            "79.0"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا كَيْفَ نُضِيفُ الصَّوْتَ إِلَى صَفْحَاتِ الْوِبّ بِاحْتِرَافِيَّه. تَذَكَّرْ دَائِماً تَجْرِبَة أَكْوَادِكَ وَالتَّأَكُّدَ مِنْ دَعْمِ الصِّيَغِ الْمُخْتَلِفَه. نَلْتَقِي فِي دَرْسٍ قَادِمٍ لِتَعَلُّمِ الْمَزِيدِ عَنْ تَقْنِيَات HTML5.",
+        "caption_text": "استمر في ممارسة استخدام عناصر HTML لبناء صفحات ويب تفاعلية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم controls لتجربة المستخدم",
+          "وفر صيغا متعددة عبر source",
+          "استخدم muted مع autoplay",
+          "راجع DOM Reference للمزيد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_audio.asp"
+      ]
+    }
+  ]
+}
