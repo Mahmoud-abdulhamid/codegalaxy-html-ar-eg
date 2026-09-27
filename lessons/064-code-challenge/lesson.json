@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "64",
+  "title": "HTML Buttons Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء الأزرار التفاعلية والمعطلة في HTML",
+    "اختبار المهارات البرمجية وتطبيق تحديات الأزرار",
+    "استخدام Attributes المختلفة مثل disabled لعناصر button"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_buttons.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة تحدي الأزرار",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسِ الْيَوْمِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ عَلَى تَحَدِّيَاتِ الْأَزْرَارِ الْعَمَلِيَّة وَكَيْفَ نُنْشِئ Elements تُتِيحُ لِلْمُسْتَخْدِمِ التَّفَاعُلَ مَعَ صَفْحَة الْوِبّ بِكُلِّ سُهُولَه.",
+        "caption_text": "مرحبا بكم في درس اليوم من دورة لغة HTML للتعرف على تحديات الأزرار العملية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "التعرف على تحديات الأزرار في HTML",
+          "فهم طريقة بناء عناصر تفاعلية لصفحات الويب",
+          "تطبيق التحديات البرمجية بأسلوب عملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "أهمية الأزرار في صفحات الويب",
+      "narration": {
+        "spoken_text": "تَعْتَبِرُ الْأَزْرَارُ عُنْصُراً أَسَاسِيّاً فِي أَيِّ صَفْحَة وِبّ. نَسْتَخْدِم button Element لِلسَّمَاحِ لِلْمُسْتَخْدِمِينَ بِالنَّقْرِ وَتَنْفِذِ الْإِجْرَاءَاتِ الْمُخْتَلِفَة مِثْلَ إِرْسَالِ النُّمَاذِجِ أَوْ تَفْعِيلِ الْوَظَائِفِ.",
+        "caption_text": "تعتبر الأزرار عنصرا أساسيا في أي صفحة ويب لتنفيذ الإجراءات المختلفة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الأزرار هي عناصر تفاعلية أساسية في الويب",
+          "تستخدم لتنفيذ الإجراءات والنقرات",
+          "تتطلب فهما دقيقا لخصائصها وخصائص التفاعل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة كود الأزرار التفاعلية",
+      "narration": {
+        "spoken_text": "لِنَنْظُرَ إِلَى هَذَا الْمِثَالِ الْبَسِيطِ لِكِتَابَة زِرٍّ عاديه. نَكْتُب Start Tag لِعُنْصُر button ثُمَّ نَكْتُبُ النَّصَّ الْمَرْئِيَّ وَنُغْلِقُهُ بِـ End Tag الْمُنَاسِبِ دَاخِلَ صَفْحَة HTML.",
+        "caption_text": "نكتب كود الأزرار باستخدام عنصر button والنص المناسب داخله."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<button>\n  Click Me\n</button>",
+        "highlight_lines": [],
+        "output": "Click Me",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "استخدام Attribute التعطيل Disabled",
+      "narration": {
+        "spoken_text": "فِي بَعْضِ الْحَالَاتِ، قَدْ نُرِيدُ تَعْطِيلَ الزِّرِّ حَتَّى يَتِمَّ اسْتِيفَاءُ شُرُوطٍ مُعَيَّنَه. نَسْتَخْدِم disabled Attribute ضِمْنَ عُنْصُر button لِمَنْعِ الْمُسْتَخْدِمِ مِنَ النَّقْرِ عَلَيْهِ فِي صَفْحَة الْوِبّ.",
+        "caption_text": "نستخدم Attribute disabled لتعطيل الزر ومنع المستخدم من النقر عليه."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<button disabled>\n  Disabled Button\n</button>",
+        "highlight_lines": [],
+        "output": "Disabled Button",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة نتائج الأزرار في المتصفح",
+      "narration": {
+        "spoken_text": "عِنْدَ عَرْضِ هَذِهِ الْأَكْوَادِ دَاخِلَ وِبّ Browser مِثْل Google Chrome، يَظْهَرُ الزِّرُّ الْعَادِيُّ قَابِلاً لِلنَّقْرِ، بَيْنَمَا يَظْهَرُ الزِّرُّ الْمُعَطَّلُ بِلَوْنٍ بَاهِتٍ وَغَيْرِ قَابِلٍ لِلتَّفَاعُلِ.",
+        "caption_text": "تظهر الأزرار في المتصفح بشكل تفاعلي أو معطل حسب Attributes المستخدمة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عرض الأزرار في Web Browser",
+          "الفرق البصري بين الزر التفاعلي والمعطل",
+          "تجربة النتائج بشكل مباشر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "أفضل الممارسات لتحديات الأزرار",
+      "narration": {
+        "spoken_text": "لِتَجْتَازَ تَحَدِّيَاتِ الْأَزْرَارِ بِنَجَاحٍ، احْرِصْ عَلَى كِتَابَة Attributes بِشَكْلٍ صَحِيحٍ وَالتَّأَكُّدِ مِنْ إِغْلَاقِ جَمِيع Tags بِدِقَّة تَمَامَة دَاخِلَ هَيْكَلِ صَفْحَة HTML الْخَاصَّة بِكَ.",
+        "caption_text": "احرص على كتابة Attributes بشكل صحيح وإغلاق جميع Tags بدقة تامة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "التأكد من إغلاق Tags بشكل صحيح",
+          "كتابة Attributes بحروف صغيرة ودقيقة",
+          "اختبار الأكواد باستمرار لضمان خلوها من الأخطاء"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "هَكَذَا يَا أَصْدِقَائِي تَعَرَّفْنَا عَلَى كَيْفِيَّة إِنْشَاءِ وَتَعْطِيلِ الْأَزْرَارِ مِنْ خِلَالِ تَحَدِّيَاتِ لُغَة HTML. أَنْصَحُكُمْ بِزِيَارَة الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَطْبِيقِ هَذِهِ التَّحَدِّيَاتِ بِنَفْسِكُمْ مَعَ مُحَمَّدِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "تعرفنا على كيفية إنشاء وتعطيل الأزرار، وننصحكم بتطبيق التحديات بنفسكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ملخص شامل لتحديات الأزرار في HTML",
+          "أهمية التطبيق العملي المستمر",
+          "تابعونا للمزيد من الدروس الممتعة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      ]
+    }
+  ]
+}
