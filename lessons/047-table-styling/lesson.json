@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "47",
+  "title": "تنسيق جداول HTML باستخدام CSS",
+  "course": "HTML",
+  "objectives": [
+    "تعلم كيفية إضافة تأثير Zebra Stripes للجداول",
+    "التحكم في تنسيق الصفوف والأعمدة باستخدام nth-child",
+    "إضافة تأثيرات تفاعلية عند تمرير الفأرة",
+    "استخدام الألوان الشفافة rgba في التصميم"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_table_styling.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في تنسيق الجداول",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة تَحْسِينِ مَظْهَرِ الْجَدَاوِلِ بِاسْتِخْدَام CSS لِتُصْبِحَ أَكْثَرَ جَمَالاً وَوُضُوحاً لِلْمُسْتَخْدِمِ عِنْدَ تَصَفُّحِ صَفْحَة الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس تنسيق الجداول باستخدام CSS لجعل صفحات الويب أكثر احترافية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحسين مظهر الجداول باستخدام CSS",
+          "جعل البيانات أكثر قابلية للقراءة",
+          "تطبيق تقنيات التصميم الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "zebra_stripes",
+      "title": "تأثير Zebra Stripes للصفوف",
+      "narration": {
+        "spoken_text": "لِإِضَافَة تَأْثِير Zebra Stripes، نَسْتَخْدِم Selector يُسَمَّى nth-child مَعَ الْقِيمَة even. هَذَا التَّقْنِيَة تَجْعَلُ كُلَّ صَفٍّ زَوْجِيٍّ يَظْهَرُ بِلَوْنِ خَلْفِيَّة مُخْتَلِفٍ، مِمَّا يُسَهِّلُ قِرَاءَة الْبَيَانَاتِ بِشَكْلٍ كَبِيرٍ.",
+        "caption_text": "استخدام nth-child(even) لتطبيق تأثير Zebra Stripes على صفوف الجدول."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "tr:nth-child(even) {\n  background-color: #D6EEEE;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "vertical_stripes",
+      "title": "تأثير Zebra Stripes للأعمدة",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً تَطْبِيقُ هَذَا التَّأْثِيرِ عَلَى الْأَعْمِدَة بَدَلاً مِنَ الصُّفُوفِ. نَقُومُ بِتَحْدِيد td و th وَنَسْتَخْدِمُ نَفْس Selector. هَذَا يُعْطِي مَظْهَراً عَمُودِيّاً مُنَظَّماً لِلْبَيَانَاتِ دَاخِلَ الْجَدْوَلِ.",
+        "caption_text": "تطبيق التنسيق على الأعمدة باستخدام td و th مع nth-child."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "td:nth-child(even),\nth:nth-child(even) {\n  background-color: #D6EEEE;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "combined_stripes",
+      "title": "دمج التنسيقات والألوان الشفافة",
+      "narration": {
+        "spoken_text": "يُمْكِنُ دَمْجُ التَّأْثِيرَيْنِ مَعاً لِلْحُصُولِ عَلَى شَبَكَة مُلَوَّنَه. نَسْتَخْدِم rgba لِتَحْدِيدِ لَوْنٍ بِشَفَافِيَّة مُعَيَّنَه، مِمَّا يَسْمَحُ بِتَدَاخُلِ الْأَلْوَانِ بَيْنَ الصُّفُوفِ وَالْأَعْمِدَة بِشَكْلٍ جَذَّابٍ وَعَصْرِيٍّ.",
+        "caption_text": "استخدام rgba لتطبيق ألوان شفافة ودمج تأثير الصفوف والأعمدة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "tr:nth-child(even) {\n  background-color: rgba(150, 212, 212, 0.4);\n}\nth:nth-child(even), td:nth-child(even) {\n  background-color: rgba(150, 212, 212, 0.4);\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "dividers",
+      "title": "الفواصل الأفقية",
+      "narration": {
+        "spoken_text": "لِإِضَافَة فَوَاصِل أُفُقِيَّة بَيْنَ الصُّفُوفِ، نَسْتَخْدِم Property تُسَمَّى border-bottom عَلَى عُنْصُر tr. هَذَا يُعْطِي حُدُوداً سُفْلِيَّة لِكُلِّ صَفٍّ، وَيَجْعَلُ الْجَدْوَلَ يَبْدُو أَكْثَرَ تَرْتِيباً وَتَنْظِيماً.",
+        "caption_text": "إضافة فواصل أفقية باستخدام border-bottom على عناصر tr."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "tr {\n  border-bottom: 1px solid #ddd;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "hover_effect",
+      "title": "التفاعل عند تمرير الفأرة",
+      "narration": {
+        "spoken_text": "أَخِيراً، يُمْكِنُنَا إِضَافَة تَأْثِيرٍ تَفَاعُلِيٍّ عِنْدَ تَمْرِيرِ الْفَأْرَة فَوْقَ الصَّفِّ بِاسْتِخْدَام hover Selector. هَذَا يُسَاعِدُ الْمُسْتَخْدِمَ عَلَى تَمْيِيزِ الصَّفِّ الَّذِي يَقْرَؤُهُ حَالِيّاً بِسُهُولَه.",
+        "caption_text": "استخدام hover لتسليط الضوء على الصفوف عند تمرير الفأرة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "tr:hover {\n  background-color: #D6EEEE;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ كَيْفَ نُحَوِّلُ الْجَدَاوِلَ الْعَادِيَّة إِلَى جَدَاوِلَ احْتِرَافِيَّة بِاسْتِخْدَام CSS. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَتَطْبِيقِهَا فِي مَشَارِيعِكُمُ الْقَادِمَه. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ جَدِيدٍ.",
+        "caption_text": "خلاصة: استخدم CSS لتنسيق الجداول وتجربة الأكواد المذكورة في مشاريعك."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام nth-child للتنسيق الدوري",
+          "تطبيق rgba للشفافية",
+          "استخدام border-bottom للفواصل",
+          "تفعيل hover للتفاعل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_styling.asp"
+      ]
+    }
+  ]
+}
