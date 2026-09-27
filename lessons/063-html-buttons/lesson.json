@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "63",
+  "title": "HTML Buttons Course",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء الأزرار التفاعلية باستخدام HTML",
+    "استخدام CSS لتنسيق الأزرار وتغيير مظهرها",
+    "التعامل مع حالة المعطلة باستخدام Attribute المعطل",
+    "ربط الأزرار بلغة JavaScript عبر onclick",
+    "فهم أنواع الأزرار داخل النماذج Forms وأنواعها الثلاثة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_buttons.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-a0b5093e70393159.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_buttons.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-106ed7555da903e4.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_buttons.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-8d7b518ff3c78898.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_buttons.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة حول الأزرار التفاعلية",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسِ الْيَوْمِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ عَلَى أَهَمِّيَّة الْأَزْرَارِ فِي صَفْحَاتِ الْوِبّ وَكَيْفَ نُمَكِّنُ الْمُسْتَخْدِمِينَ مِنَ التَّفَاعُلِ مَعَ الْمَوْقِعِ بِسُهُولَة تَامَّه.",
+        "caption_text": "مرحبا بكم في درس الأزرار التفاعلية ودورها الحيوي في صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تسمح الأزرار للمستخدمين بالتفاعل مع صفحات الويب",
+          "يمكنها إرسال النماذج أو تشغيل أكواد JavaScript",
+          "تعتبر عنصرا أساسيا في بناء واجهات المستخدم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_2_button_element",
+      "title": "العنصر الاساسي لإنشاء الأزرار",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِمُ الْعُنْصُر button لِتَعْرِيفِ زِرٍّ قَابِلٍ لِلنَّقْرِ دَاخِلَ صَفْحَة الْوِبّ. بِدُونِ إِضَافَة عَمَلٍ أَوْ تَصَرُّفٍ مُحَدَّدٍ، لَنْ يَفْعَلَ الزِّرُّ أَيْ شَيْءٍ بِمُفْرَدِهِ حَتَّى تَقُومَ بَرْمَجَتِهِ.",
+        "caption_text": "نستخدم العنصر button لتعريف زر قابل للنقر في صفحة الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "button.html",
+        "code": "<button>Click Me</button>",
+        "highlight_lines": [],
+        "output": "Click Me",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_3_styling_buttons",
+      "title": "تنسيق الأزرار باستخدام CSS",
+      "narration": {
+        "spoken_text": "غَالِباً مَا نَقُومُ بِتَنْسِيقِ الْأَزْرَارِ بِاسْتِخْدَامِ لُغَة CSS لِتَحْسِينِ مَظْهَرِهَا الْجَمَالِيِّ، مِثْلَ تَغْيِيرِ لَوْنِ الْخَلْفِيَّة إِلَى اللَّوْنِ الْأَخْضَرِ وَإِضَافَة مَظْهَرٍ جَذَّابٍ لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يمكن تنسيق الأزرار بسهولة باستخدام CSS لتغيير ألوانها ومظهرها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "styled_button.html",
+        "code": "<button class=\"mytestbtn\">\n  Green Button\n</button>",
+        "highlight_lines": [],
+        "output": "Green Button",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_4_disabled_buttons",
+      "title": "الأزرار المعطلة Disabled Buttons",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِم Attribute الْمُسَمَّى disabled لِجَعْلِ الزِّرِّ غَيْرَ قَابِلٍ لِلنَّقْرِ. لَا يُمْكِنُ النَّقْرُ عَلَى هَذِهِ الْأَزْرَارِ وَتَظْهَرُ غَالِباً بِلَوْنٍ بَاهِتٍ لِلدَّلَالَة عَلَى تَعْطِيلِهَا.",
+        "caption_text": "استخدم attribute المعطل disabled لتعطيل الزر وجعله غير قابل للنقر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "disabled.html",
+        "code": "<button disabled>\n  Disabled Button\n</button>",
+        "highlight_lines": [],
+        "output": "Disabled Button",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_5_javascript_button",
+      "title": "تشغيل JavaScript مع الأزرار",
+      "narration": {
+        "spoken_text": "يُمْكِنُكَ تَشْغِيلُ أَكْوَاد JavaScript عِنْدَمَا يَنْقُرُ الْمُسْتَخْدِمُ عَلَى الزِّرِّ، وَذَلِكَ بِاسْتِخْدَام Attribute الْمُسَمَّى onclick لِعَرْضِ رِسَالَة تَنْبِيهِيَّة مَثَلًا.",
+        "caption_text": "يمكنك تشغيل أكواد JavaScript عند النقر باستخدام attribute المسماة onclick."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "script_button.html",
+        "code": "<button onclick=\"alert('Hello!')\">\n  Click Me\n</button>",
+        "highlight_lines": [],
+        "output": "Hello!",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_6_button_types",
+      "title": "أنواع الأزرار المختلفة Button Types",
+      "narration": {
+        "spoken_text": "يُحَدِّد Attribute الْمُسَمَّى type وَظِيفَة الزِّرِّ عِنْدَ النَّقْرِ عَلَيْهِ. هُنَاكَ ثَلَاثَة أَنْوَاعٍ رَئِيسِيَّه، مِنْهَا الزِّرُّ الْعَادِيُّ، وَزِرُّ الْإِرْسَال submit، وَزِرُّ الْإِعَادَة reset.",
+        "caption_text": "يحدد attribute المسماة type وظيفة الزر، وهناك ثلاثة أنواع رئيسية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "types.html",
+        "code": "<button type=\"button\">Normal</button>\n<button type=\"submit\">Submit</button>\n<button type=\"reset\">Reset</button>",
+        "highlight_lines": [],
+        "output": "Normal | Submit | Reset",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_7_form_example",
+      "title": "استخدام الأزرار داخل النماذج Forms",
+      "narration": {
+        "spoken_text": "تُسْتَخْدَمُ الْأَزْرَارُ كَثِيراً دَاخِلَ النَّمَاذِجِ أَوْ مَا تُسَمَّى forms. دَائِماً يُفَضَّلُ تَحْدِيد type لِكُلِّ زِرٍّ لِتَفَادِي أَيِّ سُلُوكٍ غَيْرِ مُتَوَقَّعٍ فِي مُتَصَفِّحَاتُ الْوِبّ.",
+        "caption_text": "تستخدم الأزرار داخل النماذج Forms لتنفيذ عمليات الإرسال وإعادة التعيين."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_buttons.html",
+        "code": "<form action=\"/action_page.php\">\n  <input type=\"text\" name=\"fname\">\n  <button type=\"submit\">Submit</button>\n  <button type=\"reset\">Reset Form</button>\n</form>",
+        "highlight_lines": [],
+        "output": "Form with Input and Submit/Reset Buttons",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    },
+    {
+      "id": "scene_8_conclusion",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "إِلَى هُنَا يَنْتَهِي دَرْسُنَا الْيَوْمَ يَا أَصْدِقَائِي. تَعَرَّفْنَا عَلَى كَيْفِيَّة إِنْشَاءِ الْأَزْرَارِ وَتَنْسِيقِهَا وَتَعْطِيلِهَا وَرَبْطِهَا بِـ JavaScript. كَانَ مَعَكُمْ مَحْمُودُ عَبْدِالْحَمِيدِ مِنْ قَنَاة كُودْ غَالِكْسِي.",
+        "caption_text": "خلاصة الدرس: تعلم كيفية إنشاء الأزرار وتنسيقها واستخدامها باحترافية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "قم دائما بتحديد type المناسب لكل زر داخل النماذج",
+          "استخدم CSS لتخصيص مظهر الأزرار لتناسب تصميم موقعك",
+          "تابع معنا الدروس القادمة لاحتراف لغة HTML بالكامل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_buttons.asp"
+      ]
+    }
+  ]
+}
