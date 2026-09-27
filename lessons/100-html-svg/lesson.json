@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "100",
+  "title": "HTML SVG Graphics",
+  "course": "HTML",
+  "objectives": [
+    "Understand the basics of SVG in HTML",
+    "Learn how to draw shapes like circles, rectangles, and polygons",
+    "Compare SVG with Canvas"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_svg.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-f1ae4877e4b04587.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_svg.asp",
+      "source_url": "https://www.w3schools.com/html/html5_svg.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-3d2d8c9367b72442.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_svg.asp",
+      "source_url": "https://www.w3schools.com/html/html5_svg.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-ec63629326d58af7.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_svg.asp",
+      "source_url": "https://www.w3schools.com/html/html5_svg.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro_svg",
+      "title": "شرح Introduction to SVG",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي. سَنَتَعَرَّفُ الْيَوْمَ عَلَى تَقْنِيَّة SVG لِرَسْمِ الرُّسُومَاتِ الْمُتَّجِهَة ثُنَائِيَّة الْأَبْعَادِ دَاخِلَ صَفَحَاتِ الْوِبّ بِاسْتِخْدَام HTML. تَتَمَيَّزُ هَذِهِ الرُّسُومَاتُ بِأَنَّهَا لَا تَفْقِدُ دِقَّتَهَا عِنْدَ التَّكْبِيرِ.",
+        "caption_text": "سنتعرف اليوم على تقنية SVG لرسم الرسومات المتجهة ثنائية الأبعاد داخل صفحات HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم SVG stands for Scalable Vector Graphics",
+          "مفهوم Defines vector-based graphics in XML",
+          "مفهوم Directly embedded in HTML pages",
+          "مفهوم Supported by all major browsers"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "svg_circle",
+      "title": "شرح The <svg> Element and Circle",
+      "narration": {
+        "spoken_text": "يُعْتَبَرُ عُنْصُر svg حَاوِيَة لِلرُّسُومَاتِ. فِي هَذَا الْكُودِ، نَسْتَخْدِمُ عُنْصُر circle لِرَسْمِ دَائِرَة بِتَحْدِيدِ الْمَرْكَز cx و cy، وَنِصْفِ الْقُطْر r، مَعَ لَوْنِ الْإِطَارِ وَالتَّعْبِئَه.",
+        "caption_text": "يعتبر عنصر <svg> حاوية للرسومات. نستخدم عنصر <circle> لرسم دائرة وتحديد خصائصها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "circle.html",
+        "code": "<svg width=\"100\" height=\"100\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\"\n    stroke=\"green\" stroke-width=\"4\"\n    fill=\"yellow\" />\n</svg>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "circle_output",
+      "title": "شرح Circle Output",
+      "narration": {
+        "spoken_text": "شَاهِدُوا كَيْفَ تَبْدُو الدَّائِرَة عَلَى شَاشَة الْمُتَصَفِّحْ. لَقَدْ تَمَّ رَسْمُهَا بِدِقَّة عَالِيَة وَبِأَلْوَانٍ زَاهِيَة دُونَ الْحَاجَة إِلَى مِلَفَّاتِ صُوَرٍ خَارِجِيَّه، مِمَّا يُحَسِّنُ أَدَاءَ مَوْقِعِ الْوِبّ.",
+        "caption_text": "تظهر الدائرة على المتصفح بدقة عالية وألوان زاهية دون الحاجة لصور خارجية."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "Rendered SVG circle with green stroke and yellow fill"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "svg_rect",
+      "title": "شرح Drawing Rectangles",
+      "narration": {
+        "spoken_text": "لِرَسْمِ مُسْتَطِيلٍ، نَسْتَخْدِمُ عُنْصُر rect دَاخِل svg. نُحَدِّدُ نُقْطَة الْبِدَايَة x و y، ثُمَّ الْعَرْض width وَالِارْتِفَاع height، بِالْإِضَافَة إِلَى لَوْنِ الْإِطَار stroke وَالتَّعْبِئَة fill.",
+        "caption_text": "لرسم مستطيل، نستخدم عنصر <rect> ونحدد نقطة البداية والعرض والارتفاع والألوان."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "rect.html",
+        "code": "<svg width=\"400\" height=\"120\">\n  <rect x=\"10\" y=\"10\"\n    width=\"200\" height=\"100\"\n    stroke=\"red\" stroke-width=\"6\"\n    fill=\"blue\" />\n</svg>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "svg_rounded_rect",
+      "title": "شرح Rounded Rectangles",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً جَعْلُ حَوَافِّ الْمُسْتَطِيلِ دَائِرِيَّة بِسُهُولَة تَامَّه. نَقُومُ بِذَلِكَ عَنْ طَرِيقِ إِضَافَة الْخَصَائِص rx و ry لِتَحْدِيدِ نِصْفِ قُطْرِ الِانْحِنَاءِ عِنْدَ الزَّوَايَا.",
+        "caption_text": "يمكن جعل حواف المستطيل دائرية باستخدام الخصائص rx و ry لتحديد انحناء الزوايا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "rounded_rect.html",
+        "code": "<svg width=\"400\" height=\"180\">\n  <rect x=\"50\" y=\"20\"\n    rx=\"20\" ry=\"20\"\n    width=\"150\" height=\"150\"\n    style=\"fill:red;stroke:black;\n    stroke-width:5;opacity:0.5\" />\n</svg>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "svg_polygon",
+      "title": "شرح Drawing Polygons",
+      "narration": {
+        "spoken_text": "أَمَّا لِرَسْمِ الْأَشْكَالِ الْمُتَعَدِّدَة الْأَضْلَاعِ مِثْلِ النَّجْمَه، نَسْتَخْدِمُ عُنْصُر polygon. نُحَدِّدُ جَمِيعَ الْإِحْدَاثِيَّاتِ عَبْرَ الْخَاصِّيَّة points لِتَوْصِيلِ تِلْكَ النِّقَاطِ بِبَعْضِهَا الْبَعْضِ.",
+        "caption_text": "لرسم الأشكال متعددة الأضلاع كالنجمة، نستخدم عنصر <polygon> ونحدد النقاط عبر points."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "polygon.html",
+        "code": "<svg width=\"300\" height=\"200\">\n  <polygon points=\"100,10 40,198\n    190,78 10,78 160,198\"\n    style=\"fill:lime;stroke:purple;\n    stroke-width:5;\n    fill-rule:evenodd;\" />\n</svg>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "svg_vs_canvas",
+      "title": "شرح SVG vs Canvas",
+      "narration": {
+        "spoken_text": "مِنَ الْمُهِمِّ مَعْرِفَة الْفَرْقِ بَيْن SVG و Canvas. تَعْتَمِدُ تَقْنِيَّة SVG عَلَى لُغَة XML مِمَّا يَجْعَلُ كُلَّ شَكْلٍ جُزْءاً مِن DOM، بَيْنَمَا يَعْتَمِد Canvas عَلَى رَسْمِ الْبِكْسِلَاتِ.",
+        "caption_text": "تعتمد تقنية SVG على XML مما يجعل الأشكال جزءا من DOM، بينما يعتمد Canvas على البكسلات."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Feature",
+          "SVG",
+          "Canvas"
+        ],
+        "rows": [
+          [
+            "Base",
+            "XML (DOM)",
+            "Pixels"
+          ],
+          [
+            "Scripting",
+            "CSS & JS",
+            "JS Only"
+          ],
+          [
+            "Scalability",
+            "High",
+            "Low"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "شرح Conclusion",
+      "narration": {
+        "spoken_text": "فِي الْخِتَامِ، نَرَى أَنَّ SVG خِيَارٌ مِثَالِيٌّ لِلشِّعَارَاتِ وَالْأَيْقُونَاتِ لِأَنَّهَا مَرِنَة وَقَابِلَة لِلتَّكْبِيرِ. جَرِّبُوا كِتَابَة هَذِهِ الْأَكْوَادِ الْآنَ، وَنَلْتَقِي فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "تقنية SVG مثالية للشعارات والأيقونات لمرونتها وقابليتها للتكبير دون فقدان الجودة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم SVG is vector-based and scalable",
+          "مفهوم Directly embedded in HTML",
+          "مفهوم Supports CSS styling and JS events",
+          "مفهوم Ideal for icons and simple graphics"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_svg.asp"
+      ]
+    }
+  ]
+}
