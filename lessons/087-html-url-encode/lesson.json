@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "87",
+  "title": "HTML Uniform Resource Locators and URL Encoding",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم URL وكيفية استخدام Web Browsers لعناوين الويب",
+    "التعرف على بناء هيكل URL الأساسي Syntax Rules",
+    "معرفة أسباب وكيفية تطبيق URL Encoding للرموز الخاصة",
+    "فهم دور ASCII character-set و UTF-8 في معالجة البيانات"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_urlencode.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة حول URL",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَفْهُوم URL وَكَيْفَ تَسْتَخْدِمُهَا مَوَاقِعُ الْوِبّ لِلتَّوَاصُلِ بَيْنَ الْمُسْتَخْدِمِ وَالسِّيرفِرَاتِ.",
+        "caption_text": "مرحبا بكم في درس جديد حول URL وعناوين الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "URL هو مصطلح آخر لعنوان الويب",
+          "يتكون من كلمات أو عنوان IP رقمي",
+          "تستخدمه متصفحات الويب لطلب الصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "هيكل بناء URL",
+      "narration": {
+        "spoken_text": "يَتَكَوَّنُ أَيُّ عُنْوَانِ وِبّ رَسْمِيّ مِنْ قَوَاعِدِ بِنَاءٍ دَقِيقَه. لِنَنْظُرْ مَعاً إِلَى الصِّيغَة الأَسَاسِيَّة الَّتِي تَبْدَأُ بِشِكْمِ ثُمَّ الدُّومَيْنِ ثُمَّ الْمَسَارِ الْمَحْدُودِ.",
+        "caption_text": "نتعرف على القواعد الأساسية لبناء عنوان URL."
+      },
+      "visual": {
+        "type": "code",
+        "language": "text",
+        "filename": "url_syntax.txt",
+        "code": "scheme://prefix.domain:port/path/filename",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "أنواع URL Schemes الشائعة",
+      "narration": {
+        "spoken_text": "تُسْتَخْدَمُ أَنْوَاعٌ مُخْتَلِفَة مِن Schemes فِي عَنَاوِين URL مِثْلَ إتش تي تي بي لِصَفَحَاتِ الْوِبّ العَادِيَّه، وَإتش تي تي بي إس لِلصَّفَحَاتِ الآمِنَه، وَإف تي بي لِنَقْلِ الْمِلَفَّاتِ.",
+        "caption_text": "عرض الأنواع الشائعة لـ URL Schemes."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Scheme",
+          "Description",
+          "Use Case"
+        ],
+        "rows": [
+          [
+            "http",
+            "HyperText Transfer Protocol",
+            "Unencrypted web pages"
+          ],
+          [
+            "https",
+            "Secure HTTP",
+            "Encrypted secure web pages"
+          ],
+          [
+            "ftp",
+            "File Transfer Protocol",
+            "Downloading and uploading files"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "مفهوم URL Encoding",
+      "narration": {
+        "spoken_text": "لا تُمْكِنُ إِرْسَالُ جَمِيعِ الرُّمُوزِ عَبْرَ الإنترنت إلا مِنْ خِلَال ASCII character-set فَقَطْ. إِذا احْتَوَى الرَّابِطُ عَلَى رُمُوزٍ أُخْرَى، فَيَجِبُ تَحْوِيلُهَا فَوْراً.",
+        "caption_text": "توضيح أهمية URL Encoding لتحويل الرموز خارج نطاق ASCII."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "URLs ترسل عبر الإنترنت باستخدام ASCII فقط",
+          "تتحول الرموز الخارجية إلى تنسيق خاص",
+          "يتم استبدال الرموز بعلامة النسبة المئوية وأرقام ست عشرية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معالجة المسافات والرموز الخاصة",
+      "narration": {
+        "spoken_text": "لَا يُمْكِنُ أَنْ تَحْتَوِيَ عَنَاوِين URL عَلَى مَسَافَاتٍ فَارِغَه. لِذَلِكَ يَقوم URL Encoding بِاسْتِبْدَالِ الْمَسَافَة بِعَلَامَة الزَّائِدِ أَوْ بِالنِّسْبَة المِئَوِيَّة عِشْرِينَ.",
+        "caption_text": "كيفية معالجة المسافات والرموز الخاصة في عناوين الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "URLs لا يمكن أن تحتوي على مسافات فارغة",
+          "تستبدل المسافة بعلامة زائد (+) أو 20",
+          "يضمن ذلك سلامة نقل البيانات عبر المتصفح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "التفاعل مع نموذج الإدخال و Submit",
+      "narration": {
+        "spoken_text": "عِنْدَمَا تَقُومُ بِالنَّقْرِ عَلَى زِرِّ الإرْسَالِ، يَقُومُ مُتَصَفِّحْ الْوِبّ بِتَوْفِيرِ التَّشْفِيرِ الْمُنَاسِبِ لِلْبَيَانَاتِ قَبْلَ إِرْسَالِهَا لِلسِّيرفِرِ، لِتَعْرِيفِهَا بِدِقَّة تَامَّه.",
+        "caption_text": "دور متصفح الويب في تشفير المدخلات عند النقر على Submit."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الضغط على Submit يشفر المدخلات تلقائيا",
+          "يقوم الـ Web Server بعرض المدخلات المستلمة",
+          "ضمان صحة البيانات المنقولة ووضوحها"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "ترميز النصوص في HTML5",
+      "narration": {
+        "spoken_text": "يَسْتَخْدِمُ مُتَصَفِّحْ الْوِبّ نِظَامَ التَّرْمِيزِ الْمُعْتَمَدِ دَاخِلَ صَفْحَتِكَ. يُعْتَبَرُ نِظَامُ يوثف أَيْتْ مَاشِي هُوَ النِّظَامَ الافْتِرَاضِيَّ الأَكْثَرَ شُهُورَة فِي لُغَة HTML5.",
+        "caption_text": "مجموعة الرموز الافتراضية UTF-8 في HTML5."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح يشفر المدخلات حسب الـ character-set المستخدم",
+          "الترميز الافتراضي في HTML5 هو UTF-8",
+          "دعم كامل لجميع اللغات والرموز العالمية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِذَلِكَ نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة عَمَلِ عَنَاوِين URL وأهمية تشفير البيانات لضمان نقلها بسلاسة عبر الْوِبّ. كَانَ مَعَكُمْ مَحْمُودُ عَبْدِالحَمِيدِ في مَنَصَّة كود جالكسي.",
+        "caption_text": "خلاصة شاملة لمفاهيم URL Encoding وتشفير روابط الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "فهم تركيب عناوين URL وأهميتها",
+          "إتقان استخدام URL Encoding للرموز الخاصة",
+          "معرفة دور UTF-8 في متصفحات الويب الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_urlencode.asp"
+      ]
+    }
+  ]
+}
