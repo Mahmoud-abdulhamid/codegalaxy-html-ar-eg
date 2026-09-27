@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "76",
+  "title": "HTML Responsive Design Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم مبادئ تصميم صفحات الويب المتجاوبة",
+    "تطبيق تقنيات Responsive Web Design",
+    "التعامل مع تحديات البرمجة في HTML",
+    "تحسين تجربة المستخدم عبر مختلف الشاشات"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_responsive.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في التصميم المتجاوب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْعَمَلِيِّ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة بِنَاءِ صَفْحَاتِ الْوِبّ الْمُتَجَاوِبَه، وَهِيَ مَهَارَة أَسَاسِيَّة لِكُلِّ مُطَوِّرٍ يَرْغَبُ فِي جَعْلِ مَوَاقِعِهِ تَعْمَلُ بِكُلِّ كَفَاءَة عَلَى جَمِيعِ أَجْهَزَة الْعَرْضِ.",
+        "caption_text": "مرحبا بكم في درس تصميم صفحات الويب المتجاوبة باستخدام HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية Responsive Web Design في العصر الحديث",
+          "كيفية جعل المحتوى يتكيف مع أحجام الشاشات",
+          "تطبيق التحديات البرمجية لتعزيز الفهم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "مفاهيم الـ Responsive",
+      "narration": {
+        "spoken_text": "التَّصْمِيمُ الْمُتَجَاوِبُ يَعْتَمِدُ عَلَى جَعْل Elements تَتَكَيَّفُ مَعَ مَسَاحَة وِبّ Browser. نَحْنُ نَسْتَخْدِمُ تَقْنِيَاتٍ مُتَعَدِّدَة لِضَمَانِ أَنَّ Layout يَبْدُو مُنَاسِباً عَلَى Mobile و Desktop عَلَى حَدٍّ سَوَاءٍ.",
+        "caption_text": "يعتمد التصميم المتجاوب على تكيف العناصر مع مساحة المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Viewport Meta Tag للتحكم في العرض",
+          "مرونة الصور والعناصر داخل الـ body",
+          "تجنب العناصر الثابتة التي تسبب مشاكل في العرض"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "الهيكل الأساسي للكود",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْهَيْكَلِ الْأَسَاسِيِّ. نَبْدَأُ بِـ دُوكْ تَايْبْ HTML ثُمَّ نَفْتَح html Element. دَاخِل head، نَضَع title وَنُضِيف meta tag الْخَاصَّ ب viewport لِضَمَانِ تَجَاوُبِ الصَّفْحَة مَعَ الشَّاشَاتِ الْمُخْتَلِفَه.",
+        "caption_text": "كتابة الهيكل الأساسي مع إضافة Tag الـ viewport."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0\">\n<title>Responsive Page</title>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "بناء محتوى الـ body",
+      "narration": {
+        "spoken_text": "الْآنَ نَنْتَقِلُ إِلَى قِسْم body. هُنَا نَضَعُ الْعَنَاصِرَ الْمَرْئِيَّة مِثْل h1 لِلْعُنْوَانِ الرَّئِيسِيِّ، وَفِقْرَات p لِلنُّصُوصِ. تَأَكَّدْ مِنْ أَنَّ هَذِهِ الْعَنَاصِرَ لَا تَحْتَوِي عَلَى قِيَمِ عَرْض ثَابِتَة لِتَبْقَى مُتَجَاوِبَه.",
+        "caption_text": "إضافة المحتوى المرئي داخل Tag الـ body."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n<h1>Responsive Design</h1>\n<p>This page adapts to\nany screen size.</p>\n<p>Resize the browser\nto see the effect.</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَهَمِّ النَّصَائِحِ هِيَ اخْتِبَارُ الصَّفْحَة عَلَى مُتَصَفِّحَاتُ مُخْتَلِفَة مِثْل Chrome أَوْ Firefox. اسْتَخْدِمْ دَائِما Developer Tools لِمُحَاكَاة أَحْجَامِ الشَّاشَاتِ الْمُخْتَلِفَة وَالتَّأَكُّدِ مِنْ أَنَّ كُلَّ Elements تَعْمَلُ بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "استخدام أدوات المطورين لاختبار تجاوب الصفحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "اختبار الصفحة على متصفحات متعددة",
+          "استخدام Developer Tools للمحاكاة",
+          "التحقق من عدم وجود تمرير أفقي غير مرغوب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا هَذَا التَّحَدِّيَ. تَذَكَّرْ أَنَّ التَّصْمِيمَ الْمُتَجَاوِبَ هُوَ مَهَارَة تَتَطَوَّرُ بِالْمُمَارَسَه. أَدْعُوكُمْ لِتَجْرِبَة الْأَكْوَادِ بِنَفْسِكُمْ وَمُحَاوَلَة تَحْسِينِ التَّصْمِيمِ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "خلاصة الدرس: الممارسة هي مفتاح إتقان التصميم المتجاوب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "التصميم المتجاوب أساسي لكل مطور",
+          "استمر في ممارسة التحديات البرمجية",
+          "راجع المصادر المرفقة لمزيد من التفاصيل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      ]
+    }
+  ]
+}
