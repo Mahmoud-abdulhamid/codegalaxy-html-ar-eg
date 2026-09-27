@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "68",
+  "title": "HTML Script and Noscript Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم دور الـ script element في صفحات الويب",
+    "التعرف على كيفية تضمين JavaScript داخل HTML",
+    "استخدام noscript element للتعامل مع المتصفحات التي لا تدعم السكربتات",
+    "تطبيق أفضل الممارسات عند كتابة الأكواد التفاعلية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_scripts.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول الـ script element",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِضَافَة التَّفَاعُلِيَّة إِلَى صَفْحَة الْوِبّ بِاسْتِخْدَام script element، وَكَيْفَ نُعَالِجُ حَالَاتِ عَدَمِ دَعْمِ السَّكْرِبْتَاتِ بِاسْتِخْدَام noscript.",
+        "caption_text": "نستعرض اليوم كيفية إضافة التفاعلية إلى صفحات الويب باستخدام script element وكيفية التعامل مع المتصفحات التي لا تدعم السكربتات عبر noscript."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML توفر script element لتضمين JavaScript",
+          "يستخدم noscript لعرض محتوى بديل عند تعطيل السكربتات",
+          "تعتبر هذه العناصر أساسية لبناء تطبيقات ويب تفاعلية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "script_concept",
+      "title": "مفهوم الـ script element",
+      "narration": {
+        "spoken_text": "يُسْتَخْدَم script element لِتَضْمِينِ كُود JavaScript دَاخِلَ صَفْحَة HTML. يُمْكِنُ كِتَابَة الْكُودِ مُبَاشَرَة بَيْن Start Tag و End Tag، أَوْ رَبْطُ مِلَفٍّ خَارِجِيٍّ بِاسْتِخْدَام src Attribute.",
+        "caption_text": "يستخدم script element لتضمين JavaScript، حيث يمكن كتابة الكود مباشرة أو ربط ملف خارجي عبر src Attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<script>\n  console.log('Hello World');\n</script>\n<script src=\"app.js\"></script>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "noscript_concept",
+      "title": "فهم الـ noscript element",
+      "narration": {
+        "spoken_text": "أَمَّا noscript element، فَهِيَ أَدَاة هَامَّة لِتَحْسِينِ تَجْرِبَة الْمُسْتَخْدِمِ. عِنْدَمَا يَقُوم وِبّ Browser بِتَعْطِيل JavaScript، يَقُومُ هَذَا Element بِعَرْضِ مُحْتَوَى بَدِيلٍ لِلْمُسْتَخْدِمِ لِضَمَانِ فَهْمِهِ لِمُحْتَوَى الصَّفْحَه.",
+        "caption_text": "يستخدم noscript element لعرض محتوى بديل في حال قام Web Browser بتعطيل JavaScript، مما يضمن تجربة مستخدم أفضل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<noscript>\n  عذراً، متصفحك لا يدعم JavaScript.\n</noscript>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "code_example",
+      "title": "مثال عملي متكامل",
+      "narration": {
+        "spoken_text": "لِنَضَعَ الْأَمْرَ فِي مِثَالٍ وَاحِدٍ. نَقُومُ بِكِتَابَة script لِتَنْفِيذِ وَظِيفَة بَرْمَجِيَّه، وَنُضِيف noscript لِتَنْبِيهِ الْمُسْتَخْدِمِ. هَذَا الْأُسْلُوبُ يَعْكِسُ احْتِرَافِيَّة عَالِيَة فِي تَطْوِيرِ الْوِبّ وَيُعَزِّزُ مِنْ قَابِلِيَّة الْوُصُولِ.",
+        "caption_text": "مثال يجمع بين script و noscript لضمان عمل الصفحة بكفاءة وتنبيه المستخدم في حال تعطل السكربتات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n  <script>\n    document.write(\"مرحباً بك!\");\n  </script>\n  <noscript>\n    يرجى تفعيل JavaScript.\n  </noscript>\n</body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "browser_output",
+      "title": "كيف يظهر الكود في المتصفح",
+      "narration": {
+        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي Chrome أَوْ Firefox، سَيَقُومُ الْمُتَصَفِّحْ بِتَنْفِيذِ كُود JavaScript وَعَرْضِ النَّتِيجَه. إِذَا تَمَّ تَعْطِيلُ السكربتات، سَيَخْتَفِي الْمُحْتَوَى الْأَوَّلُ وَيَظْهَرُ نَصُّ noscript بَدَلًا مِنْهُ.",
+        "caption_text": "يوضح هذا المشهد كيف يتعامل Web Browser مع script و noscript بناء على إعدادات المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح ينفذ script إذا كانت السكربتات مفعلة",
+          "المتصفح يتجاهل script ويعرض noscript إذا كانت معطلة",
+          "يضمن هذا التوافق مع جميع أنواع المتصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "يُنْصَحُ دَائِماً بِوَضْعِ مِلَفَّات JavaScript فِي نِهَايَة قِسْم body لِتَحْسِينِ سُرْعَة تَحْمِيلِ الصَّفْحَه. كَمَا يَجِبُ التَّأَكُّدُ مِنْ أَنَّ مُحْتَوَى noscript وَاضِحٌ وَمُفِيدٌ لِلْمُسْتَخْدِمِ فِي حَالَة ظُهُورِهِ.",
+        "caption_text": "أفضل الممارسات تشمل وضع السكربتات في نهاية body لتحسين الأداء وضمان وضوح رسائل noscript."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ضع ملفات السكربت قبل إغلاق body",
+          "استخدم ملفات خارجية لسهولة الصيانة",
+          "اجعل رسالة noscript واضحة ومباشرة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا أَهَمِّيَّة script و noscript فِي بِنَاءِ صَفْحَاتِ الْوِبّ. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُتَابَعَة التَّحَدِّيَاتِ عَلَى الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَطْوِيرِ مَهَارَاتِكُمْ.",
+        "caption_text": "تعلمنا اليوم كيفية استخدام script و noscript لبناء صفحات ويب تفاعلية. جربوا الأكواد بأنفسكم عبر الرابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "script يضيف التفاعلية للويب",
+          "noscript يوفر بدائل للمتصفحات المقيدة",
+          "التطبيق العملي هو مفتاح الاحتراف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      ]
+    }
+  ]
+}
