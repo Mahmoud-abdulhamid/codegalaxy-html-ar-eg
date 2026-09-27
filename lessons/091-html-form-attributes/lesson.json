@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "91",
+  "title": "HTML Form Attributes",
+  "course": "HTML",
+  "objectives": [
+    "فهم استخدامات Attribute action في نماذج HTML",
+    "التعرف على كيفية عمل Attribute target و Attribute method",
+    "استخدام Attributes مثل autocomplete و novalidate للتحكم في النماذج"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_forms_attributes.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-e41c134c20f27380.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_forms_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_forms_attributes.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-7feef025b207d45c.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_forms_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_forms_attributes.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-2cd40007a5e6c816.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_forms_attributes.asp",
+      "source_url": "https://www.w3schools.com/html/html_forms_attributes.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة إلى HTML Form Attributes",
+      "narration": {
+        "spoken_text": "مَرْحَبَاً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ بِالتَّفْصِيلِ عَلَى Attributes الْخَاصَّة بِعُنْصُر form، وَكَيْفَ تُحَدِّدُ كَيْفِيَّة إِرْسَالِ الْبَيَانَاتِ وَتَعَامُلَ وِبّ Browser مَعَهَا.",
+        "caption_text": "مرحبا بكم يا أصدقائي في هذا الدرس الجديد من دورة لغة HTML. سنتعرف اليوم بالتفصيل على Attributes الخاصة بعنصر form، وكيف تحدد كيفية إرسال البيانات وتعامل Web Browser معها."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "action: تحديد وجهة إرسال البيانات",
+          "target: مكان عرض الاستجابة",
+          "method: طريقة إرسال طلب HTTP",
+          "autocomplete: تفعيل الإكمال التلقائي",
+          "novalidate: إلغاء فحص المدخلات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "action_attribute",
+      "title": "استخدام Attribute action",
+      "narration": {
+        "spoken_text": "يُحَدِّد Attribute action الْمَلَفَّ أَوْ الْمَسَارَ الَّذِي تُرْسَلُ إِلَيْهِ بَيَانَاتُ النَّمُوذَجِ عِنْدَ الضَّغْطِ عَلَى زِرِّ Submit. وَفِي حَالَة عَدَمِ كِتَابَتِهِ، سَيَتِمُّ إِرْسَالُ الْبَيَانَاتِ تِلْقَائِيَّاً إِلَى الصَّفْحَة الْحَالِيَّة نَفْسِهَا.",
+        "caption_text": "يحدد Attribute action الملف أو المسار الذي ترسل إليه بيانات النموذج عند الضغط على زر Submit. وفي حالة عدم كتابته، سيتم إرسال البيانات تلقائيا إلى الصفحة الحالية نفسها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form action=\"/action_page.php\">\n  <label for=\"fname\">First name:</label>\n  <input type=\"text\" id=\"fname\"\n         name=\"fname\" value=\"John\">\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "visual_preview",
+      "title": "معاينة نموذج HTML في المتصفح",
+      "narration": {
+        "spoken_text": "لَاحِظُوا مَعِي فِي هَذِهِ الْمَعَايَنَة الْمَرِئِيَّة كَيْفَ يَظْهَرُ النَّمُوذَجُ فِي الشَّاشَه. عِنْدَمَا يَقُومُ الْمُسْتَخْدِمُ بِمَلْءِ حُقُولِ الإِدْخَالِ وَالضَّغْطِ عَلَى Submit، تُبْعَثُ الْبَيَانَاتُ إِلَى action_page.php لِتَعَالِجَهَا بَرْمَجِيَّات Server.",
+        "caption_text": "لاحظوا معي في هذه المعاينة المرئية كيف يظهر النموذج في الشاشة. عندما يقوم المستخدم بملء حقول الإدخال والضغط على Submit، تبعث البيانات إلى action_page.php لتعالجها برمجيات Server."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة نموذج HTML يحتوي على حقول إدخال وزر إرسال"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "target_attribute",
+      "title": "تحديد وجهة الاستجابة باستخدام target",
+      "narration": {
+        "spoken_text": "يُحَدِّد Attribute target مَكَانَ عَرْضِ اسْتِجَابَة الْخَادِمِ الْقَادِمَة بَعْدَ إِرْسَالِ الْبَيَانَاتِ. الْقِيمَة _blank تُؤَدِّي إِلَى فَتْحِ النَّتِيجَة فِي Tab جَدِيدٍ، بَيْنَمَا الْقِيمَة الاِفْتِرَاضِيَّة _self تُعْرَضُ فِي النَّافِذَة الْحَالِيَّة نَفْسِهَا.",
+        "caption_text": "يحدد Attribute target مكان عرض استجابة الخادم القادمة بعد إرسال البيانات. القيمة _blank تؤدي إلى فتح النتيجة في Tab جديد، بينما القيمة الافتراضية _self تعرض في النافذة الحالية نفسها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "target.html",
+        "code": "<form action=\"/action_page.php\"\n      target=\"_blank\">\n  <input type=\"text\" name=\"fname\">\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "method_attribute",
+      "title": "طريقة إرسال البيانات باستخدام method",
+      "narration": {
+        "spoken_text": "يُحَدِّد Attribute method أُسْلُوبَ إِرْسَالِ الْبَيَانَاتِ عَبْرَ بُرُوتُوكُول HTTP. يُرْسِل GET الْبَيَانَاتِ كَـ URL Variables، بَيْنَمَا يُسْتَخْدَم POST لِإِرْسَالِ الْبَيَانَاتِ فِي Body الشَّيْءُ الَّذِي يَجْعَلُهُ أَكْثَرَ أَمَانَاً لِلْمَعْلُومَاتِ الشَّخْصِيَّه.",
+        "caption_text": "يحدد Attribute method أسلوب إرسال البيانات عبر بروتوكول HTTP. يرسل GET البيانات كـ URL Variables، بينما يستخدم POST لإرسال البيانات في Body الشيء الذي يجعله أكثر أمانا للمعلومات الشخصية."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Method",
+          "طريقة الإرسال",
+          "حالة الاستخدام"
+        ],
+        "rows": [
+          [
+            "GET",
+            "إرفاق البيانات برابط URL",
+            "البيانات غير الحساسة"
+          ],
+          [
+            "POST",
+            "إرسال البيانات داخل Body",
+            "البيانات الحساسة والشخصية"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "autocomplete_attribute",
+      "title": "الإكمال التلقائي بواسطة autocomplete",
+      "narration": {
+        "spoken_text": "يُتِيح Attribute autocomplete لِـ وِبّ Browser إِكْمَالَ الْقِيَمِ تِلْقَائِيَّاً بِنَاءً عَلَى بَيَانَاتٍ سَابِقَة أَدْخَلَهَا الْمُسْتَخْدِمُ. يُمْكِنُ ضَبْطُ الْقِيمَة عَلَى on لِلتَّفْعِيلِ أَوْ off لِإِلْغَاءِ هَذِهِ الْمِيزَة التَّلْقَائِيَّه.",
+        "caption_text": "يتيح Attribute autocomplete لـ Web Browser إكمال القيم تلقائيا بناء على بيانات سابقة أدخلها المستخدم. يمكن ضبط القيمة على on للتفعيل أو off لإلغاء هذه الميزة التلقائية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "autocomplete.html",
+        "code": "<form action=\"/action_page.php\"\n      autocomplete=\"on\">\n  <input type=\"text\" name=\"fname\">\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "novalidate_attribute",
+      "title": "إلغاء التحقق عبر novalidate",
+      "narration": {
+        "spoken_text": "يُعْتَبَر Attribute novalidate مِنْ نَوْع Boolean Attribute. عِنْدَ إِضَافَتِهِ إِلَى Element form، يَقُومُ الْمُتَصَفِّحْ بِإِرْسَالِ بَيَانَاتِ النَّمُوذَجِ مُبَاشَرَة دُونَ إِجْرَاءِ أَيِّ عَمَلِيَّة Validation أَوْ فَحْصٍ لِلْحُقُولِ الْمُدْخَلَه.",
+        "caption_text": "يعتبر Attribute novalidate من نوع Boolean Attribute. عند إضافته إلى Element form، يقوم المتصفح بإرسال بيانات النموذج مباشرة دون إجراء أي عملية Validation أو فحص للحقول المدخلة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "novalidate.html",
+        "code": "<form action=\"/action_page.php\"\n      novalidate>\n  <input type=\"email\" name=\"email\">\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "خِتَامَاً، تُوَفِّرُ لَكُمْ Attributes الْخَاصَّة بِـ form تَحَكُّمَاً كَامِلاً فِي كَيْفِيَّة إِرْسَالِ الْبَيَانَاتِ وَتَأْمِينِهَا. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الأَكْوَادِ عَبْرَ الرَّابِطِ فِي الْوَصْفِ، وَنَلْتَقِي فِي الدَّرْسِ الْقَادِمِ",
+        "caption_text": "ختاما، توفر لكم Attributes الخاصة بـ form تحكما كاملا في كيفية إرسال البيانات وتأمينها. أدعوكم لتجربة هذه الأكواد عبر الرابط في الوصف، ونلتقي في الدرس القادم!"
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم action لتحديد وجهة إرسال بيانات Form",
+          "اعتمد دائما على POST مع البيانات الحساسة",
+          "تحكم بوضوح في الإكمال التلقائي باستخدام autocomplete",
+          "استخدم novalidate عند الحاجة لإلغاء فحص المتصفح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms_attributes.asp"
+      ]
+    }
+  ]
+}
