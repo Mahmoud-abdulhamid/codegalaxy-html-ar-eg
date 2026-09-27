@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "79",
+  "title": "HTML Semantic Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم العناصر الدلالية Semantic Elements في لغة HTML",
+    "التعرف على الفرق بين العناصر غير الدلالية والعناصر الدلالية",
+    "استخدام العناصر الأساسية مثل section و article و header و footer",
+    "توظيف عناصر nav و aside و figure بشكل احترافي في هيكلة صفحات الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_semantic_elements.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-581e37eb821602f1.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_semantic_elements.asp",
+      "source_url": "https://www.w3schools.com/html/html5_semantic_elements.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-46254786028785d6.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_semantic_elements.asp",
+      "source_url": "https://www.w3schools.com/html/html5_semantic_elements.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-f901d13cf4c4dc17.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_semantic_elements.asp",
+      "source_url": "https://www.w3schools.com/html/html5_semantic_elements.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة عن العناصر الدلالية",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى Semantic Elements وَهِيَ الْعَنَاصِرُ الَّتِي تُوَضِّحُ مَعْنَاهَا لِكُلٍّ مِنَ الْمُتَصَفِّحْ وَالْمُطَوِّرِ بِوُضُوحٍ تَامٍّ.",
+        "caption_text": "مرحبا بكم في درس العناصر الدلالية Semantic Elements في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العناصر الدلالية تعبر عن محتواها بوضوح",
+          "تساعد متصفحات الويب وفريق التطوير",
+          "تجعل هيكل صفحة الويب مفهوما ومنظما"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "الفرق بين العناصر الدلالية وغير الدلالية",
+      "narration": {
+        "spoken_text": "عَنَاصِرُ مِثْل div و span تُعْتَبَر non-semantic elements لِأَنَّهَا لَا تُقَدِّمُ أَيَّ مَعْلُومَاتٍ عَنْ مُحْتَوَاهَا، بَيْنَمَا عَنَاصِرُ مِثْل img و table و article تُحَدِّدُ مُحْتَوَاهَا بِدِقَّة تِقْنِيَّه.",
+        "caption_text": "الفرق بين العناصر غير الدلالية والعناصر الدلالية الواضحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العناصر div و span لا تعبر عن محتواها",
+          "العناصر img و table و article دلالية وواضحة",
+          "تحسين بنية الكود وسهولة قراءته"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "استخدام عنصر section",
+      "narration": {
+        "spoken_text": "يُسْتَخْدَمُ عُنْصُر section لِتَحْدِيدِ قِسْمٍ دَاخِلَ الْمُسْتَنَدِ. وَفْقاً لِتَوْثِيقَات W3C، يُمَثِّل section تَجْمِيعاً مَوْضُوعِيّاً لِلْمُحْتَوَى، وَغَالِباً مَا يَحْتَوِي عَلَى عُنْوَانٍ رَئِيسِيٍّ خَاصٍّ بِهِ.",
+        "caption_text": "عنصر section يحدد قسما موضوعيا مستقلا داخل مستند الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "section.html",
+        "code": "<section>\n  <h1>WWF</h1>\n  <p>The World Wide Fund for Nature.</p>\n</section>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "استخدام عنصر article",
+      "narration": {
+        "spoken_text": "يُحَدِّدُ عُنْصُر article مُحْتَوًى مُسْتَقِلّاً وَمُكْتَفِياً بِذَاتِهِ. يُمْكِنُ نَشْرُ هَذَا الْمُحْتَوَى وَتَوْزِيعُهُ بِمَنْأَى عَنْ بَاقِي مَوَاقِعِ الْوِبّ، مِثْلَ مَقَالَاتِ الْأَخْبَارِ أَوْ عَرْضِ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "عنصر article يحدد محتوى مستقلا بذاته وقابلا للنشر المنفصل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "article.html",
+        "code": "<article>\n  <h2>Google Chrome</h2>\n  <p>Google Chrome is a web browser.</p>\n</article>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "عناصر header و footer",
+      "narration": {
+        "spoken_text": "يُمَثِّلُ عُنْصُر header حَاوِيَة لِلْمُحْتَوَى التَّعْرِيفِيِّ أَوْ رَوَابِطِ التَّنَقُّلِ، بَيْنَمَا يُحَدِّدُ عُنْصُر footer تَذْيِيلَ الصَّفْحَة أَوْ الْقِسْمِ حَيْثُ نَكْتُبُ مَعْلُومَاتِ الْمُؤَلِّفِ أَوْ الاتِّصَالِ.",
+        "caption_text": "عنصرا header و footer لتنظيم رأس وتذييل صفحات ومقالات الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "header-footer.html",
+        "code": "<header>\n  <h1>Website Title</h1>\n</header>\n<footer>\n  <p>Author: John Doe</p>\n</footer>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "عناصر nav و aside",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِمُ عُنْصُر nav لِتَعْرِيفِ مَجْمُوعَة مِنْ رَوَابِطِ التَّنَقُّلِ الرَّئِيسِيَّه، بَيْنَمَا يَعْرِضُ عُنْصُر aside مُحْتَوًى جَانِبِيّاً غَيْرَ مُرْتَبِطٍ مُبَاشَرَة بِالْمُحْتَوَى الأَسَاسِيِّ مِثْلَ الشريط الجانبي.",
+        "caption_text": "عنصرا nav و aside لتحديد روابط التنقل والمحتوى الجانبي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "nav-aside.html",
+        "code": "<nav>\n  <a href=\"/\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>\n<aside>\n  <h4>Sidebar</h4>\n</aside>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "عناصر figure و figcaption",
+      "narration": {
+        "spoken_text": "يُحَدِّدُ عُنْصُر figure مَحْتَى مِثْلَ الصُّوَرِ أَوِ الرُّسُومِ التَّوْضِيحِيَّه، بَيْنَمَا يُقَدِّمُ عُنْصُر figcaption وَصْفاً تَوْضِيحِيّاً أَوْ تَعْلِيقاً يَصِفُ تِلْكَ الصُّورَة أَوْ الرَّسْمَ بَدِيعَ التَّنْظِيمِ.",
+        "caption_text": "عنصرا figure و figcaption لعرض الصور مع تعليقاتها التوضيحية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "figure.html",
+        "code": "<figure>\n  <img src=\"pic.jpg\" alt=\"Trulli\">\n  <figcaption>Fig1. - Trulli, Italy.</figcaption>\n</figure>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة العناصر الدلالية",
+      "narration": {
+        "spoken_text": "خِتَاماً، تُسَاعِدُ الْعَنَاصِرُ الدَّلَالِيَّة فِي تَعْزِيزِ تَصْلِيحِ مُحَرِّكَاتِ الْبَحْث SEO وَإِتَاحَة الْمَوَاقِعِ لِذَوِي الِاحْتِيَاجَاتِ الْخَاصَّه. نَرَاكُمْ فِي الدَّرْسِ الْقَادِمِ مَعَ مَفَاهِيمَ أَكْثَرَ تَقَدُّماً فِي لُغَة HTML.",
+        "caption_text": "خلاصة استخدام العناصر الدلالية في تحسين SEO وإمكانية الوصول."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحسين محركات البحث SEO بشكل ملحوظ",
+          "دعم أدوات القراءة لذوي الاحتياجات الخاصة",
+          "تنظيم وتسهيل صيانة أكواد صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_semantic_elements.asp"
+      ]
+    }
+  ]
+}
