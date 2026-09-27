@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "115",
+  "title": "HTML Editor and Code Structure",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام الـ HTML Editor لكتابة وتعديل أكواد الويب",
+    "التعرف على الهيكل الأساسي لمستند HTML والمكونات الرئيسية بداخله",
+    "معرفة طريقة عرض النتيجة ومعاينة الأكواد مباشرة داخل الـ Web Browser",
+    "استكشاف أدوات بناء ونشر مواقع الويب مثل W3Schools Spaces"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_editor.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-a3ad835edc7c9821.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_editor.asp",
+      "source_url": "https://www.w3schools.com/html/html_editor.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة حول الـ HTML Editor",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة اسْتِخْدَام HTML Editor لِكِتَابَة وَتَعْدِيلِ أَكْوَاد HTML و CSS و JavaScript وَرُؤْيَة النَّتِيجَة مُبَاشَرَة فِي وِبّ Browser.",
+        "caption_text": "مرحبا بكم في درس جديد حول HTML Editor وكيفية كتابة وتعديل أكواد الويب وعرض النتائج في المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام الـ HTML Editor لكتابة وتعديل الأكواد",
+          "التعامل مع لغات الويب الأساسية HTML و CSS و JavaScript",
+          "معاينة النتائج بشكل فوري وسريع داخل الـ Web Browser"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_basics",
+      "title": "القواعد الأساسية لمستند HTML",
+      "narration": {
+        "spoken_text": "يَبْدَأُ كُلُّ مُسْتَنِد HTML دَائِماً بِتَعْرِيفِ دُوكْ تَايْبْ HTML لِتَحْدِيدِ إِصْدَارِ اللُّغَة الصَّحِيحِ لِلْمُتَصَفِّحْ. هَذَا التَّعْرِيفُ يُسَاعِدُ وِبّ Browser عَلَى عَرْضِ الصَّفْحَة بِالطَّرِيقَة الْمِثَالِيَّة دُونَ أَيِّ أَخْطَاءٍ فِي التَّنْسِيقِ.",
+        "caption_text": "يبدأ مستند HTML بتعريف DOCTYPE HTML لتحديد إصدار اللغة وعرض الصفحة بشكل صحيح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية تعريف DOCTYPE HTML في بداية المستند",
+          "مساعدة الـ Web Browser في فهم الإصدار",
+          "ضمان عرض محتوى الصفحة بدقة واحترافية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_code_part1",
+      "title": "الهيكل البرمجي للـ Root Element",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ مَعاً إِلَى هَذَا الْمِثَالِ الْعَمَلِيِّ. نُلاحظُ وُجُودَ الرُّوتْ Element html الَّذِي يَحْوَى جَمِيعَ العناصرِ الأُخْرَى دَاخِلَ الصَّفْحَه، وَبِدُونِهِ لَا يُمْكِنُ بِنَاءُ أَيِّ هَيْكَلٍ بَرْمَجِيٍّ سَلِيمٍ وَمُتَکامِلٍ لِلصَّفْحَه.",
+        "caption_text": "نلاحظ في المثال البرمجي وجود Root Element ممثلا في عنصر html الذي يحتوي جميع عناصر الصفحة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<title>HTML Tutorial</title>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_code_part2",
+      "title": "قسما الـ head والـ body",
+      "narration": {
+        "spoken_text": "يَحْتَوِي الْمُسْتَنِدُ أَيْضاً عَلَى قِسْم head الَّذِي يَضُمُّ title الخاصَّ بِالصَّفْحَه، ثُمَّ يَنْتَقِلُ إِلَى قِسْم body الرَّئِيسِيِّ الَّذِي يَشْمَلُ كُلَّ الْمُحْتَوَى الْمَرْئِيِّ وَالظَّاهِرِ لِلْمُسْتَخْدِمِينَ.",
+        "caption_text": "يحتوي المستند على قسم head لتحديد title ثم قسم body الذي يضم المحتوى المرئي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": "This is a heading\nThis is a paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_output_preview",
+      "title": "معاينة النتيجة في المتصفح",
+      "narration": {
+        "spoken_text": "بَعْدَ كِتَابَة الْأَكْوَادِ، تَمْكُنُنَا زِرُّ Try it Yourself مِنْ رُؤْيَة كَيْفِيَّة عَرْض Tags مِثْل h1 لِلْعَنَاوِينِ و p لِلْفِقْرَاتِ دَاخِلَ الشَّاشَة بِكُلِّ سُهُولَة وَيُسْرٍ.",
+        "caption_text": "بعد كتابة الأكواد، يتيح زر Try it Yourself معاينة عناصر h1 و p داخل المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML Editor Example Preview"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_publishing",
+      "title": "بناء ونشر مواقع الويب",
+      "narration": {
+        "spoken_text": "إِذَا أَرَدْتَ حِفْظَ مَشَارِيعِكَ وَإِنْشَاءَ مَوْقِعِكَ الْخَاصِّ، تُمَكِّنُكَ أَدَوَاتٌ مِثْل W3Schools Spaces مِنْ كِتَابَه، وَتَشْغِيلِ، وَإِدَارَه، وَنَشْرِ الأكوادِ عَبْر وِبّ Browser بِكُلِّ كَفَاءَه.",
+        "caption_text": "تتيح أدوات مثل W3Schools Spaces حفظ وتشغيل وإدارة ونشر الأكواد عبر الإنترنت."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "حفظ الأكواد البرمجية وإنشاء مواقع الويب الخاصة",
+          "استخدام منصة W3Schools Spaces لكتابة ونشر الكود",
+          "إدارة وتشغيل مشاريع الويب أونلاين بكل سهولة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    },
+    {
+      "id": "scene_conclusion",
+      "title": "خلاصة الدرس والدعوة للتجربة",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، نُؤَكِّدُ عَلَى أَهَمِّيَّة التَّدْرِيبِ الْمُسْتَمِرِّ عَلَى كِتَابَة Tags مِنْ خِلَالِ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو لِتَعْزِيزِ مَهَارَاتِكُمُ البَرْمَجِيَّه.",
+        "caption_text": "في ختام الدرس، نؤكد على أهمية التدرب المستمر وتجربة الأكواد من خلال الروابط المتاحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية التدريب المستمر على كتابة Tags",
+          "استكشاف المزيد من الأمثلة والتمارين العملية",
+          "متابعة دورة لغة HTML من البداية حتى الاحتراف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editor.asp"
+      ]
+    }
+  ]
+}
