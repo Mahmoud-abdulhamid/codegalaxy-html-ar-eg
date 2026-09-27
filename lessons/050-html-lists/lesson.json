@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "50",
+  "title": "HTML Lists",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء القوائم غير المرتبة باستخدام ul و li",
+    "تعلم إنشاء القوائم المرتبة باستخدام ol و li",
+    "إتقان استخدام قوائم الوصف باستخدام dl و dt و dd"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_lists.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-68b902e79702478a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-39b344a5dd9b551b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-24781008e11cbadd.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة قوائم الوب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML، سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَنْظِيمِ وَتَجْمِيعِ الْعَنَاصِرِ الْمُرْتَبِطَة فِي صَفْحَاتِ الْوِبّ بِاسْتِخْدَام Lists.",
+        "caption_text": "تعلم كيفية تجميع العناصر المرتبطة في صفحات الويب باستخدام Lists."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لإنشاء قوائم منظمة",
+          "تساعد Lists المطورين على تجميع العناصر المرتبطة",
+          "توجد أنواع مختلفة من القوائم في صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "القوائم غير المرتبة Unordered Lists",
+      "narration": {
+        "spoken_text": "نَبْدَأُ بِالْقَوَائِمِ غَيْرِ الْمُرَتَبَة الَّتِي تَبْدَأُ بِاسْتِخْدَامِ تِيج ul، وَيَتَمَثَّلُ كُلُّ عُنْصُرٍ دَاخِلَهَا بِاسْتِخْدَامِ تِيج li، وَتَظْهَرُ الْعَنَاصِرُ بِشَكْلِ نِقَاطٍ دَائِرِيَّة سَوْدَاءَ افْتِرَاضِيّاً.",
+        "caption_text": "تبدأ Unordered Lists باستخدام ul وكل عنصر داخلها يبدأ بـ li."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعريف Unordered List باستخدام <ul>",
+          "تحديد كل عنصر في القائمة باستخدام <li>",
+          "تظهر العناصر افتراضيا بنقاط دائرية سوداء"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كود القائمة غير المرتبة",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي فِي هَذَا الْمِثَالِ كَيْفَ نَكْتُبُ عَنَاصِرَ الْقَوَيْمَة غَيْرِ الْمُرَتَبَة دَاخِلَ تِيج ul مِثْل Coffee و Tea و Milk.",
+        "caption_text": "مثال عملي لكتابة Unordered List في HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "unordered_list.html",
+        "code": "<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>",
+        "highlight_lines": [],
+        "output": "• Coffee\n• Tea\n• Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "معاينة القائمة غير المرتبة",
+      "narration": {
+        "spoken_text": "هَذِهِ هِيَ النَّتِيجَة الْمَرْئِيَّة لِتِلْكَ الْقَوَيْمَة غَيْرِ الْمُرَتَبَة كَمَا تَعْرِضُهَا مُتَفَحِّصَاتُ الْوِبّ بِدُونِ تَرْتِيبٍ رَقْمِيٍّ.",
+        "caption_text": "صورة معاينة القائمة غير المرتبة في المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "Unordered List Rendered Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "القوائم المرتبة Ordered Lists",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى الْقَوَائِمِ الْمُرَتَبَة الَّتِي تَبْدَأُ بِتِيج ol، وَتُسْتَخْدَمُ لِتَرْتِيبِ الْعَنَاصِرِ تَقْدِيماً وَتَأْخِيراً حَسَبَ الْحَاجَه، حَيْثُ تَبْدَأُ تِلْكَ الْعَنَاصِرُ أَيْضاً بِتِيج li وَتُوَصَّفُ بِأَرْقَامٍ افْتِرَاضِيَّه.",
+        "caption_text": "تستخدم Ordered Lists مع ol و li وتظهر مرقمة افتراضيا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "ordered_list.html",
+        "code": "<ol>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+        "highlight_lines": [],
+        "output": "1. Coffee\n2. Tea\n3. Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "معاينة القائمة المرتبة",
+      "narration": {
+        "spoken_text": "تُعْرَضُ الْعَنَاصِرُ فِي الْقَوَيْمَة الْمُرَتَبَة بِأَرْقَامٍ مُتَسَلْسِلَة تَبْدَأُ مِنَ الْوَاحِدِ تِلْوَ الْآخَرِ كَمَا يُوَضِّحُ هَذَا الْمِثَالُ الْمَرْئِيُّ.",
+        "caption_text": "صورة معاينة القائمة المرتبة في المتصفح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_2",
+        "alt": "Ordered List Rendered Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "قوائم الوصف Description Lists",
+      "narration": {
+        "spoken_text": "تَدْعَمُ لُغَة HTML أَيْضاً قَوَائِمَ الْوَصْف Description Lists، حَيْثُ يَجْمَعُ تِيج dl بَيْنَ الْمُصْطَلَحَاتِ وَوَصْفِهَا، فَنَسْتَخْدِم dt لِتَعْرِيفِ الِاِسْمِ و dd لِوَصْفِهِ بِدِقَّه.",
+        "caption_text": "تعريف Description Lists باستخدام dl و dt و dd."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "description_list.html",
+        "code": "<dl>\n  <dt>Coffee</dt>\n  <dd>- black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>- white cold drink</dd>\n</dl>",
+        "highlight_lines": [],
+        "output": "Coffee\n- black hot drink\nMilk\n- white cold drink",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "معاينة قوائم الوصف وخلاصة الدرس",
+      "narration": {
+        "spoken_text": "شَاهِدْ كَيْفَ يَعْرِضُ الْمُتَفَحِّصُ مُصْطَلَحَاتِ الْوَصْفِ وَشُرُوحَاتِهَا. تَعَلَّمْنَا الْيَوْمَ أَنْوَاع Lists الْمُخْتَلِفَة فِي HTML، نَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ لِمُزِيدٍ مِنَ الِاِحْتِرَافِ.",
+        "caption_text": "خلاصة استخدام الأنواع المختلفة للقوائم في HTML."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_3",
+        "alt": "Description List Rendered Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists.asp"
+      ]
+    }
+  ]
+}
