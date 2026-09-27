@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "131",
+  "title": "How TO - Include HTML",
+  "course": "HTML",
+  "objectives": [
+    "Understand how to include HTML snippets inside other HTML files",
+    "Learn how to use custom attributes to specify external HTML files",
+    "Implement a JavaScript function to fetch and inject HTML content dynamically"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_include.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "شرح Introduction to HTML Includes",
+      "narration": {
+        "spoken_text": "أَهْلًا بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدْ. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّةِ تَضْمِينِ مِلَفَّات HTML دَاخِلَ بَعْضِهَا الْبَعْضِ، لِتَسْهِيلِ بِنَاءِ صَفْحَاتِ الْوِبّ وَإِعَادَةِ اسْتِخْدَامِ الْأَكْوَادِ بِشَكْلٍ فَعَّالٍ وَمُنَظَّمْ.",
+        "caption_text": "سنتعلم اليوم كيفية تضمين ملفات HTML داخل بعضها البعض لتسهيل بناء صفحات الويب وإعادة استخدام الأكواد بشكل فعال."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Include HTML snippets in other HTML files",
+          "مفهوم Promote code reusability and clean structure",
+          "مفهوم Create modular web components easily"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_2_snippet",
+      "title": "شرح Creating the HTML Snippet",
+      "narration": {
+        "spoken_text": "فِي الْبِدَايَه، نَقُومُ بِحِفْظِ الْأَكْوَادِ الَّتِي نُرِيدُ تَضْمِينَهَا فِي مِلَفٍّ مُنْفَصِلٍ نُسَمِّيه content.html، مِثْلَ هَذِهِ الْقَائِمَه الَّتِي تَحْتَوِي عَلَى رَوَابِطَ مُتَنَوِّعَه لِتَسْهِيلِ الْوُصُولِ إِلَى صَفْحَاتٍ أُخْرَى.",
+        "caption_text": "نقوم بحفظ الأكواد التي نريد تضمينها في ملف منفصل مثل content.html يحتوي على روابط متنوعة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "content.html",
+        "code": "<a href=\"maps.html\">Google Maps</a><br>\n<a href=\"buttons.html\">Buttons</a><br>\n<a href=\"modals.html\">Modals</a><br>",
+        "highlight_lines": [
+          1,
+          2,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_3_attribute",
+      "title": "شرح Using the Custom Attribute",
+      "narration": {
+        "spoken_text": "لِتَضْمِينِ هَذَا الْمِلَفِّ فِي صَفْحَتِنَا الرَّئِيسِيَّه، نَسْتَخْدِم div Element مَعَ إِضَافَةِ Attribute خَاصٍّ نُطْلِقُ عَلَيْهِ اسْم w3-include-html وَنَضَعُ فِيهِ مَسَارَ الْمِلَفِّ الْمَطْلُوبِ بِدِقَّهْ.",
+        "caption_text": "لتضمين هذا الملف في صفحتنا الرئيسية، نستخدم div Element مع إضافة Attribute خاص يسمى w3-include-html."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<div w3-include-html=\"content.html\"></div>",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_4_js_part1",
+      "title": "شرح JavaScript Include Function - Part 1",
+      "narration": {
+        "spoken_text": "الْآنَ، نَسْتَخْدِمُ لُغَةِ JavaScript لِكِتَابَةِ دَالَّةِ includeHTML. تَقُومُ هَذِهِ الدَّالَّه بِالْمُرُورِ عَلَى جَمِيع Elements الصَّفْحَه لِلْبَحْثِ عَن Attribute الَّذِي قُمْنَا بِتَعْرِيفِهِ سَابِقًا لِتَحْدِيدِ الْمِلَفَّاتِ.",
+        "caption_text": "نستخدم لغة JavaScript لكتابة دالة includeHTML التي تبحث عن الـ Attribute المخصص في جميع عناصر الصفحة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "include.js",
+        "code": "function includeHTML() {\n  var z, i, elmnt, file, xhttp;\n  z = document.getElementsByTagName(\"*\");\n  for (i = 0; i < z.length; i++) {\n    elmnt = z[i];\n    file = elmnt.getAttribute(\"w3-include-html\");\n    if (file) {\n      // Request will be handled next",
+        "highlight_lines": [
+          1,
+          3,
+          6
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_5_js_part2",
+      "title": "شرح JavaScript Include Function - Part 2",
+      "narration": {
+        "spoken_text": "عِنْدَمَا تَجِدُ الدَّالَّه هَذَا Attribute، تَقُومُ بِإِرْسَالِ طَلَب XMLHttpRequest لِجَلْبِ مُحْتَوَى الْمِلَفِّ، ثُمَّ تَسْتَبْدِلُ الْمُحْتَوَى الدَّاخِلِيَّ لِلْعُنْصُرِ بِالْمِلَفِّ الْمَطْلُوبِ أَوْ تَعْرِضُ رِسَالَةِ خَطَأْ.",
+        "caption_text": "ترسل الدالة طلب XMLHttpRequest لجلب محتوى الملف، ثم تستبدل المحتوى الداخلي للعنصر بالملف المطلوب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "include.js",
+        "code": "      xhttp = new XMLHttpRequest();\n      xhttp.onreadystatechange = function() {\n        if (this.readyState == 4) {\n          if (this.status == 200) {\n            elmnt.innerHTML = this.responseText;\n          }\n          elmnt.removeAttribute(\"w3-include-html\");\n          includeHTML();\n        }\n      };",
+        "highlight_lines": [
+          1,
+          4,
+          5,
+          7,
+          8
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_6_calling_js",
+      "title": "شرح Calling the Function",
+      "narration": {
+        "spoken_text": "لِتَفْعِيلِ هَذِهِ الْعَمَلِيَّه، نَقُومُ بِاسْتِدْعَاءِ الدَّالَّه includeHTML فِي نِهَايَةِ صَفْحَتِنَا الرَّئِيسِيَّه دَاخِل script Tag، لِتَعْمَلَ تِلْقَائِيًّا بَعْدَ تَحْمِيلِ جَمِيعِ الْعَنَاصِرِ الْأُخْرَى بِشَكْلٍ سَلِيمْ.",
+        "caption_text": "نقوم باستدعاء الدالة includeHTML في نهاية الصفحة الرئيسية داخل script Tag لتعمل تلقائيا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<script>\nincludeHTML();\n</script>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_7_multiple_snippets",
+      "title": "شرح Including Multiple Snippets",
+      "narration": {
+        "spoken_text": "الْمِيزَه الرَّائِعَه هُنَا هِيَ أَنَّنَا نَسْتَطِيعُ تَضْمِينَ أَيِّ عَدَدٍ مِنَ الْمِلَفَّاتِ فِي نَفْسِ الصَّفْحَه، مِثْلَ تَضْمِينِ رَأْسِ الصَّفْحَه h1.html وَمِلَفِّ الْمُحْتَوَى مَعًا بِكُلِّ سُهُولَهْ.",
+        "caption_text": "يمكننا تضمين أي عدد من ملفات HTML في نفس الصفحة بكل سهولة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<div w3-include-html=\"h1.html\"></div>\n<div w3-include-html=\"content.html\"></div>",
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "شرح Summary & Best Practices",
+      "narration": {
+        "spoken_text": "فِي الْخِتَامِ، تُعْتَبَرُ هَذِهِ الطَّرِيقَه مُمْتَازَه لِتَقْسِيمِ الْمَشْرُوعِ إِلَى أَجْزَاءٍ صَغِيرَه وَمُرْنَهْ. جَرِّبُوا كِتَابَةِ الْأَكْوَادِ بِأَنْفُسِكُمْ، وَلَا تَتَرَدَّدُوا فِي طَرْحِ الْأَسْئِلَه فِي التَّعْلِيقَاتِ لِنُجِيبَ عَنْهَا.",
+        "caption_text": "تعتبر هذه الطريقة ممتازة لتقسيم المشروع إلى أجزاء صغيرة ومرنة. جربوا كتابة الأكواد بأنفسكم واطرحوا أسئلتكم في التعليقات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Divide projects into small, manageable files",
+          "مفهوم Use w3-include-html attribute for inclusion",
+          "مفهوم Run on a local server to avoid CORS issues"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_include.asp"
+      ]
+    }
+  ]
+}
