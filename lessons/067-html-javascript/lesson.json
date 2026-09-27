@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "67",
+  "title": "استخدام JavaScript في صفحات HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم دور JavaScript في جعل صفحات الويب تفاعلية",
+    "تعلم كيفية استخدام script Tag لإضافة السكربتات",
+    "التعرف على طريقة التعامل مع العناصر عبر getElementById",
+    "استخدام noscript Tag لتوفير محتوى بديل"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_scripts.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول JavaScript",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ. لُغَة JavaScript هِيَ الْأَدَاة الْأَهَمُّ لِجَعْلِ صَفْحَاتِ الْوِبّ أَكْثَرَ دِينَامِيكِيَّة وَتَفَاعُلِيَّة مَعَ الْمُسْتَخْدِمِ، حَيْثُ نَقُومُ بِتَضْمِينِهَا دَاخِلَ صَفْحَات HTML لِتَنْفِيذِ مَهَامَّ مُتَعَدِّدَة وَمُتَطَوِّرَه.",
+        "caption_text": "تستخدم JavaScript لجعل صفحات الويب أكثر تفاعلية وديناميكية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "JavaScript تجعل صفحات الويب تفاعلية",
+          "تستخدم لتغيير المحتوى والأنماط",
+          "تساعد في التحقق من النماذج"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "script_tag",
+      "title": "استخدام script Tag",
+      "narration": {
+        "spoken_text": "لِإِدْرَاجِ كُود JavaScript نَسْتَخْدِمُ الْعُنْصُر script. هَذَا الْعُنْصُرُ يُمْكِنُ أَنْ يَحْتَوِيَ عَلَى جُمَلٍ بَرْمَجِيَّة مُبَاشَرَه، أَوْ يُشِيرُ إِلَى مِلَفٍّ خَارِجِيٍّ عَبْر Attribute src، وَهُوَ مَا يُسَاعِدُنَا فِي تَنْظِيمِ الْأَكْوَادِ بِشَكْلٍ احْتِرَافِيٍّ.",
+        "caption_text": "يستخدم script Tag لتعريف السكربتات داخل صفحة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يستخدم script Tag لتعريف السكربتات",
+          "يمكن كتابة الكود داخل العنصر",
+          "يمكن ربط ملف خارجي عبر src"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "code_example_1",
+      "title": "تغيير المحتوى برمجيا",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ هَذَا الْمِثَالَ الْعَمَلِيَّ. نَسْتَخْدِمُ الطَّرِيقَة document.getElementById لِتَحْدِيدِ عُنْصُرٍ مُعَيَّنٍ بِوَاسِطَة id، ثُمَّ نَقُومُ بِتَغْيِيرِ الْمُحْتَوَى الدَّاخِلِيِّ لَهُ عَبْر innerHTML، وَهِيَ مَهَارَة أَسَاسِيَّة لِكُلِّ مُطَوِّرِ وِبّ.",
+        "caption_text": "استخدام getElementById لتغيير محتوى عنصر معين."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "script.html",
+        "code": "<script>\n document.getElementById(\"demo\").innerHTML = \n \"Hello JavaScript!\";\n</script>",
+        "highlight_lines": [],
+        "output": "Hello JavaScript!",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "code_example_2",
+      "title": "تغيير الأنماط والخصائص",
+      "narration": {
+        "spoken_text": "لَا يَقْتَصِرُ دَوْر JavaScript عَلَى النُّصُوصِ فَقَطْ، بَلْ يُمْكِنُهَا تَغْيِيرُ التَّنْسِيقَاتِ مِثْلَ حَجْمِ الْخَطِّ وَالْأَلْوَانِ، أَوْ حَتَّى تَغْيِير Attributes الْعَنَاصِرِ مِثْل src لِلصُّوَرِ، مِمَّا يَمْنَحُ الصَّفْحَة حَيَوِيَّة كَبِيرَه.",
+        "caption_text": "يمكن لـ JavaScript تغيير الأنماط و Attributes بسهولة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "styles.js",
+        "code": "document.getElementById(\"demo\").style.fontSize = \n \"25px\";\ndocument.getElementById(\"demo\").style.color = \n \"red\";",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "noscript_tag",
+      "title": "التعامل مع noscript Tag",
+      "narration": {
+        "spoken_text": "مِنَ الضَّرُورِيِّ أَيْضاً التَّفْكِيرُ فِي الْمُسْتَخْدِمِينَ الَّذِينَ يُعَطِّلُونَ السكربتات فِي مُتَصَفِّحَاتِهِمْ. لِهَذَا نَسْتَخْدِمُ الْعُنْصُر noscript لِعَرْضِ مُحْتَوَى بَدِيلٍ يَنْصَحُهُمْ بِتَفْعِيلِ السكربتات لِضَمَانِ عَمَلِ الصَّفْحَة بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "يستخدم noscript Tag لعرض محتوى بديل عند تعطيل السكربتات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "noscript.html",
+        "code": "<noscript>\n Sorry, your browser does not \n support JavaScript!\n</noscript>",
+        "highlight_lines": [],
+        "output": "Sorry, your browser does not support JavaScript!",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَا أَصْدِقَائِي، احْرِصُوا دَائِماً عَلَى كِتَابَة أَكْوَادٍ نَظِيفَة وَمُنَظَّمَه. اسْتِخْدَامُ مِلَفَّاتٍ خَارِجِيَّة لِـ JavaScript يُحَسِّنُ مِنْ أَدَاءِ الصَّفْحَة وَيُسَهِّلُ صِيَانَتَهَا، كَمَا أَنَّ التَّعَامُلَ مَعَ الْحَالَاتِ الَّتِي لَا يَدْعَمُ فِيهَا الْمُتَصَفِّحْ السكربتات يُعَدُّ مِنْ أَهَمِّ مَعَايِيرِ جَوْدَة الْوِبّ.",
+        "caption_text": "نصائح لتحسين أداء وجودة الكود البرمجي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم ملفات خارجية للسكربتات",
+          "نظم الكود بشكل جيد",
+          "وفر دائما محتوى بديل عبر noscript",
+          "اختبر الكود في متصفحات مختلفة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة دَمْج JavaScript فِي HTML. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَتَطْوِيرِ مَهَارَاتِكُمْ. لَا تَتَرَدَّدُوا فِي زِيَارَة الرَّوَابِطِ الْمُوَضَّحَة فِي الْوَصْفِ لِلتَّعَمُّقِ أَكْثَرَ. إِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "شكرا لمتابعتكم، استمروا في التعلم والتطبيق العملي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلمنا دمج JavaScript مع HTML",
+          "استخدام script و noscript",
+          "تغيير العناصر برمجيا",
+          "راجعوا الروابط لمزيد من التفاصيل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_scripts.asp"
+      ]
+    }
+  ]
+}
