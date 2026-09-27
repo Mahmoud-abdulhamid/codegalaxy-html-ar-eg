@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
   "lesson_id": "18",
-  "title": "عناصر الاقتباس والتوثيق في HTML",
+  "title": "HTML Quotation and Citation Elements",
   "course": "HTML",
   "objectives": [
-    "فهم استخدام blockquote و q للاقتباسات الطويلة والقصيرة",
-    "التعرف على abbr لتوضيح الاختصارات و address لمعلومات الاتصال",
-    "استخدام cite لعنوان الأعمال الفنية و bdo لتغيير اتجاه النص"
+    "فهم كيفية استخدام <blockquote> و <q> للاقتباسات",
+    "التعرف على <abbr> للاختصارات و <address> لمعلومات الاتصال",
+    "استخدام <cite> لعناوين الأعمال و <bdo> للتحكم في اتجاه النص"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_quotation_elements.asp"
@@ -17,41 +17,26 @@
       "path": "assets/html-b1d3a73f43eec2b7.png",
       "kind": "image",
       "license": "Source example rendered for educational explanation",
-      "attribution": "W3Schools",
-      "source_url": "https://www.w3schools.com/html/html_quotation_elements.asp"
-    },
-    {
-      "id": "html_example_2",
-      "path": "assets/html-1c531e1666e21c7e.png",
-      "kind": "image",
-      "license": "Source example rendered for educational explanation",
-      "attribution": "W3Schools",
-      "source_url": "https://www.w3schools.com/html/html_quotation_elements.asp"
-    },
-    {
-      "id": "html_example_3",
-      "path": "assets/html-51cfff6bc4c062b3.png",
-      "kind": "image",
-      "license": "Source example rendered for educational explanation",
-      "attribution": "W3Schools",
+      "attribution": "",
       "source_url": "https://www.w3schools.com/html/html_quotation_elements.asp"
     }
   ],
   "scenes": [
     {
-      "id": "scene_intro",
-      "title": "مقدمة عناصر الاقتباس",
+      "id": "intro",
+      "title": "مقدمة في عناصر الاقتباس",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى عَنَاصِرِ الِاقْتِبَاسِ وَالتَّوْثِيقِ مِثْل blockquote و q و abbr و address و cite و bdo وَهِيَ تُسَاعِدُنَا فِي تَنْظِيمِ النُّصُوصِ بِاحْتِرَافِيَّة.",
-        "caption_text": "سنتعرف في هذا الدرس على عناصر HTML المخصصة للاقتباس والتوثيق وإدارة النصوص بدقة."
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَجْمُوعَة مِن Elements الْمُخَصَّصَة لِتَنْسِيقِ الِاقْتِبَاسَاتِ وَالْمَرَاجِعِ وَالْبَيَانَاتِ النَّصِّيَّه، وَهِيَ أَدَوَاتٌ مُهِمَّة لِتَحْسِينِ دَلَالَة مُحْتَوَى صَفْحَة الْوِبّ.",
+        "caption_text": "سنتعرف اليوم على مجموعة من Elements المخصصة لتنسيق الاقتباسات والمراجع والبيانات النصية في HTML."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "دراسة عناصر الاقتباس والتوثيق في HTML",
-          "استخدام blockquote و q للنصوص المقتبسة",
-          "تنظيم البيانات باستخدام abbr و address",
-          "التحكم باتجاه النصوص باستخدام bdo"
+          "استخدام <blockquote> و <q> للاقتباسات",
+          "استخدام <abbr> للاختصارات",
+          "استخدام <address> لمعلومات الاتصال",
+          "استخدام <cite> لعناوين الأعمال",
+          "استخدام <bdo> للتحكم في اتجاه النص"
         ]
       },
       "source_refs": [
@@ -59,17 +44,17 @@
       ]
     },
     {
-      "id": "scene_blockquote",
-      "title": "استخدام blockquote للاقتباسات الطويلة",
+      "id": "blockquote_q",
+      "title": "عناصر الاقتباس <blockquote> و <q>",
       "narration": {
-        "spoken_text": "نَبْدَأُ بِعُنْصِر blockquote الَّذِي يُحَدِّدُ قِسْماً مُقْتَبَساً مِنْ مَصْدَرٍ آخَرَ. تَقُومُ المُتَصَفِّحَاتُ عَادَة بِإِزَاحَةِ هَذَا العُنْصِرِ وَيُمْكِنُ اسْتِخْدَام Attribute cite لِتَحْدِيدِ رَابِطِ الْمَصْدَرِ بِدِقَّة كَمَا يَبْدُو فِي هَذَا الْمِثَالِ.",
-        "caption_text": "يستخدم العنصر blockquote لتحديد قسم مقتبس من مصدر آخر وغالبا ما يتم إزاحته تلقائيا."
+        "spoken_text": "نَبْدَأُ بِعُنْصُر blockquote الَّذِي يُسْتَخْدَمُ لِاقْتِبَاسِ قِسْمٍ كَامِلٍ مِنْ مَصْدَرٍ خَارِجِيٍّ، وَتَقُومُ مُتَصَفِّحَاتُ الْوِبّ عَادَة بِعَمَل Indent لَهُ. أَمَّا عُنْصُر q فَيُسْتَخْدَمُ لِلِاقْتِبَاسَاتِ الْقَصِيرَه، حَيْثُ يُضِيفُ الْمُتَصَفِّحْ عَلَامَاتِ الِاقْتِبَاسِ تِلْقَائِيّاً.",
+        "caption_text": "يستخدم <blockquote> للاقتباسات الطويلة بينما يستخدم <q> للاقتباسات القصيرة داخل النص."
       },
       "visual": {
         "type": "code",
         "language": "html",
-        "filename": "blockquote.html",
-        "code": "<blockquote cite=\"http://www.site.org\">\n  For 60 years, WWF has worked\n  to help people and nature.\n</blockquote>",
+        "filename": "quote.html",
+        "code": "<blockquote cite=\"url\">\n  نص الاقتباس الطويل هنا\n</blockquote>\n<p>نص مع <q>اقتباس قصير</q></p>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -80,17 +65,17 @@
       ]
     },
     {
-      "id": "scene_q_tag",
-      "title": "استخدام q للاقتباسات القصيرة",
+      "id": "abbr_element",
+      "title": "عنصر الاختصارات <abbr>",
       "narration": {
-        "spoken_text": "أَمَّا عُنْصِر q فَيُسْتَخْدَمُ لِلتَّعْبِيرِ عَنِ الِاقْتِبَاسَاتِ الْقَصِيرَةِ ضِمْنَ السَّطْرِ. تَقُومُ المُتَصَفِّحَاتُ تِلْقَائِيّاً بِإِدْرَاجِ عَلَامَاتِ الِاقْتِبَاسِ أَوْ العِبَارَاتِ حَوْلَ النَّصِّ الْمُقْتَبَسِ دُونَ حَاجَة لِكِتَابَتِهَا يَدَوِيّاً.",
-        "caption_text": "يحدد العنصر q اقتباسا قصيرا وتقوم المتصفحات عادة بإدراج علامات الاقتباس حوله."
+        "spoken_text": "عُنْصُر abbr يُسْتَخْدَمُ لِتَعْرِيفِ الِاخْتِصَارَاتِ أَوْ الْأَحْرُفِ الِاسْتِهْلَالِيَّه. نَصِيحَة هَنْدَسِيَّه: اسْتَخْدِمْ Attribute الَّذِي يُسَمَّى title لِإِظْهَارِ وَصْفٍ كَامِلٍ لِلِاخْتِصَارِ عِنْدَ تَحْرِيكِ مُؤَشِّرِ الْفَأْرَة فَوْقَ الْعُنْصُرِ، وَهَذَا يُسَاعِدُ مُحَرِّكَاتِ الْبَحْثِ كَثِيراً.",
+        "caption_text": "يستخدم <abbr> لتعريف الاختصارات، ويفضل استخدام Attribute المسمى title لتوضيح المعنى."
       },
       "visual": {
         "type": "code",
         "language": "html",
-        "filename": "short-quote.html",
-        "code": "<p>\n  Goal: <q>Build a future\n  where people live\n  in harmony.</q>\n</p>",
+        "filename": "abbr.html",
+        "code": "<p>The <abbr title=\"World Health \nOrganization\">WHO</abbr> was \nfounded in 1948.</p>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -101,38 +86,17 @@
       ]
     },
     {
-      "id": "scene_abbr_tag",
-      "title": "استخدام abbr للاختصارات",
+      "id": "address_element",
+      "title": "عنصر معلومات الاتصال <address>",
       "narration": {
-        "spoken_text": "لِتَعْرِيفِ الِاخْتِصَارَاتِ وَالرُّمُوزِ مِثْل HTML أَوْ WHO نَسْتَخْدِمُ عُنْصِر abbr. يُمْكِنُ اسْتِخْدَام Attribute title لِعَرْضِ الْوَصْفِ الكَامِلِ عِنْدَ تَحْرِيكِ الفَأْرَةِ فَوْقَ العُنْصِرِ لِإِفَادَةِ المُتَصَفِّحَاتِ وَمَحَرَّكَاتِ البحت.",
-        "caption_text": "يستخدم العنصر abbr للاختصارات مع Attribute title لعرض الوصف عند تحريك الفأرة."
-      },
-      "visual": {
-        "type": "code",
-        "language": "html",
-        "filename": "abbreviation.html",
-        "code": "<p>\n  The <abbr title=\"World Health\">\n  WHO</abbr> was founded.\n</p>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_quotation_elements.asp"
-      ]
-    },
-    {
-      "id": "scene_address_tag",
-      "title": "استخدام address لمعلومات الاتصال",
-      "narration": {
-        "spoken_text": "يُحَدِّدُ عُنْصِر address مَعْلُومَاتِ الِاتِّصَالِ لِكَاتِبِ المَقَالِ أَوْ المَلَفِّ. يَظْهَرُ النَّصُّ دَاخِلَ هَذَا العُنْصِرِ بِخَطٍّ مَائِلٍ، وَتُضِيفُ المُتَصَفِّحَاتُ فَاصِلَ أَسْطُرٍ قَبْلَهُ وَبَعْدَهُ تِلْقَائِيّاً لِلتَّنْسِيقِ السَّلِيمِ.",
-        "caption_text": "يخصص العنصر address لمعلومات الاتصال ويتم عرضه بخط مائل مع فواصل أسطر تلقائية."
+        "spoken_text": "عُنْصُر address يُحَدِّدُ بَيَانَاتِ الِاتِّصَالِ لِصَاحِبِ الْمُسْتَنَدِ. يَظْهَرُ النَّصُّ بِدَاخِلِهِ عَادَة بِخَطٍّ مَائِلٍ، وَيُضِيفُ الْمُتَصَفِّحْ سَطْراً جَدِيداً قَبْلَ وَبَعْدَ هَذَا الْعُنْصُرِ. يُمْكِنُكَ وَضْعُ عَنَاوِينَ بَرِيدِيَّة أَوْ أَرْقَامِ هَوَاتِفَ أَوْ رَوَابِطَ بِدَاخِلِهِ.",
+        "caption_text": "يستخدم <address> لعرض معلومات الاتصال، ويظهر النص داخله بخط مائل مع فواصل أسطر تلقائية."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "address.html",
-        "code": "<address>\n  Written by John Doe.<br>\n  Visit us at Example.com\n</address>",
+        "code": "<address>\n  John Doe<br>\n  Box 564, USA\n</address>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -143,17 +107,17 @@
       ]
     },
     {
-      "id": "scene_cite_bdo",
-      "title": "استخدام cite و bdo للتوثيق والاتجاهات",
+      "id": "cite_element",
+      "title": "عنصر عناوين الأعمال <cite>",
       "narration": {
-        "spoken_text": "نَسْتَخْدِمُ عُنْصِر cite لِتَحْدِيدِ عُنْوَانِ عَمَلٍ فَسْحِيٍّ أَوْ فَنِّيٍّ كَكِتَابٍ أَوْ لَوْحَة وَيَظْهَرُ بِخَطٍّ مَائِلٍ. أَمَّا عُنْصِر bdo فَيُسْتَخْدَمُ لِتَغْيِيرِ اتِّجَاهِ النَّصِّ تَمَاماً عَبْر Attribute dir بِقِيمَة rtl أَوْ ltr.",
-        "caption_text": "يحدد cite عنوان الأعمال الفنية بينما يغير bdo اتجاه النص بالكامل."
+        "spoken_text": "عُنْصُر cite يُسْتَخْدَمُ لِتَحْدِيدِ عُنْوَانِ عَمَلٍ إِبْدَاعِيٍّ، مِثْلَ كِتَابٍ أَوْ قَصِيدَة أَوْ لَوْحَة فَنِّيَّه. لَاحِظْ أَنَّهُ لَا يُسْتَخْدَمُ لِأَسْمَاءِ الْأَشْخَاصِ، بَلْ لِعَنَاوِينِ أَعْمَالِهِمْ فَقَطْ، وَيَظْهَرُ النَّصُّ بِدَاخِلِهِ بِخَطٍّ مَائِلٍ أَيْضاً.",
+        "caption_text": "يستخدم <cite> لتحديد عناوين الأعمال الإبداعية، ويظهر النص داخله بخط مائل."
       },
       "visual": {
         "type": "code",
         "language": "html",
-        "filename": "cite-bdo.html",
-        "code": "<p><cite>The Scream</cite></p>\n<bdo dir=\"rtl\">\n  Right to left text\n</bdo>",
+        "filename": "cite.html",
+        "code": "<p><cite>The Scream</cite> by \nEdvard Munch.</p>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -164,19 +128,41 @@
       ]
     },
     {
-      "id": "scene_summary",
-      "title": "خلاصة الدرس والممارسات البرمجية",
+      "id": "bdo_element",
+      "title": "عنصر اتجاه النص <bdo>",
       "narration": {
-        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَرَّفْنَا عَلَى أَهَمِّيَّةِ اسْتِخْدَامِ عَنَاصِرِ الِاقْتِبَاسِ وَالتَّوْثِيقِ لِبِنَاءِ صَفَحَاتِ وَيْبٍ مُنَظَّمَة وَوَاضِحَة لِمَحَرَّكَاتِ البحت وَالمُتَصَفِّحَاتِ. نَلْقَاكُمْ فِي الدَّرْسِ القَادِمِ لِمَزِيدٍ مِنَ الإِبْدَاعِ.",
-        "caption_text": "خلاصة استخدام عناصر الاقتباس والتوثيق لبناء صفحات ويب دقيقة ومنظمة."
+        "spoken_text": "أَخِيراً، عُنْصُر bdo وَهُوَ اخْتِصَارٌ لِـ Bi-Directional Override. يُسْتَخْدَمُ هَذَا الْعُنْصُرُ لِتَجَاوُزِ اتِّجَاهِ النَّصِّ الِافْتِرَاضِيِّ، حَيْثُ يُمْكِنُكَ تَحْدِيدُ اتِّجَاهِ الْكِتَابَة مِنْ الْيَمِينِ إِلَى الْيَسَارِ أَوْ الْعَكْسِ بِاسْتِخْدَام Attribute الَّذِي يُسَمَّى dir.",
+        "caption_text": "يستخدم <bdo> للتحكم في اتجاه النص وتجاوز الإعدادات الافتراضية للمتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "bdo.html",
+        "code": "<bdo dir=\"rtl\">\n  هذا النص يكتب من اليمين لليسار\n</bdo>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_quotation_elements.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا التَّعَرُّفَ عَلَى أَهَمِّ عَنَاصِرِ الِاقْتِبَاسِ وَالْمَرَاجِعِ فِي HTML. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِتَرَوْا كَيْفَ يَتَعَامَلُ مَعَهَا الْمُتَصَفِّحْ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "لقد تعلمنا اليوم كيفية استخدام عناصر الاقتباس والمراجع. جربوا الأكواد بأنفسكم لتعزيز مهاراتكم."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "استخدام blockquote للاقتباسات الطويلة",
-          "توظيف abbr للاختصارات مع title",
-          "تنظيم العناوين بـ cite واتجاهات النص بـ bdo",
-          "تجربة الأكواد البرمجية من الابط في الوصف"
+          "استخدم <blockquote> للاقتباسات الطويلة",
+          "استخدم <q> للاقتباسات القصيرة",
+          "استخدم <abbr> للاختصارات مع title",
+          "استخدم <address> لمعلومات الاتصال",
+          "استخدم <cite> و <bdo> للتنسيقات الخاصة"
         ]
       },
       "source_refs": [
