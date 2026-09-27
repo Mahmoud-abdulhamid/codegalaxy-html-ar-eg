@@ -4,10 +4,9 @@
   "title": "HTML Links - Create Bookmarks",
   "course": "HTML",
   "objectives": [
-    "Understand the purpose of bookmarks in long web pages",
-    "Learn how to create bookmarks using the id attribute",
-    "Add internal links to bookmarks within the same page",
-    "Add links to bookmarks located on another web page"
+    "فهم كيفية إنشاء Bookmarks داخل صفحات الويب الطويلة باستخدام HTML",
+    "ربط العناصر بـ id attribute للانتقال السريع بين أقسام الصفحة",
+    "إضافة روابط للوصول إلى Bookmarks في صفحات ويب أخرى"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_links_bookmarks.asp"
@@ -40,18 +39,18 @@
   ],
   "scenes": [
     {
-      "id": "scene_1_intro",
-      "title": "مقدمة عن Bookmarks",
+      "id": "scene_1",
+      "title": "مقدمة عن Bookmarks في صفحات الويب",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِنْشَاء Bookmarks لِتَمْكِينِ الْقُرَّاءِ مِنَ الِانْتِقَالِ الْمُبَاشِرِ إِلَى أَجْزَاءٍ مُحَدَّدَة دَاخِلِ صَفْحَةِ الْوِيبِ.",
-        "caption_text": "تستخدم HTML links لإنشاء Bookmarks والانتقال إلى أجزاء محددة في الصفحة."
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ كَيْفَ نَسْتَخْدِم HTML links لِإِنْشَاء Bookmarks تُمَكِّنُ القُرَّاءَ مِنَ الِانْتِقَالِ السَّرِيعِ إِلَى أَجْزَاءٍ مُحَدَّدَة دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "تستخدم لغة HTML لإنشاء Bookmarks تساعد القراء على الانتقال السريع بين أجزاء صفحة الويب."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "أهمية Bookmarks في صفحات الويب الطويلة",
-          "الانتقال السريع إلى أقسام محددة",
-          "تحسين تجربة المستخدم بشكل ملحوظ"
+          "تستخدم روابط HTML لإنشاء Bookmarks في صفحات الويب الطويلة",
+          "تتيح للقراء القفز المباشر إلى أجزاء محددة داخل المستند",
+          "تحسن تجربة المستخدم وسهولة التنقل في الموقع"
         ]
       },
       "source_refs": [
@@ -59,18 +58,18 @@
       ]
     },
     {
-      "id": "scene_2_concept",
-      "title": "فكرة عمل Bookmarks",
+      "id": "scene_2",
+      "title": "آلية العمل والمفاهيم الأساسية",
       "narration": {
-        "spoken_text": "تَعْتَبِر Bookmarks مُفِيدَة جِدّاً إِذَا كَانَتْ صَفْحَة الْوِيبِ طَوِيلَة. لِإِنْشَاء Bookmark، نَقُومُ أَوَّلاً بِإِنْشَاءِ الْمَوْضِعِ الْمُسْتَهْدَفِ، ثُمَّ نُضِيفُ رَابِطاً إِلَيْهِ لِيَتِمَ التَّمْرِيرُ تِلْقَائِياً.",
-        "caption_text": "تكون Bookmarks مفيدة في الصفحات الطويلة لتسهيل التنقل."
+        "spoken_text": "تَكُون Bookmarks مُفِيدَة جِدًّا إِذَا كَانَتْ صَفْحَة الْوِبّ طَوِيلَة لِلْغَايَه. لِإِنْشَاء Bookmarks، نَقُومُ أَوَّلًا بِإِنْشَاءِ العُنْصُرِ الْمُرَادِ، ثُمَّ نُضِيفُ لَه link يُشِيرُ إِلَيْهِ بِدِقَّة وَسُهُولَه.",
+        "caption_text": "تعتبر Bookmarks مفيدة للصفحات الطويلة ويتم إنشاؤها عبر خطوتين أساسيتين."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "تفيد في الصفحات ذات المحتوى الطويل",
-          "تتطلب إنشاء الموضع أولا ثم ربطه",
-          "تقوم بالتمرير تلقائيا عند النقر"
+          "تعتبر Bookmarks أدوات مثالية لصفحات الويب ذات المحتوى الطويل",
+          "تتطلب العملية إنشاء الـ Bookmark أولا ثم ربطه",
+          "يؤدي النقر فوق الرابط إلى التمرير التلقائي نحو الموضع المطلوب"
         ]
       },
       "source_refs": [
@@ -78,18 +77,20 @@
       ]
     },
     {
-      "id": "scene_3_code_bookmark",
-      "title": "إنشاء Bookmark باستخدام id",
+      "id": "scene_3",
+      "title": "إنشاء Bookmark باستخدام id attribute",
       "narration": {
-        "spoken_text": "لِإِنْشَاء Bookmark، نَسْتَخْدِم id attribute دَاخِلَ الْعُنْصُرِ. لَاحِظْ هَذَا الْمِثَالَ حَيْثُ نَسْتَخْدِم Element مِنْ نَوْع h2 مَع id يُسَاوِي سي أُورْبَعَة.",
-        "caption_text": "نستخدم id attribute لإنشاء Bookmark داخل عنصر معين."
+        "spoken_text": "لِنَنْتَقِلْ إِلَى الجَانِبِ العَمَلِيِّ. أَوَّلًا نَسْتَخْدِم id attribute لِإِنْشَاء Bookmark فِي المَكَانِ المُحَدَّدِ، ثُمَّ نَكْتُبُ العُنْصُرَ بِهَذَا الشَّكْلِ الوَاضِحِ أَمَامَكُمْ عَلَى الشَّاشَه.",
+        "caption_text": "نستخدم id attribute لإنشاء Bookmark داخل العنصر المستهدف."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "bookmark.html",
         "code": "<h2 id=\"C4\">Chapter 4</h2>",
-        "highlight_lines": [],
+        "highlight_lines": [
+          1
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -99,20 +100,22 @@
       ]
     },
     {
-      "id": "scene_4_code_internal_link",
-      "title": "الرابط داخل نفس الصفحة",
+      "id": "scene_4",
+      "title": "ربط الصفحة بنفس الـ Bookmark",
       "narration": {
-        "spoken_text": "بَعْدَ تَحْدِيد Bookmark، نُضِيفُ رَابِطاً بِاسْتِخْدَام Tag مِنْ نَوْع a مَعَ قِيمَة href تَبْدَأُ بِعَلَامَةِ الشَّبَاكِ وَمَتْبُوعَة بِقِيمَة id، مِثْلِ رَابِطِ الِانْتِقَالِ إِلَى Chapter 4.",
-        "caption_text": "نضيف رابطا داخليا باستخدام href مع علامة الشباك وقيمة id."
+        "spoken_text": "بَعْدَ تَحْدِيدِ العُنْصُرِ ب id، يُمْكِنُنَا الْآنَ إِضَافَة link يَنْقُلُنَا إِلَى هَذَا الْفَصْلِ، مِثْل Jump to Chapter 4، وَذَلِكَ مِنْ خِلَالِ نَفْسِ صَفْحَة الْوِبّ.",
+        "caption_text": "نضيف رابطا تشعبيا داخل نفس الصفحة للوصول إلى الفصل الرابع."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link.html",
         "code": "<a href=\"#C4\">Jump to Chapter 4</a>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
+        "highlight_lines": [
+          1
+        ],
+        "output": "Jump to Chapter 4",
+        "output_status": "illustrative",
         "verification_ref": null
       },
       "source_refs": [
@@ -120,20 +123,24 @@
       ]
     },
     {
-      "id": "scene_5_code_external_page",
-      "title": "الرابط إلى صفحة أخرى",
+      "id": "scene_5",
+      "title": "الربط بـ Bookmark في صفحة أخرى",
       "narration": {
-        "spoken_text": "يُمْكِنُكَ أَيْضاً إِضَافَة رَابِطٍ إِلَى Bookmark يُوجَدُ فِي صَفْحَة أُخْرَى، عَبْرَ كِتَابَةِ اسْمِ الصَّفْحَةِ مَتْبُوعاً بِعَلَامَةِ الشَّبَاكِ وَقِيمَة id.",
-        "caption_text": "يمكن ربط Bookmark في صفحة أخرى بتحديد اسم الملف ثم id."
+        "spoken_text": "لَا يَقْتَصِرُ الأَمْرُ عَلَى نَفْسِ الصَفْحَة فَقَطْ، بَلْ يُمْكِنُكَ أَيْضًا إِضَافَة link يُشِيرُ إِلَى Bookmark مَوْجُودٍ فِي صَفْحَة وِبّ أُخْرَى كَمَا هُوَ وَاضِحٌ.",
+        "caption_text": "يمكنك إضافة روابط تؤدي إلى Bookmarks موجودة في صفحات ويب أخرى."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "external_link.html",
-        "code": "<a href=\"html_demo.html#C4\">Jump to Chapter 4</a>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
+        "code": "<a href=\"html_demo.html#C4\">\nJump to Chapter 4\n</a>",
+        "highlight_lines": [
+          1,
+          2,
+          3
+        ],
+        "output": "Jump to Chapter 4",
+        "output_status": "illustrative",
         "verification_ref": null
       },
       "source_refs": [
@@ -141,34 +148,34 @@
       ]
     },
     {
-      "id": "scene_6_visual_demo",
-      "title": "معاينة النتيجة المرئية",
+      "id": "scene_6",
+      "title": "معاينة النتيجة المرئية في المتصفح",
       "narration": {
-        "spoken_text": "تُهْئِئُ لَنَا هَذِهِ الصُّورَة مُعَايَنَة حَقِيقِيَّة لِكَيْفِ يَعْمَلُ التَّمْرِيرِ وَالِانْتِقَالِ الْمُبَاشِرِ إِلَى الْجُزْءِ الْمَطْلُوبِ فِي الْمُتَصَفِّحِ عِنْدَ النَّقْرِ عَلَى الرَّابِطِ.",
-        "caption_text": "معاينة مظهر الانتقال إلى Bookmarks في متصفح الويب."
+        "spoken_text": "تُظْهِرُ لَنَا هَذِهِ الصُّورَة الْمَرْئِيَّة كَيْفَ يَتَفَاعَلُ وِبّ Browser عِنْدَ النَّقْرِ عَلَى الرَّابِطِ، حَيْثُ يَنْتَقِلُ الْمُسْتَخْدِمُ فَوْرًا إِلَى المَوْضِعِ المُحَدَّدِ بِدِقَّه.",
+        "caption_text": "صورة توضح معاينة الـ Bookmarks وكيفية عملها في متصفح الويب."
       },
       "visual": {
         "type": "image",
         "asset_id": "html_example_1",
-        "alt": "HTML bookmarks render example"
+        "alt": "معاينة Bookmarks في متصفح الويب"
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_links_bookmarks.asp"
       ]
     },
     {
-      "id": "scene_7_best_practices",
-      "title": "أفضل الممارسات",
+      "id": "scene_7",
+      "title": "أفضل الممارسات البرمجية",
       "narration": {
-        "spoken_text": "تَأَكَّدْ دَائِماً مِنْ أَنَّ قِيَم id فَرِيدَة غَيْرُ مُتَكَرِّرَة دَاخِلَ نَفْسِ الصَّفْحَةِ، لِضَمَانِ عَمَل Bookmarks بِشَكْلٍ صَحِيحٍ دُونَ أَيِّ تَدَاخُلٍ.",
-        "caption_text": "تأكد من فريدة قيم id داخل نفس الصفحة لضمان سلامة العمل."
+        "spoken_text": "عِنْدَ اِسْتِخْدَام id attribute لِأَغْرَاض Bookmarks، تَأَكَّدْ دَائِماً مِنْ أَنْ يَكُونَ قِيمَة id فَرِيدَة وَغَيْرَ مُتَكَرِّرَة دَاخِلَ صَفْحَة الْوِبّ الوَاحِدَة لِضَمَانِ عَدَمِ حُدُوثِ أَيِّ تَضَارُبٍ.",
+        "caption_text": "تأكد من فريدية قيم الـ id داخل صفحة الويب لتجنب أي أخطاء في التنقل."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "يجب أن تكون قيمة id فريدة في الصفحة",
-          "استخدام الرمز # في attribute من نوع href",
-          "اختيار أسماء معبرة للروابط والمواقع"
+          "يجب أن تكون قيمة id فريدة لكل عنصر في الصفحة الواحدة",
+          "استخدم علامة الحجز # قبل اسم الـ id في الـ href",
+          "اختبر الروابط جيدا للتأكد من سلاسة التمرير والانتقال"
         ]
       },
       "source_refs": [
@@ -176,18 +183,18 @@
       ]
     },
     {
-      "id": "scene_8_conclusion",
-      "title": "خلاصة الدرس",
+      "id": "scene_8",
+      "title": "خلاصة الدرس والخطوات القادمة",
       "narration": {
-        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَلَّمْنَا كَيْفِيَّة إِنْشَاء Bookmarks فِي صَفَحَات HTML بِنَجاحٍ. نَتَوَقَّعُ مِنْكُمْ تَجْرِبَة الْأَكْوَادِ بِأَنْفُسِكُمْ عَبْرَ الرَّوَابِطِ الْمَوْجُودَةِ فِي الْوَصْفِ.",
-        "caption_text": "خلاصة درس إنشاء Bookmarks والروابط الداخلية والخارجية."
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا الْيَوْمَ، تَعَلَّمْنَا كَيْفَ نُسَهِّلُ تَصَفُّحْ المَوَاقِعِ الكَبِيرَة بِاسْتِخْدَام Bookmarks وid attribute. نَدْعُوكُمْ لِلتَّجْرِبَة العَمَلِيَّة مِنْ خِلَالِ الرَّابِطِ فِي الوَصْفِ، مَعَ تَحِيَّاتِ المُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة درس HTML Links وCreate Bookmarks مع المهندس محمود عبدالحميد."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "تعلمنا إنشاء Bookmarks عبر id attribute",
-          "ربط الصفحات محليا وخارجيا بنجاح",
-          "ندعوكم لتجربة الأكواد بأنفسكم"
+          "تعلمنا إنشاء وتفعيل Bookmarks في HTML",
+          "استخدمنا id attribute والرمز # للربط الفعال",
+          "نتطلع لرؤيتكم في الدرس القادم من دورة HTML"
         ]
       },
       "source_refs": [
