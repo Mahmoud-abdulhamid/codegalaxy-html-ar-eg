@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "66",
+  "title": "HTML Iframes Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية تضمين صفحات الويب باستخدام iframe",
+    "تطبيق التحديات البرمجية الخاصة بـ HTML",
+    "التعرف على Attribute الخاصة بـ iframe",
+    "تحسين مهارات بناء هيكل صفحات الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_iframes.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول iframe",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة اسْتِخْدَام iframe لِتَضْمِينِ صَفْحَة وِبٍّ دَاخِلَ صَفْحَة أُخْرَى، وَهِيَ مَهَارَة أَسَاسِيَّة لِكُلِّ مُطَوِّرِ وِبٍّ مُحْتَرِفٍ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. سنتعلم اليوم كيفية استخدام iframe لتضمين صفحة ويب داخل صفحة أخرى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام iframe لتضمين محتوى خارجي",
+          "فهم كيفية عمل العناصر المضمنة في HTML",
+          "تطبيق التحديات البرمجية لتعزيز الفهم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "مفهوم iframe في HTML",
+      "narration": {
+        "spoken_text": "عُنْصُر iframe يُسْتَخْدَمُ لِعَرْضِ صَفْحَة وِبٍّ مُسْتَقِلَّة ضِمْنَ إِطَارٍ دَاخِلَ صَفْحَتِكَ الْحَالِيَّه. هَذَا الْعُنْصُرُ يَعْتَمِدُ عَلَى Attribute مُهِمَّة مِثْل src لِتَحْدِيدِ رَابِطِ الصَّفْحَة الْمُرَادِ عَرْضُهَا بِشَكْلٍ مُبَاشِرٍ.",
+        "caption_text": "عنصر iframe يستخدم لعرض صفحة ويب مستقلة ضمن إطار داخل صفحتك الحالية، معتمدا على Attribute مثل src."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "iframe هو اختصار لـ Inline Frame",
+          "يستخدم Attribute المسماة src لتحديد المصدر",
+          "يمكن التحكم في العرض والارتفاع عبر Attributes"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "code_example",
+      "title": "كتابة كود iframe",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَقُومُ بِكِتَابَة Start Tag لِلْعُنْصُر iframe، ثُمَّ نُضِيف Attribute بِاسْم src لِتَحْدِيدِ الْمَسَارِ، وَنُغْلِقُ الْعُنْصُرَ بِـ End Tag مُنَاسِبٍ لِضَمَانِ عَمَلِهِ بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "نكتب Start Tag للعنصر iframe، ثم نضيف Attribute باسم src لتحديد المسار، ونغلق العنصر بـ End Tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<iframe src=\"url\" \n  title=\"description\">\n</iframe>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "تفاصيل الـ Attributes",
+      "narration": {
+        "spoken_text": "لَا نَنْسَى أَهَمِّيَّة Attribute مِثْل title لِتَحْسِينِ إِمْكَانِيَّة الْوُصُولِ، وَكَذَلِك height و width لِتَحْدِيدِ أَبْعَادِ الْإِطَارِ. هَذِهِ الْخَصَائِصُ تَجْعَلُ تَجْرِبَة الْمُسْتَخْدِمِ أَفْضَلَ وَأَكْثَرَ تَنْظِيماً دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "لا ننسى أهمية Attribute مثل title لتحسين إمكانية الوصول، وكذلك height و width لتحديد أبعاد الإطار."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<iframe src=\"demo.html\" \n  width=\"600\" \n  height=\"400\" \n  title=\"Iframe\">\n</iframe>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "browser_view",
+      "title": "المعاينة في المتصفح",
+      "narration": {
+        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي وِبّ Browser مِثْل Chrome أَوْ Edge، سَتَظْهَرُ الصَّفْحَة الْمُضَمَّنَة دَاخِلَ الْإِطَارِ الْمُحَدَّدِ. هَذَا يُمَكِّنُكَ مِنْ عَرْضِ مُحْتَوًى خَارِجِيٍّ دُونَ مُغَادَرَة صَفْحَتِكَ الْأَصْلِيَّه.",
+        "caption_text": "عند فتح هذا الكود في Web Browser مثل Chrome أو Edge، ستظهر الصفحة المضمنة داخل الإطار المحدد."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "output.html",
+        "code": "<!-- النتيجة: -->\n<iframe src=\"demo.html\"></iframe>",
+        "highlight_lines": [],
+        "output": "عرض صفحة demo.html داخل إطار",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَجِبُ دَائِماً التَّأَكُّدُ مِنْ أَنَّ الصَّفْحَة الْمُضَمَّنَة تَسْمَحُ بِذَلِكَ، وَاسْتِخْدَام Attribute مِثْل title لِوَصْفِ الْمُحْتَوَى لِأَدَوَاتِ قِرَاءَة الشَّاشَه. هَذِهِ الْمُمَارَسَاتُ ضَرُورِيَّة لِجَعْلِ مَوَاقِعِ الْوِبّ صَدِيقَة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يجب دائما التأكد من أن الصفحة المضمنة تسمح بذلك، واستخدام Attribute مثل title لوصف المحتوى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام title للوصف",
+          "التحقق من أذونات الموقع الخارجي",
+          "تحديد الأبعاد بدقة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا كَيْفِيَّة اسْتِخْدَام iframe لِتَضْمِينِ الصَّفَحَاتِ. أَدْعُوكُمْ لِتَجْرِبَة التَّحَدِّيَاتِ الْبَرْمَجِيَّة فِي الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَطْوِيرِ مَهَارَاتِكُمْ. مَعَ تَحِيَّاتِي، مَحْمُود عَبْد الْحَمِيد.",
+        "caption_text": "في ختام هذا الدرس، تعلمنا كيفية استخدام iframe لتضمين الصفحات. أدعوكم لتجربة التحديات البرمجية في الرابط الموجود في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تمت تغطية أساسيات iframe",
+          "تم شرح أهمية Attributes",
+          "شجعنا على التطبيق العملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      ]
+    }
+  ]
+}
