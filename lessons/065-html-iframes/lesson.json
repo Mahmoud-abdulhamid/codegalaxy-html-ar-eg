@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "65",
+  "title": "HTML Iframes",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم iframe واستخدامه لعرض صفحة وب داخل صفحة وب أخرى",
+    "تعلم كيفية تحديد الابعاد باستخدام height و width أو خصائص CSS",
+    "إدارة إطارات الحدود border وتخصيصها بالكامل",
+    "ربط الروابط مع iframe باستخدام خاصية target"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_iframe.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-1aff4a5b2077f9ee.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_iframe.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-0b21d40f56f1119c.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_iframe.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-e698e2f103b708ec.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_iframe.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن iframe",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة اسْتِخْدَامِ عُنْصُر iframe لِعَرْضِ صَفْحَة وِبٍّ دَاخِلَ صَفْحَة وِبٍّ أُخْرَى بِشَكْلٍ عَمَلِيٍّ وَسَلِسٍ.",
+        "caption_text": "مرحبا بكم في درس HTML Iframes للتعرف على كيفية تضمين صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML عنصر iframe لعرض صفحة وب داخل صفحة وب",
+          "يسمى هذا الإطار بالعامة inline frame",
+          "يساعد في تضمين مستندات خارجية بكل سهولة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_2_syntax",
+      "title": "الصيغة الأساسية لـ iframe",
+      "narration": {
+        "spoken_text": "لِنَنْتَقِلْ إِلَى دِرَاسَة الصِّيغَة الْأَسَاسِيَّة لِعُنْصُر iframe. نُحَدِّدُ مَصْدَرَ الصَّفْحَة بِوَاسِطَة خاصية src، وَمِنْ أَفْضَلِ الْمُمَارَسَاتِ دَائِماً إِضَافَة خاصية title لِتَحْسِينِ قِرَاءَة الشَّاشَه.",
+        "caption_text": "الصيغة الأساسية لعنصر iframe مع خاصية src وخاصية title."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "iframe_syntax.html",
+        "code": "<iframe src=\"url\" title=\"description\"></iframe>",
+        "highlight_lines": [
+          1
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_3_dimensions",
+      "title": "تحديد الطول والعرض",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا تَحْدِيدُ حَجْمِ عُنْصُر iframe بِاسْتِخْدَامِ خاصية height وَخاصية width، أَوْ عَنْ طَرِيقِ اسْتِخْدَامِ خَصَائِص CSS مِثْل height و width دَاخِلَ خاصية style لِمَزِيدٍ مِنَ التَّحَكُّمِ.",
+        "caption_text": "تحديد الأبعاد باستخدام خصائص العرض والارتفاع أو عبر CSS."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "iframe_size.html",
+        "code": "<iframe src=\"demo_iframe.htm\"\n  style=\"height:200px;width:300px;\"\n  title=\"Iframe Example\"></iframe>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_4_visual_demo_1",
+      "title": "معاينة إطار iframe",
+      "narration": {
+        "spoken_text": "لَاحِظْ هُنَا كَيْفَ يَظْهَرُ عُنْصُر iframe عِنْدَ تَنْفِيذِ الْأَكْوَادِ فِي الْمُتَصَفِّحْ. يُعْرَضُ الْمُسْتَنَدُ الْمَطْلُوبُ دَاخِلَ الْمِسَاحَة الْمُحَدَّدَة بِدِقَّة تِقْنِيَّة عَالِيَه.",
+        "caption_text": "معاينة شكل عنصر iframe بعد تطبيق أبعاد العرض والارتفاع."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة عنصر iframe في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_5_border",
+      "title": "إزالة وتعديل الحدود",
+      "narration": {
+        "spoken_text": "يَأْتِي عُنْصُر iframe افْتِرَاضِيّاً مُحَاطاً بِإِطَارٍ بَارِزٍ. لِإِزَالَة هَذَا الْإِطَارِ، نَسْتَخْدِمُ قِيمَة border none دَاخِلَ خاصية style، أَوْ نُغَيِّرُ لَوْنَهُ وَحَجْمَهُ كَمَا نُرِيدُ.",
+        "caption_text": "إزالة الحدود الافتراضية لعنصر iframe باستخدام خاصية CSS border."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "iframe_border.html",
+        "code": "<iframe src=\"demo_iframe.htm\"\n  style=\"border:2px solid red;\"\n  title=\"Iframe Example\"></iframe>",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_6_visual_demo_2",
+      "title": "معاينة إطار بإطار مخصص",
+      "narration": {
+        "spoken_text": "تَمَاماً، فِي هَذِهِ الصُّورَة تَرَى كَيْفَ قُمْنَا بِتَغْيِيرِ حُدُودِ عُنْصُر iframe لِتَصْبَحَ بِسُمكِ ثَلَاثَة بِيكْسِلَاتٍ وَبِلَوْنٍ أَحْمَرَ وَاضِحٍ.",
+        "caption_text": "صورة معاينة لعنصر iframe مع حدود مخصصة باللون الأحمر."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_2",
+        "alt": "معاينة إطار iframe مع حدود حمراء"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_7_target",
+      "title": "استخدام iframe كهدف للرابط",
+      "narration": {
+        "spoken_text": "يُمْكِنُ أَيْضاً اسْتِخْدَامُ عُنْصُر iframe كَهَدَفٍ لِرَابِطٍ خَارِجِيٍّ. عِنْدَمَا نَكْتُبُ خاصية target فِي الرَّابِطِ مُطَابِقَة لِخاصية name فِي عُنْصُر iframe، فَإِنَّ الصَّفْحَة تُفْتَحُ دَاخِلَهُ مَبَاشَرَه.",
+        "caption_text": "ربط عناصر الرابط مع iframe لتغيير المحتوى عند النقر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "iframe_target.html",
+        "code": "<iframe src=\"demo_iframe.htm\" name=\"iframe_a\"\n  title=\"Iframe Example\"></iframe>\n<p><a href=\"https://www.w3schools.com\"\n  target=\"iframe_a\">W3Schools.com</a></p>",
+        "highlight_lines": [
+          1,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ الرَّائِعِ، تَعَلَّمْنَا كَيْفَ نُدْرِجُ صَفْحَاتِ وِبٍّ إِضَافِيَّة بِوَاسِطَة iframe، وَتَحَكَّمْنَا بِالْأَبْعَادِ وَالْحُدُودِ، وَرَبَطْنَا الرَّوَابِطَ بِهَا بِاجْتِهَادٍ. شُكْرَاً لِمُتَابَعَتِكُمْ مَعَ الْمُهَنْدِسِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "خلاصة استخدام عناصر iframe وأفضل الممارسات البرمجية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام iframe لتضمين صفحات أخرى",
+          "تخصيص الأبعاد عبر height و width",
+          "إزالة أو تنسيق الحدود باستخدام CSS border",
+          "توجيه الروابط داخل iframe باستخدام target"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_iframe.asp"
+      ]
+    }
+  ]
+}
