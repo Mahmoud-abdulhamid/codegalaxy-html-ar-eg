@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "2756",
+  "title": "إنشاء عنصر Color Picker في صفحات الويب باستخدام HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم طريقة إنشاء عنصر اختيار الألوان في صفحات الويب",
+    "استخدام input type color بشكل عملي",
+    "التعامل مع الخصائص المرتبطة واختيار القيم السداسية HEX"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الدرس",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِنْشَاءِ عُنْصِرِ اخْتِيَارِ الْأَلْوَانِ أَوْ مَا يُسَمَّى Color Picker بِمُسَاعَدَة لُغَة الْوِبّ بِكُلِّ سُهُولَه.",
+        "caption_text": "مرحبا بكم في درس إنشاء عنصر Color Picker باستخدام لغة HTML لبناء صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلم كيفية إنشاء أداة اختيار الألوان",
+          "استخدام عناصر HTML التفاعلية الحديثة",
+          "تحسين تجربة المستخدم في الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "المفاهيم الأساسية",
+      "narration": {
+        "spoken_text": "لِإِنْشَاءِ عُنْصِرِ اخْتِيَارِ الْأَلْوَانِ، نَسْتَخْدِم input tag مَعَ تَحْدِيدِ الْخَاصِيَّة type وَقِيمَتِهَا color. يَمْنَحُ هَذَا الْعُنْصِرُ الْمُسْتَخْدِمَ قُدْرَة فَائِقَة عَلَى اخْتِيَارِ الْأَلْوَانِ بِدِقَّة تَآمَّة مِنْ وَسِيطِ الْوِبّ.",
+        "caption_text": "نستخدم input type color لإنشاء أداة اختيار الألوان التفاعلية بسهولة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام input tag لإنشاء الحقول التفاعلية",
+          "تحديد type color لعنصر اختيار الألوان",
+          "توفير واجهة رسومية لاختيار درجات الألوان"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كتابة الكود البرمجي الجزء الأول",
+      "narration": {
+        "spoken_text": "نَبْدَأُ الْآنَ بِكِتَابَة الْكُودِ الْعَمَلِيِّ. نَسْتَخْدِم label tag مَعَ خَاصِيَّة for لِوَصْفِ الْعُنْصِرِ وَتَحْدِيدِ نَصِّ إِرْشَادِ الْمُسْتَخْدِمِ لِاخْتِيَارِ لَوْنِهِ الْمُفَضَّلِ بِدِقَّة وَسُهُولَة تامَه.",
+        "caption_text": "نكتب label tag لتوضيح الغرض من أداة اختيار الألوان للمستخدم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<label for=\"favcolor\">\n  Select your favorite color:\n</label>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "كتابة الكود البرمجي الجزء الثاني",
+      "narration": {
+        "spoken_text": "نُوَصِّلُ الْكُودَ بِإِضَافَة input tag مَع type color وَid لِرَبْطِهِ بـ label، ثُمَّ نَحُدِّدُ الْقِيمَة الِافْتِرَاضِيَّة بِاسْتِخْدَامِ خَاصِيَّة value وَقِيمَتِهَا السُّدَاسِيَّة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "نضيف input type color ونحدد الخاصية value لاختيار اللون الافتراضي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<input \n  type=\"color\" \n  id=\"favcolor\" \n  value=\"#ff0000\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح قيم الألوان HEX",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَسْتَخْدِمَ قِيَم HEX دَاخِلَ الْخَاصِيَّة value. إِذَا لَمْ تَتِمَّ إِضَافَة أَيِّ قيمَه، فَإِنَّ الْقِيمَة الِافْتِرَاضِيَّة تَكُونُ بِاللَّوْنِ الْأَسْوَدِ وَرَمْزُهُ الشَّامِلُ هُوَ هَكَذَا.",
+        "caption_text": "يجب استخدام قيم HEX داخل الخاصية value والقيمة الافتراضية هي الأسود."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام HEX values داخل الخاصية value",
+          "القيمة الافتراضية هي اللون الأسود favcolor",
+          "الرمز #000000 يمثل اللون الأسود تماما"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ فِي تَمَارِينِ الْوِبّ دَمْج label مَع input بِدِقَّة لِضَمَانِ وُصُولِ مُسْتَخْدِمِي قَارِئَاتِ الشَّاشَة إِلَى الْمُحْتَوَى بِكُلِّ سُهُولَة وَدُونِ أَيِّ عَقَبَاتٍ تقنيَه.",
+        "caption_text": "دمج label مع input يضمن وصول مستخدمي قارئات الشاشة للمحتوى بفعالية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ربط label مع id الخاص بـ input",
+          "تحسين إمكانية الوصول في صفحات الويب",
+          "الالتزام بمعايير لغة HTML الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا الْيَوْمَ عَلَى كَيْفِيَّة إِنْشَاءِ عُنْصِرِ اخْتِيَارِ الْأَلْوَانِ بِوَاْسِطَة input type color، وَكَيْفِيَّة تَعْيِينِ الْقِيَمِ السُّدَاسِيَّة HEX بِنَجَاحٍ. كَانَ مَعَكُمْ مَحْمُودُ عَبْدِالْحَمِيدِ فِي دُرُوسِ كُودْ غَالَاكْسِي.",
+        "caption_text": "تعرفنا على كيفية إنشاء عنصر Color Picker وتعيين القيم السداسية HEX بنجاح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إنشاء Color Picker باستخدام HTML",
+          "استخدام قيم HEX لتحديد الألوان",
+          "تطبيق أفضل الممارسات البرمجية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_colorpicker.asp"
+      ]
+    }
+  ]
+}
