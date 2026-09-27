@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "104",
+  "title": "HTML Video Element Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام video Element في HTML5",
+    "التعرف على Attributes الخاصة بعنصر الفيديو",
+    "تطبيق مهارات تضمين الوسائط في صفحات الويب",
+    "التعامل مع تحديات البرمجة في HTML"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_video.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول تضمين الفيديو",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَضْمِينِ الْفِيدْيُو فِي صَفْحَة الْوِبّ بِاسْتِخْدَام video Element، وَهُوَ مَهَارَة أَسَاسِيَّة لِكُلِّ مُطَوِّرِ وِبّ مُحْتَرِفٍ.",
+        "caption_text": "مرحبا بكم في درس تضمين الفيديو باستخدام HTML5."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لبناء هيكل صفحات الويب",
+          "عنصر video يتيح عرض ملفات الفيديو مباشرة",
+          "تحدي اليوم يختبر قدرتك على استخدام هذا العنصر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "القواعد الأساسية لعنصر الفيديو",
+      "narration": {
+        "spoken_text": "لِتَضْمِينِ فِيدْيُو، نَسْتَخْدِم Start Tag و End Tag لِلْعُنْصُر video. هَذَا الْعُنْصُرُ يَدْعَم Attributes مُهِمَّة مِثْل controls لِإِظْهَارِ أَزْرَارِ التَّحَكُّمِ، و width و height لِتَحْدِيدِ أَبْعَادِ الْعَرْضِ بِدِقَّه.",
+        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر الأساسي هو <video>",
+          "Attribute controls ضرورية لتشغيل وإيقاف الفيديو",
+          "يمكن تحديد العرض والارتفاع عبر Attributes",
+          "يجب إغلاق العنصر بـ </video>"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "كتابة كود الفيديو",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. نَفْتَحُ الْعُنْصُر video مَعَ إِضَافَة controls. دَاخِلَ هَذَا الْعُنْصُرِ، نَسْتَخْدِم source Element لِتَحْدِيدِ مَسَارِ مِلَفِّ الْفِيدْيُو وَنَوْعِهِ، وَهَذَا يُسَاعِد وِبّ Browser عَلَى فَهْمِ الْمِلَفِّ.",
+        "caption_text": "استخدام source Element داخل video لتحديد مسار الملف."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<video width=\"320\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n</video>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    },
+    {
+      "id": "attributes_detail",
+      "title": "شرح Attributes البرمجية",
+      "narration": {
+        "spoken_text": "لَاحِظْ أَنَّنا اسْتَخْدَمْنَا src لِتَحْدِيدِ مَكَانِ الْمِلَفِّ، و type لِتَحْدِيدِ صِيغَة الْفِيدْيُو. هَذِه Attributes تَضْمَنُ أَنَّ وِبّ Browser يَعْرِضُ الْمُحْتَوَى بِشَكْلٍ صَحِيحٍ دُونَ أَيِّ مَشَاكِلَ تَقْنِيَّة أَوْ أَخْطَاءٍ فِي الْعَرْضِ.",
+        "caption_text": "Attributes src و type ضرورية لعمل الفيديو بشكل سليم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "src: يحدد مسار ملف الفيديو",
+          "type: يحدد نوع الملف مثل video/mp4",
+          "controls: توفر واجهة المستخدم للمشاهد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ هِيَ تَوَفُّرُ نَصٍّ بَدِيلٍ دَاخِلَ الْعُنْصُر video لِيَظْهَرَ فِي حَالَة عَدَمِ دَعْم وِبّ Browser لِهَذَا الْعُنْصُرِ. هَذَا يُعَزِّزُ مِنْ جَوْدَة تَجْرِبَة الْمُسْتَخْدِمِ وَيَجْعَلُ صَفْحَتَكَ أَكْثَرَ احْتِرَافِيَّه.",
+        "caption_text": "أضف نصا بديلا للمتصفحات التي لا تدعم الفيديو."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "fallback.html",
+        "code": "<video controls>\n  <source src=\"movie.mp4\">\n  Your browser does not support\n  the video tag.\n</video>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا كَيْفَ نَسْتَخْدِم video Element لِتَضْمِينِ الْفِيدْيُو. أَدْعُوكُمْ لِتَجْرِبَة هَذَا الْكُودِ بِنَفْسِكُمْ وَمُحَاوَلَة حَلِّ التَّحَدِّيَاتِ الْمَوْجُودَة فِي الرَّابِطِ الْمُدْرَجِ فِي وَصْفِ الْفِيدْيُو. شُكْراً لِمُتَابَعَتِكُمْ.",
+        "caption_text": "طبق ما تعلمته الآن وجرب الكود بنفسك."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم <video> لتضمين الوسائط",
+          "لا تنس إضافة controls",
+          "جرب التحدي العملي عبر الرابط",
+          "استمر في ممارسة البرمجة يوميا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_video.asp"
+      ]
+    }
+  ]
+}
