@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "106",
+  "title": "HTML Audio Element Implementation",
+  "course": "HTML",
+  "objectives": [
+    "Understand the purpose of the audio Element in HTML5",
+    "Learn how to use the audio Tag with source files",
+    "Master the implementation of audio controls for user interaction",
+    "Explore best practices for embedding media in web pages"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_audio.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول عنصر الصوت",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَةِ HTML. الْيَوْمَ سَنَتَعَلَّمُ كَيْفِيَّةِ إِدْرَاجِ الْمُحْتَوَى الصَّوْتِيِّ دَاخِلَ صَفْحَةِ الْوِبّ بِاسْتِخْدَامِ عُنْصُر audio الْقَوِيِّ، وَهُوَ أَحَدُ أَهَمِّ التَّحْدِيثَاتِ فِي HTML5 لِتَحْسِينِ تَجْرِبَةِ الْمُسْتَخْدِمِ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. اليوم سنتعلم كيفية إدراج المحتوى الصوتي داخل صفحة الويب باستخدام عنصر audio القوي في HTML5."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر audio مخصص لتشغيل الملفات الصوتية",
+          "يدعم HTML5 الوسائط المتعددة دون إضافات خارجية",
+          "يسمح بالتحكم الكامل في تشغيل الصوت"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "القواعد الأساسية لعنصر audio",
+      "narration": {
+        "spoken_text": "لِكِتَابَةِ هَذَا الْعُنْصُرِ، نَحْتَاجُ إِلَى Start Tag و End Tag. نَسْتَخْدِم Attribute تُسَمَّى controls لِإِظْهَارِ أَزْرَارِ التَّشْغِيلِ، وَبِدُونِهَا لَنْ يَظْهَرَ أَيُّ شَيْءٍ لِلْمُسْتَخْدِمِ عَلَى الشَّاشَه فِي مُتَصَفِّحْ الْوِبّ.",
+        "caption_text": "لكتابة هذا العنصر، نحتاج إلى Start Tag و End Tag. نستخدم Attribute تسمى controls لإظهار أزرار التشغيل للمستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يستخدم <audio> كعنصر حاو",
+          "Attribute controls ضرورية لتفاعل المستخدم",
+          "يمكن إضافة مصادر صوتية متعددة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "كتابة الكود البرمجي",
+      "narration": {
+        "spoken_text": "لِنَكْتُبِ الْكُودَ الْآنَ. نَبْدَأُ بَةِ audio controls، ثُمَّ نُضِيفُ دَاخِلَهُ عُنْصُر source لِتَحْدِيدِ مَسَارِ الْمِلَفِّ الصَّوْتِيِّ وَنَوْعِهِ. هَذِهِ الطَّرِيقَه تَضْمَنُ أَنَّ الْمُتَصَفِّحْ يَعْرِفُ كَيْفَ يَتَعَامَلُ مَعَ الْمِلَفِّ بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "لنكتب الكود. نبدأ بـ <audio controls>، ثم نضيف عنصر <source> لتحديد مسار الملف الصوتي ونوعه لضمان توافق المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<audio controls>\n  <source src=\"music.mp3\" \n  type=\"audio/mpeg\">\n</audio>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "شرح تفاصيل الكود",
+      "narration": {
+        "spoken_text": "لَاحِظْ أَنَّنَا اسْتَخْدَمْنَا Attribute تُسَمَّى src لِتَحْدِيدِ مَكَانِ الْمِلَفِّ، و Attribute أُخْرَى تُسَمَّى type لِتَحْدِيدِ نَوْعِ الْمِلَفِّ مِثْل audio mpeg. هَذِهِ التَّفَاصِيلُ ضَرُورِيَّه لِعَمَلِ الْمُشَغِّلِ بِدُونِ أَيِّ مَشَاكِلَ تَقْنِيَّه.",
+        "caption_text": "لاحظ استخدام Attribute تسمى src لتحديد مكان الملف، و Attribute تسمى type لتحديد نوع الملف مثل audio/mpeg لضمان عمل المشغل."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "src: يحدد مسار ملف الصوت",
+          "type: يحدد صيغة الملف (MIME type)",
+          "controls: تفعيل واجهة المستخدم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "browser_view",
+      "title": "المخرجات في المتصفح",
+      "narration": {
+        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي مُتَصَفِّحْ الْوِبّ مِثْل Chrome أَوْ Edge، سَتَظْهَرُ لَكَ أَدَوَاتُ التَّحَكُّمِ فِي الصَّوْتِ. يُمْكِنُكَ الضَّغْطُ عَلَى زِرِّ التَّشْغِيلِ لِاسْتِمَاعِ الْمِلَفِّ، وَتَحَكُّمٍ فِي مُسْتَوَى الصَّوْتِ بِكُلِّ سُهُولَه.",
+        "caption_text": "عند فتح هذا الكود في متصفح الويب مثل Chrome أو Edge، ستظهر أدوات التحكم في الصوت لتشغيل الملف والتحكم في مستوى الصوت."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "output.html",
+        "code": "<!-- يظهر مشغل الصوت هنا -->\n<audio controls>\n  <source src=\"music.mp3\">\n</audio>",
+        "highlight_lines": [],
+        "output": "Audio Player UI",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ هِيَ إِضَافَه نَصٍّ بَدِيلٍ دَاخِلَ عُنْصُر audio لِيَظْهَرَ لِلْمُسْتَخْدِمِ فِي حَالَه لَمْ يَدْعَمِ الْمُتَصَفِّحْ هَذَا الْعُنْصُرَ. هَذَا يُعَزِّزُ مِنْ جَوْدَه وَتَوَافُقِيَّةِ صَفْحَةِ الْوِبّ لِجَمِيعِ الْمُسْتَخْدِمِينَ.",
+        "caption_text": "من أفضل الممارسات إضافة نص بديل داخل عنصر audio ليظهر للمستخدم في حالة عدم دعم المتصفح للعنصر، مما يعزز توافقية الصفحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "دائما وفر نصا بديلا للمتصفحات القديمة",
+          "استخدم صيغا مدعومة مثل mp3 أو ogg",
+          "اختبر الكود في متصفحات مختلفة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَلَّمْنَا كَيْفِيَّةِ إِدْرَاجِ الصَّوْتِ بِاحْتِرَافِيَّه. أَدْعُوكُمْ لِتَجْرِبَةِ هَذَا الْكُودِ بِنَفْسِكُمْ وَتَطْوِيرِ مَهَارَاتِكُمْ. لَا تَنْسَوْا مُرَاجَعَةِ الْمَصَادِرِ فِي وَصْفِ الْفِيدْيُو لِتَطْوِيرِ مَعْرِفَتِكُمْ بَةِ HTML. مَعَ تَحِيَّاتِ مَحْمُود عَبْدِ الْحَمِيد.",
+        "caption_text": "تعلمنا كيفية إدراج الصوت باحترافية. أدعوكم لتجربة الكود وتطوير مهاراتكم. راجعوا المصادر في وصف الفيديو. مع تحيات محمود عبدالحميد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تمت تغطية عنصر audio",
+          "تم شرح Attributes controls و source",
+          "تم توضيح أهمية النص البديل",
+          "استمروا في التدريب العملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_audio.asp"
+      ]
+    }
+  ]
+}
