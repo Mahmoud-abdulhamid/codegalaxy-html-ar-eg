@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "82",
+  "title": "HTML Entities and Special Characters",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم HTML Entities واستخدامها في لغة HTML",
+    "طريقة كتابة الكيانات بواسطة Entity names و Entity numbers",
+    "استخدام non-breaking space لمنع تكسير الكلمات",
+    "التعامل مع Combining Diacritical Marks والعلامات الخاصة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_entities.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة حول HTML Entities",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى HTML Entities وَكَيْفَ نَعْرِضُ الرُّمُوزَ الْمَحْجُوزَة دَاخِلَ صَفْحَة الْوِبّ بِأَمَانٍ تِقْنِيٍّ دَقِيقٍ.",
+        "caption_text": "مرحبا بكم في درس HTML Entities وكيفية عرض الرموز المحجوزة في صفحة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية استخدام HTML Entities في صفحة الويب",
+          "تجنب تعارض الرموز المحجوزة مع Tags",
+          "عرض الرموز الخاصة بطريقة صحيحة وآمنة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "الرموز المحجوزة في HTML",
+      "narration": {
+        "spoken_text": "إِذَا اِسْتَخْدَمْتَ رَمْز less than أَوْ greater than دَاخِلَ النَّصِّ، فَقَدْ يَظُنُّ وِبّ Browser أَنَّهَا جُزْءٌ مِن Tags، وَلِهَذَا نَحْتَاجُ إِلَى اِسْتِخْدَام Entities الْبَدِيلَة لِعَرْضِهَا.",
+        "caption_text": "استخدام رموز المقارنة قد يتسبب في تداخلها مع Tags في المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "بعض الرموز محجوزة رسميا في لغة HTML",
+          "علامات الأكبر والأصغر تتداخل مع Tags",
+          "الحل هو استخدام Character Entities البديلة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "طريقة كتابة Entity Names و Numbers",
+      "narration": {
+        "spoken_text": "لِعَرْضِ عَلَامَةless than نَكْتُبُ اِسْمَ الْكِيَانِ أَوْ رَقْمَهُ. Entity names تَكُونُ أَسْهَلَ فِي التَّذَكُّرِ، بَيْنَمَا Entity numbers تُمَثِّلُ الرَّقْمَ التَّكْوِيدِيَّ الْمُعَيَّنَ.",
+        "caption_text": "يمكن استخدام أسماء أو أرقام الكيانات لعرض الرموز المحجوزة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "entities.html",
+        "code": "&entity_name;\n&#entity_number;",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "تطبيق عملي لعرض الرموز الخاصة",
+      "narration": {
+        "spoken_text": "عِنْدَ كِتَابَة الرَّْمزِ صِمْن Paragraph نَسْتَخْدَمُ لِعَرْضِ عَلَامَة الْأَصْغَرِ الصيغَة التَّالِيَة بَدَلاً مِنَ الْكِتَابَة الْمُبَاشِرَة لِتَفَادِي أَيِّ خَطَأٍ تِقْنِيٍّ فِي الْمُتَصَفِّحْ.",
+        "caption_text": "كتابة الرموز الخاصة مثل علامة الأصغر باستخدام الكيانات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "example.html",
+        "code": "<p>To write: &lt; or &#60;</p>",
+        "highlight_lines": [],
+        "output": "To write: < or <",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "مفهوم Non-breaking Space",
+      "narration": {
+        "spoken_text": "مِن Entities الشَّائِعَة جِدّاً نَجِد non-breaking space. هَذِهِ الْمَسَافَة تَمْنَعُ انْتِقَالَ الْكَلِمَاتِ إِلَى سَطْرٍ جَدِيدٍ وَتُبْقِي كَلِمَتَيْنِ مُتَصِلَتَيْنِ مَعاً بِدُونِ تَقْطِيعٍ.",
+        "caption_text": "استخدام non-breaking space لمنع انقسام الكلمات في سطرين."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "space.html",
+        "code": "<p>Hello&nbsp;World</p>",
+        "highlight_lines": [],
+        "output": "Hello World",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "الحفاظ على المسافات ومنع إزالتها",
+      "narration": {
+        "spoken_text": "يُعَانِي الْمُتَصَفِّحْ أَحْيَاناً مِنْ حَذْفِ الْمَسَافَاتِ الزَّائِدَه. لِإِضَافَة مَسَافَاتٍ حَقِيقِيَّة غَيْرِ مَحْذُوفَة فِي النَّصِّ، نَسْتَخْدِمُ هَذَا الْكِيَانَ الْمُمَيَّزَ بِاسْتِمْرارٍ.",
+        "caption_text": "المتصفحات تحذف المسافات المتعددة، والحل هو استخدام الكيانات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح يحذف المسافات الزائدة تلقائيا",
+          "استخدام الكيان لإضافة مسافات حقيقية",
+          "التحكم الكامل في تنسيق النصوص والمسافات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "حساسية الحروف وحالات خاصة",
+      "narration": {
+        "spoken_text": "تَذَكَّرْ يَا صَدِيقِي أَنَّ Entity names تَكُونُ حَسَّاسَة لِحَالَة الْأَحْرُف Case sensitive. كَمَا يُوجَدُ أَيْضا non-breaking hyphen لِتَحْدِيدِ شُرْطَة لَا تَنْقَسِمُ بَيْنَ السُّطُورِ.",
+        "caption_text": "أسماء الكيانات حساسة لحالة الحروف وتستخدم بحذر شديد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أسماء الكيانات حساسة لحالة الحروف Case sensitive",
+          "استخدام non-breaking hyphen للشرطات الثابتة",
+          "الالتزام بالمعايير الصحيحة لكتابة الكيانات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "شرح Combining Diacritical Marks",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا نَتَعَرَّفُ عَلَى Combining Diacritical Marks وَهِيَ رُمُوزٌ تُضَافُ إِلَى الْحُرُوفِ لِإِنْتَاجِ أَشْكَالٍ لَفْظِيَّة جَدِيدَة غَيْرِ مَوْجُودَة افْتِرَاضِيّاً فِي شِفْرَة الصَّفْحَه.",
+        "caption_text": "استخدام علامات التشكيل المركبة لإنتاج حروف ورموز جديدة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ما هي العلامات التشكيلية المركبة Diacritical Marks",
+          "إضافة الحركات والزخارف للحروف اللاتينية",
+          "توسيع نطاق الرموز المعروضة في صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_entities.asp"
+      ]
+    }
+  ]
+}
