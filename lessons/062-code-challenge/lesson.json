@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "62",
+  "title": "Understanding the HTML id Attribute",
+  "course": "HTML",
+  "objectives": [
+    "Define the purpose of the id Attribute in HTML",
+    "Learn how to create unique identifiers for Elements",
+    "Understand the role of id in creating internal bookmarks",
+    "Apply best practices for naming id Attributes"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_id.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "شرح Introduction to the id Attribute",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى أَهَمِّيَّة id Attribute، وَكَيْفَ نَسْتَخْدِمُهُ لِتَمْيِيز Elements دَاخِلَ صَفْحَة الْوِبّ بِشَكْلٍ فَرِيدٍ وَدَقِيقٍ.",
+        "caption_text": "مرحبا بكم في درس جديد حول استخدام id Attribute في لغة HTML لتحديد عناصر الصفحة بشكل فريد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الـ id Attribute يمنح هوية فريدة للعنصر",
+          "يستخدم لربط CSS و JavaScript بالعنصر",
+          "يسمح بإنشاء روابط داخلية أو Bookmarks"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "شرح Core Concepts of id",
+      "narration": {
+        "spoken_text": "يُعَدُّ id Attribute مُعَرِّفاً فَرِيداً لَا يَتَكَرَّرُ لِنَفْسِ الْعُنْصُرِ دَاخِلَ صَفْحَة الْوِبّ. هَذَا يَعْنِي أَنَّ كُلَّ Element يَجِبُ أَنْ يَمْتَلِكَ قِيمَة مُخْتَلِفَة لِتَجَنُّبِ التَّضَارُبِ فِي التَّصْمِيمِ أَوْ فِي بَرْمَجَة JavaScript.",
+        "caption_text": "يجب أن يكون id Attribute فريدا لكل عنصر داخل صفحة الويب لضمان عمل الأكواد بشكل صحيح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "قاعدة ذهبية: لا تكرر نفس الـ id في الصفحة",
+          "يجب أن يبدأ الـ id بحرف أو شرطة سفلية",
+          "حساس لحالة الأحرف Case-sensitive"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    },
+    {
+      "id": "code_example",
+      "title": "شرح Implementing id in HTML",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْمِثَالِ الْعَمَلِيِّ. نَقُومُ بِإِضَافَة id إِلَى عُنْصُر h1 وَعُنْصُر p. هَذَا التَّحْدِيدُ يُسَاعِدُنَا فِي الْوُصُولِ إِلَى هَذِهِ الْعَنَاصِرِ بِسُهُولَة بَعْدَ ذَلِكَ عَبْر CSS أَوْ عَبْرَ رَوَابِط Bookmarks.",
+        "caption_text": "تطبيق عملي لإضافة id Attribute إلى عناصر h1 و p داخل كود HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<h1 id=\"main-title\">Welcome</h1>\n<p id=\"intro-text\">\n  This is a paragraph.\n</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    },
+    {
+      "id": "bookmarks",
+      "title": "شرح Creating Bookmarks",
+      "narration": {
+        "spoken_text": "مِنْ أَهَمِّ اسْتِخْدَامَات id هُوَ إِنْشَاءُ رَوَابِط Bookmarks. عِنْدَمَا نَضَعُ رَمْزَ # مَعَ اسْم id فِي رَابِط a، سَيَقُومُ الْمُتَصَفِّحْ بِالانْتِقَالِ مُبَاشَرَة إِلَى ذَلِكَ الْعُنْصُرِ الْمُحَدَّدِ دَاخِلَ الصَّفْحَه.",
+        "caption_text": "استخدام id لإنشاء روابط تنقل داخلية تسمى Bookmarks في صفحة الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "links.html",
+        "code": "<a href=\"#main-title\">\n  Go to Title\n</a>\n<h1 id=\"main-title\">\n  Main Title\n</h1>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "شرح Best Practices",
+      "narration": {
+        "spoken_text": "يَا أَصْدِقَائِي، احْرِصُوا دَائِماً عَلَى اخْتِيَارِ أَسْمَاءٍ وَاضِحَة وَمُعَبِّرَة لِلـ id. تَجَنَّبُوا الْأَسْمَاءَ الْمُبْهَمَه، وَتَذَكَّرُوا أَنَّ id لَا يَقْبَلُ الْمَسَافَاتِ، لِذَا اسْتَخْدِمُوا الشَّرْطَة الْعُلْوِيَّة أَوْ السُّفْلِيَّة لِفَصْلِ الْكَلِمَاتِ.",
+        "caption_text": "أفضل الممارسات: استخدم أسماء واضحة للـ id وتجنب المسافات بين الكلمات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم أسماء ذات دلالة مثل header-section",
+          "لا تستخدم مسافات داخل قيمة الـ id",
+          "استخدم الحروف الصغيرة دائما للتنظيم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "شرح Conclusion",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا دَرْس id Attribute. هَذِهِ الْأَدَاة قَوِيَّة جِدّاً لِتَنْظِيمِ صَفْحَاتِ الْوِبّ. أَدْعُوكُمْ لِتَجْرِبَة الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو لِتُتْقِنُوا هَذِهِ الْمَهَارَه.",
+        "caption_text": "خلاصة الدرس: الـ id Attribute أداة أساسية لتنظيم وتحديد العناصر، جرب الأكواد بنفسك الآن."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الـ id هو مفتاحك للتحكم الدقيق في العناصر",
+          "يسمح بالتنقل السريع داخل الصفحة",
+          "مارس التحديات البرمجية لتعزيز فهمك"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_id.asp"
+      ]
+    }
+  ]
+}
