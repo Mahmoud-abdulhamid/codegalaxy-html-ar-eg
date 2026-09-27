@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "96",
+  "title": "HTML Input Attributes",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام Attributes مع input element في لغة HTML",
+    "التعرف على خصائص القيمة والتحكم مثل value و readonly و disabled",
+    "تطبيق خصائص التقييد مثل size و maxlength و min و max",
+    "استخدام خصائص الأمان والتحقق مثل pattern و required و autocomplete"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_form_attributes.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-5485287a36be01a0.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_form_attributes.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-e707068d69b9c79c.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_form_attributes.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-0eb8243e5e4499fe.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_form_attributes.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة خصائص input في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ بِالتَّفْصِيلِ عَلَى مُخْتَلِف Attributes الْخَاصَّة بِعُنْصِر input لِإِنْشَاءِ نماذج وِبٍّ احْتِرَافِيَّة وَمُتَطَوِّرَة للغايَه.",
+        "caption_text": "سنتعرف اليوم بالتفصيل على مختلف Attributes الخاصة بعنصر input في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML عناصر Form متقدمة",
+          "نضيف خصائص متنوعة لعنصر input",
+          "نتحكم في سلوك المدخلات بدقة تامة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_2_value_attr",
+      "title": "خاصية القيمة الابتدائية value",
+      "narration": {
+        "spoken_text": "نَبْدَأُ بِخَاصِيَّة value وَهِيَ تُحَدِّدُ قِيمَة ابْتِدَائِيَّة لِحَقْلِ الْإِدْخَالِ. لَاحِظْ مَعِي فِي هَذَا الْمِثَالِ كَيْفَ نَكْتُب value دَاخِل input لِعَرْضِ اسْمٍ افْتِرَاضِيٍّ مِثْل John دُونَ عَنَاءٍ.",
+        "caption_text": "خاصية value تحدد قيمة ابتدائية لحقل الإدخال لتعرض بشكل افتراضي للمستخدم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_value.html",
+        "code": "<form>\n  <label for=\"fname\">\n    First name:\n  </label><br>\n  <input type=\"text\"\n    id=\"fname\"\n    name=\"fname\"\n    value=\"John\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_3_readonly_attr",
+      "title": "خاصية القراءة فقط readonly",
+      "narration": {
+        "spoken_text": "تُنْتَقِلُ الْآنَ إِلَى خَاصِيَّة readonly وَالَّتِي تَعْنِي أَنَّ حَقْلَ الْإِدْخَالِ لِلْقِرَاءَة فَقَطْ. لَا يُمْكِنُ لِلْمُسْتَخْدِمِ تَدْعِيمُهُ أَوْ تَغْيِيرُ قِيمَتِهِ، وَلَكِنَّ قِيمَتَهُ سَتُرْسَلُ عِنْدَ إِرْسَالِ النُّمُوذَجِ إِلَى السِّيرْفِرِ بِنَجَاحٍ.",
+        "caption_text": "خاصية readonly تجعل حقل الإدخال للقراءة فقط، وسيتم إرسال قيمته عند إرسال النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_readonly.html",
+        "code": "<form>\n  <input type=\"text\"\n    id=\"fname\"\n    name=\"fname\"\n    value=\"John\"\n    readonly>\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_4_disabled_attr",
+      "title": "خاصية التعطيل disabled",
+      "narration": {
+        "spoken_text": "خَاصِيَّة disabled تُعَطِّلُ حَقْلَ الْإِدْخَالِ تَمَاماً، فَيُصْبِحُ غَيْرَ قَابِلٍ لِلنَّقْرِ أَوْ الِاسْتِخْدَامِ. وَالْأَهَمُّ أَنَّ قِيمَة هَذَا الْحَقْلِ لَنْ تُرْسَلَ أَبَداً عِنْدَ إِرْسَالِ النُّمُوذَجِ لِأَنَّهُ مُعَطَّلٌ كُلِّيّاً.",
+        "caption_text": "خاصية disabled تعطل حقل الإدخال تماما ولن يتم إرسال قيمته عند تقديم النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_disabled.html",
+        "code": "<form>\n  <input type=\"text\"\n    id=\"fname\"\n    name=\"fname\"\n    value=\"John\"\n    disabled>\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_5_size_maxlength",
+      "title": "خصائص الحجم والطول الأقصى",
+      "narration": {
+        "spoken_text": "نَسْتَخْدِمُ خَاصِيَّة size لِتَحْدِيدِ الْعَرْضِ الْمَرْئِيِّ بِالْحُرُوفِ لِحَقْلِ الْإِدْخَالِ. كَمَا نَسْتَخْدِم maxlength لِفَرْضِ الْحَدِّ الْأَقْصَى لِعَدَدِ الْحُرُوفِ الْمَسْمُوحِ بِكِتَابَتِهَا فِي الْحَقْلِ بِدِقَّه.",
+        "caption_text": "نستخدم size لتحديد العرض المرئي و maxlength لتقييد عدد الحروف المدخلة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_size.html",
+        "code": "<form>\n  <input type=\"text\"\n    id=\"pin\"\n    name=\"pin\"\n    size=\"4\"\n    maxlength=\"4\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_6_min_max_step",
+      "title": "خصائص النطاق والأرقام",
+      "narration": {
+        "spoken_text": "تُمَكِّنُنَا خَاصِيَّات min و max و step مِنْ تَحْدِيدِ النِّطَاقِ الْقَانُونِيِّ وَالْفَتَرَاتِ لِلْقِيَمِ الْعَدَدِيَّة وَالتَّوَارِيخِ ب بِكُلِّ بَسَاطَة وَسُهُولَة لِضْمَانِ صِحَّة الْبَيَانَاتِ الْمُدْخَلَة مِنْ قِبَلِ الْمُسْتَخْدِمِ.",
+        "caption_text": "تحدد min و max و step النطاق القانوني والقيم المسموحة للأرقام والتواريخ."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_minmax.html",
+        "code": "<form>\n  <input type=\"number\"\n    id=\"quantity\"\n    name=\"quantity\"\n    min=\"1\"\n    max=\"5\"\n    step=\"1\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_7_pattern_required",
+      "title": "التحقق والأنماط الإلزامية",
+      "narration": {
+        "spoken_text": "خَاصِيَّة required تَفْرِضُ إِمْلَاءَ الْحَقْلِ قَبْلَ الْإِرْسَالِ، بَيْنَمَا خَاصِيَّة pattern تَفْحَصُ النَّصَّ بِمُوَاجَهَة regular expression لِضْمَانِ تَطَابُقِ النَّمَطِ الْمَطْلُوبِ مِثْلَ رَمْزِ الدَّوْلَه.",
+        "caption_text": "خاصية required تجعل الحقل إجباريا، و pattern تتحقق من تطابق النمط البرمجي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form_pattern.html",
+        "code": "<form>\n  <input type=\"text\"\n    id=\"code\"\n    name=\"code\"\n    pattern=\"[A-Za-z]{3}\"\n    required>\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّة اسْتِخْدَامِ أَهَمِّ Attributes حُقُولِ الْإِدْخَالِ مِثْل placeholder و autofocus و autocomplete لِبِنَاءِ نماذج وِبٍّ احترافيَه. نَشْكُرُ حُسْنَ مُتَابَعَتِكُمْ.",
+        "caption_text": "تعرفنا على أهم خصائص إدخال HTML لبناء نماذج ويب احترافية وفعالة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام placeholder لتوجيه المستخدم",
+          "تفعيل autofocus للتركيز التلقائي",
+          "تفعيل autocomplete لتوقع القيم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_attributes.asp"
+      ]
+    }
+  ]
+}
