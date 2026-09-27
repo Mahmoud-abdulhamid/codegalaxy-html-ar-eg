@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "75",
+  "title": "تصميم صفحات الويب المتجاوبة Responsive Web Design في HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم Responsive Web Design وأهميته لجميع الأجهزة",
+    "إعداد meta viewport للتحكم في مقياس أبعاد الصفحة",
+    "تطبيق التجاوب على الصور والنصوص باستخدام CSS و picture",
+    "التعرف على دور Media Queries وأطر العمل مثل W3.CSS و Bootstrap"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_responsive.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-2492670883861489.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_responsive.asp",
+      "source_url": "https://www.w3schools.com/html/html_responsive.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مفهوم Responsive Web Design",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي. يَهْدِف Responsive وِبّ Design إِلَى إِنْشَاءِ صَفَحَاتِ وِبّ تَبْدُو رَائِعَة عَلَى جَمِيعِ الشَّاشَاتِ، حَيْثُ تَتَكَيَّفُ تِلْقَائِيّاً مَعَ الْهَوَاتِفِ الذَّكِيَّة وَالْأَجْهِزَة اللَّوْحِيَّة وَشَاشَاتِ الْحَاسُوبِ دُونَ أَيِّ خَلَلٍ مَرْئِيٍّ.",
+        "caption_text": "Responsive Web Design يهدف إلى جعل صفحات الويب ملائمة وتلقائية التكيف على جميع الأجهزة والشاشات المختلفة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Responsive Web Design يعتمد على HTML و CSS",
+          "إعادة ضبط أحجام العناصر وإخفاؤها أو إظهارها تلقائيا",
+          "دعم الهواتف والأجهزة اللوحية والحواسيب المكتبية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "إعداد meta viewport في الرأس",
+      "narration": {
+        "spoken_text": "الْخُطْوَة الْأُولَى الْأَسَاسِيَّة هِيَ إِضَافَة meta Tag الْخَاصِّ بِـ viewport دَاخِل head. يُخْبِرُ هَذَا السَّطْر وِبّ Browser بِكَيْفِيَّة التَّحَكُّمِ فِي أَبْعَادِ الصَّفْحَة وَمِقْيَاسِهَا لِتُطَابِقَ عَرْضَ شَاشَة الْجِهَازِ تَمَاماً.",
+        "caption_text": "إضافة meta viewport في head ترشد المتصفح لكيفية ضبط أبعاد الصفحة ومقياس عرضها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<meta name=\"viewport\"\n  content=\"width=device-width, initial-scale=1.0\">",
+        "highlight_lines": [
+          1,
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "الصور المتجاوبة مع max-width",
+      "narration": {
+        "spoken_text": "لِجَعْلِ الصُّوَرِ مُتَجَاوِبَه، نَسْتَخْدِمُ خَاصِّيَّة max-width مَعَ تَحْدِيدِ قِيمَة 100. هَذَا يَسْمَحُ لِلصُّورَة بِأَنْ تَصْغُرَ مَعَ الشَّاشَاتِ الصَّغِيرَه، لَكِنَّهَا لَنْ تَتَمَدَّدَ أَبَداً لِتُصْبِحَ أَكْبَرَ مِنْ حَجْمِهَا الْأَصْلِيِّ كَمَا يَحْدُثُ مَع width.",
+        "caption_text": "استخدام max-width بنسبة 100 يمنع الصورة من التمدد خارج أبعادها الأصلية مع تصغيرها بمرونة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "image.html",
+        "code": "<img src=\"img_girl.jpg\"\n  style=\"max-width:100%;height:auto;\">",
+        "highlight_lines": [
+          2
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "تبديل الصور باستخدام picture Element",
+      "narration": {
+        "spoken_text": "يُتِيحُ لَنَا Element اسْمُه picture عَرْضَ صُوَرٍ مُخْتَلِفَة كُلِّيّاً حَسَبَ عَرْضِ الشَّاشَه، حَيْثُ نَسْتَخْدِمُ دَاخِلَه source مَعَ خَاصِّيَّة media لِتَحْدِيدِ الشَّرْطِ، مِثْلَ إِظْهَارِ صُورَة صَغِيرَة لِلْهَوَاتِفِ وَصُورَة أُخْرَى لِلْحَوَاسِيبِ.",
+        "caption_text": "عنصر picture يتيح تقديم مصادر صور متعددة بناء على قيود media لعرض الصورة المناسبة لكل شاشة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "picture.html",
+        "code": "<picture>\n  <source srcset=\"small.jpg\"\n    media=\"(max-width: 600px)\">\n  <source srcset=\"large.jpg\"\n    media=\"(max-width: 1500px)\">\n  <img src=\"flowers.jpg\" alt=\"Flowers\">\n</picture>",
+        "highlight_lines": [
+          2,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "المعاينة المرئية للتصميم المتجاوب",
+      "narration": {
+        "spoken_text": "تُوَضِّحُ هَذِهِ الْمُعَايَنَة كَيْفَ يَتَبَدَّلُ تَخْطِيطُ الصَّفْحَة بِسَلَاسَه. تَتَرَتَّبُ الْأَعْمِدَة أُفُقِيّاً عَلَى الشَّاشَاتِ الْكَبِيرَه، ثُمَّ تَتَحَوَّلُ تِلْقَائِيّاً إِلَى نَسَقٍ رَأْسِيٍّ مَرِنٍ عَلَى شَاشَاتِ الْهَوَاتِفِ لِتَقْدِيمِ تَجْرِبَة قِرَاءَة مِثَالِيَّه.",
+        "caption_text": "معاينة عملية لتحول الأعمدة الأفقية على الشاشات الكبيرة إلى تخطيط رأسي على الشاشات الصغيرة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة تصميم صفحة ويب متجاوبة تتكيف مع مختلف المقاسات"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "حجم النص ووحدة vw وقواعد Media Queries",
+      "narration": {
+        "spoken_text": "يُمْكِنُ ضَبْطُ حَجْمِ النَّصِّ بِوَحْدَة vw لِيَتَنَاسَبَ مَعَ عَرْض viewport. كَمَا نَسْتَخْدِم Media Queries فِي مِلَفَّات CSS لِتَطْبِيقِ تَنْسِيقَاتٍ مُخْتَلِفَة تَمَاماً عِنْدَ نِقَاطِ تَوَقُّفٍ مُحَدَّدَة مِثْل breakpoint بِقِيمَة 800px.",
+        "caption_text": "تسمح وحدة vw للنصوص بالتغير تبعا لعرض viewport وتطبق Media Queries تنسيقات خاصة عند breakpoints."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "styles.css",
+        "code": "@media screen and (max-width: 800px) {\n  .left, .main, .right {\n    width: 100%;\n  }\n}",
+        "highlight_lines": [
+          1,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أطر عمل CSS المتجاوبة",
+      "narration": {
+        "spoken_text": "تُوَفِّرُ أُطُرُ الْعَمَلِ الْحَدِيثَة مِثْل W3.CSS و Bootstrap أَنْظِمَة شَبَكَاتٍ جَاهِزَة تَخْتَصِرُ الْوَقْتَ. تَعْتَمِدُ هَذِهِ الْأُطُرُ عَلَى Responsive Classes لِتَوْزِيعِ الْأَعْمِدَة وَالْعَنَاصِرِ تِلْقَائِيّاً عَلَى مُخْتَلِفِ الْأَجْهِزَة بِكُلِّ كَفَاءَه.",
+        "caption_text": "مقارنة بين إطاري العمل W3.CSS و Bootstrap في دعم التصميم المتجاوب."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Framework",
+          "المميزات الرئيسية",
+          "الاعتمادية"
+        ],
+        "rows": [
+          [
+            "W3.CSS",
+            "خفيف وسريع ويدعم الهواتف افتراضيا",
+            "مستقل تماما عن JavaScript"
+          ],
+          [
+            "Bootstrap",
+            "نظام Grid قوي ومكونات شاملة",
+            "يتضمن حزم JavaScript متقدمة"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "خِتَاماً، يَبْدَأ Responsive وِبّ Design دَائِماً بِـ meta viewport، ثُمَّ التَّحَكُّمِ فِي الصُّوَرِ وَالنُّصُوصِ. قُومُوا بِمُعَايَنَة التَّطْبِيقَاتِ الْعَمَلِيَّة مِنْ خِلَالِ الرَّابِطِ فِي الْوَصْفِ، وَجَرِّبُوا تَغْيِيرَ مَقَايِيسِ الْمُتَصَفِّحْ بِأَنْفُسِكُمْ.",
+        "caption_text": "الخلاصة: ابدأ دائما بـ meta viewport وطبق max-width و Media Queries لتحقيق التجاوب الكامل."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إدراج meta viewport دائما في head",
+          "استخدام max-width: 100 مع الصور",
+          "استعمال picture لتبديل الصور و vw لتجاوب النصوص",
+          "توظيف Media Queries أو Frameworks للتخطيط المرن"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_responsive.asp"
+      ]
+    }
+  ]
+}
