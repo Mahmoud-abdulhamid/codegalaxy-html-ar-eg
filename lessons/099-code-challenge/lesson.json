@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "99",
+  "title": "HTML Canvas Element Fundamentals",
+  "course": "HTML",
+  "objectives": [
+    "فهم دور عنصر canvas في صفحات الويب",
+    "تعلم كيفية إضافة canvas إلى هيكل HTML",
+    "التعرف على Attributes الأساسية لعنصر canvas",
+    "تطبيق تحدي برمجي عملي باستخدام canvas"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_canvas.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول canvas",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى عُنْصُرٍ قَوِيٍّ وَمُهِمٍّ فِي لُغَة HTML5 وَهُو canvas، الَّذِي يُسْتَخْدَمُ لِرَسْمِ الرُّسُومَاتِ وَالْجِرَافِيكسِ مُبَاشَرَة دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. سنتعرف اليوم على عنصر canvas القوي والمهم في HTML5، والذي يستخدم لرسم الرسومات والجرافيكس مباشرة داخل صفحة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر canvas هو جزء من HTML5",
+          "يستخدم لرسم الرسومات برمجيا",
+          "يعتمد على JavaScript للتحكم بالرسم",
+          "أداة أساسية لتطوير الألعاب والرسوم البيانية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "هيكلية عنصر canvas",
+      "narration": {
+        "spoken_text": "لِإِضَافَة canvas إِلَى صَفْحَة الْوِبّ، نَحْنُ بِحَاجَة إِلَى اسْتِخْدَام Element بِاسْم canvas. هَذَا الْعُنْصُرُ لَا يَقُومُ بِالرَّسْمِ بِنَفْسِهِ، بَلْ هُوَ مِثْلُ لَوْحَة رَسْمٍ فَارِغَة نَحْتَاجُ لِتَحْدِيدِ أَبْعَادِهَا بِاسْتِخْدَام Attributes مِثْل width و height.",
+        "caption_text": "لإضافة canvas إلى صفحة الويب، نستخدم Element باسم canvas. هذا العنصر يعمل كلوحة رسم فارغة، ونحتاج لتحديد أبعاده باستخدام Attributes مثل width و height."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<canvas id=\"myCanvas\" \n        width=\"200\" \n        height=\"100\">\n</canvas>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    },
+    {
+      "id": "attributes",
+      "title": "تحليل Attributes البرمجية",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي أَنَّنَا اسْتَخْدَمْنَا id لِتَمْيِيزِ الْعُنْصُرِ، وَهَذَا ضَرُورِيٌّ لِلوُصُولِ إِلَيْهِ عَبْر JavaScript. كَمَا أَنَّ width و height يُحَدِّدَانِ مِسَاحَة الرَّسْمِ بِالْبِيكْسِلْ. بِدُونِ هَذِه Attributes، سَيَكُونُ الْعُنْصُرُ بِحَجْمٍ افْتِرَاضِيٍّ قَدْ لَا يُنَاسِبُ تَصْمِيمَكَ.",
+        "caption_text": "استخدام id ضروري للوصول للعنصر عبر JavaScript. بينما تحدد width و height مساحة الرسم بالبكسل. بدون هذه Attributes، سيكون العنصر بحجم افتراضي قد لا يناسب تصميمك."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "id: معرف فريد للعنصر",
+          "width: عرض لوحة الرسم",
+          "height: ارتفاع لوحة الرسم",
+          "يجب إغلاق العنصر بـ Closing Tag"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    },
+    {
+      "id": "challenge",
+      "title": "تحدي البرمجة",
+      "narration": {
+        "spoken_text": "الْآنَ، حَانَ وَقْتُ التَّحَدِّي لِتَخْتَبِرَ فَهْمَكَ، حَاوِلْ إِنْشَاء canvas بِعَرْضِ ثَلَاثِمِائَة وَارْتِفَاعِ مِائَتَيْنِ. تَذَكَّرْ أَنَّ كِتَابَة الْكُودِ بِشَكْلٍ صَحِيحٍ هِيَ الْخُطْوَة الْأُولَى لِإِتْقَانِ هَذِهِ التِّقْنِيَة الرَّائِعَة فِي صَفْحَاتِ الْوِبّ.",
+        "caption_text": "حان وقت التحدي! قم بإنشاء canvas بعرض 300 وارتفاع 200. تذكر أن كتابة الكود بشكل صحيح هي الخطوة الأولى لإتقان هذه التقنية الرائعة في صفحات الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<canvas id=\"testCanvas\" \n        width=\"300\" \n        height=\"200\">\n</canvas>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ أَنْ تَضَعَ نَصّاً بَيْن Start Tag و End Tag لِعُنْصُر canvas، لِيَظْهَرَ لِلْمُسْتَخْدِمِينَ الَّذِينَ تَسْتَخْدِمُ مُتَصَفِّحَاتُهُمْ إِصْدَارَاتٍ قَدِيمَة لَا تَدْعَمُ هَذِهِ التِّقْنِيَه. هَذَا يُعَزِّزُ مِنْ جَوْدَة تَجْرِبَة الْمُسْتَخْدِمِ.",
+        "caption_text": "من أفضل الممارسات وضع نص بين Start Tag و End Tag لعنصر canvas، ليظهر للمستخدمين الذين تستخدم متصفحاتهم إصدارات قديمة لا تدعم هذه التقنية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "fallback.html",
+        "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\">\n  متصفحك لا يدعم canvas.\n</canvas>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا دَرْسَ الْيَوْمِ حَوْل canvas. أَدْعُوكُمْ لِتَجْرِبَة الْكُودِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدِيُو. لَا تَتَرَدَّدُوا فِي طَرْحِ أَسْئِلَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ مَعَ مَحْمُود عَبْدِ الْحَمِيد.",
+        "caption_text": "بهذا نكون قد أتممنا درس اليوم حول canvas. أدعوكم لتجربة الكود بأنفسكم عبر الرابط الموجود في وصف الفيديو. لا تترددوا في طرح أسئلتكم، وإلى اللقاء في درس قادم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجعنا أساسيات canvas",
+          "تعلمنا كيفية تحديد الأبعاد",
+          "ناقشنا أهمية الـ fallback text",
+          "استعد للدرس القادم حول SVG"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      ]
+    }
+  ]
+}
