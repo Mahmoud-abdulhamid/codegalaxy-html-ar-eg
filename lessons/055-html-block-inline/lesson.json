@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "55",
+  "title": "HTML Block and Inline Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم الفرق الجوهري بين block-level elements و inline elements",
+    "التعرف على خصائص واستخدامات div و span الحاوية",
+    "تطبيق التنسيقات باستخدام CSS مع العناصر المختلفة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_blocks.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-9bb48c69be5ccc3a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_blocks.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة العناصر Block و Inline",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى الْمَفْهُومِ الْأَسَاسِيِّ لِقِيَمِ العَرْض Display Values، وَفَرْقِ الشَّاسِعِ بَيْن block elements و inline elements.",
+        "caption_text": "تعرف على قيم العرض الافتراضية للعناصر في لغة HTML وكيفية تصنيفها إلى block و inline."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لكل عنصر في HTML قيمة عرض افتراضية",
+          "القيمتان الأكثر شيوعا هما block و inline",
+          "تحدد هذه القيم كيفية ظهور العناصر في صفحة الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_2_block",
+      "title": "خصائص عناصر Block",
+      "narration": {
+        "spoken_text": "عَنَاصِر block-level تَبْدَأُ دَائِماً فِي سَطْرٍ جَدِيدٍ، وَيُضِيفُ الْمُتَصَفِّحْ مَسَافَاتٍ قَبْلَهَا وَبَعْدَهَا. كَمَا أَنَّهَا تَأْخُذُ كَامِلَ العَرْضِ المُتَاحِ فِي الشَّاشَة مِثْل p و div.",
+        "caption_text": "عناصر block-level تبدأ دائما في سطر جديد وتأخذ العرض الكامل المتاح لليسار واليمين."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تبدأ دائما في سطر جديد بمفردها",
+          "تأخذ كامل العرض المتاح أفقيا",
+          "تضيف المتصفحات هوامش تلقائية قبلها وبعدها"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_3_block_code",
+      "title": "أمثلة على عناصر Block",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي فِي هَذَا الْمِثَالِ كَيْفَ يَتَمَرَّكُ عُنْصُر p وَعُنْصُر div. كِلَاهُمَا يَمْتَدُّ عَلَى طُولِ السَّطْرِ وَيَحْجُزُ مَسَاحَة مُسْتَقِلَّة لِنَفْسِهِ بِدُونِ تَدَاخُلٍ.",
+        "caption_text": "مثال توضيحي لكيفية ظهور عناصر block مثل p و div في المستند."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "block-example.html",
+        "code": "<p>Hello World</p>\n<div>Hello World</div>",
+        "highlight_lines": [],
+        "output": "Hello World\nHello World",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_4_inline",
+      "title": "خصائص عناصر Inline",
+      "narration": {
+        "spoken_text": "أَمَّا عَنَاصِر inline فَلَا تَبْدَأُ فِي سَطْرٍ جَدِيدٍ. هَذِهِ العَنَاصِرُ تَأْخُذُ فَقَطِ المِسَاحَة الضَّرُورِيَّة لِمُحْتَوَاهَا، وَلَا يُمْكِنُهَا احْتِوَاءُ عَنَاصِر block.",
+        "caption_text": "عناصر inline لا تبدأ في سطر جديد وتأخذ فقط العرض اللازم لمحتواها."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لا تبدأ في سطر جديد إطلاقا",
+          "تأخذ فقط القدر اللازم من العرض",
+          "لا يمكنها احتواء عناصر block بداخلها"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_5_inline_code",
+      "title": "مثال على عناصر Inline",
+      "narration": {
+        "spoken_text": "شَاهِدْ مَعِي كَيْفَ نَسْتَخْدِمُ عُنْصُر span دَاخِلَ السَّطْرِ بِدُونِ أَنْ يُجْبِرَ الْمُتَصَفِّحْ عَلَى انْتِقَالِ المُحْتَوَى إِلَى سَطْرٍ جَدِيدٍ، مِثْلَهُ مِثْل a و strong.",
+        "caption_text": "مثال عملي لاستخدام عنصر span داخل النص بشكل inline."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "inline-example.html",
+        "code": "<span>Hello World</span>",
+        "highlight_lines": [],
+        "output": "Hello World",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_6_div_element",
+      "title": "العنصر div الحاوي",
+      "narration": {
+        "spoken_text": "عُنْصُر div يُسْتَخْدَمُ كَحَاوِيَة لِعَنَاصِر HTML الْأُخْرَى. لَيْسَ لَدَيْه Attributes مَطْلُوبَه، وَلَكِنَّ style و class و id شَائِعَة جِدّاً مَعَهُ عِنْدَ اسْتِخْدَام CSS.",
+        "caption_text": "عنصر div يعتبر حاوية افتراضية تستخدم لتجميع العناصر وتنسيقها معا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر block رئيسي لتجميع المحتوى",
+          "يستخدم كحاوية لتنظيم بنية الصفحة",
+          "يتكامل بسلاسة مع خصائص CSS المختلفة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_7_div_code",
+      "title": "تنسيق div باستخدام CSS",
+      "narration": {
+        "spoken_text": "فِي هَذَا الْمِثَالِ، نُطَبِّقُ خَصَائِص CSS دَاخِلَ عُنْصُر div لِتَغْيِيرِ لَوْنِ الْخَلْفِيَّه، وَتَحْدِيدِ الحَوَاشِي، وَعَرْضِ مَقَالَة أَوْ قِسْمٍ مُتَكَامِلٍ بِمُحْتَوَاهُ الدَّاخِلِيِّ.",
+        "caption_text": "مثال متقدم لتنسيق عنصر div باستخدام أنماط CSS المضمنة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "div-style.html",
+        "code": "<div style=\"background-color:black;\n     color:white; padding:20px;\">\n  <h2>London</h2>\n  <p>London is the capital.</p>\n</div>",
+        "highlight_lines": [],
+        "output": "London\nLondon is the capital.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_8_span_code",
+      "title": "العنصر span المضمن",
+      "narration": {
+        "spoken_text": "عُنْصُر span هُوَ حَاوِيَة inline تُسْتَخْدَمُ لِتَحْدِيدِ جُزْءٍ مُعَيَّنٍ مِنَ النَّصِّ وَتَخْصِيصِ تَنْسِيقِهِ بِوَاسِطَة CSS دُونَ الإِخْلَالِ بِتَرْتِيبِ الأَسْطُرِ.",
+        "caption_text": "عنصر span حاوية مضمنة لتنسيق أجزاء محددة من النص."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "span-style.html",
+        "code": "<p>My mother has \n  <span style=\"color:blue;\">\n    blue\n  </span> eyes.\n</p>",
+        "highlight_lines": [],
+        "output": "My mother has blue eyes.",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    },
+    {
+      "id": "scene_9_summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ الدَّرْسِ، تَعَرَّفْنَا عَلَى أَنَّ block elements تَبْدَأُ فِي سَطْرٍ جَدِيدٍ، بَيْنَمَا inline elements تَبْقَى دَاخِلَ السَّطْرِ. تَابِعُوا التَّطْبِيقَ وَانْتَقِلُوا لِلدَّرْسِ التَّالِي مَعَ مَحْمُودِ عَبْدِالحَمِيدِ.",
+        "caption_text": "ملخص شامل لعناصر block و inline مع تحيات المدرب محمود عبدالحميد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العناصر الكتلية block تأخذ سطرا كاملا",
+          "العناصر المضمنة inline تتوسط السطر الحالي",
+          "استخدم div للكتل و span للنصوص الجزئية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_blocks.asp"
+      ]
+    }
+  ]
+}
