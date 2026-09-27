@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "92",
+  "title": "HTML Form Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام HTML Form Elements لبناء نماذج تفاعلية",
+    "التعرف على وظيفة input و label و select",
+    "تعلم كيفية استخدام textarea و button و fieldset",
+    "استكشاف datalist و output لتعزيز تجربة المستخدم"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_form_elements.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-b2070f96e88a1a15.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_form_elements.asp",
+      "source_url": "https://www.w3schools.com/html/html_form_elements.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في HTML Form Elements",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى HTML Form Elements، وَهِيَ الْأَدَوَاتُ الْأَسَاسِيَّة الَّتِي نَسْتَخْدِمُهَا لِجَمْعِ بَيَانَاتِ الْمُسْتَخْدِمِ فِي صَفْحَة الْوِبّ، مِثْلَ حُقُولِ النَّصِّ وَالْقَوَائِمِ الْمُنْسَدِلَه.",
+        "caption_text": "تعد HTML Form Elements حجر الأساس لبناء نماذج تفاعلية لجمع بيانات المستخدم في صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم النماذج لجمع مدخلات المستخدم",
+          "تتكون من عناصر متنوعة مثل input و select",
+          "تعتبر جزءا حيويا من تفاعل المستخدم مع الموقع"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "input_label",
+      "title": "عناصر input و label",
+      "narration": {
+        "spoken_text": "يُعَدُّ input مِنْ أَكْثَرِ الْعَنَاصِرِ اسْتِخْدَاماً، وَيَتَغَيَّرُ شَكْلُهُ بِحَسَب type attribute. كَمَا نَسْتَخْدِم label لِتَحْدِيدِ وَظِيفَة الْحَقْلِ، وَهُوَ مُهِمٌّ جِدّاً لِـ screen-reader users وَلِتَحْسِينِ تَجْرِبَة النَّقْرِ عَلَى الْعَنَاصِرِ الصَّغِيرَه.",
+        "caption_text": "يستخدم العنصر input لجمع البيانات، بينما يربط label النص بالحقل عبر Attribute for و id."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "input_example.html",
+        "code": "<label for=\"fname\">First name:</label>\n<input type=\"text\" id=\"fname\" name=\"fname\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "select_element",
+      "title": "القوائم المنسدلة مع select",
+      "narration": {
+        "spoken_text": "لِإِنْشَاءِ قَائِمَة مُنْسَدِلَة نَسْتَخْدِم select. وَدَاخِلَهَا نَضَع option لِتَحْدِيدِ الْخِيَارَاتِ. يُمْكِنُنَا اسْتِخْدَام selected attribute لِتَحْدِيدِ خِيَارٍ افْتِرَاضِيٍّ، أَوْ size لِتَحْدِيدِ عَدَدِ الْخِيَارَاتِ الظَّاهِرَه، أَوْ multiple لِلسَّمَاحِ بِاخْتِيَارِ أَكْثَرَ مِنْ عُنْصُرٍ.",
+        "caption_text": "يوفر العنصر select قائمة من الخيارات، ويمكن تخصيصها ب Attributes مثل size و multiple."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "select_example.html",
+        "code": "<select id=\"cars\" name=\"cars\" size=\"3\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n  <option value=\"fiat\" selected>Fiat</option>\n</select>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "textarea_button",
+      "title": "عناصر textarea و button",
+      "narration": {
+        "spoken_text": "لِلنُّصُوصِ الطَّوِيلَة نَسْتَخْدِم textarea، وَنُحَدِّدُ أَبْعَادَهَا بِـ rows و cols. أَمَّا button فَيُسْتَخْدَمُ لِإِنْشَاءِ زِرٍّ قَابِلٍ لِلنَّقْرِ، وَمِنَ الضَّرُورِيِّ دائماً تَحْدِيد type attribute لِتَجَنُّبِ اخْتِلَافِ السُّلوكِ بَيْنَ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "يستخدم textarea للنصوص متعددة الأسطر، بينما يستخدم button لتنفيذ إجراءات عند النقر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "text_button.html",
+        "code": "<textarea name=\"msg\" rows=\"4\" cols=\"20\">\nنص افتراضي هنا\n</textarea>\n<button type=\"button\">Click Me!</button>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "fieldset_legend",
+      "title": "تجميع العناصر بـ fieldset",
+      "narration": {
+        "spoken_text": "لِتَنْظِيمِ النَّمَاذِجِ الْكَبِيرَه، نَسْتَخْدِم fieldset لِتَجْمِيعِ الْبَيَانَاتِ ذَاتِ الصِّلَه، وَنَسْتَخْدِم legend لِوَضْعِ عُنْوَانٍ لِهَذِهِ الْمَجْمُوعَه. هَذَا يُسَاعِدُ فِي جَعْلِ النَّمَاذِجِ أَكْثَرَ تَنْظِيماً وَسُهُولَة فِي الْقِرَاءَة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يساعد fieldset في تجميع العناصر ذات الصلة، بينما يضيف legend عنوانا توضيحيا للمجموعة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "fieldset.html",
+        "code": "<fieldset>\n  <legend>معلومات شخصية:</legend>\n  <label>الاسم:</label>\n  <input type=\"text\">\n</fieldset>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "datalist_output",
+      "title": "عناصر datalist و output",
+      "narration": {
+        "spoken_text": "أَخِيراً، datalist تُوَفِّرُ قَائِمَة خِيَارَاتٍ مُسْبَقَة لِـ input، بَيْنَمَا output تَعْرِضُ نَتَائِجَ الْحِسَابَاتِ. هَذِهِ الْعَنَاصِرُ تُعَزِّزُ مِنْ قُدْرَاتِ النَّمَاذِجِ وَتُقَلِّلُ مِنْ أَخْطَاءِ الْمُدْخَلَاتِ، مِمَّا يَرْفَعُ مِنْ جَوْدَة تَجْرِبَة الْمُسْتَخْدِمِ فِي صَفْحَة الْوِبّ.",
+        "caption_text": "تسهل datalist الإدخال، بينما تعرض output نتائج العمليات الحسابية داخل النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "advanced.html",
+        "code": "<input list=\"browsers\">\n<datalist id=\"browsers\">\n  <option value=\"Chrome\">\n  <option value=\"Firefox\">\n</datalist>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ كَيْفِيَّة بِنَاءِ نَمَاذِجَ احْتِرَافِيَّة بِاسْتِخْدَام HTML Form Elements. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُرَاجَعَة التَّوْثِيقِ الرَّسْمِيِّ لِتَعَمُّقٍ أَكْبَرَ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "لقد غطينا العناصر الأساسية والمتقدمة للنماذج في HTML. جربوا الأكواد بأنفسكم لتعزيز مهاراتكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم input و label للبيانات الأساسية",
+          "نظم النماذج باستخدام fieldset",
+          "استفد من datalist لتحسين تجربة الإدخال",
+          "راجع دائما HTML Tag Reference للمزيد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_elements.asp"
+      ]
+    }
+  ]
+}
