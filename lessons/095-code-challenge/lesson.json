@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "95",
+  "title": "HTML Input Types and Login Forms",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية بناء نماذج تسجيل الدخول باستخدام HTML",
+    "التعرف على أنواع input المختلفة في HTML5",
+    "تطبيق الممارسات البرمجية الصحيحة عند التعامل مع النماذج",
+    "الربط بين العناصر البرمجية وتجربة المستخدم"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_input_types.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول نماذج الويب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة بِنَاءِ نَمُوذَجِ تَسْجِيلِ دُخُولٍ احْتِرَافِيٍّ بِاسْتِخْدَامِ مُخْتَلِفِ أَنْوَاع input فِي HTML5 لِتَحْسِينِ تَجْرِبَة الْمُسْتَخْدِمِ عَلَى الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس بناء نماذج تسجيل الدخول باستخدام HTML5."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "بناء نماذج تسجيل الدخول باستخدام HTML",
+          "استخدام أنواع input المتنوعة",
+          "تحسين تفاعل المستخدم مع صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "المفاهيم الأساسية للنماذج",
+      "narration": {
+        "spoken_text": "تَعْتَمِدُ نَمَاذِجُ الْوِبّ عَلَى Element يُسَمَّى form. دَاخِلَ هَذَا Element نَسْتَخْدِم input لِجَمْعِ الْبَيَانَاتِ. كُلُّ input لَه Attribute يُسَمَّى type يُحَدِّدُ نَوْعَ الْبَيَانَاتِ الْمُدْخَلَه، مِثْل text لِلنُّصُوصِ أَوْ password لِتَأْمِينِ كَلِمَاتِ الْمُرُورِ.",
+        "caption_text": "تعتمد النماذج على عنصر form وعناصر input المتنوعة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر form هو الحاوية الأساسية للنماذج",
+          "عنصر input هو المسؤول عن استقبال بيانات المستخدم",
+          "Attribute type تحدد طبيعة البيانات المدخلة",
+          "استخدام password لإخفاء النصوص الحساسة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "كتابة هيكل النموذج",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. نَحْتَاجُ إِلَى Start Tag لِلـ form، ثُمَّ نُضِيف label لِتَوْضِيحِ الْحَقْلِ، وَبَعْدَهَا نَضَع input مَعَ تَحْدِيد type. لَاحِظْ كَيْفَ نُغْلِقُ الْعَنَاصِرَ بِشَكْلٍ صَحِيحٍ لِضَمَانِ عَمَلِ الصَّفْحَة بِكُلِّ كَفَاءَه.",
+        "caption_text": "هيكل بسيط لنموذج تسجيل دخول باستخدام HTML."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <label>Username:</label>\n  <input type=\"text\">\n  <label>Password:</label>\n  <input type=\"password\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "إضافة زر الإرسال",
+      "narration": {
+        "spoken_text": "لِإِكْمَالِ النَّمُوذَجِ، نَحْتَاجُ إِلَى زِرٍّ لِإِرْسَالِ الْبَيَانَاتِ. نَسْتَخْدِم input بِـ type يُسَاوِي submit. هَذَا Element يَقُومُ بِتَفْعِيلِ عَمَلِيَّة الْإِرْسَالِ عِنْدَ النَّقْرِ عَلَيْهِ، وَهُوَ جُزْءٌ لَا يَتَجَزَّأُ مِنْ أَيِّ نَمُوذَجٍ عَلَى الْوِبّ.",
+        "caption_text": "إضافة زر الإرسال باستخدام input من نوع submit."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <input type=\"text\">\n  <input type=\"password\">\n  <input type=\"submit\" value=\"Login\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَهَمِّ الْمُمَارَسَاتِ الْهَنْدَسِيَّة هِيَ اسْتِخْدَام Attribute يُسَمَّى name لِكُلِّ input، لِأَنَّهُ يُسَاعِدُ السِّيرْفَر فِي التَّعَرُّفِ عَلَى الْبَيَانَاتِ الْمُرْسَلَه. كَذَلِكَ، احْرِصْ دَائِماً عَلَى تَنْسِيقِ النَّمُوذَجِ لِيَكُونَ مَقْرُوءاً وَسَهْلَ الِاسْتِخْدَامِ لِجَمِيعِ زُوَّارِ مَوْقِعِكَ.",
+        "caption_text": "استخدام Attribute name ضروري لتعريف البيانات في السيرفر."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Attribute name لكل حقل إدخال",
+          "توفير تجربة مستخدم واضحة ومنظمة",
+          "التحقق من صحة البيانات قبل الإرسال",
+          "استخدام label لربط النصوص بحقول الإدخال"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا بِنَاءَ نَمُوذَجِ تَسْجِيلِ دُخُولٍ بَسِيطٍ وَفَعَّالٍ. أَدْعُوكُمْ يَا أَصْدِقَائِي لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدِيُو، وَمُحَاوَلَة إِضَافَة أَنْوَاعٍ أُخْرَى مِثْل email لِتَطْوِيرِ مَهَارَاتِكُمْ فِي لُغَة HTML.",
+        "caption_text": "جربوا الأكواد بأنفسكم وطوروا مهاراتكم في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجعوا الرابط في الوصف للتطبيق العملي",
+          "جربوا أنواع input إضافية مثل email",
+          "استمروا في ممارسة كتابة الأكواد يوميا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      ]
+    }
+  ]
+}
