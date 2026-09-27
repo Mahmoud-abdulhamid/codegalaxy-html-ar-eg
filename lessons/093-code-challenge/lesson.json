@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "93",
+  "title": "HTML Form Elements Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام select و option في نماذج الويب",
+    "التعرف على كيفية إنشاء textarea لإدخال النصوص الطويلة",
+    "تطبيق المهارات المكتسبة في تحدي برمجي عملي",
+    "تعلم هيكلة العناصر داخل form"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في عناصر النماذج",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ سَنُتْقِنُ التَّعَامُلَ مَع Form Elements، وَهِيَ الْأَدَوَاتُ الْأَسَاسِيَّة لِجَمْعِ بَيَانَاتِ الْمُسْتَخْدِمِ بِشَكْلٍ احْتِرَافِيٍّ وَمُنَظَّمٍ دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. اليوم سنتقن التعامل مع Form Elements لجمع بيانات المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعتبر النماذج جزءا حيويا في صفحات الويب",
+          "تسمح Form Elements للمستخدمين بالتفاعل مع الموقع",
+          "سنتعلم اليوم كيفية بناء Dropdown و Textarea"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    },
+    {
+      "id": "dropdown_concept",
+      "title": "عنصر القائمة المنسدلة",
+      "narration": {
+        "spoken_text": "لِإِنْشَاءِ قَائِمَة مُنْسَدِلَة نَسْتَخْدِم Element يُسَمَّى select، وَبِدَاخِلِهِ نَضَعُ عَنَاصِر option. هَذَا التَّرْكِيبُ يُوَفِّرُ لِلْمُسْتَخْدِمِ خِيَارَاتٍ مُحَدَّدَة لِيَخْتَارَ مِنْ بَيْنِهَا، وَهُوَ أَمْرٌ ضَرُورِيٌّ لِتَقْلِيلِ الْأَخْطَاءِ فِي إِدْخَالِ الْبَيَانَاتِ.",
+        "caption_text": "نستخدم select لإنشاء قائمة منسدلة، ونضع بداخلها عناصر option لتحديد الخيارات المتاحة للمستخدم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "dropdown.html",
+        "code": "<select name=\"cars\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n</select>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    },
+    {
+      "id": "textarea_concept",
+      "title": "عنصر مساحة النص",
+      "narration": {
+        "spoken_text": "أَمَّا إِذَا كُنْتُمْ تُرِيدُونَ مِنَ الْمُسْتَخْدِمِ كِتَابَة نَصٍّ طَوِيلٍ، فَالْحَلُّ هُوَ اسْتِخْدَام Element يُسَمَّى textarea. هَذَا الْعُنْصُرُ يَمْنَحُ الْمُسْتَخْدِمَ مَسَاحَة كَبِيرَة لِلتَّعْبِيرِ عَنْ آرَائِهِ أَوْ كِتَابَة رِسَائِلَ مُفَصَّلَة بِكُلِّ سُهُولَه.",
+        "caption_text": "يستخدم عنصر textarea للسماح للمستخدم بإدخال نصوص طويلة ومتعددة الأسطر داخل النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "textarea.html",
+        "code": "<textarea name=\"message\" rows=\"4\" cols=\"50\">\nاكتب رسالتك هنا...\n</textarea>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    },
+    {
+      "id": "form_structure",
+      "title": "هيكلة النموذج الكامل",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَضَعَ كُلَّ هَذِهِ الْعَنَاصِرِ دَاخِل Start Tag لِلْعُنْصُر form. هَذَا يُسَاعِمُ فِي تَنْظِيمِ الْبَيَانَاتِ وَإِرْسَالِهَا إِلَى السِّيرْفَرِ عِنْدَ الضَّغْطِ عَلَى زِرِّ الْإِرْسَالِ، مِمَّا يَجْعَلُ التَّطْبِيقَ أَكْثَرَ فَعَّالِيَّه.",
+        "caption_text": "يجب وضع جميع عناصر الإدخال داخل Tag form لضمان إرسال البيانات بشكل صحيح إلى السيرفر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form.html",
+        "code": "<form action=\"/submit\">\n  <select>...</select>\n  <textarea>...</textarea>\n  <input type=\"submit\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "تَذَكَّرُوا دَائِماً أَهَمِّيَّة اسْتِخْدَام Attribute مِثْل name لِكُلِّ عُنْصُرٍ، لِأَنَّهَا الْوَسِيلَة الَّتِي يَتَعَرَّفُ بِهَا السِّيرْفَرُ عَلَى الْقِيمَة الْمُرْسَلَه. كَمَا يُفَضَّلُ تَحْدِيد rows و cols لِعُنْصُر textarea لِضَبْطِ الْأَبْعَادِ.",
+        "caption_text": "استخدم دائما Attribute باسم name لكل عنصر، وحدد أبعاد textarea لضمان تجربة مستخدم ممتازة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم name لكل عنصر في النموذج",
+          "حدد rows و cols لعنصر textarea",
+          "تأكد من إغلاق جميع Tags بشكل صحيح",
+          "استخدم label لتحسين إمكانية الوصول"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة وتحدي",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا شَرْحَ الْعَنَاصِرِ الْأَسَاسِيَّة لِلنَّمَاذِجِ. أَدْعُوكُمْ لِزِيَارَة الرَّابِطِ فِي الْوَصْفِ لِتَجْرِبَة التَّحَدِّي الْبَرْمَجِيِّ بِنَفْسِكُمْ وَتَطْبِيقِ مَا تَعَلَّمْتُمُوهُ الْآنَ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "قم بزيارة الرابط في الوصف لتجربة التحدي البرمجي بنفسك. شكرا لمتابعتكم وإلى اللقاء في درس قادم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع التحدي البرمجي في الرابط",
+          "طبق الأكواد بنفسك في المتصفح",
+          "استمر في ممارسة HTML يوميا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      ]
+    }
+  ]
+}
