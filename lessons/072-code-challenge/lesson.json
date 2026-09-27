@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "72",
+  "title": "HTML Head and Metadata Mastery",
+  "course": "HTML",
+  "objectives": [
+    "فهم دور الـ head في مستند الـ HTML",
+    "التعرف على الـ Metadata وكيفية إضافتها",
+    "تطبيق الممارسات المثالية في هيكلة الـ HTML",
+    "إتقان استخدام الـ title والـ meta Tags"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_head.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول الـ head",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ سَنَتَعَلَّمُ كَيْفِيَّة إِدَارَة قِسْم head فِي صَفْحَة الْوِبّ، وَهُوَ الْجُزْءُ الْمَسْؤولُ عَنْ تَعْرِيفِ بَيَانَاتِ الصَّفْحَة وَتَهْيِئَتِهَا لِلْمُتَصَفِّحْ.",
+        "caption_text": "مرحبا بكم في درس جديد حول هيكلة صفحات الويب باستخدام HTML والتركيز على قسم head."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "قسم head لا يظهر محتواه مباشرة للمستخدم",
+          "يحتوي على معلومات تقنية هامة للمتصفح",
+          "يعد جزءا أساسيا من هيكل HTML5"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "مكونات الـ head الأساسية",
+      "narration": {
+        "spoken_text": "يَحْتَوِي قِسْم head عَلَى عَنَاصِرَ حَيَوِيَّة مِثْل title الَّذِي يَظْهَرُ فِي لِسَانِ الْمُتَصَفِّحْ، وَكَذَلِك meta Tags الَّتِي تُحَدِّدُ تَشْفِيرَ النُّصُوصِ وَمَعْلُومَات SEO لِمُحَرِّكَاتِ الْبَحْثِ.",
+        "caption_text": "تتضمن عناصر head الأساسية title و meta Tags التي تضبط إعدادات الصفحة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر title يحدد عنوان الصفحة في المتصفح",
+          "العنصر meta يحدد ترميز الأحرف charset",
+          "العنصر meta يحدد إعدادات العرض viewport"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "كتابة هيكل الـ HTML",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. نَبْدَأُ دَائِماً بِـ دُوكْ تَايْبْ HTML ثُمَّ نَفْتَحُ عُنْصُر html. دَاخِلَهُ نَضَعُ قِسْم head الَّذِي يَحْتَوِي عَلَى الْبَيَانَاتِ التَّقْنِيَّة لِلصَّفْحَة كَمَا تَرَوْنَ أَمَامَكُمْ فِي هَذَا الْمِثَالِ.",
+        "caption_text": "نبدأ بكتابة هيكل HTML الأساسي مع تعريف DOCTYPE."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Page Title</title>\n  <meta charset=\"UTF-8\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "إغلاق الـ head وبدء الـ body",
+      "narration": {
+        "spoken_text": "بَعْدَ الانْتِهَاءِ مِنْ تَعْرِيفِ الْعَنَاصِرِ فِي head، نَقُومُ بِإِغْلَاقِهِ بِـ End Tag، ثُمَّ نَفْتَحُ قِسْم body. هَذَا الْقِسْمُ هُوَ الْمَكَانُ الْمُخَصَّصُ لِكُلِّ الْمُحْتَوَى الْمَرْئِيِّ الَّذِي سَيَرَاهُ الْمُسْتَخْدِمُ فِي صَفْحَة الْوِبّ.",
+        "caption_text": "نغلق قسم head ونبدأ في كتابة محتوى body المرئي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "  <meta name=\"viewport\" \n        content=\"width=device-width\">\n</head>\n<body>\n  <h1>Welcome</h1>\n  <p>Hello World!</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَحْرِصَ عَلَى تَرْتِيبِ الْعَنَاصِرِ دَاخِل head بِشَكْلٍ صَحِيحٍ. تَأَكَّدْ دَائِماً مِنْ إِغْلَاقِ كُلِّ Start Tag بِـ End Tag مُنَاسِبٍ لِتَجَنُّبِ أَيِّ أَخْطَاءٍ فِي عَرْضِ الصَّفْحَة أَوْ فِي تَهْيِئَة مُحَرِّكَاتِ الْبَحْثِ.",
+        "caption_text": "التزم دائما بإغلاق Tags بشكل صحيح لضمان سلامة الكود."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم دائما ترميز UTF-8",
+          "تأكد من وجود title فريد لكل صفحة",
+          "نظم الـ meta Tags في بداية الـ head"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا فَهْمَ الْهَيْكَلِ الْأَسَاسِيِّ لِلـ head. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُتَابَعَة التَّحَدِّيَاتِ لِتَطْوِيرِ مَهَارَاتِكُمْ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي الدَّرْسِ الْقَادِمِ مِنْ دَوْرَة HTML.",
+        "caption_text": "شكرا لمتابعتكم، استمروا في التدريب وتطبيق ما تعلمتموه اليوم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع مفاهيم الـ head والـ meta",
+          "طبق التحديات البرمجية المتاحة",
+          "استعد للدرس القادم حول الـ Layout"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_head.asp"
+      ]
+    }
+  ]
+}
