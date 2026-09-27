@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "84",
+  "title": "HTML Symbols and Entities",
+  "course": "HTML",
+  "objectives": [
+    "Understand what HTML Symbol Entities are and why we need them",
+    "Learn how to use entity names to display special characters",
+    "Learn how to use decimal and hexadecimal entity numbers",
+    "Explore comprehensive symbol references for currencies and math"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_symbols.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-4946b733b705890e.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_symbols.asp",
+      "source_url": "https://www.w3schools.com/html/html_symbols.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة حول الرموز في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِضَافَة الرُّمُوزِ وَالْحُرُوفِ غَيْرِ الْمَوْجُودَة عَلَى لَوْحَة الْمَفَاتِيحِ إِلَى صَفْحَة الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس رموز لغة HTML وكيفية عرض الحروف الخاصة غير الموجودة على لوحة المفاتيح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لعرض الرموز الخاصة",
+          "إضافة رموز غير موجودة على لوحة المفاتيح",
+          "الاستفادة من Entities لعرض الحروف الخاصة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "مفهوم HTML Symbol Entities",
+      "narration": {
+        "spoken_text": "تَحْتَاجُ أَحْيَاناً إِلَى عَرْضِ رُمُوزٍ لَا تَظْهَرُ عَلَى لَوْحَة الْمَفَاتِيحِ لَدَيْكَ. لِقِيَامِ ذَلِكَ، نَسْتَخْدِمُ مَا يُسَمَّى Entities لِإِضَافَتِهَا بِكُلِّ سُهُولَة دَاخِلَ مَلَفَات HTML.",
+        "caption_text": "نحتاج أحيانا لعرض رموز غير موجودة على لوحة المفاتيح باستخدام Entities في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الرموز غير الموجودة على لوحة المفاتيح",
+          "استخدام الكيانات أو Entities",
+          "إمكانية إضافتها بسهولة في صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "طرق كتابة الرموز والكيانات",
+      "narration": {
+        "spoken_text": "لِإِضَافَة هَذِهِ الرُّمُوزِ إِلَى صَفْحَة الْوِبّ، يُمْكِنُكَ اسْتِخْدَامُ إِمَّا اسْمَ الْكِيَانِ أَوْ رَقْمَ الْكِيَانِ السِّتِّي عَشَرِيّ أَوْ الْعَشَرِيّ لِلتَّعْبِيرِ عَنِ الرَّمْزِ بدقَه.",
+        "caption_text": "يمكن استخدام اسم الكيان أو الرقم العشري أو الست عشري لإضافة الرموز بدقة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "symbols_intro.html",
+        "code": "<p>I will display &euro;</p>\n<p>I will display &#8364;</p>\n<p>I will display &#x20AC;</p>",
+        "highlight_lines": [],
+        "output": "I will display €\nI will display €\nI will display €",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح مثال عرض رمز اليورو",
+      "narration": {
+        "spoken_text": "لَاحِظْ فِي هَذَا الْمِثَالِ كَيْفَ نَعْرِضُ رَمْزَ الْيُورُو بِثَلَاثِ طُرُقٍ مُخْتَلِفَه؛ الأُولَى بِاسْتِخْدَامِ الِاسْم euros، وَالثَّانِيَة بِالرَّقْمِ الْعَشَرِيّ، وَالثَّالِثَة بِرَقْمِ سِتِّي عَشَرِيّ.",
+        "caption_text": "نعرض رمز اليورو باستخدام اسم الكيان والرقم العشري ورقم الستي عشري."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "euro_example.html",
+        "code": "&euro; is entity name\n&#8364; is decimal\n&#x20AC; is hex reference",
+        "highlight_lines": [],
+        "output": "Entity name, decimal, and hex reference produce euro symbol",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة النتيجة المرئية في المتصفح",
+      "narration": {
+        "spoken_text": "تُنْتِجُ هَذِهِ الطُّرُقُ الثَّلَاثُ نَفْسَ النَّتِيجَة الْمَرْئِيَّة تَمَاماً دَاخِلَ مُتَصَفِّحْ الْوِبّ، حَيْثُ يَظْهَرُ رَمْزُ الْيُورُو بِوُضُوحٍ لِجَمِيعِ الزَّوَّارِ.",
+        "caption_text": "تنتج الطرق الثلاث نفس النتيجة المرئية تماما داخل متصفح الويب."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML Symbol Entities rendered in browser"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "المراجع الشاملة للرموز المتنوعة",
+      "narration": {
+        "spoken_text": "تَتَوَفَّرُ مَرَاجِعُ كَامِلَة لِعِدَّة أَنْوَاعٍ مِنَ الرُّمُوزِ؛ مِثْلَ رُمُوزِ العُمُلَاتِ، وَالْأَسْهُمِ، وَالرُّمُوزِ الرِّيَاضِيَّه، وَالْيُونَانِيَّة الَّتِي يُمْكِنُ الِاسْتِعَانَة بِهَا دَائِماً.",
+        "caption_text": "تتوفر مراجع كاملة لرموز العملات والأسهم والرموز الرياضية واليونانية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مرجع رموز العملات Currency Reference",
+          "مرجع الأسهم الكامل Arrows Reference",
+          "مرجع الرموز الرياضية واليونانية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "مجموعات إضافية من الرموز والاشكال",
+      "narration": {
+        "spoken_text": "يُقَدِّمُ النِّظَامُ أَيْضاً مَجْمُوعَاتٍ هَائِلَة مِنَ الرُّمُوزِ، مِثْلَ أَشْكَالِ الْمُرَبَّعَاتِ، وَعَنَاصِرِ الْبِنَاءِ، وَالْأَبْرَاجِ الفلكيَه، وَالْعَمَلِيَّاتِ الحسابيَه، وَرُمُوزِ الطَّقْسِ وَالْمُوسِيقَى.",
+        "caption_text": "يقدم النظام مجموعات هائلة من رموز الطقس والموسيقى وأشكال البناء."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "رموز الطقس Weather Symbols",
+          "الرموز الموسيقية Musical Symbols",
+          "رموز الشطرنج والألعاب والبطاقات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّة اسْتِخْدَام Symbol Entities فِي لغة HTML. نَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِأَنْفُسِكُمْ وَمُرَاجَعَة الرَّوَابِطِ فِي الْوَصْفِ مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "تعرفنا على استخدام Symbol Entities وننتظر تجربتكم للأكواد من خلال الروابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام الكيانات لعرض الرموز الخاصة",
+          "تجربة الأكواد بشكل عملي ومستمر",
+          "متابعة بقية الدورات على منصة CodeGalaxy"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_symbols.asp"
+      ]
+    }
+  ]
+}
