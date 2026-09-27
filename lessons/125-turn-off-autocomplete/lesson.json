@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "2731",
+  "title": "إيقاف خاصية الإكمال التلقائي في لغة HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم أهمية خاصية autocomplete في حقول الإدخال النصبية",
+    "تعلم طريقة تعطيل autocomplete لعنصر input الفردي",
+    "تعلم طريقة تعطيل autocomplete لكامل عناصر form دفعة واحدة",
+    "تطبيق أفضل الممارسات الأمنية لتجربة المستخدم في الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الدرس",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَعْطِيلِ خَاصِّيَّة الْإِكْمَالِ التَّلْقَائِيِّ لِلْمُسْتَخْدِمِينَ فِي حُقُولِ الْإِدْخَالِ عَبْرَ مُتَصَفِّحْ الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML لتعلم تعطيل خاصية autocomplete في حقول الإدخال."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهلا بكم في دورة HTML",
+          "موضوع الدرس هو إيقاف autocomplete",
+          "تحسين الأمان وتجربة المستخدم في الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "مفهوم خاصية Autocomplete",
+      "narration": {
+        "spoken_text": "تَعْمَلُ مِيزَاتُ مُتَصَفِّحْ الْوِبّ عَادَة عَلَى تَخْزِينِ بَيَانَاتِ الْمُسْتَخْدِمِ مِثْلَ الْأَسْمَاءِ والأقيمَة السَّابِقَة لِتَقْدِيمِ اقْتِرَاحَاتٍ سَرِيعَة عِنْدَ الْكِتَابَه، وَلَكِنَّنَا نَحْتَاجُ أَحْيَاناً لِإِيقَافِ هَذِه Attribute لِأَسْبَابٍ تَتَعَلَّقُ بِالْأَمَانِ وَالسِّرِّيَّه.",
+        "caption_text": "تخزن متصفحات الويب البيانات لتقديم اقتراحات سريعة، لكننا قد نحتاج لتعطيلها لأسباب أمنية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفحات تخزن البيانات المدخلة سابقا",
+          "اقتراحات الإكمال التلقائي قد تتعارض مع الخصوصية",
+          "استخدام Attribute autocomplete للتحكم الكامل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "تعطيل Autocomplete في عنصر Input",
+      "narration": {
+        "spoken_text": "لِإِيقَافِ الْإِكْمَالِ التَّلْقَائِيِّ لِحَقْلِ إِدْخَالٍ مُحَدَّدٍ، نَسْتَخْدِم Attribute يُسَمَّى autocomplete مَصْرُوفاً مَعَ الْقِيمَة off ضِمْنَ عُنْصُر input بِدَاخِلِ صَفْحَة الْوِبّ.",
+        "caption_text": "يمكننا إيقاف الإكمال التلقائي لحقل إدخال واحد بإضافة autocomplete off إلى عنصر input."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "input.html",
+        "code": "<input type=\"text\"\nautocomplete=\"off\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح كود حقل الإدخال",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي فِي هَذَا الْكُودِ أَنَّنَا أَنْشَأْنَا عُنْصُر input مِنْ نَوْع text، ثُمَّ أَضَفْنَا Attribute بِاسْم autocomplete وَأَعْطَيْنَاهُ الْقِيمَة off لِمَنْعِ الْمُتَصَفِّحْ مِنْ حِفْظ data.",
+        "caption_text": "أنشأنا عنصر input نصي وأضفنا إليه Attribute autocomplete بالقيمة off لمنع المتصفح من حفظ البيانات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام input بنوع text",
+          "إضافة Attribute autocomplete للتحكم",
+          "تعيين القيمة off لتعطيل الذاكرة المؤقتة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "تعطيل Autocomplete لكامل نموذج Form",
+      "narration": {
+        "spoken_text": "لَيْسَ هَذَا فَقَسَ بَلْ نَسْتَطِيعُ أَيْضاً تَعْطِيلَ خَاصِّيَّة الْإِكْمَالِ التَّلْقَائِيِّ عَلَى مُسْتَوَى النُّمُوذَجِ بِالْكَامِلِ لِجَمِيعِ الْحُقُولِ دُفْعَة وَاحِدَة بِكَاتَبَة attribute دَاخِلَ عُنْصُر form.",
+        "caption_text": "يمكننا أيضا تعطيل الإكمال التلقائي لكامل نموذج form لجميع الحقول دفعة واحدة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form.html",
+        "code": "<form autocomplete=\"off\">\n  <!-- حقول الإدخال هنا -->\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "شرح كود النموذج الشامل",
+      "narration": {
+        "spoken_text": "عِنْدَمَا نَضَع Attribute autocomplete بِقِيمَة off عَلَى عُنْصُر form الرَّئِيسِيِّ، فَإِنَّ جَمِيعَ الْحُقُولِ وَالْعَنَاصِرِ بِدَاخِلِهِ سَتَرِثُ هَذِهِ الْقِيمَة وَتَتَعَطَّلُ فِيهَا مِيزَة autocomplete تِلْقَائِياً.",
+        "caption_text": "عند تطبيق Attribute على عنصر form ترثها كافة حقول الإدخال الداخلية تلقائيا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تطبيق autocomplete off على form",
+          "جميع الحقول الفرعية ترث هذه الخاصية",
+          "توفير الجهد والرمز البرمي النظيف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أفضل الممارسات والأمان",
+      "narration": {
+        "spoken_text": "يُفَضِّلُ الْمُطَوِّرُونَ اسْتِخْدَامَ هَذِهِ الطَّرِيقَة فِي النُّمُوذَجِ الْحَسَّاسَة مِثْلَ صَفَحَاتِ تَسْجِيلِ الدُّخُولِ وَبِطَاقَاتِ الِائْتِمَانِ لِضْمَانِ أَعْلَى مُسْتَوَيَاتِ الْأَمَانِ وَحِمَايَة خُصُوصِيَّة مُسْتَخْدِمِي مَوْقِعِ الْوِبّ.",
+        "caption_text": "يفضل المطورون استخدام هذه التقنية في النماذج الحساسة لحماية خصوصية مستخدمي الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "حماية نماذج تسجيل الدخول والحسابات",
+          "منع تسريب البيانات الشخصية عبر المتصفح",
+          "الالتزام بمعايير الأمان المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "إِلَى هُنَا يَا أَصْدِقَائِي نَكُونُ قَدِ انْتَهَيْنَا مِنْ شَرْحِ كَيْفِيَّة تَعْطِيلِ الْإِكْمَالِ التَّلْقَائِيِّ عَبْر autocomplete فِي HTML. نَتَمَنَّى أَنْ يَكُونَ الشَّرْحُ وَاضِحاً، وَنَدْعُوكُمْ لِمُمَارَسَة هَذِهِ الْأَكْوَادِ بِأَنْفُسِكُمْ.",
+        "caption_text": "بهذا نكون قد انتهينا من شرح تعطيل autocomplete في HTML ونلتقي في الدرس القادم مع المدرب محمود عبدالحميد."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلمنا استخدام Attribute autocomplete",
+          "جربنا إيقافها لعنصر input منفرد",
+          "تعلمنا تطبيقها لكامل عناصر form",
+          "تابعوا معنا بقية دروس دورة HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_autocomplete_off.asp"
+      ]
+    }
+  ]
+}
