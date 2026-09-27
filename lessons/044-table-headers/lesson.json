@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "44",
+  "title": "HTML Table Headers",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام th Elements لتعريف رؤوس الجداول",
+    "تطبيق Vertical Table Headers في تصميم الجداول",
+    "استخدام colspan property لدمج أعمدة الرؤوس",
+    "إضافة caption للتعبير عن عنوان الجدول بالكامل"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_table_headers.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-6836a90a10b22bd4.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_table_headers.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-cc40b65f459afc3c.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_table_headers.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-5ac2dcea9240b0cb.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_table_headers.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة رؤوس الجداول في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِضَافَةِ رُؤُوسٍ لِلْجَدَاوِلِ بِاسْتِخْدَام th Elements لِتَنْظِيمِ الْبَيَانَاتِ بِاكْتِمَالٍ وَاحْتِرَافِيَّة.",
+        "caption_text": "تتيح لنا لغة HTML تنظيم الجداول وإضافة رؤوس واضحة لكل صف وعمود باستخدام العناصر المناسبة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تنظيم جداول البيانات بشكل احترافي",
+          "استخدام العناصر المناسبة لعناوين الأعمدة",
+          "تحسين تجربة المستخدم في قراءة البيانات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_headers_element",
+      "title": "استخدام th Elements",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِالتَّعَرُّفِ عَلَى th Element. هَذَا الْعُنْصُرُ يُمَثِّلُ خَلِيَّة رَأْسٍ دَاخِلَ الْجَدْوَلِ، وَتَظْهَرُ نَصُوصُهُ بِالشَّكْلِ الْعَامِ بِلَوْنٍ عَبِرٍ أَوْ غَمِيقٍ وَمُتَوَسِّطٍ افْتِرَاضِيّاً.",
+        "caption_text": "تعرف عناصر th لتحديد خلايا رؤوس الجداول بدلا من خلايا البيانات العادية td."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_headers.html",
+        "code": "<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n    <th>Age</th>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_code_structure",
+      "title": "هيكل الجدول الكامل",
+      "narration": {
+        "spoken_text": "نُتَابِعُ هُنَا كِتَابَة بَقِيَّةِ الصُّفُوفِ دَاخِل table. نَسْتَخْدِم tr لِلتَّعْبِيرِ عَنِ الصَّفِّ و td لِإِدْخَالِ الْبَيَانَاتِ الْعَادِيَّةِ مِثْلَ الْأَسْمَاءِ وَالْأَعْمَارِ بِدِقَّة تِقْنِيَّة.",
+        "caption_text": "نضيف صفوف البيانات باستخدام عناصر td داخل الجدول بجانب رؤوس th."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_full.html",
+        "code": "  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve</td>\n    <td>Jackson</td>\n    <td>94</td>\n  </tr>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_vertical_headers",
+      "title": "الرؤوس العمودية Vertical Table Headers",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً جَعْلُ الْعَمُودِ الْأَوَّلِ بِكَامِلِهِ رَأْساً لِلْجَدْوَلِ. لِلتَّطْبِيقِ، نَضَع th Element فِي الْحُلَّةِ الْأُولَى مِنْ كُلِّ صَفٍّ لِتُصْبِحَ رَأْساً عَمُودِيّاً رَائِعاً.",
+        "caption_text": "يمكن تحويل العمود الأول في كل صف ليصبح رأس جدول عمودي باستخدام th."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "vertical_headers.html",
+        "code": "<table>\n  <tr>\n    <th>Firstname</th>\n    <td>Jill</td>\n  </tr>\n  <tr>\n    <th>Lastname</th>\n    <td>Smith</td>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_align_headers",
+      "title": "محاذاة رؤوس الجداول CSS text-align",
+      "narration": {
+        "spoken_text": "افْتِرَاضِيّاً، تَكُونُ نُصُوصُ الرُّؤُوسِ فِي وَسَطِ الْخَلِيَّةِ وَبِخَطٍّ عَرِيضٍ. لِتَغْيِيرِ الْمُحَاذَاتِ إِلَى الْيَسَارِ مَثَلاً، نَسْتَخْدِمُ خَاصِيَّة CSS الْمَسَمَّاة text-align.",
+        "caption_text": "تكون رؤوس الجداول متوسطة وعريضة افتراضيا، ويمكن محاذاتها لليسار عبر CSS."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "th {\n  text-align: left;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_colspan_headers",
+      "title": "دمج الأعمدة باستخدام colspan attribute",
+      "narration": {
+        "spoken_text": "هَلْ تُرِيدُ جَعْلَ الرَّأْسِ يَمْتَدُّ فَوْقَ عَمُودَيْنِ أَوْ أَكْثَرَ؟ هَذَا مُمْكِنٌ بِسُهُولَة بِاسْتِخْدَامِ خَاصِيَّة colspan مَعَ عُنْصُر th لِتَحْقِيقِ الدَّمْجِ الْمَطْلُوبِ.",
+        "caption_text": "يمكن لرأس الجدول أن يمتد فوق أكثر من عمود باستخدام الخاصية colspan."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "colspan.html",
+        "code": "<table>\n  <tr>\n    <th colspan=\"2\">Name</th>\n    <th>Age</th>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_table_caption",
+      "title": "إضافة عنوان الجدول Table Caption",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً إِضَافَة عُنْوَانٍ شَامِلٍ لِلْجَدْوَلِ بِاسْتِخْدَام caption tag. يَجِبُ وَضْعُ هَذَا الْعُنْصُرِ مُبَاشَرَة بَعْدَ فَتْح table element لِيُعَبِّرَ عَنْ مُحْتَوَى الْجَدْوَلِ.",
+        "caption_text": "يستخدم عنصر caption لإضافة عنوان رئيسي للجدول ويكتب مباشرة بعد opening tag للجدول."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "caption.html",
+        "code": "<table style=\"width:100%\">\n  <caption>Monthly savings</caption>\n  <tr>\n    <th>Month</th>\n    <th>Savings</th>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    },
+    {
+      "id": "scene_summary",
+      "title": "خلاصة الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَرَّفْنَا عَلَى أَهَمِّيَّة th Elements فِي بِنَاءِ رُؤُوسِ الْجَدَاوِلِ، وَكَيْفِيَّةِ اسْتِخْدَام colspan و caption لِتَحْسِينِ صَفَحَاتِ الْوِيبِ بِاحْتِرَافِيَّة.",
+        "caption_text": "استخدمنا th و caption و colspan لبناء جداول منظمة واحترافية في صفحات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام th لخلايا الرؤوس بدلا من td",
+          "تفعيل colspan لدمج الأعمدة بمرونة",
+          "إضافة caption لوصف محتوى الجدول بالكامل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_headers.asp"
+      ]
+    }
+  ]
+}
