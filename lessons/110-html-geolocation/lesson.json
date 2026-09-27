@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "110",
+  "title": "التعامل مع Geolocation API في HTML5",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام Geolocation API للحصول على موقع المستخدم",
+    "التعامل مع صلاحيات الوصول للموقع في المتصفح",
+    "استخدام getCurrentPosition لاسترجاع الإحداثيات",
+    "معالجة الأخطاء المحتملة عند طلب الموقع",
+    "التعرف على watchPosition لتتبع الموقع"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_geolocation.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-d54e4605f0d971f1.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_geolocation.asp",
+      "source_url": null
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول Geolocation API",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْجَدِيدِ. الْيَوْمَ سَنَتَعَلَّمُ كَيْفِيَّة اسْتِخْدَام Geolocation API لِلْحُصُولِ عَلَى مَوْقِعِ الْمُسْتَخْدِمِ الْجُغْرَافِيِّ بِدِقَّة عَالِيَه، وَهِيَ مِيزَة قَوِيَّة تُعَزِّزُ تَجْرِبَة الْمُسْتَخْدِمِ فِي تَطْبِيقَاتِ الْوِبّ.",
+        "caption_text": "تستخدم Geolocation API للحصول على الموقع الجغرافي للمستخدم في تطبيقات الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم Geolocation API للحصول على الموقع الجغرافي",
+          "تتطلب موافقة المستخدم لضمان الخصوصية",
+          "تعمل فقط في سياقات آمنة مثل HTTPS",
+          "تعتمد على تقنيات GPS في الأجهزة الذكية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "قواعد العمل مع الموقع",
+      "narration": {
+        "spoken_text": "يَجِبُ أَنْ نَعْلَمَ أَنَّ هَذِهِ الْوَاجِهَة تَتَطَلَّبُ اتِّصَالاً آمِناً بِبْرُوتُوكُول HTTPS. عِنْدَ طَلَبِ الْمَوْقِعِ، سَيَقُومُ الْمُتَصَفِّحْ بِسُؤَالِ الْمُسْتَخْدِمِ عَنْ إِذْنِ الْوُصُولِ، وَفِي حَالِ الْمُوَافَقَه، سَيَبْحَثُ الْمُتَصَفِّحْ عَنْ أَفْضَلِ وَسِيلَة مَتَاحَة مِثْل GPS.",
+        "caption_text": "يجب توفر اتصال آمن HTTPS لطلب الموقع، ويقوم المتصفح بطلب إذن المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يجب استخدام HTTPS للوصول للموقع",
+          "يطلب المتصفح إذن المستخدم أولا",
+          "يتم الوصول عبر navigator.geolocation",
+          "تستخدم getCurrentPosition لاسترجاع البيانات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "code_part_1",
+      "title": "كود الحصول على الموقع",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْكُودِ. نَسْتَخْدِمُ الدَّالَّة getCurrentPosition لِتَحْدِيدِ الْمَوْقِعِ. نَقُومُ بِفَحْصِ وُجُود navigator.geolocation، ثُمَّ نَسْتَدْعِي دَالَّة النَّجَاح success لِعَرْضِ خَطِّ الْعَرْضِ وَخَطِّ الطُّولِ دَاخِلَ عُنْصُر HTML.",
+        "caption_text": "استخدام الدالة getCurrentPosition لاسترجاع إحداثيات الموقع."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "script.js",
+        "code": "function getLocation() {\n  if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(\n      success, error);\n  } else {\n    x.innerHTML = \"Not supported.\";\n  }\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "code_part_2",
+      "title": "دالة النجاح ومعالجة البيانات",
+      "narration": {
+        "spoken_text": "فِي دَالَّة success، نَسْتَقْبِلُ كَائِناً يُمَثِّل position. نَقُومُ بِاسْتِخْرَاج coords.latitude و coords.longitude لِعَرْضِهِمَا. هَذِهِ الْبَيَانَاتُ هِيَ الْأَسَاسُ لِتَحْدِيدِ مَوْقِعِ الْمُسْتَخْدِمِ بِدِقَّة عَلَى الْخَرِيطَه.",
+        "caption_text": "استخراج الإحداثيات من كائن position وعرضها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "script.js",
+        "code": "function success(position) {\n  x.innerHTML = \"Lat: \" + \n  position.coords.latitude + \n  \"<br>Long: \" + \n  position.coords.longitude;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "error_handling",
+      "title": "معالجة الأخطاء",
+      "narration": {
+        "spoken_text": "مِنَ الضَّرُورِيِّ أَيْضاً مُعَالَجَة الْأَخْطَاءِ. نَسْتَخْدِمُ دَالَّة error لِلتَّعَامُلِ مَعَ حَالَاتٍ مِثْلَ رَفْضِ الْمُسْتَخْدِمِ لِلْإِذْنِ، أَوْ عَدَمِ تَوَفُّرِ الْمَوْقِعِ، أَوْ حُدُوثِ خَطَأٍ غَيْرِ مَعْرُوفٍ أَثْنَاءَ طَلَبِ الْبَيَانَاتِ.",
+        "caption_text": "معالجة الأخطاء باستخدام كائن error.code."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "error.js",
+        "code": "function error(error) {\n  switch(error.code) {\n    case error.PERMISSION_DENIED:\n      x.innerHTML = \"Denied.\";\n      break;\n    case error.POSITION_UNAVAILABLE:\n      x.innerHTML = \"Unavailable.\";\n      break;\n  }\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "watch_position",
+      "title": "تتبع الموقع",
+      "narration": {
+        "spoken_text": "إِذَا كُنْتَ تُرِيدُ تَتَبُّعَ حَرَكَة الْمُسْتَخْدِمِ بِاسْتِمْرَارٍ، يُمْكِنُكَ اسْتِخْدَام watchPosition بَدَلاً مِنْ getCurrentPosition. هَذِهِ الدَّالَّة تُحَدِّثُ الْمَوْقِعَ تِلْقَائِيّاً كُلَّمَا تَحَرَّكَ الْجِهَازُ، وَهِيَ مُفِيدَة جِدّاً لِتَطْبِيقَاتِ الْمِلَاحَه.",
+        "caption_text": "استخدام watchPosition لتتبع حركة المستخدم بشكل مستمر."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "watch.js",
+        "code": "navigator.geolocation.watchPosition(\n  success, error\n);",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة الْوُصُولِ إِلَى مَوْقِعِ الْمُسْتَخْدِمِ بِاسْتِخْدَام Geolocation API. تَذَكَّرُوا دَائِماً أَهَمِّيَّة الْخُصُوصِيَّة وَمُعَالَجَة الْأَخْطَاءِ بِشَكْلٍ صَحِيحٍ. جَرِّبُوا هَذِهِ الْأَكْوَادَ فِي مَشَارِيعِكُمُ الْقَادِمَة وَلَا تَتَرَدَّدُوا فِي طَرْحِ أَسْئِلَتِكُمْ.",
+        "caption_text": "تعلمنا كيفية استخدام Geolocation API مع مراعاة الخصوصية ومعالجة الأخطاء."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام getCurrentPosition للموقع الحالي",
+          "استخدام watchPosition للتتبع المستمر",
+          "ضرورة معالجة الأخطاء البرمجية",
+          "احترام خصوصية المستخدم دائما"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_geolocation.asp"
+      ]
+    }
+  ]
+}
