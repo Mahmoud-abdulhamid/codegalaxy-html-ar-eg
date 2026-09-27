@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "52",
+  "title": "HTML Ordered Lists",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء القوائم المرقمة باستخدام ol tag",
+    "استخدام li tag لتحديد عناصر القائمة",
+    "تعديل ترقيم القوائم باستخدام type attribute",
+    "التحكم في نقطة بداية الترقيم باستخدام start attribute",
+    "إنشاء قوائم مرقمة متداخلة Nested HTML Lists"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_lists_ordered.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-39b344a5dd9b551b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_ordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_ordered.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-ebb01d674a8048e2.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_ordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_ordered.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-62fe922f2390b378.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_lists_ordered.asp",
+      "source_url": "https://www.w3schools.com/html/html_lists_ordered.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة القوائم المرقمة في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِنْشَاءِ الْقَوَائِمِ الْمُرَقَّمَة بِاسْتِخْدَام ol tag لِتَنْظِيمِ الْعَنَاصِرِ بِأَرْقَامٍ أَوْ حُرُوفٍ.",
+        "caption_text": "نتعرف اليوم على كيفية إنشاء القوائم المرقمة باستخدام ol tag لتنظيم المحتوى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML القوائم المرقمة لتنظيم وترتيب البيانات",
+          "يتم تعريف القائمة المرقمة الأساسية باستخدام ol tag",
+          "تظهر عناصر القائمة المرقمة بترتيب رقمي أو حرفي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_2_basic_code",
+      "title": "الهيكل الأساسي للقائمة المرقمة",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ مَعِي هَذَا الْمِثَالَ الْبَسِيطَ. تَبْدَأُ الْقَوَائِمُ الْمُرَقَّمَة بِاسْتِخْدَام ol tag، وَيَتَمَّ تَعْرِيفُ كُلِّ عُنْصُرٍ دَاخِلَهَا بِاسْتِخْدَام li tag لِيَظْهَرَ مَرْقُوماً بِشَكْلٍ تِلْقَائِيٍّ.",
+        "caption_text": "تبدأ القائمة المرقمة باستخدام ol tag وكل عنصر داخلها يبدأ بـ li tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "ordered_list.html",
+        "code": "<ol>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+        "highlight_lines": [],
+        "output": "1. Coffee\n2. Tea\n3. Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_3_render_view",
+      "title": "معاينة القائمة المرقمة في المتصفح",
+      "narration": {
+        "spoken_text": "عِنْدَ عَرْضِ هَذَا الْكُودِ فِي مُتَصَفِّحِ الْوِبّ، يَظْهَرُ التَّرْقِيمُ تِلْقَائِيّاً بِالأَرْقَامِ مِنَ الْوَاحِدِ حَتَّى النِّهَايَة لِكُلِّ عُنْصُرٍ دَاخِلِ القائمَه.",
+        "caption_text": "يظهر الترقيم تلقائيا بالأرقام في متصفح الويب لكل عنصر داخل القائمة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة القائمة المرقمة في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_4_type_attribute",
+      "title": "التحكم في شكل الترقيم عبر type attribute",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا تَغْيِيرُ شَكْلِ التَّرْقِيمِ بِاسْتِخْدَام type attribute مَع ol tag، حَيْثُ نَسْتَطِيعُ اسْتِخْدَامَ الْحُرُوفِ الْكَبِيرَة وَالصَّغِيرَة أَوْ حَتَّى الأَرْقَامِ الرُّومَانِيَّه.",
+        "caption_text": "يمكننا تغيير شكل الترقيم باستخدام type attribute مع ol tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "list_types.html",
+        "code": "<ol type=\"A\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+        "highlight_lines": [],
+        "output": "A. Coffee\nB. Tea\nC. Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_5_type_options",
+      "title": "خيارات وأنماط type attribute المتعددة",
+      "narration": {
+        "spoken_text": "تَضُمُّ خِيَارَات type attribute قِيَمًا مُتَعَدِّدَه، مِثْلَ الرَّقْمِ وَاحِدٍ لِلأَرْقَامِ، أَوْ الْحَرْفِ الْكَبِير A، أَوْ الْحَرْفِ الصَّغِير a، أَوْ الْحُرُوفِ الرُّومَانِيَّة الْكَبِيرَة I وَالصَّغِيرَة i.",
+        "caption_text": "تضم خيارات type attribute قيما متعددة للأرقام والحروف الرومانية."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_2",
+        "alt": "خيارات وأنماط type attribute المتعددة"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_6_start_attribute",
+      "title": "التحكم في نقطة بداية الترقيم start attribute",
+      "narration": {
+        "spoken_text": "بِالإِضَافَة إِلَى ذَلِكَ، إِذَا أَرَدْنَا أَنْ تَبْدَأَ الْقَائِمَة مِنْ رَقْمٍ مُحَدَّدٍ غَيْرِ الْوَاحِدِ، فَيُمْكِنُنَا اسْتِخْدَام start attribute بِسُهُولَة تَامَّة دَاخِل ol tag.",
+        "caption_text": "يمكننا البدء من رقم محدد غير الواحد باستخدام start attribute داخل ol tag."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "start_attribute.html",
+        "code": "<ol start=\"50\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+        "highlight_lines": [],
+        "output": "50. Coffee\n51. Tea\n52. Milk",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_7_nested_lists",
+      "title": "القوائم المتداخلة Nested HTML Lists",
+      "narration": {
+        "spoken_text": "تَعْلَمُونَ أَنَّهُ تَمَاماً كَالْقَوَائِمِ الأُخْرَى، يُمْكِنُ أَنْ تَتَدَاخَلَ الْقَوَائِمُ فِي بَعْضِهَا؛ حَيْثُ يَحْتَوِي عُنْصُرُ الْقَائِمَة li عَلَى قَائِمَة مُرَقَّمَة جَدِيدَة دَاخِلَهُ.",
+        "caption_text": "يمكن أن تتداخل القوائم بحيث يحتوي عنصر القائمة على قائمة مرقمة جديدة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_3",
+        "alt": "القوائم المتداخلة Nested HTML Lists"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    },
+    {
+      "id": "scene_8_conclusion",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كُلِّ تَفَاصِيلِ الْقَوَائِمِ الْمُرَقَّمَة وَكَيْفِيَّة التَّحَكُّمِ فِي تَرْقِيمِهَا. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الأَكْوادي بِنُفُوسِكُمْ مِنَ الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ.",
+        "caption_text": "تعرفنا على تفاصيل القوائم المرقمة وكيفية التحكم في ترقيمها وتداخلها."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام ol tag لإنشاء القوائم المرقمة",
+          "تخصيص الرمز والترقيم باستخدام type attribute",
+          "تحديد نقطة البداية عبر start attribute",
+          "بناء قوائم متداخلة Nested Lists باحترافية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_lists_ordered.asp"
+      ]
+    }
+  ]
+}
