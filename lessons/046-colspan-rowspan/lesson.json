@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "46",
+  "title": "HTML Table Colspan and Rowspan",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية دمج خلايا جداول الويب باستخدام colspan",
+    "تعلم دمج الصفوف المتعددة في جداول HTML باستخدام rowspan",
+    "تطبيق أمثلة عملية لتصميم الجداول المتقدمة بكفاءة واحترافية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-8024eae33643794f.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_table_colspan_rowspan.asp",
+      "source_url": "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-b37a8af449a67d2a.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_table_colspan_rowspan.asp",
+      "source_url": "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_intro",
+      "title": "مقدمة الدرس",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة دَمْجِ الْخَلَايَا فِي جَدَاوِلِ الْوِبّ لِتَغْطِيَة عِدَّة أَعْمِدَة أَوْ صُفُوفٍ.",
+        "caption_text": "مرحبا بكم في درس دمج خلايا جداول HTML باستخدام colspan و rowspan."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "جداول الويب المرنة وتخطيط البيانات",
+          "استخدام colspan لدمج الأعمدة المتعددة",
+          "استخدام rowspan لدمج الصفوف المختلفة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_colspan_concept",
+      "title": "مفهوم Colspan",
+      "narration": {
+        "spoken_text": "لِجَعْلِ الْخَلِيَّة تَمْتَدُّ عَبْرَ عِدَّة أَعْمِدَه، نَسْتَخْدِم Attribute يُسَمَّى colspan. تُمَثِّلُ قِيمَة هَذَا attribute عَدَدَ الْأَعْمِدَة الْمُرَادِ دَمْجُهَا مَعاً فِي جَدْوَالِ الْوِبّ.",
+        "caption_text": "نستخدم attribute المسمى colspan لتمكين الخلية من الامتداد عبر عدة أعمدة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "خاصية colspan تدمج الأعمدة الأفقية",
+          "تحدد القيمة الرقمية عدد الأعمدة المتجاورة",
+          "تستخدم غالبا في عناصر th و td"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_colspan_code_part1",
+      "title": "كود Colspan القسم الأول",
+      "narration": {
+        "spoken_text": "لَاحِظْ مَعِي هَذَا الْمِثَالَ الْعَمَلِيَّ. نَبْدَأُ بِـ table ثُمَّ صَفّ tr، وَنَضَعُ دَاخِلَ عُنْصُر th خَاصِيَّة colspan بِقِيمَة اِثْنَانِ لِدَمْجِ عَمُودَيْنِ مَعاً.",
+        "caption_text": "نبدأ جدول HTML ونستخدم colspan بقيمة 2 لدمج عمودي الاسم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_colspan.html",
+        "code": "<table>\n  <tr>\n    <th colspan=\"2\">Name</th>\n    <th>Age</th>\n  </tr>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_colspan_code_part2",
+      "title": "كود Colspan القسم الثاني",
+      "narration": {
+        "spoken_text": "نُتَبِعُ ذَلِكَ بِإِضَافَة صُفُوفِ الْبَيَانَاتِ عَبْرَ عُنْصُر tr وَخَلَايَا td لِتَحْوِيَ الْأَسْمَاءَ وَالْأَعْمَارَ، ثُمَّ نُغْلِقُ عُنْصُر table بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "نكمل بناء صفوف بيانات الجدول لتوضيح تأثير دمج الأعمدة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_colspan_part2.html",
+        "code": "  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>43</td>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_colspan_result",
+      "title": "معاينة Colspan",
+      "narration": {
+        "spoken_text": "تَظْهَرُ النَّتِيجَة هُنَا فِي الْمُتَصَفِّحِ مَعَ دَمْجِ عُنْصُرِ الِاسْمِ لِيَشْغَلَ عَمُودَيْنِ مَعاً، بَيْنَمَا يَبْقَى عَمُودُ الْعُمْرِ فِي مَكَانِهِ بِكَفَاءَه.",
+        "caption_text": "معاينة جدول الويب بعد تطبيق خصائص colspan بنجاح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة كود colspan في متصفح الويب"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_rowspan_concept",
+      "title": "مفهوم Rowspan",
+      "narration": {
+        "spoken_text": "أَمَّا لِجَعْلِ الْخَلِيَّة تَمْتَدُّ عَبْرَ عِدَّة صُفُوفٍ رَأْسِيَّه، فَنَسْتَخْدِم attribute يُسَمَّى rowspan. قِيمَة rowspan تُمَثِّلُ عَدَدَ الصُّفُوفِ الْمُرَادِ دَمْجُهَا طُولِيّاً.",
+        "caption_text": "نستخدم attribute المسمى rowspan لتمكين الخلية من الامتداد عبر عدة صفوف رأسية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "خاصية rowspan تدمج الصفوف الرأسية",
+          "تحدد القيمة الرقمية عدد الصفوف للأسفل",
+          "تساعد في تنظيم البيانات المتكررة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_rowspan_code_part1",
+      "title": "كود Rowspan القسم الأول",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ إِلَى مِثَال rowspan. نُشَئِّدُ جَدْوَلاً جَدِيداً، وَنَضَعُ فِي الصَّفِّ الثَّانِي عُنْصُراً يَمْتَدُّ لِصَفَّيْنِ اِثْنَيْنِ بِاسْتِخْدَام rowspan.",
+        "caption_text": "إنشاء جدول ويب وتطبيق rowspan بقيمة 2 لدمج صفوف الهاتف."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_rowspan.html",
+        "code": "<table>\n  <tr>\n    <th>Name</th>\n    <td>Jill</td>\n  </tr>\n  <tr>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_rowspan_code_part2",
+      "title": "كود Rowspan القسم الثاني",
+      "narration": {
+        "spoken_text": "نُتَبِعُ ذَلِكَ بِكِتَابَة rowspan تُسَاوِي اِثْنَانِ مَعَ نَصِّ الْهَاتِفِ، ثُمَّ نُضِيفُ بَقِيَّة أَرْقَامِ الْهَوَاتِفِ وَنُغْلِقُ التَّاجِزَ بِشَكْلٍ تِقْنِيٍّ سَلِيمٍ.",
+        "caption_text": "إكمال هيكل الجدول لعرض دمج الصفوف بشكل منظم."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_rowspan_part2.html",
+        "code": "    <th rowspan=\"2\">Phone</th>\n    <td>555-1234</td>\n  </tr>\n  <tr>\n    <td>555-8745</td>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_rowspan_result",
+      "title": "معاينة Rowspan",
+      "narration": {
+        "spoken_text": "تُوَضِّحُ هَذِهِ الصُّورَة كَيْفَ ظَهَرَتْ خَلِيَّة الْهَاتِفِ مُمْتَدَّة عَلَى صَفَّيْنِ رَأْسِيَّيْنِ فِي مُتَصَفِّحِ الْوِبّ بِكُلِّ سُهُولَة واحترافيَه.",
+        "caption_text": "معاينة نتيجة استخدام rowspan لتوزيع أرقام الهواتف داخل الجدول."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_2",
+        "alt": "معاينة كود rowspan في متصفح الويب"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    },
+    {
+      "id": "scene_summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى دَمْجِ الْأَعْمِدَة بِاسْتِخْدَام colspan وَدَمْجِ الصُّفُوفِ بِـ rowspan. نَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ مَعَ مُمَارَسَاتٍ أَكْثَرَ تَقَدُّماً فِي لُغَة HTML.",
+        "caption_text": "خلاصة دمج الخلايا في جداول HTML باستخدام خصائص colspan و rowspan."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام colspan لدمج الأعمدة الأفقية",
+          "استخدام rowspan لدمج الصفوف الرأسية",
+          "تصميم جداول ويب متقدمة ومنظمة",
+          "تابعون في الدروس القادمة مع محمود عبدالحميد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+      ]
+    }
+  ]
+}
