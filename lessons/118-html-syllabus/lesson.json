@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "118",
+  "title": "الهيكل الأساسي لصفحات الويب باستخدام HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم الهيكل العام لمستند HTML",
+    "التعرف على وظيفة DOCTYPE",
+    "التمييز بين head و body",
+    "كتابة أول صفحة ويب بسيطة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_syllabus.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-ee343008910d6e78.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "",
+      "source_url": "https://www.w3schools.com/html/html_syllabus.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى الْهَيْكَلِ الْأَسَاسِيِّ لِصَفْحَة الْوِبّ، وَكَيْفَ نَبْدَأُ بِبِنَاءِ مُحْتَوَى مَوَاقِعِ الْوِبّ بِطَرِيقَة احْتِرَافِيَّة وَمُبَسَّطَة لِلْمُبْتَدِئِينَ.",
+        "caption_text": "مرحبا بكم في درس الهيكل الأساسي لصفحات الويب باستخدام لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML هي حجر الأساس لبناء صفحات الويب",
+          "لا تتطلب خبرة برمجية سابقة للبدء",
+          "تعتمد على استخدام Tags و Elements لتنظيم المحتوى"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "concepts",
+      "title": "المفاهيم الأساسية",
+      "narration": {
+        "spoken_text": "تَعْتَمِدُ لُغَة HTML عَلَى اسْتِخْدَام Tags، وَهِيَ رُمُوزٌ خَاصَّة تُحَدِّدُ كَيْفِيَّة عَرْضِ الْمُحْتَوَى. كُلُّ Element يَتَكَوَّنُ مِنْ Start Tag و End Tag، وَبَيْنَهُمَا نَضَعُ الْمُحْتَوَى الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ فِي الْمُتَصَفِّحْ.",
+        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "Start Tag: Start Tag مثل <h1>",
+          "End Tag: End Tag مثل </h1>",
+          "Element: هو المكون الكامل من البداية للنهاية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "code_part1",
+      "title": "كتابة الهيكل الأساسي",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. نَبْدَأُ دَائِماً بِتَعْرِيفِ دُوكْ تَايْبْ HTML لِإِخْبَارِ الْمُتَصَفِّحْ بِأَنَّنَا نَسْتَخْدِمُ أَحْدَثَ إِصْدَارٍ. بَعْدَهَا نَفْتَحُ الْعُنْصُرَ الْجِذْرِيَّ html الَّذِي يَحْتَوِي عَلَى كُلِّ شَيْءٍ دَاخِلَ الصَّفْحَه.",
+        "caption_text": "يبدأ المستند بتعريف DOCTYPE HTML ثم Root Elementي html."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "code_part2",
+      "title": "أقسام الصفحة",
+      "narration": {
+        "spoken_text": "يَنْقَسِمُ الْمُسْتَنَدُ إِلَى قِسْمَيْنِ رَئِيسِيَّيْنِ. قِسْم head يَحْتَوِي عَلَى مَعْلُومَاتٍ مِثْل title، وَقِسْم body الَّذِي نَضَعُ فِيهِ كُلَّ الْمُحْتَوَى الْمَرْئِيِّ الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ، مِثْلَ الْعَنَاوِينِ وَالْفِقَرَاتِ النَّصِّيَّه.",
+        "caption_text": "يحتوي head على البيانات الوصفية بينما يحتوي body على المحتوى المرئي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "output",
+      "title": "معاينة النتيجة",
+      "narration": {
+        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي أَيِّ مُتَصَفِّحْ مِثْل Chrome أَوْ Edge، سَتَظْهَرُ الصَّفْحَة بِهَذَا الشَّكْلِ. الْعُنْصُر h1 يَظْهَرُ بِخَطٍّ كَبِيرٍ وَعَرِيضٍ، بَيْنَمَا يَظْهَرُ الْعُنْصُر p كَفِقْرَة نَصِّيَّة عَادِيَّه.",
+        "caption_text": "هكذا تظهر العناصر في متصفح الويب بعد معالجة الكود."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "صورة توضح نتيجة الكود في المتصفح"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "لِتَكُونَ مُطَوِّراً مُحْتَرِفاً، احْرِصْ دَائِماً عَلَى إِغْلَاقِ جَمِيع Tags بِشَكْلٍ صَحِيحٍ. كَمَا يُفَضَّلُ تَنْظِيمُ الْكُودِ بِاسْتِخْدَامِ الْمَسَافَاتِ الْبَادِئَة لِيَكُونَ سَهْلَ الْقِرَاءَة وَالصِّيَانَة لِفَرِيقِ الْعَمَلِ.",
+        "caption_text": "التزم دائما بإغلاق Tags وتنظيم الكود لسهولة القراءة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أغلق جميع Tags المفتوحة",
+          "استخدم المسافات البادئة لتنظيم الكود",
+          "اكتب الكود بأسلوب واضح ومنظم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَلَّمْنَا الْهَيْكَلَ الْأَسَاسِيَّ لِـ HTML. أَدْعُوكُمْ لِتَجْرِبَة هَذَا الْكُودِ بِنَفْسِكُمْ عَبْرَ رَابِطِ التَّعَلُّمِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو، وَلَا تَتَرَدَّدُوا فِي طَرْحِ أَسْئِلَتِكُمْ.",
+        "caption_text": "شكرا لمتابعتكم، ابدأوا بتجربة الأكواد بأنفسكم الآن."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجعوا الأكواد في محرر W3Schools",
+          "استمروا في الممارسة العملية",
+          "تابعوا الدروس القادمة لتطوير مهاراتكم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_syllabus.asp"
+      ]
+    }
+  ]
+}
