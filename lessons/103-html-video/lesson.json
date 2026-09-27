@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "103",
+  "title": "HTML Video Elements and Attributes",
+  "course": "HTML",
+  "objectives": [
+    "Learn how to embed videos in web pages using the video element",
+    "Understand the purpose of controls width and height attributes",
+    "Use source elements to provide alternative video formats",
+    "Implement autoplay and muted attributes correctly"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_video.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-e3e05c55445669b6.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html5_video.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-e89e501d6c899b3f.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html5_video.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-e400fdb0c8778198.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html5_video.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة عنصر الفيديو",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة عَرْضِ مِلْفَاتِ الْفِيدِيُ فِي صَفْحَة الْوِبّ بِاسْتِخْدَام video element بِشَكْلٍ سَلِيمٍ.",
+        "caption_text": "مرحبا بكم في درس تشغيل الفيديو باستخدام video element في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML عنصر video لعرض مقاطع الفيديو",
+          "إدراج الوسائط المتعددة يعزز تفاعل المستخدمين في صفحات الويب",
+          "دعم الملفات المرئية أصبح أساسيا في مواقع الويب الحديثة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "الكود الأساسي للفيديو",
+      "narration": {
+        "spoken_text": "لِعَرْضِ فِيدْيُو بِنَجَاحٍ نَسْتَخْدِم video element مَعَ تَحْدِيدِ الأَبْعَاد width و height وَإِضَافَة controls attribute لِتَمْكِينِ الْمُسْتَخْدِمِ مِنَ التَّحَكُّمِ فِي التَّشْغِيلِ.",
+        "caption_text": "استخدام video element مع تحديد الأبعاد وإضافة controls attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "video.html",
+        "code": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  Your browser does not support the video tag.\n</video>",
+        "highlight_lines": [],
+        "output": "مقطع فيديو مع أدوات التحكم",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "شرح وظائف العناصر",
+      "narration": {
+        "spoken_text": "يَسْمَحُ لَنَا source element بِتَحْدِيدِ مِلَفَّاتِ فِيدْيُو بَدِيلَة لِيَخْتَارَ الْمُتَصَفِّحْ التَّنْسِيقَ الْمُنَاسِبَ. وَالنَّصُّ بَيْن video tags يَظْهَرُ فَقَطْ عِنْدَمَا لَا يَدْعَمُ الْمُتَصَفِّحْ هَذَا الْعُنْصُرَ.",
+        "caption_text": "يسمح source element بتحديد ملفات بديلة بينما يظهر النص عند عدم دعم المتصفح."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "controls attribute تضيف أزرار التشغيل والإيقاف والصوت",
+          "تحديد width وheight يمنع اهتزاز الصفحة أثناء تحميل الفيديو",
+          "source element يوفر مرونة في اختيار صيغ الملفات المدعومة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "خاصية التشغيل التلقائي",
+      "narration": {
+        "spoken_text": "لِبَدْءِ تَشْغِيلِ الْفِيدْيُو تِلْقَائِيّاً نَسْتَخْدِم autoplay attribute. وَلَكِنْ لَاحِظْ أَنَّ مُعْظَمَ مُتَصَفِّحَاتُ Chromium تَمْنَعُ التَّشْغِيلَ التِّلْقَائِيَّ لِلْأَصْوَاتِ دُونَ تَدَخُّلِ الْمُسْتَخْدِمِ.",
+        "caption_text": "استخدام autoplay attribute لبدء تشغيل الفيديو تلقائيا."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "autoplay.html",
+        "code": "<video width=\"320\" height=\"240\" autoplay>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  Your browser does not support the video tag.\n</video>",
+        "highlight_lines": [],
+        "output": "فيديو يعمل تلقائياً",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "التشغيل التلقائي الصامت",
+      "narration": {
+        "spoken_text": "لِتَجَاوُزِ حَظْرِ الْمُتَصَفِّحَاتِ، نَسْتَخْدِم muted attribute بَعْد autoplay لِيَبْدَأَ الْفِيدْيُو بِالتَّشْغِيلِ التِّلْقَائِيِّ صَامِتاً وَدُونَ أَيِّ مُشْكِلَة فِي التَّنْفِيذِ.",
+        "caption_text": "إضافة muted بعد autoplay للسماح بالتشغيل التلقائي الصامت."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "muted.html",
+        "code": "<video width=\"320\" height=\"240\" autoplay muted>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  Your browser does not support the video tag.\n</video>",
+        "highlight_lines": [],
+        "output": "فيديو صامت يعمل تلقائياً",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "معاينة الفيديو في المتصفح",
+      "narration": {
+        "spoken_text": "نَرَى هُنَا كَيْفَ يَعْرِضُ الْمُتَصَفِّحْ مِلْفَ الْفِيدْيُو مَعَ أَدَوَاتِ التَّحَكُّمِ وَالتَّنْسِيقَاتِ الْمُطَبَّقَة مِنْ خِلَالِ الْأَكْوَادِ الَّتِي كَتَبْنَاهَا فِي صَفْحَة الْوِبّ.",
+        "caption_text": "معاينة عنصر الفيديو وأدوات التحكم في متصفح الويب."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML video element rendered in browser"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "صيغ الفيديو المدعومة",
+      "narration": {
+        "spoken_text": "تَدْعَمُ لُغَة HTML ثَلَاثَة تَنْسِيقَاتٍ رَئِيسِيَّة لِلْفِيدْيُو وَهِي MP4 و WebM و Ogg. يَجِبُ دَائِماً تَوْفِيرُ أَكْثَرَ مِنْ صِيغَة لِضَمَانِ التَّوَافُقِيَّة التَّامَّة بَيْنَ جَمِيعِ الْمُتَصَفِّحَاتِ.",
+        "caption_text": "أبرز تنسيقات الفيديو المدعومة في المتصفحات الحديثة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تنسيق MP4 مدعوم على نطاق واسع في جميع المتصفحات الحديثة",
+          "تنسيق WebM يوفر ضغطا عاليا وجودة ممتازة",
+          "تنسيق Ogg يعتبر خيارا بديلا وموثوقا لبعض المتصفحات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ تَعَرَّفْنَا عَلَى كَيْفِيَّة إِدْرَاجِ الْفِيدْيُو بِاسْتِخْدَام video element وَإِضَافَة controls و autoplay و muted لِتَحْسِينِ تَجْرِبَة الْمُسْتَخْدِمِ بِشَكْلٍ احْتِرَافِيٍّ.",
+        "caption_text": "خلاصة استخدام عناصر الفيديو والخصائص المتقدمة في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام video element لعرض الوسائط المرئية",
+          "التحكم في العرض والأبعاد والصوت بكل إتقان",
+          "تابعونا في الدروس القادمة للمزيد من المهارات المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_video.asp"
+      ]
+    }
+  ]
+}
