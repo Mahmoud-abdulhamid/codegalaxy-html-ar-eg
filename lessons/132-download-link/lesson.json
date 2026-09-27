@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "132",
+  "title": "إنشاء روابط التحميل باستخدام HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام download attribute في HTML",
+    "تعلم ربط ملفات للتحميل المباشر عبر المتصفح",
+    "التحكم في اسم الملف المحمل عبر المتصفح"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_download_link.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول روابط التحميل",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَةِ HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّةِ إِنْشَاءِ رَابِطِ تَحْمِيلٍ مُبَاشِرٍ لِلْمِلَفَّاتِ بِاسْتِخْدَامِ لُغَةِ الْوِبّ، وَذَلِكَ لِتَمْكِينِ الْمُسْتَخْدِمِ مِنْ تَحْمِيلِ الْمُحْتَوَى بَدَلًا مِنْ فَتْحِهِ مُبَاشَرَه فِي الْمُتَصَفِّحْ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML لتعلم كيفية إنشاء روابط تحميل مباشرة للملفات باستخدام لغة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "إنشاء روابط تحميل مباشرة للملفات",
+          "استخدام download attribute في HTML",
+          "تحسين تجربة المستخدم في صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "مفهوم download attribute",
+      "narration": {
+        "spoken_text": "لِتَفْعِيلِ خَاصِيَّةِ التَّحْمِيلِ، نَسْتَخْدِم download attribute دَاخِل a element. هَذِهِ الْخَاصِيَّه تُخْبِرُ الْمُتَصَفِّحْ بِأَنَّ الرَّابِطَ مَوْجُودٌ لِلتَّحْمِيلِ، وَلَيْسَ لِلِانْتِقَالِ إِلَى صَفْحَه أُخْرَى، وَيَجِبُ أَنْ يَكُونَ هُنَاك href attribute مُحَدَّدٌ لِتَعْمَلَ هَذِهِ الْخَاصِيَّه بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "نستخدم download attribute داخل a element لإخبار المتصفح بأن الرابط مخصص للتحميل، مع ضرورة وجود href attribute."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "يستخدم download attribute مع a element",
+          "يجب تحديد href attribute ليعمل الرابط",
+          "المتصفح يكتشف امتداد الملف تلقائيا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    },
+    {
+      "id": "code_example_1",
+      "title": "مثال على رابط تحميل بسيط",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ هَذَا الْكُودَ. نَقُومُ بِكِتَابَةِ a element مَع href يُشِيرُ إِلَى مَسَارِ الْمِلَفِّ، ثُمَّ نُضِيف download attribute بِدُونِ قِيمَه. فِي هَذِهِ الْحَالَه، سَيَقُومُ الْمُتَصَفِّحْ بِتَحْمِيلِ الْمِلَفِّ بِاسْمِهِ الْأَصْلِيِّ الْمَوْجُودِ عَلَى السِّيرْفَرِ.",
+        "caption_text": "مثال لاستخدام download attribute بدون قيمة، حيث يستخدم المتصفح اسم الملف الأصلي للتحميل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<a href=\"/images/myw3schoolsimage.jpg\" download>\n  <img src=\"/images/myw3schoolsimage.jpg\" \n  alt=\"W3Schools\">\n</a>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    },
+    {
+      "id": "code_example_2",
+      "title": "تخصيص اسم الملف المحمل",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً تَحْدِيدُ اسْمٍ جَدِيدٍ لِلْمِلَفِّ عِنْدَ تَحْمِيلِهِ، وَذَلِكَ بِإِعْطَاءِ قِيمَه لَةِ download attribute. فِي هَذَا الْمِثَالِ، سَيَتِمُّ تَحْمِيلُ الْمِلَفِّ بِاسْم w3logo دُوتْ جِي بِي جِي، بَدَلًا مِنَ الِاسْمِ الْأَصْلِيِّ الطَّوِيلِ.",
+        "caption_text": "يمكن تحديد اسم جديد للملف المحمل عبر إعطاء قيمة لـ download attribute."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<a href=\"/images/myw3schoolsimage.jpg\" \n   download=\"w3logo\">\n  <img src=\"/images/myw3schoolsimage.jpg\" \n    alt=\"W3Schools\">\n</a>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "ملاحظات تقنية هامة",
+      "narration": {
+        "spoken_text": "تَذَكَّرُوا يَا أَصْدِقَائِي أَنَّ الْمُتَصَفِّحْ يَقُومُ بِاكْتِشَافِ امْتِدَادِ الْمِلَفِّ تِلْقَائِيّاً. لَا تُوجَدُ قُيُودٌ عَلَى الْقِيَمِ الْمُسْتَخْدَمَه، وَلَكِنْ يُفَضَّلُ دَائِماً اخْتِيَارُ أَسْمَاءٍ وَاضِحَه لِلْمِلَفَّاتِ لِتَحْسِينِ تَجْرِبَةِ الْمُسْتَخْدِمِ عِنْدَ التَّحْمِيلِ.",
+        "caption_text": "المتصفح يكتشف امتداد الملف تلقائيا، وينصح باختيار أسماء واضحة للملفات المحملة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح يكتشف امتداد الملف تلقائيا",
+          "لا قيود على قيم download attribute",
+          "استخدم أسماء ملفات واضحة للمستخدم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَلَّمْنَا كَيْفِيَّةِ إِنْشَاءِ رَوَابِطِ تَحْمِيلٍ احْتِرَافِيَّه بِاسْتِخْدَام HTML. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ وَمُشَاهَدَةِ النَّتَائِجِ فِي الْمُتَصَفِّحْ. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "تعلمنا كيفية إنشاء روابط تحميل احترافية باستخدام HTML. جربوا الأكواد بأنفسكم لمزيد من الفهم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تم شرح download attribute",
+          "تم توضيح كيفية تغيير اسم الملف",
+          "راجعوا المصدر لمزيد من التفاصيل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_download_link.asp"
+      ]
+    }
+  ]
+}
