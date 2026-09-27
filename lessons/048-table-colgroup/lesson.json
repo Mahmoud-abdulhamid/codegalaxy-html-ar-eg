@@ -1,0 +1,287 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "48",
+  "title": "HTML Table Colgroup",
+  "course": "HTML",
+  "objectives": [
+    "التعرف على عنصر colgroup لتنسيق أعمدة الجدول",
+    "استخدام عنصر col لتحديد مواصفات الأعمدة وخصائصها",
+    "التحكم في أعمدة متعددة بألوان وأنماط مختلفة",
+    "استخدام خاصية visibility collapse لإخفاء الأعمدة"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_table_colgroup.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-b6ce09fad5aa4256.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_table_colgroup.asp",
+      "source_url": "https://www.w3schools.com/html/html_table_colgroup.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-81ef5552d3e64261.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_table_colgroup.asp",
+      "source_url": "https://www.w3schools.com/html/html_table_colgroup.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-ad371087309797ac.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_time_colgroup.asp",
+      "source_url": "https://www.w3schools.com/html/html_table_colgroup.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن colgroup",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَسْيِيرِ وَتَنْسِيقِ أَعْمِدَة الْجَدْوَلِ بِاسْتِخْدَامِ عُنْصِر colgroup وَعُنْصِر col لِتَحْقِيقِ تَصْمِيمٍ مُنَظَّمٍ فِي صَفْحَة الْوِبّ.",
+        "caption_text": "ستعرف اليوم على كيفية تنسيق أعمدة الجدول باستخدام عنصر colgroup وعنصر col لترتيب صفحة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم لغة HTML لتصميم جداول منظمة ومتناسقة",
+          "يساعد عنصر colgroup في تنسيق أعمدة محددة بكفاءة",
+          "نتعلم تطبيق الأنماط والخصائص مباشرة على الأعمدة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_2_concepts",
+      "title": "المفاهيم والقواعد الأساسية",
+      "narration": {
+        "spoken_text": "يُسْتَخْدَمُ عُنْصِر colgroup كَحَاوِيَة لِتَحْدِيدِ خَصَائِصِ الْأَعْمِدَه، وَيَجِبُ أَنْ يَكُونَ ابْناً مُبَاشِراً لِعُنْصِر table، وَيُوَضَعُ قَبْلَ أَيِّ عُنْصِرِ جَدْوَلٍ آخَرَ وَبَعْدَ عُنْصِر caption إِنْ وُجِدَ، مَعَ اسْتِخْدَام span لِتَحْدِيدِ عَدَدِ الْأَعْمِدَه.",
+        "caption_text": "يستخدم عنصر colgroup كحاوية لتحديد خصائص الأعمدة ويجب وضعه قبل عناصر الجدول وبعد عنصر caption."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عنصر colgroup يوضع مباشرة داخل table",
+          "يتم تحديد كل مجموعة باستخدام عنصر col",
+          "خاصية span تحدد عدد الأعمدة المستهدفة بالتنسيق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_3_code_first",
+      "title": "كتابة الكود الأساسي الأول",
+      "narration": {
+        "spoken_text": "نُشَاهِدُ فِي هَذَا الْمِثَالِ كَيْفَ نُطَبِّقُ التَّنْسِيقَ عَلَى أَوَّلِ عَمُودَيْنِ فِي الْجَدْوَلِ، حَيْثُ نَسْتَخْدِمُ عُنْصِر colgroup وَدَاخِلَهُ عُنْصِر col مَعَ خَاصِيَّة span وَخَاصِيَّة style لِتَغْيِيرِ لَوْنِ الْخَلْفِيَّه.",
+        "caption_text": "نطبق التنسيق هنا على اول عمودين في الجدول باستخدام colgroup وcol مع خاصية style."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "table.html",
+              "code": "<table>\n  <colgroup>\n    <col span=\"2\" style=\"background-color: #D6EEEE\">\n  </colgroup>\n  <tr>\n    <th>MON</th>\n    <th>TUE</th>\n  </tr>\n</table>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "Table with styled columns",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_4_css_properties",
+      "title": "خصائص CSS المسموحة",
+      "narration": {
+        "spoken_text": "احْرِصْ عَلَى مَعْرِفَة أَنَّ هُنَاكَ مَجْمُوعَة مَحْدُودَة جِدّاً مِنْ خَصَائِص CSS الْمَسْمُوحِ اسْتِخْدَامُهَا مَع colgroup، وَهِيَ خَصَائِصُ الْعَرْضِ وَالرُّؤْيَة وَالْخَلْفِيَّة وَالْحُدُودِ، فَأَيُّ خَاصِيَّة أُخْرَى لَنْ يَكُونَ لَهَا أَيُّ تَأْثِيرٍ.",
+        "caption_text": "هناك مجموعة محدودة فقط من خصائص CSS المسموح استخدامها مع colgroup مثل العرض والخلفية والحدود."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "خاصية width لتحديد عرض الأعمدة",
+          "خاصية visibility للتحكم في ظهور الأعمدة",
+          "خسائص background وborder فقط المسموحة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_5_multiple_cols",
+      "title": "استخدام عناصر col متعددة",
+      "narration": {
+        "spoken_text": "إِذَا أَرَدْنَا تَنْسِيقَ عِدَّة أَعْمِدَة بِأَنْمَاطٍ وَأَلْوَانٍ مُخْتَلِفَه، يُمْكِنُنَا اسْتِخْدَامُ أَكْثَرَ مِنْ عُنْصِر col دَاخِلَ حَاوِيَة colgroup، حَيْثُ يُحَدِّدُ كُلُّ عُنْصِرٍ مَجْمُوعَة مُسْتَقِلَّه.",
+        "caption_text": "إذا أردنا تنسيق عدة أعمدة بأنماط مختلفة، يمكننا استخدام أكثر من عنصر col داخل colgroup."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "multi-col.html",
+              "code": "<table>\n  <colgroup>\n    <col span=\"2\" style=\"background-color: #D6EEEE\">\n    <col span=\"3\" style=\"background-color: pink\">\n  </colgroup>\n  <tr>\n    <th>MON</th>\n    <th>TUE</th>\n    <th>WED</th>\n  </tr>\n</table>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "Table with multiple styled columns",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_6_empty_cols",
+      "title": "استخدام عناصر col فارغة",
+      "narration": {
+        "spoken_text": "لِتَنْسِيقِ أَعْمِدَة تَقَعُ فِي مُنْتَصَفِ الْجَدْوَلِ، يُمْكِنُنَا إِدْرَاجُ عُنْصِر col فَارِغٍ بِدُونِ أَيِّ أَنْمَاطٍ لِلْأَعْمِدَة السَّابِقَه، ثُمَّ تَطْبِيقِ التَّنْسِيقِ عَلَى الْعَمُودِ الْمَطْلُوبِ بَعْدَهَا.",
+        "caption_text": "لتنسيق أعمدة في منتصف الجدول، يمكننا إدراج عنصر col فارغ بدون أنماط للأعمدة السابقة."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "empty-col.html",
+              "code": "<table>\n  <colgroup>\n    <col span=\"3\">\n    <col span=\"2\" style=\"background-color: pink\">\n  </colgroup>\n  <tr>\n    <th>MON</th>\n    <th>TUE</th>\n    <th>WED</th>\n  </tr>\n</table>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "Table with middle columns styled",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_7_hide_columns",
+      "title": "إخفاء الأعمدة في الجداول",
+      "narration": {
+        "spoken_text": "نَسْتَطِيعُ أَيْضاً إِخْفَاءَ أَعْمِدَة مُعَيَّنَة فِي الْجَدْوَلِ بِسُهُولَة تَامَّه، وَذَلِكَ بِاسْتِخْدَامِ خَاصِيَّة visibility مَعَ قِيمَة collapse دَاخِلَ عُنْصِر col لِتُخْفَى الْأَعْمِدَة الْمَسْهُوفَه.",
+        "caption_text": "نستطيع أيضا إخفاء أعمدة معينة في الجدول بسهولة تامة باستخدام خاصية visibility مع قيمة collapse."
+      },
+      "visual": {
+        "type": "sequence",
+        "steps": [
+          {
+            "at_fraction": 0.0,
+            "visual": {
+              "type": "code",
+              "language": "html",
+              "filename": "hide-col.html",
+              "code": "<table>\n  <colgroup>\n    <col span=\"2\">\n    <col span=\"3\" style=\"visibility: collapse\">\n  </colgroup>\n  <tr>\n    <th>MON</th>\n    <th>TUE</th>\n  </tr>\n</table>",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          },
+          {
+            "at_fraction": 0.65,
+            "visual": {
+              "type": "code",
+              "language": "text",
+              "filename": "OUTPUT - illustrative",
+              "code": "Table with hidden columns",
+              "highlight_lines": [],
+              "output": null,
+              "output_status": "not_applicable",
+              "verification_ref": null
+            }
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    },
+    {
+      "id": "scene_8_conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "إِلَى هُنَا نَكُونُ قَدِ انْتَهَيْنَا مِنْ شَرْحِ كَيْفِيَّة اسْتِخْدَام colgroup وَcol لِتَنْسِيقِ وَإِخْفَاءِ أَعْمِدَة الْجَدْوَلِ بِاحْتِرَافِيَّه. تَدَرَّبُوا عَلَى هَذِهِ الْأَكْوادي لِتَعْزِيزِ مَهَارَاتِكُمُ الْبَرْمَجِيَّه، وَنَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ.",
+        "caption_text": "انتهينا من شرح استخدام colgroup وcol لتنسيق وإخفاء أعمدة الجدول باحترافية تامة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تم شرح استخدام colgroup وcol بوضوح",
+          "تعرفنا على خصائص CSS المسموحة والأعمدة المخفية",
+          "تابعوا تطبيق الأكواد عبر الرابط الموجود في الوصف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_colgroup.asp"
+      ]
+    }
+  ]
+}
