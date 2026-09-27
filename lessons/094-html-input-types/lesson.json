@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "94",
+  "title": "HTML Input Types Comprehensive Guide",
+  "course": "HTML",
+  "objectives": [
+    "Understand the purpose of the input element in HTML forms",
+    "Learn various input types like text, password, and submit",
+    "Master input restrictions using min, max, and step attributes",
+    "Implement advanced input types such as date, color, and range"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_form_input_types.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-2945a4fc7af8c1f6.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_form_input_types.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة حول HTML input element",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ الْهَامِّ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى الْعُنْصُر input وَأَنْوَاعِهِ الْمُخْتَلِفَة الَّتِي تُسَاعِدُنَا فِي بِنَاءِ نَمَاذِجِ الْوِبّ التَّفَاعُلِيَّة بِكُلِّ احْتِرَافِيَّه.",
+        "caption_text": "سنتعرف اليوم على العنصر input وأنواعه المختلفة التي تساعدنا في بناء نماذج الويب التفاعلية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "العنصر input هو الوسيلة الأساسية لجمع بيانات المستخدم",
+          "يتم تحديد نوع الحقل باستخدام Attribute type",
+          "القيمة الافتراضية للسمة type هي text"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "أنواع الحقول النصية وكلمات المرور",
+      "narration": {
+        "spoken_text": "لِنَبْدَأْ بِالْأَنْوَاعِ الْأَكْثَرِ شُيُوعاً، وَهِي text لِلنُّصُوصِ الْعَادِيَّه، و password لِتَأْمِينِ كَلِمَاتِ الْمُرُورِ حَيْثُ تَظْهَرُ الْحُرُوفُ عَلَى شَكْلِ نُقَاطٍ أَوْ نُجُومٍ لِضَمَانِ الْخُصُوصِيَّة أَثْنَاءَ الْكِتَابَة فِي صَفْحَة الْوِبّ.",
+        "caption_text": "استخدام النوع text للنصوص والنوع password لحقول كلمات المرور."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <label for=\"user\">User:</label>\n  <input type=\"text\" id=\"user\">\n  <label for=\"pwd\">Pass:</label>\n  <input type=\"password\" id=\"pwd\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "أزرار الإرسال وإعادة التعيين",
+      "narration": {
+        "spoken_text": "لِإِرْسَالِ الْبَيَانَاتِ إِلَى الْخَادِمِ نَسْتَخْدِمُ النَّوْع submit، وَلِإِلْغَاءِ الْإِدْخَالَاتِ نَسْتَخْدِمُ النَّوْع reset. هَذِهِ الْأَزْرَارُ ضَرُورِيَّة لِتَفَاعُلِ الْمُسْتَخْدِمِ مَعَ النَّمُوذَجِ بِشَكْلٍ سَلِيمٍ وَمُنَظَّمٍ.",
+        "caption_text": "استخدام النوع submit للإرسال والنوع reset لإعادة تعيين النموذج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form.html",
+        "code": "<form action=\"/submit\">\n  <input type=\"submit\" value=\"Send\">\n  <input type=\"reset\" value=\"Clear\">\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "الاختيارات المتعددة و Radio buttons",
+      "narration": {
+        "spoken_text": "عِنْدَمَا نُرِيدُ مِنَ الْمُسْتَخْدِمِ اخْتِيَارَ خِيَارٍ وَاحِدٍ فَقَطْ، نَسْتَخْدِمُ النَّوْع radio. أَمَّا إِذَا كَانَ بِإِمْكَانِهِ اخْتِيَارُ عِدَّة خِيَارَاتٍ، فَنَسْتَخْدِمُ النَّوْع checkbox لِتَوْفِيرِ مَرُونَة أَكْبَرَ فِي إِدْخَالِ الْبَيَانَاتِ.",
+        "caption_text": "الفرق بين radio للاختيار الفردي و checkbox للاختيارات المتعددة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "choices.html",
+        "code": "<input type=\"radio\" name=\"opt\">\n<label>Option 1</label>\n<input type=\"checkbox\" name=\"box\">\n<label>Option 2</label>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "التعامل مع الأرقام والمدى",
+      "narration": {
+        "spoken_text": "لِتَحْدِيدِ قِيَمٍ رَقَمِيَّة نَسْتَخْدِمُ النَّوْع number مَعَ خَاصِيَّتَيْ min و max لِلضَّبْطِ. كَمَا يُمْكِنُنَا اسْتِخْدَامُ النَّوْع range لِتَوْفِيرِ شَرِيطِ تَحَكُّمٍ بَصَرِيٍّ لِاخْتِيَارِ قِيمَة ضِمْنَ نِطَاقٍ مُحَدَّدٍ.",
+        "caption_text": "استخدام النوع number و range لضبط المدخلات الرقمية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "range.html",
+        "code": "<input type=\"number\" min=\"1\" max=\"5\">\n<input type=\"range\" min=\"0\" max=\"100\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "أنواع متقدمة مثل التاريخ واللون",
+      "narration": {
+        "spoken_text": "تُوَفِّر HTML5 أَنْوَاعاً مُتَقَدِّمَة مِثْل date لِاخْتِيَارِ التَّارِيخِ، و color لِاخْتِيَارِ الْأَلْوَانِ، و email لِلتَّحَقُّقِ مِنْ صِحَّة الْبَرِيدِ الْإِلِكْتُرُونِيِّ. هَذِهِ الْأَنْوَاعُ تُحَسِّنُ تَجْرِبَة الْمُسْتَخْدِمِ عَلَى مُتَصَفِّحَاتُ الْوِبّ الْحَدِيثَه.",
+        "caption_text": "استخدام الأنواع المتقدمة مثل date و color و email."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "advanced.html",
+        "code": "<input type=\"date\">\n<input type=\"color\">\n<input type=\"email\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، نُؤَكِّدُ عَلَى أَهَمِّيَّة اخْتِيَارِ النَّوْع الْمُنَاسِبِ لِكُلِّ حَقْلٍ. نَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو لِتُتْقِنُوا مَهَارَاتِ بِنَاءِ النَّمَاذِجِ.",
+        "caption_text": "خلاصة: اختر النوع المناسب لكل حقل لتحسين تجربة المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم النوع المناسب للبيانات المطلوبة",
+          "استفد من Attributes min و max و step",
+          "جرب الأكواد بنفسك عبر الرابط المرفق"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_form_input_types.asp"
+      ]
+    }
+  ]
+}
