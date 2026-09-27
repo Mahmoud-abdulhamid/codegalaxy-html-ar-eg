@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "45",
+  "title": "تنسيق الجداول باستخدام Padding و Spacing في HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية التحكم في المسافات داخل خلايا الجدول باستخدام CSS padding",
+    "تعلم كيفية ضبط المسافات بين خلايا الجدول باستخدام خاصية border-spacing",
+    "تطبيق خصائص CSS لتنسيق الجداول بشكل احترافي"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول تنسيق الجداول",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة التَّحَكُّمِ فِي الْمَسَافَاتِ دَاخِلَ الْجَدَاوِلِ، سَوَاءً كَانَتِ الْمَسَافَاتِ دَاخِلَ الْخَلَايَا أَوْ بَيْنَ الْخَلَايَا بَعْضِهَا الْبَعْضِ، لِتَحْقِيقِ تَصْمِيمٍ أَكْثَرَ جَمَالِيَّة وَتَنْظِيماً.",
+        "caption_text": "تسمح لنا لغة HTML مع CSS بالتحكم الدقيق في المسافات داخل الجداول لتحسين مظهرها."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الجداول عنصر أساسي في هيكلة البيانات",
+          "التحكم في المسافات يعزز تجربة المستخدم",
+          "استخدام CSS للتحكم في Padding و Spacing"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "cell_padding_concept",
+      "title": "مفهوم Cell Padding",
+      "narration": {
+        "spoken_text": "مُصْطَلَح Cell Padding يَعْنِي الْمَسَافَة بَيْنَ حُدُودِ الْخَلِيَّةِ وَالْمُحْتَوَى الْمَوْجُودِ بِدَاخِلِهَا. بِشَكْلٍ افْتِرَاضِيٍّ، تَكُونُ هَذِهِ الْمَسَافَة صِفْراً، وَلِإِضَافَتِهَا نَسْتَخْدِمُ خَاصِيَّة padding فِي CSS عَلَى الْعَنَاصِر th و td.",
+        "caption_text": "يمثل Cell Padding المساحة الفاصلة بين حدود الخلية ومحتواها الداخلي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "Cell Padding هو المسافة داخل الخلية",
+          "القيمة الافتراضية هي 0",
+          "يتم تطبيق الخاصية على th و td"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "padding_example",
+      "title": "تطبيق CSS Padding",
+      "narration": {
+        "spoken_text": "لِنُطَبِّقْ هَذَا مَعاً. عِنْدَمَا نَكْتُبُ كُود padding بِقِيمَةِ 15px لِلْعَنَاصِر th و td، سَنُحَقِّقُ مَسَافَة مُتَسَاوِيَة مِنْ جَمِيعِ الْجَوَانِبِ، مِمَّا يَمْنَحُ الْمُحْتَوَى مَسَاحَة كَافِيَة لِلظُّهُورِ بِشَكْلٍ مُرِيحٍ لِلْعَيْنِ.",
+        "caption_text": "تطبيق خاصية padding يضيف مساحة موحدة حول محتوى الخلية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "th, td\n{\n  padding: 15px;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "directional_padding",
+      "title": "تخصيص Padding لكل جانب",
+      "narration": {
+        "spoken_text": "يُمْكِنُنَا أَيْضاً تَحْدِيدُ الْمَسَافَةِ لِكُلِّ جَانِبٍ عَلَى حِدَة. نَسْتَخْدِم padding-top و padding-bottom و padding-left و padding-right لِضَبْطِ الْمَسَافَاتِ بِدِقَّة عَالِيَة حَسَبَ تَصْمِيمِ الصَّفْحَةِ الْمَطْلُوبِ.",
+        "caption_text": "يمكن التحكم في كل جانب من جوانب الخلية بشكل مستقل باستخدام خصائص CSS المخصصة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "th, td {\n  padding-top: 10px;\n  padding-bottom: 20px;\n  padding-left: 30px;\n  padding-right: 40px;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "cell_spacing_concept",
+      "title": "مفهوم Cell Spacing",
+      "narration": {
+        "spoken_text": "أَمَّا Cell Spacing فَهِيَ الْمَسَافَة بَيْنَ الْخَلَايَا نَفْسِهَا. الْقِيمَة الِافْتِرَاضِيَّة هِيَ 2 بيكسل. لِتَغْيِيرِ هَذِهِ الْمَسَافَةِ، نَسْتَخْدِمُ خَاصِيَّة border-spacing عَلَى عُنْصُر table فِي لُغَة CSS.",
+        "caption_text": "تتحكم خاصية border-spacing في المسافة الفاصلة بين خلايا الجدول."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "Cell Spacing هي المسافة بين الخلايا",
+          "القيمة الافتراضية هي 2px",
+          "تطبق على عنصر table"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "spacing_example",
+      "title": "تطبيق border-spacing",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ كَيْفَ نَكْتُبُ هَذَا الْكُودَ. عِنْدَ تَعْيِين border-spacing بِقِيمَةِ 30px لِعُنْصُر table، سَتَبْتَعِدُ الْخَلَايَا عَنْ بَعْضِهَا بِهَذِهِ الْمَسَافَةِ، مِمَّا يُعْطِي شَكْلًا مُتَبَاعِداً وَوَاضِحاً لِلْجَدْوَلِ.",
+        "caption_text": "تطبيق border-spacing على الجدول يباعد بين الخلايا بشكل واضح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "css",
+        "filename": "style.css",
+        "code": "table\n{\n  border-spacing: 30px;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا أَنَّ التَّحَكُّمَ فِي padding و border-spacing هُوَ مِفْتَاحُ تَصْمِيمِ جَدَاوِلَ احْتِرَافِيَّة. أَدْعُوكُمْ لِتَجْرِبَةِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِتَرَوْا التَّأْثِيرَ الْمُبَاشِرَ عَلَى صَفَحَاتِكُمُ الْوِبِيَّةِ.",
+        "caption_text": "استخدام CSS للتحكم في المسافات يجعل الجداول أكثر احترافية ووضوحا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم padding للمسافة داخل الخلية",
+          "استخدم border-spacing للمسافة بين الخلايا",
+          "جرب الأكواد بنفسك عبر الرابط في الوصف"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+      ]
+    }
+  ]
+}
