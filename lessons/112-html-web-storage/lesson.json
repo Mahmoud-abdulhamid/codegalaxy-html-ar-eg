@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "112",
+  "title": "Web Storage API",
+  "course": "HTML",
+  "objectives": [
+    "فهم الفرق بين localStorage و sessionStorage",
+    "تعلم كيفية التحقق من دعم المتصفح لـ Web Storage",
+    "تطبيق عمليات التخزين والاسترجاع للبيانات",
+    "استخدام Web Storage في بناء عداد نقرات"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_webstorage.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-198aa2d5be332619.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html5_webstorage.asp",
+      "source_url": "https://www.w3schools.com/html/html5_webstorage.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في Web Storage API",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ فِي دَرْسِ الْيَوْمِ حَوْل وِبّ Storage API. هَذِهِ التِّقْنِيَة تُتِيحُ لِتَطْبِيقَاتِ الْوِبّ تَخْزِينَ الْبَيَانَاتِ مَحَلِيّاً دَاخِلَ مُتَصَفِّحْ الْمُسْتَخْدِمِ، وَهِيَ بَدِيلٌ أَكْثَرُ أَمَاناً وَكِفَايَة مِنْ Cookies التَّقْلِيدِيَّه، حَيْثُ تَدْعَمُ مِسَاحَة أَكْبَرَ وَلَا تَنْتَقِلُ إِلَى السَّرْفَرِ.",
+        "caption_text": "تعد Web Storage API وسيلة آمنة وفعالة لتخزين البيانات محليا في المتصفح بدلا من استخدام Cookies."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تخزين البيانات محليا في المتصفح",
+          "أكثر أمانا من استخدام Cookies",
+          "سعة تخزين أكبر تصل إلى 5MB",
+          "لا يتم إرسال البيانات إلى السيرفر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    },
+    {
+      "id": "check_support",
+      "title": "التحقق من دعم المتصفح",
+      "narration": {
+        "spoken_text": "قَبْلَ بَدْءِ اسْتِخْدَامِ هَذِهِ التِّقْنِيَه، يَجِبُ عَلَيْنَا التَّحَقُّقُ مِنْ دَعْمِ الْمُتَصَفِّحْ لِـ localStorage و sessionStorage. نَسْتَخْدِمُ كَوْد JavaScript بَسِيطٍ لِلتَّأَكُّدِ مِنْ وُجُودِ كَائِن Storage، وَبِنَاءً عَلَى النَّتِيجَة نَقُومُ بِعَرْضِ رِسَالَة مُنَاسِبَة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "يجب التأكد دائما من دعم المتصفح لـ Web Storage قبل البدء في استخدامه."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "check.js",
+        "code": "if (typeof(Storage) !== \"undefined\") {\n  // المتصفح يدعم التخزين\n} else {\n  // لا يوجد دعم\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    },
+    {
+      "id": "local_storage_basics",
+      "title": "استخدام localStorage",
+      "narration": {
+        "spoken_text": "يُسْتَخْدَمُ كَائِن localStorage لِحِفْظِ الْبَيَانَاتِ بِدُونِ تَارِيخِ انْتِهَاءٍ. تَبْقَى الْبَيَانَاتُ مَوْجُودَة حَتَّى بَعْدَ إِغْلَاقِ الْمُتَصَفِّحْ. نَسْتَخْدِمُ الدَّالَّة setItem لِحِفْظِ الْقِيَمِ، و getItem لِاسْتِرْجَاعِهَا، مَعَ مُرَاعَاة أَنَّ جَمِيعَ الْقِيَمِ تُخَزَّنُ كَنُصُوصٍ.",
+        "caption_text": "يسمح localStorage بتخزين البيانات بشكل دائم حتى بعد إغلاق المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "storage.js",
+        "code": "localStorage.setItem(\"lastname\", \"Smith\");\nconst name = localStorage.getItem(\"lastname\");\nlocalStorage.removeItem(\"lastname\");",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    },
+    {
+      "id": "click_counter",
+      "title": "مثال عملي: عداد النقرات",
+      "narration": {
+        "spoken_text": "لِنَقُمْ بِبِنَاءِ عَدَّادٍ لِلنَّقَرَاتِ. نَقُومُ بِتَحْوِيلِ الْقِيمَة الْمُخَزَّنَة إِلَى رَقْمٍ بِاسْتِخْدَام Number، ثُمَّ نُزِيدُهَا بِمِقْدَارِ وَاحِدٍ فِي كُلِّ مَرَّه. هَذَا الْمِثَالُ يُوَضِّحُ كَيْفِيَّة التَّعَامُلِ مَعَ الْبَيَانَاتِ الرَّقَمِيَّة وَتَحْدِيثِهَا مُبَاشَرَة فِي الْوِبّ.",
+        "caption_text": "يمكن استخدام localStorage لحفظ حالة العداد وتحديثها عند كل نقرة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "counter.js",
+        "code": "if (localStorage.clickcount) {\n  localStorage.clickcount = \n    Number(localStorage.clickcount) + 1;\n} else {\n  localStorage.clickcount = 1;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    },
+    {
+      "id": "session_storage",
+      "title": "الفرق مع sessionStorage",
+      "narration": {
+        "spoken_text": "أَمَّا كَائِن sessionStorage فَهُوَ يُشْبِه localStorage تَمَاماً، لَكِنَّ الْفَرْقَ الْجَوْهَرِيَّ هُوَ أَنَّ الْبَيَانَاتِ تُحْذَفُ بِمُجَرَّدِ إِغْلَاقِ تَبْوِيبَة الْمُتَصَفِّحْ. هَذَا مُفِيدٌ لِلْبَيَانَاتِ الْمُؤَقَّتَة الَّتِي لَا نَحْتَاجُ لِتَخْزِينِهَا عَلَى الْمَدَى الطَّوِيلِ.",
+        "caption_text": "يستخدم sessionStorage للبيانات المؤقتة التي تنتهي بانتهاء جلسة التصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "session.js",
+        "code": "sessionStorage.setItem(\"key\", \"value\");\n// تحذف البيانات عند إغلاق التبويب",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا أَهَمِّيَّة وِبّ Storage فِي تَحْسِينِ أَدَاءِ تَطْبِيقَاتِ الْوِبّ. نَنْصَحُكُمْ بِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِفَهْمِ كَيْفِيَّة إِدَارَة الْبَيَانَاتِ مَحَلِيّاً. شُكْراً لِمُتَابَعَتِكُمْ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "تعد Web Storage أداة قوية للمطورين لتحسين تجربة المستخدم وإدارة البيانات بكفاءة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "localStorage للبيانات الدائمة",
+          "sessionStorage للبيانات المؤقتة",
+          "تذكر دائما تحويل البيانات إلى نصوص",
+          "استخدم الروابط في الوصف للتطبيق العملي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webstorage.asp"
+      ]
+    }
+  ]
+}
