@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "80",
+  "title": "HTML Semantic Elements and Layout",
+  "course": "HTML",
+  "objectives": [
+    "فهم أهمية Semantic Elements في بناء صفحات الويب",
+    "التعرف على الهيكل الأساسي للمستند باستخدام DOCTYPE",
+    "تطبيق Tags الأساسية مثل head و body و title",
+    "تعلم كيفية تنظيم المحتوى البرمجي بشكل احترافي"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_semantics.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى أَهَمِّيَّة Semantic Elements فِي بِنَاءِ هَيْكَلِ صَفْحَة الْوِبّ بِشَكْلٍ احْتِرَافِيٍّ وَمُنَظَّمٍ لِتَحْسِينِ تَجْرِبَة الْمُسْتَخْدِمِ وَمُحَرِّكَاتِ الْبَحْثِ.",
+        "caption_text": "مرحبا بكم في درس اليوم حول أهمية Semantic Elements في بناء هيكل صفحة الويب بشكل احترافي ومنظم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "لغة HTML هي حجر الأساس لبناء صفحات الويب",
+          "استخدام Semantic Elements يسهل فهم هيكل الصفحة",
+          "التنظيم الجيد للكود يرفع من جودة الموقع"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "doctype",
+      "title": "تعريف المستند DOCTYPE",
+      "narration": {
+        "spoken_text": "كُلُّ صَفْحَة وِبٍّ تَبْدَأُ بِتَعْرِيفِ دُوكْ تَايْبْ HTML. هَذَا Declaration يُخْبِر وِبّ Browser بِأَنَّ هَذَا الْمُسْتَنَدَ يَتْبَعُ مَعَايِير HTML5 الْحَدِيثَه، وَهُوَ ضَرُورِيٌّ لِضَمَانِ عَرْضِ الصَّفْحَة بِشَكْلٍ صَحِيحٍ دَاخِلَ مُتَصَفِّحَاتُ مِثْل Chrome أَوْ Edge.",
+        "caption_text": "يبدأ كل مستند HTML بتعريف <!DOCTYPE html> لإخبار المتصفح باستخدام معايير HTML5 الحديثة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "head-section",
+      "title": "قسم الـ head",
+      "narration": {
+        "spoken_text": "بَعْدَ ذَلِكَ نَنْتَقِلُ إِلَى قِسْم head. هَذَا الْعُنْصُرُ لَا يَظْهَرُ مُبَاشَرَة لِلْمُسْتَخْدِمِ، بَلْ يَحْتَوِي عَلَى مَعْلُومَاتٍ تَقْنِيَّة مِثْل title الَّذِي يَظْهَرُ فِي شَرِيطِ عُنْوَانِ الْمُتَصَفِّحْ، وَهُوَ جُزْءٌ حَيَوِيٌّ لِتَحْدِيدِ هُوِيَّة الصَّفْحَه.",
+        "caption_text": "يحتوي قسم head على معلومات تقنية مثل title الذي يظهر في شريط عنوان المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<head>\n  <title>صفحتي الأولى</title>\n</head>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "body-section",
+      "title": "قسم الـ body",
+      "narration": {
+        "spoken_text": "الْآنَ نَأْتِي إِلَى قِسْم body، وَهُوَ الْقَلْبُ النَّابِضُ لِلصَّفْحَه. كُلُّ مَا نَكْتُبُهُ هُنَا مِنْ نُصُوصٍ مِثْل h1 لِلْعَنَاوِينِ، أَوْ p لِلْفِقَرَاتِ، سَيَظْهَرُ بِشَكْلٍ مَرْئِيٍّ لِجَمِيعِ زُوَّارِ مَوْقِعِ الْوِبّ الْخَاصِّ بِكُمْ.",
+        "caption_text": "قسم body هو المكان المخصص لكتابة المحتوى المرئي الذي يظهر للمستخدم مثل العناوين والفقرات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<body>\n  <h1>عنوان رئيسي</h1>\n  <p>هذه فقرة نصية.</p>\n</body>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "tags-elements",
+      "title": "مفهوم الـ Tags و Elements",
+      "narration": {
+        "spoken_text": "تَذَكَّرُوا دَائِماً أَنَّ Element يَتَكَوَّنُ مِنْ Start Tag و End Tag وَالْمُحْتَوَى بَيْنَهُمَا. هَذَا التَّنْظِيمُ هُوَ مَا يَجْعَلُ لُغَة HTML قَوِيَّة وَسَهْلَة الْفَهْمِ لِلْمُتَصَفِّحَاتِ وَلِلْمُطَوِّرِينَ عَلَى حَدٍّ سَوَاءٍ.",
+        "caption_text": "يتكون الـ Element من Start Tag و End Tag والمحتوى الموجود بينهما."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Start Tag: Start Tag",
+          "مفهوم End Tag: End Tag",
+          "Content: المحتوى بين الوسمين",
+          "Element: المجموع الكامل للوسوم والمحتوى"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "best-practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "لِتَكُونُوا مُطَوِّرِينَ مُحْتَرِفِينَ، احْرِصُوا عَلَى إِغْلَاقِ جَمِيع Tags بِشَكْلٍ صَحِيحٍ، وَاسْتَخْدِمُوا Semantic Elements لِتَوْضِيحِ مَعْنَى الْمُحْتَوَى. هَذَا يُسَاعِمُ فِي جَعْلِ كُودِ الْوِبّ خَاصَّتِكُمْ نَظِيفاً وَقَابِلاً لِلصِّيَانَه.",
+        "caption_text": "احرص دائما على إغلاق Tags بشكل صحيح واستخدام العناصر الدلالية لجعل الكود نظيفا وقابلا للصيانة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أغلق جميع Tags المفتوحة",
+          "استخدم العناصر الدلالية دائما",
+          "حافظ على تنسيق الكود بمسافات بادئة",
+          "راجع الكود دوريا للتأكد من خلوه من الأخطاء"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ أَتْمَمْنَا هَذَا الدَّرْسَ. أَدْعُوكُمْ لِتَجْرِبَة الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو. شُكْراً لِمُتَابَعَتِكُمْ، وَأَنَا مَحْمُودُ عَبْدِ الْحَمِيدِ، أَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ لِتَعَلُّمِ الْمَزِيدِ عَنْ HTML.",
+        "caption_text": "شكرا لمتابعتكم، لا تنسوا تجربة الأكواد بأنفسكم عبر الرابط في الوصف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع الرابط في الوصف للتطبيق العملي",
+          "استمر في ممارسة كتابة الأكواد يوميا",
+          "نلتقي في الدرس القادم من دورة HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      ]
+    }
+  ]
+}
