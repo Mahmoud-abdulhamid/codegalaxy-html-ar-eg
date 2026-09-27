@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "2714",
+  "title": "تعلم كيفية مسح محتوى حقل الإدخال في لغة HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية التعامل مع الأحداث في عناصر HTML",
+    "استخدام الحدث onfocus لمسح قيمة حقل الإدخال",
+    "استخدام عنصر button مع JavaScript لمسح القيمة",
+    "تطبيق أفضل الممارسات في نماذج الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الدرس",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة مَسْحِ مُحْتَوَى حَقْلِ الإِدْخَالِ عِنْدَ التَّرْكِيزِ عَلَيْهِ بِطُرُقٍ عَمَلِيَّة وسهلَه.",
+        "caption_text": "مرحبا بكم في درس تعلم كيفية مسح محتوى حقل الإدخال في لغة HTML بطرق عملية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تعلم كيفية تفريغ حقل الإدخال تلقائيا",
+          "استخدام حدث onfocus مع عناصر الإدخال",
+          "استخدام زر خارجي للتحكم في القيمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "المفاهيم الأساسية",
+      "narration": {
+        "spoken_text": "نَحْتَاجُ أَحْيَاناً إِلَى تَفْرِيغِ حَقْلِ الإِدْخَالِ بِمُجَرَّدِ النَّقْرِ عَلَيْهِ لِتَسْهِيلِ كِتَابَة الْبَيَانَاتِ عَلَى الْمُسْتَخْدِمِ. سَنَسْتَخْدِمُ الْحَدَث onfocus لِتَنْفِيذِ هَذَا الإِجْرَاءِ مُبَاشَرَة دَاخِلَ الْعُنْصُرِ.",
+        "caption_text": "نحتاج أحيانا لتفريغ حقل الإدخال بمجرد النقر عليه لتسهيل إدخال البيانات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية مسح حقل الإدخال لتجربة مستخدم أفضل",
+          "دور حدث onfocus في التفاعل المباشر",
+          "تحديث خاصية القيمة برمجيا"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "كود الحدث onfocus",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ مَعاً هَذَا الْمِثَالَ الْبَرْمَجِيَّ الْأَوَّلَ. نَسْتَخْدِمُ عُنْصُر input مَعَ خَاصِّيَّة onfocus لِاسْتِبْدَالِ الْقِيمَة الْحَالِيَّة بِسِلْسِلَة نَصِّيَّة فَارِغَة عِنْدَ التَّرْكِيزِ.",
+        "caption_text": "شاهد معنا هذا المثال البرمجي الأول لاستخدام حدث onfocus."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<input\n  type=\"text\"\n  onfocus=\"this.value=''\"\n  value=\"Blabla\">\n",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح تفاصيل الكود الأول",
+      "narration": {
+        "spoken_text": "لِوُضُوحِ الرُّؤْيَه، تَعْمَلُ كَلِمَة this هُنَا عَلَى الإِشَارَة إِلَى الْعُنْصُرِ الْحَالِيِّ، بَيْنَمَا تَقُومُ الْخَاصِّيَّة value بِتَفْرِيغِ النَّصِّ الْمَوْجُودِ دَاخِلَ حَقْلِ الإِدْخَالِ تَمَاماً.",
+        "caption_text": "تشير كلمة this إلى العنصر الحالي بينما تقوم value بتفريغ النص."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحديد نوع الحقل باستخدام type text",
+          "استخدام this للإشارة إلى الحقل نفسه",
+          "تعيين قيمة فارغة عند التركيز"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "مثال استخدام الزر",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى طَرِيقَة أُخْرَى وَهِيَ اسْتِخْدَامُ زِرٍّ خَارِجِيٍّ لِمَسْحِ القيمَه. يُتِيحُ لَنَا عُنْصُر button استدعاء دالة لجلب العنصر بواسطة معرّفه وتفريغه.",
+        "caption_text": "ننتقل إلى طريقة أخرى وهي استخدام زر خارجي لمسح القيمة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form.html",
+        "code": "<button\n  onclick=\"\n    document\n      .getElementById('myInput')\n      .value = ''\n  \">\n  Clear input\n</button>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "عنصر الإدخال المرتبط بالزر",
+      "narration": {
+        "spoken_text": "وَلِكَيْ يَعْمَلَ الزِّرُّ بِكَفَاءَه، نَقُمُّ بِرَبْطِهِ مَعَ عُنْصُر input يَحْمِلُ مُعَرِّفاً فَرِيدا id بِاسْم myInput لِكَيْ يَتَعَرَّفَ عَلَيْهِ الزِّرُّ بدقَه.",
+        "caption_text": "نربط الزر مع عنصر input يحمل معرفا فريدا باسم myInput."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "input.html",
+        "code": "<input\n  type=\"text\"\n  value=\"Blabla\"\n  id=\"myInput\">\n",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "مِنْ أَجْلِ تَجْرِبَة مُسْتَخْدِمٍ مِثَالِيَّه، احْرِصْ عَلَى اسْتِخْدَامِ الْمُعَرِّفَاتِ الْفَرِيدَة id وَتَجَنُّبِ التَّكْرَارِ فِي الصَّفَحَاتِ الْكَبِيرَة لِضَمَانِ عَمَلِ الأَكُوَادِ الْبَرْمَجِيَّة بِلَا أَخْطَاءٍ.",
+        "caption_text": "احرص على استخدام المعرفات الفريدة لتجنب الأخطاء البرمجية."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام المعرفات الفريدة id بحذر",
+          "اختبار النماذج على متصفحات الويب المختلفة",
+          "الالتزام بمعايير لغة HTML5"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا الْيَوْمَ عَلَى طُرُقِ مَسْحِ مُحْتَوَى حَقْلِ الإِدْخَالِ عَبْرَ الأَحْدَاثِ وَالأَزْرَارِ. نَرْجُو أَنْ يَكُونَ الشَّرْحُ قَدْ نَالَ إِعْجَابَكُمْ، وَنَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ مَعَ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "caption_text": "تعرفنا اليوم على طرق مسح حقل الإدخال وننتظركم في الدرس القادم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ملخص شامل لمسح حقول الإدخال",
+          "أهمية التفاعل البرمجي في النماذج",
+          "تابعونا للمزيد من دروس الويب المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_clear_input.asp"
+      ]
+    }
+  ]
+}
