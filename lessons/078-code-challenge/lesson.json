@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "78",
+  "title": "HTML Computer Code Elements Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية استخدام Elements الخاصة بالكود في HTML",
+    "التعرف على الفرق بين Tags مثل code و kbd و samp",
+    "تطبيق الممارسات البرمجية الصحيحة في عرض النصوص التقنية",
+    "تحسين هيكلة صفحات الويب باستخدام Semantic Elements"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_computercode.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في عناصر الكود",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسٍ جَدِيدٍ مِنْ دَوْرَة HTML. الْيَوْمَ سَنَتَعَلَّمُ كَيْفِيَّة عَرْضِ الْأَكْوَادِ الْبَرْمَجِيَّة دَاخِلَ صَفْحَة الْوِبّ بِاسْتِخْدَام Elements مُخَصَّصَة لِتَحْسِينِ التَّجْرِبَة الْبَصَرِيَّة وَالدَّلَالِيَّة لِلْمُسْتَخْدِمِ.",
+        "caption_text": "مرحبا بكم في درس جديد من دورة HTML. اليوم سنتعلم كيفية عرض الأكواد البرمجية داخل صفحة الويب باستخدام Elements مخصصة لتحسين التجربة البصرية والدلالية للمستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام HTML لعرض النصوص التقنية",
+          "أهمية Semantic Elements في الويب",
+          "التعرف على العناصر المخصصة للكود"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    },
+    {
+      "id": "elements_overview",
+      "title": "العناصر البرمجية في HTML",
+      "narration": {
+        "spoken_text": "تُوَفِّرُ لُغَة HTML مَجْمُوعَة مِن Elements لِتَمْيِيزِ نُصُوصِ الْكُودِ. مِثْل code لِعَرْضِ مَقَاطِعِ الْبَرْمَجَه، و kbd لِإِدْخَالِ لَوْحَة الْمَفَاتِيحِ، و samp لِعَرْضِ مُخْرَجَاتِ الْبَرْنَامَجِ. هَذِه Tags تُسَاعِد وِبّ Browser عَلَى فَهْمِ الْمُحْتَوَى.",
+        "caption_text": "توفر لغة HTML مجموعة من الـ Elements لتمييز نصوص الكود. مثل code لعرض مقاطع البرمجة، و kbd لإدخال لوحة المفاتيح، و samp لعرض مخرجات البرنامج. هذه الـ Tags تساعد الـ Web Browser على فهم المحتوى."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Element",
+          "الوظيفة"
+        ],
+        "rows": [
+          [
+            "code",
+            "عرض كود برمجي"
+          ],
+          [
+            "kbd",
+            "إدخال لوحة مفاتيح"
+          ],
+          [
+            "samp",
+            "مخرجات البرنامج"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    },
+    {
+      "id": "code_example_1",
+      "title": "كتابة الكود البرمجي",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ إِلَى هَذَا الْمِثَالِ. نَسْتَخْدِم Start Tag و End Tag لِتَغْلِيفِ الْكُودِ. هَذَا يُعْطِي شَكْلًا مُمَيَّزًا لِلنَّصِّ دَاخِلَ الصَّفْحَه، وَيُسَهِّلُ عَلَى الزَّائِرِ تَمْيِيزَ أَنَّ هَذَا النَّصَّ هُوَ كُودٌ بَرْمَجِيٌّ حَقِيقِيٌّ.",
+        "caption_text": "لننظر إلى هذا المثال. نستخدم Start Tag و End Tag لتغليف الكود. هذا يعطي شكلا مميزا للنص داخل الصفحة، ويسهل على الزائر تمييز أن هذا النص هو كود برمجي حقيقي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<code>\n  x = 5;\n  y = 6;\n  z = x + y;\n</code>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    },
+    {
+      "id": "code_example_2",
+      "title": "تنسيق المخرجات",
+      "narration": {
+        "spoken_text": "إِذَا أَرَدْنَا عَرْضَ مُخْرَجَاتِ الْكُودِ، نَسْتَخْدِم samp Element. هَذَا يُعَزِّزُ مِنْ دَلَالِيَّة الصَّفْحَة وَيَجْعَلُهَا أَكْثَرَ احْتِرَافِيَّه. لَاحِظْ كَيْفَ نَضَع Element دَاخِل body لِيَظْهَرَ بِشَكْلٍ صَحِيحٍ فِي وِبّ Browser.",
+        "caption_text": "إذا أردنا عرض مخرجات الكود، نستخدم samp Element. هذا يعزز من دلالية الصفحة ويجعلها أكثر احترافية. لاحظ كيف نضع الـ Element داخل الـ body ليظهر بشكل صحيح في الـ Web Browser."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "output.html",
+        "code": "<p>النتيجة هي:</p>\n<samp>\n  11\n</samp>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَجِبُ دَائِماً الْحِرْصُ عَلَى اسْتِخْدَام Tags الْمُنَاسِبَة لِكُلِّ نَوْعٍ مِنَ الْمُحْتَوَى. لَا تَسْتَخْدِمْ p لِعَرْضِ الْكُودِ، بَلِ اسْتَخْدِمْ code. هَذَا يُسَاعِدُ مُحَرِّكَاتِ الْبَحْثِ فِي فَهْمِ هَيْكَلِ صَفْحَة الْوِبّ بِشَكْلٍ أَفْضَلَ.",
+        "caption_text": "يجب دائما الحرص على استخدام الـ Tags المناسبة لكل نوع من المحتوى. لا تستخدم p لعرض الكود، بل استخدم code. هذا يساعد محركات البحث في فهم هيكل صفحة الويب بشكل أفضل."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم code للكود البرمجي",
+          "استخدم kbd لمدخلات المستخدم",
+          "استخدم samp لمخرجات النظام",
+          "التزم بالهيكلة الدلالية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خاتمة الدرس",
+      "narration": {
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة تَنْسِيقِ الْأَكْوَادِ فِي HTML. أَدْعُوكُمْ لِتَجْرِبَة هَذِه Elements بِنَفْسِكُمْ وَمُتَابَعَة التَّحَدِّيَاتِ لِتَطْوِيرِ مَهَارَاتِكُمْ. كَانَ مَعَكُمْ مَحْمُود عَبْدِ الْحَمِيدِ، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "بهذا نكون قد تعرفنا على كيفية تنسيق الأكواد في HTML. أدعوكم لتجربة هذه الـ Elements بنفسكم ومتابعة التحديات لتطوير مهاراتكم. كان معكم محمود عبدالحميد، وإلى اللقاء في درس قادم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "راجع المصادر المرفقة",
+          "طبق التحديات البرمجية",
+          "استمر في التعلم"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      ]
+    }
+  ]
+}
