@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "69",
+  "title": "HTML File Paths - مسارات الملفات في HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم مسارات الملفات File Paths في صفحات HTML",
+    "التمييز بين Absolute File Paths و Relative File Paths",
+    "التعامل مع التنقل بين المجلدات باستخدام / و ../",
+    "تطبيق أفضل الممارسات عند استخدام المسارات النسبية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_filepaths.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-232469645929d7d4.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_filepaths.asp",
+      "source_url": "https://www.w3schools.com/html/html_filepaths.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-84f074726d14c614.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_filepaths.asp",
+      "source_url": "https://www.w3schools.com/html/html_filepaths.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-04a13c02c806fc17.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_filepaths.asp",
+      "source_url": "https://www.w3schools.com/html/html_filepaths.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro_filepaths",
+      "title": "مقدمة في مسارات الملفات File Paths",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَسَارَاتِ الْمَلَفَّات File Paths فِي لُغَة HTML، وَكَيْفِيَّة اسْتِخْدَامِهَا لِلرَّبْطِ بَيْنَ الصَّفَحَاتِ وَالصُّوَرِ وَالْمَلَفَّاتِ الْخَارِجِيَّة بِسُهُولَة وَدِقَّهْ.",
+        "caption_text": "تحدد مسارات File Paths موقع الملفات داخل المجلدات في موقع الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تحدد File Paths موقع الملف داخل المجلدات",
+          "تستخدم للربط مع الصور والملفات الخارجية",
+          "تنقسم إلى Absolute Paths و Relative Paths"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "absolute_filepaths",
+      "title": "المسارات المطلقة Absolute File Paths",
+      "narration": {
+        "spoken_text": "يُعَبِّر Absolute File Path عَنِ الْعُنْوَانِ الْكَامِل URL لِلْمَلَفِّ عَلَى شَبَكَة الْإِنْتَرْنِت. وَنَسْتَخْدِمُ هَذَا النَّوْعَ عِنْدَ إِدْرَاجِ مَلَفَّاتٍ مُسْتَضَافَة عَلَى خَوَادِمَ خَارِجِيَّة أُخْرَى بِدِقَّهْ.",
+        "caption_text": "يمثل Absolute File Path الرابط الكامل URL للملف على الإنترنت."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "absolute.html",
+        "code": "<img src=\"https://example.com/pic.jpg\"\n     alt=\"Mountain\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "relative_filepaths_root",
+      "title": "المسار النسبي من الجذر Root",
+      "narration": {
+        "spoken_text": "أَمَّا Relative File Path فَيُشِيرُ إِلَى الْمَلَفِّ بِالنِّسْبَة لِلصَّفْحَة الْحَالِيَّه. وَعِنْدَ بَدْءِ الْمَسَارِ بِشَرْطَة مَائِلَة فَإِنَّهُ يَبْدَأُ مِنْ جَذْرِ الْمَوْقِع Root الْمَبْنِيِّ عَلَيْهِ الْمَشْرُوعُ.",
+        "caption_text": "تبدأ الشرطة المائلة / البحث عن الملف من جذر الموقع الرئيسي Root."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "relative_root.html",
+        "code": "<img src=\"/images/picture.jpg\"\n     alt=\"Mountain\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "relative_filepaths_current",
+      "title": "المسار النسبي من المجلد الحالي Current Folder",
+      "narration": {
+        "spoken_text": "عِنْدَ كِتَابَة اسْمِ الْمَجَلَّدِ مُبَاشَرَة دُونَ شَرْطَة فِي الْبِدَايَه، يَبْحَثُ الْمُتَصَفِّحْ عَنِ الْمَلَفِّ دَاخِلَ الْمَجَلَّدِ الْحَالِيِّ الَّذِي تُوجَدُ فِيهِ صَفْحَة HTML الْحَالِيَّة بِسُهُولَه.",
+        "caption_text": "كتابة اسم المجلد مباشرة يبحث عن الملف داخل المجلد الحالي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "relative_current.html",
+        "code": "<img src=\"images/picture.jpg\"\n     alt=\"Mountain\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "relative_filepaths_parent",
+      "title": "المسار النسبي للمجلد الأعلى Parent Folder",
+      "narration": {
+        "spoken_text": "إِذَا كَانَ الْمَلَفُّ مَوْجُوداً فِي مَجَلَّدٍ أَعْلَى بِمُسْتَوَى وَاحِدٍ، نَسْتَخْدِمُ النُّقْطَتَيْنِ مَعَ الشَّرْطَة الْمَائِلَه .. لِلصُّعُودِ خَطْوَة إِلَى الْخَلْفِ فِي شَجَرَة الْمَجَلَّدَاتِ الْمَوْجُودَهْ.",
+        "caption_text": "تستخدم .. للصعود مستوى واحدا للأعلى في هيكل المجلدات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "relative_parent.html",
+        "code": "<img src=\"../images/picture.jpg\"\n     alt=\"Mountain\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "visual_preview",
+      "title": "معاينة نتيجة عرض الصور بالأكواد",
+      "narration": {
+        "spoken_text": "تَظْهَرُ الصُّورَة دَاخِلَ صَفْحَة الْوِبّ بِنَفْسِ النَّتِيجَة الْمَرْئِيَّة عِنْدَ كِتَابَة الْمَسَارِ الصَّحِيحِ، سَوَاءٌ كَانَ الْمَسَارُ مُطْلَقاً أَوْ مَسَاراً نِسْبِيّاً مُحَدَّداً بِدِقَّهْ.",
+        "caption_text": "تظهر الصورة بالشكل المطلوب عند كتابة المسار بشكل صحيح."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة عرض الصورة في متصفح الويب"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "أفضل الممارسات البرمجية Best Practices",
+      "narration": {
+        "spoken_text": "يُفَضَّلُ دَائِماً اسْتِخْدَام Relative File Paths عِنْدَ بِنَاءِ الْمَوَاقِعِ، لِضَمَانِ عَمَلِ الْوُصَلَاتِ عَلَى جَهَازِكَ الْمَحَلِّيِّ localhost وَعَلَى النَّطَاقِ الْفِعْلِيِّ فِي الْمُسْتَقْبَلِ بِسُهُولَه.",
+        "caption_text": "تفضل Relative File Paths لضمان عمل الرابط في أي خادم أو مسار مستقبلي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم Relative Paths قدر الإمكان",
+          "تجنب ربط الملفات المحلية بـ Absolute Paths",
+          "تضمن عمل الصفحة على localhost وعلى الخوادم الحقيقية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    },
+    {
+      "id": "summary_outro",
+      "title": "ملخص درس مسارات الملفات",
+      "narration": {
+        "spoken_text": "تَعَرَّفْنَا فِي هَذَا الدَّرْسِ عَلَى Absolute Paths و Relative Paths وَكَيْفِيَّة التَّنَقُّلِ بَيْنَ الْمَجَلَّدَاتِ. جَرِّبِ الْأَكْوَادَ بِنَفْسِكَ وَتَابِعْنَا فِي الدَّرْسِ الْقَادِمِ بِتَوْفِيقٍ.",
+        "caption_text": "تعلمنا كيفية تحديد مسارات الملفات المطلقة والنسبية في HTML."
+      },
+      "visual": {
+        "type": "diagram",
+        "nodes": [
+          {
+            "id": "n1",
+            "label": "File Paths",
+            "active": true
+          },
+          {
+            "id": "n2",
+            "label": "Absolute Path",
+            "active": false
+          },
+          {
+            "id": "n3",
+            "label": "Relative Path",
+            "active": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "n1",
+            "target": "n2",
+            "label": "Full URL"
+          },
+          {
+            "source": "n1",
+            "target": "n3",
+            "label": "Local Path"
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_filepaths.asp"
+      ]
+    }
+  ]
+}
