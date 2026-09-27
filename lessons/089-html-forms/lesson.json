@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "89",
+  "title": "HTML Forms and Input Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء HTML Forms لجرف بيانات المستخدمين",
+    "التعرف على عنصر input واستخدامات Attribute type المختلف",
+    "استخدام عنصر label وربطه بعناصر الإدخال بواسطة Attribute for",
+    "التمييز بين Radio Buttons و Checkboxes وعنصر Submit Button"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_forms.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-706c92f2da39b76f.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_forms.asp",
+      "source_url": "https://www.w3schools.com/html/html_forms.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة عن HTML Forms",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِنْشَاء HTML Forms لِجَمْعِ مُدْخَلاَتِ الْمُسْتَخْدِمِينَ وَإِرْسَالِهَا بِشَكْلٍ آمِنٍ وَمُنَظَّمٍ إِلَى Server لِعَالَمِ الْوِبّ.",
+        "caption_text": "مرحبا بكم في هذا الدرس من دورة HTML. سنتعرف اليوم على كيفية إنشاء HTML Forms لجمع مدخلات المستخدمين وإرسالها إلى Server."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم HTML Forms لجمع مدخلات المستخدمين",
+          "ترسل البيانات عادة إلى Server للمعالجة",
+          "تتكون الاستمارة من عناصر إدخال متعددة",
+          "تعتبر من أهم عناصر التفاعل في صفحات الويب"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_2_form_element",
+      "title": "عنصر <form> وعنصر <input>",
+      "narration": {
+        "spoken_text": "تُعْتَبَر Form Element الْوِعَاءَ الأَسَاسِيَّ لِجَمِيعِ عَنَاصِرِ الإِدْخَالِ. نَسْتَخْدِم Tag input لِتَحْدِيدِ نَوْعِ الْمُدْخَلاَتِ كَالنُّصُوصِ وَالأَزْرَارِ، حَيْثُ يُحَدِّد Attribute type الشَّكْلَ المَطْلُوبَ لِلْمُسْتَخْدِمِ فِي المَوْقِعِ.",
+        "caption_text": "تعتبر Form Element الحاوية الأساسية لجميع عناصر الإدخال، ونستخدم Tag input لتحديد نوع المدخلات عبر Attribute type."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <label for=\"fname\">First name:</label><br>\n  <input type=\"text\" id=\"fname\" name=\"fname\">\n</form>",
+        "highlight_lines": [
+          1,
+          3,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_3_text_and_label",
+      "title": "حقول النصوص وعنصر <label>",
+      "narration": {
+        "spoken_text": "عِنْدَ كِتَابَة حَقْلِ نَصٍّ نَسْتَخْدِم input مَع type يُسَاوِي text. كَمَا نَسْتَخْدِم Tag label لِرَبْطِ النَّصِّ التَّوْضِيحِيِّ بِالْحَقْلِ عَنْ طَرِيق Attribute for مَع id الخَاصّ ب input لِتَحْسِينِ سُهُولَة الاِسْتِخْدَامِ.",
+        "caption_text": "نستخدم input مع type يساوي text لحقول النصوص، وربط label بواسطة Attribute for مع id يسهل الاستخدام للقارئات الصوتية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <label for=\"lname\">Last name:</label><br>\n  <input type=\"text\" id=\"lname\" name=\"lname\">\n</form>",
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_4_radio_buttons",
+      "title": "أزرار الاختيار الأحادية Radio Buttons",
+      "narration": {
+        "spoken_text": "لِإِتَاحَة خِيَارٍ وَاحِدٍ فَقَطْ مِنْ بَيْنِ مَجْمُوعَة مَحْدُودَه، نَسْتَخْدِم Radio Buttons عَبْر input مَع type يُسَاوِي radio. يُشْتَرَطُ أَنْ تَحْمِلَ جَمِيعُ الخِيَارَاتِ نَفْس Attribute name لِتَجْمِيعِهَا مَعاً.",
+        "caption_text": "نستخدم input مع type يساوي radio لاختيار خيار واحد فقط، ويجب استخدام نفس Attribute name لجميع الخيارات المرتبطة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <input type=\"radio\" id=\"html\"\n         name=\"fav\" value=\"HTML\">\n  <label for=\"html\">HTML</label>\n</form>",
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_5_checkboxes",
+      "title": "مربعات الاختيار المتعدد Checkboxes",
+      "narration": {
+        "spoken_text": "أَمَّا إِذَا أَرَدْنَا سَمَاحَ الْمُسْتَخْدِمِ بِاخْتِيَارِ عِدَّة خِيَارَاتٍ أَوْ عَدَمِ اختِيَارِ أَيٍّ مِنْهَا، فَنَسْتَخْدِم Checkboxes بِكِتَابَة input مَع type يُسَاوِي checkbox لِتَوْفِيرِ مُرُونَة كَامِلَه.",
+        "caption_text": "تتيح Checkboxes للمستخدم اختيار عدة خيارات أو عدم اختيار أي منها باستخدام type يساوي checkbox."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form>\n  <input type=\"checkbox\" id=\"v1\"\n         name=\"vehicle\" value=\"Car\">\n  <label for=\"v1\">I have a car</label>\n</form>",
+        "highlight_lines": [
+          2,
+          3
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_6_submit_button",
+      "title": "زر الإرسال Submit Button و Attribute action",
+      "narration": {
+        "spoken_text": "لِإِرْسَالِ بَيَانَاتِ النَّمُوذَجِ إِلَى الخَادِمِ نَسْتَخْدِم Submit Button عَبْر input مَع type يُسَاوِي submit. وَنُحَدِّدُ المَلَفَّ الْمُسْتَهْدَفَ فِي Server عَنْ طَرِيق Attribute action دَاخِل tag form.",
+        "caption_text": "يستخدم Submit Button لإرسال بيانات النموذج، ويحدد Attribute action اسم الملف المعالج للبيانات على Server."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<form action=\"/action_page.php\">\n  <input type=\"text\" id=\"fname\"\n         name=\"fname\" value=\"John\"><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>",
+        "highlight_lines": [
+          1,
+          4
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_7_visual_preview",
+      "title": "أهمية Attribute name ومعاينة الشكل",
+      "narration": {
+        "spoken_text": "تَذَكَّرْ دَائِماً أَنَّهُ بِدُون Attribute name لَنْ يَتِمَّ إِرْسَالُ قِيمَة حَقْلِ الإِدْخَالِ إِلَى Server أَبَداً. كَمَا يُمْكِنُكَ مُعَايَنَة النَّتِيجَة المَرْئِيَّة فِي الْمُتَصَفِّحْ كَمَا تَظْهَرُ أَمَامَكَ الانَ.",
+        "caption_text": "بدون Attribute name لن يتم إرسال قيمة حقل الإدخال إلى Server إطلاقا عند إرسال النموذج."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "Form rendering preview in Web Browser"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    },
+    {
+      "id": "scene_8_summary",
+      "title": "ملخص الدرس وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "فِي الخِتَامِ، نَكُونُ قَدْ تَعَلَّمْنَا كَيْفِيَّة بِنَاء HTML Forms وَاسْتِخْدَام label و input وَأَنْوَاعِهَا المُخْتَلِفَه. أَدْعُوكُمْ لِتَجْرِبَة الأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّابِطِ الْمَوْجُودِ فِي وَصْفِ الْفِيدْيُو.",
+        "caption_text": "في ختام الدرس تعلمنا كيفية بناء HTML Forms واستخدام عناصر label و input وأنوعها المختلفة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تضمين عناصر الإدخال دائما داخل <form>",
+          "ربط <label> مع <input> عبر Attribute for و id",
+          "تحديد Attribute name لكل حقل إدخال لإرسال البيانات",
+          "اختيار type المناسب مثل text و radio و checkbox"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_forms.asp"
+      ]
+    }
+  ]
+}
