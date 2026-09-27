@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "77",
+  "title": "عناصر الأكواد والحوسبة في لغة HTML",
+  "course": "HTML",
+  "objectives": [
+    "تعرف عناصر HTML الخاصة بالأكواد ومدخلات المستخدم",
+    "استخدام kbd للإدخال من لوحة المفاتيح",
+    "استخدام samp لتمييز مخرجات البرامج",
+    "استخدام code و pre للحفاظ على المسافات والأسطر",
+    "استخدام var لتعريف المتغيرات البرمجية"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_computercode_elements.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-bec56313c60480c2.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_computercode_elements.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-ce27dc2e5ca9571e.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_computercode_elements.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-23e64f77a80f58c1.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_computercode_elements.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_intro",
+      "title": "مقدمة حول عناصر الأكواد في لغة HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى عَنَاصِرِ حَوْسَبَة الْأَكْوَادِ وَكَيْفَ نَعْرِضُ مُدْخَلَاتِ الْمُسْتَخْدِمِ وَالْبَرَامِجِ بِدِقَّة عَالِيَة دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "تعرف على عناصر HTML المخصصة لتعريف الأكواد ومدخلات المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تتضمن لغة HTML عناصر خاصة لتمثيل الأكواد",
+          "عرض مدخلات المستخدم البرمجية",
+          "تحسين تنسيق النصوص التقنية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_2_kbd",
+      "title": "استخدام kbd لمدخلات لوحة المفاتيح",
+      "narration": {
+        "spoken_text": "نَبْدَأُ مَعَ عُنْصُر kbd. يَسْتَخْدِمُ هَذَا الْعُنْصُرُ لِتَحْدِيدِ النُّصُوصِ الْمَأْخُوذَة مِنْ لَوْحَة الْمَفَاتِيحِ. يُعْرَضُ الْمُحْتَوَى عَادَة بِخَطٍّ ثَابِتِ الْعَرْض monospace لِيُمَيِّزَهُ عَنْ بَقِيَّة النُّصُوصِ فِي صَفْحَة الْوِبّ.",
+        "caption_text": "استخدام kbd لتعريف الإدخال عبر لوحة المفاتيح بخط monospace."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "kbd_example.html",
+        "code": "<p>Save the document\n by pressing \n<kbd>Ctrl + S</kbd></p>",
+        "highlight_lines": [],
+        "output": "Save the document by pressing Ctrl + S",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_3_samp",
+      "title": "استخدام samp لمخرجات البرامج",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى عُنْصُر samp. هَذَا الْعُنْصُرُ مِثَالِيٌّ لِتَعْرِيفِ مَخْرَجَاتِ بَرْنَامَجِ حُسُوبِيٍّ. يَظْهَرُ الْمُحْتَوَى أَيْضاً بِخَطِّ monospace لِيُوَضِّحَ لِلْمُسْتَخْدِمِ نَتِيجَة تَقْنِيَّة صَادِرَة مِنَ النِّظَامِ.",
+        "caption_text": "استخدام samp لعرض مخرجات البرامج والنماذج التقنية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "samp_example.html",
+        "code": "<p>Message:</p>\n<p><samp>File not found.\nPress F1</samp></p>",
+        "highlight_lines": [],
+        "output": "Message: File not found. Press F1",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_4_code",
+      "title": "استخدام code لكتابة الشفرات",
+      "narration": {
+        "spoken_text": "لِعَرْضِ قِطْعَة مِنْ شِفْرَة بَرْمَجِيَّه، نَسْتَخْدِمُ عُنْصُر code. يُخَصِّصُ هَذَا الْعُنْصُرُ لِقِطَعِ الْأَكْوَادِ وَيَعْرِضُهَا بِخَطٍّ تَقْنِيٍّ وَاضِحٍ، وَلَكِنَّهُ لَا يُحَافِظُ وَحْدَهُ عَلَى الْمَسَافَاتِ الزَّائِدَة وَأَسْطُرِ النَّصِّ.",
+        "caption_text": "استخدام code لعرض الأكواد البرمجية بخط monospace الافتراضي."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "code_example.html",
+        "code": "<code>\nx = 5;\ny = 6;\nz = x + y;\n</code>",
+        "highlight_lines": [],
+        "output": "x = 5; y = 6; z = x + y;",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_5_pre_code",
+      "title": "الحفاظ على المسافات باستخدام pre مع code",
+      "narration": {
+        "spoken_text": "لِكَيْ نُحَافِظَ عَلَى الْمَسَافَاتِ وَتَسْسِيقِ الْأَسْطُرِ دَاخِلَ عُنْصُر code، نَضَعُهُ بِدَاخِلِ عُنْصُر pre. هَذَا التَّمْشِيقُ يُعْطِينَا عَرْضاً مُتَمَايِزاً لِلْأَكْوَادِ تَمَاماً كَمَا كُتِبَتْ فِي الْمُصَدِّرِ.",
+        "caption_text": "دمج code داخل pre للحفاظ على المسافات والفراغات النصية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "pre_code_example.html",
+        "code": "<pre>\n<code>\nx = 5;\ny = 6;\nz = x + y;\n</code>\n</pre>",
+        "highlight_lines": [],
+        "output": "x = 5; y = 6; z = x + y;",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_6_var",
+      "title": "استخدام var لتعريف المتغيرات",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ خِتَاماً إِلَى عُنْصُر var. نَسْتَخْدِمُهُ لِتَعْرِيفِ مُتَغَيِّرٍ فِي سِيَاقٍ بَرْمَجِيٍّ أَوْ رِيَاضِيٍّ، وَعَادَة مَا يَظْهَرُ مُحْتَوَى هَذَا الْعُنْصُرِ بِخَطٍّ مَائِلٍ لِلتَّمْيِيزِ.",
+        "caption_text": "استخدام var لتعريف المتغيرات البرمجية أو الرياضية بخط مائل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "var_example.html",
+        "code": "<p>Area is: \n1/2 x <var>b</var> \nx <var>h</var></p>",
+        "highlight_lines": [],
+        "output": "Area is: 1/2 x b x h",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    },
+    {
+      "id": "scene_7_summary",
+      "title": "خلاصة عناصر الحوسبة في لغة HTML",
+      "narration": {
+        "spoken_text": "هَكَذَا تَعَرَّفْنَا عَلَى أَهَمِّ عَنَاصِرِ الْحَوْسَبَة فِي لُغَة HTML مِثْل kbd و samp و code و var. نَنْصَحُكُمْ بِتَجْرِيبِ هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ مِنْ خِلَالِ الرَّابِطِ الْمَوْجُودِ فِي الْوَصْفِ لِتَعْزِيزِ مَهَارَاتِكُمُ الْبَرْمَجِيَّه.",
+        "caption_text": "ملخص شامل لاستخدام عناصر الأكواد والمتغيرات في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "kbd لمدخلات لوحة المفاتيح",
+          "samp لمخرجات البرامج",
+          "code و pre لعرض الأكواد مع المسافات",
+          "var للمتغيرات الرياضية والبرمجية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_computercode_elements.asp"
+      ]
+    }
+  ]
+}
