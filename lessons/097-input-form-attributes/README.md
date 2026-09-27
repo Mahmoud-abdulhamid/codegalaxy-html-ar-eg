@@ -1,0 +1,7 @@
+# Input Form Attributes
+
+الدرس من إعداد محمود عبدالحميد — Senior Software Engineer
+
+المرجع: https://www.w3schools.com/html/html_form_attributes_form.asp
+
+أمثلة مولدة من نص الدرس، تشمل أحيانًا أخطاء مقصودة ومقتطفات جزئية. راجع سياق كل مثال؛ لم تُنفذ تلقائيًا.
