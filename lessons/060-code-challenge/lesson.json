@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "60",
+  "title": "HTML Classes Code Challenge",
+  "course": "HTML",
+  "objectives": [
+    "فهم وتطبيق مفهوم class attribute في لغة HTML",
+    "حل التحديات البرمجية الخاصة بتنسيق العناصر عبر الـ classes",
+    "تنفيذ أفضل الممارسات في هيكلة وتنسيق صفحات الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_challenges_classes.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة تحدي الـ classes",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِتْمَامِ التَّحَدِّيَاتِ البْرَمَجِيَّة الخَاصَّة بِاسْتِخْدَام class attribute فِي صَفَحَاتِ الْوِبّ.",
+        "caption_text": "مرحبا بكم في درس تحديات الـ class attribute في لغة HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهلا بك في تحديات لغة HTML",
+          "نختبر اليوم مهارات استخدام class attribute",
+          "كيفية تطبيق الأكواد العملية بكفاءة عالية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "فهم قاعدة الـ class attribute",
+      "narration": {
+        "spoken_text": "تَمْتَازُ لُغَة HTML بِأَنَّهَا تُمَكِّنُنَا مِنْ تَمْيِيزِ العَنَاصِرِ وَتَنْسِيقِهَا بِسُهُولَة عَبْرَ إِضَافَة class attribute مِثْل div و p لِتَطْبِيقِ خَصَائِصِ التَّنْسِيقِ بِمَرُونَة كَامِلَة دَاخِلَ صَفْحَة الْوِبّ.",
+        "caption_text": "تستخدم العناصر خصائص class لتسهيل تطبيق التنسيقات."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ربط العناصر ببعضها عبر class attribute",
+          "تسهيل تطبيق تنسيق CSS موحد",
+          "التحكم في مجموعات متعددة من Elements"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "هيكلة كود التحدي الأول",
+      "narration": {
+        "spoken_text": "لِنَنْظُرْ مَعِي إِلَى هَذَا الْمِثَالِ البْرَمَجِيِّ الأَسَاسِيِّ الَّذِي يُوَضِّحُ كَيْفِيَّة كِتَابَة class attribute دَاخِل Start Tag لِأَيِّ عُنْصُرٍ مِثْل p أَوْ div بِدِقَّة تِقْنِيَّة عَالِيَه.",
+        "caption_text": "نتابع كتابة class attribute داخل Start Tag للعناصر البرمجية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "challenge.html",
+        "code": "<div class=\"intro\">\n  <p class=\"text\">Welcome</p>\n</div>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "تحليل أجزاء الكود ووظائفها",
+      "narration": {
+        "spoken_text": "فِي هَذَا الكود نَرَى كَيْفَ قُمْنَا بِتَحْدِيد class دَاخِل div وَأيْضاً دَاخِل p لِضَمَانِ أَنَّ كُلَّ Element يُمْكِنُ اسْتِهْدَافُهُ بِدِقَّة تَامَّة عِنْدَ العَمَلِ عَلَى صَفْحَة الْوِبّ.",
+        "caption_text": "نحدد class لكل Element لضمان استهدافه بدقة تامة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "details.html",
+        "code": "<h1 class=\"header\">Title</h1>\n<p class=\"content\">Text</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة المخرجات المتوقعة",
+      "narration": {
+        "spoken_text": "عِنْدَ تَنْفِيذِ هَذِهِ الأَكْوَادِ فِي وِبّ Browser مِثْل Chrome أَوْ Firefox، يَقُومُ الْمُتَصَفِّحْ بِعَرْضِ العَنَاصِرِ بِناءً عَلَى التَّنْسِيقَاتِ المرتبطة بِكُلِّ class بِكُلِّ سلاسة وسهولَه.",
+        "caption_text": "يعرض Web Browser العناصر بناء على التنسيقات المرتبطة بالـ classes."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "عرض المحتوى المرئي في Web Browser",
+          "تطبيق القواعد على العناصر المستهدفة",
+          "ضمان ظهور التصميم بشكل صحيح"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "تفاصيل تقنية متقدمة في التحديات",
+      "narration": {
+        "spoken_text": "يُمْكِنُ أَيْضاً اسْتِخْدَامِ نَفْس class لِعِدَّة Elements مُخْتَلِفَة دَاخِلَ نَفْسِ صَفْحَة HTML، وَهَذَا يُمَكِّنُنَا مِنَ التَّعَامُلِ مَعَ مَجْمُوعَاتٍ ضَخْمَة مِنَ العَنَاصِرِ بِكُودٍ بَرَمَجِيٍّ أَقَلَّ وأكثر كفاءَه.",
+        "caption_text": "يمكن استخدام نفس الـ class لعدة Elements مختلفة بكفاءة عالية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "multiple.html",
+        "code": "<p class=\"note\">First Note</p>\n<p class=\"note\">Second Note</p>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "أفضل الممارسات البرمجية",
+      "narration": {
+        "spoken_text": "دَائِماً اِحْرِصْ عَلَى اخْتِيَارِ أَسْمَاء classes وَاضِحَة وَدَقِيقَة تَعْبِرُ عَنْ وَظِيفَة العُنْصُرِ، لِتَسْهِيلِ قِرَاءَة الكود وصيانته مستقبلاً بَينَ فِريَقِ العَمَلِ فِي مَشَارِيعِ الْوِبّ.",
+        "caption_text": "اختر أسماء classes واضحة لتسهيل صيانة الكود مستقبلا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام أسماء واضحة لجميع الـ classes",
+          "الحفاظ على نظافة هيكل HTML",
+          "تسهيل الصيانة والتعاون الجماعي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس والتحدي القادم",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، نَكُونُ قَدْ تَعَرَّفْنَا عَلَى كَيْفِيَّة إِتْمَامِ تَحَدِّيَات classes فِي لُغَة HTML. أَدْعُوكُمْ لِزِيَارَة الرَّابطِ فِي الوَصْفِ لِتَجْرِبَة المَزِيدِ مِنَ التَّحَدِّيَاتِ بِنَفْسِكُمْ مَعَ المدرب محمود عبدالحميد.",
+        "caption_text": "خلاصة درس تحديات الـ classes مع دعوة لتجربة الأكواد بأنفسكم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "ملخص استخدام class attribute",
+          "أهمية التطبيق العملي المستمر",
+          "تابع التحديات القادمة في دورة HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_classes.asp"
+      ]
+    }
+  ]
+}
