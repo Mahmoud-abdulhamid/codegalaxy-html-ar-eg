@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "113",
+  "title": "Web Workers API",
+  "course": "HTML",
+  "objectives": [
+    "فهم مفهوم Web Workers وأهميته في تحسين أداء صفحات الويب",
+    "التعرف على كيفية إنشاء ملف JavaScript خارجي لـ Web Worker",
+    "تعلم كيفية التواصل بين الـ Web Worker والخيط الرئيسي باستخدام postMessage",
+    "التحكم في دورة حياة الـ Web Worker عبر terminate"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html5_webworkers.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-15c897d9f05642c6.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html5_webworkers.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول Web Workers",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ فِي دَرْسِ الْيَوْمِ حَوْل وِبّ Workers API. عِنْدَ تَنْفِيذِ سِكْرِبْتَاتٍ ثَقِيلَة فِي صَفْحَة الْوِبّ، قَدْ تُصْبِحُ الصَّفْحَة غَيْرَ مُسْتَجِيبَه. لِذَا، نَسْتَخْدِم وِبّ Worker لِتَشْغِيلِ الْأَكْوَادِ فِي الْخَلْفِيَّة دُونَ التَّأْثِيرِ عَلَى أَدَاءِ الصَّفْحَه.",
+        "caption_text": "تساعد Web Workers في تشغيل الأكواد الثقيلة في الخلفية دون التأثير على استجابة صفحة الويب."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجنب توقف الصفحة عند تنفيذ مهام طويلة",
+          "تشغيل JavaScript بشكل مستقل في الخلفية",
+          "تحسين تجربة المستخدم عبر تعدد الخيوط"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    },
+    {
+      "id": "check_support",
+      "title": "التحقق من دعم المتصفح",
+      "narration": {
+        "spoken_text": "قَبْلَ بَدْءِ اسْتِخْدَام وِبّ Worker، يَجِبُ التَّأَكُّدُ مِنْ دَعْمِ الْمُتَصَفِّحْ لَهَا. نَسْتَخْدِمُ هَذَا الْكُودَ لِفَحْصِ وُجُود Worker فِي الْبِيئَة الْبَرْمَجِيَّه، وَعَرْضِ رِسَالَة مُنَاسِبَة لِلْمُسْتَخْدِمِ دَاخِلَ عُنْصُرٍ بِـ id مُحَدَّدٍ.",
+        "caption_text": "يجب التحقق من دعم المتصفح لـ Web Worker قبل البدء في استخدامها."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "check.js",
+        "code": "if(typeof(Worker) !== \"undefined\") {\n  x.innerHTML = \"Supported!\";\n} else {\n  x.innerHTML = \"Not supported!\";\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    },
+    {
+      "id": "create_worker_file",
+      "title": "إنشاء ملف Web Worker",
+      "narration": {
+        "spoken_text": "لِنَقُمْ بِإِنْشَاءِ مِلَفِّ JavaScript خَارِجِيٍّ بِاسْم demo_workers.js. نَسْتَخْدِمُ دَالَّة postMessage لِإِرْسَالِ الْبَيَانَاتِ إِلَى صَفْحَة HTML، وَنَسْتَخْدِم setTimeout لِتَكْرَارِ الْعَمَلِيَّة كُلَّ نِصْفِ ثَانِيَة بِشَكْلٍ مُسْتَقِلٍّ.",
+        "caption_text": "يتم إنشاء Web Worker في ملف JavaScript خارجي واستخدام postMessage لإرسال النتائج."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "demo_workers.js",
+        "code": "var i = 0;\nfunction timedCount() {\n  i = i + 1;\n  postMessage(i);\n  setTimeout(\"timedCount()\", 500);\n}\ntimedCount();",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    },
+    {
+      "id": "worker_object",
+      "title": "إنشاء كائن Web Worker",
+      "narration": {
+        "spoken_text": "فِي صَفْحَة HTML، نَقُومُ بِإِنْشَاءِ كَائِن Worker وَتَحْدِيدِ الْمِلَفِّ الْخَارِجِيِّ. نَسْتَخْدِمُ الْحَدَث onmessage لِاسْتِقْبَالِ الْبَيَانَاتِ الْمُرْسَلَة مِنَ الْخَلْفِيَّة وَعَرْضِهَا فِي الصَّفْحَه، مِمَّا يَجْعَلُ التَّوَاصُلَ بَيْنَ الْخَيْطِ الرَّئِيسِيِّ وَالْخَلْفِيَّة سَلِساً وَمُنَظَّماً.",
+        "caption_text": "يتم ربط الـ Web Worker بالصفحة واستقبال الرسائل عبر الحدث onmessage."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "main.js",
+        "code": "w = new Worker(\"demo_workers.js\");\nw.onmessage = function(event) {\n  document.getElementById(\"result\").innerHTML = \n  event.data;\n};",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    },
+    {
+      "id": "terminate_worker",
+      "title": "إنهاء Web Worker",
+      "narration": {
+        "spoken_text": "بَعْدَ الِانْتِهَاءِ مِنَ الْمُهِمَّه، يَجِبُ إِنْهَاء وِبّ Worker لِتَحْرِيرِ مَوَارِدِ الْجِهَازِ. نَسْتَخْدِمُ دَالَّة terminate لِإِيقَافِ الْعَمَلِيَّة فَوْراً، ثُمَّ نُعَيِّنُ الْمُتَغَيِّرَ إِلَى undefined لِلسَّمَاحِ بِإِعَادَة اسْتِخْدَامِهِ لَاحِقاً.",
+        "caption_text": "استخدم terminate لإيقاف الـ Web Worker وتحرير الموارد."
+      },
+      "visual": {
+        "type": "code",
+        "language": "javascript",
+        "filename": "stop.js",
+        "code": "function stopWorker() {\n  w.terminate();\n  w = undefined;\n}",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ كَيْفِيَّة اسْتِخْدَام وِبّ Workers لِتَحْسِينِ أَدَاءِ صَفْحَاتِ الْوِبّ. تَذَكَّرُوا أَنَّهُمْ يَعْمَلُونَ فِي خَلْفِيَّة مُنْفَصِلَة وَلَا يَمْلِكُونَ وُصُولاً مُبَاشِراً لِـ DOM. جَرِّبُوا هَذِهِ الْأَكْوَادَ بِنَفْسِكُمْ لِتَرَوْا الْفَرْقَ فِي الْأَدَاءِ.",
+        "caption_text": "تعد Web Workers أداة قوية للمهام المكثفة، مع مراعاة عدم الوصول المباشر لـ DOM."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تستخدم للمهام التي تستهلك المعالج",
+          "لا تملك وصولا لـ DOM",
+          "يتم التواصل عبر postMessage",
+          "يجب إنهاؤها عند عدم الحاجة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html5_webworkers.asp"
+      ]
+    }
+  ]
+}
