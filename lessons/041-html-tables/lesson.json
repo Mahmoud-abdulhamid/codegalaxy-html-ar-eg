@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "41",
+  "title": "HTML Tables Structure and Elements",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية إنشاء الجداول في صفحات الويب باستخدام HTML",
+    "التعرف على أجزاء الجدول الأساسية مثل tr و td و th",
+    "تطبيق أمثلة عملية لبناء جداول منظمة للبيانات"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_tables.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-8bc1b8154db37569.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_tables.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-53665b4efb867e34.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_tables.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-2b33656797fb3195.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_tables.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الجداول في HTML",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِنْشَاءِ الجَدَاوِلِ تَنْظِيمِ البَيَانَاتِ فِي ROWS و COLUMNS بِاسْتِخْدَام TABLE Element.",
+        "caption_text": "تتيح لنا لغة HTML تنظيم البيانات في صفوف وأعمدة باستخدام الجدول الأساسي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تنظيم البيانات في صفوف وأعمدة",
+          "استخدام عنصر table الأساسي",
+          "بناء هيكل واضح للمعلومات"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "تعريف الجدول والصفوف",
+      "narration": {
+        "spoken_text": "يَتَكَوَّنُ الجَدْوَلُ مِنْ Table Rows تَبْدَأُ بِـ tr Tag وَتَنْتَهِي بِـ tr Tag مُغْلِقَة، وَدَاخِلَ كُلِّ صَفٍّ نَضَع Table Cells بَوَاسِطَة td Tag.",
+        "caption_text": "يبدأ كل صف بـ tr ويحتوي على خلايا بيانات داخل عناصر td."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_rows.html",
+        "code": "<table>\n  <tr>\n    <td>Emil</td>\n    <td>Tobias</td>\n    <td>Linus</td>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "إضافة عدة صفوف للجدول",
+      "narration": {
+        "spoken_text": "يُمْكِنُكَ إِضَافَة عِدَّة ROWS كَمَا تُرِيدُ فِي الجَدْوَلِ، مَعَ الضَّرُورَةِ لِلتَّأَكُّدِ مِنْ أَنَّ عَدَد Cells ثَابِتٌ فِي كُلِّ صَفٍّ لِلْحِفَاظِ عَلَى التَّنْسِيقِ.",
+        "caption_text": "يمكنك إضافة عدة صفوف مع الحرص على تساوي عدد الخلايا في كل صف."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "multiple_rows.html",
+        "code": "<table>\n  <tr>\n    <td>Emil</td>\n    <td>Tobias</td>\n    <td>Linus</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>14</td>\n    <td>10</td>\n  </tr>\n</table>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "ترويسة الجدول باستخدام th",
+      "narration": {
+        "spoken_text": "حِينَمَا تُرِيدُ تَحْدِيدَ عَنَاوِينِ الأَعْمِدَةِ، نَسْتَخْدِم th Tag بَدَلاً مِنْ td Tag، وَحَرْفَا th يَعْنِيَان Table Header.",
+        "caption_text": "نستخدم عنصر th بدلا من td لتحديد خلايا الترويسة والعناوين."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "table_header.html",
+        "code": "<tr>\n  <th>Company</th>\n  <th>Contact</th>\n  <th>Country</th>\n</tr>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "معاينة الجدول الكامل",
+      "narration": {
+        "spoken_text": "يَعْرِضُ هَذَا المِثَالُ جَدْوَلًا مُتَكَامِلًا يَحْتَوِي عَلَى Table Headers فِي الصَّفِّ الأَوَّلِ ثُمَّ Table Data فِي الصُّفُوفِ التَّالِيَةِ.",
+        "caption_text": "صورة توضح جدول HTML متكامل يضم عناوين وبيانات منظمة."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "HTML Table Complete Example"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "خصائص عناصر الترويسة th",
+      "narration": {
+        "spoken_text": "بِشَكْلِ افتراضِيٍّ، يَظْهَرُ النَّصُّ دَاخِل th Elements بِخَطٍّ غَلِيظ BOLD وَمُتَوَسِّطِ المَحَاذَاةِ، وَلَكِنْ يُمْكِنُكَ تَغْيِيرُ ذَلِكَ بِاسْتِخْدَام CSS.",
+        "caption_text": "النص داخل عناصر th يكون غليظا ووسط المحاذاة افتراضيا ويمكن تعديله بـ CSS."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "الخط يكون غليظا بشكل افتراضي",
+          "المحاذاة تكون في المنتصف تلقائيا",
+          "إمكانية تخصيص المظهر بالكامل عبر CSS"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "محتويات خلايا الجدول المتنوعة",
+      "narration": {
+        "spoken_text": "لَاحِظْ يَا صَدِيقِي أَنَّ Table Cell يُمْكِنُ أَنْ تَحْتَوَى عَلَى أَنْوَاعٍ مُخْتَلِفَة مِنْ Elements مِثْلَ النُّصُوصِ والصُّوَرِ والرَّوَابِطِ وأبضا TABLES أُخْرَى.",
+        "caption_text": "يمكن أن تحتوي خلايا الجدول على نصوص، صور، قوائم، روابط، أو جداول أخرى."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "النصوص والصور والروابط",
+          "القوائم والجداول المتداخلة",
+          "مرونة عالية في تصميم المحتوى"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس ودعوة للتجربة",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ بِنَاءِ الجَدَاوِلِ بِاسْتِخْدَام tr و td و th. نَدْعُوكُمْ لِتَجْرِبَةِ الأَكْوَدِ بِنَفْسِكُمْ مِنْ خِلَالِ الرَّابِطِ المَوْجُودِ فِي الوَصْفِ مَعَ المُدَرِّبِ مَحْمُودِ عَبْدِ الحَمِيدِ.",
+        "caption_text": "خلاصة هيكل الجداول في HTML ودعوة للتطبيق العملي المستمر."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مراجعة شاملة ل Tags الجداول",
+          "التطبيق العملي للأكواد البرمجية",
+          "تابعونا للمزيد من الدروس المتقدمة"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_tables.asp"
+      ]
+    }
+  ]
+}
