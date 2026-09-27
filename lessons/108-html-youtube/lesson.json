@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "108",
+  "title": "تشغيل فيديوهات YouTube في صفحات HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية دمج فيديوهات YouTube في صفحات الويب باستخدام iframe",
+    "التعرف على معرف الفيديو YouTube Video ID واستخدامه",
+    "تطبيق خصائص التشغيل التلقائي Autoplay وكتم الصوت Mute",
+    "التحكم في تشغيل قوائم التشغيل Playlist وتكرار الحلقات Loop والتحكم في المشغل Controls"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_youtube.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-73434ababdb02883.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_youtube.asp",
+      "source_url": "https://www.w3schools.com/html/html_youtube.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-79fa0405782b9c8e.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_youtube.asp",
+      "source_url": "https://www.w3schools.com/html/html_youtube.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-96b9b1db804d9026.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_youtube.asp",
+      "source_url": "https://www.w3schools.com/html/html_youtube.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": "مقدمة الفيديوهات في الويب",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى أَسَهْلِ طَرِيقَة لِتَشْغِيلِ الْفيديوهات فِي صَفْحَاتِ الْوِبّ مِنْ خِلَالَ دَمْجِ فيديوهات YouTube بِسُهُولَة تَامَّه.",
+        "caption_text": "تعرف على أسهل طريقة لتشغيل الفيديوهات في صفحات الويب باستخدام YouTube."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تسهيل عرض الفيديوهات في صفحات الويب",
+          "تجنب مشاكل صيغ الفيديو المختلفة وصعوبة التحويل",
+          "الاعتماد على منصة YouTube كحل عملي وسريع"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_2",
+      "title": "معرف فيديو YouTube",
+      "narration": {
+        "spoken_text": "تَحْوِيلُ الفيديوهات إِلَى صيغ مُخْتَلِفَة أَمْرٌ صَعْبٌ وَمُسْتَهْلِكٌ لِلْوَقْتِ. الْحَلُّ الأَسْهَلُ هُوَ السَّمَاحُ لِـ YouTube بِتَشْغِيلِهَا مِنْ خِلَالَ اسْتِخْدَام YouTube Video ID الخاص بِكُلِّ فيديو فِي الكود.",
+        "caption_text": "استخدام معرف الفيديو YouTube Video ID للإشارة إلى الفيديو المطلوب داخل الكود."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجاوز عقبة تحويل الصيغ الصعبة والبطيئة",
+          "الحصول على معرف فريد Video ID مثل tgbNymZ7vqY",
+          "استخدام المعرف داخل كود HTML للربط المباشر"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_3",
+      "title": "عرض فيديو YouTube الأساسي",
+      "narration": {
+        "spoken_text": "نَنْتَقِلُ الآنَ لِرُؤْيَة الطَّريقَة العَمَلِيَّه. لِتَشْغِيلِ أي فيديو عَلَى صَفْحَة الْوِبّ، نَسْتَخْدِمُ عُنْصُر iframe مَعَ تحديد العَرْضِ وَالطُّولِ ورابط src المناسب للمنصَه.",
+        "caption_text": "استخدام عنصر iframe لتضمين وتشغيل فيديو YouTube في صفحة الويب."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "youtube.html",
+        "code": "<iframe width=\"420\"\n height=\"315\"\n src=\"https://www.\nyoutube.com/embed/\ntgbNymZ7vqY\">\n</iframe>",
+        "highlight_lines": [],
+        "output": "YouTube Video Player Embedded",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "التشغيل التلقائي وكتم الصوت",
+      "narration": {
+        "spoken_text": "يُمْكِنُكَ جَعْلُ الفيديوهات تبدأ في التشغيل تِلْقَائِيّاً عِنْدَ زِيَارَة الصَّفْحَة بِإِضَافَة autoplay يساوي واحداً. لَكِنْ لَاحِظْ أَنَّ مُتَصَفِّحَاتُ Chromium تَمْنَعُ التشغيل التلقائي بِدُونِ كتم صوت Mute.",
+        "caption_text": "إضافة خصائص التشغيل التلقائي مع كتم الصوت لضمان عمل الفيديو في المتصفحات."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "autoplay.html",
+        "code": "<iframe width=\"420\"\n height=\"315\"\n src=\"https://www.\nyoutube.com/embed/\ntgbNymZ7vqY?\nautoplay=1&mute=1\">\n</iframe>",
+        "highlight_lines": [],
+        "output": "Autoplay & Muted Video",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "تكرار الفيديوهات وقوائم التشغيل",
+      "narration": {
+        "spoken_text": "لِتَكْرَارِ الفيديو بِشَكْلٍ دَائِمٍ، نُضيف المتغير playlist مَعَ وضع قيمة loop تساوي واحداً. هَذَا يَجْعَلُ الفيديو يُعِيدُ نَفْسَهُ دُونَ تَوَقُّفٍ وبشكل مُسْتَمِرٍّ.",
+        "caption_text": "تفعيل التكرار المستمر للفيديو باستخدام معاملات playlist و loop."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "loop.html",
+        "code": "<iframe width=\"420\"\n height=\"315\"\n src=\"https://www.\nyoutube.com/embed/\ntgbNymZ7vqY?\nplaylist=tgbNymZ7vqY\n&loop=1\">\n</iframe>",
+        "highlight_lines": [],
+        "output": "Looping YouTube Video",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "التحكم في أزرار ومشغل الفيديو",
+      "narration": {
+        "spoken_text": "تَسْتَطِيعُ أَيْضاً إِخْفَاءَ أزرار التَّحكُّم مِنْ خِلَالَ إِضَافَة controls يساوي صفراً. القيمة الافتراضية هي واحد لظهور الأزرار، بينما القيمة صفر تُخفي كافة أزرار التحكم تماماً.",
+        "caption_text": "التحكم في إظهار أو إخفاء أزرار مشغل الفيديو باستخدام معامل controls."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "controls.html",
+        "code": "<iframe width=\"420\"\n height=\"315\"\n src=\"https://www.\nyoutube.com/embed/\ntgbNymZ7vqY?\ncontrols=0\">\n</iframe>",
+        "highlight_lines": [],
+        "output": "Player without Controls",
+        "output_status": "illustrative",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "معاينة النتيجة المرئية",
+      "narration": {
+        "spoken_text": "لِنُشَاهِدْ مَعاً صُورَة تَمْثِيلِيَّة لِكَيْفِ يَبْدُو فيديو YouTube المضمن داخل صفحة الْوِبّ عبر الْمُتَصَفِّحْ بعد تطبيق هذه الخصائص والإعدادات المختلفَه.",
+        "caption_text": "معاينة شكل الفيديو داخل المتصفح بعد اكتمال التضمين."
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "معاينة فيديو YouTube في صفحة HTML"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّة دَمْجِ فيديوهات YouTube بِسُهُولَة بَاسْتِخْدَام iframe، وَالتَّحَكُّمِ فِي التشغيل التلقائي والكتم والتكرار والأزرار. نَتَمَنَى أَنْ يَكُونَ الشَّرْحُ وَاضِحاً وَمُفِيداً لَكُمْ.",
+        "caption_text": "خلاصة شاملة لمهارات تضمين الفيديوهات المتقدمة في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام عنصر iframe لتضمين الفيديوهات",
+          "التحكم بمعاملات autoplay و mute و loop",
+          "إدارة ظهور أزرار التحكم بمرونة عالية"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_youtube.asp"
+      ]
+    }
+  ]
+}
