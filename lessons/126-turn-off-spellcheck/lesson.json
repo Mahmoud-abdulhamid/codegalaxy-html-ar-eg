@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "2732",
+  "title": "تعطيل خاصية Spellcheck في نماذج HTML",
+  "course": "HTML",
+  "objectives": [
+    "فهم كيفية عمل خاصية spellcheck في متصفحات الويب",
+    "تعلم كيفية تعطيل التصحيح التلقائي في عناصر input و textarea",
+    "تطبيق خاصية spellcheck على مستوى النموذج بالكامل",
+    "التعرف على أفضل الممارسات عند التعامل مع نماذج الويب"
+  ],
+  "sources": [
+    "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+  ],
+  "assets": [],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة حول خاصية Spellcheck",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة التَّحَكُّمِ فِي خَاصِيَّة التَّصْحِيحِ الْإِمْلَائِيِّ التِّلْقَائِيِّ، أَوْ مَا نُسَمِّيه spellcheck، وَكَيْفَ نُعَطِّلُ هَذِهِ الْخَاصِيَّة فِي نَمَاذِجِ الْوِبّ لِتَحْسِينِ تَجْرِبَة الْمُسْتَخْدِمِ.",
+        "caption_text": "مرحبا بكم في درس اليوم حول كيفية تعطيل خاصية spellcheck في نماذج HTML لتحسين تجربة المستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تفعيل أو تعطيل التصحيح الإملائي في المتصفح",
+          "التحكم في تجربة المستخدم داخل حقول الإدخال",
+          "استخدام Attribute spellcheck في عناصر HTML"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    },
+    {
+      "id": "concept",
+      "title": "مفهوم spellcheck في المتصفح",
+      "narration": {
+        "spoken_text": "بِشَكْلٍ افْتِرَاضِيٍّ، عِنْدَمَا يَقُومُ الْمُسْتَخْدِمُ بِكِتَابَة نَصٍّ دَاخِلَ حُقُولِ الْإِدْخَالِ، يَقُومُ مُتَصَفِّحْ الْوِبّ بِتَحْدِيدِ الْكَلِمَاتِ الَّتِي يَعْتَقِدُ أَنَّهَا خَاطِئَة بِخَطٍّ أَحْمَرَ. هَذَا الْأَمْرُ قَدْ يَكُونُ مُزْعِجاً فِي بَعْضِ التَّطْبِيقَاتِ، وَلِذَلِكَ نَحْتَاجُ إِلَى تَعْطِيلِهِ.",
+        "caption_text": "المتصفحات تقوم تلقائيا بتحديد الكلمات التي تبدو خاطئة إملائيا بخط أحمر، وهو ما يمكن التحكم فيه برمجيا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح يقوم بالتصحيح التلقائي افتراضيا",
+          "الخط الأحمر يظهر تحت الكلمات غير الصحيحة",
+          "يمكن للمطورين التحكم في هذا السلوك"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    },
+    {
+      "id": "code_input",
+      "title": "تعطيل spellcheck في input و textarea",
+      "narration": {
+        "spoken_text": "لِتَعْطِيلِ هَذِهِ الْخَاصِيَّه، نَسْتَخْدِم Attribute spellcheck مَعَ الْقِيمَة false. لَاحِظْ مَعِي هَذَا الْكُودَ لِعُنْصُر input وَعُنْصُر textarea، حَيْثُ نُضِيف Attribute مُبَاشَرَة دَاخِل Start Tag لِكُلِّ عُنْصُرٍ لِضَمَانِ إِيقَافِ التَّصْحِيحِ.",
+        "caption_text": "نستخدم Attribute spellcheck=\"false\" لتعطيل التصحيح الإملائي في عناصر الإدخال."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<input type=\"text\" \n  spellcheck=\"false\">\n\n<textarea \n  spellcheck=\"false\">\n</textarea>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    },
+    {
+      "id": "form_level",
+      "title": "تطبيق spellcheck على مستوى النموذج",
+      "narration": {
+        "spoken_text": "لَا يَقْتَصِرُ الْأَمْرُ عَلَى الْعَنَاصِرِ الْمُفْرَدَه، بَلْ يُمْكِنُنَا أَيْضاً تَعْطِيلُ التَّصْحِيحِ الْإِمْلَائِيِّ لِكَافَّة الْعَنَاصِرِ دَاخِل form بِإِضَافَة Attribute spellcheck=\"false\" إِلَى عُنْصُر form نَفْسِهِ، وَهَذَا يُوَفِّرُ عَلَيْنَا كِتَابَة Attribute فِي كُلِّ حَقْلٍ عَلَى حِدَه.",
+        "caption_text": "يمكن تطبيق Attribute spellcheck=\"false\" على عنصر <form> لتعطيل التصحيح في جميع الحقول بداخله."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "form.html",
+        "code": "<form spellcheck=\"false\">\n  <!-- جميع الحقول هنا -->\n  <!-- ستكون بدون تصحيح -->\n</form>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    },
+    {
+      "id": "best_practices",
+      "title": "ملاحظات وأفضل الممارسات",
+      "narration": {
+        "spoken_text": "يَا أَصْدِقَائِي، تَذَكَّرُوا أَنَّ خَاصِيَّة spellcheck هِي Attribute عَالَمِيَّه، أَيْ يُمْكِنُ اسْتِخْدَامُهَا مَعَ عَنَاصِرَ أُخْرَى كَثِيرَه. يُنْصَحُ بِالرُّجُوعِ إِلَى التَّوْثِيقِ الرَّسْمِيِّ لِـ HTML Form لِتَعَلُّمِ الْمَزِيدِ عَنِ الْخَصَائِصِ الْأُخْرَى لِلنَّمَاذِجِ.",
+        "caption_text": "تذكر أن spellcheck Attribute عالمية يمكن استخدامها مع عناصر HTML متنوعة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "spellcheck هي Attribute عالمية (Global Attribute)",
+          "يمكن استخدامها مع عناصر قابلة للتحرير",
+          "راجع توثيق HTML Form لمزيد من التفاصيل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَلَّمْنَا كَيْفَ نُسَيْطِرُ عَلَى سُلُوكِ الْمُتَصَفِّحْ فِي التَّصْحِيحِ الْإِمْلَائِيِّ. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ عَبْرَ الرَّوَابِطِ الْمَوْجُودَة فِي وَصْفِ الْفِيدِيُو. كَانَ مَعَكُمْ مَحْمُود عَبْدِ الْحَمِيد، وَإِلَى اللِّقَاءِ فِي دَرْسٍ قَادِمٍ.",
+        "caption_text": "شكرا لمتابعتكم. جربوا الأكواد بأنفسكم وتابعوا الدورة لمزيد من المهارات في HTML."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تم شرح كيفية تعطيل التصحيح الإملائي",
+          "تم تطبيق Attribute على مستوى الحقل والنموذج",
+          "شجعنا على الممارسة العملية للأكواد"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/howto/howto_html_spellcheck_disable.asp"
+      ]
+    }
+  ]
+}
