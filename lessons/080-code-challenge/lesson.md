@@ -17,6 +17,13 @@
 ```html
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
 </html>
 ```
 
@@ -25,9 +32,17 @@
 يحتوي قسم head على معلومات تقنية مثل title الذي يظهر في شريط عنوان المتصفح.
 
 ```html
-<head>
-  <title>صفحتي الأولى</title>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>صفحتي الأولى</title>
+  </head>
+  <body>
+    <h1>عنوان رئيسي</h1>
+    <p>هذه فقرة نصية.</p>
+  </body>
+</html>
 ```
 
 ## قسم الـ body
@@ -35,10 +50,17 @@
 قسم body هو المكان المخصص لكتابة المحتوى المرئي الذي يظهر للمستخدم مثل العناوين والفقرات.
 
 ```html
-<body>
-  <h1>عنوان رئيسي</h1>
-  <p>هذه فقرة نصية.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>صفحتي الأولى</title>
+  </head>
+  <body>
+    <h1>عنوان رئيسي</h1>
+    <p>هذه فقرة نصية.</p>
+  </body>
+</html>
 ```
 
 ## مفهوم الـ Tags و Elements
