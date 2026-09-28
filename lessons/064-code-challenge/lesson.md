@@ -23,9 +23,15 @@
 نكتب كود الأزرار باستخدام عنصر button والنص المناسب داخله.
 
 ```html
-<button>
-  Click Me
-</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button>Click Me</button>
+  </body>
+</html>
 ```
 
 ## استخدام Attribute التعطيل Disabled
@@ -33,9 +39,15 @@
 نستخدم Attribute disabled لتعطيل الزر ومنع المستخدم من النقر عليه.
 
 ```html
-<button disabled>
-  Disabled Button
-</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button disabled>Disabled Button</button>
+  </body>
+</html>
 ```
 
 ## معاينة نتائج الأزرار في المتصفح
