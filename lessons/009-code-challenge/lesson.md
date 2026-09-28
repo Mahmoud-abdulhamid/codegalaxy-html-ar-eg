@@ -23,9 +23,16 @@
 عنصر img يحتاج إلى Attributes مثل src و alt ليعمل بشكل صحيح.
 
 ```html
-<img src="image.jpg" 
-     alt="وصف الصورة">
-<!-- هذا هو هيكل img -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="image.jpg" alt="وصف الصورة">
+    <!-- هذا هو هيكل img -->
+  </body>
+</html>
 ```
 
 ## شرح تفصيلي للخصائص
