@@ -26,13 +26,23 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Layout</title>
-</head>
-<body>
-<header>
-<h1>My Page</h1>
-</header>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Page</h1>
+    </header>
+    <nav>Link</nav>
+    <section>
+      <p>Main Content</p>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
 ```
 
 ## استكمال هيكل الصفحة
@@ -40,14 +50,24 @@
 نضيف عناصر nav و section لتنظيم الروابط والمحتوى الرئيسي.
 
 ```html
-<nav>Link</nav>
-<section>
-<p>Main Content</p>
-</section>
-<footer>
-<p>Footer</p>
-</footer>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Page</h1>
+    </header>
+    <nav>Link</nav>
+    <section>
+      <p>Main Content</p>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
 </html>
 ```
 
