@@ -23,16 +23,24 @@
 مثال عملي لبناء جدول بيانات متكامل باستخدام العناصر الأساسية.
 
 ```html
-<table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-  </tr>
-  <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+      </tr>
+      <tr>
+        <td>Emil</td>
+        <td>Tobias</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## شرح تفصيلي لعناصر الخلايا والصفوف
@@ -48,11 +56,19 @@
 نستخدم عنصر th لتعريف خلايا العناوين بخط عريض ومتمركز.
 
 ```html
-<tr>
-  <th>Person 1</th>
-  <th>Person 2</th>
-  <th>Person 3</th>
-</tr>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <tr>
+      <th>Person 1</th>
+      <th>Person 2</th>
+      <th>Person 3</th>
+    </tr>
+  </body>
+</html>
 ```
 
 ## معاينة الجدول في المتصفح
