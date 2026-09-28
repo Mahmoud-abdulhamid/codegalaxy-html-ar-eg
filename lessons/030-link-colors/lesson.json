@@ -35,7 +35,7 @@
       "id": "scene_1",
       "title": "مقدمة ألوان الروابط في HTML",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ تَغْيِيرِ أَلْوَان Links بِحَسَبِ حَالَتِهَا الْمُخْتَلِفَةِ مِثْل visited و unvisited و active.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة تَغْيِيرِ أَلْوَان Links بِحَسَبِ حَالَتِهَا الْمُخْتَلِفَة مِثْل visited و unvisited و active.",
         "caption_text": "تعرض روابط HTML بألوان مختلفة اعتمادا على ما إذا تم زيارتها أو لم تزر بعد."
       },
       "visual": {
@@ -55,7 +55,7 @@
       "id": "scene_2",
       "title": "مفهوم حالات الروابط و CSS",
       "narration": {
-        "spoken_text": "تَعْرِضُ مُتَفَرِّحَاتُ الويب Links بِأَلْوَانِ افْتِرَاضِيَّة ثَابِتَة. وَلَكِنْ نَسْتَطِيعُ بِسُهُولَة تَغْيِيرَ هَذِهِ الْأَلْوَانِ وَالتَّحَكُّمَ بِهِمْ بِاسْتِخْدَامِ لُغَة CSS دَاخِلِ عُصْص style.",
+        "spoken_text": "تَعْرِضُ مُتَفَرِّحَاتُ الويب Links بِأَلْوَانِ افْتِرَاضِيَّة ثَابِتَه. وَلَكِنْ نَسْتَطِيعُ بِسُهُولَة تَغْيِيرَ هَذِهِ الْأَلْوَانِ وَالتَّحَكُّمَ بِهِمْ بِاسْتِخْدَامِ لُغَة سِي إِس إِس دَاخِلِ عُصْص سْتَايْل.",
         "caption_text": "يمكننا تغيير ألوان حالات الروابط الافتراضية باستخدام قواعد CSS المخصصة."
       },
       "visual": {
@@ -74,14 +74,14 @@
       "id": "scene_3",
       "title": "كود تنسيق الرابط غير المزارع والمزارع",
       "narration": {
-        "spoken_text": "لِنَنْظُرْ مَعِي إِلَى هَذَا الْكُودِ. نُحَدِّدُ فِي الْبِدَايَة a link بِصِبْغَة خَضْرَاءَ دُونَ خَطٍّ تَحْتِيٍّ، ثُمَّ نُحَدِّد a visited بِصِبْغَة وَرْدِيَّة مِثْلَمَا تَرَى أَمَامَكَ.",
+        "spoken_text": "لِنَنْظُرْ مَعِي إِلَى هَذَا الْكُودِ. نُحَدِّدُ فِي الْبِدَايَة a لِينْك بِصِبْغَة خَضْرَاءَ دُونَ خَطٍّ تَحْتِيٍّ، ثُمَّ نُحَدِّد a visited بِصِبْغَة وَرْدِيَّة مِثْلَمَا تَرَى أَمَامَكَ.",
         "caption_text": "نحدد لون الأخضر للرابط العادي والوردي للرابط المزارع بدون خط تحتي."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link_colors.html",
-        "code": "<style>\na:link {\n  color: green;\n  text-decoration: none;\n}\na:visited {\n  color: pink;\n  text-decoration: none;\n}\n</style>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      a:link {\n        color: green;\n        text-decoration: none;\n      }\n      a:visited {\n        color: pink;\n        text-decoration: none;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>Styled Web Page</p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -95,14 +95,14 @@
       "id": "scene_4",
       "title": "كود تأثيرات المرور والحالة النشطة",
       "narration": {
-        "spoken_text": "وَفِي هَذَا الْجُزْءِ مِنَ الْكُودِ، نَسْتَخْدِم a hover لِيُصْبِحَ الرَّابِطُ أَحْمَرَ عِنْدَ مُرُورِ الْفَأْرَةِ عَلَيْهِ مَعَ وُجُودِ خَطٍّ، و a active لِيُصْبِحَ أَصْفَرَ عِنْدَ النَّقْرِ.",
+        "spoken_text": "وَفِي هَذَا الْجُزْءِ مِنَ الْكُودِ، نَسْتَخْدِم a hover لِيُصْبِحَ الرَّابِطُ أَحْمَرَ عِنْدَ مُرُورِ الْفَأْرَة عَلَيْهِ مَعَ وُجُودِ خَطٍّ، و a active لِيُصْبِحَ أَصْفَرَ عِنْدَ النَّقْرِ.",
         "caption_text": "نستخدم a:hover لتغيير اللون إلى الأحمر و a:active إلى الأصفر عند النقر."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link_hover.html",
-        "code": "<style>\na:hover {\n  color: red;\n  text-decoration: underline;\n}\na:active {\n  color: yellow;\n  text-decoration: underline;\n}\n</style>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      a:hover {\n        color: red;\n        text-decoration: underline;\n      }\n      a:active {\n        color: yellow;\n        text-decoration: underline;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>Styled Web Page</p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -116,7 +116,7 @@
       "id": "scene_5",
       "title": "معاينة ألوان الروابط المتعددة",
       "narration": {
-        "spoken_text": "تُعْرِضُ هَذِهِ الصُّورَة نَتِيجَة تَطْبِيقِ كُودِ الْأَلْوَانِ السَّابِقِ عَلَى صَفْحَةِ الويب. يَظْهَرُ الرَّابِطُ بِالْأَلْوَانِ الْمُحَدَّدَةِ لِكُلِّ حَالَة بِوُضُوحٍ تَامٍّ دَاخِلِ الْمُتَصَفِّحِ.",
+        "spoken_text": "تُعْرِضُ هَذِهِ الصُّورَة نَتِيجَة تَطْبِيقِ كُودِ الْأَلْوَانِ السَّابِقِ عَلَى صَفْحَة الويب. يَظْهَرُ الرَّابِطُ بِالْأَلْوَانِ الْمُحَدَّدَة لِكُلِّ حَالَة بِوُضُوحٍ تَامٍّ دَاخِلِ الْمُتَصَفِّحِ.",
         "caption_text": "صورة المعاينة تظهر تأثير الألوان المختلفة للروابط حسب حالتها في المتصفح."
       },
       "visual": {
@@ -132,14 +132,14 @@
       "id": "scene_6",
       "title": "تحويل الروابط إلى أزرار احترافية",
       "narration": {
-        "spoken_text": "يُمْكِنُ أَيْضاً تَصْمِيمُ الرَّابِطِ لِيَظْهَرَ كَأَنَّه Button حَقِيقِيٌّ. نَسْتَخْدِمُ خَوَاصَّ CSS مِثْل background-color و padding لِتَنْسِيقِ الْعُنْصُرِ ب شكل جَذَّابٍ.",
+        "spoken_text": "يُمْكِنُ أَيْضاً تَصْمِيمُ الرَّابِطِ لِيَظْهَرَ كَأَنَّه Button حَقِيقِيٌّ. نَسْتَخْدِمُ خَوَاصَّ سِي إِس إِس مِثْل background-color و padding لِتَنْسِيقِ الْعُنْصُرِ ب شكل جَذَّابٍ.",
         "caption_text": "يمكننا تصميم الروابط لتظهر كأزرار تفاعلية جميلة باستخدام خصائص CSS."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link_button.html",
-        "code": "<style>\na:link, a:visited {\n  background-color: #f44336;\n  color: white;\n  padding: 15px 25px;\n  text-align: center;\n  display: inline-block;\n}\n</style>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      a:link, a:visited {\n        background-color: #f44336;\n        color: white;\n        padding: 15px 25px;\n        text-align: center;\n        display: inline-block;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>Styled Web Page</p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -153,7 +153,7 @@
       "id": "scene_7",
       "title": "معاينة أزرار الروابط المصممة",
       "narration": {
-        "spoken_text": "تُبَيِّنُ هَذِهِ الصُّورَة كَيْفَ يَبْدُو الرَّابِطُ عِنْدَ تَحْوِيلِهِ إِلَى زِرٍّ تَفَاعُلِيٍّ بِاسْتِخْدَامِ خَوَاصِّ CSS فِي صَفْحَاتِ الويب الْحَدِيثَةِ.",
+        "spoken_text": "تُبَيِّنُ هَذِهِ الصُّورَة كَيْفَ يَبْدُو الرَّابِطُ عِنْدَ تَحْوِيلِهِ إِلَى زِرٍّ تَفَاعُلِيٍّ بِاسْتِخْدَامِ خَوَاصِّ سِي إِس إِس فِي صَفْحَاتِ الويب الْحَدِيثَه.",
         "caption_text": "صورة المعاينة توضح شكل الرابط بعد تحويله إلى زر ملون وجذاب."
       },
       "visual": {
@@ -169,7 +169,7 @@
       "id": "scene_8",
       "title": "خلاصة الدرس وأهم الممارسات",
       "narration": {
-        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا كَيْفَ نُغَيِّرُ أَلْوَان Links وَنَسْتَخْدِم a:hover و a:active بِكَفَاءَة، إِضَافَة إِلَى تَصْمِيم Buttons. نَتَمَنَى أَنْ يَكُونَ الشَّرْحُ قَدْ نَالَ إِعْجَابَكُمْ.",
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا، تَعَلَّمْنَا كَيْفَ نُغَيِّرُ أَلْوَان Links وَنَسْتَخْدِم a:hover و a:active بِكَفَاءَه، إِضَافَة إِلَى تَصْمِيم Buttons. نَتَمَنَى أَنْ يَكُونَ الشَّرْحُ قَدْ نَالَ إِعْجَابَكُمْ.",
         "caption_text": "تعلمنا في هذا الدرس التحكم بألوان الروابط وتصميم الأزرار باستخدام CSS."
       },
       "visual": {
