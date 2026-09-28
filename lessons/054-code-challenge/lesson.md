@@ -23,10 +23,18 @@
 شرح هيكل القوائم البرمجي وكيفية كتابة الـ Elements و Tags داخل المستند.
 
 ```html
-<ul>
-  item one
-  item two
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ul>
+      item one
+      item two
+    </ul>
+  </body>
+</html>
 ```
 
 ## استكمال تفاصيل عناصر القائمة
@@ -34,10 +42,18 @@
 نستخدم الـ Tags المناسبة داخل القائمة لضمان ظهور العناصر بشكل منظم في المتصفح.
 
 ```html
-<ol>
-  <li>First item</li>
-  <li>Second item</li>
-</ol>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ol>
+      <li>First item</li>
+      <li>Second item</li>
+    </ol>
+  </body>
+</html>
 ```
 
 ## معاينة المخرجات في متصفح الويب
