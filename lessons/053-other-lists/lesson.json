@@ -72,7 +72,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<dl>\n  <dt>Coffee</dt>\n  <dd>- black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>- white cold drink</dd>\n</dl>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <dl>\n      <dt>Coffee</dt>\n      <dd>- black hot drink</dd>\n      <dt>Milk</dt>\n      <dd>- white cold drink</dd>\n    </dl>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
