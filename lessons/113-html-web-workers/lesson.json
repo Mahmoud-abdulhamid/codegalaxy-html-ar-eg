@@ -95,7 +95,7 @@
         "type": "code",
         "language": "javascript",
         "filename": "main.js",
-        "code": "w = new Worker(\"demo_workers.js\");\nw.onmessage = function(event) {\n  document.getElementById(\"result\").innerHTML = \n  event.data;\n};",
+        "code": "w = new Worker(\"demo_workers.js\");\nw.onmessage = function(event) {\n  document.getElementById(\"result\").innerHTML =\n  event.data;\n};",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
