@@ -63,7 +63,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<audio controls>\n  <source src=\"music.mp3\" \n  type=\"audio/mpeg\">\n</audio>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <audio controls>\n      <source src=\"music.mp3\" type=\"audio/mpeg\">\n    </audio>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
