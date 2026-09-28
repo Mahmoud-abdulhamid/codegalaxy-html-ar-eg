@@ -23,9 +23,19 @@
 نبدأ كتابة هيكل picture مع أول عنصر source للشاشات الواسعة.
 
 ```html
-<picture>
-  <source media="(min-width: 650px)"
-          srcset="img_food.jpg">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg">
+      <source media="(min-width: 465px)" srcset="img_car.jpg">
+      <img src="img_girl.jpg">
+    </picture>
+  </body>
+</html>
 ```
 
 ## استكمال كود picture مع img الاحتياطية
@@ -33,10 +43,19 @@
 نضيف عنصر source الثاني وعنصر img الأساسي في نهاية picture element.
 
 ```html
-  <source media="(min-width: 465px)"
-          srcset="img_car.jpg">
-  <img src="img_girl.jpg">
-</picture>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <picture>
+      <source media="(min-width: 650px)" srcset="img_food.jpg">
+      <source media="(min-width: 465px)" srcset="img_car.jpg">
+      <img src="img_girl.jpg">
+    </picture>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية للصور
