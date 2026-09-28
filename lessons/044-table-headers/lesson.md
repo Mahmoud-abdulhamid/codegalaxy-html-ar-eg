@@ -15,13 +15,21 @@
 تعرف عناصر th لتحديد خلايا رؤوس الجداول بدلا من خلايا البيانات العادية td.
 
 ```html
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## هيكل الجدول الكامل
@@ -29,16 +37,24 @@
 نضيف صفوف البيانات باستخدام عناصر td داخل الجدول بجانب رؤوس th.
 
 ```html
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </body>
+</html>
 ```
 
 ## الرؤوس العمودية Vertical Table Headers
@@ -46,16 +62,24 @@
 يمكن تحويل العمود الأول في كل صف ليصبح رأس جدول عمودي باستخدام th.
 
 ```html
-<table>
-  <tr>
-    <th>Firstname</th>
-    <td>Jill</td>
-  </tr>
-  <tr>
-    <th>Lastname</th>
-    <td>Smith</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## محاذاة رؤوس الجداول CSS text-align
@@ -73,12 +97,20 @@ th {
 يمكن لرأس الجدول أن يمتد فوق أكثر من عمود باستخدام الخاصية colspan.
 
 ```html
-<table>
-  <tr>
-    <th colspan="2">Name</th>
-    <th>Age</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## إضافة عنوان الجدول Table Caption
@@ -86,13 +118,21 @@ th {
 يستخدم عنصر caption لإضافة عنوان رئيسي للجدول ويكتب مباشرة بعد opening tag للجدول.
 
 ```html
-<table style="width:100%">
-  <caption>Monthly savings</caption>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table style="width:100%">
+      <caption>Monthly savings</caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## خلاصة الدرس وأفضل الممارسات
