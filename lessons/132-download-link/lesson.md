@@ -23,10 +23,17 @@
 مثال لاستخدام download attribute بدون قيمة، حيث يستخدم المتصفح اسم الملف الأصلي للتحميل.
 
 ```html
-<a href="/images/myw3schoolsimage.jpg" download>
-  <img src="/images/myw3schoolsimage.jpg" 
-  alt="W3Schools">
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="/images/myw3schoolsimage.jpg" download>
+      <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+    </a>
+  </body>
+</html>
 ```
 
 ## تخصيص اسم الملف المحمل
@@ -34,11 +41,17 @@
 يمكن تحديد اسم جديد للملف المحمل عبر إعطاء قيمة لـ download attribute.
 
 ```html
-<a href="/images/myw3schoolsimage.jpg" 
-   download="w3logo">
-  <img src="/images/myw3schoolsimage.jpg" 
-    alt="W3Schools">
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="/images/myw3schoolsimage.jpg" download="w3logo">
+      <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
+    </a>
+  </body>
+</html>
 ```
 
 ## ملاحظات تقنية هامة
