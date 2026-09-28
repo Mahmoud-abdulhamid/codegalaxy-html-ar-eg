@@ -25,9 +25,14 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HTML Tutorial</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    <p>The content of the document......</p>
+  </body>
+</html>
 ```
 
 ## إكمال هيكل الصفحة مع body
@@ -35,9 +40,15 @@
 نستكمل الكود بفتح قسم body لكتابة محتوى المستند المرئي للزوار.
 
 ```html
-<body>
-  <p>The content of the document......</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    <p>The content of the document......</p>
+  </body>
 </html>
 ```
 
