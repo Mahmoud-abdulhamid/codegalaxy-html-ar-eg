@@ -17,10 +17,18 @@
 يستخدم <blockquote> للاقتباسات الطويلة بينما يستخدم <q> للاقتباسات القصيرة داخل النص.
 
 ```html
-<blockquote cite="url">
-  نص الاقتباس الطويل هنا
-</blockquote>
-<p>نص مع <q>اقتباس قصير</q></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <blockquote cite="url">
+      نص الاقتباس الطويل هنا
+    </blockquote>
+    <p>نص مع <q>اقتباس قصير</q></p>
+  </body>
+</html>
 ```
 
 ## عنصر الاختصارات <abbr>
@@ -28,9 +36,16 @@
 يستخدم <abbr> لتعريف الاختصارات، ويفضل استخدام Attribute المسمى title لتوضيح المعنى.
 
 ```html
-<p>The <abbr title="World Health 
-Organization">WHO</abbr> was 
-founded in 1948.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was
+      founded in 1948.</p>
+  </body>
+</html>
 ```
 
 ## عنصر معلومات الاتصال <address>
@@ -38,10 +53,18 @@ founded in 1948.</p>
 يستخدم <address> لعرض معلومات الاتصال، ويظهر النص داخله بخط مائل مع فواصل أسطر تلقائية.
 
 ```html
-<address>
-  John Doe<br>
-  Box 564, USA
-</address>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <address>
+      John Doe<br>
+      Box 564, USA
+    </address>
+  </body>
+</html>
 ```
 
 ## عنصر عناوين الأعمال <cite>
@@ -49,8 +72,16 @@ founded in 1948.</p>
 يستخدم <cite> لتحديد عناوين الأعمال الإبداعية، ويظهر النص داخله بخط مائل.
 
 ```html
-<p><cite>The Scream</cite> by 
-Edvard Munch.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p><cite>The Scream</cite> by
+      Edvard Munch.</p>
+  </body>
+</html>
 ```
 
 ## عنصر اتجاه النص <bdo>
@@ -58,9 +89,17 @@ Edvard Munch.</p>
 يستخدم <bdo> للتحكم في اتجاه النص وتجاوز الإعدادات الافتراضية للمتصفح.
 
 ```html
-<bdo dir="rtl">
-  هذا النص يكتب من اليمين لليسار
-</bdo>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <bdo dir="rtl">
+      هذا النص يكتب من اليمين لليسار
+    </bdo>
+  </body>
+</html>
 ```
 
 ## خاتمة الدرس
