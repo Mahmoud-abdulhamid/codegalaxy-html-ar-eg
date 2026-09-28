@@ -1,3 +1,3 @@
 navigator.geolocation.watchPosition(
-  success, error
+success, error
 );
