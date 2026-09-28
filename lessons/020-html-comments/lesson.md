@@ -15,7 +15,15 @@
 شرح بنية تعليقات HTML ووجود علامة التعجب في بداية Tag.
 
 ```html
-<!-- Write your comments here -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <!-- Write your comments here -->
+  </body>
+</html>
 ```
 
 ## كتابة التعليقات والتنبيهات
@@ -23,11 +31,17 @@
 استخدام التعليقات لإضافة ملاحظات وتذكيرات داخل كود الويب.
 
 ```html
-<!-- This is a comment -->
-
-<p>This is a paragraph.</p>
-
-<!-- Remember to add more information here -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <!-- This is a comment -->
+    <p>This is a paragraph.</p>
+    <!-- Remember to add more information here -->
+  </body>
+</html>
 ```
 
 ## إخفاء المحتوى مؤقتا
@@ -35,12 +49,18 @@
 استخدام التعليقات لإخفاء المحتوى مؤقتا عن العرض في المتصفح.
 
 ```html
-  <p>This is a paragraph.</p>
-
-<!-- <p>This is another paragraph 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <!-- <p>This is another paragraph
   </p> -->
-
-<p>This is a paragraph too.</p>
+  <p>This is a paragraph too.</p>
+</body>
+</html>
 ```
 
 ## فحص الأخطاء و Debugging
@@ -48,12 +68,20 @@
 أهمية التعليقات في اكتشاف الأخطاء وتصحيح الأكواد.
 
 ```html
-  <p>This is a paragraph.</p>
-<!--
-<p>Look at this cool image:</p>
-<img src="pic_trulli.jpg" alt="Trulli">
--->
-<p>This is a paragraph too.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <!--
+    <p>Look at this cool image:</p>
+    <img src="pic_trulli.jpg" alt="Trulli">
+    -->
+    <p>This is a paragraph too.</p>
+  </body>
+</html>
 ```
 
 ## إخفاء المحتوى ضمن السطر الواحد
@@ -61,7 +89,15 @@
 إخفاء أجزاء معينة داخل الفقرات باستخدام التعليقات المضمنة.
 
 ```html
-  <p>This <!-- great text --> is a paragraph.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This <!-- great text --> is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية
