@@ -15,9 +15,15 @@
 تحديد الروابط باستخدام a tag و href attribute.
 
 ```html
-<a href="https://www.w3schools.com">
-  Visit W3Schools
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+  </body>
+</html>
 ```
 
 ## شرح The src Attribute
@@ -25,8 +31,16 @@
 استخدام img tag مع src attribute لعرض الصور.
 
 ```html
-<img src="img_girl.jpg">
-<img src="/images/img_girl.jpg">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="img_girl.jpg">
+    <img src="/images/img_girl.jpg">
+  </body>
+</html>
 ```
 
 ## شرح Width, Height and Alt Attributes
@@ -34,10 +48,15 @@
 تحديد الأبعاد باستخدام width و height والنص البديل عبر alt attribute.
 
 ```html
-<img src="img_girl.jpg"
-     width="500"
-     height="600"
-     alt="Girl with a jacket">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="img_girl.jpg" width="500" height="600" alt="Girl with a jacket">
+  </body>
+</html>
 ```
 
 ## شرح The style and lang Attributes
@@ -45,12 +64,14 @@
 تطبيق التنسيق عبر style وتحديد لغة الصفحة عبر lang attribute.
 
 ```html
+<!DOCTYPE html>
 <html lang="en">
-<body>
-  <p style="color:red;">
-    This is a red paragraph.
-  </p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p style="color:red;">This is a red paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -59,9 +80,15 @@
 عرض معلومات إضافية كرمز توضيحي Tooltip باستخدام title attribute.
 
 ```html
-<p title="I'm a tooltip">
-  This is a paragraph.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p title="I'm a tooltip">This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## شرح Best Practices for Attributes
