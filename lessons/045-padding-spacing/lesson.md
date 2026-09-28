@@ -23,8 +23,7 @@
 تطبيق خاصية padding يضيف مساحة موحدة حول محتوى الخلية.
 
 ```css
-th, td
-{
+th, td {
   padding: 15px;
 }
 ```
@@ -55,8 +54,7 @@ th, td {
 تطبيق border-spacing على الجدول يباعد بين الخلايا بشكل واضح.
 
 ```css
-table
-{
+table {
   border-spacing: 30px;
 }
 ```
