@@ -25,14 +25,16 @@
 مثال يوضح تطبيق style على عناصر body و h1 لتغيير الألوان.
 
 ```html
-<body style="background-color: powderblue;">
-<h1 style="color: blue;">
-هذا عنوان ملون
-</h1>
-<p style="color: red;">
-هذه فقرة بنص أحمر
-</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body style="background-color: powderblue;">
+    <h1 style="color: blue;">هذا عنوان ملون</h1>
+    <p style="color: red;">هذه فقرة بنص أحمر</p>
+  </body>
+</html>
 ```
 
 ## قواعد كتابة الـ Styles
