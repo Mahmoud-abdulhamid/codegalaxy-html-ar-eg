@@ -23,7 +23,15 @@
 نستخدم id attribute لإنشاء Bookmark داخل العنصر المستهدف.
 
 ```html
-<h2 id="C4">Chapter 4</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h2 id="C4">Chapter 4</h2>
+  </body>
+</html>
 ```
 
 ## ربط الصفحة بنفس الـ Bookmark
@@ -31,7 +39,15 @@
 نضيف رابطا تشعبيا داخل نفس الصفحة للوصول إلى الفصل الرابع.
 
 ```html
-<a href="#C4">Jump to Chapter 4</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="#C4">Jump to Chapter 4</a>
+  </body>
+</html>
 ```
 
 ## الربط بـ Bookmark في صفحة أخرى
@@ -39,9 +55,15 @@
 يمكنك إضافة روابط تؤدي إلى Bookmarks موجودة في صفحات ويب أخرى.
 
 ```html
-<a href="html_demo.html#C4">
-Jump to Chapter 4
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="html_demo.html#C4">Jump to Chapter 4</a>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية في المتصفح
