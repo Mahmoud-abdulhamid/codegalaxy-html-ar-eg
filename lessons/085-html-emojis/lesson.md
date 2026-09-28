@@ -23,7 +23,16 @@
 تحديد مجموعة الحروف UTF-8 عبر عنصر meta لضمان العرض السليم.
 
 ```html
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## شرح UTF-8 Characters and Entity Numbers
@@ -31,8 +40,16 @@
 استخدام الأرقام لتمثيل الحروف والرموز التي لا تتوفر على لوحة المفاتيح.
 
 ```html
-<p>I will display A B C</p>
-<p>I will display &#65; &#66; &#67;</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>I will display A B C</p>
+    <p>I will display &#65; &#66; &#67;</p>
+  </body>
+</html>
 ```
 
 ## شرح Example Explained
@@ -50,11 +67,13 @@
 ```html
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<body>
-<h1>My First Emoji</h1>
-<p>&#128512;</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>My First Emoji</h1>
+    <p>&#128512;</p>
+  </body>
 </html>
 ```
 
@@ -65,13 +84,13 @@
 ```html
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<body>
-<h1>Sized Emojis</h1>
-<p style="font-size:48px">
-&#128512; &#128516; &#128525; &#128151;
-</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Sized Emojis</h1>
+    <p style="font-size:48px">&#128512; &#128516; &#128525; &#128151;</p>
+  </body>
 </html>
 ```
 
