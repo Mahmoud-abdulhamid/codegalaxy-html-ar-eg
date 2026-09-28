@@ -28,14 +28,22 @@
 تطبيق class باسم city على عناصر div لتنسيقها بشكل موحد.
 
 ```html
-<div class="city">
-  <h2>London</h2>
-  <p>Capital of England.</p>
-</div>
-<div class="city">
-  <h2>Paris</h2>
-  <p>Capital of France.</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="city">
+      <h2>London</h2>
+      <p>Capital of England.</p>
+    </div>
+    <div class="city">
+      <h2>Paris</h2>
+      <p>Capital of France.</p>
+    </div>
+  </body>
+</html>
 ```
 
 ## استخدام أكثر من class
@@ -43,12 +51,16 @@
 يمكن إضافة أكثر من class للعنصر الواحد بفصل الأسماء بمسافة.
 
 ```html
-<h2 class="city main">
-  London
-</h2>
-<h2 class="city">
-  Paris
-</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h2 class="city main">London</h2>
+    <h2 class="city">Paris</h2>
+  </body>
+</html>
 ```
 
 ## الـ class مع JavaScript
