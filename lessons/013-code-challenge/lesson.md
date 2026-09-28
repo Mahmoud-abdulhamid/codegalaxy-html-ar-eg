@@ -25,10 +25,17 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Challenge</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>First line<br>Second line</p>
+    <pre>Preformatted text</pre>
+  </body>
+</html>
 ```
 
 ## إضافة فقرات النصوص
@@ -36,8 +43,19 @@
 إضافة فقرات النصوص باستخدام Tag p لتنظيم محتوى صفحة الويب.
 
 ```html
-<p>This is a paragraph.</p>
-<p>This is another paragraph.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>First line<br>Second line</p>
+    <pre>Preformatted text</pre>
+  </body>
+</html>
 ```
 
 ## استخدام Breaks والنصوص المنسقة
@@ -45,8 +63,19 @@
 استخدام Tag br لإضافة سطر جديد واستخدام pre للنصوص المنسقة مسبقا.
 
 ```html
-<p>First line<br>Second line</p>
-<pre>Preformatted text</pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>First line<br>Second line</p>
+    <pre>Preformatted text</pre>
+  </body>
+</html>
 ```
 
 ## إنهاء وتغليف هيكل الصفحة
@@ -54,7 +83,18 @@
 إغلاق Tags body و html لإنهاء صفحة الويب البرمجية بشكل صحيح.
 
 ```html
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>First line<br>Second line</p>
+    <pre>Preformatted text</pre>
+  </body>
 </html>
 ```
 
