@@ -15,9 +15,15 @@
 نستخدم a Element مع Attribute المسمى href لتحديد وجهة الرابط.
 
 ```html
-<a href="url">
-  هذا هو نص الرابط
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="url">هذا هو نص الرابط</a>
+  </body>
+</html>
 ```
 
 ## تطبيق عملي للروابط
@@ -25,9 +31,15 @@
 مثال عملي لكيفية كتابة رابط لموقع خارجي.
 
 ```html
-<a href="https://www.w3schools.com">
-  زيارة موقع W3Schools
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">زيارة موقع W3Schools</a>
+  </body>
+</html>
 ```
 
 ## خصائص إضافية للروابط
@@ -35,10 +47,15 @@
 استخدام target="_blank" لفتح الرابط في صفحة جديدة.
 
 ```html
-<a href="https://google.com" 
-   target="_blank">
-  فتح في صفحة جديدة
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="https://google.com" target="_blank">فتح في صفحة جديدة</a>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
