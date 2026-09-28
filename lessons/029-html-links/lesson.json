@@ -43,7 +43,7 @@
       "id": "scene_intro",
       "title": "مقدمة عن HTML Links",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّةِ إِنْشَاءِ الرَّوَابِطِ التَّشَعُبِيَّةِ وَكَيْفَ تُتِيحُ لِلْمُسْتَخْدِمِينَ الِانْتِقَالَ بِسَلَاسَة بَيْنَ صَفَحَاتِ الْوِيبِ الْمُخْتَلِفَةِ بِكُلِّ سُهُولَة.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كَيْفِيَّة إِنْشَاءِ الرَّوَابِطِ التَّشَعُبِيَّة وَكَيْفَ تُتِيحُ لِلْمُسْتَخْدِمِينَ الِانْتِقَالَ بِسَلَاسَة بَيْنَ صَفَحَاتِ الْوِيبِ الْمُخْتَلِفَة بِكُلِّ سُهُولَه.",
         "caption_text": "تعتبر الروابط التشعبية أساسية في صفحات الويب لتسهيل التنقل."
       },
       "visual": {
@@ -62,14 +62,14 @@
       "id": "scene_syntax",
       "title": "الصيغة الأساسية وبنية الروابط",
       "narration": {
-        "spoken_text": "لِإِنْشَاءِ رَابِطٍ تشعبي، نَسْتَخْدِم a tag. الْعُنْصُرُ الْأَهَمُّ هُنَا هُو href attribute الَّذِي يُحَدِّدُ عُنْوَانَ الْوِجْهَةِ الْمَطْلُوبَةِ، بَيْنَمَا النَّصُّ الظَّاهِرِيُّ يُسَمَّى link text وَيَظْهَرُ لِلْقَارِئِ مُبَاشَرَة.",
+        "spoken_text": "لِإِنْشَاءِ رَابِطٍ تشعبي، نَسْتَخْدِم a تَاج. الْعُنْصُرُ الْأَهَمُّ هُنَا هُو إِتْش رِيف أَتْرِيبْيُوت الَّذِي يُحَدِّدُ عُنْوَانَ الْوِجْهَة الْمَطْلُوبَه، بَيْنَمَا النَّصُّ الظَّاهِرِيُّ يُسَمَّى لِينْك text وَيَظْهَرُ لِلْقَارِئِ مُبَاشَرَه.",
         "caption_text": "يستخدم a tag لتعريف الرابط مع attribute من نوع href."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link_syntax.html",
-        "code": "<a href=\"url\">\n  link text\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"url\">link text</a>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           2
@@ -86,14 +86,14 @@
       "id": "scene_example",
       "title": "مثال عملي على الروابط الخارجية",
       "narration": {
-        "spoken_text": "شَاهِدْ هَذَا الْمِثَالَ الْعَمَلِيَّ لِرَابِطٍ يَتَوَجَّهُ إِلَى مَوْقِع W3Schools. يَتَمَيَّزُ الْمُتَصَفِّحُ بِعَرْضِ الرَّوَابِطِ بِشَكْلٍ افْتِرَاضِيٍّ بِلَوْنٍ مُمَيَّزٍ وَتَحْتَهُ خَطٌّ لِتَمْيِيزِهِ عَنْ بَاقِي النُّصُوصِ.",
+        "spoken_text": "شَاهِدْ هَذَا الْمِثَالَ الْعَمَلِيَّ لِرَابِطٍ يَتَوَجَّهُ إِلَى مَوْقِع دَبْلِيُو ثْرِي سْكُولْز. يَتَمَيَّزُ الْمُتَصَفِّحُ بِعَرْضِ الرَّوَابِطِ بِشَكْلٍ افْتِرَاضِيٍّ بِلَوْنٍ مُمَيَّزٍ وَتَحْتَهُ خَطٌّ لِتَمْيِيزِهِ عَنْ بَاقِي النُّصُوصِ.",
         "caption_text": "مثال عملي لإنشاء رابط يوجه المستخدم إلى موقع خارجي."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "external_link.html",
-        "code": "<a href=\"https://www.w3schools.com/\">\n  Visit W3Schools.com!\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com/\">Visit W3Schools.com!</a>\n  </body>\n</html>",
         "highlight_lines": [
           1
         ],
@@ -109,14 +109,14 @@
       "id": "scene_target",
       "title": "التحكم في نافذة العرض عبر target Attribute",
       "narration": {
-        "spoken_text": "بِدُونِ إِضَافَاتٍ، تُفْتَحُ الصَّفْحَة الْمَوْصُولَة فِي نَفْسِ نَافِذَةِ الْمُتَصَفِّحِ الْحَالِيَّةِ. وَلَكِنْ، إِذَا أَرَدْتَ فَتْحَهَا فِي تَبْوِيبٍ جَدِيدٍ، يُمْكِنُكَ اسْتِخْدَام target attribute مَعَ قِيمَة _blank.",
+        "spoken_text": "بِدُونِ إِضَافَاتٍ، تُفْتَحُ الصَّفْحَة الْمَوْصُولَة فِي نَفْسِ نَافِذَة الْمُتَصَفِّحِ الْحَالِيَّه. وَلَكِنْ، إِذَا أَرَدْتَ فَتْحَهَا فِي تَبْوِيبٍ جَدِيدٍ، يُمْكِنُكَ اسْتِخْدَام target أَتْرِيبْيُوت مَعَ قِيمَة _blank.",
         "caption_text": "يحدد target attribute المكان الذي سيتم فيه فتح المستند المرتبط."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "target_attr.html",
-        "code": "<a href=\"https://www.w3schools.com/\"\n   target=\"_blank\">\n  Visit W3Schools!\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com/\" target=\"_blank\">Visit W3Schools!</a>\n  </body>\n</html>",
         "highlight_lines": [
           2
         ],
@@ -132,14 +132,14 @@
       "id": "scene_urls",
       "title": "الفرق بين Absolute URLs وRelative URLs",
       "narration": {
-        "spoken_text": "فِي الرَّوَابِطِ، نَسْتَخْدِم absolute URL لِعَنَاوِينِ الْوِيبِ الْكَامِلَةِ الَّتِي تَتَضَمَّنُ الْبَرُوتوكول وَالنِّطَاقَ. أَمَّا relative URL فَتُسْتَخْدَمُ لِلرَّوَابِطِ الْمَحَلِّيَّةِ دَاخِلَ نَفْسِ الْمَوْقِعِ بِدُونِ الْحَاجَةِ لِتَكْرَارِ الْعُنْوَانِ.",
+        "spoken_text": "فِي الرَّوَابِطِ، نَسْتَخْدِم absolute URL لِعَنَاوِينِ الْوِيبِ الْكَامِلَة الَّتِي تَتَضَمَّنُ الْبَرُوتوكول وَالنِّطَاقَ. أَمَّا relative URL فَتُسْتَخْدَمُ لِلرَّوَابِطِ الْمَحَلِّيَّة دَاخِلَ نَفْسِ الْمَوْقِعِ بِدُونِ الْحَاجَة لِتَكْرَارِ الْعُنْوَانِ.",
         "caption_text": "الفرق بين الروابط المطلقة والروابط النسبية في المواقع."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "urls_example.html",
-        "code": "<h2>Absolute URLs</h2>\n<p><a href=\"https://www.google.com/\">Google</a></p>\n<h2>Relative URLs</h2>\n<p><a href=\"html_images.asp\">HTML Images</a></p>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h2>Absolute URLs</h2>\n    <p><a href=\"https://www.google.com/\">Google</a></p>\n    <h2>Relative URLs</h2>\n    <p><a href=\"html_images.asp\">HTML Images</a></p>\n  </body>\n</html>",
         "highlight_lines": [
           2,
           4
@@ -156,14 +156,14 @@
       "id": "scene_media_links",
       "title": "استخدام الصور والبريد الإلكتروني كروابط",
       "narration": {
-        "spoken_text": "لَا يَقْتَصِرُ الرَّابِطُ عَلَى النُّصُوصِ فَقَطْ يُمْكِنُكَ وَضْع img tag دَاخِل a tag لِتُصْبِحَ الصُّورَة رَابِطاً، كَمَا يَحْدُثُ عِنْدَ اسْتِخْدَام mailto لِفَتْحِ بَرْنَامَجِ الْبَرِيدِ.",
+        "spoken_text": "لَا يَقْتَصِرُ الرَّابِطُ عَلَى النُّصُوصِ فَقَطْ يُمْكِنُكَ وَضْع إِيمِج تَاج دَاخِل a تَاج لِتُصْبِحَ الصُّورَة رَابِطاً، كَمَا يَحْدُثُ عِنْدَ اسْتِخْدَام mailto لِفَتْحِ بَرْنَامَجِ الْبَرِيدِ.",
         "caption_text": "يمكن تحويل الصور أو عناوين البريد الإلكتروني إلى روابط تشعبية فعالة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "image_link.html",
-        "code": "<a href=\"default.asp\">\n  <img src=\"smiley.gif\" alt=\"Tutorial\" \n       style=\"width:42px;height:42px;\">\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"default.asp\">\n      <img src=\"smiley.gif\" alt=\"Tutorial\" style=\"width:42px;height:42px;\">\n    </a>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           2
@@ -180,14 +180,14 @@
       "id": "scene_buttons",
       "title": "استخدام الأزرار والعناوين التوضيحية Link Titles",
       "narration": {
-        "spoken_text": "وَإِذَا أَرَدْتَ اسْتِخْدَام button كرانط، فَيُمْكِنُكَ الِاسْتِعَانَة بِبَعْضِ أَكْوَاد JavaScript لِتَحْدِيدِ الوَظِيفَةِ. كَمَا يُتِيحُ لَنَا title attribute إِضَافَة مَعْلُومَاتٍ تَظْهَرُ كَـ tooltip عِنْدَ تَحْرِيكِ الْمُؤَشِّرِ فَوْقَ الْعُنْصُرِ.",
+        "spoken_text": "وَإِذَا أَرَدْتَ اسْتِخْدَام button كرانط، فَيُمْكِنُكَ الِاسْتِعَانَة بِبَعْضِ أَكْوَاد جَافَا سْكْرِبْت لِتَحْدِيدِ الوَظِيفَه. كَمَا يُتِيحُ لَنَا تَايْتِل أَتْرِيبْيُوت إِضَافَة مَعْلُومَاتٍ تَظْهَرُ كَـ tooltip عِنْدَ تَحْرِيكِ الْمُؤَشِّرِ فُوءَ الْعُنْصُرِ.",
         "caption_text": "استخدام الأزرار مع JavaScript وإضافة عناوين توضيحية باستخدام title."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "button_title.html",
-        "code": "<button onclick=\"document.location='default.asp'\">\n  HTML Tutorial\n</button>\n<a href=\"url\" title=\"More info\">Link</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <button onclick=\"document.location='default.asp'\">HTML Tutorial</button>\n    <a href=\"url\" title=\"More info\">Link</a>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           4
@@ -204,7 +204,7 @@
       "id": "scene_summary",
       "title": "خلاصة الدرس وأفضل الممارسات البرمجية",
       "narration": {
-        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ بِنَاءِ الرَّوَابِطِ التَّشَعُبِيَّةِ بِاحْتِرَافِيَّة تَامَّة. نَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ لِاسْتِكْمَالِ رِحْلَتِنَا الْمُمْتِعَةِ فِي تَعَلُّمِ مَهَارَاتِ تَصْمِيمِ وَتَطْوِيرِ الْوِيبِ مَعَ كُودِ جَلَاكْسِي.",
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَعَرَّفْنَا عَلَى كَيْفِيَّة بِنَاءِ الرَّوَابِطِ التَّشَعُبِيَّة بِاحْتِرَافِيَّة تَامَّه. نَنْتَظِرُكُمْ فِي الدَّرْسِ الْقَادِمِ لِاسْتِكْمَالِ رِحْلَتِنَا الْمُمْتِعَة فِي تَعَلُّمِ مَهَارَاتِ تَصْمِيمِ وَتَطْوِيرِ الْوِيبِ مَعَ كُودِ جَلَاكْسِي.",
         "caption_text": "ملخص شامل لأهم مهارات التعامل مع HTML Links."
       },
       "visual": {
