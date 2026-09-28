@@ -23,8 +23,16 @@
 نستخدم Attribute style لتطبيق تنسيق مباشر على عنصر واحد.
 
 ```html
-<h1 style="color:blue;">Blue</h1>
-<p style="color:red;">Red</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style="color:blue;">Blue</h1>
+    <p style="color:red;">Red</p>
+  </body>
+</html>
 ```
 
 ## استخدام Internal CSS
@@ -32,13 +40,27 @@
 يتم تعريف Internal CSS داخل عنصر style في قسم head.
 
 ```html
-<head>
-<style>
-body {background: powderblue;}
-h1 {color: blue;}
-p {color: red;}
-</style>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background: powderblue;
+      }
+      h1 {
+        color: blue;
+      }
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## خصائص CSS الأساسية
