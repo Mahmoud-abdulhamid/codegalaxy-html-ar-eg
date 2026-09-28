@@ -23,9 +23,16 @@
 نكتب Start Tag للعنصر iframe، ثم نضيف Attribute باسم src لتحديد المسار، ونغلق العنصر بـ End Tag.
 
 ```html
-<iframe src="url" 
-  title="description">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="url" title="description">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## تفاصيل الـ Attributes
@@ -33,11 +40,16 @@
 لا ننسى أهمية Attribute مثل title لتحسين إمكانية الوصول، وكذلك height و width لتحديد أبعاد الإطار.
 
 ```html
-<iframe src="demo.html" 
-  width="600" 
-  height="400" 
-  title="Iframe">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="demo.html" width="600" height="400" title="Iframe">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## المعاينة في المتصفح
@@ -45,8 +57,16 @@
 عند فتح هذا الكود في Web Browser مثل Chrome أو Edge، ستظهر الصفحة المضمنة داخل الإطار المحدد.
 
 ```html
-<!-- النتيجة: -->
-<iframe src="demo.html"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <!-- النتيجة: -->
+    <iframe src="demo.html"></iframe>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
