@@ -24,12 +24,20 @@
 هيكل بسيط لنموذج تسجيل دخول باستخدام HTML.
 
 ```html
-<form>
-  <label>Username:</label>
-  <input type="text">
-  <label>Password:</label>
-  <input type="password">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form>
+      <label>Username:</label>
+      <input type="text">
+      <label>Password:</label>
+      <input type="password">
+    </form>
+  </body>
+</html>
 ```
 
 ## إضافة زر الإرسال
@@ -37,11 +45,19 @@
 إضافة زر الإرسال باستخدام input من نوع submit.
 
 ```html
-<form>
-  <input type="text">
-  <input type="password">
-  <input type="submit" value="Login">
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form>
+      <input type="text">
+      <input type="password">
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
