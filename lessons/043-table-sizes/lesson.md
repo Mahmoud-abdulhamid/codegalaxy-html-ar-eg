@@ -25,18 +25,26 @@
 نضيف style="width:100" إلى عنصر table لتحديد العرض الكلي.
 
 ```html
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
@@ -52,18 +60,26 @@
 نحدد عرض العمود الأول بإضافة style="width:70" إلى عنصر th.
 
 ```html
-<table style="width:100%">
-  <tr>
-    <th style="width:70%">Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th style="width:70%">Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
@@ -79,18 +95,26 @@
 نحدد ارتفاع الصف الثاني بإضافة style="height:200px" إلى عنصر tr.
 
 ```html
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr style="height:200px">
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr style="height:200px">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
