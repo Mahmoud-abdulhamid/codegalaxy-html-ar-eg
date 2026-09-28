@@ -23,11 +23,19 @@
 مثال عملي لكتابة Unordered List في HTML.
 
 ```html
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>
 ```
 
 ## معاينة القائمة غير المرتبة
@@ -39,11 +47,19 @@
 تستخدم Ordered Lists مع ol و li وتظهر مرقمة افتراضيا.
 
 ```html
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </body>
+</html>
 ```
 
 ## معاينة القائمة المرتبة
@@ -55,12 +71,20 @@
 تعريف Description Lists باستخدام dl و dt و dd.
 
 ```html
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </body>
+</html>
 ```
 
 ## معاينة قوائم الوصف وخلاصة الدرس
