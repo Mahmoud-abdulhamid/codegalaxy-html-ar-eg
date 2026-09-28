@@ -63,8 +63,13 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My Page Title</title>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My Page Title</title>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          5
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -84,8 +89,10 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" </head>\n    <body>\n      type=\"image/x-icon\"\n      href=\"/images/favicon.ico\">\n    </body>\n  </html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My Page Title</title>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          6
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -105,8 +112,13 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<body>\n  <h1>This is a Heading</h1>\n  <p>This is a paragraph.</p>\n</body>\n</html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My Page Title</title>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          8,
+          9,
+          10,
+          11
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
