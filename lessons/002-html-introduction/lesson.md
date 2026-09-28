@@ -25,9 +25,15 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html>
 ```
 
 ## كتابة الكود الأساسي الأول الجزء الثاني
@@ -35,10 +41,16 @@
 نكتب المحتوى المرئي داخل body باستخدام عناصر مثل h1 و p.
 
 ```html
-<body>
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
