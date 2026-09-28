@@ -15,9 +15,15 @@
 استخدام style Attribute لإضافة صورة خلفية لعنصر p.
 
 ```html
-<p style="background-image: url('img_girl.jpg');">
-  هذا النص يحتوي على صورة خلفية.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p style="background-image: url('img_girl.jpg');">هذا النص يحتوي على صورة خلفية.</p>
+  </body>
+</html>
 ```
 
 ## استخدام قسم style
@@ -25,11 +31,21 @@
 تحديد صورة الخلفية داخل style Element في قسم head.
 
 ```html
-<style>
-  p {
-    background-image: url('img_girl.jpg');
-  }
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      p {
+        background-image: url('img_girl.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## خلفية الصفحة بالكامل
@@ -37,11 +53,21 @@
 تطبيق صورة الخلفية على كامل الصفحة عبر body Element.
 
 ```html
-<style>
-  body {
-    background-image: url('img_girl.jpg');
-  }
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-image: url('img_girl.jpg');
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## التحكم في تكرار الصورة
