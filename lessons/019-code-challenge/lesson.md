@@ -23,9 +23,17 @@
 نكتب عنصر blockquote لتضمين اقتباس طويل مع تحديد المصدر.
 
 ```html
-<blockquote cite="http://www.worldwildlife.org">
-For 50 years, WWF has...
-</blockquote>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <blockquote cite="http://www.worldwildlife.org">
+      For 50 years, WWF has...
+    </blockquote>
+  </body>
+</html>
 ```
 
 ## كتابة اقتباس قصير
@@ -33,9 +41,17 @@ For 50 years, WWF has...
 نستخدم عنصر q لإضافة اقتباس قصير داخل فقرة نصية.
 
 ```html
-<p>WWF's goal is to:
-<q>Build a future where...</q>
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>WWF's goal is to:
+      <q>Build a future where...</q>
+    </p>
+  </body>
+</html>
 ```
 
 ## اختصار الكلمات
@@ -43,8 +59,16 @@ For 50 years, WWF has...
 نستخدم عنصر abbr مع Attribute title لتوضيح معاني الاختصارات.
 
 ```html
-<p>The <abbr title="World Wildlife Fund">
-WWF</abbr> was formed in 1961.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>The <abbr title="World Wildlife Fund">
+      WWF</abbr> was formed in 1961.</p>
+  </body>
+</html>
 ```
 
 ## تضمين العبارات المعكوسة
@@ -52,9 +76,17 @@ WWF</abbr> was formed in 1961.</p>
 نستخدم عنصر bdo لتغيير اتجاه عرض النصوص في صفحة الويب.
 
 ```html
-<p><bdo dir="rtl">
-This text will be written from right to left
-</bdo></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p><bdo dir="rtl">
+      This text will be written from right to left
+    </bdo></p>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات البرمجية
