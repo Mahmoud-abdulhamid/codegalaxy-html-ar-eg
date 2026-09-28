@@ -25,12 +25,19 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport"
-content="width=device-width,
-initial-scale=1.0">
-<title>Responsive Page</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+  </head>
+  <body>
+    <h1>Responsive Design</h1>
+    <p>This page adapts to
+      any screen size.</p>
+    <p>Resize the browser
+      to see the effect.</p>
+  </body>
+</html>
 ```
 
 ## بناء محتوى الـ body
@@ -38,13 +45,20 @@ initial-scale=1.0">
 إضافة المحتوى المرئي داخل Tag الـ body.
 
 ```html
-<body>
-<h1>Responsive Design</h1>
-<p>This page adapts to
-any screen size.</p>
-<p>Resize the browser
-to see the effect.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+  </head>
+  <body>
+    <h1>Responsive Design</h1>
+    <p>This page adapts to
+      any screen size.</p>
+    <p>Resize the browser
+      to see the effect.</p>
+  </body>
 </html>
 ```
 
