@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "lesson_id": "122",
+  "title": "HTML Accessibility Principles",
+  "course": "HTML",
+  "objectives": [
+    "Understand the importance of web accessibility",
+    "Learn to use Semantic HTML elements",
+    "Implement proper heading structures",
+    "Master alt attributes and language declaration"
+  ],
+  "sources": [
+    "https://www.w3schools.com/html/html_accessibility.asp"
+  ],
+  "assets": [
+    {
+      "id": "html_example_1",
+      "path": "assets/html-8531e12506e4e966.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools",
+      "source_url": "https://www.w3schools.com/html/html_accessibility.asp"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "مقدمة في HTML Accessibility",
+      "narration": {
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَرْسِ الْيَوْمِ حَوْل HTML Accessibility. كِتَابَه كُودٍ يُمْكِنُ لِلْجَمِيعِ الْوُصُولُ إِلَيْهِ هِيَ مَهَارَه أَسَاسِيَّه لِكُلِّ مُطَوِّرِ وِبٍّ مُحْتَرِفٍ، لِضَمَانِ تَجْرِبَه مُسْتَخْدِمٍ مُمَيَّزَه وَشَامِلَه.",
+        "caption_text": "مرحبا بكم في درس HTML Accessibility. كتابة كود يسهل الوصول إليه هي مهارة أساسية لكل مطور ويب محترف."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "أهمية Accessibility في صفحات الويب",
+          "تحسين تجربة المستخدم عبر كود نظيف",
+          "دعم أدوات قراءة الشاشة Screen Readers"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "semantic_html",
+      "title": "مفهوم Semantic HTML",
+      "narration": {
+        "spoken_text": "يَعْنِي Semantic HTML اسْتِخْدَام Elements لِأَهْدَافِهَا الصَّحِيحَه. مَثَلاً، اسْتَخْدِمْ button لِلْأَزْرَارِ بَدَلاً مِنْ div. هَذَا يُعْطِي سِيَاقاً لَةِ Screen Readers وَيُسَهِّلُ التَّنَقُّلَ بِاسْتِخْدَامِ لَوْحَةِ الْمَفَاتِيحِ.",
+        "caption_text": "استخدام Semantic HTML يعني اختيار العناصر الصحيحة لوظائفها، مما يحسن من تجربة التنقل عبر لوحة المفاتيح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<button>Report an Error</button>\n\n<div>Report an Error</div>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "headings",
+      "title": "أهمية Headings",
+      "narration": {
+        "spoken_text": "تُعَرَّفُ الْعَنَاوِينُ بِاسْتِخْدَام h1 إِلَى h6. هِيَ لَيْسَتْ لِتَكْبِيرِ الْخَطِّ بَلْ لِتَنْظِيمِ هَيْكَلِ الصَّفْحَه. مُحَرِّكَاتِ الْبَحْثِ وَأَدَوَاتُ قِرَاءَةِ الشَّاشَه تَعْتَمِدُ عَلَيْهَا لِفَهْمِ تَرْتِيبِ الْمُحْتَوَى.",
+        "caption_text": "تستخدم Headings من h1 إلى h6 لتنظيم هيكل الصفحة، وليس لتنسيق الخط."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "headings.html",
+        "code": "<h1>Main Heading</h1>\n<h2>Sub Heading</h2>\n<h3>Section Heading</h3>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "alt_attribute",
+      "title": "استخدام alt Attribute",
+      "narration": {
+        "spoken_text": "لَا تَنْسَ أَبَداً اسْتِخْدَام alt attribute مَعَ صُوَر img. هَذَا النَّصُّ يَظْهَرُ إِذَا لَمْ تُحَمَّلِ الصُّورَه، وَيَقْرَؤُه Screen Reader لِلْمُسْتَخْدِمِينَ الَّذِينَ لَا يَرَوْنَ الصُّورَه.",
+        "caption_text": "يوفر alt attribute نصا بديلا يصف الصورة في حال تعذر عرضها أو للمستخدمين الذين يعتمدون على قارئات الشاشة."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "image.html",
+        "code": "<img src=\"photo.jpg\" alt=\"A city street\">",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "language_declaration",
+      "title": "تحديد اللغة lang Attribute",
+      "narration": {
+        "spoken_text": "يَجِبُ تَحْدِيدُ لُغَةِ الصَّفْحَه دَائِماً دَاخِل html tag بِاسْتِخْدَام lang attribute. هَذَا يُسَاعِدُ مُحَرِّكَاتِ الْبَحْثِ وَالْمُتَصَفِّحَاتِ فِي فَهْمِ مُحْتَوَى الصَّفْحَه بِشَكْلٍ صَحِيحٍ.",
+        "caption_text": "يساعد تحديد اللغة عبر lang attribute المتصفحات ومحركات البحث على معالجة محتوى الصفحة بشكل أفضل."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "lang.html",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<body>\n  ... \n</body>\n</html>",
+        "highlight_lines": [],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "link_text",
+      "title": "نصوص الروابط الواضحة",
+      "narration": {
+        "spoken_text": "اجْعَلْ نَصَّ الرَّابِطِ وَاضِحاً. بَدَلاً مِنْ كِتَابَةِ اضْغَطْ هُنَا، اكْتُبْ عِبَارَه تَشْرَحُ مَا سَيَجِدُهُ الْمُسْتَخْدِمُ بَعْدَ النَّقْرِ. هَذَا يُحَسِّنُ مِنْ إِمْكَانِيَّةِ الْوُصُولِ لِجَمِيعِ الْمُسْتَخْدِمِينَ.",
+        "caption_text": "نصوص الروابط يجب أن تكون وصفية وواضحة لتوضيح وجهة الرابط للمستخدم."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "تجنب: Click here",
+          "استخدم: Find out more about HTML",
+          "استخدم: Read more about healthy eating"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "خلاصة الدرس",
+      "narration": {
+        "spoken_text": "خِتَاماً، تَذَكَّرْ أَنَّ Accessibility لَيْسَتْ خِيَاراً بَلْ ضَرُورَه. اسْتِخْدِمْ Semantic Elements، وَنَظِّمِ الْعَنَاوِينَ، وَلَا تَنْس alt و lang. جَرِّبْ هَذِهِ الْأَكْوَادَ بِنَفْسِكَ لِتَضْمَنَ جَوْدَةِ مَوَاقِعِكُمُ الْوِبِّيَّه.",
+        "caption_text": "الوصولية ضرورة وليست خيارا. استخدم العناصر الدلالية ونظم العناوين لضمان تجربة ويب شاملة."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدم Semantic HTML",
+          "نظم العناوين بشكل هرمي",
+          "أضف نصوصا بديلة للصور",
+          "حدد لغة الصفحة دائما"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_accessibility.asp"
+      ]
+    }
+  ]
+}
