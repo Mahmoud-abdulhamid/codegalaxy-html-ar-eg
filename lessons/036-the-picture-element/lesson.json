@@ -80,8 +80,11 @@
         "type": "code",
         "language": "html",
         "filename": "picture_example.html",
-        "code": "<picture>\n  <source media=\"(min-width: 650px)\"\n          srcset=\"img_food.jpg\">",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <picture>\n      <source media=\"(min-width: 650px)\" srcset=\"img_food.jpg\">\n      <source media=\"(min-width: 465px)\" srcset=\"img_car.jpg\">\n      <img src=\"img_girl.jpg\">\n    </picture>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -101,8 +104,12 @@
         "type": "code",
         "language": "html",
         "filename": "picture_example.html",
-        "code": "  <source media=\"(min-width: 465px)\"\n          srcset=\"img_car.jpg\">\n  <img src=\"img_girl.jpg\">\n</picture>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <picture>\n      <source media=\"(min-width: 650px)\" srcset=\"img_food.jpg\">\n      <source media=\"(min-width: 465px)\" srcset=\"img_car.jpg\">\n      <img src=\"img_girl.jpg\">\n    </picture>\n  </body>\n</html>",
+        "highlight_lines": [
+          9,
+          10,
+          11
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
