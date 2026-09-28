@@ -23,16 +23,21 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#myHeader {
-  background-color: lightblue;
-  color: black;
-  padding: 40px;
-  text-align: center;
-}
-</style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myHeader">My Header</h1>
+  </body>
+</html>
 ```
 
 ## استكمال الكود وعرض النتائج
@@ -40,11 +45,22 @@
 استكمال كود HTML وعرض العنوان المرئي في المتصفح.
 
 ```html
-<body>
-<h1 id="myHeader">
-  My Header
-</h1>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="myHeader">My Header</h1>
+  </body>
 </html>
 ```
 
@@ -57,10 +73,16 @@
 إنشاء المرجعيات في صفحات الويب الطويلة باستخدام خاصية id.
 
 ```html
-<h2 id="C4">Chapter 4</h2>
-<a href="#C4">
-  Jump to Chapter 4
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h2 id="C4">Chapter 4</h2>
+    <a href="#C4">Jump to Chapter 4</a>
+  </body>
+</html>
 ```
 
 ## استخدام id مع JavaScript
@@ -71,8 +93,8 @@
 <script>
 function displayResult() {
   document.getElementById(
-    "myHeader"
-  ).innerHTML = 
+  "myHeader"
+  ).innerHTML =
   "Have a nice day!";
 }
 </script>
