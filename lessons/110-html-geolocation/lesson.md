@@ -28,7 +28,7 @@
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
-      success, error);
+    success, error);
   } else {
     x.innerHTML = "Not supported.";
   }
@@ -41,9 +41,9 @@ function getLocation() {
 
 ```javascript
 function success(position) {
-  x.innerHTML = "Lat: " + 
-  position.coords.latitude + 
-  "<br>Long: " + 
+  x.innerHTML = "Lat: " +
+  position.coords.latitude +
+  "<br>Long: " +
   position.coords.longitude;
 }
 ```
@@ -55,12 +55,10 @@ function success(position) {
 ```javascript
 function error(error) {
   switch(error.code) {
-    case error.PERMISSION_DENIED:
-      x.innerHTML = "Denied.";
-      break;
-    case error.POSITION_UNAVAILABLE:
-      x.innerHTML = "Unavailable.";
-      break;
+    case error.PERMISSION_DENIED: x.innerHTML = "Denied.";
+    break;
+    case error.POSITION_UNAVAILABLE: x.innerHTML = "Unavailable.";
+    break;
   }
 }
 ```
@@ -71,7 +69,7 @@ function error(error) {
 
 ```javascript
 navigator.geolocation.watchPosition(
-  success, error
+success, error
 );
 ```
 
