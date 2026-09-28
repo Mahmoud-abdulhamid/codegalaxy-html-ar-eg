@@ -15,7 +15,15 @@
 يستخدم img Tag لإدراج الصور وهو Empty Element لا يحتاج ل Tag إغلاق.
 
 ```html
-<img src="url" alt="alternatetext">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="url" alt="alternatetext">
+  </body>
+</html>
 ```
 
 ## شرح Attributes الأساسية
@@ -23,8 +31,15 @@
 يجب تحديد src للمسار و alt للنص البديل.
 
 ```html
-<img src="img_chania.jpg" 
-alt="Flowers in Chania">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="img_chania.jpg" alt="Flowers in Chania">
+  </body>
+</html>
 ```
 
 ## التحكم في أبعاد الصور
@@ -32,9 +47,15 @@ alt="Flowers in Chania">
 استخدام style للتحكم في عرض وارتفاع الصورة.
 
 ```html
-<img src="img_girl.jpg" 
-alt="Girl in a jacket" 
-style="width:500px;height:600px;">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+  </body>
+</html>
 ```
 
 ## الصور الخارجية والمجلدات
@@ -42,8 +63,15 @@ style="width:500px;height:600px;">
 يمكن ربط الصور من مجلدات محلية أو خوادم خارجية.
 
 ```html
-<img src="/images/html5.gif" 
-alt="HTML5 Icon">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="/images/html5.gif" alt="HTML5 Icon">
+  </body>
+</html>
 ```
 
 ## استخدام الصورة كرابط
@@ -51,10 +79,17 @@ alt="HTML5 Icon">
 وضع img داخل a لإنشاء صورة قابلة للنقر.
 
 ```html
-<a href="default.asp">
-  <img src="smiley.gif" 
-  alt="Tutorial">
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="default.asp">
+      <img src="smiley.gif" alt="Tutorial">
+    </a>
+  </body>
+</html>
 ```
 
 ## محاذاة الصور مع النصوص
@@ -62,9 +97,15 @@ alt="HTML5 Icon">
 استخدام CSS float لمحاذاة الصور بجانب النصوص.
 
 ```html
-<img src="smiley.gif" 
-style="float:right; 
-width:42px;height:42px;">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="smiley.gif" style="float:right; width:42px;height:42px;">
+  </body>
+</html>
 ```
 
 ## خلاصة الدرس
