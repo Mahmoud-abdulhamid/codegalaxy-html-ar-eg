@@ -25,11 +25,12 @@
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-  <h1 style="color:red;">
-    Color Challenge
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style="color:red;">Color Challenge</h1>
+  </body>
 </html>
 ```
 
@@ -38,9 +39,15 @@
 تلوين العنصر h1 باستخدام خاصية style وقيمة red لتطبيق التنسيق المباشر.
 
 ```html
-<h1 style="color:red;">
-  Color Challenge
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style="color:red;">Color Challenge</h1>
+  </body>
+</html>
 ```
 
 ## معاينة المخرجات في المتصفح
