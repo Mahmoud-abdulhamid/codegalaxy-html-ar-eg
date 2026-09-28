@@ -43,7 +43,7 @@
         "type": "code",
         "language": "html",
         "filename": "content.html",
-        "code": "<a href=\"maps.html\">Google Maps</a><br>\n<a href=\"buttons.html\">Buttons</a><br>\n<a href=\"modals.html\">Modals</a><br>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"maps.html\">Google Maps</a><br>\n      <a href=\"buttons.html\">Buttons</a><br>\n        <a href=\"modals.html\">Modals</a><br>\n        </body>\n      </html>",
         "highlight_lines": [
           1,
           2,
@@ -68,7 +68,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<div w3-include-html=\"content.html\"></div>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div w3-include-html=\"content.html\"></div>\n  </body>\n</html>",
         "highlight_lines": [
           1
         ],
@@ -116,7 +116,7 @@
         "type": "code",
         "language": "javascript",
         "filename": "include.js",
-        "code": "      xhttp = new XMLHttpRequest();\n      xhttp.onreadystatechange = function() {\n        if (this.readyState == 4) {\n          if (this.status == 200) {\n            elmnt.innerHTML = this.responseText;\n          }\n          elmnt.removeAttribute(\"w3-include-html\");\n          includeHTML();\n        }\n      };",
+        "code": "xhttp = new XMLHttpRequest();\nxhttp.onreadystatechange = function() {\n  if (this.readyState == 4) {\n    if (this.status == 200) {\n      elmnt.innerHTML = this.responseText;\n    }\n    elmnt.removeAttribute(\"w3-include-html\");\n    includeHTML();\n  }\n};",
         "highlight_lines": [
           1,
           4,
@@ -143,7 +143,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<script>\nincludeHTML();\n</script>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <script>\n      includeHTML();\n    </script>\n  </body>\n</html>",
         "highlight_lines": [
           2
         ],
@@ -166,7 +166,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<div w3-include-html=\"h1.html\"></div>\n<div w3-include-html=\"content.html\"></div>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div w3-include-html=\"h1.html\"></div>\n    <div w3-include-html=\"content.html\"></div>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           2
