@@ -25,10 +25,13 @@
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-  <h1>My First Heading</h1>
-<p>My first paragraph.</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -45,7 +48,15 @@
 Empty Elements Empty Elements ليس لها محتوى ولا تحتوي على End Tag مثل br.
 
 ```html
-<p>This is a <br> paragraph with a line break.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This is a <br> paragraph with a line break.</p>
+  </body>
+</html>
 ```
 
 ## حساسية حالة الحروف Case Sensitivity
