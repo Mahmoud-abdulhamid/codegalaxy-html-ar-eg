@@ -23,11 +23,25 @@
 نبدأ جدول HTML ونستخدم colspan بقيمة 2 لدمج عمودي الاسم.
 
 ```html
-<table>
-  <tr>
-    <th colspan="2">Name</th>
-    <th>Age</th>
-  </tr>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## كود Colspan القسم الثاني
@@ -35,12 +49,25 @@
 نكمل بناء صفوف بيانات الجدول لتوضيح تأثير دمج الأعمدة.
 
 ```html
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>43</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## معاينة Colspan
@@ -60,12 +87,27 @@
 إنشاء جدول ويب وتطبيق rowspan بقيمة 2 لدمج صفوف الهاتف.
 
 ```html
-<table>
-  <tr>
-    <th>Name</th>
-    <td>Jill</td>
-  </tr>
-  <tr>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## كود Rowspan القسم الثاني
@@ -73,13 +115,27 @@
 إكمال هيكل الجدول لعرض دمج الصفوف بشكل منظم.
 
 ```html
-    <th rowspan="2">Phone</th>
-    <td>555-1234</td>
-  </tr>
-  <tr>
-    <td>555-8745</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## معاينة Rowspan
