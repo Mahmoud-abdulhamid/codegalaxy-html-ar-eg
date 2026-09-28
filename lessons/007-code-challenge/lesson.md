@@ -15,8 +15,16 @@
 تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag التي تحتوي على شرطة مائلة.
 
 ```html
-<h1>هذا عنوان الصفحة</h1>
-<p>هذه فقرة نصية.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>هذا عنوان الصفحة</h1>
+    <p>هذه فقرة نصية.</p>
+  </body>
+</html>
 ```
 
 ## تشريح الـ Elements
@@ -28,7 +36,15 @@
 Empty Elements أو Empty Elements لا تحتوي على محتوى ولا تتطلب End Tag.
 
 ```html
-<p>سطر أول<br>سطر ثانٍ</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>سطر أول<br>سطر ثانٍ</p>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
