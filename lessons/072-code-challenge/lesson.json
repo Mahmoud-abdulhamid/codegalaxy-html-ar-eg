@@ -63,8 +63,14 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Page Title</title>\n  <meta charset=\"UTF-8\">",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n  </head>\n  <body>\n    <h1>Welcome</h1>\n    <p>Hello World!</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -84,8 +90,14 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "  <meta name=\"viewport\" \n        content=\"width=device-width\">\n</head>\n<body>\n  <h1>Welcome</h1>\n  <p>Hello World!</p>\n</body>\n</html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n  </head>\n  <body>\n    <h1>Welcome</h1>\n    <p>Hello World!</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
