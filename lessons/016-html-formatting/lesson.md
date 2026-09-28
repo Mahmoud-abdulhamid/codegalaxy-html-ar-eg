@@ -15,8 +15,16 @@
 العناصر b و strong تستخدم لتغميق النص بأساليب مختلفة.
 
 ```html
-<b>This text is bold</b>
-<strong>Important!</strong>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <b>This text is bold</b>
+    <strong>Important!</strong>
+  </body>
+</html>
 ```
 
 ## عناصر الخط المائل i و em
@@ -24,8 +32,16 @@
 العناصر i و em تعرض النص بخط مائل لدلالات مختلفة.
 
 ```html
-<i>This is italic</i>
-<em>Emphasized text</em>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <i>This is italic</i>
+    <em>Emphasized text</em>
+  </body>
+</html>
 ```
 
 ## عناصر التصغير والتحديد small و mark
@@ -33,8 +49,16 @@
 استخدام small لتصغير النص و mark لتسليط الضوء عليه.
 
 ```html
-<small>Smaller text</small>
-<mark>Highlighted milk</mark>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <small>Smaller text</small>
+    <mark>Highlighted milk</mark>
+  </body>
+</html>
 ```
 
 ## عناصر الحذف والإضافة del و ins
@@ -42,7 +66,15 @@
 العنصر del يحذف نصا بخط يتوسطه، و ins يضيف خطا تحته.
 
 ```html
-<p>Color <del>blue</del> <ins>red</ins></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>Color <del>blue</del> <ins>red</ins></p>
+  </body>
+</html>
 ```
 
 ## النصوص السفلية والعلوية sub و sup
@@ -50,8 +82,16 @@
 العناصر sub و sup تستخدم للنصوص السفلية والعلوية.
 
 ```html
-<p>H<sub>2</sub>O</p>
-<p>E=MC<sup>2</sup></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>H<sub>2</sub>O</p>
+    <p>E=MC<sup>2</sup></p>
+  </body>
+</html>
 ```
 
 ## معاينة التنسيقات في المتصفح
