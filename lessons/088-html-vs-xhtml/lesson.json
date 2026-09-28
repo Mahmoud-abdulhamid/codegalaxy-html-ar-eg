@@ -106,8 +106,12 @@
         "type": "code",
         "language": "html",
         "filename": "xhtml_example.html",
-        "code": "<!DOCTYPE html PUBLIC\n  \"-//W3C//DTD XHTML 1.1//EN\"\n  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Title of document</title>\n  </head>\n  <body>\n    \"-//W3C//DTD XHTML 1.1//EN\"\n    \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n    some content here...\n  </body>\n</html>",
+        "highlight_lines": [
+          2,
+          8,
+          9
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -127,8 +131,11 @@
         "type": "code",
         "language": "html",
         "filename": "xhtml_example.html",
-        "code": "<head>\n  <title>Title of document</title>\n</head>\n<body>\n  some content here...\n</body>\n</html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Title of document</title>\n  </head>\n  <body>\n    \"-//W3C//DTD XHTML 1.1//EN\"\n    \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n    some content here...\n  </body>\n</html>",
+        "highlight_lines": [
+          5,
+          10
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
