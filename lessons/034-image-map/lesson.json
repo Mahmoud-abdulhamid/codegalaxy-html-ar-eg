@@ -44,7 +44,7 @@
       "id": "scene_intro",
       "title": "مقدمة عن Image Maps",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَفْهُوم Image Maps وَكَيْفَ نُنْشِئُ مَنَاطِقَ قَابِلَة لِلنَّقْرِ دَاخِلَ الصُّوَرِ لِلتَّوْجِهِ نَحْوَ رَوَابِطَ مُخْتَلِفَة.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى مَفْهُوم Image Maps وَكَيْفَ نُنْشِئُ مَنَاطِقَ قَابِلَة لِلنَّقْرِ دَاخِلَ الصُّوَرِ لِلتَّوْجِهِ نَحْوَ رَوَابِطَ مُخْتَلِفَه.",
         "caption_text": "تتيح لك HTML Image Maps إنشاء مناطق قابلة للنقر داخل الصورة الواحدة."
       },
       "visual": {
@@ -63,14 +63,14 @@
       "id": "scene_img_tag",
       "title": "استخدام Tag img مع usemap",
       "narration": {
-        "spoken_text": "لِبَدْءِ العَمَلِ، نَسْتَخْدِمُ العُنْصَر img لإِدْرَاجِ الصُّوَرِ، وَلكِنَّ الإِضَافَة الأَسَاسِيَّة هِيَ اسْتِخْدَامُ الخَاصِيَّة usemap المَرْبُوطَةِ بِاسْمِ الخَرِيطَةِ بِمُسْتَوَى الرَّمْز #.",
+        "spoken_text": "لِبَدْءِ العَمَلِ، نَسْتَخْدِمُ العُنْصَر إِيمِج لإِدْرَاجِ الصُّوَرِ، وَلكِنَّ الإِضَافَة الأَسَاسِيَّة هِيَ اسْتِخْدَامُ الخَاصِيَّة usemap المَرْبُوطَة بِاسْمِ الخَرِيطَة بِمُسْتَوَى الرَّمْز #.",
         "caption_text": "نستخدم Tag <img> مع خاصية usemap لربط الصورة بالخريطة المستهدفة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "image_map.html",
-        "code": "<img src=\"workplace.jpg\"\n     alt=\"Workplace\"\n     usemap=\"#workmap\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"workplace.jpg\" alt=\"Workplace\" usemap=\"#workmap\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -84,14 +84,14 @@
       "id": "scene_map_tag",
       "title": "إنشاء عنصر map",
       "narration": {
-        "spoken_text": "بَعْدَ ذَلِكَ نُضِيفُ العُنْصَر map وَنُحَدِّدُ لَهُ الخَاصِيَّة name بِقِيمَة تُطَابِقُ تَمَاماً قِيمَة usemap فِي الصُّورَةِ لِإِنْشَاءِ العَلَاقَةِ بَيْنَهُمَا.",
+        "spoken_text": "بَعْدَ ذَلِكَ نُضِيفُ العُنْصَر map وَنُحَدِّدُ لَهُ الخَاصِيَّة name بِقِيمَة تُطَابِقُ تَمَاماً قِيمَة usemap فِي الصُّورَة لِإِنْشَاءِ العَلَاقَة بَيْنَهُمَا.",
         "caption_text": "نربط الخريطة بالصورة عبر الخاصية name التي تطابق قيمة usemap."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "map_element.html",
-        "code": "<map name=\"workmap\">\n  <!-- المناطق تحدد هنا -->\n</map>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <map name=\"workmap\">\n      <!-- المناطق تحدد هنا -->\n    </map>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -105,14 +105,14 @@
       "id": "scene_area_rect",
       "title": "تحديد مناطق النقر المستطيلة rect",
       "narration": {
-        "spoken_text": "دَاخِلَ العُنْصَر map نُضِيفُ العُنْصَر area مَعَ الخَاصِيَّة shape بِقِيمَة rect، ثُمَّ نُحَدِّدُ الإِحْدَاثِيَّات coords لِمُسْتَطِيلٍ يُحَدِّدُ مَقَاسَاتِ المِنْقَرِ بِدِقَّة.",
+        "spoken_text": "دَاخِلَ العُنْصَر map نُضِيفُ العُنْصَر area مَعَ الخَاصِيَّة shape بِقِيمَة rect، ثُمَّ نُحَدِّدُ الإِحْدَاثِيَّات coords لِمُسْتَطِيلٍ يُحَدِّدُ مَقَاسَاتِ المِنْقَرِ بِدِقَّه.",
         "caption_text": "نستخدم شكل rect لتحديد منطقة مستطيلة بإحداثيات x و y."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "area_rect.html",
-        "code": "<area shape=\"rect\"\n      coords=\"34,44,270,350\"\n      href=\"computer.htm\"\n      alt=\"Computer\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <area shape=\"rect\" coords=\"34,44,270,350\" href=\"computer.htm\" alt=\"Computer\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -126,14 +126,14 @@
       "id": "scene_area_circle",
       "title": "تحديد مناطق النقر الدائرية circle",
       "narration": {
-        "spoken_text": "لِإِضَافَةِ مَنْطِقَة دَائِرِيَّة، نَخْتَار shape بِقِيمَة circle. وَنُحَدِّدُ إِحْدَاثِيَّاتِ مَرْكَزِ الدَّائِرَةِ مَتْبُوعَة بِطُولِ نِصْفِ القُطْر radius بِالبِكْسِلَاتِ.",
+        "spoken_text": "لِإِضَافَة مَنْطِقَة دَائِرِيَّه، نَخْتَار shape بِقِيمَة circle. وَنُحَدِّدُ إِحْدَاثِيَّاتِ مَرْكَزِ الدَّائِرَة مَتْبُوعَة بِطُولِ نِصْفِ القُطْر radius بِالبِكْسِلَاتِ.",
         "caption_text": "نستخدم شكل circle لتحديد مركز الدائرة ونصف قطرها."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "area_circle.html",
-        "code": "<area shape=\"circle\"\n      coords=\"337,300,44\"\n      href=\"coffee.htm\"\n      alt=\"Coffee\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <area shape=\"circle\" coords=\"337,300,44\" href=\"coffee.htm\" alt=\"Coffee\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -154,7 +154,7 @@
         "type": "code",
         "language": "html",
         "filename": "area_poly.html",
-        "code": "<area shape=\"poly\"\n      coords=\"140,121,181,116,\n      204,160,204,222\"\n      href=\"croissant.htm\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <area shape=\"poly\" coords=\"140,121,181,116, 204,160,204,222\" href=\"croissant.htm\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -168,14 +168,14 @@
       "id": "scene_javascript",
       "title": "ربط Image Maps مع JavaScript",
       "narration": {
-        "spoken_text": "لَا يَقْتَصِرُ الأَمْرُ عَلَى الرَّوَابِطِ الفَرْدِيَّةِ فَحَسْب، بَلْ يُمْكِنُ أَنْ تُؤَدِّيَ المِنْقَرَة إِلَى تَنْفِيذِ دَالَّة JavaScript عَبْرَ الخَاصِيَّة onclick.",
+        "spoken_text": "لَا يَقْتَصِرُ الأَمْرُ عَلَى الرَّوَابِطِ الفَرْدِيَّة فَحَسْب، بَلْ يُمْكِنُ أَنْ تُؤَدِّيَ المِنْقَرَة إِلَى تَنْفِيذِ دَالَّة جَافَا سْكْرِبْت عَبْرَ الخَاصِيَّة onclick.",
         "caption_text": "يمكننا تفعيل وظائف JavaScript عند النقر على منطقة معينة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "image_map_js.html",
-        "code": "<area shape=\"circle\"\n      coords=\"337,300,44\"\n      href=\"coffee.htm\"\n      onclick=\"myFunction()\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <area shape=\"circle\" coords=\"337,300,44\" href=\"coffee.htm\" onclick=\"myFunction()\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -189,7 +189,7 @@
       "id": "scene_summary",
       "title": "خلاصة الدرس",
       "narration": {
-        "spoken_text": "فِي خِتَامِ دَرْسِنَا اليَوْمِ، تَعَرَّفْنَا عَلَى كَيْفِيَّةِ تَوْظِيف Image Maps بِاسْتِخْدَام img و map و area، وَتَطْبِيقِ الأَشْكَالِ المُخْتَلِفَة rect و circle و poly. نَلْتَقِي فِي الدَّرْسِ القَادِمِ.",
+        "spoken_text": "فِي خِتَامِ دَرْسِنَا اليَوْمِ، تَعَرَّفْنَا عَلَى كَيْفِيَّة تَوْظِيف Image Maps بِاسْتِخْدَام إِيمِج و map و area، وَتَطْبِيقِ الأَشْكَالِ المُخْتَلِفَة rect و circle و poly. نَلْتَقِي فِي الدَّرْسِ القَادِمِ.",
         "caption_text": "تعلمنا كيفية بناء خرائط الصور المتقدمة وتحديد مناطق النقر التفاعلية بدقة."
       },
       "visual": {
