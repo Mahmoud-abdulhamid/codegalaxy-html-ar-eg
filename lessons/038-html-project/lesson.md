@@ -25,10 +25,16 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Bio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Bio</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <p>Hello, I am a web developer.</p>
+    <p>Learning HTML step-by-step.</p>
+  </body>
+</html>
 ```
 
 ## إضافة المحتوى المرئي
@@ -36,10 +42,17 @@
 نضيف العنوان الرئيسي h1 والنصوص التوضيحية p داخل قسم body.
 
 ```html
-  <h1>About Me</h1>
-  <p>Hello, I am a web developer.</p>
-  <p>Learning HTML step-by-step.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Bio</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <p>Hello, I am a web developer.</p>
+    <p>Learning HTML step-by-step.</p>
+  </body>
 </html>
 ```
 
