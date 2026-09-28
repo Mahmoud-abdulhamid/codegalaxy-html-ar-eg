@@ -24,16 +24,26 @@
 نحدد لون الأخضر للرابط العادي والوردي للرابط المزارع بدون خط تحتي.
 
 ```html
-<style>
-a:link {
-  color: green;
-  text-decoration: none;
-}
-a:visited {
-  color: pink;
-  text-decoration: none;
-}
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      a:link {
+        color: green;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## كود تأثيرات المرور والحالة النشطة
@@ -41,16 +51,26 @@ a:visited {
 نستخدم a:hover لتغيير اللون إلى الأحمر و a:active إلى الأصفر عند النقر.
 
 ```html
-<style>
-a:hover {
-  color: red;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  text-decoration: underline;
-}
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## معاينة ألوان الروابط المتعددة
@@ -62,15 +82,25 @@ a:active {
 يمكننا تصميم الروابط لتظهر كأزرار تفاعلية جميلة باستخدام خصائص CSS.
 
 ```html
-<style>
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  display: inline-block;
-}
-</style>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## معاينة أزرار الروابط المصممة
