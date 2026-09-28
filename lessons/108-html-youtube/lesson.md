@@ -50,8 +50,7 @@
   <body>
     <iframe width="420"
       height="315"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY?
-      autoplay=1&mute=1">
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
     </iframe>
   </body>
 </html>
@@ -70,9 +69,7 @@
   <body>
     <iframe width="420"
       height="315"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY?
-      playlist=tgbNymZ7vqY
-      &loop=1">
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
     </iframe>
   </body>
 </html>
@@ -91,8 +88,7 @@
   <body>
     <iframe width="420"
       height="315"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY?
-      controls=0">
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
     </iframe>
   </body>
 </html>
