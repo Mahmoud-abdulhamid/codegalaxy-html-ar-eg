@@ -23,15 +23,23 @@
 نطبق التنسيق هنا على اول عمودين في الجدول باستخدام colgroup وcol مع خاصية style.
 
 ```html
-<table>
-  <colgroup>
-    <col span="2" style="background-color: #D6EEEE">
-  </colgroup>
-  <tr>
-    <th>MON</th>
-    <th>TUE</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
@@ -51,17 +59,25 @@ Table with styled columns
 إذا أردنا تنسيق عدة أعمدة بأنماط مختلفة، يمكننا استخدام أكثر من عنصر col داخل colgroup.
 
 ```html
-<table>
-  <colgroup>
-    <col span="2" style="background-color: #D6EEEE">
-    <col span="3" style="background-color: pink">
-  </colgroup>
-  <tr>
-    <th>MON</th>
-    <th>TUE</th>
-    <th>WED</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+        <col span="3" style="background-color: pink">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
@@ -73,17 +89,25 @@ Table with multiple styled columns
 لتنسيق أعمدة في منتصف الجدول، يمكننا إدراج عنصر col فارغ بدون أنماط للأعمدة السابقة.
 
 ```html
-<table>
-  <colgroup>
-    <col span="3">
-    <col span="2" style="background-color: pink">
-  </colgroup>
-  <tr>
-    <th>MON</th>
-    <th>TUE</th>
-    <th>WED</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="3">
+        <col span="2" style="background-color: pink">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
@@ -95,16 +119,24 @@ Table with middle columns styled
 نستطيع أيضا إخفاء أعمدة معينة في الجدول بسهولة تامة باستخدام خاصية visibility مع قيمة collapse.
 
 ```html
-<table>
-  <colgroup>
-    <col span="2">
-    <col span="3" style="visibility: collapse">
-  </colgroup>
-  <tr>
-    <th>MON</th>
-    <th>TUE</th>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col span="2">
+        <col span="3" style="visibility: collapse">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ```text
