@@ -84,7 +84,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\"\n  </head>\n  <body>\n    type=\"image/x-icon\"\n    href=\"/images/favicon.ico\">\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" </head>\n    <body>\n      type=\"image/x-icon\"\n      href=\"/images/favicon.ico\">\n    </body>\n  </html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
