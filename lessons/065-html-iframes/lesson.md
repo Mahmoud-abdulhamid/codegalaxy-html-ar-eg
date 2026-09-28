@@ -15,7 +15,15 @@
 الصيغة الأساسية لعنصر iframe مع خاصية src وخاصية title.
 
 ```html
-<iframe src="url" title="description"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="url" title="description"></iframe>
+  </body>
+</html>
 ```
 
 ## تحديد الطول والعرض
@@ -23,9 +31,15 @@
 تحديد الأبعاد باستخدام خصائص العرض والارتفاع أو عبر CSS.
 
 ```html
-<iframe src="demo_iframe.htm"
-  style="height:200px;width:300px;"
-  title="Iframe Example"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+  </body>
+</html>
 ```
 
 ## معاينة إطار iframe
@@ -37,9 +51,15 @@
 إزالة الحدود الافتراضية لعنصر iframe باستخدام خاصية CSS border.
 
 ```html
-<iframe src="demo_iframe.htm"
-  style="border:2px solid red;"
-  title="Iframe Example"></iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+  </body>
+</html>
 ```
 
 ## معاينة إطار بإطار مخصص
@@ -51,10 +71,16 @@
 ربط عناصر الرابط مع iframe لتغيير المحتوى عند النقر.
 
 ```html
-<iframe src="demo_iframe.htm" name="iframe_a"
-  title="Iframe Example"></iframe>
-<p><a href="https://www.w3schools.com"
-  target="iframe_a">W3Schools.com</a></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+  </body>
+</html>
 ```
 
 ## خلاصة الدرس
