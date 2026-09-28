@@ -25,8 +25,15 @@
 استخدام autocomplete مع عنصر input.
 
 ```html
-<input type="text" 
-autocomplete="off">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <input type="text" autocomplete="off">
+  </body>
+</html>
 ```
 
 ## تعطيل Autocomplete للنموذج بالكامل
@@ -34,9 +41,17 @@ autocomplete="off">
 تعطيل autocomplete على مستوى النموذج.
 
 ```html
-<form autocomplete="off">
-  <!-- الحقول هنا -->
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form autocomplete="off">
+      <!-- الحقول هنا -->
+    </form>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
