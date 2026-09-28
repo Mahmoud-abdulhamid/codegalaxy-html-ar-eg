@@ -1,8 +1,8 @@
 <script>
 function displayResult() {
   document.getElementById(
-    "myHeader"
-  ).innerHTML = 
+  "myHeader"
+  ).innerHTML =
   "Have a nice day!";
 }
 </script>
