@@ -64,8 +64,18 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Layout</title>\n</head>\n<body>\n<header>\n<h1>My Page</h1>\n</header>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Layout</title>\n  </head>\n  <body>\n    <header>\n      <h1>My Page</h1>\n    </header>\n    <nav>Link</nav>\n    <section>\n      <p>Main Content</p>\n    </section>\n    <footer>\n      <p>Footer</p>\n    </footer>\n  </body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -85,8 +95,17 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<nav>Link</nav>\n<section>\n<p>Main Content</p>\n</section>\n<footer>\n<p>Footer</p>\n</footer>\n</body>\n</html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Layout</title>\n  </head>\n  <body>\n    <header>\n      <h1>My Page</h1>\n    </header>\n    <nav>Link</nav>\n    <section>\n      <p>Main Content</p>\n    </section>\n    <footer>\n      <p>Footer</p>\n    </footer>\n  </body>\n</html>",
+        "highlight_lines": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
