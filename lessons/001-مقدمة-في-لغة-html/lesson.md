@@ -25,9 +25,15 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## إضافة المحتوى المرئي
@@ -35,10 +41,16 @@
 نستخدم h1 للعناوين و p للفقرات داخل قسم <body>.
 
 ```html
-<body>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
