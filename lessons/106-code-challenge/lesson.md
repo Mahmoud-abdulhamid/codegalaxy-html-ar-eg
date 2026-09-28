@@ -23,10 +23,17 @@
 لنكتب الكود. نبدأ بـ <audio controls>، ثم نضيف عنصر <source> لتحديد مسار الملف الصوتي ونوعه لضمان توافق المتصفح.
 
 ```html
-<audio controls>
-  <source src="music.mp3" 
-  type="audio/mpeg">
-</audio>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
 ```
 
 ## شرح تفاصيل الكود
