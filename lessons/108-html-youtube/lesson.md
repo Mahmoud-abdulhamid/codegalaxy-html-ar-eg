@@ -23,12 +23,18 @@
 استخدام عنصر iframe لتضمين وتشغيل فيديو YouTube في صفحة الويب.
 
 ```html
-<iframe width="420"
- height="315"
- src="https://www.
-youtube.com/embed/
-tgbNymZ7vqY">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## التشغيل التلقائي وكتم الصوت
@@ -36,13 +42,19 @@ tgbNymZ7vqY">
 إضافة خصائص التشغيل التلقائي مع كتم الصوت لضمان عمل الفيديو في المتصفحات.
 
 ```html
-<iframe width="420"
- height="315"
- src="https://www.
-youtube.com/embed/
-tgbNymZ7vqY?
-autoplay=1&mute=1">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?
+      autoplay=1&mute=1">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## تكرار الفيديوهات وقوائم التشغيل
@@ -50,14 +62,20 @@ autoplay=1&mute=1">
 تفعيل التكرار المستمر للفيديو باستخدام معاملات playlist و loop.
 
 ```html
-<iframe width="420"
- height="315"
- src="https://www.
-youtube.com/embed/
-tgbNymZ7vqY?
-playlist=tgbNymZ7vqY
-&loop=1">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?
+      playlist=tgbNymZ7vqY
+      &loop=1">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## التحكم في أزرار ومشغل الفيديو
@@ -65,13 +83,19 @@ playlist=tgbNymZ7vqY
 التحكم في إظهار أو إخفاء أزرار مشغل الفيديو باستخدام معامل controls.
 
 ```html
-<iframe width="420"
- height="315"
- src="https://www.
-youtube.com/embed/
-tgbNymZ7vqY?
-controls=0">
-</iframe>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <iframe width="420"
+      height="315"
+      src="https://www.youtube.com/embed/tgbNymZ7vqY?
+      controls=0">
+    </iframe>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية
