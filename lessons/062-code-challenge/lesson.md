@@ -23,10 +23,16 @@
 تطبيق عملي لإضافة id Attribute إلى عناصر h1 و p داخل كود HTML.
 
 ```html
-<h1 id="main-title">Welcome</h1>
-<p id="intro-text">
-  This is a paragraph.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id="main-title">Welcome</h1>
+    <p id="intro-text">This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## شرح Creating Bookmarks
@@ -34,12 +40,16 @@
 استخدام id لإنشاء روابط تنقل داخلية تسمى Bookmarks في صفحة الويب.
 
 ```html
-<a href="#main-title">
-  Go to Title
-</a>
-<h1 id="main-title">
-  Main Title
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="#main-title">Go to Title</a>
+    <h1 id="main-title">Main Title</h1>
+  </body>
+</html>
 ```
 
 ## شرح Best Practices
