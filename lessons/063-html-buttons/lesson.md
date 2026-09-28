@@ -15,7 +15,15 @@
 نستخدم العنصر button لتعريف زر قابل للنقر في صفحة الويب.
 
 ```html
-<button>Click Me</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button>Click Me</button>
+  </body>
+</html>
 ```
 
 ## تنسيق الأزرار باستخدام CSS
@@ -23,9 +31,15 @@
 يمكن تنسيق الأزرار بسهولة باستخدام CSS لتغيير ألوانها ومظهرها.
 
 ```html
-<button class="mytestbtn">
-  Green Button
-</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button class="mytestbtn">Green Button</button>
+  </body>
+</html>
 ```
 
 ## الأزرار المعطلة Disabled Buttons
@@ -33,9 +47,15 @@
 استخدم attribute المعطل disabled لتعطيل الزر وجعله غير قابل للنقر.
 
 ```html
-<button disabled>
-  Disabled Button
-</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button disabled>Disabled Button</button>
+  </body>
+</html>
 ```
 
 ## تشغيل JavaScript مع الأزرار
@@ -43,9 +63,15 @@
 يمكنك تشغيل أكواد JavaScript عند النقر باستخدام attribute المسماة onclick.
 
 ```html
-<button onclick="alert('Hello!')">
-  Click Me
-</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button onclick="alert('Hello!')">Click Me</button>
+  </body>
+</html>
 ```
 
 ## أنواع الأزرار المختلفة Button Types
@@ -53,9 +79,17 @@
 يحدد attribute المسماة type وظيفة الزر، وهناك ثلاثة أنواع رئيسية.
 
 ```html
-<button type="button">Normal</button>
-<button type="submit">Submit</button>
-<button type="reset">Reset</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button type="button">Normal</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </body>
+</html>
 ```
 
 ## استخدام الأزرار داخل النماذج Forms
@@ -63,11 +97,19 @@
 تستخدم الأزرار داخل النماذج Forms لتنفيذ عمليات الإرسال وإعادة التعيين.
 
 ```html
-<form action="/action_page.php">
-  <input type="text" name="fname">
-  <button type="submit">Submit</button>
-  <button type="reset">Reset Form</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <input type="text" name="fname">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>
 ```
 
 ## خلاصة الدرس وأفضل الممارسات
