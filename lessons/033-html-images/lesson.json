@@ -27,7 +27,7 @@
       "id": "intro",
       "title": "مقدمة حول الصور في HTML",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ. تُعَدُّ الصُّوَرُ عُنْصُراً حَيَوِيّاً لِتَحْسِينِ تَصْمِيمِ وَمَظْهَرِ صَفَحَاتِ الْوِيبِ. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة إِدْرَاجِ الصُّوَرِ بِاسْتِخْدَامِ لُغَة HTML بِطَرِيقَة احْتِرَافِيَّة وَسَلِيمَة.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ. تُعَدُّ الصُّوَرُ عُنْصُراً حَيَوِيّاً لِتَحْسِينِ تَصْمِيمِ وَمَظْهَرِ صَفَحَاتِ الْوِيبِ. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة إِدْرَاجِ الصُّوَرِ بِاسْتِخْدَامِ لُغَة إِتْش تِي إِم إِل بِطَرِيئَة احْتِرَافِيَّة وَسَلِيمَه.",
         "caption_text": "تساهم الصور في تحسين تصميم صفحات الويب بشكل كبير."
       },
       "visual": {
@@ -46,14 +46,14 @@
       "id": "syntax",
       "title": "بنية عنصر img",
       "narration": {
-        "spoken_text": "لِإِدْرَاجِ صُورَة، نَسْتَخْدِم img Tag. لَاحِظْ أَنَّ هَذَا الْعُنْصُرَ هُو Empty Element، أَيْ أَنَّهُ لَا يَحْتَاجُ إِلَى Closing Tag، بَلْ يَعْتَمِدُ عَلَى Attributes فَقَطْ لِتَحْدِيدِ مَصْدَرِ الصُّورَةِ وَالنَّصِّ الْبَدِيلِ.",
+        "spoken_text": "لِإِدْرَاجِ صُورَه، نَسْتَخْدِم إِيمِج تَاج. لَاحِظْ أَنَّ هَذَا الْعُنْصُرَ هُو Empty إِلِيمِنْت، أَيْ أَنَّهُ لَا يَحْتَاجُ إِلَى Closing تَاج، بَلْ يَعْتَمِدُ عَلَى أَتْرِيبْيُوتْس فَقَطْ لِتَحْدِيدِ مَصْدَرِ الصُّورَة وَالنَّصِّ الْبَدِيلِ.",
         "caption_text": "يستخدم img Tag لإدراج الصور وهو Empty Element لا يحتاج ل Tag إغلاق."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "syntax.html",
-        "code": "<img src=\"url\" alt=\"alternatetext\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"url\" alt=\"alternatetext\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -67,14 +67,14 @@
       "id": "attributes",
       "title": "شرح Attributes الأساسية",
       "narration": {
-        "spoken_text": "يَحْتَاج img Tag إِلَى Attribute رَئِيسِيٍّ هُو src لِتَحْدِيدِ مَسَارِ الصُّورَةِ، و Attribute آخَرَ هُو alt لِتَوْفِيرِ نَصٍّ بَدِيلٍ يَظْهَرُ فِي حَالَةِ تَعَذُّرِ تَحْمِيلِ الصُّورَةِ أَوْ لِمُسَاعَدَةِ بَرَامِجِ قِرَاءَةِ الشَّاشَةِ.",
+        "spoken_text": "يَحْتَاج إِيمِج تَاج إِلَى أَتْرِيبْيُوت رَئِيسِيٍّ هُو سُورْس لِتَحْدِيدِ مَسَارِ الصُّورَه، و أَتْرِيبْيُوت آخَرَ هُو أَلْت لِتَوْفِيرِ نَصٍّ بَدِيلٍ يَظْهَرُ فِي حَالَة تَعَذُّرِ تَحْمِيلِ الصُّورَة أَوْ لِمُسَاعَدَة بَرَامِجِ قِرَاءَة الشَّاشَه.",
         "caption_text": "يجب تحديد src للمسار و alt للنص البديل."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "attributes.html",
-        "code": "<img src=\"img_chania.jpg\" \nalt=\"Flowers in Chania\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"img_chania.jpg\" alt=\"Flowers in Chania\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -88,14 +88,14 @@
       "id": "size_control",
       "title": "التحكم في أبعاد الصور",
       "narration": {
-        "spoken_text": "يُمْكِنُنَا التَّحَكُّمُ فِي أَبْعَادِ الصُّورَةِ بِاسْتِخْدَام style Attribute لِتَحْدِيد width و height. يُفَضَّلُ دَائِماً تَحْدِيدُ الْأَبْعَادِ لِتَجَنُّبِ اهْتِزَازِ الصَّفْحَةِ أَثْنَاءَ تَحْمِيلِ الصُّورَةِ.",
+        "spoken_text": "يُمْكِنُنَا التَّحَكُّمُ فِي أَبْعَادِ الصُّورَة بِاسْتِخْدَام سْتَايْل أَتْرِيبْيُوت لِتَحْدِيد width و height. يُفَضَّلُ دَائِماً تَحْدِيدُ الْأَبْعَادِ لِتَجَنُّبِ اهْتِزَازِ الصَّفْحَة أَثْنَاءَ تَحْمِيلِ الصُّورَه.",
         "caption_text": "استخدام style للتحكم في عرض وارتفاع الصورة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "size.html",
-        "code": "<img src=\"img_girl.jpg\" \nalt=\"Girl in a jacket\" \nstyle=\"width:500px;height:600px;\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"img_girl.jpg\" alt=\"Girl in a jacket\" style=\"width:500px;height:600px;\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -109,14 +109,14 @@
       "id": "external_images",
       "title": "الصور الخارجية والمجلدات",
       "narration": {
-        "spoken_text": "إِذَا كَانَتِ الصُّورَة فِي مُجَلَّدٍ فَرْعِيٍّ، نَضَعُ مَسَارَ الْمُجَلَّدِ فِي src. كَمَا يُمْكِنُ الْإِشَارَة إِلَى صُورَة عَلَى خَادِمٍ آخَرَ بِاسْتِخْدَامِ رَابِطٍ مُبَاشِرٍ، مَعَ ضَرُورَةِ مُرَاعَاةِ حُقُوقِ النَّشْرِ.",
+        "spoken_text": "إِذَا كَانَتِ الصُّورَة فِي مُجَلَّدٍ فَرْعِيٍّ، نَضَعُ مَسَارَ الْمُجَلَّدِ فِي سُورْس. كَمَا يُمْكِنُ الْإِشَارَة إِلَى صُورَة عَلَى خَادِمٍ آخَرَ بِاسْتِخْدَامِ رَابِطٍ مُبَاشِرٍ، مَعَ ضَرُورَة مُرَاعَاة حُقُوقِ النَّشْرِ.",
         "caption_text": "يمكن ربط الصور من مجلدات محلية أو خوادم خارجية."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "external.html",
-        "code": "<img src=\"/images/html5.gif\" \nalt=\"HTML5 Icon\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"/images/html5.gif\" alt=\"HTML5 Icon\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -130,14 +130,14 @@
       "id": "image_link",
       "title": "استخدام الصورة كرابط",
       "narration": {
-        "spoken_text": "لِجَعْلِ الصُّورَةِ رَابِطاً، نَضَع img Tag دَاخِل a Tag. هَذَا يُتِيحُ لِلْمُسْتَخْدِمِ النَّقْرَ عَلَى الصُّورَةِ لِلِانْتِقَالِ إِلَى صَفْحَة أُخْرَى.",
+        "spoken_text": "لِجَعْلِ الصُّورَة رَابِطاً، نَضَع إِيمِج تَاج دَاخِل a تَاج. هَذَا يُتِيحُ لِلْمُسْتَخْدِمِ النَّقْرَ عَلَى الصُّورَة لِلِانْتِقَالِ إِلَى صَفْحَة أُخْرَى.",
         "caption_text": "وضع img داخل a لإنشاء صورة قابلة للنقر."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link.html",
-        "code": "<a href=\"default.asp\">\n  <img src=\"smiley.gif\" \n  alt=\"Tutorial\">\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"default.asp\">\n      <img src=\"smiley.gif\" alt=\"Tutorial\">\n    </a>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -151,14 +151,14 @@
       "id": "floating",
       "title": "محاذاة الصور مع النصوص",
       "narration": {
-        "spoken_text": "نَسْتَخْدِمُ خَاصِّيَّة float فِي CSS لِجَعْلِ الصُّورَةِ تَنْسَابُ إِلَى يَمِينِ أَوْ يَسَارِ النَّصِّ، مِمَّا يُعْطِي تَصْمِيماً جَمَالِيّاً لِلْمُحْتَوَى.",
+        "spoken_text": "نَسْتَخْدِمُ خَاصِّيَّة float فِي سِي إِس إِس لِجَعْلِ الصُّورَة تَنْسَابُ إِلَى يَمِينِ أَوْ يَسَارِ النَّصِّ، مِمَّا يُعْطِي تَصْمِيماً جَمَالِيّاً لِلْمُحْتَوَى.",
         "caption_text": "استخدام CSS float لمحاذاة الصور بجانب النصوص."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "float.html",
-        "code": "<img src=\"smiley.gif\" \nstyle=\"float:right; \nwidth:42px;height:42px;\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"smiley.gif\" style=\"float:right; width:42px;height:42px;\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -172,7 +172,7 @@
       "id": "summary",
       "title": "خلاصة الدرس",
       "narration": {
-        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَذَكَّرُوا أَنَّ تَحْمِيلَ الصُّوَرِ الْكَبِيرَةِ قَدْ يُبْطِئُ الصَّفْحَة، لِذَا اسْتَخْدِمُوهَا بِحِكْمَة. نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِتَعَلُّمِ مَزِيدٍ مِنَ الْمَهَارَاتِ.",
+        "spoken_text": "فِي خِتَامِ هَذَا الدَّرْسِ، تَذَكَّرُوا أَنَّ تَحْمِيلَ الصُّوَرِ الْكَبِيرَة قَدْ يُبْطِئُ الصَّفْحَه، لِذَا اسْتَخْدِمُوهَا بِحِكْمَه. نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِتَعَلُّمِ مَزِيدٍ مِنَ الْمَهَارَاتِ.",
         "caption_text": "استخدم الصور بحذر لضمان سرعة تحميل الصفحة."
       },
       "visual": {
