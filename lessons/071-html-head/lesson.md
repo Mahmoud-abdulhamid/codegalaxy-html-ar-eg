@@ -17,11 +17,14 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
 </html>
 ```
 
@@ -30,11 +33,18 @@
 تستخدم الـ meta لتحديد ترميز الأحرف، وصف الصفحة، والكلمات المفتاحية لمحركات البحث.
 
 ```html
-<meta charset="UTF-8">
-<meta name="description"
-content="Free Web tutorials">
-<meta name="keywords"
-content="HTML, CSS, JavaScript">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## التحكم في الـ viewport
@@ -42,9 +52,17 @@ content="HTML, CSS, JavaScript">
 يضمن الـ viewport عرض الموقع بشكل صحيح على مختلف أحجام الشاشات.
 
 ```html
-<meta name="viewport"
-content="width=device-width,
-initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## إضافة الـ style والـ script
@@ -52,14 +70,23 @@ initial-scale=1.0">
 يمكن استخدام style للتنسيق الداخلي، وlink للربط الخارجي، وscript لإضافة JavaScript.
 
 ```html
-<style>
-body {background: blue;}
-</style>
-<link rel="stylesheet"
-href="style.css">
-<script>
-console.log("Hello");
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background: blue;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script>
+      console.log("Hello");
+    </script>
+  </body>
+</html>
 ```
 
 ## استخدام الـ base element
@@ -67,10 +94,17 @@ console.log("Hello");
 يحدد الـ base الرابط الأساسي لجميع الروابط النسبية في الصفحة.
 
 ```html
-<head>
-<base href="https://w3schools.com/"
-target="_blank">
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <base href="https://w3schools.com/" target="_blank">
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>Styled Web Page</p>
+  </body>
+</html>
 ```
 
 ## خلاصة الدرس
