@@ -79,8 +79,16 @@
         "type": "code",
         "language": "html",
         "filename": "table_colspan.html",
-        "code": "<table>\n  <tr>\n    <th colspan=\"2\">Name</th>\n    <th>Age</th>\n  </tr>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <th colspan=\"2\">Name</th>\n        <th>Age</th>\n      </tr>\n      <tr>\n        <td>Jill</td>\n        <td>Smith</td>\n        <td>43</td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          16
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -100,8 +108,17 @@
         "type": "code",
         "language": "html",
         "filename": "table_colspan_part2.html",
-        "code": "  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>43</td>\n  </tr>\n</table>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <th colspan=\"2\">Name</th>\n        <th>Age</th>\n      </tr>\n      <tr>\n        <td>Jill</td>\n        <td>Smith</td>\n        <td>43</td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -156,8 +173,18 @@
         "type": "code",
         "language": "html",
         "filename": "table_rowspan.html",
-        "code": "<table>\n  <tr>\n    <th>Name</th>\n    <td>Jill</td>\n  </tr>\n  <tr>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <th>Name</th>\n        <td>Jill</td>\n      </tr>\n      <tr>\n        <th rowspan=\"2\">Phone</th>\n        <td>555-1234</td>\n      </tr>\n      <tr>\n        <td>555-8745</td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          16,
+          18
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -177,8 +204,19 @@
         "type": "code",
         "language": "html",
         "filename": "table_rowspan_part2.html",
-        "code": "    <th rowspan=\"2\">Phone</th>\n    <td>555-1234</td>\n  </tr>\n  <tr>\n    <td>555-8745</td>\n  </tr>\n</table>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <th>Name</th>\n        <td>Jill</td>\n      </tr>\n      <tr>\n        <th rowspan=\"2\">Phone</th>\n        <td>555-1234</td>\n      </tr>\n      <tr>\n        <td>555-8745</td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
