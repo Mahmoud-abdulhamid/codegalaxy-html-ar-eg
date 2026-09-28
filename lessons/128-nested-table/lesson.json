@@ -63,8 +63,13 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<table>\n  <tr>\n    <td>Cell\n      <table>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <td>Cell\n          <table>\n            <tr><td>Cell 1</td></tr>\n            <tr><td>Cell 2</td></tr>\n            <tr><td>Cell 3</td></tr>\n            <tr><td>Cell 4</td></tr>\n          </table>\n        </td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8,
+          9,
+          10
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -84,8 +89,17 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "        <tr><td>Cell 1</td></tr>\n        <tr><td>Cell 2</td></tr>\n        <tr><td>Cell 3</td></tr>\n        <tr><td>Cell 4</td></tr>\n      </table>\n    </td>\n  </tr>\n</table>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <table>\n      <tr>\n        <td>Cell\n          <table>\n            <tr><td>Cell 1</td></tr>\n            <tr><td>Cell 2</td></tr>\n            <tr><td>Cell 3</td></tr>\n            <tr><td>Cell 4</td></tr>\n          </table>\n        </td>\n      </tr>\n    </table>\n  </body>\n</html>",
+        "highlight_lines": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
