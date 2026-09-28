@@ -25,8 +25,15 @@
 نبدأ بكتابة عنصر img مع تحديد src للرابط و alt للنص البديل.
 
 ```html
-<img src="image.jpg" 
-alt="وصف الصورة هنا">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="image.jpg" alt="وصف الصورة هنا">
+  </body>
+</html>
 ```
 
 ## تفاصيل إضافية للصور
@@ -34,10 +41,15 @@ alt="وصف الصورة هنا">
 يمكن التحكم في أبعاد الصورة باستخدام width و height لتحسين أداء الصفحة.
 
 ```html
-<img src="pic.jpg" 
-width="500" 
-height="300" 
-alt="صورة توضيحية">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="pic.jpg" width="500" height="300" alt="صورة توضيحية">
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
