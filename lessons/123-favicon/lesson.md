@@ -26,7 +26,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## إضافة Tag الـ link
@@ -38,12 +46,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" </head>
-    <body>
-      type="image/x-icon"
-      href="/images/favicon.ico">
-    </body>
-  </html>
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## إكمال هيكل الـ body
@@ -51,10 +61,17 @@
 نضيف المحتوى المرئي داخل الـ body لإتمام صفحة الـ HTML.
 
 ```html
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
