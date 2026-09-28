@@ -43,7 +43,7 @@
       "id": "scene_1",
       "title": "مقدمة Attributes",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى HTML attributes وَكَيْفَ تُوَفِّرُ مَعْلُومَاتٍ إِضَافِيَّة عَنْ Elements دَاخِلَ صَفْحَةِ الويب.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى إِتْش تِي إِم إِل أَتْرِيبْيُوتْس وَكَيْفَ تُوَفِّرُ مَعْلُومَاتٍ إِضَافِيَّة عَنْ إِلِيمِنْتْس دَاخِلَ صَفْحَة الويب.",
         "caption_text": "تعلم كيفية استخدام HTML attributes لتوفير معلومات إضافية عن Elements."
       },
       "visual": {
@@ -62,14 +62,14 @@
       "id": "scene_2",
       "title": "شرح The href Attribute",
       "narration": {
-        "spoken_text": "نَبْدَأُ مَع href attribute. الرَّمْز a يَعْرِف hyperlink، وَخَاصِيَّة href تُحَدِّدُ عُنْوَان URL لِلصَّفْحَةِ الْمَقْصُودَةِ عِنْدَ النَّفَرِ عَلَى الرَّابِطِ.",
+        "spoken_text": "نَبْدَأُ مَع إِتْش رِيف أَتْرِيبْيُوت. الرَّمْز a يَعْرِف hyperlink، وَخَاصِيَّة إِتْش رِيف تُحَدِّدُ عُنْوَان URL لِلصَّفْحَة الْمَقْصُودَة عِنْدَ النَّفَرِ عَلَى الرَّابِطِ.",
         "caption_text": "تحديد الروابط باستخدام a tag و href attribute."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "link.html",
-        "code": "<a href=\"https://www.w3schools.com\">\n  Visit W3Schools\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com\">Visit W3Schools</a>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "Visit W3Schools",
         "output_status": "illustrative",
@@ -83,14 +83,14 @@
       "id": "scene_3",
       "title": "شرح The src Attribute",
       "narration": {
-        "spoken_text": "نَنْتَقِلُ إِلَى img tag وَسَخْم src attribute لِإِدْرَاجِ الصُّوَرِ فِي صَفْحَةِ الويب، حَيْثُ نُحَدِّدُ إِمَّا مَسَاراً مُطْلَقا Absolute URL أَوْ مَسَاراً نِسْبِيّا Relative URL.",
+        "spoken_text": "نَنْتَقِلُ إِلَى إِيمِج تَاج وَسَخْم سُورْس أَتْرِيبْيُوت لِإِدْرَاجِ الصُّوَرِ فِي صَفْحَة الويب، حَيْثُ نُحَدِّدُ إِمَّا مَسَاراً مُطْلَقا Absolute URL أَوْ مَسَاراً نِسْبِيّا Relative URL.",
         "caption_text": "استخدام img tag مع src attribute لعرض الصور."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "image.html",
-        "code": "<img src=\"img_girl.jpg\">\n<img src=\"/images/img_girl.jpg\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"img_girl.jpg\">\n    <img src=\"/images/img_girl.jpg\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -104,14 +104,14 @@
       "id": "scene_4",
       "title": "شرح Width, Height and Alt Attributes",
       "narration": {
-        "spoken_text": "يَجِبُ أَنْ تَتَحَوَّلَ الصُّوَرِ أَيْضاً إِلَى width و height attributes لِتَحْدِيدِ الْأَبْعَادِ بِالْبِكْسِلْ، كَمَا نَسْتَخْدِم alt attribute الضَّرُورِيَّ لِوَصْفِ الصُّورَةِ عِنْدَ تَعَذُّرِ عَرْضِهَا.",
+        "spoken_text": "يَجِبُ أَنْ تَتَحَوَّلَ الصُّوَرِ أَيْضاً إِلَى width و height أَتْرِيبْيُوتْس لِتَحْدِيدِ الْأَبْعَادِ بِالْبِكْسِلْ، كَمَا نَسْتَخْدِم أَلْت أَتْرِيبْيُوت الضَّرُورِيَّ لِوَصْفِ الصُّورَة عِنْدَ تَعَذُّرِ عَرْضِهَا.",
         "caption_text": "تحديد الأبعاد باستخدام width و height والنص البديل عبر alt attribute."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "dimensions.html",
-        "code": "<img src=\"img_girl.jpg\"\n     width=\"500\"\n     height=\"600\"\n     alt=\"Girl with a jacket\">",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"img_girl.jpg\" width=\"500\" height=\"600\" alt=\"Girl with a jacket\">\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
@@ -125,14 +125,14 @@
       "id": "scene_5",
       "title": "شرح The style and lang Attributes",
       "narration": {
-        "spoken_text": "تَسْتَخْدِم style attribute لِإِضَافَةِ تَنْسِيقَاتٍ مِثْلِ اللَّوْنِ وَالْخَطِّ، بَيْنَمَا نُضَمِّن lang attribute دَاخِل html tag لِتَحْدِيدِ لُغَةِ الصَّفْحَةِ لِمُسَاعَدَةِ مُحَرِّكَاتِ الْبَحْثِ.",
+        "spoken_text": "تَسْتَخْدِم سْتَايْل أَتْرِيبْيُوت لِإِضَافَة تَنْسِيقَاتٍ مِثْلِ اللَّوْنِ وَالْخَطِّ، بَيْنَمَا نُضَمِّن lang أَتْرِيبْيُوت دَاخِل إِتْش تِي إِم إِل تَاج لِتَحْدِيدِ لُغَة الصَّفْحَة لِمُسَاعَدَة مُحَرِّكَاتِ الْبَحْثِ.",
         "caption_text": "تطبيق التنسيق عبر style وتحديد لغة الصفحة عبر lang attribute."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "style-lang.html",
-        "code": "<html lang=\"en\">\n<body>\n  <p style=\"color:red;\">\n    This is a red paragraph.\n  </p>\n</body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p style=\"color:red;\">This is a red paragraph.</p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "This is a red paragraph. (in red color)",
         "output_status": "illustrative",
@@ -146,14 +146,14 @@
       "id": "scene_6",
       "title": "شرح The title Attribute",
       "narration": {
-        "spoken_text": "خَاصِيَّة title تُعَرِّفُ مَعْلُومَاتٍ إِضَافِيَّة عَنِ الْعُنْصُرِ، وَتَظْهَرُ كَنَصٍّ تَوْضِيحِيٍّ Tooltip عِنْدَ مُرُورِ مُؤَشِّرِ الْفَأْرَةِ فَوْقَ الْعُنْصُرِ فِي الْمُتَصَفِّحِ.",
+        "spoken_text": "خَاصِيَّة تَايْتِل تُعَرِّفُ مَعْلُومَاتٍ إِضَافِيَّة عَنِ الْعُنْصُرِ، وَتَظْهَرُ كَنَصٍّ تَوْضِيحِيٍّ Tooltip عِنْدَ مُرُورِ مُؤَشِّرِ الْفَأْرَة فُوءَ الْعُنْصُرِ فِي الْمُتَصَفِّحِ.",
         "caption_text": "عرض معلومات إضافية كرمز توضيحي Tooltip باستخدام title attribute."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "title.html",
-        "code": "<p title=\"I'm a tooltip\">\n  This is a paragraph.\n</p>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p title=\"I'm a tooltip\">This is a paragraph.</p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "This is a paragraph.",
         "output_status": "illustrative",
@@ -167,7 +167,7 @@
       "id": "scene_7",
       "title": "شرح Best Practices for Attributes",
       "narration": {
-        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ الْهَنْدَسِيَّةِ هُوَ اسْتِخْدَامُ الْحُرُوفِ الصَّغِيرَةِ لِأَسْمَاء Attributes، وَوَضْعُ الْقِيَمِ بَيْنَ عَلَامَاتِ تَنْصِيسٍ مُزْدَوِجَة أَوْ فَرْدِيَّة لِتَفَادِي الْأَخْطَاءِ دَاخِلَ الْمُتَصَفِّحَاتِ.",
+        "spoken_text": "مِنْ أَفْضَلِ الْمُمَارَسَاتِ الْهَنْدَسِيَّة هُوَ اسْتِخْدَامُ الْحُرُوفِ الصَّغِيرَة لِأَسْمَاء أَتْرِيبْيُوتْس، وَوَضْعُ الْقِيَمِ بَيْنَ عَلَامَاتِ تَنْصِيسٍ مُزْدَوِجَة أَوْ فَرْدِيَّة لِتَفَادِي الْأَخْطَاءِ دَاخِلَ الْمُتَصَفِّحَاتِ.",
         "caption_text": "أفضل الممارسات: استخدام الحروف الصغيرة وإحاطة القيم بعلامات التنصيص."
       },
       "visual": {
@@ -186,7 +186,7 @@
       "id": "scene_8",
       "title": "خلاصة الدرس",
       "narration": {
-        "spoken_text": "تَعَرَّفْنَا فِي هَذَا الدَّرْسِ عَلَى أَهَمِّيَّة HTML attributes وَكَيْفِيَّةِ اسْتِخْدَام href و src و alt و style و lang و title لِبِنَاءِ صَفَحَاتِ وَيْبٍ احْتِرَافِيَّة وَآمِنَة.",
+        "spoken_text": "تَعَرَّفْنَا فِي هَذَا الدَّرْسِ عَلَى أَهَمِّيَّة إِتْش تِي إِم إِل أَتْرِيبْيُوتْس وَكَيْفِيَّة اسْتِخْدَام إِتْش رِيف و سُورْس و أَلْت و سْتَايْل و lang و تَايْتِل لِبِنَاءِ صَفَحَاتِ وَيْبٍ احْتِرَافِيَّة وَآمِنَه.",
         "caption_text": "خلاصة شاملة لمهارات استخدام Attributes في لغة HTML."
       },
       "visual": {
