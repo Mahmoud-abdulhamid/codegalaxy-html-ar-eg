@@ -54,7 +54,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<canvas id=\"myCanvas\" \nwidth=\"200\" height=\"100\"\nstyle=\"border:1px solid #000000;\">\n</canvas>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <canvas id=\"myCanvas\"\n      width=\"200\" height=\"100\"\n      style=\"border:1px solid #000000;\">\n    </canvas>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
