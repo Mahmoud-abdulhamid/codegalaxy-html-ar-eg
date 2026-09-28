@@ -15,9 +15,16 @@
 استخدام Semantic HTML يعني اختيار العناصر الصحيحة لوظائفها، مما يحسن من تجربة التنقل عبر لوحة المفاتيح.
 
 ```html
-<button>Report an Error</button>
-
-<div>Report an Error</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button>Report an Error</button>
+    <div>Report an Error</div>
+  </body>
+</html>
 ```
 
 ## أهمية Headings
@@ -25,9 +32,17 @@
 تستخدم Headings من h1 إلى h6 لتنظيم هيكل الصفحة، وليس لتنسيق الخط.
 
 ```html
-<h1>Main Heading</h1>
-<h2>Sub Heading</h2>
-<h3>Section Heading</h3>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <h3>Section Heading</h3>
+  </body>
+</html>
 ```
 
 ## استخدام alt Attribute
@@ -35,7 +50,15 @@
 يوفر alt attribute نصا بديلا يصف الصورة في حال تعذر عرضها أو للمستخدمين الذين يعتمدون على قارئات الشاشة.
 
 ```html
-<img src="photo.jpg" alt="A city street">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="photo.jpg" alt="A city street">
+  </body>
+</html>
 ```
 
 ## تحديد اللغة lang Attribute
@@ -45,9 +68,9 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<body>
-  ... 
-</body>
+  <body>
+    ...
+  </body>
 </html>
 ```
 
