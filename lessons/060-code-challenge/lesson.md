@@ -23,9 +23,17 @@
 نتابع كتابة class attribute داخل Start Tag للعناصر البرمجية.
 
 ```html
-<div class="intro">
-  <p class="text">Welcome</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="intro">
+      <p class="text">Welcome</p>
+    </div>
+  </body>
+</html>
 ```
 
 ## تحليل أجزاء الكود ووظائفها
@@ -33,8 +41,16 @@
 نحدد class لكل Element لضمان استهدافه بدقة تامة.
 
 ```html
-<h1 class="header">Title</h1>
-<p class="content">Text</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 class="header">Title</h1>
+    <p class="content">Text</p>
+  </body>
+</html>
 ```
 
 ## معاينة المخرجات المتوقعة
@@ -50,8 +66,16 @@
 يمكن استخدام نفس الـ class لعدة Elements مختلفة بكفاءة عالية.
 
 ```html
-<p class="note">First Note</p>
-<p class="note">Second Note</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p class="note">First Note</p>
+    <p class="note">Second Note</p>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات البرمجية
