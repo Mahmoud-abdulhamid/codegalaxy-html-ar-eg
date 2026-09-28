@@ -15,11 +15,19 @@
 يبدأ هيكل القائمة ب Tag ul ويحتوي على عناصر li المتعددة.
 
 ```html
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>
 ```
 
 ## تخصيص أشكال الأيقونات بـ CSS
@@ -27,11 +35,19 @@
 استخدام خاصية list-style-type لتغيير شكل الرموز بجانب العناصر.
 
 ```html
-<ul style="list-style-type:circle;">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ul style="list-style-type:circle;">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>
 ```
 
 ## إنشاء القوائم المتداخلة Nested Lists
@@ -39,16 +55,24 @@
 يمكن تضمين قائمة داخلية بالكامل داخل عنصر li فرعي.
 
 ```html
-<ul>
-  <li>Coffee</li>
-  <li>Tea
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
     <ul>
-      <li>Black tea</li>
-      <li>Green tea</li>
+      <li>Coffee</li>
+      <li>Tea
+        <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
     </ul>
-  </li>
-  <li>Milk</li>
-</ul>
+  </body>
+</html>
 ```
 
 ```text
@@ -64,11 +88,19 @@
 تنسيق القوائم أفقيا لإنشاء شريط التنقل العلوي للمواقع.
 
 ```html
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية للموقع
