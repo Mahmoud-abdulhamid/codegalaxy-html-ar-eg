@@ -23,16 +23,23 @@
 نبدأ بهيكلة الصفحة باستخدام head لتحديد العنوان وstyle لتنسيق مظهر الصفحة.
 
 ```html
-<head>
-  <title>Simple Greeting Page</title>
-  <style>
-    body {
-      font-family: Arial;
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
-  </style>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Greeting Page</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, welcome to our website!</h1>
+  </body>
+</html>
 ```
 
 ## محتوى الصفحة المرئي
@@ -40,9 +47,22 @@
 نستخدم body لإضافة المحتوى المرئي مثل h1 لعرض رسالة الترحيب للمستخدم.
 
 ```html
-<body>
-  <h1>Hello, welcome to our website!</h1>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Greeting Page</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, welcome to our website!</h1>
+  </body>
 </html>
 ```
 
