@@ -16,10 +16,18 @@
 يجب تحديد id و width و height لعنصر canvas لتعريف مساحة الرسم.
 
 ```html
-<canvas id="myCanvas" 
-width="200" height="100"
-style="border:1px solid #000000;">
-</canvas>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <canvas id="myCanvas"
+      width="200" height="100"
+      style="border:1px solid #000000;">
+    </canvas>
+  </body>
+</html>
 ```
 
 ## الربط مع JavaScript
