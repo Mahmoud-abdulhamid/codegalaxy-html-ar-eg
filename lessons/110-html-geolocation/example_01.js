@@ -1,7 +1,7 @@
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
-      success, error);
+    success, error);
   } else {
     x.innerHTML = "Not supported.";
   }
