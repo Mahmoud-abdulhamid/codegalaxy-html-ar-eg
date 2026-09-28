@@ -87,7 +87,7 @@
         "type": "code",
         "language": "html",
         "filename": "bookmark.html",
-        "code": "<h2 id=\"C4\">Chapter 4</h2>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h2 id=\"C4\">Chapter 4</h2>\n  </body>\n</html>",
         "highlight_lines": [
           1
         ],
@@ -110,7 +110,7 @@
         "type": "code",
         "language": "html",
         "filename": "link.html",
-        "code": "<a href=\"#C4\">Jump to Chapter 4</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"#C4\">Jump to Chapter 4</a>\n  </body>\n</html>",
         "highlight_lines": [
           1
         ],
@@ -133,7 +133,7 @@
         "type": "code",
         "language": "html",
         "filename": "external_link.html",
-        "code": "<a href=\"html_demo.html#C4\">\nJump to Chapter 4\n</a>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"html_demo.html#C4\">Jump to Chapter 4</a>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           2,
