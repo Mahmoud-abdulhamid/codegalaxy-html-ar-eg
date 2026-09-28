@@ -23,10 +23,18 @@
 عنصر section يحدد قسما موضوعيا مستقلا داخل مستند الويب.
 
 ```html
-<section>
-  <h1>WWF</h1>
-  <p>The World Wide Fund for Nature.</p>
-</section>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <section>
+      <h1>WWF</h1>
+      <p>The World Wide Fund for Nature.</p>
+    </section>
+  </body>
+</html>
 ```
 
 ## استخدام عنصر article
@@ -34,10 +42,18 @@
 عنصر article يحدد محتوى مستقلا بذاته وقابلا للنشر المنفصل.
 
 ```html
-<article>
-  <h2>Google Chrome</h2>
-  <p>Google Chrome is a web browser.</p>
-</article>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser.</p>
+    </article>
+  </body>
+</html>
 ```
 
 ## عناصر header و footer
@@ -45,12 +61,20 @@
 عنصرا header و footer لتنظيم رأس وتذييل صفحات ومقالات الويب.
 
 ```html
-<header>
-  <h1>Website Title</h1>
-</header>
-<footer>
-  <p>Author: John Doe</p>
-</footer>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <h1>Website Title</h1>
+    </header>
+    <footer>
+      <p>Author: John Doe</p>
+    </footer>
+  </body>
+</html>
 ```
 
 ## عناصر nav و aside
@@ -58,13 +82,21 @@
 عنصرا nav و aside لتحديد روابط التنقل والمحتوى الجانبي.
 
 ```html
-<nav>
-  <a href="/">Home</a> |
-  <a href="/about">About</a>
-</nav>
-<aside>
-  <h4>Sidebar</h4>
-</aside>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a> |
+        <a href="/about">About</a>
+      </nav>
+      <aside>
+        <h4>Sidebar</h4>
+      </aside>
+    </body>
+  </html>
 ```
 
 ## عناصر figure و figcaption
@@ -72,10 +104,18 @@
 عنصرا figure و figcaption لعرض الصور مع تعليقاتها التوضيحية.
 
 ```html
-<figure>
-  <img src="pic.jpg" alt="Trulli">
-  <figcaption>Fig1. - Trulli, Italy.</figcaption>
-</figure>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <figure>
+      <img src="pic.jpg" alt="Trulli">
+      <figcaption>Fig1. - Trulli, Italy.</figcaption>
+    </figure>
+  </body>
+</html>
 ```
 
 ## خلاصة العناصر الدلالية
