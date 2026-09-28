@@ -15,10 +15,18 @@
 يستخدم script element لتضمين JavaScript، حيث يمكن كتابة الكود مباشرة أو ربط ملف خارجي عبر src Attribute.
 
 ```html
-<script>
-  console.log('Hello World');
-</script>
-<script src="app.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      console.log('Hello World');
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
 ```
 
 ## فهم الـ noscript element
@@ -26,9 +34,17 @@
 يستخدم noscript element لعرض محتوى بديل في حال قام Web Browser بتعطيل JavaScript، مما يضمن تجربة مستخدم أفضل.
 
 ```html
-<noscript>
-  عذراً، متصفحك لا يدعم JavaScript.
-</noscript>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <noscript>
+      عذراً، متصفحك لا يدعم JavaScript.
+    </noscript>
+  </body>
+</html>
 ```
 
 ## مثال عملي متكامل
@@ -36,14 +52,20 @@
 مثال يجمع بين script و noscript لضمان عمل الصفحة بكفاءة وتنبيه المستخدم في حال تعطل السكربتات.
 
 ```html
-<body>
-  <script>
-    document.write("مرحباً بك!");
-  </script>
-  <noscript>
-    يرجى تفعيل JavaScript.
-  </noscript>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      document.write("مرحباً بك!");
+    </script>
+    <noscript>
+      يرجى تفعيل JavaScript.
+    </noscript>
+  </body>
+</html>
 ```
 
 ## كيف يظهر الكود في المتصفح
