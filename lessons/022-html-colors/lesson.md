@@ -16,11 +16,15 @@
 يمكنك ضبط لون خلفية عناصر HTML باستخدام خاصية style ودالة background-color.
 
 ```html
-<h1 style=
-"background-color:
-DodgerBlue;">
-Hello World
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style= "background-color: DodgerBlue;">Hello World</h1>
+  </body>
+</html>
 ```
 
 ## تنسيق لون النصوص
@@ -28,11 +32,15 @@ Hello World
 تستطيع تغيير لون النصوص مباشرة عبر خاصية color وإعطائها اسم اللون المناسب.
 
 ```html
-<p style=
-"color:
-Tomato;">
-Lorem ipsum...
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p style= "color: Tomato;">Lorem ipsum...</p>
+  </body>
+</html>
 ```
 
 ## تنسيق حدود العناصر
@@ -40,12 +48,15 @@ Lorem ipsum...
 يمكنك تعيين لون حدود العناصر باستخدام خاصية border مع تحديد السمك والنوع.
 
 ```html
-<h1 style=
-"border:2px
-solid
-Tomato;">
-Hello
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style= "border:2px solid Tomato;">Hello</h1>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة المرئية
@@ -57,11 +68,15 @@ Hello
 يمكن تحديد الألوان أيضا باستخدام قيم RGB أو HEX أو HSL للحصول على دقة أكبر.
 
 ```html
-<h1 style=
-"background-color:
-rgb(255,
-99, 71);">
-...</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 style= "background-color: rgb(255, 99, 71);">...</h1>
+  </body>
+</html>
 ```
 
 ## قنوات الشفافية والـ Alpha
