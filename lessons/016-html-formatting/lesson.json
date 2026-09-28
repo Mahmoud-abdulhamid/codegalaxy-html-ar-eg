@@ -43,7 +43,7 @@
       "id": "scene_1_intro",
       "title": "مقدمة عن تنسيق النصوص في HTML",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَةِ لُغَة HTML. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كيفية استخدام Elements لتنسيق النصوص وإعطائها معاني خاصة داخل صفحات الويب.",
+        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى كيفية استخدام إِلِيمِنْتْس لتنسيق النصوص وإعطائها معاني خاصة داخل صفحات الويب.",
         "caption_text": "تحتوي لغة HTML على عناصر مخصصة لتنسيق النصوص بمعان خاصة."
       },
       "visual": {
@@ -62,14 +62,14 @@
       "id": "scene_2_bold",
       "title": "عناصر تغميق الخط b و strong",
       "narration": {
-        "spoken_text": "لِتَعْيِينِ نَصٍّ غَامِقٍ، نَسْتَخْدِم Tag المُسَمَّى b أَوْ Tag المُسَمَّى strong. الْفَرْقُ هُوَ أَنَّ strong يُضِيفُ أَهَمِّيَة دَلَالِيَّة لِلْمُحْتَوَى بَيْنَمَا b يُغَيِّرُ الْمَظْهَرَ فَقَطْ.",
+        "spoken_text": "لِتَعْيِينِ نَصٍّ غَامِقٍ، نَسْتَخْدِم تَاج المُسَمَّى b أَوْ تَاج المُسَمَّى strong. الْفَرْقُ هُوَ أَنَّ strong يُضِيفُ أَهَمِّيَة دَلَالِيَّة لِلْمُحْتَوَى بَيْنَمَا b يُغَيِّرُ الْمَظْهَرَ فَقَطْ.",
         "caption_text": "العناصر b و strong تستخدم لتغميق النص بأساليب مختلفة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "bold.html",
-        "code": "<b>This text is bold</b>\n<strong>Important!</strong>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <b>This text is bold</b>\n    <strong>Important!</strong>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "This text is bold Important!",
         "output_status": "illustrative",
@@ -83,14 +83,14 @@
       "id": "scene_3_italic",
       "title": "عناصر الخط المائل i و em",
       "narration": {
-        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى عَنَاصِرِ الْخَطِّ الْمَائِلِ مِثْل i و em. يَسْتَخْدِمُ الْعُنْصُر i لِلْمُصْطَلَحَاتِ التِّقْنِيَّةِ، بَيْنَمَا em يُحَدِّدُ نَصّاً مُؤَكَّداً يَقْرَؤُهُ قَارِئُ الشَّاشَةِ بِنَبْرَة خَاصَّة.",
+        "spoken_text": "نَنْتَقِلُ الْآنَ إِلَى عَنَاصِرِ الْخَطِّ الْمَائِلِ مِثْل i و em. يَسْتَخْدِمُ الْعُنْصُر i لِلْمُصْطَلَحَاتِ التِّقْنِيَّه، بَيْنَمَا em يُحَدِّدُ نَصّاً مُؤَكَّداً يَقْرَؤُهُ قَارِئُ الشَّاشَة بِنَبْرَة خَاصَّه.",
         "caption_text": "العناصر i و em تعرض النص بخط مائل لدلالات مختلفة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "italic.html",
-        "code": "<i>This is italic</i>\n<em>Emphasized text</em>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <i>This is italic</i>\n    <em>Emphasized text</em>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "This is italic Emphasized text",
         "output_status": "illustrative",
@@ -111,7 +111,7 @@
         "type": "code",
         "language": "html",
         "filename": "small_mark.html",
-        "code": "<small>Smaller text</small>\n<mark>Highlighted milk</mark>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <small>Smaller text</small>\n    <mark>Highlighted milk</mark>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "Smaller text Highlighted milk",
         "output_status": "illustrative",
@@ -125,14 +125,14 @@
       "id": "scene_5_del_ins",
       "title": "عناصر الحذف والإضافة del و ins",
       "narration": {
-        "spoken_text": "لِعَرْضِ نَصٍّ تَمَّ حَذْفُهُ مِنَ الْمُسْتَنَدِ نَسْتَخْدِم del حَيْثُ يَظْهَرُ فَوْقَهُ خَطٌّ يَتَوَسَّطُهُ، وَلِلنُّصُوصِ الْمُضَافَةِ حَدِيثاً نَسْتَخْدِم ins لِيَظْهَرَ تَحْتَهَا خَطٌّ يُفِيدُ الْإِضَافَة.",
+        "spoken_text": "لِعَرْضِ نَصٍّ تَمَّ حَذْفُهُ مِنَ الْمُسْتَنَدِ نَسْتَخْدِم del حَيْثُ يَظْهَرُ فُوءَهُ خَطٌّ يَتَوَسَّطُهُ، وَلِلنُّصُوصِ الْمُضَافَة حَدِيثاً نَسْتَخْدِم ins لِيَظْهَرَ تَحْتَهَا خَطٌّ يُفِيدُ الْإِضَافَه.",
         "caption_text": "العنصر del يحذف نصا بخط يتوسطه، و ins يضيف خطا تحته."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "del_ins.html",
-        "code": "<p>Color <del>blue</del> <ins>red</ins></p>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>Color <del>blue</del> <ins>red</ins></p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "Color blue red",
         "output_status": "illustrative",
@@ -146,14 +146,14 @@
       "id": "scene_6_sub_sup",
       "title": "النصوص السفلية والعلوية sub و sup",
       "narration": {
-        "spoken_text": "نَسْتَعْمِل sub لِلنُّصُوصِ السُّفْلِيَّةِ مِثْلَ الصِّيَغِ الْكِيمْيَائِيَّةِ مِثْل H2O، بَيْنَمَا نَسْتَعْمِل sup لِلنُّصُوصِ الْعُلْوِيَّةِ مِثْلَ الْمُعَادَلَاتِ الرِّيَاضِيَّةِ أَوْ الْحَوَاشِي.",
+        "spoken_text": "نَسْتَعْمِل sub لِلنُّصُوصِ السُّفْلِيَّة مِثْلَ الصِّيَغِ الْكِيمْيَائِيَّة مِثْل H2O، بَيْنَمَا نَسْتَعْمِل sup لِلنُّصُوصِ الْعُلْوِيَّة مِثْلَ الْمُعَادَلَاتِ الرِّيَاضِيَّة أَوْ الْحَوَاشِي.",
         "caption_text": "العناصر sub و sup تستخدم للنصوص السفلية والعلوية."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "sub_sup.html",
-        "code": "<p>H<sub>2</sub>O</p>\n<p>E=MC<sup>2</sup></p>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>H<sub>2</sub>O</p>\n    <p>E=MC<sup>2</sup></p>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "H2O E=MC2",
         "output_status": "illustrative",
@@ -167,7 +167,7 @@
       "id": "scene_7_visual_demo",
       "title": "معاينة التنسيقات في المتصفح",
       "narration": {
-        "spoken_text": "تَظْهَرُ هَذِهِ الصُّورَة كَيْفَ يَعْرِض Web Browser مُخْتَلَفَ هَذِهِ التَّنْسِيقَاتِ بِشَكْلٍ مَرْئِيٍّ وَوَاضِحٍ لِلْمُسْتَخْدِمِ لِتَسْهِيلِ قِرَاءَةِ الْمُحْتَوَى.",
+        "spoken_text": "تَظْهَرُ هَذِهِ الصُّورَة كَيْفَ يَعْرِض وِب Browser مُخْتَلَفَ هَذِهِ التَّنْسِيقَاتِ بِشَكْلٍ مَرْئِيٍّ وَوَاضِحٍ لِلْمُسْتَخْدِمِ لِتَسْهِيلِ قِرَاءَة الْمُحْتَوَى.",
         "caption_text": "صورة توضح معاينة عناصر التنسيق في المتصفح."
       },
       "visual": {
@@ -183,7 +183,7 @@
       "id": "scene_8_summary",
       "title": "خلاصة الدرس",
       "narration": {
-        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَهَمِّ Elements الْخَاصَّةِ بِتَنْسِيقِ النُّصُوصِ فِي HTML. نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِمُتَابَعَةِ الْمَزِيدِ مِنَ الْمَهَارَاتِ الْمُمْتِعَةِ مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
+        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَهَمِّ إِلِيمِنْتْس الْخَاصَّة بِتَنْسِيقِ النُّصُوصِ فِي إِتْش تِي إِم إِل. نَلْتَقِي فِي الدَّرْسِ الْقَادِمِ لِمُتَابَعَة الْمَزِيدِ مِنَ الْمَهَارَاتِ الْمُمْتِعَة مَعَ الْمُدَرِّبِ مَحْمُودِ عَبْدِالْحَمِيدِ.",
         "caption_text": "خلاصة درس تنسيق النصوص في HTML وكيفية توظيفها بكفاءة."
       },
       "visual": {
