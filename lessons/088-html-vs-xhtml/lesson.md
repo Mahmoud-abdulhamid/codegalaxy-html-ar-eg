@@ -31,10 +31,18 @@
 هيكل مستند XHTML يبدأ بتعريف DOCTYPE وفتح عنصر html مع Attribute النطاق.
 
 ```html
-<!DOCTYPE html PUBLIC
-  "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of document</title>
+  </head>
+  <body>
+    "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+    some content here...
+  </body>
+</html>
 ```
 
 ## مثال عملي لهيكل مستند XHTML القسم الثاني
@@ -42,12 +50,17 @@
 نكمل هيكل المستند بإضافة قسم head وtitle ثم قسم <body> body.
 
 ```html
-<head>
-  <title>Title of document</title>
-</head>
-<body>
-  some content here...
-</body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of document</title>
+  </head>
+  <body>
+    "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+    some content here...
+  </body>
 </html>
 ```
 
