@@ -96,7 +96,7 @@
         "type": "code",
         "language": "javascript",
         "filename": "counter.js",
-        "code": "if (localStorage.clickcount) {\n  localStorage.clickcount = \n    Number(localStorage.clickcount) + 1;\n} else {\n  localStorage.clickcount = 1;\n}",
+        "code": "if (localStorage.clickcount) {\n  localStorage.clickcount =\n  Number(localStorage.clickcount) + 1;\n} else {\n  localStorage.clickcount = 1;\n}",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
