@@ -25,9 +25,12 @@
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-<p>Test your skills!</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>Test your skills!</p>
+  </body>
 </html>
 ```
 
@@ -36,8 +39,16 @@
 نضيف تنسيقات النصوص المختلفة ونرتب Tags بشكل صحيح داخل كود HTML.
 
 ```html
-<p>This is <b>bold</b> text.</p>
-<p>This is <i>italic</i> text.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This is <b>bold</b> text.</p>
+    <p>This is <i>italic</i> text.</p>
+  </body>
+</html>
 ```
 
 ## استعراض مخرجات التحدي في المتصفح
