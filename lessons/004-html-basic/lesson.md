@@ -17,13 +17,14 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -32,10 +33,18 @@
 نستخدم Headings من h1 إلى h6 لتنظيم العناوين، و p لتعريف الفقرات النصية.
 
 ```html
-<h1>This is heading 1</h1>
-<h2>This is heading 2</h2>
-<p>This is a paragraph.</p>
-<p>Another paragraph.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>This is a paragraph.</p>
+    <p>Another paragraph.</p>
+  </body>
+</html>
 ```
 
 ## الروابط والصور و Attributes
@@ -43,10 +52,16 @@
 نستخدم Attributes لإضافة معلومات إضافية للعناصر مثل الروابط والصور.
 
 ```html
-<a href="https://www.w3schools.com">
-This is a link</a>
-<img src="image.jpg" alt="Text"
-width="104" height="142">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="https://www.w3schools.com">This is a link</a>
+    <img src="image.jpg" alt="Text" width="104" height="142">
+  </body>
+</html>
 ```
 
 ## كيفية فحص الكود
