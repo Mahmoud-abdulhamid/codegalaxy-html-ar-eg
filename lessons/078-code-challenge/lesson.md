@@ -19,11 +19,19 @@
 لننظر إلى هذا المثال. نستخدم Start Tag و End Tag لتغليف الكود. هذا يعطي شكلا مميزا للنص داخل الصفحة، ويسهل على الزائر تمييز أن هذا النص هو كود برمجي حقيقي.
 
 ```html
-<code>
-  x = 5;
-  y = 6;
-  z = x + y;
-</code>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <code>
+      x = 5;
+      y = 6;
+      z = x + y;
+    </code>
+  </body>
+</html>
 ```
 
 ## تنسيق المخرجات
@@ -31,10 +39,18 @@
 إذا أردنا عرض مخرجات الكود، نستخدم samp Element. هذا يعزز من دلالية الصفحة ويجعلها أكثر احترافية. لاحظ كيف نضع الـ Element داخل الـ body ليظهر بشكل صحيح في الـ Web Browser.
 
 ```html
-<p>النتيجة هي:</p>
-<samp>
-  11
-</samp>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>النتيجة هي:</p>
+    <samp>
+      11
+    </samp>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
