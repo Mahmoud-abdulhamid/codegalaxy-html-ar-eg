@@ -23,10 +23,18 @@
 استخدام getElementById لتغيير محتوى عنصر معين.
 
 ```html
-<script>
- document.getElementById("demo").innerHTML = 
- "Hello JavaScript!";
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      document.getElementById("demo").innerHTML =
+      "Hello JavaScript!";
+    </script>
+  </body>
+</html>
 ```
 
 ## تغيير الأنماط والخصائص
@@ -34,10 +42,10 @@
 يمكن لـ JavaScript تغيير الأنماط و Attributes بسهولة.
 
 ```javascript
-document.getElementById("demo").style.fontSize = 
- "25px";
-document.getElementById("demo").style.color = 
- "red";
+document.getElementById("demo").style.fontSize =
+"25px";
+document.getElementById("demo").style.color =
+"red";
 ```
 
 ## التعامل مع noscript Tag
@@ -45,10 +53,18 @@ document.getElementById("demo").style.color =
 يستخدم noscript Tag لعرض محتوى بديل عند تعطيل السكربتات.
 
 ```html
-<noscript>
- Sorry, your browser does not 
- support JavaScript!
-</noscript>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <noscript>
+      Sorry, your browser does not
+      support JavaScript!
+    </noscript>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات
