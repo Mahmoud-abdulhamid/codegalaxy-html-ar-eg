@@ -25,8 +25,8 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Page Title</title>
+  <head>
+    <title>My Page Title</title>
 ```
 
 ## إضافة Tag الـ link
@@ -34,10 +34,16 @@
 نستخدم عنصر الـ link لربط ملف الأيقونة بصفحة الـ HTML.
 
 ```html
-  <link rel="icon" 
-    type="image/x-icon" 
-    href="/images/favicon.ico">
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" </head>
+    <body>
+      type="image/x-icon"
+      href="/images/favicon.ico">
+    </body>
+  </html>
 ```
 
 ## إكمال هيكل الـ body
