@@ -29,8 +29,7 @@
 
 ```css
 div {
-  background-color: 
-  hsl(120, 100%, 50%);
+  background-color: hsl(120, 100%, 50%);
 }
 ```
 
@@ -48,9 +47,7 @@ div {
 
 ```css
 div {
-  background-color: 
-  hsla(120, 100%, 
-  50%, 0.3);
+  background-color: hsla(120, 100%, 50%, 0.3);
 }
 ```
 
