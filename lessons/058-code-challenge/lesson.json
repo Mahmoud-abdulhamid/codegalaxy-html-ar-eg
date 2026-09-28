@@ -65,7 +65,7 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<div>\n  <h1>عنوان الصفحة</h1>\n  <p>هذه فقرة داخل div</p>\n</div>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div>\n      <h1>عنوان الصفحة</h1>\n      <p>هذه فقرة داخل div</p>\n    </div>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": null,
         "output_status": "not_applicable",
