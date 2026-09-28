@@ -25,11 +25,16 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Page Title</title>
-  <link rel="icon" type="image/x-icon" 
-  href="/images/favicon.ico">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## استكمال هيكل الصفحة
@@ -37,10 +42,17 @@
 نكمل هيكل الصفحة بإضافة المحتوى المرئي داخل قسم body.
 
 ```html
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph.</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
