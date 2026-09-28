@@ -25,9 +25,16 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>Hello World!</p>
+  </body>
+</html>
 ```
 
 ## إغلاق الـ head وبدء الـ body
@@ -35,13 +42,17 @@
 نغلق قسم head ونبدأ في كتابة محتوى body المرئي.
 
 ```html
-  <meta name="viewport" 
-        content="width=device-width">
-</head>
-<body>
-  <h1>Welcome</h1>
-  <p>Hello World!</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>Hello World!</p>
+  </body>
 </html>
 ```
 
