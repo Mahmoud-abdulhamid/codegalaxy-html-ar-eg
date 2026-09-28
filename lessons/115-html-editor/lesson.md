@@ -25,7 +25,15 @@
 ```html
 <!DOCTYPE html>
 <html>
-<title>HTML Tutorial</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
 ```
 
 ## قسما الـ head والـ body
@@ -33,12 +41,16 @@
 يحتوي المستند على قسم head لتحديد title ثم قسم body الذي يضم المحتوى المرئي.
 
 ```html
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
