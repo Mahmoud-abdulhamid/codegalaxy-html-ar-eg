@@ -63,8 +63,15 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\"\ncontent=\"width=device-width,\ninitial-scale=1.0\">\n<title>Responsive Page</title>\n</head>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Responsive Page</title>\n  </head>\n  <body>\n    <h1>Responsive Design</h1>\n    <p>This page adapts to\n      any screen size.</p>\n    <p>Resize the browser\n      to see the effect.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
@@ -84,8 +91,16 @@
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<body>\n<h1>Responsive Design</h1>\n<p>This page adapts to\nany screen size.</p>\n<p>Resize the browser\nto see the effect.</p>\n</body>\n</html>",
-        "highlight_lines": [],
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Responsive Page</title>\n  </head>\n  <body>\n    <h1>Responsive Design</h1>\n    <p>This page adapts to\n      any screen size.</p>\n    <p>Resize the browser\n      to see the effect.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
         "output": null,
         "output_status": "not_applicable",
         "verification_ref": null
