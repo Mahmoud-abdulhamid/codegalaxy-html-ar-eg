@@ -23,12 +23,20 @@
 يبدأ الكود بفتح dl ثم استخدام dt للمصطلح وdd للوصف.
 
 ```html
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </body>
+</html>
 ```
 
 ## معاينة النتيجة في المتصفح
