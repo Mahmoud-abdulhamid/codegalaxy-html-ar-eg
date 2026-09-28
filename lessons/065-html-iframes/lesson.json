@@ -69,7 +69,7 @@
         "type": "code",
         "language": "html",
         "filename": "iframe_syntax.html",
-        "code": "<iframe src=\"url\" title=\"description\"></iframe>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe src=\"url\" title=\"description\"></iframe>\n  </body>\n</html>",
         "highlight_lines": [
           1
         ],
@@ -92,7 +92,7 @@
         "type": "code",
         "language": "html",
         "filename": "iframe_size.html",
-        "code": "<iframe src=\"demo_iframe.htm\"\n  style=\"height:200px;width:300px;\"\n  title=\"Iframe Example\"></iframe>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe src=\"demo_iframe.htm\" style=\"height:200px;width:300px;\" title=\"Iframe Example\"></iframe>\n  </body>\n</html>",
         "highlight_lines": [
           2
         ],
@@ -131,7 +131,7 @@
         "type": "code",
         "language": "html",
         "filename": "iframe_border.html",
-        "code": "<iframe src=\"demo_iframe.htm\"\n  style=\"border:2px solid red;\"\n  title=\"Iframe Example\"></iframe>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe src=\"demo_iframe.htm\" style=\"border:2px solid red;\" title=\"Iframe Example\"></iframe>\n  </body>\n</html>",
         "highlight_lines": [
           2
         ],
@@ -170,7 +170,7 @@
         "type": "code",
         "language": "html",
         "filename": "iframe_target.html",
-        "code": "<iframe src=\"demo_iframe.htm\" name=\"iframe_a\"\n  title=\"Iframe Example\"></iframe>\n<p><a href=\"https://www.w3schools.com\"\n  target=\"iframe_a\">W3Schools.com</a></p>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe src=\"demo_iframe.htm\" name=\"iframe_a\" title=\"Iframe Example\"></iframe>\n    <p><a href=\"https://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>\n  </body>\n</html>",
         "highlight_lines": [
           1,
           3
