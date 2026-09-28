@@ -15,9 +15,17 @@
 يعتبر div من نوع block element ويشغل كامل العرض المتاح مع فواصل أسطر.
 
 ```html
-<div>
-  هذا محتوى داخل div
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      هذا محتوى داخل div
+    </div>
+  </body>
+</html>
 ```
 
 ## استخدام div كحاوية
@@ -25,10 +33,18 @@
 تجميع عناصر متعددة داخل div لتسهيل التنسيق.
 
 ```html
-<div>
-  <h2>العنوان</h2>
-  <p>فقرة نصية هنا.</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      <h2>العنوان</h2>
+      <p>فقرة نصية هنا.</p>
+    </div>
+  </body>
+</html>
 ```
 
 ## توسيط div باستخدام CSS
