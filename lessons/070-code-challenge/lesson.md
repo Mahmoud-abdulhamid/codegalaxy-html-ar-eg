@@ -25,10 +25,18 @@
 لاحظ معي في هذا المثال كيف نواجه تحديا فعليا لإصلاح مسار صورة مفقودة داخل عنصر image مع التأكد من المجلدات.
 
 ```html
-<div class="challenge">
-  <p>Fix the image path:</p>
-  <img src="images/pic.jpg" alt="Picture">
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="challenge">
+      <p>Fix the image path:</p>
+      <img src="images/pic.jpg" alt="Picture">
+    </div>
+  </body>
+</html>
 ```
 
 ## تحليل أجزاء المسار
@@ -45,9 +53,15 @@
 نستخدم النقطتين والشرطة المائلة للصعود مجلدا واحدا للأعلى في شجرة المجلدات لاجتياز تحديات الويب وبناء مواقع منظمة.
 
 ```html
-<a href="../index.html">
-  Go Back Home
-</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a href="../index.html">Go Back Home</a>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات وحل التحديات
