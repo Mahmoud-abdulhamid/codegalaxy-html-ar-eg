@@ -15,8 +15,15 @@
 يمثل Absolute File Path الرابط الكامل URL للملف على الإنترنت.
 
 ```html
-<img src="https://example.com/pic.jpg"
-     alt="Mountain">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="https://example.com/pic.jpg" alt="Mountain">
+  </body>
+</html>
 ```
 
 ## المسار النسبي من الجذر Root
@@ -24,8 +31,15 @@
 تبدأ الشرطة المائلة / البحث عن الملف من جذر الموقع الرئيسي Root.
 
 ```html
-<img src="/images/picture.jpg"
-     alt="Mountain">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="/images/picture.jpg" alt="Mountain">
+  </body>
+</html>
 ```
 
 ## المسار النسبي من المجلد الحالي Current Folder
@@ -33,8 +47,15 @@
 كتابة اسم المجلد مباشرة يبحث عن الملف داخل المجلد الحالي.
 
 ```html
-<img src="images/picture.jpg"
-     alt="Mountain">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="images/picture.jpg" alt="Mountain">
+  </body>
+</html>
 ```
 
 ## المسار النسبي للمجلد الأعلى Parent Folder
@@ -42,8 +63,15 @@
 تستخدم .. للصعود مستوى واحدا للأعلى في هيكل المجلدات.
 
 ```html
-<img src="../images/picture.jpg"
-     alt="Mountain">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="../images/picture.jpg" alt="Mountain">
+  </body>
+</html>
 ```
 
 ## معاينة نتيجة عرض الصور بالأكواد
