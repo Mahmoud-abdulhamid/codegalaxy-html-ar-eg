@@ -15,8 +15,16 @@ Responsive Web Design يهدف إلى جعل صفحات الويب ملائمة 
 إضافة meta viewport في head ترشد المتصفح لكيفية ضبط أبعاد الصفحة ومقياس عرضها.
 
 ```html
-<meta name="viewport"
-  content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+  </body>
+</html>
 ```
 
 ## الصور المتجاوبة مع max-width
@@ -24,8 +32,16 @@ Responsive Web Design يهدف إلى جعل صفحات الويب ملائمة 
 استخدام max-width بنسبة 100 يمنع الصورة من التمدد خارج أبعادها الأصلية مع تصغيرها بمرونة.
 
 ```html
-<img src="img_girl.jpg"
-  style="max-width:100%;height:auto;">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+  </body>
+</html>
 ```
 
 ## تبديل الصور باستخدام picture Element
@@ -33,13 +49,19 @@ Responsive Web Design يهدف إلى جعل صفحات الويب ملائمة 
 عنصر picture يتيح تقديم مصادر صور متعددة بناء على قيود media لعرض الصورة المناسبة لكل شاشة.
 
 ```html
-<picture>
-  <source srcset="small.jpg"
-    media="(max-width: 600px)">
-  <source srcset="large.jpg"
-    media="(max-width: 1500px)">
-  <img src="flowers.jpg" alt="Flowers">
-</picture>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <picture>
+      <source srcset="small.jpg" media="(max-width: 600px)">
+      <source srcset="large.jpg" media="(max-width: 1500px)">
+      <img src="flowers.jpg" alt="Flowers">
+    </picture>
+  </body>
+</html>
 ```
 
 ## المعاينة المرئية للتصميم المتجاوب
