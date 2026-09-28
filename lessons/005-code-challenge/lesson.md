@@ -26,9 +26,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Challenge</title>
+    <title>HTML Challenge</title>
   </head>
-</body>
+  <body>
+    <!-- Root Element -->
+    <h1>Welcome</h1>
+    <p>Basic Challenge</p>
+  </body>
+</html>
 ```
 
 ## استخدام Root Element
@@ -36,8 +43,18 @@
 يعتبر عنصر <html> هو Root Element الحاضن لكافة العناصر الأخرى.
 
 ```html
+<!DOCTYPE html>
 <html>
-  <!-- Root Element -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <title>HTML Challenge</title>
+  </head>
+  <body>
+    <!-- Root Element -->
+    <h1>Welcome</h1>
+    <p>Basic Challenge</p>
+  </body>
 </html>
 ```
 
@@ -46,9 +63,19 @@
 ننتقل إلى قسم <head> لتحديد عنوان الصفحة عبر عنصر <title>.
 
 ```html
-<head>
-  <title>HTML Challenge</title>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <title>HTML Challenge</title>
+  </head>
+  <body>
+    <!-- Root Element -->
+    <h1>Welcome</h1>
+    <p>Basic Challenge</p>
+  </body>
+</html>
 ```
 
 ## بناء محتوى body الرئيسي
@@ -56,10 +83,19 @@
 نكتب المحتوى المرئي ضمن قسم <body> مثل عناوين <h1> وفقرات <p>.
 
 ```html
-<body>
-  <h1>Welcome</h1>
-  <p>Basic Challenge</p>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <title>HTML Challenge</title>
+  </head>
+  <body>
+    <!-- Root Element -->
+    <h1>Welcome</h1>
+    <p>Basic Challenge</p>
+  </body>
+</html>
 ```
 
 ## أفضل الممارسات البرمجية
