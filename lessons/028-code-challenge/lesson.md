@@ -27,14 +27,17 @@
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {background: blue;}
-</style>
-</head>
-<body>
-<h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+  </body>
 </html>
 ```
 
