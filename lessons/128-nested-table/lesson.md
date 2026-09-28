@@ -23,10 +23,26 @@
 نبدأ بإنشاء الجدول الخارجي ثم نجهز الخلية td لاستقبال الجدول الداخلي.
 
 ```html
-<table>
-  <tr>
-    <td>Cell
-      <table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Cell
+          <table>
+            <tr><td>Cell 1</td></tr>
+            <tr><td>Cell 2</td></tr>
+            <tr><td>Cell 3</td></tr>
+            <tr><td>Cell 4</td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## إضافة صفوف وخلايا الجدول الداخلي
@@ -34,14 +50,26 @@
 نضيف صفوف الجدول الداخلي ونغلق جميع العناصر البرمجية بدقة.
 
 ```html
-        <tr><td>Cell 1</td></tr>
-        <tr><td>Cell 2</td></tr>
-        <tr><td>Cell 3</td></tr>
-        <tr><td>Cell 4</td></tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Cell
+          <table>
+            <tr><td>Cell 1</td></tr>
+            <tr><td>Cell 2</td></tr>
+            <tr><td>Cell 3</td></tr>
+            <tr><td>Cell 4</td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
 ```
 
 ## ملاحظات هندسية وأفضل الممارسات
