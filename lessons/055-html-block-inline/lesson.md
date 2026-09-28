@@ -23,8 +23,16 @@
 مثال توضيحي لكيفية ظهور عناصر block مثل p و div في المستند.
 
 ```html
-<p>Hello World</p>
-<div>Hello World</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>Hello World</p>
+    <div>Hello World</div>
+  </body>
+</html>
 ```
 
 ## خصائص عناصر Inline
@@ -40,7 +48,15 @@
 مثال عملي لاستخدام عنصر span داخل النص بشكل inline.
 
 ```html
-<span>Hello World</span>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <span>Hello World</span>
+  </body>
+</html>
 ```
 
 ## العنصر div الحاوي
@@ -56,11 +72,18 @@
 مثال متقدم لتنسيق عنصر div باستخدام أنماط CSS المضمنة.
 
 ```html
-<div style="background-color:black;
-     color:white; padding:20px;">
-  <h2>London</h2>
-  <p>London is the capital.</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div style="background-color:black; color:white; padding:20px;">
+      <h2>London</h2>
+      <p>London is the capital.</p>
+    </div>
+  </body>
+</html>
 ```
 
 ## العنصر span المضمن
@@ -68,11 +91,17 @@
 عنصر span حاوية مضمنة لتنسيق أجزاء محددة من النص.
 
 ```html
-<p>My mother has 
-  <span style="color:blue;">
-    blue
-  </span> eyes.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>My mother has
+      <span style="color:blue;">blue</span> eyes.
+      </p>
+    </body>
+  </html>
 ```
 
 ## خلاصة الدرس
