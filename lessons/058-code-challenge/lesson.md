@@ -25,10 +25,18 @@
 نستخدم Start Tag لفتح div، ثم نضع المحتوى، ونغلقه بـ End Tag لضمان عمل العناصر كوحدة واحدة.
 
 ```html
-<div>
-  <h1>عنوان الصفحة</h1>
-  <p>هذه فقرة داخل div</p>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div>
+      <h1>عنوان الصفحة</h1>
+      <p>هذه فقرة داخل div</p>
+    </div>
+  </body>
+</html>
 ```
 
 ## تحليل هيكل الصفحة
