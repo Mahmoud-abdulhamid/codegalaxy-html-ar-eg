@@ -130,7 +130,7 @@
         "type": "code",
         "language": "html",
         "filename": "loop.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe width=\"420\"\n      height=\"315\"\n      src=\"https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY\n      &loop=1\">\n    </iframe>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <iframe width=\"420\"\n      height=\"315\"\n      src=\"https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1\">\n    </iframe>\n  </body>\n</html>",
         "highlight_lines": [],
         "output": "Looping YouTube Video",
         "output_status": "illustrative",
