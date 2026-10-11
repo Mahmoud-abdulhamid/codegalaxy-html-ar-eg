@@ -1,13 +1,15 @@
 {
   "schema_version": "1.0",
   "lesson_id": "1",
-  "title": "مقدمة شاملة في لغة HTML",
+  "title": "HTML Introduction and Core Structure",
   "course": "HTML",
+  "language": "ar",
+  "dialect": "egyptian",
   "objectives": [
-    "فهم الدور الأساسي للغة HTML في بناء صفحات الويب",
-    "التعرف على الهيكل البرمجي للمستند",
-    "التعامل مع Tags و Elements بشكل صحيح",
-    "تطبيق مثال عملي لبناء صفحة ويب بسيطة"
+    "Understand HTML as the standard markup language for Web pages",
+    "Analyze the DOM tree structure and document hierarchy",
+    "Write a basic and complete HTML document with correct syntax",
+    "Identify core HTML elements and attributes"
   ],
   "sources": [
     "https://www.w3schools.com/html/default.asp"
@@ -24,18 +26,18 @@
   ],
   "scenes": [
     {
-      "id": "intro",
-      "title": "ما هي لغة HTML؟",
+      "id": "scene_1",
+      "title": "شرح Introduction to HTML",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي دَوْرَة إِتْش تِي إِم إِل. هَذِهِ اللُّغَة هِيَ الْمِعْيَارُ الْأَسَاسِيُّ لِتَصْمِيمِ وَبِنَاءِ صَفَحَاتِ الويب. بِوَاسِطَتِهَا نَقُومُ بِتَحْدِيدِ هَيْكَلِ الْمُحْتَوَى الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ دَاخِل وِب Browser، وَهِيَ لُغَة سَهْلَة وَمُمْتِعَة فِي التَّعَلُّمِ.",
-        "caption_text": "تعد HTML اللغة القياسية لبناء صفحات الويب وتحديد هيكل المحتوى."
+        "spoken_text": "أهلاً بيكم يا شباب في الدرس الأول من كورس HTML الأساسي. النهاردة هنبدأ مع بعض برحلة ممتعة عشان نِئْدَر نفهم إيه هو HTML وليه هو الأساس لعمل أي صفحة Web في الدنيا. كمهندس برمجيات، لازم تِئْرَف إن HTML اختصار ل HyperText Markup Language، ودي لغة السطور الأساسية اللي بتوصف هيكل صفحتك للمتصفح. من غير HTML مش هيكون فيه أي محتوى مكتوب أو منظم على الإنترنت، وعشان كده دي أول خطوة حقيقية ليك في عالم ال Web Development.",
+        "caption_text": "شرح وتوضيح HTML stands for HyperText Markup Language and forms the foundation of all Web pages."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "HTML هي لغة Markup Language أساسية للويب",
-          "تستخدم لبناء هيكل صفحات الويب",
-          "تتميز بسهولة التعلم والتطبيق"
+          "مفهوم HTML stands for HyperText Markup Language",
+          "مفهوم It is the foundation of all Web pages",
+          "مفهوم Allows creating personal Websites easily"
         ]
       },
       "source_refs": [
@@ -43,57 +45,57 @@
       ]
     },
     {
-      "id": "concepts",
-      "title": "المفاهيم الأساسية",
+      "id": "scene_2",
+      "title": "شرح DOM Tree Structure",
       "narration": {
-        "spoken_text": "تَعْتَمِدُ لُغَة إِتْش تِي إِم إِل عَلَى اسْتِخْدَام تَاجْز لِتَنْظِيمِ الْمُحْتَوَى. يَتَكَوَّنُ كُلُّ إِلِيمِنْت مِنْ Start تَاج و End تَاج، وَبَيْنَهُمَا يَكُونُ الْمُحْتَوَى. هَذِهِ الْعَنَاصِرُ هِيَ اللَّبِنَاتُ الْأَسَاسِيَّة لِأَيِّ صَفْحَة ويب نَقُومُ بِبِنَائِهَا.",
-        "caption_text": "تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag."
+        "spoken_text": "بص معايا كده على الشاشة عشان نفهم كواليس المحرك والذاكرة وَئْت ما Web Browser بيفتح أي صفحة. المتصفح بيئرا ملف ال HTML وحجمه وشكله، وبيحوله لشجرة عناصر بتتلخص في ال DOM Tree. الشجرة دي بتبدأ بجذر أساسي اسمه <html>، وجوه الجذر ده بيكون فيه عنصرين رئيسيين جداً هما <head> اللي بيشيل ال metadata والتفاصيل المخفية، و<body> اللي بيظهر جواه كل المحتوى المرئي للمستخدم زي النصوص والصور والأزرار.",
+        "caption_text": "شرح وتوضيح Visualizing document hierarchy with <html> root, <head> for metadata, and <body> for visible content."
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "تستخدم Tags لتحديد أجزاء الصفحة",
-          "يتكون Element من Start Tag و End Tag",
-          "المحتوى يوضع بين Tags"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/default.asp"
-      ]
-    },
-    {
-      "id": "code_part1",
-      "title": "الهيكل الأساسي للمستند",
-      "narration": {
-        "spoken_text": "لِنَبْدَأْ بِكِتَابَة الْكُودِ. يَبْدَأُ الْمُسْتَنَدُ بِـ دُوكْتَايْب إِتْش تِي إِم إِل لِتَحْدِيدِ نَوْعِ الْمُسْتَنَدِ. ثُمَّ نَسْتَخْدِم تَاجَ إِتْش تِي إِم إِل كَعُنْصُرٍ جِذْرِيٍّ، وَدَاخِلَهُ نَضَعُ قِسْم هِيد الَّذِي يَحْتَوِي عَلَى تَايْتِل الصَّفْحَه، وَقِسْم بُودِي لِلْمُحْتَوَى الْمَرْئِيِّ.",
-        "caption_text": "الهيكل الأساسي للمستند يبدأ بـ DOCTYPE HTML ثم العناصر الرئيسية."
-      },
-      "visual": {
-        "type": "code",
-        "language": "html",
-        "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
-        "highlight_lines": [
-          1,
-          2,
-          3,
-          5,
-          6
+        "type": "diagram",
+        "nodes": [
+          {
+            "id": "root",
+            "label": "<html> Root",
+            "active": true,
+            "icon": null
+          },
+          {
+            "id": "head",
+            "label": "<head> Metadata",
+            "active": false,
+            "icon": null
+          },
+          {
+            "id": "body",
+            "label": "<body> Content",
+            "active": false,
+            "icon": null
+          }
         ],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
+        "edges": [
+          {
+            "source": "root",
+            "target": "head",
+            "label": "contains"
+          },
+          {
+            "source": "root",
+            "target": "body",
+            "label": "contains"
+          }
+        ]
       },
       "source_refs": [
         "https://www.w3schools.com/html/default.asp"
       ]
     },
     {
-      "id": "code_part2",
-      "title": "إضافة المحتوى المرئي",
+      "id": "scene_3",
+      "title": "شرح Basic HTML Code",
       "narration": {
-        "spoken_text": "الْآنَ نَكْتُبُ الْمُحْتَوَى دَاخِل بُودِي. نَسْتَخْدِم إِتْش وَاحِد لِكِتَابَة عُنْوَانٍ رَئِيسِيٍّ، وَنَسْتَخْدِم بِي لِكِتَابَة فَقْرَة نَصِّيَّه. لَاحِظْ كَيْفَ نَقُومُ بِإِغْلَاقِ كُلِّ تَاجَاتِ بِاسْتِخْدَام End تَاج لِضَمَانِ صِحَّة الْكُودِ وَتَنْظِيمِهِ.",
-        "caption_text": "نستخدم h1 للعناوين و p للفقرات داخل قسم <body>."
+        "spoken_text": "دلوقتي جه ال وَئْت عشان نكتب أول كود HTML كامل قدامك على الشاشة ونشوف تركيبه خطوة بخطوة. أول حاجة بنكتبها هي إعلان ال <!DOCTYPE html> عشان نعرف المتصفح إننا بنشتغل بأحدث إصدار. بعد كده بنفتح Tag <html>، وجواه بنحط ال h1 وال p داخل ال <body> عشان نطلع أول Heading وبراجراف بشكل منظم وصحيح.",
+        "caption_text": "شرح وتوضيح Writing the first HTML document with DOCTYPE, html, head, and body structure."
       },
       "visual": {
         "type": "code",
@@ -101,48 +103,137 @@
         "filename": "index.html",
         "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
         "highlight_lines": [
-          7,
           8,
+          9
+        ],
+        "output": "This is a Heading\nThis is a paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "شرح Elements and Attributes Analysis",
+      "narration": {
+        "spoken_text": "عشان نربط الكلام ببعضه، لازم نعرف الفرق الجوهري بين ال Elements وال Attributes في كود ال HTML. ال Element بيمثل العنصر الأساسي زي ال Tag الخاص بالعنوان أو الفقرة، بينما ال Attribute بيتحط جوه Tag البداية عشان يديه خصائص إضافية زي ال id أو ال class أو ال href في ال Links. فهم ال نُئْطَة دي بيخليك تسيطر تماماً على طَرِيئَة عرض العناصر وتنسيقها لاحقاً.",
+        "caption_text": "شرح وتوضيح Comparing structural components between Elements and Attributes in HTML."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "Component",
+          "Description",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Element",
+            "The base markup unit from start to end Tag",
+            "<h1>Heading</h1>"
+          ],
+          [
+            "Attribute",
+            "Provides additional info inside the start Tag",
+            "class=\"main-title\""
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح Advanced Document Metadata",
+      "narration": {
+        "spoken_text": "تعالوا دلوقتي يا شباب نتكلم عن أجزاء مهمة جُوَّه ال head زي ال meta Tag وكمان ال title Tag. ال meta Tag اللي بِتِحْمِل ال charset زي UTF-8 بِتِضْمَن إن الحروف العربية والإنجليزية تِظْهَر في كل ال Web Browsers بدون أي مشاكل في ال Encoding. وال title Tag بِيِفَرْمَت العنوان اللي بِيِظْهَر فوق في ال Browser Tab. لو نسيت الحاجات دي، ال Web Browser هيعاني في قراءة الصفحة وصحتها هتقل.",
+        "caption_text": "شرح وتوضيح Adding charset meta Tag and configuring title Tag for proper rendering."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Advanced Page</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>Styled Web Page</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          6,
           9,
           10
         ],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
+        "output": "Page renders with UTF-8 character encoding and correct tab title.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
       },
       "source_refs": [
         "https://www.w3schools.com/html/default.asp"
       ]
     },
     {
-      "id": "output",
-      "title": "معاينة النتيجة",
+      "id": "scene_6",
+      "title": "شرح Under the Hood: Browser Rendering",
       "narration": {
-        "spoken_text": "عِنْدَ فَتْحِ هَذَا الْكُودِ فِي وِب Browser مِثْل Chrome أَوْ Edge، سَيَظْهَرُ الْعُنْوَانُ بِحَجْمٍ كَبِيرٍ، وَتَظْهَرُ الْفَقْرَة تَحْتَهُ بِشَكْلٍ مُنَسَّقٍ. هَذِهِ هِيَ الْخُطْوَة الْأُولَى لِتُصْبِحَ مُطَوِّرَ ويب مُحْتَرِفاً.",
-        "caption_text": "هكذا تظهر النتيجة النهائية للكود داخل المتصفح."
+        "spoken_text": "لما ال Web Browser بيئرا ملف ال HTML، بيمر في كواليس تقنية دقيقة جداً. في الأول، ال bytes بتتحول ل characters، وبعدين ل Tokens، وبعدها ل Nodes، ولما ال Nodes دي بتتربط ببعضها بتعملنا ال DOM Tree. المحرك بتاع ال Web Browser لازم يعمل الخطوات دي بالترتيب عشان يفهم ال Elements ويدير ال memory بكفاءة عالية جداً وبدون أخطاء في العرض.",
+        "caption_text": "شرح وتوضيح Browser parsing pipeline from byte stream to DOM Tree construction."
       },
       "visual": {
-        "type": "image",
-        "asset_id": "html_example_1",
-        "alt": "صورة توضح نتيجة كود HTML في المتصفح"
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/default.asp"
-      ]
-    },
-    {
-      "id": "best_practices",
-      "title": "نصائح للمطورين",
-      "narration": {
-        "spoken_text": "تَذَكَّرْ دَائِماً أَهَمِّيَّة التَّدْرِيبِ الْمُسْتَمِرِّ. يُمْكِنُكَ اسْتِخْدَامُ مَوَارِد دَبْلِيُو ثْرِي سْكُولْز لِتَجْرِبَة الْأَكْوَادِ بِنَفْسِكَ، وَحَلِّ التَّمَارِينِ لِتَطْوِيرِ مَهَارَاتِكَ. لَا تَتَرَدَّدْ فِي مُمَارَسَة الْكِتَابَة الْيَدَوِيَّة لِتَتَمَكَّنَ مِنَ الْأَسَاسِيَّاتِ بِشَكْلٍ عَمِيقٍ وَمُتْقَنٍ.",
-        "caption_text": "الممارسة المستمرة هي مفتاح التميز في تعلم البرمجة."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "استخدم محرر الأكواد للتجربة العملية",
-          "حل التمارين لتعزيز المعرفة",
-          "راجع المراجع التقنية بانتظام"
+        "type": "flowchart",
+        "nodes": [
+          {
+            "id": "node_bytes",
+            "label": "Byte Stream",
+            "kind": "start",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "node_tokens",
+            "label": "Tokenization",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "node_nodes",
+            "label": "Node Creation",
+            "kind": "process",
+            "icon": null,
+            "active": true
+          },
+          {
+            "id": "node_dom",
+            "label": "DOM Tree",
+            "kind": "end",
+            "icon": null,
+            "active": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "node_bytes",
+            "target": "node_tokens",
+            "label": "Read",
+            "direction": null
+          },
+          {
+            "source": "node_tokens",
+            "target": "node_nodes",
+            "label": "Parse",
+            "direction": null
+          },
+          {
+            "source": "node_nodes",
+            "target": "node_dom",
+            "label": "Construct",
+            "direction": null
+          }
         ]
       },
       "source_refs": [
@@ -150,18 +241,114 @@
       ]
     },
     {
-      "id": "conclusion",
-      "title": "خاتمة الدرس",
+      "id": "scene_7",
+      "title": "شرح Performance and Parsing Speed",
       "narration": {
-        "spoken_text": "بِهَذَا نَكُونُ قَدْ تَعَرَّفْنَا عَلَى أَسَاسِيَّات إِتْش تِي إِم إِل. أَدْعُوكُمْ لِزِيَارَة الرَّابِطِ فِي الْوَصْفِ لِتَجْرِبَة الْأَكْوَادِ وَمُتَابَعَة دَوْرَتِنَا. شُكْراً لِمُتَابَعَتِكُمْ، وَأَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ لِلتَّعَمُّقِ أَكْثَرَ فِي عَالَمِ تَطْوِيرِ الْوِيبِ.",
-        "caption_text": "شكرا لمتابعتكم، استمروا في التعلم والتطبيق العملي."
+        "spoken_text": "كتابة كود HTML نضيف ومترتب صح مش بس بيخلي شكله حلو، ده بياثر جامد على ال Performance وسرعة ال loading. لما ال Web Browser بيقابل Tags مش مقفولة أو هيكل معقد، ده بيعمل bottlenecks في ال parsing ويبطئ استجابة الصفحة. البيانات اللي قدامنا بتوضح الفرق في وقت ال rendering بال milliseconds بين كود مترتب وكود مليان أخطاء.",
+        "caption_text": "شرح وتوضيح Performance comparison chart showing rendering times based on code structure."
+      },
+      "visual": {
+        "type": "chart",
+        "unit": "ms",
+        "data": [
+          {
+            "label": "Clean HTML",
+            "value": 45.0
+          },
+          {
+            "label": "Unoptimized HTML",
+            "value": 120.5
+          }
+        ],
+        "data_status": "illustrative",
+        "evidence_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "شرح Accessibility and a11y Best Practices",
+      "narration": {
+        "spoken_text": "آخر نُئْطَة مهمة جداً هي ال Accessibility أو ال a11y. عشان تِضْمَن إن صفحتك تئراها برامج قراءة الشاشة للمكفوفين بكفاءة، لازم تستخدم ال semantic Tags صح زي nav وarticle وfooter، وتستفاد من ال Aria attributes. ده بيدي تجربة استخدام عادلة لكل الناس، وبيخلي موقعك مطابق لل Web standards العالمية بشكل كامل ودقيق.",
+        "caption_text": "شرح وتوضيح Best practices for Web accessibility and semantic standards compliance."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "راجع الرابط في الوصف للتطبيق",
-          "تابع الدروس القادمة في الدورة",
-          "ابدأ رحلتك في تطوير الويب اليوم"
+          "مفهوم Use semantic Tags correctly",
+          "مفهوم Support Aria attributes",
+          "مفهوم Ensure Web standards compliance",
+          "مفهوم Optimize for screen readers"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_9",
+      "title": "شرح Production Gotchas",
+      "narration": {
+        "spoken_text": "بص معايا كويس يا هندسة عشان الأخطاء دي بتوقع ناس كتير في الشغل الحقيقي وتعمل مشاكل كبيرة في العرض. أول خطأ قاتل إنك تنسى تِئْفِل ال Tags زي إنك تكتب Start Tag من غير ما تعمل End Tag، وده بيخلي ال DOM Tree يتلخبط خالص. تاني خطأ إنك تنسى ال DOCTYPE html في أول الصفحة، فالبراوزر بيدخل في Quirks Mode ويشغل العرض بطريقة قديمة وغريبة. وتالت خطأ هو ال Incorrect Nesting، يعني تدخل Tags جوه بعضها بطريقة غلط وما تِئْفِلهاش بالترتيب السليم المعكوس زي ما اتعلمنا.",
+        "caption_text": "تعرف على الأخطاء الشائعة في HTML وكيفية تجنبها مثل نسيان إغلاق الـ Tags أو الـ DOCTYPE."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Unclosed Tags and syntax errors",
+          "مفهوم Missing DOCTYPE declaration",
+          "مفهوم Incorrect nesting of Elements"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_10",
+      "title": "شرح Complete Project Code",
+      "narration": {
+        "spoken_text": "دلوقتي جه ال وَئْت عشان نجمع كل اللي فِهْمْنَاه في كود واحد كامل ومتكامل وجاهز للتشغيل. زي ما إنت شايف قدامك في الكود، بدأنا بال DOCTYPE html، وبعدين كتبنا ال HTML Element وجواه ال head وال body. وضيفنا جوه ال head Tag ال style عشان نكتب شوية CSS جمال ينسقوا شكل الصفحة وال h1 وال p. الكود ده لما يشتغل جوه أي Web Browser هيديك نتيجة احترافية ومنظمة جداً.",
+        "caption_text": "استعراض مشروع كامل يجمع بين هيكل HTML وتنسيقات CSS الداخلية."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Complete Project</title>\n    <style>\n      body {\n        font-family: sans-serif; margin: 20px;\n      }\n      h1 {\n        color: #333;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>This is a complete project example.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          6,
+          10,
+          13,
+          16,
+          17
+        ],
+        "output": "Hello World\nThis is a complete project example.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_11",
+      "title": "شرح Conclusion and Challenge",
+      "narration": {
+        "spoken_text": "بكده يا شباب نكون خلصنا رحلتنا الأساسية في فهم HTML وهيكل الصفحات وال DOM Tree بكل تفاصيلها. راجعنا مع بعض إزاي نكتب كود نظيف وسليم، وإيه هي ال Tags وال Attributes المهمة. الخطوة الجاية إنك تبدأ تِتَعَلَّم CSS عشان تلون وتظبط تصميم صفحاتك، وبعدها JavaScript عشان تخليها تفاعلية. التحدي بتاع النهاردة ليك إنت: ابني موقعك الشخصي الأول بنفسك وجرب كل اللي تعلمناه ده حالا، وبالتوفيق يا هندسة!",
+        "caption_text": "خلاصة الدرس والخطوات القادمة لتعلم CSS وJavaScript مع تحدي عملي."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مفهوم Review of core HTML concepts",
+          "مفهوم Roadmap to CSS and JavaScript",
+          "مفهوم Challenge: build your own Website"
         ]
       },
       "source_refs": [
