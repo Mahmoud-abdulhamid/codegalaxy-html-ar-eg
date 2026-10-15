@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "lesson_id": "1",
-  "title": "Introduction to HTML Structure",
+  "title": "HTML Architecture & Page Anatomy",
   "course": "HTML",
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "Understand the role of HTML as a markup language",
-    "Learn the basic structure of an HTML document",
-    "Identify key Tags like html, head, and body",
-    "Understand how browsers interpret HTML code"
+    "فهم دور HTML كلغة توصيف قياسية لبناء صفحات الويب وهيكلتها",
+    "استيعاب البنية الهيكلية لملف HTML والفرق بين DOCTYPE و html و head و body",
+    "تحليل الفرق الجوهري والتقني بين Tag و Element و Attribute",
+    "تجنب الوقوع في Quirks Mode وضمان توافقية المتصفحات الحديثة مع معايير W3C ومبادئ a11y"
   ],
   "sources": [
     "https://www.w3schools.com/html/default.asp"
@@ -26,18 +26,19 @@
   ],
   "scenes": [
     {
-      "id": "1",
-      "title": "شرح Welcome to Web Development",
+      "id": "scene_1",
+      "title": "خرافة كود HTML الشغال بدون معايير",
       "narration": {
-        "spoken_text": "أَهْلاً بيكم يا شباب في رِحْلَتْ تَعَلُم ال Web Development. النهاردة هَنِبْدَأ مع بعض بأهم لغة في عالم الويب وهي ال HTML. ال HTML هي اختصار ل HyperText Markup Language, وهي ال Standard Markup Language اللي بِتُستَخدَم عَشَان نِبْنِي ونرتب هَيْكَل أي صَفْحِت ويب بنشوفها على ال Internet. من غير ال HTML مفيش أي Content هيظهر قدامك في ال Web Browser. هِيَّ لُغَه سْهْلة جداً وممتعة في التعلم, ومن خلالها تئدر تِبْنِي ال Website الخاص بيك وتتحكِم في ترتيب العناصر اللي بيشوفها المستخدم. يلا بينا نبدأ وِنِشُوف إزاي الكود ده بيشتغل.",
-        "caption_text": "مقدمة في الـ HTML كلغة هيكلة أساسية للويب"
+        "spoken_text": "كتير من المطورين فاكرين إن مجرد ما المتصفح يفتح صفحتك وتعرض كلام، يبقى كود HTML بتاعك سليم 100! لكن في الحقيقة، غياب سطر 1 بس في البداية ممكن يرمي المتصفح في فخ Quirks Mode القديم، وتلاقي الـ CSS بيضرب وتنسيق الـ Box Model اختلف تماماً بين Chrome و Firefox بدون أي تحذير في بيئة الـ Production! الكارثة دي بتحصل عشان المتصفح بيتعامل بتوافقية رجعية بتعطل مميزات الويب الحديثة. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفك شفرة الأساس ده خطوة بخطوة عشان كودك يشتغل صح من أول مرة، ونفهم إزاي المتصفح بيقرا الـ Elements ويبني الـ DOM Tree بأعلى معايير الـ W3C العالمية.",
+        "caption_text": "كثير من المطورين يظنون أن مجرد فتح الصفحة يعني كود HTML سليم 100. في الحقيقة، غياب سطر 1 يدخل المتصفح في Quirks Mode مما يسبب انهيار التنسيق واختلافات بين المتصفحات. أهلاً بكم، أنا محمود عبد الحميد، واليوم سنفك شفرة الأساس خطوة بخطوة لبناء الـ DOM Tree بأعلى المعايير."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "HTML هي الـ Standard Markup Language لصفحات الويب",
-          "تستخدم لبناء وهيكلة الـ Website الخاص بك",
-          "لغة سهلة التعلم وممتعة للمبتدئين"
+          "خرافة: فتح الصفحة في المتصفح يعني كود HTML سليم 100",
+          "غياب سطر DOCTYPE html يدخل المتصفح في Quirks Mode",
+          "انهيار معايير W3C يسبب اختلافات كارثية بين المتصفحات",
+          "خارطة الدرس: تشريح الهيكل القياسي وفهم ترابط العناصر"
         ]
       },
       "source_refs": [
@@ -45,77 +46,99 @@
       ]
     },
     {
-      "id": "2",
-      "title": "شرح The HTML Document Tree",
+      "id": "scene_2",
+      "title": "الهيكل الشجري للصفحة DOM Tree",
       "narration": {
-        "spoken_text": " بص معايا كِدهْ على ال Tree Structure دي. أي صفحت HTML بتبدأ ب Root Element وهو ال html Tag، وده اللي بيحتوي على كل حاجة جوه الصفحة. جواه بنلاقي اتنين Tags أساسيين: ال head وال body. ال head ده المكان اللي بنحُطْ فيه ال Metadata وال title بتاع الصفحة، ودي حاجات مش بتظهر مباشرةَ للمستخدم. أما ال body فهو اللي بيحتوي على كل ال Content اللي بيشوفه المستخدم فعلياً، زَيّ ال h1 وال p. فهمك للهيكل ده بيخليك تسيطر على ترتيب عناصر صفحتك بشكل احترافي.",
-        "caption_text": "هيكل الـ DOM Tree وتوزيع العناصر"
+        "spoken_text": "المتصفح أول ما بيستلم ملف HTML مش بيتعامل معاه كنص عادي، ده بيحوله في الذاكرة لهيكل شجري بنسميه DOM Tree. الشجرة دي بتبدأ من جذر الصفحة اللي هو Document، وبيتفرع منه مباشرة الـ Element الأب وهو html. من هنا الشجرة بتنقسم لفرعين أساسيين؛ الفرع الأول هو head، وده بيكون جواه البيانات الوصفية والإعدادات زي الترميز وعنوان الصفحة. أما الفرع التاني فهو body، وده الحاوية اللي بتشيل كل حاجة المستخدم بيشوفها ويتفاعل معاها على الشاشة زي العناوين والفقرات. فهمك للشجرة دي هيخليك تعرف بالظبط إزاي الـ CSS بيورث الخصائص وإزاي JavaScript بتوصل لكل Node وتعدلها.",
+        "caption_text": "يقوم المتصفح بتحويل ملف HTML في الذاكرة إلى هيكل شجري يسمى DOM Tree، يبدأ من Document ثم العنصر الأساسي html. ينقسم الهيكل إلى head للبيانات الوصفية والإعدادات، و body لجميع العناصر المرئية والتفاعلية المعروضة على الشاشة."
       },
       "visual": {
         "type": "diagram",
         "nodes": [
           {
-            "id": "html",
-            "label": "html",
+            "id": "node_doc",
+            "label": "Document (Root Node)",
             "active": false,
-            "icon": null
+            "icon": "file"
           },
           {
-            "id": "head",
-            "label": "head",
-            "active": false,
-            "icon": null
+            "id": "node_html",
+            "label": "html (Root Element)",
+            "active": true,
+            "icon": "code"
           },
           {
-            "id": "body",
-            "label": "body",
+            "id": "node_head",
+            "label": "head (Metadata)",
             "active": false,
-            "icon": null
+            "icon": "settings"
           },
           {
-            "id": "title",
-            "label": "title",
-            "active": false,
-            "icon": null
+            "id": "node_body",
+            "label": "body (Visible UI)",
+            "active": true,
+            "icon": "layout"
           },
           {
-            "id": "h1",
-            "label": "h1",
+            "id": "node_meta",
+            "label": "meta (charset=UTF-8)",
             "active": false,
-            "icon": null
+            "icon": "info"
           },
           {
-            "id": "p",
-            "label": "p",
+            "id": "node_title",
+            "label": "title (Page Title)",
             "active": false,
-            "icon": null
+            "icon": "type"
+          },
+          {
+            "id": "node_h1",
+            "label": "h1 (Heading 1)",
+            "active": false,
+            "icon": "heading"
+          },
+          {
+            "id": "node_p",
+            "label": "p (Paragraph)",
+            "active": false,
+            "icon": "align-left"
           }
         ],
         "edges": [
           {
-            "source": "html",
-            "target": "head",
-            "label": ""
+            "source": "node_doc",
+            "target": "node_html",
+            "label": "roots"
           },
           {
-            "source": "html",
-            "target": "body",
-            "label": ""
+            "source": "node_html",
+            "target": "node_head",
+            "label": "contains"
           },
           {
-            "source": "head",
-            "target": "title",
-            "label": ""
+            "source": "node_html",
+            "target": "node_body",
+            "label": "contains"
           },
           {
-            "source": "body",
-            "target": "h1",
-            "label": ""
+            "source": "node_head",
+            "target": "node_meta",
+            "label": "defines"
           },
           {
-            "source": "body",
-            "target": "p",
-            "label": ""
+            "source": "node_head",
+            "target": "node_title",
+            "label": "defines"
+          },
+          {
+            "source": "node_body",
+            "target": "node_h1",
+            "label": "renders"
+          },
+          {
+            "source": "node_body",
+            "target": "node_p",
+            "label": "renders"
           }
         ]
       },
@@ -124,22 +147,22 @@
       ]
     },
     {
-      "id": "3",
-      "title": "شرح Basic HTML Structure",
+      "id": "scene_3",
+      "title": "تشريح الهيكل الأساسي لصفحة HTML",
       "narration": {
-        "spoken_text": "دلوقتي جه وقت الكود. زي ما إنت شايف، أي ملف HTML بيبدأ ب DOCTYPE html عشان نعَرّفْ ال Web Browser إننا بنستخدم أحدث إصدار من ال HTML. بعد كده بنفتح ال html Tag، وجُوَاه بِنْقَسّمْ الصفحة لل head وال body. ال head فيه ال title اللي بيظهر في ال Tab بتاع ال Browser. وال body فيه ال h1 اللي بيمثل العنوان الرئيسي، وال p اللي بيمثل ال paragraph. جَرَبتْ تكتب الكود ده بنفسك ؟!\n ده الأساس اللي هتبني عليه أي مشروع ويب في المُستقبل.",
-        "caption_text": "هيكل ملف الـ HTML الأساسي"
+        "spoken_text": "بص معايا في الكود كده؛ في السطر 1 كتبنا DOCTYPE html، وده مش Tag عادي، ده إعلان مباشر للمتصفح بيفهمه يشغل معيار HTML5 القياسي ويتجنب الأخطاء. في السطر 2 بنفتح Start Tag للـ Element الأساسي html وضفنا Attribute اسمه lang بقيمة en عشان نحدد لغة المحتوى لمحركات البحث وقارئات الشاشة. جوه head في السطور من 3 لـ 6 حطينا عنوان صفحتنا جوه title، وده اللي بيظهر في التبويب بالمتصفح. وأخيراً جوه body في السطور 7 لـ 10 كتبنا h1 للعنوان و p للفقرة، ودول العناصر اللي هتترسم وتظهر للمستخدم على الشاشة.",
+        "caption_text": "سطر 1 يعلن للمتصفح اعتماد معيار HTML5 عبر DOCTYPE html. سطر 2 يبدأ Root Elementي html مع خاصية lang لتحديد اللغة. يحتوي head على title لعرض اسم الصفحة في تبويب المتصفح، بينما يحتوي body على h1 و p كعناصر مرئية للمستخدم."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>First HTML Page</title>\n  </head>\n  <body>\n    <h1>Learning HTML</h1>\n    <p>Building standard web pages from scratch.</p>\n  </body>\n</html>",
         "highlight_lines": [
           8,
           9
         ],
-        "output": "This is a Heading\nThis is a paragraph.",
+        "output": "Learning HTML\nBuilding standard web pages from scratch.",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -151,38 +174,56 @@
       ]
     },
     {
-      "id": "4",
-      "title": "شرح HTML Elements Overview",
+      "id": "scene_4",
+      "title": "مقارنة العناصر وقيم المتصفح الافتراضية",
       "narration": {
-        "spoken_text": "عشان تفَهْرَس المعلومات في دماغك، خلينا نِقارن بين ال Elements اللي استخدمناها. ال html هو ال Root اللي بيضم كل حاجة. ال head وظيفته تخزين ال Metadata اللي ال Browser بيحتاجها عشان يفهم الصفحة، لكن مش بيِعْرِضْها للمستخدم. ال body هو المكان اللي بنحُطْ فيه ال Content المرئي. ال h1 بيُستَخدَم للعناوين الكبيرة عشان يِلْفِت نظر المستخدم، وال p بيُستَخدَم للنصوص العادية. كل Tag من دول له دور محدد بيِسَهِّل على ال Browser إنه يعرض الصفحة بشكل سليم ومنظم.",
-        "caption_text": "جدول مقارنة بين الـ HTML Elements الأساسية"
+        "spoken_text": "عشان تكون مهندس واعي، لازم تفرق كويس بين وظيفة كل سطر بتكتبه وسلوك المتصفح الافتراضي معاه. بص في الجدول ده؛ هتلاحظ إن DOCTYPE html ده إعلان للمتصفح مش Element أصلاً، ومالوش تمثيل مرئي، لكنه بيحدد نمط العرض. عناصر زي head معمولة عشان تشيل البيانات الوصفية، والمتصفح بيحدد ليها قيمة display بقيمة none ومبتظهرش. في المقابل، body وكل العناصر اللي جواه زي h1 و p بتكون ظاهرة للمستخدم، والمتصفح بيعتبرها افتراضياً Block Elements، يعني بتاخد عرض السطر بالكامل 100 وبتنزل سطر جديد تلقائياً مع مسافات بنتحكم فيها بعدين بالـ CSS.",
+        "caption_text": "مقارنة بين عناصر الصفحة وسلوك المتصفح الافتراضي: DOCTYPE هو إعلان معيار وليس Element. عنصر head مخصص للبيانات الوصفية ولا يظهر للمستخدم، بينما body يحتوي العناصر المرئية مثل h1 و p التي تأخذ سلوك Block Elements بعرض كامل 100."
       },
       "visual": {
         "type": "table",
         "columns": [
-          "Element",
-          "Description"
+          "Element / Declaration",
+          "النوع والوظيفة",
+          "مكان التواجد",
+          "طبيعة العرض الافتراضي"
         ],
         "rows": [
           [
-            "html",
-            "Root of the document"
+            "<!DOCTYPE html>",
+            "إعلان معيار المتصفح (HTML5)",
+            "أول سطر في الملف",
+            "لا يظهر (Document Mode)"
           ],
           [
-            "head",
-            "Contains non-visible metadata"
+            "<html>",
+            "Root Elementي الشامل (Root)",
+            "يحتوي كامل الصفحة",
+            "Block Element (Root Container)"
           ],
           [
-            "body",
-            "Contains visible content"
+            "<head>",
+            "حاوية البيانات الوصفية (Metadata)",
+            "مباشرة بعد <html>",
+            "display: none (مخفي برمجيا)"
           ],
           [
-            "h1",
-            "Main heading"
+            "<body>",
+            "حاوية المحتوى المرئي التفاعلي",
+            "يلي قسم <head>",
+            "Block Element (Viewport)"
           ],
           [
-            "p",
-            "Paragraph text"
+            "<h1>",
+            "عنوان رئيسي مستوى 1",
+            "داخل نطاق <body>",
+            "Block Element (Bold, Full Width)"
+          ],
+          [
+            "<p>",
+            "فقرة نصية قياسية للمحتوى",
+            "داخل نطاق <body>",
+            "Block Element (Auto Margins)"
           ]
         ]
       },
@@ -191,22 +232,21 @@
       ]
     },
     {
-      "id": "5",
-      "title": "شرح Advanced Element Usage",
+      "id": "scene_5",
+      "title": "البيانات الوصفية المتقدمة داخل head",
       "narration": {
-        "spoken_text": "دلوقتي يا شباب لازم نركز في نؤطة مهمة جداً وهي ال Nesting. ال HTML عبارة عن شَجَرة، وكُل Tag لازم يِتئِفْلْ في مكانه الصح. لو فتحت Tag زي ال div، لازم تِئفِلُه بعد ما تْخَلّص المحتوى اللي جواه. لو نسيت ال End Tag، المتصفح ممكن يتلخبط في ترتيب ال Elements، وده بيأثَر على شكل الصفحة. بص معايا في الكود ده، ال h1 وال p موجودين جوه ال div، وده بيخلي الكود منظم وسهل لأي حد يئراهْ بعدك، وكمان بيسهل على ال Web Browser إنه يفهم الهيكل بتاع صفحِتك بشكل سليم.",
-        "caption_text": "فهم الـ Nesting والترتيب الصحيح للـ Tags داخل الـ HTML."
+        "spoken_text": "بص معايا جوه Tag الـ head، هنا بنحط الـ Metadata اللي بتحدد هوية الصفحة وسلوكها في الـ Browser ومحركات البحث. السطر 3 بيكتب meta charset UTF-8، وده سر حماية النصوص من الرموز العجيبة عشان يفهم الحروف العربية والإنجليزية بشكل سليم 100. وفي السطر 4 بنحط الـ Viewport، وبدونه شاشات الـ Mobile هتعامل صفحتك كأنها شاشة Desktop ضخمة، وهيحصل تصغير مشوه لكل عنصر. والسطر 7 بيربط ملف الـ CSS الخارجي عن طريق link Tag مع 2 Attributes أساسيين هما rel و href، عشان نفصل البنية عن التنسيق تماماً وباحترافية كاملة.",
+        "caption_text": "ضبط البيانات الوصفية المتقدمة داخل head باستخدام meta charset UTF-8 و Viewport وربط ملف CSS الخارجي عبر link Tag."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div>\n      <h1>Main Title</h1>\n      <p>Paragraph text here.</p>\n    </div>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta name=\"description\" content=\"Professional HTML Architecture\">\n    <title>Modern Web Standards</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <h1>Architectural Setup</h1>\n  </body>\n</html>",
         "highlight_lines": [
-          7,
-          10
+          8
         ],
-        "output": "Main Title\nParagraph text here.",
+        "output": "Page rendered with UTF-8 support and responsive mobile scaling.",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -218,39 +258,60 @@
       ]
     },
     {
-      "id": "6",
-      "title": "شرح How Browsers Render HTML",
+      "id": "scene_6",
+      "title": "كواليس المحرك: معالجة المتصفح لملف HTML",
       "narration": {
-        "spoken_text": "عشان تفهم إزاي المتصفِح بيعرض صفحتك، لازم تعرف إن ال Web Browser بيستلم ملف ال HTML, ويبدأ يحَللُه سطر بسَطر. العملية دي بنسميها Parsing. المتصفِح بيبني حاجة اسمها DOM Tree، وهي عبارة عن شجرة بتمثل كل ال Elements اللي كتبتها. بعد ما الشجرة دي بتتبِني، المتصفِح بيبدأ يرسم العناصر دي على الشاشة قدام المستخدم. لو في أي خطأ في ال Tags، المتصفِح بيحاول يصلحه بنفسه، بس الأفضل دايماً إنك تكتب كود نظيف ومطابق للمعايير عشان تضمن إن صفحتك تظهر بنفس الشكل على كل المتصفحات.",
-        "caption_text": "عملية الـ Parsing وتحويل الـ HTML إلى DOM Tree."
+        "spoken_text": "تعالوا ندخل جوه محرك الـ Browser في كواليس أول 10 أجزاء من الثانية. الكود بيوصل من السيرفر كـ Bytes خام عبر الشبكة، الـ Browser بيحولها فوراً لـ Characters بناءً على ترميز UTF-8 اللي حددناه. بعد كده مرحلة الـ Tokenization بتبدأ تفكك النصوص لـ Start Tag و End Tag وقيم نصوص منفصلة. كل Token بيتحول لـ Node كائن في الـ Memory ليه خصائصه، وبعدها بتتربط الـ Nodes دي في شجرة الـ DOM. وبمجرد دمج شجرة الـ DOM مع شجرة الـ CSSOM، المحرك بيولد الـ Render Tree ويبدأ يرسم البكسلات بدقة على الشاشة.",
+        "caption_text": "مسار معالجة HTML داخل محرك المتصفح من Bytes عبر Tokenization و Nodes وصولا إلى DOM Tree و Render Tree."
       },
       "visual": {
         "type": "flowchart",
         "nodes": [
           {
-            "id": "1",
-            "label": "HTML File",
-            "kind": "start",
+            "id": "bytes",
+            "label": "1. Bytes من الشبكة",
+            "kind": "io",
             "icon": null,
             "active": false
           },
           {
-            "id": "2",
-            "label": "Browser Parser",
+            "id": "chars",
+            "label": "2. Characters (UTF-8)",
             "kind": "process",
             "icon": null,
             "active": false
           },
           {
-            "id": "3",
-            "label": "DOM Tree",
+            "id": "tokens",
+            "label": "3. Tokens (Tags)",
             "kind": "process",
             "icon": null,
             "active": false
           },
           {
-            "id": "4",
-            "label": "Rendered Page",
+            "id": "nodes",
+            "label": "4. Nodes في الذاكرة",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "dom",
+            "label": "5. DOM Tree",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "cssom",
+            "label": "6. CSSOM Tree",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "render",
+            "label": "7. Render Tree والبكسلات",
             "kind": "end",
             "icon": null,
             "active": false
@@ -258,21 +319,39 @@
         ],
         "edges": [
           {
-            "source": "1",
-            "target": "2",
-            "label": "",
+            "source": "bytes",
+            "target": "chars",
+            "label": "Decoding",
             "direction": null
           },
           {
-            "source": "2",
-            "target": "3",
-            "label": "",
+            "source": "chars",
+            "target": "tokens",
+            "label": "Tokenization",
             "direction": null
           },
           {
-            "source": "3",
-            "target": "4",
-            "label": "",
+            "source": "tokens",
+            "target": "nodes",
+            "label": "Object Model",
+            "direction": null
+          },
+          {
+            "source": "nodes",
+            "target": "dom",
+            "label": "Tree Structure",
+            "direction": null
+          },
+          {
+            "source": "dom",
+            "target": "render",
+            "label": "Render Pipeline",
+            "direction": null
+          },
+          {
+            "source": "cssom",
+            "target": "render",
+            "label": "Style Attachment",
             "direction": null
           }
         ]
@@ -282,31 +361,31 @@
       ]
     },
     {
-      "id": "7",
-      "title": "شرح Learning Progress Metrics",
+      "id": "scene_7",
+      "title": "مقارنة الأداء: Standards Mode مقابل Quirks Mode",
       "narration": {
-        "spoken_text": "عشان تِطَوَر مستواك في ال HTML، لازم تتابع تَقَدُمك بشكل مستمر. ال Exercises وال Quizzes اللي موجودة في المصادر التعليمية مش مجرد ترفيه، دي أدوات قوية بتختبر فهمك الحقيقي. كل ما تحل تمارين أكتر، كل ما بتثبْت المعلومة في دماغك. الاستمرارية هي السر، وال XP اللي بتجمعه ده مؤشر على مجهودك. حاول دايماً تخَلَص كل جزء وتطبق عليه فوراً، لأن البرمجة مهارةْ عَمَلّية، والتَعََلُمْ بالممارسة هو اللي بيصنع المبرمج الشاطر اللي يقدر يبني مشاريع حقيقية ومتميزة في سوق العمل.",
-        "caption_text": "أهمية التمارين والاختبارات في قياس مستوى التعلم."
+        "spoken_text": "بص على المقارنة الرقمية دي عشان تعرف قيمة وجود سطر DOCTYPE في المتصفح. في وضع المعايير Standards Mode الـ Browser بينفذ حسابات الـ Box Model بدقة وبدون تردد، فبيوصل مؤشر First Contentful Paint لرقم سريع جداً حوالي 180 ms، وزمن إعادة حسابات الـ Layout مش بياخد غير 40 ms بس. بينما في غياب DOCTYPE، الـ Browser بيدخل في Quirks Mode عشان يحاكي متصفحات زمان، فبيرتفع زمن الـ FCP لـ 450 ms وبتزيد حسابات الـ Layout لـ 160 ms بسبب تعارض معايير الحجم وحدوث ظاهرة الـ Cumulative Layout Shift.",
+        "caption_text": "مقارنة زمن المعالجة ومؤشرات الأداء بين Standards Mode و Quirks Mode وتأثير DOCTYPE على سرعة الرندرة."
       },
       "visual": {
         "type": "chart",
-        "unit": "XP",
+        "unit": "ms",
         "data": [
           {
-            "label": "Week 1",
-            "value": 20.0
+            "label": "FCP - Standards Mode",
+            "value": 180.0
           },
           {
-            "label": "Week 2",
-            "value": 45.0
+            "label": "FCP - Quirks Mode",
+            "value": 450.0
           },
           {
-            "label": "Week 3",
-            "value": 70.0
+            "label": "Layout Recalc - Standards",
+            "value": 40.0
           },
           {
-            "label": "Week 4",
-            "value": 100.0
+            "label": "Layout Recalc - Quirks",
+            "value": 160.0
           }
         ],
         "data_status": "illustrative",
@@ -317,19 +396,19 @@
       ]
     },
     {
-      "id": "8",
-      "title": "شرح Accessibility and Standards",
+      "id": "scene_8",
+      "title": "إمكانية الوصول Accessibility والتوافقية a11y",
       "narration": {
-        "spoken_text": "في النهاية، لازم نتكلم عن ال Accessibility وال Standards. لما تستخدم ال Tags بشكل صحيح، إنت بتساعد ال Screen Readers إنها تفهم محتوى صفحتك، وده بيخلي الموقع متاح لكل الناس. ال W3C بتحط معايير عالمية عشان تضمن إن الكود بتاعك يشتغل على أي Web Browser. التزم بال Semantic Tags زي ال header وال footer وال main، وابعد عن العشوائية. الكود اللي بتمشي فيه على المعايير بيكون أسهل في الصيانة، وأسرع في التحميل، وأفضل بكتير في ال SEO، وده اللي بيفرق المبرمج المحترف عن المبتدئ.",
-        "caption_text": "أفضل الممارسات البرمجية والالتزام بمعايير الـ W3C."
+        "spoken_text": "بناء الـ HTML مش بس عشان الصفحة تظهر قدامك على الشاشة، الأهم هو إتاحتها للجميع من خلال معايير الـ Accessibility أو الـ a11y. القاعدة 1 هي كتابة Attribute الـ lang جوه html Tag، مثلاً ar أو en، عشان الـ Screen Readers تختار المحرك الصوتي السليم وتنطق الكلمات بنبرة طبيعية. القاعدة 2 هي كتابة title دقيق، لأن الكفيف أول ما بيفتح صفحتك الـ Screen Reader بيقرا له الـ title ده عشان يعرف موقعه بالظبط. والقاعدة 3 هي التدرج الهرمي، لازم تبدأ بـ 1 h1 رئيسي في الصفحة يليه h2 ثم h3 بدون تخطي عشوائي.",
+        "caption_text": "تطبيق قواعد النفاذية والتوافقية a11y عبر تحديد lang و title دقيق والتدرج المنطقي لعناوين h1 إلى h6."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Use semantic Tags for better accessibility",
-          "مفهوم Ensure proper nesting for screen readers",
-          "مفهوم Follow W3C standards for compatibility",
-          "مفهوم Maintain clean and readable code structure"
+          "تحديد lang='ar' في html Tag لتوجيه نطق Screen Readers تلقائيا",
+          "صياغة title فريد ووصفي لكل صفحة لمساعدة فاقدي البصر في التصفح",
+          "التدرج الهرمي المنطقي للعناوين من h1 إلى h6 دون القفز بين المستويات",
+          "بناء هيكل قياسي يرفع تقييم SEO ويحقق معايير النفاذية a11y"
         ]
       },
       "source_refs": [
@@ -337,20 +416,19 @@
       ]
     },
     {
-      "id": "9",
-      "title": "شرح Common Pitfalls",
+      "id": "scene_9",
+      "title": "أخطاء شائعة في الإنتاج وأفضل الممارسات",
       "narration": {
-        "spoken_text": "دلوقتي يا شباب لازم نركز في شوية أخطاء شائعة ممكن تِعَطَّل شغلك. أول حاجة نسيان قَفْل ال Tags، لأن ال Browser بِيِتْوَقَّع إن ال Element ممتد لآخر الصفحة وده بِيَِبُوّظ ال Layout. تاني حاجة هي ال Nesting الغلط، لازم تِضْمَن إن ال Element اللي اتفتح الأول يتقفل في الآخر. وأخيراً، نسيان ال DOCTYPE html في أول سطر، ده بيخلي ال Browser يشتغل ب Quirks Mode القديم ويِتْصَرَّف بطريقة غير متوقعة. اتعود دايماً تراجع الكود بتاعك وتِتْأَكَِد إن كل حاجة في مكانها الصح عشان تِضْمَن أفضل أداء.",
-        "caption_text": "تجنب الاخطاء الشائعة في كتابة HTML مثل نسيان قفل الـ Tags او التداخل الخاطئ للعناصر."
+        "spoken_text": "تعالوا نرصد أشهر 3 أخطاء بنشوفها في كود المبتدئين في بيئة العمل. أول غلطة هي تكرار Tag h1 أكتر من مرة في الصفحة الواحدة؛ المعيار الصح إن يكون عندك h1 وحيد بيمثل العنوان الرئيسي عشان محركات البحث وقارئات الشاشة تفهم موضوع الصفحة بدقة. تاني غلطة هي إهمال إغلاق Tags المزدوجة زي p أو div، وده بيربك الـ Parsing Engine في معالجة شجرة الـ DOM. تالت غلطة إنك تحط عناصر بصرية جوه head أو تكتب ستايلات عشوائية جوه body، وده بيخالف الفصل المنطقي بين البيانات الوصفية وهيكل الصفحة.",
+        "caption_text": "أشهر 3 أخطاء شائعة: تكرار Tag h1 يربك محركات البحث، إهمال إغلاق Tags يضعف بناء الـ DOM، وخلط عناصر الواجهة داخل head يكسر المعايير الهيكلية."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Forgetting to close Tags causes layout issues",
-          "مفهوم Incorrect nesting of elements breaks the DOM tree",
-          "مفهوم Missing DOCTYPE html triggers Quirks Mode",
-          "مفهوم Always validate your HTML structure",
-          "مفهوم Use proper indentation for readability"
+          "استخدام h1 واحد فقط لكل صفحة لضبط الـ SEO وقارئات الشاشة",
+          "إغلاق جميع الـ Tags غير الذاتية بدقة لضمان بناء DOM سليم",
+          "حظر وضع عناصر الواجهة البصرية نهائيا داخل head",
+          "فصل الـ Metadata داخل head وتخصيص body للمحتوى التفاعلي والمرئي"
         ]
       },
       "source_refs": [
@@ -358,25 +436,26 @@
       ]
     },
     {
-      "id": "10",
-      "title": "شرح Full Project Example",
+      "id": "scene_10",
+      "title": "الكود المتكامل للمشروع: HTML مع CSS",
       "narration": {
-        "spoken_text": "يلا نجمع كل اللي اتعلمناه في مشروع بسيط. قدامك دلوقتي كود كامل لصفحة ويب. لاحظ ال DOCTYPE html في البداية، وبعدين ال html Tag اللي بيحتوي كل حاجة. جوه ال head حطينا ال title وكمان ال style عشان نِعَدَّل ال font-family. وفي ال body كتبنا ال h1 وال p. ده الهيكل الأساسي اللي بِيِبْنِي عليه أي موقع. جَرَّبْت الكود ده بنفسك؟ ده الأساس اللي هتبدأ بيه رحلتك في ال Web Development، وكل ما تزَوّد Tags جديدة، الصفحة بتاعتك هتبقى أغنى وأقوى.",
-        "caption_text": "مثال كامل يوضح هيكل صفحة HTML مع تنسيق CSS بسيط داخل Tag style."
+        "spoken_text": "بص معايا على الكود المتكامل ده؛ جمعنا فيه كل المفاهيم الهندسية اللي شرحناها النهاردة. بدأنا بـ DOCTYPE html الصريح، وحددنا lang بيساوي en في Tag html. جوه head ضمنا meta الترميز وتجاوب الشاشة مع ستايلات CSS عصرية داخل Tag style بتتحكم في الخطوط وتنسيق كارت الـ card بالمسافات والظلال. وجوه body رتبنا العناصر في تسلسل هرمي واضح: container رئيسي بـ Class card بيحتوي على h1 واحد للموضوع و Tag p للشرح. المتصفح بيحول الكود ده فوراً لصفحة أنيقة وسريعة بدون أي خطأ في العرض.",
+        "caption_text": "كود إنتاجي قياسي متكامل: دمج هيكل HTML5 المعياري مع تنسيقات CSS حديثة لإنشاء واجهة بطاقة تفاعلية متجاوبة."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      body {\n        font-family: sans-serif;\n      }\n    </style>\n    <title>My Website</title>\n  </head>\n  <body>\n    <h1>Welcome</h1>\n    <p>This is my first page.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Professional Landing Page</title>\n    <style>\n      body {\n        font-family: system-ui, sans-serif; margin: 0; padding: 24px; background: #f8fafc; color: #0f172a;\n      }\n      .card {\n        max-width: 600px; margin: 40px auto; padding: 32px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);\n      }\n      h1 {\n        color: #2563eb; font-size: 28px; margin-top: 0;\n      }\n      p {\n        line-height: 1.6; color: #475569; font-size: 16px;\n      }\n    </style>\n  </head>\n  <body>\n    <div class=\"card\">\n      <h1>Welcome to Web Development</h1>\n      <p>Mastering HTML standards is the core foundation for crafting robust, high-performance web applications.</p>\n    </div>\n  </body>\n</html>",
         "highlight_lines": [
-          5,
           7,
-          9,
-          13,
-          14
+          14,
+          17,
+          20,
+          23,
+          24
         ],
-        "output": "Welcome\nThis is my first page.",
+        "output": "Preview: Clean responsive card rendered with modern typography and box shadow.",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -388,20 +467,18 @@
       ]
     },
     {
-      "id": "11",
-      "title": "شرح Summary and Next Steps",
+      "id": "scene_11",
+      "title": "الخلاصة وخارطة الطريق وتحدي الدرس",
       "narration": {
-        "spoken_text": "وصلنا لنهاية الدرس يا شباب. اتعلمنا إن ال HTML هي حجر الأساس لأي موقع على ال Internet. فِهِمْنَا إزاي ال Browser بِيِقْرَأ ال Tags وبِيِعْرِض المحتوى للمستخدم. دلوقتي دوْرَك، ادخل على ال Exercises في W3Schools وجَرَّب تحل التحديات بنفسك. مفيش حاجة بِتعلم البرمجة غير إنك تكتب كود وتشوف النتيجة بعينك. ابدأ ابني صفحتك الأولى النهاردة، ولو وَاجِهْت أي مشكلة، ارجع لل References وراجع ال Attributes وال Elements. بالتوفيق يا أبطال في رحلتكم الجاية في عالم ال Web Development.",
-        "caption_text": "ملخص الدرس والخطوات القادمة للتدريب على HTML."
+        "spoken_text": "بكده نكون ثبتنا حجر الأساس: فهمت ليه DOCTYPE إلزامي لمنع Quirks Mode، وعرفت إن Tag html هو الجذر، و head للبيانات الوصفية، و body هو مسرح الأحداث البصرية. التحدي العملي المطلوب منك دلوقتي حالا: افتح محرر الأكواد واكتب ملف index.html بنفسك، حط فيه الهيكل الكامل مع 1 Tag h1 وفقرتين بـ Tag p، وافتح المتصفح وافحص شجرة الـ DOM من خلال DevTools عشان تتأكد إن كل Tag اتقفل صح. في الدرس الجاي هنتعمق في أسرار العناصر النصية والروابط التشعبية والصور.",
+        "caption_text": "الخلاصة وتحدي التطبيق العملي: بناء ملف index.html معياري، فحص الـ DOM عبر DevTools، والتحضير للدرس القادم."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم HTML is the foundation of the web",
-          "مفهوم Practice with W3Schools HTML Exercises",
-          "مفهوم Build your own custom webpage today",
-          "مفهوم Refer to HTML documentation for more details",
-          "مفهوم Keep coding to master the structure"
+          "الأركان الأربعة: إعلان DOCTYPE وجذر html ورأس head وجسم body",
+          "التحدي العملي: إنشاء ملف index.html وفحص شجرة DOM بواسطة DevTools",
+          "الخطوة القادمة: هندسة العناصر النصية Text Elements وتضمين الصور والروابط"
         ]
       },
       "source_refs": [
