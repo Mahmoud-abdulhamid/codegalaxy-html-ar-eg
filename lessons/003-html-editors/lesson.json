@@ -1,13 +1,15 @@
 {
   "schema_version": "1.0",
   "lesson_id": "3",
-  "title": "HTML Editors",
+  "title": "محررات أكواد HTML وكيف تبدأ كتابة كودك الأول",
   "course": "HTML",
+  "language": "ar",
+  "dialect": "egyptian",
   "objectives": [
-    "معرفة الأدوات المناسبة لتعلم HTML",
-    "استخدام Notepad و TextEdit بكفاءة",
-    "كتابة وحفظ ملفات HTML بالصيغة الصحيحة",
-    "معاينة صفحات الويب داخل Web Browser"
+    "فهم الفرق الجوهري بين محرر النصوص البسيط Plain Text ومعالج الكلمات الغني Rich Text",
+    "تعلم خطوات إنشاء ملف HTML يدويا على Windows و Mac باستخدام Notepad و TextEdit",
+    "إتقان حفظ ملفات الويب بامتداد html وترميز UTF-8 الصحيح لتجنب تشوه الحروف",
+    "معاينة واختبار صفحات HTML على Web Browser ومعرفة دور المحررات السحابية مثل W3Schools Editor"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_editors.asp"
@@ -32,18 +34,19 @@
   ],
   "scenes": [
     {
-      "id": "scene_intro",
-      "title": "مقدمة حول HTML Editors",
+      "id": "scene_1",
+      "title": "صدمة الملف العطلان ومحررات الأكواد",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ يَا أَصْدِقَائِي فِي هَذَا الدَّرْسِ مِنْ دَوْرَة لُغَة إِتْش تِي إِم إِل. سَنَتَعَرَّفُ الْيَوْمَ عَلَى الطُّرُقِ الصَّحِيحَة لِاسْتِخْدَام Text Editors فِي كِتَابَة وتطوير صَفَحَاتِ الويب بِكفاءة وسهولَه.",
-        "caption_text": "تعرف على كيفية استخدام Text Editors في كتابة وتطوير صفحات الويب بكفاءة."
+        "spoken_text": "عمرك كتبت كود HTML وفتحته في الـ Web Browser ولقيت الكود طالع قدامك زي ما هو كنص عطلان بدل صفحة حقيقية؟ الصداع ده بيحصل للمبتدئين عشان بيستخدموا برامج Rich Text زي Word بتدس رموز مخفية، أو بيسيبوا امتداد .txt شغال من غير ما ياخدوا بالهم، فيضيع مجهودهم كله على الفاضي! المتصفح محتاج نص خام تماماً Plain Text يفهمه مباشرة من غير أي تنسيقات غريبة تبوظ بنية الـ Tags. النهاردة هنفك شفرة الأساس ده خطوة بخطوة، وهنتعلم إزاي نستخدم محرر نصوص بسيط زي Notepad و TextEdit ونظبط الـ Encoding صح عشان صفحتك تشتغل بنجاح من أول كليك.",
+        "caption_text": "عمرك كتبت كود HTML وفتحته في الـ Web Browser ولقيت الكود طالع قدامك زي ما هو كنص عطلان بدل صفحة حقيقية؟ الصداع ده بيحصل للمبتدئين عشان بيستخدموا برامج Rich Text زي Word بتدس رموز مخفية، أو بيسيبوا امتداد .txt شغال من غير ما يأخذوا بالهم، فيضيع مجهودهم كله على الفاضي! المتصفح محتاج نص خام تماما Plain Text يفهمه مباشرة من غير أي تنسيقات غريبة تفسد بنية الـ Tags. اليوم سنفك شفرة الأساس ده خطوة بخطوة، وهنتعلم إزاي نستخدم محرر نصوص بسيط زي Notepad و TextEdit ونضبط الـ Encoding صح عشان صفحتك تشتغل بنجاح من أول كليك."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "أهمية استخدام Text Editor بسيط لتعلم HTML",
-          "الفرق بين Notepad في نظام PC و TextEdit في نظام Mac",
-          "خطوات إنشاء وحفظ أول ملف ويب"
+          "ظهور كود HTML كنص خام بسبب امتداد .txt الخفي",
+          "تدمير الـ Tags البرمجية بواسطة معالجات النصوص Rich Text",
+          "أهمية استخدام محرر Plain Text نظيف في بداية التعلم",
+          "ضبط إعدادات الحفظ الصحيحة وترميز UTF-8 المعياري"
         ]
       },
       "source_refs": [
@@ -51,153 +54,55 @@
       ]
     },
     {
-      "id": "scene_tools",
-      "title": "اختيار Text Editor المناسب",
+      "id": "scene_2",
+      "title": "مخطط مسار بناء ملف HTML من المحرر إلى المتصفح",
       "narration": {
-        "spoken_text": "لِتَعَلُّم إِتْش تِي إِم إِل بِشَكْلٍ صَحِيحٍ، نَنْصَحُ بِاسْتِخْدَامِ بَرْنَامَجٍ بَسِيطٍ مِثْل Notepad عَلَى أجهزة PC أَوْ TextEdit عَلَى أجهزة Mac، لِأَنَّهُ يُسَاعِدُكَ عَلَى تَعَلُّمِ الْكِتَابَة بِنَفْسِكَ دُونَ تَدَخُّلٍ.",
-        "caption_text": "ننصح باستخدام Notepad أو TextEdit البسيط لتعلم لغة HTML."
+        "spoken_text": "عشان نفهم كواليس اللي بيحصل تحت الكبوت في جهازك، بص معايا على المخطط ده. العملية بتبدأ من خطوة 1 لما بتفتح محرر نصوص بسيط وتكتب جواه الـ Tags كنص خام تماماً من غير أي زوايد. في خطوة 2، بتعمل Save للملف باسم واضح وتحدد الامتداد .html، والنقطة الحاسمة هنا إنك تختار ترميز UTF-8 عشان المتصفح يقرا الحروف العربية والإنجليزية بدون أي تشوه. وأخيراً في خطوة 3، بتفتح الملف جوه الـ Web Browser، المحرك هنا بيقرا الكود ويبني شجرة الـ DOM عشان يعرضلك عناصر الصفحة الحقيقية بشكل مرئي سليم وسريع.",
+        "caption_text": "عشان نفهم كواليس اللي بيحصل تحت الكبوت في جهازك، انظر معي إلى هذا المخطط. العملية تبدأ من خطوة 1 لما تفتح محرر نصوص بسيط وتكتب جواه الـ Tags كنص خام تماما من غير أي زوائد. في خطوة 2، تعمل Save للملف باسم واضح وتحدد الامتداد .html، والنقطة الحاسمة هنا إنك تختار ترميز UTF-8 عشان المتصفح يقرأ الحروف العربية والإنجليزية بدون أي تشوه. وأخيرا في خطوة 3، تفتح الملف جوه الـ Web Browser، المحرك هنا يقرأ الكود ويبني شجرة الـ DOM عشان يعرض لك عناصر الصفحة الحقيقية بشكل مرئي سليم وسريع."
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "استخدام Notepad لنظام التشغيل Windows",
-          "استخدام TextEdit لنظام التشغيل Mac",
-          "تجنب المحررات المعقدة في بداية التعلم"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_step1_pc",
-      "title": "فتح Notepad على نظام Windows",
-      "narration": {
-        "spoken_text": "عَلَى نِظَامِ التَّشْغِيل Windows، اِفْتَحْ Start Screen ثُمَّ اُكْتُبْ Notepad. أَوْ انْتَقِلْ خِلَالَ الْقَوَائِمِ إِلَى Accessories ثُمَّ اخْتَرْ Notepad لِتَبْدَأَ فُوءَهَا كِتَابَة الْأَكْوَادِ.",
-        "caption_text": "افتح برنامج Notepad على نظام Windows من خلال قائمة ابدأ."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "افتح Start Screen في نظام Windows 8 أو أحدث",
-          "اكتب كلمة Notepad في خانة البحث",
-          "في الإصدارات القديمة اختر من Accessories"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_step1_mac",
-      "title": "ضبط إعدادات TextEdit لنظام Mac",
-      "narration": {
-        "spoken_text": "عَلَى أجهزة Mac، افْتَحْ Finder ثُمَّ Applications ثُمَّ TextEdit. تَأَكَّدْ مِنْ تَغْيِير Preferences إِلَى Plain Text، وَفَعِّلْ خِيَارَ عَرْضِ مِلَفَّات إِتْش تِي إِم إِل كَأَكْوَادٍ حَقِيقِيَّة دُونَ تَنْسِيقٍ مُسْبَقٍ.",
-        "caption_text": "اضبط إعدادات TextEdit على Mac ليحفظ الملفات بصيغة Plain Text."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "انتقل إلى Finder ثم Applications ثم TextEdit",
-          "اختر Plain Text من لوحة Preferences",
-          "فعل خيار عرض ملفات HTML كأكواد حقيقية"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_code_write",
-      "title": "كتابة أول كود HTML",
-      "narration": {
-        "spoken_text": "الْآنَ نَكْتُبُ هَذَا الْكُودَ الْأَوَّلِيَّ فِي الْمِلَفِ الْجَدِيدِ. نَبْدَأُ بِتَعْرِيف دُوكْتَايْب إِتْش تِي إِم إِل ثُمَّ إِلِيمِنْت الْأَسَاسِيِّ إِتْش تِي إِم إِل، وَنَضَعُ بِدَاخِل بُودِي عُنْوَاناً رَئِيسِيّا إِتْش وَاحِد وَفِقْرَة بِي.",
-        "caption_text": "اكتب الكود الأساسي الذي يحتوي على DOCTYPE وعناصر h1 و p داخل body."
-      },
-      "visual": {
-        "type": "code",
-        "language": "html",
-        "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
-        "highlight_lines": [],
-        "output": "My First Heading\nMy first paragraph.",
-        "output_status": "illustrative",
-        "verification_ref": null
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_save_file",
-      "title": "حفظ ملف HTML بالطريقة الصحيحة",
-      "narration": {
-        "spoken_text": "لِحِفْظِ الْمِلَفِ، اخْتَرْ File ثُمَّ Save as. سَمِّ الْمِلَف index.htm وَاخْتَرْ تَرْمِيزَ الْحُرُوف UTF-8، وَهُوَ التَّرْمِيزُ الْمُفَضَّلُ لِضَمَانِ قِرَاءَة النُّصُوصِ الْعَرَبِيَّة وَالْإِنْجِلِيزِيَّة دُونَ مَشَاكِلَ.",
-        "caption_text": "احفظ الملف باسم index.htm مع تعيين الترميز إلى UTF-8."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "اختر File ثم Save as في قائمة البرنامج",
-          "احفظ الملف باسم index.htm أو index.html",
-          "حدد ترميز الحروف إلى UTF-8 المفضل لملفات الويب"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_browser_view",
-      "title": "معاينة الصفحة في Web Browser",
-      "narration": {
-        "spoken_text": "لِمُشَاهَدَة نَتِيجَة عَمَلِكَ، اِفْتَحِ الْمِلَفَ الْمَحْفُوظَ فِي وِب Browser الْمُفَضَّلِ لَدَيْكَ مِثْل Chrome أو Edge، لِتَرَى النَّتِيجَة مَعْرُوضَة أَمَامَكَ بِوُضُوحٍ تِقْنِيٍّ دَقِيقٍ.",
-        "caption_text": "افتح الملف المحفوظ في متصفح الويب لمشاهدة النتيجة النهائية."
-      },
-      "visual": {
-        "type": "image",
-        "asset_id": "html_example_1",
-        "alt": "معاينة صفحة الويب في المتصفح"
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_editors.asp"
-      ]
-    },
-    {
-      "id": "scene_online_editor",
-      "title": "استخدام W3Schools Online Editor",
-      "narration": {
-        "spoken_text": "يُوَفِّرُ لَكَ مَوْقِع دَبْلِيُو ثْرِي سْكُولْز مُمَرِّراً ومحرراً تَفَاعُلِيّاً عَلَى الْإِنْتَرْنَتِ يُسَمَّى Online Editor، لِتَجْرِبَة الْأَكْوَادِ بِسُرْعَة وَمُعَايَنَة النَّتِيجَة مُبَاشَرَة دُونَ حَاجَة لِلتَّثْبِيتِ.",
-        "caption_text": "استخدم محررات الإنترنت التفاعلية لتجربة الأكواد بسرعة ومشاركة النتائج."
-      },
-      "visual": {
-        "type": "sequence",
-        "steps": [
+        "type": "diagram",
+        "nodes": [
           {
-            "at_fraction": 0.0,
-            "visual": {
-              "type": "code",
-              "language": "html",
-              "filename": "tryit.html",
-              "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
-              "highlight_lines": [],
-              "output": null,
-              "output_status": "not_applicable",
-              "verification_ref": null
-            }
+            "id": "editor",
+            "label": "Text Editor (Notepad / TextEdit)",
+            "active": true,
+            "icon": "file-code"
           },
           {
-            "at_fraction": 0.65,
-            "visual": {
-              "type": "code",
-              "language": "text",
-              "filename": "OUTPUT - illustrative",
-              "code": "This is a Heading\nThis is a paragraph.",
-              "highlight_lines": [],
-              "output": null,
-              "output_status": "not_applicable",
-              "verification_ref": null
-            }
+            "id": "file",
+            "label": "Save (index.html + UTF-8)",
+            "active": true,
+            "icon": "save"
+          },
+          {
+            "id": "browser",
+            "label": "Web Browser Engine",
+            "active": true,
+            "icon": "globe"
+          },
+          {
+            "id": "dom",
+            "label": "DOM Tree & Visual Page",
+            "active": false,
+            "icon": "layout"
+          }
+        ],
+        "edges": [
+          {
+            "source": "editor",
+            "target": "file",
+            "label": "1. Write Plain Text"
+          },
+          {
+            "source": "file",
+            "target": "browser",
+            "label": "2. File Extension & Encoding"
+          },
+          {
+            "source": "browser",
+            "target": "dom",
+            "label": "3. Parse & Render"
           }
         ]
       },
@@ -206,18 +111,309 @@
       ]
     },
     {
-      "id": "scene_conclusion",
-      "title": "خلاصة الدرس والدعوة للتطبيق",
+      "id": "scene_3",
+      "title": "كتابة أول كود HTML في محرر النصوص",
       "narration": {
-        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ كَيْفَ نُجَهِّزُ بِيئَة الْعَمَلِ الْبَسِيطَة بِاسْتِخْدَام Notepad و TextEdit، وَكَيْفَ نَحْفَظُ وَنَعْرِضُ صَفَحَاتِ الْوَيْبِ. نَنْتَظِرُ تَطْبِيقَاتِكُمْ وَنَلْقَاكُمْ فِي الدَّرْسِ الْقَادِمِ مَعَ مَهَارَاتٍ جَدِيدَه.",
-        "caption_text": "خلاصة الدرس: استخدم أدوات بسيطة لكتابة ملفات HTML ومعاينتها في المتصفح."
+        "spoken_text": "يلا بينا نكتب أول كود حقيقي في المحرر. السطر 1 بيبدأ بـ DOCTYPE html عشان يعرف الـ Web Browser إننا شغالين على أحدث معايير HTML5. بعدها بنفتح Tag الـ html في السطر 2 وده الحاوية الكبرى، وجواه في السطر 3 بنحط جسم الصفحة body. ركز بقى في السطر 4 و 5، هنا ضفنا عنوان رئيسي باستخدام Tag h1 وفقرة نصية بـ Tag p، مع إغلاق كل Tag يدوي بالـ Slash. كتابتك للأكواد دي بإيدك من غير إكمال تلقائي بتبني ذاكرتك العضلية وتخليك فاهم تفاصيل كل سطر في بنية صفحتك.",
+        "caption_text": "يلا بينا نكتب أول كود حقيقي في المحرر. السطر 1 يبدأ بـ DOCTYPE html عشان يعرف الـ Web Browser إننا شغالين على أحدث معايير HTML5. بعدها نفتح Tag الـ html في السطر 2 وده الحاوية الكبرى، وجواه في السطر 3 نضع قسم <body> body. ركز في السطر 4 و 5، هنا أضفنا عنوانا رئيسيا باستخدام Tag h1 وفقرة نصية بـ Tag p، مع إغلاق كل Tag يدويا بالـ Slash. كتابتك للأكواد دي بيدك من غير إكمال تلقائي تبني ذاكرتك العضلية وتجعلك فاهما لتفاصيل كل سطر في بنية صفحتك."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
+        "output": "My First Heading\nMy first paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "مقارنة شاملة بين محررات النصوص البسيطة وبيئات التطوير",
+      "narration": {
+        "spoken_text": "السؤال الهندسي اللي دايماً بنسأله: ليه W3Schools بتنصح بـ Notepad أو TextEdit وإحنا عندنا بيئات متطورة زي VS Code؟ الجدول ده بيوضحلك المفاضلة الحقيقية. المحررات البسيطة بتفتقر للـ Syntax Highlighting والـ Auto-complete، وده بالظبط ميزتها التعليمية الأولى! لما تكتب كل حرف بنفسك، الذاكرة العضلية عندك بتثبت وبتحفظ الـ Tags من غير ما تعتمد على أدوات مساعدة. لكن في مشاريع الشغل الكبيرة، بنروح فوراً لبيئات التطوير المتقدمة عشان الإنتاجية والـ Extensions، فابدأ بسيط في أول أسبوع وبعدين انطلق للمحررات الاحترافية.",
+        "caption_text": "السؤال الهندسي اللي دايما بنسأله: ليه W3Schools تنصح بـ Notepad أو TextEdit ونحن لدينا بيئات متطورة زي VS Code؟ هذا الجدول يوضح لك المفاضلة الحقيقية. المحررات البسيطة تفتقر للـ Syntax Highlighting والـ Auto-complete، وده بالضبط ميزتها التعليمية الأولى! لما تكتب كل حرف بنفسك، الذاكرة العضلية عندك تثبت وتحفظ الـ Tags من غير أن تعتمد على أدوات مساعدة. لكن في مشاريع العمل الكبيرة، نذهب فورا لبيئات التطوير المتقدمة عشان الإنتاجية والـ Extensions، فابدأ بسيطا في أول أسبوع وبعدين انطلق للمحررات الاحترافية."
+      },
+      "visual": {
+        "type": "table",
+        "columns": [
+          "وجه المقارنة",
+          "Notepad / TextEdit",
+          "VS Code / IDEs",
+          "Online Editors"
+        ],
+        "rows": [
+          [
+            "تمييز الكود (Syntax Highlighting)",
+            "غير متوفر (Plain Text)",
+            "متقدم ومدعوم بألوان",
+            "متوفر وسهل للمبتدئين"
+          ],
+          [
+            "الإكمال التلقائي (Auto-complete)",
+            "معدوم (حفظ يدوي 100)",
+            "ذكي وسريع عبر الإضافات",
+            "محدود لتسهيل التجربة"
+          ],
+          [
+            "الهدف الأساسي",
+            "ترسيخ الذاكرة والأساسيات",
+            "الإنتاجية وبناء المشاريع",
+            "التجربة السريعة والمشاركة"
+          ],
+          [
+            "استهلاك الموارد وسرعة الفتح",
+            "فوري وبدون استهلاك للذاكرة",
+            "يحتاج موارد وتثبيت حزم",
+            "يعمل مباشرة من المتصفح"
+          ]
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "ضبط ترميز الملف وعنوان الصفحة في Head",
+      "narration": {
+        "spoken_text": "بص معايا في الكود، ضفنا Tag الـ head عشان نتحكم في إعدادات الصفحة قبل ما تظهر للمستخدم. السطر رقم 4 فيه meta مع Attribute اسمه charset متظبط على UTF-8، وده أهم سطر بيمنع ظهور الحروف العربية أو الرموز على شكل علامات استفهام غريبة جوه الـ Web Browser. وكمان حطينا Tag الـ title في السطر رقم 5 عشان يحدد الاسم اللي بيظهر فوق في شريط التبويب. وضفنا في سطر رقم 2 الـ Attribute اللي اسمه lang بقيمة ar، وده بينبه المتصفح ومحركات البحث للغة المحتوى الأساسية عشان يعرضوا النصوص بأعلى دقة وتوافقية.",
+        "caption_text": "إضافة عنصر head لضبط ترميز الحروف UTF-8 وعنوان الصفحة title وتحديد لغة المحتوى عبر lang."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html lang=\"ar\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>صفحتي الأولى</title>\n  </head>\n  <body>\n    <h1>مرحبا بك في عالم الويب</h1>\n    <p>تم حفظ هذا الملف بترميز UTF-8 سليم.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          8,
+          9
+        ],
+        "output": "مرحبا بك في عالم الويب\nتم حفظ هذا الملف بترميز UTF-8 سليم.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "كواليس حفظ الملفات: Plain Text مقابل Rich Text",
+      "narration": {
+        "spoken_text": "تعال نفهم إيه اللي بيحصل تحت الكبوت في الذاكرة لما بتسيف ملفك. لما بتختار نمط Plain Text في Notepad أو TextEdit، نظام التشغيل بيسجل بايتات الحروف والأرقام بس بترميز UTF-8 أو ASCII بدون أي زيادة خفية، فالمتصفح يقدر يقرا الكود سطر بسطر ويبني شجرة DOM سليمة 100. إنما لو سيبت المحرر على Rich Text، التطبيق بيحقن أكواد ثنائية وتنسيقات خطوط وألوان زي ملفات RTF أو DOCX جوه الملف. المتصفح وقتها هيشوف كودك كأنه رموز عشوائية مش مفهومة، ومش هيعرف يشغل Tags الـ HTML، فتتفاجئ بصفحة مكسورة ومليانة أخطاء.",
+        "caption_text": "الفارق الهيكلي في معالجة الذاكرة بين بايتات Plain Text الخام وملفات Rich Text المشبعة بالتنسيقات الثنائية."
+      },
+      "visual": {
+        "type": "flowchart",
+        "nodes": [
+          {
+            "id": "f_start",
+            "label": "كتابة كود HTML في المحرر",
+            "kind": "start",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "f_decision",
+            "label": "تنسيق حفظ الملف في نظام التشغيل",
+            "kind": "decision",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "f_plain",
+            "label": "Plain Text: بايتات نصوص خام UTF-8",
+            "kind": "process",
+            "icon": null,
+            "active": true
+          },
+          {
+            "id": "f_rich",
+            "label": "Rich Text: حقن ترويسات RTF وتنسيق ثنائي",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "f_success",
+            "label": "Web Browser يحلل شجرة DOM بنجاح",
+            "kind": "end",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "f_error",
+            "label": "فشل التحليل وظهور رموز مشوهة على الشاشة",
+            "kind": "end",
+            "icon": null,
+            "active": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "f_start",
+            "target": "f_decision",
+            "label": "",
+            "direction": null
+          },
+          {
+            "source": "f_decision",
+            "target": "f_plain",
+            "label": "نص بسيط خام",
+            "direction": null
+          },
+          {
+            "source": "f_decision",
+            "target": "f_rich",
+            "label": "معالج نصوص منسق",
+            "direction": null
+          },
+          {
+            "source": "f_plain",
+            "target": "f_success",
+            "label": "قراءة معيارية",
+            "direction": null
+          },
+          {
+            "source": "f_rich",
+            "target": "f_error",
+            "label": "فشل قراءة Tags",
+            "direction": null
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "منحنى سرعة التعلم وإنتاجية المطور عبر المحررات",
+      "narration": {
+        "spoken_text": "الأرقام والتجارب العملية بتثبت إنك لما تبدأ بمحرر بسيط زي Notepad، استيعابك لقواعد الـ HTML وهيكل الـ Tags بيوصل لنسبة 95 في أول 7 أيام، لأن مخك بيكتب كل تفصيلة بإيده. على العكس، لو بدأت فوراً بمحرر متقدم فيه Auto-completion، نسبة استيعابك للأساسيات ممكن تنزل لـ 55، لأنك بتعتمد على التخمين التلقائي بدون ما تفهم المنطق. عشان كده المفاضلة الهندسية الصح بتقولك: ابدأ أول أسبوعين بمحرر نصوص بسيط لغاية ما تحفظ الهيكل المعماري، وبعد ما تتقن الأساسيات، انقل فوراً لأدوات احترافية زي VS Code عشان تضاعف إنتاجيتك لـ 90.",
+        "caption_text": "مقارنة نسب استيعاب المفاهيم للمبتدئين بين المحررات البسيطة والمحررات المتقدمة ذات الإكمال التلقائي."
+      },
+      "visual": {
+        "type": "chart",
+        "unit": "%",
+        "data": [
+          {
+            "label": "استيعاب الأساسيات عبر Notepad",
+            "value": 95.0
+          },
+          {
+            "label": "استيعاب الأساسيات مع إكمال تلقائي مبكر",
+            "value": 55.0
+          },
+          {
+            "label": "إنتاجية المحترف بعد الانتقال لـ VS Code",
+            "value": 90.0
+          },
+          {
+            "label": "إنتاجية المبتدئ مع بيئة معقدة",
+            "value": 40.0
+          }
+        ],
+        "data_status": "illustrative",
+        "evidence_ref": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "التوافقية وإمكانية الوصول مع إعدادات المحرر",
+      "narration": {
+        "spoken_text": "آخر نقطة مهمة جداً هي التوافقية وإمكانية الوصول، أو Accessibility. لما بتظبط ترميز UTF-8 في المحرر وبتحدد الـ Attribute اللي اسمه lang في عنصر الـ html، إنت مش بس بتظبط شكل الخط للمستخدم العادي، إنت كمان بتخلي أدوات الـ Screen Readers تنطق النصوص العربية وتفهمها بنسبة 100 لذوي الاحتياجات الخاصة. وكمان خلي بالك من الـ Line Endings؛ في نظام Windows المحرر بيستخدم CRLF وفي Mac و Linux بيستخدم LF. لو شغال في فريق، ضبط إعدادات المحرر دي من البداية بيحميك من أخطاء الـ Git واختلاف فواصل الأسطر.",
+        "caption_text": "أهمية إعدادات الترميز ونهايات الأسطر وتحديد لغة الصفحة لضمان توافقية الأنظمة وأدوات الوصول."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "استخدام Text Editors يرسخ فهم بنية الكود",
-          "أهمية الحفظ بصيغة UTF-8 لتجنب مشاكل الرموز",
-          "تجربة الأكواد فورا عبر Web Browser"
+          "ترميز UTF-8 الإلزامي لدعم قراءة Screen Readers للحروف بدقة 100",
+          "فهم فوارق Line Endings بين Windows CRLF وأنظمة Mac و Linux LF",
+          "ضبط Attribute الـ lang لتوجيه محركات النطق الصوتي ومعالجة النصوص",
+          "تجنب حفظ الملفات بصيغ ثنائية لضمان التوافقية عبر كافة بيئات التشغيل"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_9",
+      "title": "أفخاخ شائعة في بيئة العمل وكيفية تجنبها",
+      "narration": {
+        "spoken_text": "تعالوا نركز سوا في 3 أفخاخ شائعة بيقع فيها المطورين في البداية. أول فخ هو الامتداد المستخبي؛ لما تحفظ الملف كـ index.html ونظام التشغيل يضيف .txt من غير ما تحس، فالمتصفح يشوفه ملف نصي عادي مش صفحة ويب، وعشان تحلها لازم تفعل خيار File Name Extensions. الفخ التاني في TextEdit على Mac، ميزة Smart Quotes اللي بتحول علامات التنصيص لشكل مايل جمالي بيكسر قراءة الـ Attributes في كود الـ HTML تماماً، والحل إنك تقفل الميزة دي وتختار Plain Text. والفخ الأخير هو ترميز ANSI اللي بيشوه الحروف، ولازم تختار دايماً ترميز UTF-8.",
+        "caption_text": "3 أخطاء شائعة عند حفظ الملفات: فخ الامتداد المخفي index.html.txt، مشاكل علامات التنصيص Smart Quotes في Mac، وتأثير ترميز ANSI الخاطئ مقارنة مع UTF-8."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "فخ الامتداد المزدوج index.html.txt وضرورة تفعيل File Name Extensions في نظام التشغيل",
+          "مشكلة Smart Quotes في تطبيق TextEdit وتحويل علامات التنصيص البرمجية لشكل جمالي تالف",
+          "تجنب ترميز ANSI الافتراضي في بعض المحررات واعتماد UTF-8 لضمان سلامة المحتوى العربي"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_10",
+      "title": "المشروع المتكامل: صفحة ويب احترافية مع تنسيق CSS مدمج",
+      "narration": {
+        "spoken_text": "شايفين الكود اللي قدامنا على الشاشة؟ ده مشروع عملي كامل ومثالي يجمع كل اللي اتعلمناه في ملف واحد متكامل. كتبنا هيكل HTML5 المعياري من أول سطر DOCTYPE وسمينا الصفحة جوه الـ head وضفنا ترميز UTF-8 عشان يدعم العربي، ودخلنا جوه Tag الـ style وكتبنا قواعد CSS مدمجة نظيفة من غير ما نحتاج ملف خارجي، نسقنا بيها الخلفية وعملنا كارت منظم واحترافي. ولما تفتح الملف ده في أي Web Browser هيتحول الكود الصامت لتصميم حقيقي أنيق، وبكده تكون بنيت أول صفحة ويب متكاملة ومستقرة بإيدك.",
+        "caption_text": "تجميع بنية HTML5 المتكاملة مع ستايل CSS مدمج داخل ملف واحد وعرض الكارت المنسق في المتصفح."
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html lang=\"ar\" dir=\"rtl\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>صفحة متكاملة</title>\n    <style>\n      body {\n        font-family: sans-serif; background: #f8fafc; padding: 40px; margin: 0;\n      }\n      .card {\n        background: #ffffff; border: 1px solid #e2e8f0;\n        border-radius: 8px; padding: 24px; max-width: 480px; margin: 0 auto;\n      }\n      h1 {\n        color: #0f172a; font-size: 22px; margin-top: 0;\n      }\n      p {\n        color: #475569; line-height: 1.6; margin-bottom: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <div class=\"card\">\n      <h1>أول صفحة ويب متكاملة</h1>\n      <p>كتبنا هذه الصفحة يدويًا باستخدام محرر نصوص بسيط مع تنسيق CSS مدمج.</p>\n    </div>\n  </body>\n</html>",
+        "highlight_lines": [
+          6,
+          20
+        ],
+        "output": "معاينة المتصفح: كارت أبيض بحواف دائرية وظل خفيف في منتصف الشاشة بخلفية رمادية ناعمة.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_11",
+      "title": "الخلاصة وخريطة الطريق وتحدي الدرس",
+      "narration": {
+        "spoken_text": "وصلنا لمحطتنا الأخيرة وخلاصتنا الذهبية للدرس: كل اللي محتاجه عشان تنطلق في عالم الويب هو محرر Plain Text بسيط، وامتداد .html، وترميز UTF-8. ولو حابب تختبر أي فكرة سريعة أو تشارك كودك بضغطة زرار، جرب W3Schools Tryit Editor كأداة سريعة في متصفحك. ودلوقتي جه ميعاد التحدي العملي بتاعك؛ افتح محرر النصوص عندك سواء Notepad أو TextEdit، واكتب كود صفحة كاملة تحتوي على عنوان كارتك الشخصي، وفقرة بتعرف فيها نفسك، ورابط لحسابك، واحفظ الملف وافتحه في المتصفح بنفسك عشان تثبت المعلومة.",
+        "caption_text": "ملخص المهارات الأساسية لمحررات HTML وتحدي كتابة أول كارت تعريفي متكامل يدويا."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "القاعدة الذهبية: محرر Plain Text بسيط مع امتداد .html سليم وترميز UTF-8",
+          "الاستفادة من أدوات الاختبار السريع مثل W3Schools Tryit Editor لمعاينة وتجربة الأكواد",
+          "تحدي الدرس العملي: أنشئ صفحة كارت تعريفي يحتوي على عنوان وفقرة ورابط وافتحها بالمتصفح"
         ]
       },
       "source_refs": [
