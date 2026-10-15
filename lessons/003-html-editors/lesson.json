@@ -6,11 +6,10 @@
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "فهم أهمية استخدام الـ Text Editors البسيطة في بداية تعلم HTML",
-    "التعرف على كيفية فتح واستخدام Notepad على Windows",
-    "التعرف على كيفية إعداد واستخدام TextEdit على Mac",
-    "كتابة وحفظ أول ملف HTML بامتداد .html",
-    "تشغيل ملف HTML في الـ Web Browser"
+    "Understand that simple text editors are sufficient for learning HTML",
+    "Learn how to configure Notepad or TextEdit for HTML development",
+    "Master the workflow of creating, saving, and viewing an HTML file",
+    "Introduce online editors as a quick testing tool"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_editors.asp"
@@ -60,17 +59,17 @@
   "scenes": [
     {
       "id": "scene_1",
-      "title": "خرافة برامج البرمجة المعقدة",
+      "title": "شرح The Myth of Complex Tools",
       "narration": {
-        "spoken_text": "كتير من المطورين فاكرين إن مجرد ما المتصفح يفتح صفحتك، كودك كده سليم 100، أو إنك محتاج برامج تقيلة عشان تبدأ! الحقيقة إن المتصفح محتاج يفهم نوع الصفحة وترتيبها عشان يعرض نتيجتك صح، وإنت مش محتاج أكتر من Text Editor بسيط عشان تبدأ. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنتعلم الأساس الحقيقي اللي هيخلي شغلك احترافي ومعياري، وهنبدأ نكتب أول كود HTML لينا سوا.",
-        "caption_text": "هل تحتاج برامج معقدة لكتابة HTML؟"
+        "spoken_text": "لو فاكر إنك محتاج برامج تقيلة ومعقدة عشان تبدأ تكتب HTML، فالحقيقة إنك غلطان تماماً! الاعتماد على برامج تقيلة في البداية بيشتت تركيزك عن أساسيات الكود، وبيخليك تهتم بالشكل قبل المضمون. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفك شفرة الأساس ده خطوة بخطوة عشان كودك يشتغل صح وبأعلى كفاءة، وهنتعلم إزاي نستخدم أبسط الأدوات المتاحة على جهازك عشان نبني أول صفحة ويب حقيقية.",
+        "caption_text": "شرح وتوضيح Debunking the myth that expensive IDEs are required for beginners."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "الخرافة: تحتاج برامج معقدة لكتابة HTML",
-          "الحقيقة: Text Editor بسيط يكفي للبداية",
-          "الهدف: فهم هيكل الصفحة والمعايير الأساسية"
+          "مفهوم Debunking the myth that expensive IDEs are required for beginners",
+          "مفهوم Introduction to simple text editors as the best learning tool",
+          "مفهوم Overview of the lesson: Setup, Write, Save, View"
         ]
       },
       "source_refs": [
@@ -79,17 +78,17 @@
     },
     {
       "id": "scene_2",
-      "title": "ليه بنستخدم Text Editor بسيط؟",
+      "title": "شرح Simple Tools for Learning",
       "narration": {
-        "spoken_text": "ليه بننصح بـ Text Editor بسيط زي Notepad أو TextEdit؟ عشان في بداية تعلمك للـ HTML، إنت محتاج تكتب كل Tag بإيدك. البرامج التقيلة بتعمل Auto-complete لكل حاجة، وده بيخليك تعتمد عليها وتنسى الـ Syntax الأساسي. لما تكتب الكود بنفسك، بتفهم هيكل الـ HTML صح، وبتحفظ أماكن الـ Tags، وده اللي بيخليك مبرمج فاهم مش مجرد حافظ.",
-        "caption_text": "فلسفة التعلم باستخدام أدوات بسيطة"
+        "spoken_text": "ليه بننصح بـ Notepad على Windows أو TextEdit على Mac؟ ببساطة لأنك في مرحلة التعلم محتاج تركز على الـ Syntax والـ Tags، مش على ميزات الـ IDE المعقدة. الأدوات البسيطة دي بتجبرك تكتب كل حرف بإيدك، وده اللي بيخليك تحفظ وتفهم هيكل الـ HTML صح. مفيش أوتوكومبليت ولا تلوين كود يشتتك، إنت والكود بس، وده أفضل طريق عشان تتقن الأساسيات وتكون مطور فاهم مش مجرد حافظ.",
+        "caption_text": "شرح وتوضيح Why simple editors help focus on the code structure."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "التركيز على كتابة الـ Tags يدويا",
-          "تجنب الاعتماد على الـ Auto-complete",
-          "فهم الـ Syntax وهيكل الـ HTML بشكل أعمق"
+          "مفهوم Notepad for PC users",
+          "مفهوم TextEdit for Mac users",
+          "مفهوم Why simple editors help focus on the code structure"
         ]
       },
       "source_refs": [
@@ -98,15 +97,15 @@
     },
     {
       "id": "scene_3",
-      "title": "فتح Notepad على Windows",
+      "title": "شرح Setting up Notepad (PC)",
       "narration": {
-        "spoken_text": "لو بتستخدم Windows، الموضوع بسيط جداً. لو عندك Windows 8 أو أحدث، افتح الـ Start Screen واكتب Notepad في البحث. ولو بتستخدم Windows 7 أو أقدم، ادخل على Start وبعدين Programs وبعدين Accessories وهتلاقي Notepad هناك. ده المحرر اللي هنكتب فيه أول كود HTML لينا، فجهز نفسك وافتحه عشان نبدأ نكتب سوا.",
-        "caption_text": "خطوات فتح Notepad على Windows"
+        "spoken_text": "تعالوا نبدأ بـ Windows. الموضوع بسيط جداً، افتح الـ Start Screen واكتب Notepad في البحث، وافتحه. بس كده! إنت دلوقتي جاهز تكتب أول كود ليك. الـ Notepad هو محرر نصوص خام، وده اللي إحنا عايزينه عشان نضمن إن مفيش أي تنسيقات مخفية تبوظ الكود بتاعنا. افتح البرنامج، وخليه جاهز قدامك، لأننا هنكتب فيه أول سطر HTML في الخطوة اللي جاية.",
+        "caption_text": "شرح وتوضيح Opening Notepad via Start Screen or Accessories."
       },
       "visual": {
         "type": "image",
         "asset_id": "source_img_notepad",
-        "alt": "واجهة برنامج Notepad"
+        "alt": "Notepad interface on Windows"
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_editors.asp"
@@ -114,17 +113,17 @@
     },
     {
       "id": "scene_4",
-      "title": "إعداد TextEdit على Mac",
+      "title": "شرح Setting up TextEdit (Mac)",
       "narration": {
-        "spoken_text": "أما لو شغال على Mac، فالمحرر الأساسي هو TextEdit. افتح Finder وبعدين Applications واختار TextEdit. بس خلي بالك، لازم تظبط الإعدادات الأول عشان الملف يتحفظ كـ Code مش كـ Rich Text. ادخل على Preferences واختار Format وبعدين Plain Text. وفي قسم Open and Save، علم على خيار Display HTML files as HTML code. كده إنت جاهز تماماً.",
-        "caption_text": "ضبط إعدادات TextEdit للعمل مع HTML"
+        "spoken_text": "لو بتستخدم Mac، افتح الـ Finder وبعدين الـ Applications واختار TextEdit. فيه خطوة مهمة جداً لازم تعملها عشان الكود يشتغل صح: ادخل على الـ Preferences، ومن الـ Format اختار Plain Text. كمان، تحت تبويب Open and Save، علم على خيار Display HTML files as HTML code. الخطوات دي بتضمن إن الـ TextEdit يتعامل مع ملفاتك كملفات كود مش كملفات نصية منسقة، وبكده تقدر تبدأ تكتب الـ HTML بتاعك من غير مشاكل.",
+        "caption_text": "شرح وتوضيح Configuring TextEdit for HTML development."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "افتح Finder > Applications > TextEdit",
-          "اضبط Preferences > Format > Plain Text",
-          "فعل خيار Display HTML files as HTML code"
+          "مفهوم Accessing TextEdit via Finder",
+          "مفهوم Configuring Preferences to Plain Text",
+          "مفهوم Enabling Display HTML files as HTML code"
         ]
       },
       "source_refs": [
@@ -133,10 +132,10 @@
     },
     {
       "id": "scene_5",
-      "title": "كتابة أول HTML code",
+      "title": "شرح Writing Your First HTML",
       "narration": {
-        "spoken_text": "دلوقتي هنكتب الـ HTML code الأساسي جوه الـ Editor. لاحظ الـ Tags زي <html> و <body> و <h1> و <p>. كل Tag له دور في تنظيم محتوى الصفحة. الـ <html> هو الحاوية الرئيسية، والـ <body> هو اللي بيحتوي كل حاجة بتظهر للمستخدم. الـ <h1> بيعمل عنوان رئيسي، والـ <p> بيعمل فقرة نصية. جرب تكتب الكود ده بنفسك، وركز في كل حرف عشان الكود يشتغل معاك صح من غير أي مشاكل.",
-        "caption_text": "كتابة الكود الأساسي في الـ Text Editor"
+        "spoken_text": "دلوقتي جه وقت العملي. افتح الـ Notepad واكتب الكود ده. بيبدأ بـ <!DOCTYPE html> عشان نعرف البراوزر إننا بنستخدم HTML5. بعدين عندنا الـ <html> اللي بيحتوي كل حاجة، وجوه الـ <body> بنحط المحتوى اللي هيظهر للمستخدم، زي الـ <h1> للعنوان والـ <p> للفقرة. الكود ده هو الأساس اللي هتبني عليه أي صفحة ويب في حياتك، فاحفظه كويس وجربه بإيدك.",
+        "caption_text": "كتابة هيكل الـ HTML الأساسي"
       },
       "visual": {
         "type": "code",
@@ -147,8 +146,8 @@
           7,
           8
         ],
-        "output": null,
-        "output_status": "not_applicable",
+        "output": "My First Heading\nMy first paragraph.",
+        "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
         "secondary_filename": null,
@@ -160,15 +159,15 @@
     },
     {
       "id": "scene_6",
-      "title": "حفظ الملف بامتداد .html",
+      "title": "شرح Saving the HTML File",
       "narration": {
-        "spoken_text": "من قائمة File اختار Save as. سمي الملف index.htm أو index.html. اتأكد إن الـ Encoding مضبوط على UTF-8. الامتداد ده هو اللي بيعرف الـ Web Browser إن ده ملف HTML. الخطوة دي مهمة جداً، لأن من غير الامتداد الصحيح، المتصفح مش هيعرف يقرأ الكود بتاعك كصفحة ويب، وهيفتحه كملف نصي عادي. فخلي بالك من النقطة دي كويس.",
+        "spoken_text": "بعد ما كتبنا الكود، لازم نحفظ الملف صح. روح لـ File وبعدين Save As. أهم خطوة هنا إنك تسمي الملف باسم ينتهي بـ .html أو .htm، عشان البراوزر يعرف يتعامل معاه. وماتنساش تختار الـ Encoding يكون UTF-8 عشان الحروف تظهر بشكل سليم. الخطوة دي هي اللي بتحول النص العادي لصفحة ويب حقيقية.",
         "caption_text": "حفظ الملف بامتداد .html"
       },
       "visual": {
         "type": "image",
         "asset_id": "source_img_saveas",
-        "alt": "نافذة حفظ الملف في الـ Text Editor"
+        "alt": "نافذة حفظ الملف في Notepad"
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_editors.asp"
@@ -176,15 +175,15 @@
     },
     {
       "id": "scene_7",
-      "title": "معاينة الصفحة في الـ Browser",
+      "title": "شرح Viewing in Browser",
       "narration": {
-        "spoken_text": "دلوقتي افتح الملف اللي حفظته بأي Web Browser عندك. هتلاقي الصفحة ظهرت قدامك بالـ Heading والـ Paragraph اللي كتبناهم. مبروك، إنت كده عملت أول صفحة ويب بإيدك! دي أول خطوة في طريقك كمطور ويب. جرب تفتح الملف ده في أكتر من متصفح زي Chrome أو Firefox وشوف النتيجة. ده بيأكد إن الكود بتاعك شغال ومعياري.",
-        "caption_text": "عرض النتيجة في الـ Web Browser"
+        "spoken_text": "دلوقتي جه وقت اللحظة الحاسمة. روح للملف اللي حفظته وافتحه بأي براوزر عندك، زي Chrome أو Firefox. بمجرد ما تفتحه، هتلاقي الكود اللي كتبته اتحول لصفحة ويب حقيقية قدام عينك. العنوان اللي كتبته في الـ <h1> هيظهر بخط كبير، والفقرة اللي في الـ <p> هتظهر تحتها. ده أول إنجاز ليك في عالم الـ Web Development.",
+        "caption_text": "معاينة النتيجة في المتصفح"
       },
       "visual": {
         "type": "image",
         "asset_id": "source_img_chrome",
-        "alt": "معاينة صفحة HTML في المتصفح"
+        "alt": "عرض صفحة الـ HTML في المتصفح"
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_editors.asp"
@@ -192,18 +191,38 @@
     },
     {
       "id": "scene_8",
-      "title": "خاتمة والدرس القادم",
+      "title": "شرح W3Schools Online Editor",
       "narration": {
-        "spoken_text": "اتعلمنا النهاردة إزاي نستخدم الـ Text Editors البسيطة عشان نكتب ونشغل كود HTML. جرب بنفسك تكتب كود وتغير فيه وتشوف النتيجة في الـ Browser. الممارسة هي اللي بتخليك محترف. الدرس الجاي هنبدأ نتعمق أكتر في الـ HTML Basic ونفهم تفاصيل أكتر عن الـ Structure. استعدوا للدرس رقم 4، ومستني أشوف تطبيقاتكم!",
-        "caption_text": "ملخص الدرس والتمهيد للدرس القادم"
+        "spoken_text": "لو عايز تجرب كود سريع من غير ما تفتح ملفات، الـ Online Editor هو الحل المثالي. الأداة دي بتخليك تكتب الـ HTML وتشوف النتيجة فوراً في نفس الصفحة. كمان فيها ميزة الـ Color Coding اللي بتسهل عليك قراءة الكود، وتقدر تحفظ شغلك وتشاركه مع أي حد بضغطة زرار. دي وسيلة ممتازة للتعلم السريع والاختبار.",
+        "caption_text": "استخدام الـ Online Editor للتجربة السريعة"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "استخدام الـ Text Editors البسيطة لتعلم HTML",
+          "تجربة الكود فورا بدون إعدادات",
+          "ميزة الـ Color Coding لتنظيم الكود",
+          "إمكانية حفظ ومشاركة الكود بسهولة",
+          "أداة مثالية للاختبار السريع"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_editors.asp"
+      ]
+    },
+    {
+      "id": "scene_9",
+      "title": "شرح Summary and Next Steps",
+      "narration": {
+        "spoken_text": "كده يا شباب نكون خلصنا أول خطوة في رحلتنا. اتعلمنا إزاي نستخدم الـ Text Editor البسيط عشان نكتب أول HTML File لينا، وإزاي نحفظه ونفتحه في الـ Browser ونشوف النتيجة بعنينا. الموضوع بسيط، بس الأهم هو الممارسة. جرب بنفسك، افتح الـ Notepad أو الـ TextEdit، واكتب الكود، وشوف النتيجة. دي البداية الصح عشان تفهم الأساسيات. في الدرس الجاي، هنبدأ ندخل في تفاصيل الـ HTML Basic ونفهم كل Tag بيعمل إيه بالظبط. استعدوا، اللي جاي أهم!",
+        "caption_text": "ملخص خطوات العمل: 1. استخدام Text Editor بسيط. 2. كتابة وحفظ ملف HTML. 3. معاينة الملف في الـ Browser. 4. الاستعداد للدرس القادم: HTML Basic."
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "استخدام Text Editor بسيط للتعلم",
           "كتابة وحفظ ملفات HTML بامتداد .html",
-          "تشغيل ومعاينة الصفحة في الـ Web Browser",
-          "الاستعداد للدرس رقم 4: HTML Basic"
+          "معاينة النتائج مباشرة في الـ Browser",
+          "الاستعداد للدرس القادم: HTML Basic"
         ]
       },
       "source_refs": [
