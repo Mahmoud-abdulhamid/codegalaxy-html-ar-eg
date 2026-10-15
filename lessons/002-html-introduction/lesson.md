@@ -1,44 +1,35 @@
-# شرح شامل للغة HTML وبناء هيكل الصفحة
+# HTML Introduction
 
 المصدر: https://www.w3schools.com/html/html_intro.asp
 
-## مقدمة الدرس وأهمية HTML
+## شرح The Reality of HTML Structure
 
-مرحبا بكم في دورة HTML. سنتعرف اليوم على لغة HTML باعتبارها لغة Markup الأساسية لإنشاء صفحات الويب.
+شرح وتوضيح Many developers think just writing code is enough. Browsers require specific structure to render content correctly. Standardization prevents layout issues.
 
-- تستخدم لغة HTML لبناء هيكل صفحات الويب
-- تعد لغة HTML الأساس القياسي لتطوير الويب
-- ندرس أحدث المعايير العالمية في HTML5
+- مفهوم Many developers think just writing code is enough
+- مفهوم Browsers require specific structure to render content correctly
+- مفهوم Standardization prevents layout issues and display errors
+- مفهوم Welcome and roadmap introduction
 
-## القواعد والمفاهيم الأساسية
+## شرح What is HTML?
 
-تتكون عناصر HTML من Start Tag ومحتوى ثم End Tag.
+شرح وتوضيح HTML stands for HyperText Markup Language. It is the standard markup language for creating Web pages. It defines the structure and content of a page.
 
-- العنصر يتكون من Start Tag ومحتوى وEnd Tag
-- بعض العناصر لا تحتوي على محتوى وتسمى Empty Elements
-- Empty Elements مثل br لا تحتاج إلى End Tag
+- مفهوم HTML stands for HyperText Markup Language
+- مفهوم It is the standard markup language for creating Web pages
+- مفهوم It defines the structure and content of a page
 
-## كتابة الكود الأساسي الأول الجزء الأول
+## شرح Understanding HTML Elements
 
-يبدأ المستند بتعريف DOCTYPE html ثم عنصر html ويحتوي head على title.
+شرح وتوضيح An HTML Element is defined by a Start Tag, content, and an End Tag. The Element is everything from the Start Tag to the End Tag. Empty elements like <br> have no content and no End Tag.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Page Title</title>
-  </head>
-  <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </body>
-</html>
-```
+## شرح The Role of Web Browsers
 
-## كتابة الكود الأساسي الأول الجزء الثاني
+شرح وتوضيح Web browsers like Chrome, Edge, and Firefox read HTML documents and render them into visual pages using HTML Tags as instructions.
 
-نكتب المحتوى المرئي داخل body باستخدام عناصر مثل h1 و p.
+## شرح HTML Page Structure Example
+
+شرح وتوضيح Analyzing the basic structure of an HTML document including DOCTYPE, head, and body sections.
 
 ```html
 <!DOCTYPE html>
@@ -54,30 +45,12 @@
 </html>
 ```
 
-## معاينة المخرجات في المتصفح
+## شرح Summary and Next Steps
 
-تعمل متصفحات الويب على قراءة ملفات HTML وعرض المحتوى للمستخدم بدون إظهار Tags.
+شرح وتوضيح Summary: HTML is the foundation of web pages, composed of Elements interpreted by browsers.
 
-## هيكل صفحة الويب وتفاصيل تقنية
-
-المحتوى داخل body يظهر في صفحة المتصفح بينما يظهر title في شريط العنوان.
-
-- المحتوى داخل body يظهر في نافذة المتصفح
-- المحتوى داخل title يظهر في شريط العنوان أو التبويب
-- Empty Elements مثل br لا تملك End Tag
-
-## تاريخ وتطور HTML5
-
-تطورات لغة HTML أدت إلى اعتماد أحدث معايير HTML5 القياسية.
-
-- تطورات عديدة شهدتها لغة HTML منذ بدايات الويب
-- نعتمد في هذا الشرح أحدث معايير HTML5 القياسية
-- تضمن المعايير الحديثة توافقية أفضل مع المتصفحات
-
-## خلاصة الدرس ودعوة للتجربة
-
-خلاصة الدرس: HTML هي أساس الويب ونشجعكم على تجربة الأكواد بأنفسكم.
-
-- HTML هي الأساس لبناء صفحات الويب
-- فهم Tags و Elements يسهل كتابة الأكواد
-- جرب كتابة الأكواد بنفسك لتثبيت المعلومات
+- مفهوم HTML is the standard markup language for Web pages
+- مفهوم Elements consist of a Start Tag, content, and an End Tag
+- مفهوم Browsers interpret HTML Tags to render the page correctly
+- مفهوم The <body> section contains visible content
+- مفهوم Next lesson: Setting up your Code Editor
