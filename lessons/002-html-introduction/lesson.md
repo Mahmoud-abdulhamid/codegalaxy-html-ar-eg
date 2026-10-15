@@ -2,34 +2,25 @@
 
 المصدر: https://www.w3schools.com/html/html_intro.asp
 
-## شرح The Reality of HTML Structure
+## مقدمة الدرس
 
-شرح وتوضيح Many developers think just writing code is enough. Browsers require specific structure to render content correctly. Standardization prevents layout issues.
+مقدمة عن أهمية الـ HTML في بناء صفحات الويب
 
-- مفهوم Many developers think just writing code is enough
-- مفهوم Browsers require specific structure to render content correctly
-- مفهوم Standardization prevents layout issues and display errors
-- مفهوم Welcome and roadmap introduction
+- الـ HTML هي لغة هيكلة وليست مجرد نصوص
+- فهم الأساسيات يمنع التخبط في المشاريع الكبيرة
+- بناء صفحات الويب يبدأ من فهم الـ HTML
 
-## شرح What is HTML?
+## ما هي الـ HTML؟
 
-شرح وتوضيح HTML stands for HyperText Markup Language. It is the standard markup language for creating Web pages. It defines the structure and content of a page.
+تعريف الـ HTML كلغة هيكلة قياسية
 
-- مفهوم HTML stands for HyperText Markup Language
-- مفهوم It is the standard markup language for creating Web pages
-- مفهوم It defines the structure and content of a page
+- HTML تعني HyperText Markup Language
+- هي الـ standard markup language لإنشاء صفحات الويب
+- المتصفح يستخدم الـ HTML لتحديد كيفية عرض المحتوى
 
-## شرح Understanding HTML Elements
+## مثال على كود HTML
 
-شرح وتوضيح An HTML Element is defined by a Start Tag, content, and an End Tag. The Element is everything from the Start Tag to the End Tag. Empty elements like <br> have no content and no End Tag.
-
-## شرح The Role of Web Browsers
-
-شرح وتوضيح Web browsers like Chrome, Edge, and Firefox read HTML documents and render them into visual pages using HTML Tags as instructions.
-
-## شرح HTML Page Structure Example
-
-شرح وتوضيح Analyzing the basic structure of an HTML document including DOCTYPE, head, and body sections.
+شرح الهيكل الأساسي لصفحة HTML
 
 ```html
 <!DOCTYPE html>
@@ -45,12 +36,32 @@
 </html>
 ```
 
-## شرح Summary and Next Steps
+## ما هو الـ HTML Element؟
 
-شرح وتوضيح Summary: HTML is the foundation of web pages, composed of Elements interpreted by browsers.
+مكونات الـ HTML element
 
-- مفهوم HTML is the standard markup language for Web pages
-- مفهوم Elements consist of a Start Tag, content, and an End Tag
-- مفهوم Browsers interpret HTML Tags to render the page correctly
-- مفهوم The <body> section contains visible content
-- مفهوم Next lesson: Setting up your Code Editor
+## الـ Empty Elements
+
+Empty Elements أو الـ Empty Elements لا تحتوي على محتوى ولا تحتاج لـ end tag.
+
+- بعض الـ HTML elements لا تحتاج content.
+- لا تحتاج لـ end tag.
+- تسمى empty elements.
+- مثال شهير: <br> لعمل سطر جديد.
+
+## دور الـ Web Browsers
+
+المتصفح يقرأ الـ HTML ويعرض المحتوى للمستخدم.
+
+## هيكل صفحة الـ HTML
+
+توضيح الفرق بين الـ body والـ title في هيكل الصفحة.
+
+## خاتمة الدرس
+
+ملخص الدرس والتمهيد للخطوة القادمة.
+
+- الـ HTML هي لغة الهيكلة الأساسية.
+- الـ elements هي حجر الأساس.
+- الفرق بين الـ tags والـ content.
+- الدرس القادم: اختيار الـ HTML Editors.
