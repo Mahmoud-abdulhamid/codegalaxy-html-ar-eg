@@ -2,37 +2,37 @@
 
 المصدر: https://www.w3schools.com/html/html_editors.asp
 
-## خرافة برامج البرمجة المعقدة
+## شرح The Myth of Complex Tools
 
-هل تحتاج برامج معقدة لكتابة HTML؟
+شرح وتوضيح Debunking the myth that expensive IDEs are required for beginners.
 
-- الخرافة: تحتاج برامج معقدة لكتابة HTML
-- الحقيقة: Text Editor بسيط يكفي للبداية
-- الهدف: فهم هيكل الصفحة والمعايير الأساسية
+- مفهوم Debunking the myth that expensive IDEs are required for beginners
+- مفهوم Introduction to simple text editors as the best learning tool
+- مفهوم Overview of the lesson: Setup, Write, Save, View
 
-## ليه بنستخدم Text Editor بسيط؟
+## شرح Simple Tools for Learning
 
-فلسفة التعلم باستخدام أدوات بسيطة
+شرح وتوضيح Why simple editors help focus on the code structure.
 
-- التركيز على كتابة الـ Tags يدويا
-- تجنب الاعتماد على الـ Auto-complete
-- فهم الـ Syntax وهيكل الـ HTML بشكل أعمق
+- مفهوم Notepad for PC users
+- مفهوم TextEdit for Mac users
+- مفهوم Why simple editors help focus on the code structure
 
-## فتح Notepad على Windows
+## شرح Setting up Notepad (PC)
 
-خطوات فتح Notepad على Windows
+شرح وتوضيح Opening Notepad via Start Screen or Accessories.
 
-## إعداد TextEdit على Mac
+## شرح Setting up TextEdit (Mac)
 
-ضبط إعدادات TextEdit للعمل مع HTML
+شرح وتوضيح Configuring TextEdit for HTML development.
 
-- افتح Finder > Applications > TextEdit
-- اضبط Preferences > Format > Plain Text
-- فعل خيار Display HTML files as HTML code
+- مفهوم Accessing TextEdit via Finder
+- مفهوم Configuring Preferences to Plain Text
+- مفهوم Enabling Display HTML files as HTML code
 
-## كتابة أول HTML code
+## شرح Writing Your First HTML
 
-كتابة الكود الأساسي في الـ Text Editor
+كتابة هيكل الـ HTML الأساسي
 
 ```html
 <!DOCTYPE html>
@@ -47,19 +47,28 @@
 </html>
 ```
 
-## حفظ الملف بامتداد .html
+## شرح Saving the HTML File
 
 حفظ الملف بامتداد .html
 
-## معاينة الصفحة في الـ Browser
+## شرح Viewing in Browser
 
-عرض النتيجة في الـ Web Browser
+معاينة النتيجة في المتصفح
 
-## خاتمة والدرس القادم
+## شرح W3Schools Online Editor
 
-ملخص الدرس والتمهيد للدرس القادم
+استخدام الـ Online Editor للتجربة السريعة
 
-- استخدام الـ Text Editors البسيطة لتعلم HTML
+- تجربة الكود فورا بدون إعدادات
+- ميزة الـ Color Coding لتنظيم الكود
+- إمكانية حفظ ومشاركة الكود بسهولة
+- أداة مثالية للاختبار السريع
+
+## شرح Summary and Next Steps
+
+ملخص خطوات العمل: 1. استخدام Text Editor بسيط. 2. كتابة وحفظ ملف HTML. 3. معاينة الملف في الـ Browser. 4. الاستعداد للدرس القادم: HTML Basic.
+
+- استخدام Text Editor بسيط للتعلم
 - كتابة وحفظ ملفات HTML بامتداد .html
-- تشغيل ومعاينة الصفحة في الـ Web Browser
-- الاستعداد للدرس رقم 4: HTML Basic
+- معاينة النتائج مباشرة في الـ Browser
+- الاستعداد للدرس القادم: HTML Basic
