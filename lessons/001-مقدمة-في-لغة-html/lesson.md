@@ -1,22 +1,22 @@
-# HTML Introduction and Core Structure
+# Introduction to HTML Structure
 
 المصدر: https://www.w3schools.com/html/default.asp
 
-## شرح Introduction to HTML
+## شرح Welcome to Web Development
 
-شرح وتوضيح HTML stands for HyperText Markup Language and forms the foundation of all Web pages.
+مقدمة في الـ HTML كلغة هيكلة أساسية للويب
 
-- مفهوم HTML stands for HyperText Markup Language
-- مفهوم It is the foundation of all Web pages
-- مفهوم Allows creating personal Websites easily
+- HTML هي الـ Standard Markup Language لصفحات الويب
+- تستخدم لبناء وهيكلة الـ Website الخاص بك
+- لغة سهلة التعلم وممتعة للمبتدئين
 
-## شرح DOM Tree Structure
+## شرح The HTML Document Tree
 
-شرح وتوضيح Visualizing document hierarchy with <html> root, <head> for metadata, and <body> for visible content.
+هيكل الـ DOM Tree وتوزيع العناصر
 
-## شرح Basic HTML Code
+## شرح Basic HTML Structure
 
-شرح وتوضيح Writing the first HTML document with DOCTYPE, html, head, and body structure.
+هيكل ملف الـ HTML الأساسي
 
 ```html
 <!DOCTYPE html>
@@ -32,84 +32,85 @@
 </html>
 ```
 
-## شرح Elements and Attributes Analysis
+## شرح HTML Elements Overview
 
-شرح وتوضيح Comparing structural components between Elements and Attributes in HTML.
+جدول مقارنة بين الـ HTML Elements الأساسية
 
-## شرح Advanced Document Metadata
+## شرح Advanced Element Usage
 
-شرح وتوضيح Adding charset meta Tag and configuring title Tag for proper rendering.
+فهم الـ Nesting والترتيب الصحيح للـ Tags داخل الـ HTML.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Advanced Page</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>Styled Web Page</p>
+    <div>
+      <h1>Main Title</h1>
+      <p>Paragraph text here.</p>
+    </div>
   </body>
 </html>
 ```
 
-## شرح Under the Hood: Browser Rendering
+## شرح How Browsers Render HTML
 
-شرح وتوضيح Browser parsing pipeline from byte stream to DOM Tree construction.
+عملية الـ Parsing وتحويل الـ HTML إلى DOM Tree.
 
-## شرح Performance and Parsing Speed
+## شرح Learning Progress Metrics
 
-شرح وتوضيح Performance comparison chart showing rendering times based on code structure.
+أهمية التمارين والاختبارات في قياس مستوى التعلم.
 
-## شرح Accessibility and a11y Best Practices
+## شرح Accessibility and Standards
 
-شرح وتوضيح Best practices for Web accessibility and semantic standards compliance.
+أفضل الممارسات البرمجية والالتزام بمعايير الـ W3C.
 
-- مفهوم Use semantic Tags correctly
-- مفهوم Support Aria attributes
-- مفهوم Ensure Web standards compliance
-- مفهوم Optimize for screen readers
+- مفهوم Use semantic Tags for better accessibility
+- مفهوم Ensure proper nesting for screen readers
+- مفهوم Follow W3C standards for compatibility
+- مفهوم Maintain clean and readable code structure
 
-## شرح Production Gotchas
+## شرح Common Pitfalls
 
-تعرف على الأخطاء الشائعة في HTML وكيفية تجنبها مثل نسيان إغلاق الـ Tags أو الـ DOCTYPE.
+تجنب الاخطاء الشائعة في كتابة HTML مثل نسيان قفل الـ Tags او التداخل الخاطئ للعناصر.
 
-- مفهوم Unclosed Tags and syntax errors
-- مفهوم Missing DOCTYPE declaration
-- مفهوم Incorrect nesting of Elements
+- مفهوم Forgetting to close Tags causes layout issues
+- مفهوم Incorrect nesting of elements breaks the DOM tree
+- مفهوم Missing DOCTYPE html triggers Quirks Mode
+- مفهوم Always validate your HTML structure
+- مفهوم Use proper indentation for readability
 
-## شرح Complete Project Code
+## شرح Full Project Example
 
-استعراض مشروع كامل يجمع بين هيكل HTML وتنسيقات CSS الداخلية.
+مثال كامل يوضح هيكل صفحة HTML مع تنسيق CSS بسيط داخل Tag style.
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Complete Project</title>
     <style>
       body {
-        font-family: sans-serif; margin: 20px;
-      }
-      h1 {
-        color: #333;
+        font-family: sans-serif;
       }
     </style>
+    <title>My Website</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>This is a complete project example.</p>
+    <h1>Welcome</h1>
+    <p>This is my first page.</p>
   </body>
 </html>
 ```
 
-## شرح Conclusion and Challenge
+## شرح Summary and Next Steps
 
-خلاصة الدرس والخطوات القادمة لتعلم CSS وJavaScript مع تحدي عملي.
+ملخص الدرس والخطوات القادمة للتدريب على HTML.
 
-- مفهوم Review of core HTML concepts
-- مفهوم Roadmap to CSS and JavaScript
-- مفهوم Challenge: build your own Website
+- مفهوم HTML is the foundation of the web
+- مفهوم Practice with W3Schools HTML Exercises
+- مفهوم Build your own custom webpage today
+- مفهوم Refer to HTML documentation for more details
+- مفهوم Keep coding to master the structure
