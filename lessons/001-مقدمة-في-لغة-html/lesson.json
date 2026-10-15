@@ -6,14 +6,47 @@
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "فهم ماهية لغة HTML ودورها في الويب",
-    "التعرف على الهيكل الأساسي لأي صفحة HTML",
-    "فهم كيفية عمل المتصفح في عرض الـ Tags"
+    "فهم ماهية لغة HTML ودورها الأساسي في بناء صفحات الويب",
+    "التعرف على الهيكل الأساسي لصفحة HTML",
+    "استخدام بيئة التطوير التجريبية Try it Yourself",
+    "التعرف على مصادر التعلم والتمارين المتاحة في الكورس"
   ],
   "sources": [
     "https://www.w3schools.com/html/default.asp"
   ],
   "assets": [
+    {
+      "id": "source_img_screen-map",
+      "path": "assets/source_screen-map.png",
+      "kind": "image",
+      "license": "Source tutorial illustration for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/default.asp",
+      "source_url": "https://www.w3schools.com/adventure/img/screen-map.png"
+    },
+    {
+      "id": "source_img_mascot-lynx",
+      "path": "assets/source_mascot-lynx.png",
+      "kind": "image",
+      "license": "Source tutorial illustration for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/default.asp",
+      "source_url": "https://www.w3schools.com/adventure/img/mascot-lynx.png"
+    },
+    {
+      "id": "source_img_check3_db67d31e",
+      "path": "assets/source_check3_db67d31e.svg",
+      "kind": "image",
+      "license": "Source tutorial illustration for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/default.asp",
+      "source_url": "https://www.w3schools.com/spaces/files/check3.db67d31e.svg"
+    },
+    {
+      "id": "source_img_cert_html",
+      "path": "assets/source_cert_html.jpg",
+      "kind": "image",
+      "license": "Source tutorial illustration for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/default.asp",
+      "source_url": "https://www.w3schools.com/html/img_cert_html.jpg"
+    },
     {
       "id": "html_example_1",
       "path": "assets/html-ee343008910d6e78.png",
@@ -25,37 +58,36 @@
   ],
   "scenes": [
     {
-      "id": "1",
-      "title": "خرافة المتصفح والكود",
+      "id": "scene_1",
+      "title": "قوة الـ HTML في بناء الويب",
       "narration": {
-        "spoken_text": "كتير من المطورين فاكرين إن مجرد ما المتصفح يفتح صفحتك، كودك كده سليم 100! لكن الحقيقة إن المتصفح محتاج يفهم نوع الصفحة وترتيبها عشان يعرض نتيجتك صح وما يحصلش أي تشويه في العرض. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنتعلم الأساس الحقيقي اللي هيخلي شغلك احترافي ومعياري، وهنبدأ نفك شفرة الأساس ده خطوة بخطوة عشان كودك يشتغل صح من أول مرة.",
-        "caption_text": "هل كودك سليم 100؟ المتصفح يحتاج لهيكل صحيح ليعرض المحتوى بشكل احترافي."
+        "spoken_text": "شايف النتيجة دي؟ صفحة ويب كاملة، عنوان وفقرة، كل ده بكود بسيط جداً. الموضوع مش مجرد حفظ، ده فهم حقيقي لبناء الويب زي قطع الليجو المتماسكة. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفتح المحرر ونبدأ من الصفر ونشوف إزاي هنبني كل ده خطوة بخطوة.",
+        "caption_text": "بناء هيكل صفحة ويب بسيطة باستخدام HTML"
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "المتصفح يحتاج لهيكل معياري ليعرض الصفحة بشكل صحيح",
-          "فهم ترتيب الـ Tags يمنع تشويه العرض",
-          "كتابة كود احترافي تبدأ من الأساسيات"
-        ]
+        "type": "image",
+        "asset_id": "html_example_1",
+        "alt": "مثال لصفحة HTML بسيطة تحتوي على عنوان وفقرة"
       },
       "source_refs": [
         "https://www.w3schools.com/html/default.asp"
       ]
     },
     {
-      "id": "2",
-      "title": "ما هي لغة HTML؟",
+      "id": "scene_2",
+      "title": "ما هي لغة الـ HTML؟",
       "narration": {
-        "spoken_text": "HTML هي اختصار لـ HyperText Markup Language، وهي اللغة الأساسية اللي بتبني بيها أي صفحة ويب. من غير HTML المتصفح مش هيعرف يعرض أي محتوى، هي اللي بتعرفه إيه العنوان، إيه الفقرة، وإيه الصور اللي المفروض تظهر. تخيلها زي الهيكل العظمي للموقع، من غيره مفيش أي حاجة هتقدر تترتب أو تظهر قدام المستخدم بشكل مفهوم. دي أول خطوة في طريقك عشان تكون مطور ويب محترف.",
-        "caption_text": "HTML هي اللغة الأساسية لبناء صفحات الويب."
+        "spoken_text": "الـ HTML اختصار لـ HyperText Markup Language، وهي اللغة الأساسية اللي بتبني هيكل أي صفحة ويب بتشوفها. تخيلها زي الهيكل العظمي للموقع، بتحدد فين العنوان، وفين الفقرة، وفين الصورة. هي مش لغة برمجة بالمعنى التقليدي، لكنها لغة توصيف بتعرف الـ Browser إزاي يعرض المحتوى بتاعك.",
+        "caption_text": "تعريف الـ HTML ودورها في الويب"
       },
       "visual": {
         "type": "bullets",
         "items": [
           "HTML تعني HyperText Markup Language",
-          "اللغة الأساسية لبناء هيكل صفحات الويب",
-          "بدون HTML لا يمكن للمتصفح عرض المحتوى"
+          "اللغة القياسية لهيكلة صفحات الويب",
+          "تستخدم الـ Tags لتحديد العناصر",
+          "ليست لغة برمجة بل لغة توصيف",
+          "تحدد أماكن العناوين والفقرات والصور"
         ]
       },
       "source_refs": [
@@ -63,11 +95,27 @@
       ]
     },
     {
-      "id": "3",
-      "title": "الهيكل الأساسي لصفحة HTML",
+      "id": "scene_3",
+      "title": "التعلم بالتطبيق العملي",
       "narration": {
-        "spoken_text": "بص معايا على الكود ده، ده الهيكل الأساسي لأي صفحة. أول سطر <!DOCTYPE html> بيعرف المتصفح إحنا بنستخدم أي إصدار. بعد كده الـ html tag هو الحاوية الرئيسية لكل محتوى الصفحة. جوه الـ head بنحط بيانات الصفحة زي الـ title، وجوه الـ body بنحط المحتوى المرئي اللي المستخدم بيشوفه فعلاً زي الـ h1 والـ p. جرب تكتب الكود ده بنفسك وشوف النتيجة.",
-        "caption_text": "الهيكل الأساسي لصفحة HTML."
+        "spoken_text": "عشان تتعلم صح، لازم تطبق بإيدك. في الكورس ده هنستخدم ميزة Try it Yourself، اللي بتخليك تعدل الكود وتشوف النتيجة فوراً في الـ Browser. ده أسرع طريق عشان تفهم كل Tag بيعمل إيه وتجرب بنفسك وتشوف التأثير لحظة بلحظة. يلا بينا نبدأ الرحلة.",
+        "caption_text": "استخدام ميزة Try it Yourself للتعلم التفاعلي"
+      },
+      "visual": {
+        "type": "image",
+        "asset_id": "source_img_screen-map",
+        "alt": "خريطة التعلم التفاعلي في W3Schools"
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/default.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "تشريح كود الـ HTML",
+      "narration": {
+        "spoken_text": "بص بقى يا سيدي، عشان تفهم الـ HTML بيشتغل إزاي، لازم نبص على الهيكل الأساسي لأي صفحة ويب. الكود اللي قدامك ده هو الـ Template اللي بيبدأ بيه أي موقع. أول حاجة عندنا الـ <!DOCTYPE html> وده بيعرف الـ Browser إننا بنستخدم أحدث إصدار من الـ HTML. بعد كده عندنا الـ <html> Tag اللي بيحتوي كل حاجة، والـ <head> اللي بنحط فيه الـ Metadata زي الـ <title>، وأخيراً الـ <body> اللي بيظهر فيه المحتوى اللي المستخدم بيشوفه فعلاً زي الـ <h1> للعنوان والـ <p> للفقرات.",
+        "caption_text": "شرح الهيكل الأساسي لصفحة HTML"
       },
       "visual": {
         "type": "code",
@@ -75,8 +123,7 @@
         "filename": "index.html",
         "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a Heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
         "highlight_lines": [
-          8,
-          9
+          8
         ],
         "output": "This is a Heading\nThis is a paragraph.",
         "output_status": "illustrative",
@@ -90,45 +137,19 @@
       ]
     },
     {
-      "id": "4",
-      "title": "كيف يرى المتصفح الكود؟",
+      "id": "scene_5",
+      "title": "منظومة التعلم المتكاملة",
       "narration": {
-        "spoken_text": "بص يا سيدي، المتصفح ده زي المترجم الشاطر، بياخد الكود اللي إنت كتبته ده ويحوله لشكل مرئي قدامك. الـ h1 بيتحول لعنوان كبير، والـ p بيتحول لفقرة نصية. دي الطريقة اللي المتصفح بيفهم بيها الهيكل بتاعك، بيقرأ الـ Tags سطر سطر وبيرسم الصفحة على الشاشة. من غير الـ Tags دي، المتصفح مش هيعرف يفرق بين العنوان والفقرة، فخلي بالك دايماً إنك تكتب الكود بتاعك بشكل منظم عشان المتصفح يفهمك صح.",
-        "caption_text": "المتصفح يترجم الـ HTML Tags إلى عناصر مرئية على الشاشة."
+        "spoken_text": "التعلم مش بس قراءة، التعلم ممارسة. عشان كده الكورس ده بيوفرلك منظومة متكاملة. عندك مراجع كاملة لكل الـ Elements والـ Attributes اللي ممكن تحتاجها. وبعد كل درس، هتلاقي تمارين عملية عشان تختبر فهمك، ولو حابب تتحدى نفسك، الـ Quiz موجود عشان يقيس مستواك. والأهم إنك تقدر تتابع تقدمك خطوة بخطوة، ولو حابب تحفظ مسارك، تقدر تعمل حساب وتتابع الـ Progress بتاعك في أي وقت.",
+        "caption_text": "استكشاف موارد التعلم والتمارين"
       },
       "visual": {
-        "type": "diagram",
-        "nodes": [
-          {
-            "id": "code",
-            "label": "HTML Code (h1, p)",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "browser",
-            "label": "Web Browser Engine",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "render",
-            "label": "Rendered Page",
-            "active": false,
-            "icon": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "code",
-            "target": "browser",
-            "label": "Parsing"
-          },
-          {
-            "source": "browser",
-            "target": "render",
-            "label": "Display"
-          }
+        "type": "bullets",
+        "items": [
+          "مراجع شاملة للـ Elements والـ Attributes",
+          "تمارين عملية بعد كل فصل دراسي",
+          "اختبارات الـ Quiz لقياس مستوى المهارة",
+          "نظام تتبع التقدم الشخصي"
         ]
       },
       "source_refs": [
@@ -136,41 +157,35 @@
       ]
     },
     {
-      "id": "5",
-      "title": "خارطة طريق التعلم",
+      "id": "scene_6",
+      "title": "الشهادة والمسار المهني",
       "narration": {
-        "spoken_text": "عشان تتعلم صح، لازم تطبق بإيدك، مش بس تتفرج. إحنا هنمشي في الكورس ده بنظام الأمثلة والتمارين، وهنستخدم الـ Quiz عشان نختبر مستواك ونثبت المعلومة. مفيش حاجة بتيجي من غير ممارسة، فكل درس هتخلصه، لازم تجرب الكود بنفسك وتعدل فيه. ده اللي هيخليك مطور شاطر، مش مجرد حافظ للكود. جاهز نبدأ الرحلة دي؟",
-        "caption_text": "منهجية التعلم: تطبيق عملي، أمثلة، وتمارين."
+        "spoken_text": "في نهاية رحلتك التعليمية، مش بس هتكون اتعلمت، لأ، ده إنت كمان تقدر تحصل على شهادة معتمدة تثبت مهاراتك. الشهادة دي إضافة قوية جداً للـ CV بتاعك، وممكن تضيفها لبروفايل الـ LinkedIn عشان تفتح لنفسك أبواب فرص شغل جديدة. استثمر وقتك صح، اتعلم، طبق، وخد الشهادة اللي تثبت إنك بقيت مطور ويب محترف وجاهز لسوق العمل.",
+        "caption_text": "الحصول على شهادة W3Schools المعتمدة"
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "التطبيق العملي هو سر الاحتراف",
-          "استخدام الـ Try it Yourself editor",
-          "حل الـ Exercises بعد كل درس",
-          "اختبار مستواك عبر الـ HTML Quiz",
-          "الممارسة المستمرة تثبت المعلومة"
-        ]
+        "type": "image",
+        "asset_id": "source_img_cert_html",
+        "alt": "W3Schools HTML Certificate"
       },
       "source_refs": [
         "https://www.w3schools.com/html/default.asp"
       ]
     },
     {
-      "id": "6",
-      "title": "خاتمة الدرس",
+      "id": "scene_7",
+      "title": "خاتمة وتمهيد للدرس القادم",
       "narration": {
-        "spoken_text": "كده إحنا حطينا حجر الأساس وفهمنا يعني إيه HTML وإزاي المتصفح بيشوف الكود بتاعنا. في الدرس الجاي، هنبدأ ندخل في تفاصيل الـ HTML Introduction ونكتب أول صفحة لينا بشكل كامل. استعدوا، جهزوا المحرر بتاعكم، ويلا بينا نكسر حاجز الخوف ونكتب أول كود حقيقي. أشوفكم الدرس الجاي!",
-        "caption_text": "ملخص الدرس والتمهيد للدرس القادم."
+        "spoken_text": "كده نكون خلصنا أول درس لينا في رحلة الـ HTML. النهاردة عرفنا يعني إيه HTML، وإزاي هي أساس بناء أي صفحة ويب، وشوفنا إزاي نقدر نطبق عملي من خلال الـ Try it Yourself editor. مش بس كده، عرفنا كمان إن فيه تمارين ومصادر كتير تقدر تستفيد منها عشان تطور مهاراتك. دلوقتي جه دورك، افتح الـ Editor وجرب تكتب أول كود ليك. في الدرس الجاي، هنبدأ رحلتنا الفعلية مع الـ HTML Introduction، فاستعدوا!",
+        "caption_text": "خاتمة الدرس الأول: رحلة الـ HTML بدأت!"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "تم فهم دور الـ HTML",
-          "التعرف على الهيكل الأساسي للصفحة",
-          "فهم كيفية عمل المتصفح",
-          "الاستعداد للدرس القادم: HTML Introduction",
-          "تجهيز بيئة العمل للكتابة"
+          "مراجعة سريعة: دور الـ HTML في الويب",
+          "التطبيق العملي باستخدام الـ Try it Yourself editor",
+          "استكشاف التمارين والمصادر التعليمية",
+          "الدرس القادم: HTML Introduction"
         ]
       },
       "source_refs": [
