@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "lesson_id": "1",
-  "title": "HTML Introduction and Core Structure",
+  "title": "Introduction to HTML Structure",
   "course": "HTML",
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "Understand HTML as the standard markup language for Web pages",
-    "Analyze the DOM tree structure and document hierarchy",
-    "Write a basic and complete HTML document with correct syntax",
-    "Identify core HTML elements and attributes"
+    "Understand the role of HTML as a markup language",
+    "Learn the basic structure of an HTML document",
+    "Identify key Tags like html, head, and body",
+    "Understand how browsers interpret HTML code"
   ],
   "sources": [
     "https://www.w3schools.com/html/default.asp"
@@ -26,18 +26,18 @@
   ],
   "scenes": [
     {
-      "id": "scene_1",
-      "title": "شرح Introduction to HTML",
+      "id": "1",
+      "title": "شرح Welcome to Web Development",
       "narration": {
-        "spoken_text": "أهلاً بيكم يا شباب في الدرس الأول من كورس HTML الأساسي. النهاردة هنبدأ مع بعض برحلة ممتعة عشان نِئْدَر نفهم إيه هو HTML وليه هو الأساس لعمل أي صفحة Web في الدنيا. كمهندس برمجيات، لازم تِئْرَف إن HTML اختصار ل HyperText Markup Language، ودي لغة السطور الأساسية اللي بتوصف هيكل صفحتك للمتصفح. من غير HTML مش هيكون فيه أي محتوى مكتوب أو منظم على الإنترنت، وعشان كده دي أول خطوة حقيقية ليك في عالم ال Web Development.",
-        "caption_text": "شرح وتوضيح HTML stands for HyperText Markup Language and forms the foundation of all Web pages."
+        "spoken_text": "أَهْلاً بيكم يا شباب في رِحْلَتْ تَعَلُم ال Web Development. النهاردة هَنِبْدَأ مع بعض بأهم لغة في عالم الويب وهي ال HTML. ال HTML هي اختصار ل HyperText Markup Language, وهي ال Standard Markup Language اللي بِتُستَخدَم عَشَان نِبْنِي ونرتب هَيْكَل أي صَفْحِت ويب بنشوفها على ال Internet. من غير ال HTML مفيش أي Content هيظهر قدامك في ال Web Browser. هِيَّ لُغَه سْهْلة جداً وممتعة في التعلم, ومن خلالها تئدر تِبْنِي ال Website الخاص بيك وتتحكِم في ترتيب العناصر اللي بيشوفها المستخدم. يلا بينا نبدأ وِنِشُوف إزاي الكود ده بيشتغل.",
+        "caption_text": "مقدمة في الـ HTML كلغة هيكلة أساسية للويب"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم HTML stands for HyperText Markup Language",
-          "مفهوم It is the foundation of all Web pages",
-          "مفهوم Allows creating personal Websites easily"
+          "HTML هي الـ Standard Markup Language لصفحات الويب",
+          "تستخدم لبناء وهيكلة الـ Website الخاص بك",
+          "لغة سهلة التعلم وممتعة للمبتدئين"
         ]
       },
       "source_refs": [
@@ -45,44 +45,77 @@
       ]
     },
     {
-      "id": "scene_2",
-      "title": "شرح DOM Tree Structure",
+      "id": "2",
+      "title": "شرح The HTML Document Tree",
       "narration": {
-        "spoken_text": "بص معايا كده على الشاشة عشان نفهم كواليس المحرك والذاكرة وَئْت ما Web Browser بيفتح أي صفحة. المتصفح بيئرا ملف ال HTML وحجمه وشكله، وبيحوله لشجرة عناصر بتتلخص في ال DOM Tree. الشجرة دي بتبدأ بجذر أساسي اسمه <html>، وجوه الجذر ده بيكون فيه عنصرين رئيسيين جداً هما <head> اللي بيشيل ال metadata والتفاصيل المخفية، و<body> اللي بيظهر جواه كل المحتوى المرئي للمستخدم زي النصوص والصور والأزرار.",
-        "caption_text": "شرح وتوضيح Visualizing document hierarchy with <html> root, <head> for metadata, and <body> for visible content."
+        "spoken_text": " بص معايا كِدهْ على ال Tree Structure دي. أي صفحت HTML بتبدأ ب Root Element وهو ال html Tag، وده اللي بيحتوي على كل حاجة جوه الصفحة. جواه بنلاقي اتنين Tags أساسيين: ال head وال body. ال head ده المكان اللي بنحُطْ فيه ال Metadata وال title بتاع الصفحة، ودي حاجات مش بتظهر مباشرةَ للمستخدم. أما ال body فهو اللي بيحتوي على كل ال Content اللي بيشوفه المستخدم فعلياً، زَيّ ال h1 وال p. فهمك للهيكل ده بيخليك تسيطر على ترتيب عناصر صفحتك بشكل احترافي.",
+        "caption_text": "هيكل الـ DOM Tree وتوزيع العناصر"
       },
       "visual": {
         "type": "diagram",
         "nodes": [
           {
-            "id": "root",
-            "label": "<html> Root",
-            "active": true,
+            "id": "html",
+            "label": "html",
+            "active": false,
             "icon": null
           },
           {
             "id": "head",
-            "label": "<head> Metadata",
+            "label": "head",
             "active": false,
             "icon": null
           },
           {
             "id": "body",
-            "label": "<body> Content",
+            "label": "body",
+            "active": false,
+            "icon": null
+          },
+          {
+            "id": "title",
+            "label": "title",
+            "active": false,
+            "icon": null
+          },
+          {
+            "id": "h1",
+            "label": "h1",
+            "active": false,
+            "icon": null
+          },
+          {
+            "id": "p",
+            "label": "p",
             "active": false,
             "icon": null
           }
         ],
         "edges": [
           {
-            "source": "root",
+            "source": "html",
             "target": "head",
-            "label": "contains"
+            "label": ""
           },
           {
-            "source": "root",
+            "source": "html",
             "target": "body",
-            "label": "contains"
+            "label": ""
+          },
+          {
+            "source": "head",
+            "target": "title",
+            "label": ""
+          },
+          {
+            "source": "body",
+            "target": "h1",
+            "label": ""
+          },
+          {
+            "source": "body",
+            "target": "p",
+            "label": ""
           }
         ]
       },
@@ -91,11 +124,11 @@
       ]
     },
     {
-      "id": "scene_3",
-      "title": "شرح Basic HTML Code",
+      "id": "3",
+      "title": "شرح Basic HTML Structure",
       "narration": {
-        "spoken_text": "دلوقتي جه ال وَئْت عشان نكتب أول كود HTML كامل قدامك على الشاشة ونشوف تركيبه خطوة بخطوة. أول حاجة بنكتبها هي إعلان ال <!DOCTYPE html> عشان نعرف المتصفح إننا بنشتغل بأحدث إصدار. بعد كده بنفتح Tag <html>، وجواه بنحط ال h1 وال p داخل ال <body> عشان نطلع أول Heading وبراجراف بشكل منظم وصحيح.",
-        "caption_text": "شرح وتوضيح Writing the first HTML document with DOCTYPE, html, head, and body structure."
+        "spoken_text": "دلوقتي جه وقت الكود. زي ما إنت شايف، أي ملف HTML بيبدأ ب DOCTYPE html عشان نعَرّفْ ال Web Browser إننا بنستخدم أحدث إصدار من ال HTML. بعد كده بنفتح ال html Tag، وجُوَاه بِنْقَسّمْ الصفحة لل head وال body. ال head فيه ال title اللي بيظهر في ال Tab بتاع ال Browser. وال body فيه ال h1 اللي بيمثل العنوان الرئيسي، وال p اللي بيمثل ال paragraph. جَرَبتْ تكتب الكود ده بنفسك ؟!\n ده الأساس اللي هتبني عليه أي مشروع ويب في المُستقبل.",
+        "caption_text": "هيكل ملف الـ HTML الأساسي"
       },
       "visual": {
         "type": "code",
@@ -118,29 +151,38 @@
       ]
     },
     {
-      "id": "scene_4",
-      "title": "شرح Elements and Attributes Analysis",
+      "id": "4",
+      "title": "شرح HTML Elements Overview",
       "narration": {
-        "spoken_text": "عشان نربط الكلام ببعضه، لازم نعرف الفرق الجوهري بين ال Elements وال Attributes في كود ال HTML. ال Element بيمثل العنصر الأساسي زي ال Tag الخاص بالعنوان أو الفقرة، بينما ال Attribute بيتحط جوه Tag البداية عشان يديه خصائص إضافية زي ال id أو ال class أو ال href في ال Links. فهم ال نُئْطَة دي بيخليك تسيطر تماماً على طَرِيئَة عرض العناصر وتنسيقها لاحقاً.",
-        "caption_text": "شرح وتوضيح Comparing structural components between Elements and Attributes in HTML."
+        "spoken_text": "عشان تفَهْرَس المعلومات في دماغك، خلينا نِقارن بين ال Elements اللي استخدمناها. ال html هو ال Root اللي بيضم كل حاجة. ال head وظيفته تخزين ال Metadata اللي ال Browser بيحتاجها عشان يفهم الصفحة، لكن مش بيِعْرِضْها للمستخدم. ال body هو المكان اللي بنحُطْ فيه ال Content المرئي. ال h1 بيُستَخدَم للعناوين الكبيرة عشان يِلْفِت نظر المستخدم، وال p بيُستَخدَم للنصوص العادية. كل Tag من دول له دور محدد بيِسَهِّل على ال Browser إنه يعرض الصفحة بشكل سليم ومنظم.",
+        "caption_text": "جدول مقارنة بين الـ HTML Elements الأساسية"
       },
       "visual": {
         "type": "table",
         "columns": [
-          "Component",
-          "Description",
-          "Example"
+          "Element",
+          "Description"
         ],
         "rows": [
           [
-            "Element",
-            "The base markup unit from start to end Tag",
-            "<h1>Heading</h1>"
+            "html",
+            "Root of the document"
           ],
           [
-            "Attribute",
-            "Provides additional info inside the start Tag",
-            "class=\"main-title\""
+            "head",
+            "Contains non-visible metadata"
+          ],
+          [
+            "body",
+            "Contains visible content"
+          ],
+          [
+            "h1",
+            "Main heading"
+          ],
+          [
+            "p",
+            "Paragraph text"
           ]
         ]
       },
@@ -149,23 +191,22 @@
       ]
     },
     {
-      "id": "scene_5",
-      "title": "شرح Advanced Document Metadata",
+      "id": "5",
+      "title": "شرح Advanced Element Usage",
       "narration": {
-        "spoken_text": "تعالوا دلوقتي يا شباب نتكلم عن أجزاء مهمة جُوَّه ال head زي ال meta Tag وكمان ال title Tag. ال meta Tag اللي بِتِحْمِل ال charset زي UTF-8 بِتِضْمَن إن الحروف العربية والإنجليزية تِظْهَر في كل ال Web Browsers بدون أي مشاكل في ال Encoding. وال title Tag بِيِفَرْمَت العنوان اللي بِيِظْهَر فوق في ال Browser Tab. لو نسيت الحاجات دي، ال Web Browser هيعاني في قراءة الصفحة وصحتها هتقل.",
-        "caption_text": "شرح وتوضيح Adding charset meta Tag and configuring title Tag for proper rendering."
+        "spoken_text": "دلوقتي يا شباب لازم نركز في نؤطة مهمة جداً وهي ال Nesting. ال HTML عبارة عن شَجَرة، وكُل Tag لازم يِتئِفْلْ في مكانه الصح. لو فتحت Tag زي ال div، لازم تِئفِلُه بعد ما تْخَلّص المحتوى اللي جواه. لو نسيت ال End Tag، المتصفح ممكن يتلخبط في ترتيب ال Elements، وده بيأثَر على شكل الصفحة. بص معايا في الكود ده، ال h1 وال p موجودين جوه ال div، وده بيخلي الكود منظم وسهل لأي حد يئراهْ بعدك، وكمان بيسهل على ال Web Browser إنه يفهم الهيكل بتاع صفحِتك بشكل سليم.",
+        "caption_text": "فهم الـ Nesting والترتيب الصحيح للـ Tags داخل الـ HTML."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Advanced Page</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>Styled Web Page</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div>\n      <h1>Main Title</h1>\n      <p>Paragraph text here.</p>\n    </div>\n  </body>\n</html>",
         "highlight_lines": [
-          6,
-          9,
+          7,
           10
         ],
-        "output": "Page renders with UTF-8 character encoding and correct tab title.",
+        "output": "Main Title\nParagraph text here.",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -177,39 +218,39 @@
       ]
     },
     {
-      "id": "scene_6",
-      "title": "شرح Under the Hood: Browser Rendering",
+      "id": "6",
+      "title": "شرح How Browsers Render HTML",
       "narration": {
-        "spoken_text": "لما ال Web Browser بيئرا ملف ال HTML، بيمر في كواليس تقنية دقيقة جداً. في الأول، ال bytes بتتحول ل characters، وبعدين ل Tokens، وبعدها ل Nodes، ولما ال Nodes دي بتتربط ببعضها بتعملنا ال DOM Tree. المحرك بتاع ال Web Browser لازم يعمل الخطوات دي بالترتيب عشان يفهم ال Elements ويدير ال memory بكفاءة عالية جداً وبدون أخطاء في العرض.",
-        "caption_text": "شرح وتوضيح Browser parsing pipeline from byte stream to DOM Tree construction."
+        "spoken_text": "عشان تفهم إزاي المتصفِح بيعرض صفحتك، لازم تعرف إن ال Web Browser بيستلم ملف ال HTML, ويبدأ يحَللُه سطر بسَطر. العملية دي بنسميها Parsing. المتصفِح بيبني حاجة اسمها DOM Tree، وهي عبارة عن شجرة بتمثل كل ال Elements اللي كتبتها. بعد ما الشجرة دي بتتبِني، المتصفِح بيبدأ يرسم العناصر دي على الشاشة قدام المستخدم. لو في أي خطأ في ال Tags، المتصفِح بيحاول يصلحه بنفسه، بس الأفضل دايماً إنك تكتب كود نظيف ومطابق للمعايير عشان تضمن إن صفحتك تظهر بنفس الشكل على كل المتصفحات.",
+        "caption_text": "عملية الـ Parsing وتحويل الـ HTML إلى DOM Tree."
       },
       "visual": {
         "type": "flowchart",
         "nodes": [
           {
-            "id": "node_bytes",
-            "label": "Byte Stream",
+            "id": "1",
+            "label": "HTML File",
             "kind": "start",
             "icon": null,
             "active": false
           },
           {
-            "id": "node_tokens",
-            "label": "Tokenization",
+            "id": "2",
+            "label": "Browser Parser",
             "kind": "process",
             "icon": null,
             "active": false
           },
           {
-            "id": "node_nodes",
-            "label": "Node Creation",
+            "id": "3",
+            "label": "DOM Tree",
             "kind": "process",
             "icon": null,
-            "active": true
+            "active": false
           },
           {
-            "id": "node_dom",
-            "label": "DOM Tree",
+            "id": "4",
+            "label": "Rendered Page",
             "kind": "end",
             "icon": null,
             "active": false
@@ -217,21 +258,21 @@
         ],
         "edges": [
           {
-            "source": "node_bytes",
-            "target": "node_tokens",
-            "label": "Read",
+            "source": "1",
+            "target": "2",
+            "label": "",
             "direction": null
           },
           {
-            "source": "node_tokens",
-            "target": "node_nodes",
-            "label": "Parse",
+            "source": "2",
+            "target": "3",
+            "label": "",
             "direction": null
           },
           {
-            "source": "node_nodes",
-            "target": "node_dom",
-            "label": "Construct",
+            "source": "3",
+            "target": "4",
+            "label": "",
             "direction": null
           }
         ]
@@ -241,23 +282,31 @@
       ]
     },
     {
-      "id": "scene_7",
-      "title": "شرح Performance and Parsing Speed",
+      "id": "7",
+      "title": "شرح Learning Progress Metrics",
       "narration": {
-        "spoken_text": "كتابة كود HTML نضيف ومترتب صح مش بس بيخلي شكله حلو، ده بياثر جامد على ال Performance وسرعة ال loading. لما ال Web Browser بيقابل Tags مش مقفولة أو هيكل معقد، ده بيعمل bottlenecks في ال parsing ويبطئ استجابة الصفحة. البيانات اللي قدامنا بتوضح الفرق في وقت ال rendering بال milliseconds بين كود مترتب وكود مليان أخطاء.",
-        "caption_text": "شرح وتوضيح Performance comparison chart showing rendering times based on code structure."
+        "spoken_text": "عشان تِطَوَر مستواك في ال HTML، لازم تتابع تَقَدُمك بشكل مستمر. ال Exercises وال Quizzes اللي موجودة في المصادر التعليمية مش مجرد ترفيه، دي أدوات قوية بتختبر فهمك الحقيقي. كل ما تحل تمارين أكتر، كل ما بتثبْت المعلومة في دماغك. الاستمرارية هي السر، وال XP اللي بتجمعه ده مؤشر على مجهودك. حاول دايماً تخَلَص كل جزء وتطبق عليه فوراً، لأن البرمجة مهارةْ عَمَلّية، والتَعََلُمْ بالممارسة هو اللي بيصنع المبرمج الشاطر اللي يقدر يبني مشاريع حقيقية ومتميزة في سوق العمل.",
+        "caption_text": "أهمية التمارين والاختبارات في قياس مستوى التعلم."
       },
       "visual": {
         "type": "chart",
-        "unit": "ms",
+        "unit": "XP",
         "data": [
           {
-            "label": "Clean HTML",
+            "label": "Week 1",
+            "value": 20.0
+          },
+          {
+            "label": "Week 2",
             "value": 45.0
           },
           {
-            "label": "Unoptimized HTML",
-            "value": 120.5
+            "label": "Week 3",
+            "value": 70.0
+          },
+          {
+            "label": "Week 4",
+            "value": 100.0
           }
         ],
         "data_status": "illustrative",
@@ -268,19 +317,19 @@
       ]
     },
     {
-      "id": "scene_8",
-      "title": "شرح Accessibility and a11y Best Practices",
+      "id": "8",
+      "title": "شرح Accessibility and Standards",
       "narration": {
-        "spoken_text": "آخر نُئْطَة مهمة جداً هي ال Accessibility أو ال a11y. عشان تِضْمَن إن صفحتك تئراها برامج قراءة الشاشة للمكفوفين بكفاءة، لازم تستخدم ال semantic Tags صح زي nav وarticle وfooter، وتستفاد من ال Aria attributes. ده بيدي تجربة استخدام عادلة لكل الناس، وبيخلي موقعك مطابق لل Web standards العالمية بشكل كامل ودقيق.",
-        "caption_text": "شرح وتوضيح Best practices for Web accessibility and semantic standards compliance."
+        "spoken_text": "في النهاية، لازم نتكلم عن ال Accessibility وال Standards. لما تستخدم ال Tags بشكل صحيح، إنت بتساعد ال Screen Readers إنها تفهم محتوى صفحتك، وده بيخلي الموقع متاح لكل الناس. ال W3C بتحط معايير عالمية عشان تضمن إن الكود بتاعك يشتغل على أي Web Browser. التزم بال Semantic Tags زي ال header وال footer وال main، وابعد عن العشوائية. الكود اللي بتمشي فيه على المعايير بيكون أسهل في الصيانة، وأسرع في التحميل، وأفضل بكتير في ال SEO، وده اللي بيفرق المبرمج المحترف عن المبتدئ.",
+        "caption_text": "أفضل الممارسات البرمجية والالتزام بمعايير الـ W3C."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Use semantic Tags correctly",
-          "مفهوم Support Aria attributes",
-          "مفهوم Ensure Web standards compliance",
-          "مفهوم Optimize for screen readers"
+          "مفهوم Use semantic Tags for better accessibility",
+          "مفهوم Ensure proper nesting for screen readers",
+          "مفهوم Follow W3C standards for compatibility",
+          "مفهوم Maintain clean and readable code structure"
         ]
       },
       "source_refs": [
@@ -288,18 +337,20 @@
       ]
     },
     {
-      "id": "scene_9",
-      "title": "شرح Production Gotchas",
+      "id": "9",
+      "title": "شرح Common Pitfalls",
       "narration": {
-        "spoken_text": "بص معايا كويس يا هندسة عشان الأخطاء دي بتوقع ناس كتير في الشغل الحقيقي وتعمل مشاكل كبيرة في العرض. أول خطأ قاتل إنك تنسى تِئْفِل ال Tags زي إنك تكتب Start Tag من غير ما تعمل End Tag، وده بيخلي ال DOM Tree يتلخبط خالص. تاني خطأ إنك تنسى ال DOCTYPE html في أول الصفحة، فالبراوزر بيدخل في Quirks Mode ويشغل العرض بطريقة قديمة وغريبة. وتالت خطأ هو ال Incorrect Nesting، يعني تدخل Tags جوه بعضها بطريقة غلط وما تِئْفِلهاش بالترتيب السليم المعكوس زي ما اتعلمنا.",
-        "caption_text": "تعرف على الأخطاء الشائعة في HTML وكيفية تجنبها مثل نسيان إغلاق الـ Tags أو الـ DOCTYPE."
+        "spoken_text": "دلوقتي يا شباب لازم نركز في شوية أخطاء شائعة ممكن تِعَطَّل شغلك. أول حاجة نسيان قَفْل ال Tags، لأن ال Browser بِيِتْوَقَّع إن ال Element ممتد لآخر الصفحة وده بِيَِبُوّظ ال Layout. تاني حاجة هي ال Nesting الغلط، لازم تِضْمَن إن ال Element اللي اتفتح الأول يتقفل في الآخر. وأخيراً، نسيان ال DOCTYPE html في أول سطر، ده بيخلي ال Browser يشتغل ب Quirks Mode القديم ويِتْصَرَّف بطريقة غير متوقعة. اتعود دايماً تراجع الكود بتاعك وتِتْأَكَِد إن كل حاجة في مكانها الصح عشان تِضْمَن أفضل أداء.",
+        "caption_text": "تجنب الاخطاء الشائعة في كتابة HTML مثل نسيان قفل الـ Tags او التداخل الخاطئ للعناصر."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Unclosed Tags and syntax errors",
-          "مفهوم Missing DOCTYPE declaration",
-          "مفهوم Incorrect nesting of Elements"
+          "مفهوم Forgetting to close Tags causes layout issues",
+          "مفهوم Incorrect nesting of elements breaks the DOM tree",
+          "مفهوم Missing DOCTYPE html triggers Quirks Mode",
+          "مفهوم Always validate your HTML structure",
+          "مفهوم Use proper indentation for readability"
         ]
       },
       "source_refs": [
@@ -307,25 +358,25 @@
       ]
     },
     {
-      "id": "scene_10",
-      "title": "شرح Complete Project Code",
+      "id": "10",
+      "title": "شرح Full Project Example",
       "narration": {
-        "spoken_text": "دلوقتي جه ال وَئْت عشان نجمع كل اللي فِهْمْنَاه في كود واحد كامل ومتكامل وجاهز للتشغيل. زي ما إنت شايف قدامك في الكود، بدأنا بال DOCTYPE html، وبعدين كتبنا ال HTML Element وجواه ال head وال body. وضيفنا جوه ال head Tag ال style عشان نكتب شوية CSS جمال ينسقوا شكل الصفحة وال h1 وال p. الكود ده لما يشتغل جوه أي Web Browser هيديك نتيجة احترافية ومنظمة جداً.",
-        "caption_text": "استعراض مشروع كامل يجمع بين هيكل HTML وتنسيقات CSS الداخلية."
+        "spoken_text": "يلا نجمع كل اللي اتعلمناه في مشروع بسيط. قدامك دلوقتي كود كامل لصفحة ويب. لاحظ ال DOCTYPE html في البداية، وبعدين ال html Tag اللي بيحتوي كل حاجة. جوه ال head حطينا ال title وكمان ال style عشان نِعَدَّل ال font-family. وفي ال body كتبنا ال h1 وال p. ده الهيكل الأساسي اللي بِيِبْنِي عليه أي موقع. جَرَّبْت الكود ده بنفسك؟ ده الأساس اللي هتبدأ بيه رحلتك في ال Web Development، وكل ما تزَوّد Tags جديدة، الصفحة بتاعتك هتبقى أغنى وأقوى.",
+        "caption_text": "مثال كامل يوضح هيكل صفحة HTML مع تنسيق CSS بسيط داخل Tag style."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Complete Project</title>\n    <style>\n      body {\n        font-family: sans-serif; margin: 20px;\n      }\n      h1 {\n        color: #333;\n      }\n    </style>\n  </head>\n  <body>\n    <h1>Hello World</h1>\n    <p>This is a complete project example.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <style>\n      body {\n        font-family: sans-serif;\n      }\n    </style>\n    <title>My Website</title>\n  </head>\n  <body>\n    <h1>Welcome</h1>\n    <p>This is my first page.</p>\n  </body>\n</html>",
         "highlight_lines": [
-          6,
-          10,
+          5,
+          7,
+          9,
           13,
-          16,
-          17
+          14
         ],
-        "output": "Hello World\nThis is a complete project example.",
+        "output": "Welcome\nThis is my first page.",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -337,18 +388,20 @@
       ]
     },
     {
-      "id": "scene_11",
-      "title": "شرح Conclusion and Challenge",
+      "id": "11",
+      "title": "شرح Summary and Next Steps",
       "narration": {
-        "spoken_text": "بكده يا شباب نكون خلصنا رحلتنا الأساسية في فهم HTML وهيكل الصفحات وال DOM Tree بكل تفاصيلها. راجعنا مع بعض إزاي نكتب كود نظيف وسليم، وإيه هي ال Tags وال Attributes المهمة. الخطوة الجاية إنك تبدأ تِتَعَلَّم CSS عشان تلون وتظبط تصميم صفحاتك، وبعدها JavaScript عشان تخليها تفاعلية. التحدي بتاع النهاردة ليك إنت: ابني موقعك الشخصي الأول بنفسك وجرب كل اللي تعلمناه ده حالا، وبالتوفيق يا هندسة!",
-        "caption_text": "خلاصة الدرس والخطوات القادمة لتعلم CSS وJavaScript مع تحدي عملي."
+        "spoken_text": "وصلنا لنهاية الدرس يا شباب. اتعلمنا إن ال HTML هي حجر الأساس لأي موقع على ال Internet. فِهِمْنَا إزاي ال Browser بِيِقْرَأ ال Tags وبِيِعْرِض المحتوى للمستخدم. دلوقتي دوْرَك، ادخل على ال Exercises في W3Schools وجَرَّب تحل التحديات بنفسك. مفيش حاجة بِتعلم البرمجة غير إنك تكتب كود وتشوف النتيجة بعينك. ابدأ ابني صفحتك الأولى النهاردة، ولو وَاجِهْت أي مشكلة، ارجع لل References وراجع ال Attributes وال Elements. بالتوفيق يا أبطال في رحلتكم الجاية في عالم ال Web Development.",
+        "caption_text": "ملخص الدرس والخطوات القادمة للتدريب على HTML."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Review of core HTML concepts",
-          "مفهوم Roadmap to CSS and JavaScript",
-          "مفهوم Challenge: build your own Website"
+          "مفهوم HTML is the foundation of the web",
+          "مفهوم Practice with W3Schools HTML Exercises",
+          "مفهوم Build your own custom webpage today",
+          "مفهوم Refer to HTML documentation for more details",
+          "مفهوم Keep coding to master the structure"
         ]
       },
       "source_refs": [
