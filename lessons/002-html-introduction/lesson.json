@@ -6,11 +6,11 @@
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "فهم ماهية الـ HTML كلغة هيكلة أساسية للويب",
-    "التعرف على هيكل الـ HTML الأساسي",
-    "إدراك الفرق بين الـ start tag والـ end tag والـ content",
-    "فهم دور المتصفح في معالجة الـ HTML",
-    "التعرف على الـ empty elements"
+    "فهم ماهية الـ HTML ودورها في بناء صفحات الويب",
+    "التعرف على مكونات الـ HTML Element",
+    "فهم الفرق بين الـ Elements العادية والـ Empty elements",
+    "معرفة دور الـ Web Browser في تفسير الـ HTML",
+    "التعرف على الهيكل الأساسي لصفحة HTML5"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_intro.asp"
@@ -36,17 +36,52 @@
   "scenes": [
     {
       "id": "scene_1",
-      "title": "مقدمة الدرس",
+      "title": "مقدمة في الـ HTML",
       "narration": {
-        "spoken_text": "لو فاكر إن الـ HTML مجرد نصوص بتكتبها، فالحقيقة إنك بتكتب لغة هيكلة بتفهم المتصفح إزاي يرسم كل بكسل قدام المستخدم. الاعتماد على الفهم السطحي ده بيخليك تايه لما المشروع يكبر، والنهاردة هنحط الأساس الصح اللي هيخلي شغلك احترافي ومعياري. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفك شفرة الـ HTML ونفهم إزاي بتبني صفحات الويب من الصفر.",
-        "caption_text": "مقدمة عن أهمية الـ HTML في بناء صفحات الويب"
+        "spoken_text": "عمرك سألت نفسك إزاي المتصفح بيحول ملف نصي بسيط لصفحة ويب مليانة صور وألوان وتنسيقات؟ السر كله في الـ HTML. هي اللغة اللي بتدي للمتصفح التعليمات عشان يرسم الصفحة قدامك. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنبدأ رحلتنا في تعلم الـ HTML، اللغة الأساسية لبناء أي صفحة ويب. هنعرف إزاي المتصفح بيقرأ الكود بتاعنا، وإزاي نقدر نتحكم في هيكل الصفحة عشان تظهر بالشكل اللي إحنا عايزينه، فخليكم معايا.",
+        "caption_text": "مقدمة في الـ HTML وكيف يقرأ المتصفح صفحات الويب"
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "الـ HTML هي لغة هيكلة وليست مجرد نصوص",
-          "فهم الأساسيات يمنع التخبط في المشاريع الكبيرة",
-          "بناء صفحات الويب يبدأ من فهم الـ HTML"
+        "type": "system_diagram",
+        "title": "كيف يقرأ المتصفح الـ HTML",
+        "nodes": [
+          {
+            "id": "file",
+            "label": "HTML File",
+            "role": "client",
+            "icon": null,
+            "subtext": null
+          },
+          {
+            "id": "browser",
+            "label": "Web Browser",
+            "role": "browser",
+            "icon": null,
+            "subtext": null
+          },
+          {
+            "id": "page",
+            "label": "Rendered Page",
+            "role": "client",
+            "icon": null,
+            "subtext": null
+          }
+        ],
+        "packets": [
+          {
+            "source": "file",
+            "target": "browser",
+            "label": "Parsing HTML",
+            "protocol": "HTTP/2",
+            "color": "#38bdf8"
+          },
+          {
+            "source": "browser",
+            "target": "page",
+            "label": "Display",
+            "protocol": "HTTP/2",
+            "color": "#38bdf8"
+          }
         ]
       },
       "source_refs": [
@@ -57,15 +92,35 @@
       "id": "scene_2",
       "title": "ما هي الـ HTML؟",
       "narration": {
-        "spoken_text": "الـ HTML هي الـ standard markup language لإنشاء صفحات الويب. هي الأساس اللي بيعتمد عليه أي موقع بتشوفه على الإنترنت. من غيرها المتصفح مش هيعرف يعرض أي حاجة. هي اللي بتحدد هيكل الصفحة، يعني إيه العنوان، وإيه الفقرة، وإيه الصورة، عشان كده لازم نفهمها صح من البداية.",
-        "caption_text": "تعريف الـ HTML كلغة هيكلة قياسية"
+        "spoken_text": "الـ HTML اختصار لـ HyperText Markup Language، وهي مش لغة برمجة بالمعنى التقليدي، يعني مفيش فيها منطق معقد زي الـ If أو الـ Loops، لكنها لغة توصيف. وظيفتها الأساسية هي تحديد هيكل الصفحة، يعني بتقول للمتصفح: ده عنوان، دي فقرة، وده رابط. من غير الـ HTML، المتصفح مش هيعرف إيه هو المحتوى المهم وإيه هو التنسيق، فهي العمود الفقري لأي موقع بتشوفه على الإنترنت.",
+        "caption_text": "تعريف الـ HTML كلغة توصيف لهيكل الويب"
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "HTML تعني HyperText Markup Language",
-          "هي الـ standard markup language لإنشاء صفحات الويب",
-          "المتصفح يستخدم الـ HTML لتحديد كيفية عرض المحتوى"
+        "type": "explainer",
+        "concept": "dom_tree",
+        "headline": "هيكل صفحة الـ HTML",
+        "nodes": [
+          {
+            "id": "root",
+            "tag": "<html>",
+            "parent_id": null,
+            "role": "Root",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "head",
+            "tag": "<head>",
+            "parent_id": "root",
+            "role": "Metadata",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "body",
+            "tag": "<body>",
+            "parent_id": "root",
+            "role": "Content",
+            "color": "#38bdf8"
+          }
         ]
       },
       "source_refs": [
@@ -74,10 +129,110 @@
     },
     {
       "id": "scene_3",
-      "title": "مثال على كود HTML",
+      "title": "مكونات الـ HTML Element",
       "narration": {
-        "spoken_text": "بص معايا على الكود ده. الـ <!DOCTYPE html> بتعرف المتصفح إن ده document من نوع HTML5. الـ <html> هو الـ root element اللي بيحتوي كل حاجة. الـ <head> بيحتوي معلومات الصفحة زي الـ <title>، والـ <body> هو المكان اللي بنكتب فيه المحتوى اللي بيظهر للمستخدم فعلاً.",
-        "caption_text": "شرح الهيكل الأساسي لصفحة HTML"
+        "spoken_text": "أي صفحة HTML بتتكون من مجموعة عناصر بنسميها HTML Elements. العنصر الواحد بيتكون من 3 أجزاء رئيسية: الـ Start tag اللي بنبدأ بيه، والمحتوى اللي بيظهر للمستخدم، والـ End tag اللي بنقفل بيه العنصر. لاحظ إن الـ Start tag بيبدأ بـ < وينتهي بـ >، والـ End tag زيه بالظبط بس بنزود علامة / قبل اسم الـ Tag. ده اللي بيخلي المتصفح يفهم بداية ونهاية كل جزء في الصفحة.",
+        "caption_text": "تشريح الـ HTML Element"
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
+        "output": "My First Heading\nMy first paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_4",
+      "title": "الـ Empty Elements",
+      "narration": {
+        "spoken_text": "بص يا سيدي، مش كل الـ Elements لازم يكون ليها Start tag و End tag. فيه نوع بنسميه Empty elements. دي عناصر زي الـ <br> مثلاً، بتستخدمها عشان تعمل سطر جديد، ومن غير ما تحتاج تقفلها بـ End tag. هي بتكتفي بالـ Start tag بتاعها وبس. ده بيخلي الكود أنضف وأسرع في حالات معينة، ومهم جداً تكون عارف الفرق ده عشان متتلخبطش وأنت بتكتب الكود بتاعك.",
+        "caption_text": "فهم الـ Empty elements في HTML"
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "بعض الـ Elements لا تحتوي على محتوى",
+          "تسمى Empty elements",
+          "لا تحتاج إلى End tag مثل الـ <br>"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "دور الـ Web Browser",
+      "narration": {
+        "spoken_text": "طيب، مين اللي بيفهم الكود ده ويحوله لصفحة ويب؟ هو الـ Web Browser زي Chrome أو Firefox. الـ Browser وظيفته يقرأ الـ HTML documents ويعرضها ليك بشكل مفهوم. هو مش بيعرض الـ Tags للمستخدم، لا، هو بيستخدم الـ Tags دي كتعليمات عشان يعرف إزاي يعرض المحتوى، يعني إيه عنوان، إيه فقرة، وهكذا. هو المترجم اللي بيحول الكود لصفحة قدام عينك.",
+        "caption_text": "كيف يقرأ المتصفح الـ HTML"
+      },
+      "visual": {
+        "type": "system_diagram",
+        "title": "Browser Rendering Process",
+        "nodes": [
+          {
+            "id": "html_file",
+            "label": "HTML Document",
+            "role": "server",
+            "icon": null,
+            "subtext": null
+          },
+          {
+            "id": "browser",
+            "label": "Web Browser",
+            "role": "browser",
+            "icon": null,
+            "subtext": null
+          },
+          {
+            "id": "user",
+            "label": "User View",
+            "role": "client",
+            "icon": null,
+            "subtext": null
+          }
+        ],
+        "packets": [
+          {
+            "source": "html_file",
+            "target": "browser",
+            "label": "Reads Tags",
+            "protocol": "HTTP/2",
+            "color": "#38bdf8"
+          },
+          {
+            "source": "browser",
+            "target": "user",
+            "label": "Displays Content",
+            "protocol": "HTTP/2",
+            "color": "#38bdf8"
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_intro.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "الهيكل الأساسي لصفحة HTML",
+      "narration": {
+        "spoken_text": "دلوقتي خلينا نشوف الهيكل الأساسي لأي صفحة HTML. بنبدأ بـ <!DOCTYPE html> عشان نعرف المتصفح إننا بنستخدم HTML5. بعدين عندنا الـ <html> اللي بيحتوي كل حاجة. جوه الـ <head> بنحط معلومات الصفحة زي الـ <title> اللي بيظهر في التاب. وأخيراً الـ <body>، وده أهم جزء، لأن أي حاجة بتكتبها جواه هي اللي بتظهر للمستخدم فعلياً على الشاشة.",
+        "caption_text": "الهيكل الأساسي لصفحة HTML5"
       },
       "visual": {
         "type": "code",
@@ -100,158 +255,20 @@
       ]
     },
     {
-      "id": "scene_4",
-      "title": "ما هو الـ HTML Element؟",
-      "narration": {
-        "spoken_text": "الـ HTML element بيتكون من 3 أجزاء رئيسية. الـ start tag زي <h1>، والـ content اللي هو النص اللي جوه، والـ end tag زي </h1> اللي بيقفل الـ element. في عناصر تانية زي الـ <br> بنسميها empty elements، ودي مبيكونش ليها end tag لأنها مفيهاش محتوى.",
-        "caption_text": "مكونات الـ HTML element"
-      },
-      "visual": {
-        "type": "diagram",
-        "nodes": [
-          {
-            "id": "start_tag",
-            "label": "<h1> (Start Tag)",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "content",
-            "label": "My First Heading (Content)",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "end_tag",
-            "label": "</h1> (End Tag)",
-            "active": true,
-            "icon": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "start_tag",
-            "target": "content",
-            "label": ""
-          },
-          {
-            "source": "content",
-            "target": "end_tag",
-            "label": ""
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_intro.asp"
-      ]
-    },
-    {
-      "id": "scene_5",
-      "title": "الـ Empty Elements",
-      "narration": {
-        "spoken_text": "بص يا سيدي، في بعض الـ HTML elements بتكون مختلفة شوية، بنسميها empty elements. الفكرة هنا إن العنصر ده مش بيحتاج content جواه، فبالتالي مش بيحتاج end tag عشان يقفله. أبسط مثال على كده هو الـ <br> element، وده بنستخدمه عشان نعمل سطر جديد في الصفحة. يعني بمجرد ما تكتب الـ tag ده، المتصفح بيفهم فوراً إنه لازم ينزل سطر لتحت. الموضوع بسيط ومباشر، ومش محتاج تعقيد، بس خلي بالك إنك تستخدمهم في مكانهم الصح عشان الكود بتاعك يفضل نضيف ومنظم.",
-        "caption_text": "Empty Elements أو الـ Empty Elements لا تحتوي على محتوى ولا تحتاج لـ end tag."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "بعض الـ HTML elements لا تحتاج content.",
-          "لا تحتاج لـ end tag.",
-          "تسمى empty elements.",
-          "مثال شهير: <br> لعمل سطر جديد."
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_intro.asp"
-      ]
-    },
-    {
-      "id": "scene_6",
-      "title": "دور الـ Web Browsers",
-      "narration": {
-        "spoken_text": "دلوقتي جه وقت نتكلم عن دور الـ Web Browsers زي Chrome أو Firefox أو Edge. وظيفة المتصفح الأساسية هي إنه يقرأ الـ HTML documents اللي إنت بتكتبها ويعرضها للمستخدم بشكل مفهوم. المتصفح مش بيعرض الـ tags نفسها قدام المستخدم، لا، هو بيستخدم الـ tags دي كتعليمات عشان يفهم إزاي يرتب المحتوى، إيه اللي يكون عنوان، وإيه اللي يكون فقرة، وإيه اللي يتحط في الـ title bar. يعني المتصفح هو المترجم اللي بيحول الكود بتاعك لصفحة ويب حقيقية.",
-        "caption_text": "المتصفح يقرأ الـ HTML ويعرض المحتوى للمستخدم."
-      },
-      "visual": {
-        "type": "image",
-        "asset_id": "source_img_chrome",
-        "alt": "Web Browser rendering HTML"
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_intro.asp"
-      ]
-    },
-    {
       "id": "scene_7",
-      "title": "هيكل صفحة الـ HTML",
-      "narration": {
-        "spoken_text": "تعالى نبص على هيكل صفحة الـ HTML ونفهم الفرق بين الـ elements الأساسية. المحتوى اللي بتكتبه جوه الـ <body> element هو ده اللي بيظهر فعلياً للمستخدم جوه صفحة الويب. أما المحتوى اللي بتكتبه جوه الـ <title> element، فده بيظهر في الـ title bar بتاع المتصفح أو في الـ tab اللي مفتوح فوق. التقسيمة دي مهمة جداً عشان المتصفح يعرف إيه اللي يظهره في مساحة العرض، وإيه اللي يخص بيانات الصفحة التعريفية.",
-        "caption_text": "توضيح الفرق بين الـ body والـ title في هيكل الصفحة."
-      },
-      "visual": {
-        "type": "diagram",
-        "nodes": [
-          {
-            "id": "html",
-            "label": "<html>",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "head",
-            "label": "<head>",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "title",
-            "label": "<title>",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "body",
-            "label": "<body>",
-            "active": false,
-            "icon": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "html",
-            "target": "head",
-            "label": ""
-          },
-          {
-            "source": "html",
-            "target": "body",
-            "label": ""
-          },
-          {
-            "source": "head",
-            "target": "title",
-            "label": ""
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_intro.asp"
-      ]
-    },
-    {
-      "id": "scene_8",
       "title": "خاتمة الدرس",
       "narration": {
-        "spoken_text": "كده نكون خلصنا أساسيات الـ HTML. اتعلمنا النهاردة إن الـ HTML هي لغة الهيكلة الأساسية للويب، وفهمنا إن الـ elements هي حجر الأساس لأي صفحة، وعرفنا الفرق بين الـ tags والـ content. المرة الجاية هنبدأ خطوة عملية مهمة جداً، وهي إزاي نختار الـ HTML Editors المناسبة عشان نبدأ نكتب كود فعلي ونطبق كل اللي اتعلمناه سوا. جهز نفسك، لأن اللي جاي هو اللي هيحولك من مجرد قارئ للكود لمطور بيبني صفحاته بإيده.",
-        "caption_text": "ملخص الدرس والتمهيد للخطوة القادمة."
+        "spoken_text": "كده يا شباب نكون خلصنا أساسيات الـ HTML. النهاردة اتعلمنا إيه هي الـ HTML، وإزاي الـ Web Browser بيقرأ الـ Tags عشان يعرض الصفحة. عرفنا كمان يعني إيه HTML Element، والفرق بين الـ Elements العادية والـ Empty elements زي الـ <br>. الأهم دلوقتي إنك تجرب بنفسك وتكتب الكود اللي شفناه. في الدرس الجاي، هنتكلم عن الـ HTML Editors اللي هنستخدمها عشان نكتب الكود بتاعنا بشكل أسهل وأسرع. استنوني في الدرس الجاي، سلام!",
+        "caption_text": "مراجعة سريعة على مفاهيم الـ HTML الأساسية والتمهيد للدرس القادم."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "الـ HTML هي لغة الهيكلة الأساسية.",
-          "الـ elements هي حجر الأساس.",
-          "الفرق بين الـ tags والـ content.",
-          "الدرس القادم: اختيار الـ HTML Editors."
+          "مراجعة مفهوم الـ HTML كـ Markup language",
+          "فهم مكونات الـ HTML Element",
+          "الفرق بين الـ Elements العادية والـ Empty elements",
+          "دور الـ Web Browser في عرض الصفحة",
+          "الدرس القادم: تجهيز الـ HTML Editors"
         ]
       },
       "source_refs": [
