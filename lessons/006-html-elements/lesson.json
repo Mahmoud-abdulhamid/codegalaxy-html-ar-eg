@@ -7,10 +7,9 @@
   "dialect": "egyptian",
   "objectives": [
     "فهم مكونات الـ HTML Element (Start tag, Content, End tag)",
-    "التعرف على مفهوم الـ Nested Elements",
-    "إدراك خطورة عدم إغلاق الـ Tags",
-    "التعامل مع الـ Empty Elements",
-    "فهم معايير كتابة الـ Tags (Case Sensitivity)"
+    "التعرف على مفهوم الـ Nested HTML Elements",
+    "معرفة كيفية التعامل مع الـ Empty elements",
+    "فهم أهمية الـ End tag وقواعد الـ Case sensitivity"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_elements.asp"
@@ -44,139 +43,129 @@
   "scenes": [
     {
       "id": "scene_1",
-      "title": "خرافة المتصفح الذكي",
+      "title": "مقدمة في الـ HTML Elements",
       "narration": {
-        "spoken_text": "لو فاكر إن المتصفح بيصلح أخطاء الكود بتاعك تلقائياً فإنت فاهم غلط لأن ده فخ كبير! المتصفح بيحاول يكمل الناقص، بس ده بيخلق مشاكل في الـ Rendering والـ Debugging بعدين، وممكن كودك يضرب في أماكن تانية خالص. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفك شفرة الـ HTML Elements ونعرف إزاي نكتب كود سليم من البداية، ونفهم إيه اللي بيحصل جوه الـ Document بتاعنا خطوة بخطوة عشان كودك يشتغل صح وبأعلى كفاءة.",
-        "caption_text": "المتصفح ليس مصلحا للأخطاء البرمجية"
+        "spoken_text": "عمرك سألت نفسك إزاي المتصفح بيفهم إن ده عنوان وده فقرة؟ الحقيقة إن كل حاجة بتشوفها على الويب عبارة عن HTML Elements، وهي حجر الأساس لأي صفحة ويب. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفكك الـ HTML Elements ونعرف إزاي بتتبني خطوة بخطوة، عشان تقدر تبني هيكل صفحاتك بنفسك وبكل احترافية. يلا بينا.",
+        "caption_text": "مقدمة في الـ HTML Elements"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "الاعتماد على المتصفح لتصحيح الأخطاء يسبب مشاكل غير متوقعة",
-          "كتابة الـ Tags بشكل صحيح هي أساس الـ Web Development",
-          "مقدمة عن الـ HTML Elements"
+          "المتصفح بيفهم هيكل الصفحة من خلال الـ HTML Elements",
+          "كل حاجة على الويب عبارة عن HTML Elements",
+          "الـ HTML Element هو حجر الأساس لأي صفحة ويب",
+          "النهاردة هنفكك الـ HTML Elements ونعرف إزاي بتتبني"
         ]
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     },
     {
       "id": "scene_2",
-      "title": "مكونات الـ HTML Element",
+      "title": "تشريح الـ HTML Element",
       "narration": {
-        "spoken_text": "تعالوا نفهم يعني إيه HTML Element. الـ Element بيتكون من 3 أجزاء أساسية: الـ Start tag اللي بنفتح بيه، والـ Content اللي هو الكلام أو الصور اللي بتظهر للمستخدم، والـ End tag اللي بنقفل بيه الـ Element. تخَيَلهم زي صندوق، الـ Start tag هو فتحة الصندوق، والـ Content هو اللي جوه، والـ End tag هو قفلة الصندوق. لو نسيت الـ End tag، المتصفح هيحاول يخمن إنت عايز إيه، وده اللي بيعمل المشاكل اللي اتكلمنا عنها.",
-        "caption_text": "هيكل الـ HTML Element"
+        "spoken_text": "بص يا سيدي، الـ HTML Element بيتكون من 3 أجزاء أساسية. أول حاجة الـ Start tag، وده اللي بيبدأ بـ <. بعدين بيجي الـ Content، وده المحتوى اللي بيظهر للمستخدم جوه الصفحة. وأخيراً الـ End tag، وده اللي بيقفل العنصر بـ / قبل الـ >. يعني لو عندك عنوان، بتبدأ بـ <h1>، تكتب النص، وتقفل بـ </h1>. ده هو المكون الأساسي اللي بيبني كل حاجة.",
+        "caption_text": "مكونات الـ HTML Element"
+      },
+      "visual": {
+        "type": "explainer",
+        "concept": "dom_tree",
+        "headline": "تشريح الـ HTML Element",
+        "nodes": [
+          {
+            "id": "start",
+            "tag": "<h1>",
+            "parent_id": null,
+            "role": "Start tag",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "content",
+            "tag": "My First Heading",
+            "parent_id": "start",
+            "role": "Content",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "end",
+            "tag": "</h1>",
+            "parent_id": "content",
+            "role": "End tag",
+            "color": "#38bdf8"
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ],
+      "motion_data": null
+    },
+    {
+      "id": "scene_3",
+      "title": "الـ Nested HTML Elements",
+      "narration": {
+        "spoken_text": "دلوقتي لازم تعرف إن الـ HTML elements ممكن تكون Nested، يعني عنصر ممكن يحتوي على عناصر تانية جواه. تخيلها زي الصناديق جوه بعضها. كل الـ HTML documents عبارة عن مجموعة من الـ Nested elements. مثلاً الـ body هو الحاوية الكبيرة اللي بيحتوي جواه على الـ h1 والـ p. التداخل ده هو اللي بيخلي الصفحة منظمة وليها هيكل واضح للمتصفح.",
+        "caption_text": "مفهوم الـ Nested HTML Elements"
       },
       "visual": {
         "type": "diagram",
         "nodes": [
           {
-            "id": "start",
-            "label": "Start Tag",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "content",
-            "label": "Content",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "end",
-            "label": "End Tag",
-            "active": true,
-            "icon": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "start",
-            "target": "content",
-            "label": ""
-          },
-          {
-            "source": "content",
-            "target": "end",
-            "label": ""
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_elements.asp"
-      ]
-    },
-    {
-      "id": "scene_3",
-      "title": "الـ Nested Elements",
-      "narration": {
-        "spoken_text": "دلوقتي هنتكلم عن الـ Nested Elements. يعني إيه؟ يعني الـ HTML Elements ممكن تحتوي على عناصر تانية جواها. الـ HTML Document كله عبارة عن شجرة من العناصر المتداخلة. الـ html هو الـ root element، وجواه بنحط الـ body، وجوه الـ body بنحط عناصر تانية زي الـ h1 للعنوان والـ p للفقرات. ده الهيكل اللي بيخلي المتصفح يفهم ترتيب الصفحة وشكلها النهائي.",
-        "caption_text": "تداخل العناصر في الـ HTML"
-      },
-      "visual": {
-        "type": "flowchart",
-        "nodes": [
-          {
             "id": "html",
             "label": "<html>",
-            "kind": "start",
-            "icon": null,
-            "active": false
+            "active": false,
+            "icon": null
           },
           {
             "id": "body",
             "label": "<body>",
-            "kind": "process",
-            "icon": null,
-            "active": false
+            "active": false,
+            "icon": null
           },
           {
             "id": "h1",
             "label": "<h1>",
-            "kind": "process",
-            "icon": null,
-            "active": false
+            "active": false,
+            "icon": null
           },
           {
             "id": "p",
             "label": "<p>",
-            "kind": "process",
-            "icon": null,
-            "active": false
+            "active": false,
+            "icon": null
           }
         ],
         "edges": [
           {
             "source": "html",
             "target": "body",
-            "label": "",
-            "direction": null
+            "label": ""
           },
           {
             "source": "body",
             "target": "h1",
-            "label": "",
-            "direction": null
+            "label": ""
           },
           {
             "source": "body",
             "target": "p",
-            "label": "",
-            "direction": null
+            "label": ""
           }
         ]
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     },
     {
       "id": "scene_4",
-      "title": "هيكل الـ HTML",
+      "title": "مثال عملي على الـ Structure",
       "narration": {
-        "spoken_text": "بص معايا على المثال ده. هنا عندنا الـ html كعنصر أساسي، وجواه الـ body، وجوه الـ body عندنا الـ h1 والـ p. لاحظ الـ Start tag والـ End tag لكل واحد فيهم. ده الشكل المثالي اللي لازم تعود إيدك عليه. جرب تكتب الكود ده بنفسك في الـ Editor، وشوف إزاي كل Element واخد مكانه الصح جوه الـ Document، وده اللي بيضمن إن صفحتك تظهر زي ما إنت متخيل بالظبط.",
-        "caption_text": "مثال عملي لهيكل الـ HTML"
+        "spoken_text": "تعالى نشوف الكلام ده في كود حقيقي. هنا الـ html هو الـ root element اللي بيضم كل حاجة. جواه الـ body اللي بيحدد محتوى الصفحة، وجوه الـ body هتلاقي الـ h1 والـ p. الترتيب ده هو اللي بيخلي المتصفح يعرض الصفحة بشكل سليم. جرب تكتب الكود ده عندك وشوف النتيجة، لأن الممارسة هي اللي بتثبت المعلومة.",
+        "caption_text": "مثال كامل على هيكل الـ HTML"
       },
       "visual": {
         "type": "code",
@@ -195,26 +184,47 @@
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     },
     {
       "id": "scene_5",
-      "title": "ليه لازم تقفل الـ Tags؟",
+      "title": "قاعدة الـ End Tag",
       "narration": {
-        "spoken_text": "بص يا سيدي، ممكن تلاقي كود شغال زي الفل حتى لو نسيت الـ End tag، بس ده فخ كبير! المتصفح بيحاول يخمن إنت قصدك إيه، وده بيخلي النتيجة غير متوقعة وممكن تضرب معاك في أي لحظة. تخيل لو عندك أكتر من Paragraph، المتصفح هيتلخبط ومش هيعرف فين بداية ونهاية كل واحد. عشان كده، الالتزام بالـ End tag مش اختيار، ده أساس عشان تضمن إن الكود بتاعك يفضل ثابت ومفهوم لأي متصفح.",
-        "caption_text": "عدم إغلاق الـ Tags بيؤدي لنتائج غير متوقعة"
+        "spoken_text": "بص يا سيدي، فيه ناس بتفتكر إن الـ HTML بيسامح لو نسيت الـ End tag، وده حقيقي في بعض الحالات المتصفح بيعرض الصفحة عادي، بس دي عادة سيئة جداً وممكن تسبب مشاكل غير متوقعة في الـ rendering بتاع الصفحة. تخيل لو الكود كبر منك، الأخطاء دي هتكون كابوس عشان تكتشفها. فخليك بروفيشنال ودايماً اقفل الـ tags بتاعتك عشان تضمن إن الكود شغال صح في كل المتصفحات ومن غير أي مفاجآت.",
+        "caption_text": "قاعدة الـ End Tag: لا تعتمد على تسامح المتصفح"
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "المتصفح قد يعرض الصفحة بدون End tag",
+          "هذه عادة برمجية سيئة",
+          "تجنب الأخطاء غير المتوقعة في الـ rendering",
+          "التزم دائما بإغلاق الـ tags"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_elements.asp"
+      ],
+      "motion_data": null
+    },
+    {
+      "id": "scene_6",
+      "title": "الـ Empty HTML Elements",
+      "narration": {
+        "spoken_text": "طيب إيه العمل لو العنصر ملوش محتوى؟ هنا بيجي دور الـ Empty elements. زي مثلاً الـ br اللي بنستخدمه عشان نعمل سطر جديد، ده ملوش End tag خالص، بيتكتب كده مباشرة. مفيش داعي تحط له قفلة، هو بيفهم لوحده إنه مجرد أمر للمتصفح. دي قاعدة مهمة عشان متلخبطش نفسك وتكتب كود زيادة ملوش لازمة.",
+        "caption_text": "الـ Empty elements: عناصر بدون محتوى وبدون End tag"
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>This is a paragraph\n      <p>This is a paragraph\n      </p>\n    </p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>This is a <br> paragraph with a line break.</p>\n  </body>\n</html>",
         "highlight_lines": [
-          7,
-          8
+          7
         ],
-        "output": "This is a paragraph This is a paragraph",
-        "output_status": "illustrative",
+        "output": null,
+        "output_status": "not_applicable",
         "verification_ref": null,
         "secondary_code": null,
         "secondary_filename": null,
@@ -222,77 +232,63 @@
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
-    },
-    {
-      "id": "scene_6",
-      "title": "الـ Empty Elements",
-      "narration": {
-        "spoken_text": "طيب إيه حكاية الـ Empty elements؟ دي عناصر مفيش جواها أي محتوى، يعني مفيش Start tag و End tag. زي الـ <br> اللي بنستخدمه عشان نعمل Line break. الـ Empty elements دي مفيش ليها End tag خالص، لأنها بتأدي وظيفة محددة ومباشرة. فلو شفت Tag زي الـ <br> أو الـ <img>، متستغربش إنك مش لاقي Tag قفلة، ده طبيعي جداً في الـ HTML.",
-        "caption_text": "العناصر التي لا تحتوي على محتوى"
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "الـ Empty elements مفيش ليها محتوى",
-          "الـ <br> هو مثال للـ Empty element",
-          "الـ Empty elements مفيش ليها End tag"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     },
     {
       "id": "scene_7",
-      "title": "حالة الحروف (Case Sensitivity)",
+      "title": "الـ Case Sensitivity",
       "narration": {
-        "spoken_text": "سؤال بيجي كتير، هل الـ HTML بيفَرّق بين الحروف الكبيرة والصغيرة؟ الحقيقة إن الـ HTML مش Case sensitive، يعني <P> هي هي <p>. بس خلي بالك، الـ W3C بتنصح دايماً باستخدام الـ Lowercase، وده المعيار الاحترافي اللي كل المطورين بيمشوا عليه. لو بتكتب XHTML أو عايز كودك يكون نضيف ومنظم، التزم بالـ Lowercase من دلوقتي عشان تتعود على الصح.",
-        "caption_text": "معايير كتابة الـ Tags"
+        "spoken_text": "سؤال بيجي كتير، هل الـ HTML بيفرق بين الحروف الكبيرة والصغيرة؟ الإجابة لأ، الـ HTML مش Case sensitive، يعني الـ P كابيتال هي هي الـ p سمول. بس استنى، الـ W3C بتنصح دايماً باستخدام الـ lowercase، وده الـ standard المتبع في الـ HTML. عشان كودك يكون أنضف وأسهل في القراءة، وكمان عشان لو فكرت تستخدم XHTML في المستقبل، هتكون متعود على الـ lowercase.",
+        "caption_text": "الـ HTML ليس Case sensitive ولكن الـ lowercase هو الأفضل"
       },
       "visual": {
         "type": "table",
         "columns": [
-          "الـ Tag",
-          "الحالة",
-          "الاعتمادية"
+          "النمط",
+          "النتيجة",
+          "التوصية"
         ],
         "rows": [
           [
-            "<p>",
-            "Lowercase",
-            "موصى به"
+            "<P>",
+            "يعمل",
+            "غير مفضل"
           ],
           [
-            "<P>",
-            "Uppercase",
-            "غير مفضل"
+            "<p>",
+            "يعمل",
+            "مفضل (Standard)"
           ]
         ]
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     },
     {
       "id": "scene_8",
-      "title": "ملخص الدرس",
+      "title": "خاتمة الدرس",
       "narration": {
-        "spoken_text": "كده إحنا غطينا أساسيات الـ HTML Elements. عرفنا يعني إيه Start tag و End tag، وإزاي الـ Elements بتدخل جوه بعضها في الـ Nesting. اتكلمنا عن أهمية الـ End tag، وإزاي الـ Empty elements زي الـ <br> بتشتغل، وليه الـ Lowercase هو المعيار الأفضل. راجع النقط دي كويس، لأنها حجر الأساس لأي صفحة هتبنيها. جاهز للخطوة اللي جاية؟ يلا بينا!",
-        "caption_text": "مراجعة سريعة والتمهيد للدرس القادم"
+        "spoken_text": "كده إحنا غطينا أساسيات الـ HTML Elements وفهمنا إزاي بنبني الهيكل بتاع الصفحة. نصيحتي ليك، جرب بنفسك واكتب كود بسيط وشوف النتيجة، الممارسة هي اللي بتثبت المعلومة. الدرس الجاي عندنا Code Challenge عشان نختبر اللي اتعلمناه ونشوف إزاي بنطبق ده في مشاريع حقيقية. أشوفكم الدرس الجاي، سلام.",
+        "caption_text": "خاتمة: مراجعة سريعة واستعداد للـ Code Challenge"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مراجعة الـ Elements والـ Nesting",
-          "أهمية الـ End tag",
-          "الالتزام بالـ Lowercase",
-          "الاستعداد للـ Code Challenge القادم"
+          "تم تغطية أساسيات الـ HTML Elements",
+          "جرب كتابة الكود بنفسك",
+          "الدرس القادم: Code Challenge",
+          "استعد للتطبيق العملي"
         ]
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_elements.asp"
-      ]
+      ],
+      "motion_data": null
     }
-  ]
+  ],
+  "visual_mode": "classic",
+  "motion_archetype": null
 }
