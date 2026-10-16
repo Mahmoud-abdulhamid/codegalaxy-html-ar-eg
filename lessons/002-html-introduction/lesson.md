@@ -2,25 +2,46 @@
 
 المصدر: https://www.w3schools.com/html/html_intro.asp
 
-## مقدمة الدرس
+## مقدمة في الـ HTML
 
-مقدمة عن أهمية الـ HTML في بناء صفحات الويب
-
-- الـ HTML هي لغة هيكلة وليست مجرد نصوص
-- فهم الأساسيات يمنع التخبط في المشاريع الكبيرة
-- بناء صفحات الويب يبدأ من فهم الـ HTML
+مقدمة في الـ HTML وكيف يقرأ المتصفح صفحات الويب
 
 ## ما هي الـ HTML؟
 
-تعريف الـ HTML كلغة هيكلة قياسية
+تعريف الـ HTML كلغة توصيف لهيكل الويب
 
-- HTML تعني HyperText Markup Language
-- هي الـ standard markup language لإنشاء صفحات الويب
-- المتصفح يستخدم الـ HTML لتحديد كيفية عرض المحتوى
+## مكونات الـ HTML Element
 
-## مثال على كود HTML
+تشريح الـ HTML Element
 
-شرح الهيكل الأساسي لصفحة HTML
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html>
+```
+
+## الـ Empty Elements
+
+فهم الـ Empty elements في HTML
+
+- بعض الـ Elements لا تحتوي على محتوى
+- تسمى Empty elements
+- لا تحتاج إلى End tag مثل الـ <br>
+
+## دور الـ Web Browser
+
+كيف يقرأ المتصفح الـ HTML
+
+## الهيكل الأساسي لصفحة HTML
+
+الهيكل الأساسي لصفحة HTML5
 
 ```html
 <!DOCTYPE html>
@@ -36,32 +57,12 @@
 </html>
 ```
 
-## ما هو الـ HTML Element؟
-
-مكونات الـ HTML element
-
-## الـ Empty Elements
-
-Empty Elements أو الـ Empty Elements لا تحتوي على محتوى ولا تحتاج لـ end tag.
-
-- بعض الـ HTML elements لا تحتاج content.
-- لا تحتاج لـ end tag.
-- تسمى empty elements.
-- مثال شهير: <br> لعمل سطر جديد.
-
-## دور الـ Web Browsers
-
-المتصفح يقرأ الـ HTML ويعرض المحتوى للمستخدم.
-
-## هيكل صفحة الـ HTML
-
-توضيح الفرق بين الـ body والـ title في هيكل الصفحة.
-
 ## خاتمة الدرس
 
-ملخص الدرس والتمهيد للخطوة القادمة.
+مراجعة سريعة على مفاهيم الـ HTML الأساسية والتمهيد للدرس القادم.
 
-- الـ HTML هي لغة الهيكلة الأساسية.
-- الـ elements هي حجر الأساس.
-- الفرق بين الـ tags والـ content.
-- الدرس القادم: اختيار الـ HTML Editors.
+- مراجعة مفهوم الـ HTML كـ Markup language
+- فهم مكونات الـ HTML Element
+- الفرق بين الـ Elements العادية والـ Empty elements
+- دور الـ Web Browser في عرض الصفحة
+- الدرس القادم: تجهيز الـ HTML Editors
