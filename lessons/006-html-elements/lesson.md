@@ -1,26 +1,26 @@
-# HTML Elements and Structure
+# HTML Elements
 
 المصدر: https://www.w3schools.com/html/html_elements.asp
 
-## مقدمة عن عناصر HTML
+## خرافة المتصفح الذكي
 
-تتكون عناصر HTML من Start Tag والمحتوى ثم End Tag لبناء صفحات الويب.
+المتصفح ليس مصلحا للأخطاء البرمجية
 
-- تعريف HTML Elements في صفحات الويب
-- دور Start Tag و End Tag في تحديد الحدود
-- أهمية محتوى العنصر Content داخل الوثيقة
+- الاعتماد على المتصفح لتصحيح الأخطاء يسبب مشاكل غير متوقعة
+- كتابة الـ Tags بشكل صحيح هي أساس الـ Web Development
+- مقدمة عن الـ HTML Elements
 
-## العناصر المتداخلة Nested Elements
+## مكونات الـ HTML Element
 
-تتكون مستندات HTML من عناصر متداخلة Nested HTML Elements تحتوي عناصر أخرى.
+هيكل الـ HTML Element
 
-- مفهوم Nested HTML Elements في المستندات
-- احتواء العناصر على عناصر فرعية أخرى
-- بناء الهيكل الشامل للصفحة بواسطة التداخل
+## الـ Nested Elements
 
-## الكود الأساسي الأول
+تداخل العناصر في الـ HTML
 
-يبدأ المستند بتعريف DOCTYPE HTML ثم عنصر html الجذري وعنصر body.
+## هيكل الـ HTML
+
+مثال عملي لهيكل الـ HTML
 
 ```html
 <!DOCTYPE html>
@@ -35,17 +35,9 @@
 </html>
 ```
 
-## شرح أجزاء الكود بالتفصيل
+## ليه لازم تقفل الـ Tags؟
 
-عنصر html هو الجذر، بينما body يحتوى على h1 للعنوان و p للفقرة.
-
-- عنصر html يعتبر Root Element للمستند
-- عنصر body يحدد محتوى صفحة الويب
-- عنصرا h1 و p لتمييز العناوين والفقرات
-
-## شرح Empty Elements Empty Elements
-
-Empty Elements Empty Elements ليس لها محتوى ولا تحتوي على End Tag مثل br.
+عدم إغلاق الـ Tags بيؤدي لنتائج غير متوقعة
 
 ```html
 <!DOCTYPE html>
@@ -54,23 +46,31 @@ Empty Elements Empty Elements ليس لها محتوى ولا تحتوي على 
     <meta charset="UTF-8">
   </head>
   <body>
-    <p>This is a <br> paragraph with a line break.</p>
+    <p>This is a paragraph
+      <p>This is a paragraph
+      </p>
+    </p>
   </body>
 </html>
 ```
 
-## حساسية حالة الحروف Case Sensitivity
+## الـ Empty Elements
 
-Tags في HTML ليست حساسة لحالة الحروف ولكن يفضل استخدام الحروف الصغيرة.
+العناصر التي لا تحتوي على محتوى
 
-- لغة HTML ليست حساسة لحالة الحروف Case Sensitive
-- استخدام <P> يعطي نفس النتيجة مثل <p>
-- التوصية البرمجية باعتماد الحروف الصغيرة دائما
+- الـ Empty elements مفيش ليها محتوى
+- الـ <br> هو مثال للـ Empty element
+- الـ Empty elements مفيش ليها End tag
 
-## خلاصة الدرس وأفضل الممارسات
+## حالة الحروف (Case Sensitivity)
 
-خلاصة الدرس: احرص دائما على كتابة End Tag وتنظيم عناصر HTML بشكل سليم.
+معايير كتابة الـ Tags
 
-- تجنب إهمال End Tag لمنع الأخطاء غير المتوقعة
-- الالتزام بكتابة أسماء العناصر بأحرف صغيرة
-- مراجعة المراجع الشاملة لتطوير مهارات HTML
+## ملخص الدرس
+
+مراجعة سريعة والتمهيد للدرس القادم
+
+- مراجعة الـ Elements والـ Nesting
+- أهمية الـ End tag
+- الالتزام بالـ Lowercase
+- الاستعداد للـ Code Challenge القادم
