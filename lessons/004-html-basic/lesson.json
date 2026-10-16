@@ -7,9 +7,9 @@
   "dialect": "egyptian",
   "objectives": [
     "Understand the basic structure of an HTML document",
-    "Learn the purpose of the <!DOCTYPE html> declaration",
-    "Identify and use basic HTML tags like headings, paragraphs, links, and images",
-    "Learn how to inspect and view the source code of web pages"
+    "Learn how to use fundamental tags like h1-h6, p, a, and img",
+    "Understand the role of the DOCTYPE declaration",
+    "Learn how to view and inspect HTML source code in the browser"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_basic.asp"
@@ -43,17 +43,18 @@
   "scenes": [
     {
       "id": "scene_1",
-      "title": "شرح Myth Buster: The Browser's Perspective",
+      "title": "مقدمة في هيكلة صفحات الويب",
       "narration": {
-        "spoken_text": "كتير من المطورين فاكرين إن مجرد ما المتصفح يفتح صفحتك، كودك كده سليم 100! لكن في الحقيقة، المتصفح محتاج يفهم نوع الصفحة وترتيبها عشان يعرض نتيجتك صح وما يحصلش أي تشويه في العرض. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنتعلم الأساس الحقيقي اللي هيخلي شغلك احترافي ومعياري، وهنشوف إزاي المتصفح بيقرأ الكود بتاعك من أول سطر.",
-        "caption_text": "شرح وتوضيح Myth Buster: The Browser's Perspective"
+        "spoken_text": "عمرك سألت نفسك المتصفح بيعرف منين إن ده عنوان وده فقرة؟ كل ده بيحصل بفضل الـ HTML. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنبدأ رحلتنا في فهم الـ HTML Basic. هنعرف إزاي نبني هيكل أي صفحة ويب من الصفر، وهنتعلم الـ tags الأساسية اللي بتخلي المتصفح يفهم محتوى صفحتك ويعرضه بشكل سليم للمستخدم. جهز نفسك، لأن دي أول خطوة حقيقية ليك في عالم الويب.",
+        "caption_text": "مقدمة في هيكلة صفحات الويب باستخدام HTML"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Many developers think that just opening the browser means the code is 100 correct.",
-          "مفهوم The browser needs to understand the document type and structure to display it correctly without distortion.",
-          "مفهوم Welcome, I'm Mahmoud Abdelhamid, and today we'll learn the real foundation that makes your work professional and standard."
+          "فهم دور الـ HTML في بناء صفحات الويب",
+          "التعرف على الهيكل الأساسي لأي صفحة",
+          "استخدام الـ tags الأساسية للعناصر",
+          "كيفية عرض المحتوى للمستخدم"
         ]
       },
       "source_refs": [
@@ -62,10 +63,10 @@
     },
     {
       "id": "scene_2",
-      "title": "شرح The HTML Document Structure",
+      "title": "الهيكل الأساسي لملف HTML",
       "narration": {
-        "spoken_text": "بص معايا على الهيكل الأساسي لأي صفحة HTML. لازم نبدأ بـ <!DOCTYPE html> عشان المتصفح يعرف إحنا شغالين بـ HTML5. بعد كده بيجي الـ <html> Tag اللي بيحتوي علي كل حاجة، وجوه الـ <body> Tag بنكتب المحتوى اللي بيظهر فعلاً للمستخدم. ده الهيكل اللي بيتبني عليه أي موقع محترف، ومن غيره المتصفح ممكن يتلخبط في العرض.",
-        "caption_text": "شرح وتوضيح Basic HTML Document Structure"
+        "spoken_text": "بص معايا، أي ملف HTML لازم يبدأ بـ DOCTYPE html، وده عشان نفهم المتصفح إننا شغالين بـ HTML5. بعد كده بيجي الـ html tag، وده الحاوية الكبيرة اللي بتشيل كل حاجة في الصفحة. وجوه الـ html بنلاقي الـ body tag، وده المكان اللي بنكتب فيه كل العناصر اللي المستخدم بيشوفها فعلاً، زي العناوين والفقرات. ده الهيكل الأساسي اللي بيبني عليه أي موقع.",
+        "caption_text": "الهيكل الأساسي لملف HTML"
       },
       "visual": {
         "type": "code",
@@ -73,7 +74,8 @@
         "filename": "index.html",
         "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
         "highlight_lines": [
-          7
+          7,
+          8
         ],
         "output": "My First Heading\nMy first paragraph.",
         "output_status": "illustrative",
@@ -88,56 +90,10 @@
     },
     {
       "id": "scene_3",
-      "title": "شرح The <!DOCTYPE> Declaration",
+      "title": "استخدام الـ Headings",
       "narration": {
-        "spoken_text": "ليه بنكتب <!DOCTYPE html> في أول سطر؟ الـ DOCTYPE ده هو اللي بيعرف المتصفح إيه نوع المستند اللي بيقرأه، وده بيخليه يعرض الصفحة بشكل صحيح ومن غير أخطاء. لازم يظهر مرة واحدة بس في أول الصفحة وقبل أي Tag تاني. هو مش Case sensitive، يعني مش بيفرق بين الحروف الكبيرة والصغيرة، بس لازم يكون موجود عشان شغلك يكون معاييري.",
-        "caption_text": "شرح وتوضيح Understanding <!DOCTYPE html>"
-      },
-      "visual": {
-        "type": "diagram",
-        "nodes": [
-          {
-            "id": "doctype",
-            "label": "<!DOCTYPE html>",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "html",
-            "label": "<html>",
-            "active": false,
-            "icon": null
-          },
-          {
-            "id": "body",
-            "label": "<body>",
-            "active": false,
-            "icon": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "doctype",
-            "target": "html",
-            "label": "Top of page"
-          },
-          {
-            "source": "html",
-            "target": "body",
-            "label": "Contains"
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_basic.asp"
-      ]
-    },
-    {
-      "id": "scene_4",
-      "title": "شرح HTML Headings",
-      "narration": {
-        "spoken_text": "دلوقتي هنتكلم عن الـ Headings، ودي بنستخدمها عشان نحدد العناوين في الصفحة. عندنا من <h1> لحد <h6>. الـ <h1> هو أهم عنوان في الصفحة، والـ <h6> هو الأقل أهمية. المتصفح بيعرض الـ <h1> بخط كبير وواضح، وكل ما الرقم بيزيد، حجم الخط بيصغر. ده بيساعد المتصفح ومحركات البحث يفهموا ترتيب وهيكلية المحتوى بتاعك.",
-        "caption_text": "شرح وتوضيح Using HTML Headings"
+        "spoken_text": "دلوقتي هنتكلم عن العناوين، أو الـ Headings. بنستخدم الـ tags من h1 لحد h6 عشان نرتب المحتوى بتاعنا. الـ h1 هو العنوان الرئيسي والأهم، والمتصفح بيعرضه بحجم كبير جداً. كل ما الرقم بيزيد، الأهمية بتقل والحجم بيصغر، لحد ما نوصل لـ h6. ده بيساعد المتصفح ومحركات البحث يفهموا هيكل الصفحة وترتيب المعلومات فيها.",
+        "caption_text": "استخدام الـ Headings من h1 إلى h6"
       },
       "visual": {
         "type": "code",
@@ -159,20 +115,46 @@
       ]
     },
     {
-      "id": "scene_5",
-      "title": "شرح HTML Paragraphs",
+      "id": "scene_4",
+      "title": "كتابة الفقرات باستخدام p",
       "narration": {
-        "spoken_text": "دلوقتي جه الدور على الـ Paragraphs، ودي بنستخدم لها الـ Tag اللي اسمه p. الـ p Tag ده هو المسؤول عن أي نص عادي بتكتبه في صفحتك. الميزة هنا إن كل ما تفتح p Tag جديد، المتصفح بيفهم تلقائياً إن ده بلوك نصي جديد وبيحطه في سطر لوحده. جرب تكتب كذا p Tag ورا بعض وشوف النتيجة بنفسك، هتلاقي كل واحد فيهم واخد مساحته ومستقل عن التاني، وده أساس تنظيم النصوص في أي موقع.",
-        "caption_text": "استخدام الـ p Tag لتعريف الفقرات النصية"
+        "spoken_text": "أخيراً، عشان نكتب نصوص عادية أو فقرات، بنستخدم الـ p tag. أي نص هتحطه جوه الـ p tag هيتعامل كفقرة مستقلة، والمتصفح تلقائياً بيسيب مسافة قبل وبعد كل فقرة عشان يخلي القراءة مريحة للعين. دي أبسط طريقة لعرض النصوص، وهتستخدمها كتير جداً في أي صفحة ويب بتبنيها. جرب تكتب كذا فقرة ورا بعض وشوف النتيجة بنفسك.",
+        "caption_text": "استخدام الـ p tag للفقرات"
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "paragraphs.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>This is a paragraph.</p>\n    <p>This is another paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
+        "output": "This is a paragraph.\nThis is another paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "إضافة الروابط باستخدام a",
+      "narration": {
+        "spoken_text": "دلوقتي جه وقت الروابط، عشان تعمل لينك في صفحتك بنستخدم الـ a tag. بس عشان اللينك ده يودينا لمكان، لازم نستخدم الـ href attribute. ده اللي بنكتب جواه الرابط اللي المستخدم هيروح له. الـ attributes دي هي اللي بتدي معلومات إضافية للـ element بتاعنا، فخلي بالك دايماً إنك تحدد الوجهة صح.",
+        "caption_text": "استخدام الـ a tag لإنشاء الروابط مع الـ href attribute."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>This is a paragraph.</p>\n    <p>This is another paragraph.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com\">This is a link</a>\n  </body>\n</html>",
         "highlight_lines": [
-          7,
-          8
+          7
         ],
         "output": null,
         "output_status": "not_applicable",
@@ -187,19 +169,18 @@
     },
     {
       "id": "scene_6",
-      "title": "شرح Links and Images",
+      "title": "إدراج الصور باستخدام img",
       "narration": {
-        "spoken_text": "طيب إزاي نضيف روابط أو صور؟ هنا بيجي دور الـ Attributes. الـ Attribute ده عبارة عن معلومة إضافية بنديها للـ Tag. مثلاً الـ a Tag بيحتاج Attribute اسمه href عشان يعرف المتصفح الرابط ده رايح فين. ونفس الكلام مع الـ img Tag، بنستخدم src عشان نحدد مكان الصورة، وكمان alt عشان لو الصورة ما ظهرتش، وwidth وheight عشان نتحكم في مقاساتها. دي أدوات قوية جداً بتخلي صفحتك تفاعلية ومفيدة للمستخدم.",
-        "caption_text": "استخدام الـ Attributes مع الـ a و img Tags"
+        "spoken_text": "عايز تحط صورة في صفحتك؟ بنستخدم الـ img tag. الـ img tag ده بيحتاج شوية attributes عشان يشتغل صح. أول حاجة الـ src وده مسار الصورة، والـ alt وده نص بديل بيظهر لو الصورة محملتش. كمان تقدر تتحكم في أبعاد الصورة عن طريق الـ width والـ height. جرب تغير الأرقام دي وشوف الصورة بتكبر وتصغر إزاي قدامك.",
+        "caption_text": "إدراج الصور باستخدام الـ img tag وتحديد خصائصها."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com\">This is a link</a>\n    <img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">\n  </body>\n</html>",
         "highlight_lines": [
-          7,
-          8
+          7
         ],
         "output": null,
         "output_status": "not_applicable",
@@ -214,17 +195,37 @@
     },
     {
       "id": "scene_7",
-      "title": "شرح View Source and Inspect",
+      "title": "كيفية فحص الكود في المتصفح",
       "narration": {
-        "spoken_text": "ساعات بتشوف موقع بيعجبك وبتقول يا ترى ده اتعمل إزاي؟ المتصفح بيوفرلك أدوات قوية جداً. لو دوست CTRL + U، هتفتح صفحة فيها الـ HTML Source كود بتاع الموقع كله. والأقوى من كده، لو عملت Right-click على أي عنصر واخترت Inspect، هيفتحلك الـ Elements panel. هنا تقدر تشوف الـ HTML والـ CSS اللي بيتحكموا في شكل العنصر، بل وتقدر تعدل فيهم وتشوف النتيجة فوراً قدام عينك من غير ما تغير الكود الأصلي.",
-        "caption_text": "أدوات المطورين في المتصفح"
+        "spoken_text": "طيب لو شوفت موقع وعجبك وعايز تعرف هو معمول إزاي؟ عندك طريقتين. الأولى دوس CTRL + U عشان تفتح الـ Source Code في tab جديدة. التانية، ودي الأهم، إنك تعمل كليك يمين على أي عنصر وتختار Inspect. دي بتفتحلك الـ Elements panel اللي بتوريك الـ HTML والـ CSS بتاع الموقع في نفس اللحظة، وتقدر تعدل عليهم وتشوف النتيجة فوراً.",
+        "caption_text": "فحص الكود باستخدام الـ Source Code والـ Inspect tool."
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "استخدم CTRL + U لعرض الـ Source code للصفحة",
-          "استخدم Inspect لرؤية الـ DOM والـ CSS",
-          "تعديل الـ HTML والـ CSS بشكل مباشر في الـ Elements panel"
+        "type": "explainer",
+        "concept": "dom_tree",
+        "headline": "أدوات المطور في المتصفح",
+        "nodes": [
+          {
+            "id": "1",
+            "tag": "Browser",
+            "parent_id": null,
+            "role": "Main Window",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "2",
+            "tag": "View Source",
+            "parent_id": "1",
+            "role": "Static Code",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "3",
+            "tag": "Inspect Element",
+            "parent_id": "1",
+            "role": "Live DOM & CSS",
+            "color": "#38bdf8"
+          }
         ]
       },
       "source_refs": [
@@ -233,18 +234,19 @@
     },
     {
       "id": "scene_8",
-      "title": "شرح Summary and Next Steps",
+      "title": "خاتمة الدرس",
       "narration": {
-        "spoken_text": "كده إحنا غطينا الأساسيات المهمة جداً. عرفنا إزاي نبدأ الـ HTML Document، وإزاي نستخدم الـ Headings والـ Paragraphs، وكمان عرفنا إزاي نضيف روابط وصور باستخدام الـ Attributes. دي هي الطوب اللي بتبني بيه أي موقع على الإنترنت. دلوقتي دورك تجرب وتطبق كل اللي اتعلمناه ده بإيدك. جهز نفسك، لأن الدرس اللي جاي هيكون تحدي عملي هيخليك تطبق كل ده في مشروع صغير. أشوفكم الدرس الجاي!",
-        "caption_text": "ملخص الدرس والخطوات القادمة"
+        "spoken_text": "كده إحنا غطينا أساسيات الـ HTML. عرفنا الـ DOCTYPE، والـ html والـ body، والـ tags الأساسية زي h1 و p و a و img. نصيحتي ليك، افتح الـ Editor بتاعك وجرب تكتب الكود ده بنفسك. الدرس الجاي عندنا Code Challenge عشان نطبق كل اللي اتعلمناه، استعدوا!",
+        "caption_text": "ملخص أساسيات الـ HTML."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مراجعة هيكل الـ HTML الأساسي",
-          "استخدام الـ Headings والـ Paragraphs",
-          "التعامل مع الـ Links والـ Images والـ Attributes",
-          "الاستعداد للتحدي العملي القادم"
+          "فهمنا الـ DOCTYPE والـ html والـ body.",
+          "استخدمنا الـ tags الأساسية: h1, p, a, img.",
+          "تعلمنا إزاي نستخدم الـ attributes.",
+          "عرفنا إزاي نعمل Inspect لأي صفحة ويب.",
+          "استعدوا للـ Code Challenge في الدرس الجاي!"
         ]
       },
       "source_refs": [
