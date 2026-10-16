@@ -2,25 +2,26 @@
 
 المصدر: https://www.w3schools.com/html/html_elements.asp
 
-## خرافة المتصفح الذكي
+## مقدمة في الـ HTML Elements
 
-المتصفح ليس مصلحا للأخطاء البرمجية
+مقدمة في الـ HTML Elements
 
-- الاعتماد على المتصفح لتصحيح الأخطاء يسبب مشاكل غير متوقعة
-- كتابة الـ Tags بشكل صحيح هي أساس الـ Web Development
-- مقدمة عن الـ HTML Elements
+- المتصفح بيفهم هيكل الصفحة من خلال الـ HTML Elements
+- كل حاجة على الويب عبارة عن HTML Elements
+- الـ HTML Element هو حجر الأساس لأي صفحة ويب
+- النهاردة هنفكك الـ HTML Elements ونعرف إزاي بتتبني
 
-## مكونات الـ HTML Element
+## تشريح الـ HTML Element
 
-هيكل الـ HTML Element
+مكونات الـ HTML Element
 
-## الـ Nested Elements
+## الـ Nested HTML Elements
 
-تداخل العناصر في الـ HTML
+مفهوم الـ Nested HTML Elements
 
-## هيكل الـ HTML
+## مثال عملي على الـ Structure
 
-مثال عملي لهيكل الـ HTML
+مثال كامل على هيكل الـ HTML
 
 ```html
 <!DOCTYPE html>
@@ -35,9 +36,18 @@
 </html>
 ```
 
-## ليه لازم تقفل الـ Tags؟
+## قاعدة الـ End Tag
 
-عدم إغلاق الـ Tags بيؤدي لنتائج غير متوقعة
+قاعدة الـ End Tag: لا تعتمد على تسامح المتصفح
+
+- المتصفح قد يعرض الصفحة بدون End tag
+- هذه عادة برمجية سيئة
+- تجنب الأخطاء غير المتوقعة في الـ rendering
+- التزم دائما بإغلاق الـ tags
+
+## الـ Empty HTML Elements
+
+الـ Empty elements: عناصر بدون محتوى وبدون End tag
 
 ```html
 <!DOCTYPE html>
@@ -46,31 +56,20 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <p>This is a paragraph
-      <p>This is a paragraph
-      </p>
-    </p>
+    <p>This is a <br> paragraph with a line break.</p>
   </body>
 </html>
 ```
 
-## الـ Empty Elements
+## الـ Case Sensitivity
 
-العناصر التي لا تحتوي على محتوى
+الـ HTML ليس Case sensitive ولكن الـ lowercase هو الأفضل
 
-- الـ Empty elements مفيش ليها محتوى
-- الـ <br> هو مثال للـ Empty element
-- الـ Empty elements مفيش ليها End tag
+## خاتمة الدرس
 
-## حالة الحروف (Case Sensitivity)
+خاتمة: مراجعة سريعة واستعداد للـ Code Challenge
 
-معايير كتابة الـ Tags
-
-## ملخص الدرس
-
-مراجعة سريعة والتمهيد للدرس القادم
-
-- مراجعة الـ Elements والـ Nesting
-- أهمية الـ End tag
-- الالتزام بالـ Lowercase
-- الاستعداد للـ Code Challenge القادم
+- تم تغطية أساسيات الـ HTML Elements
+- جرب كتابة الكود بنفسك
+- الدرس القادم: Code Challenge
+- استعد للتطبيق العملي
