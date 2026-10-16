@@ -6,10 +6,10 @@
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "Reinforce understanding of basic HTML structure",
-    "Apply knowledge from previous lessons in a practical environment",
-    "Develop muscle memory for writing HTML tags",
-    "Prepare for more complex HTML elements"
+    "Understand the importance of coding challenges in mastering HTML",
+    "Review basic HTML structure and syntax",
+    "Apply knowledge from previous lessons to solve practical problems",
+    "Prepare for upcoming lessons on HTML Elements"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_challenges_basic.asp"
@@ -18,18 +18,18 @@
   "scenes": [
     {
       "id": "scene_1",
-      "title": "شرح The Reality of Coding",
+      "title": "شرح Ready to Test Your Skills?",
       "narration": {
-        "spoken_text": "لو فاكر إن مجرد ما الكود يرن من غير ما يطلع Error يبقى شغلك سليم، فالحقيقة غير كده تماماً! البرمجة مش مجرد قراية أو حفظ، دي مهارة عملية بتتبني بالإيد. لو اعتمدت على الفرجة بس، أول ما تقابل مشكلة حقيقية هتلاقي نفسك واقف مكانك ومش عارف تبدأ منين. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنفك شفرة الأساس ده خطوة بخطوة عشان كودك يشتغل صح وبأعلى كفاءة، ونبدأ أول تحدي عملي لينا في الـ HTML.",
-        "caption_text": "شرح وتوضيح Coding is an active skill. Don't fall into the trap of passive learning."
+        "spoken_text": "عمرك سألت نفسك ليه مهما قريت عن الـ HTML بتحس إنك لسه مش متمكن؟ الحقيقة إن البرمجة مش مجرد قراءة، دي مهارة بتتبني بالإيد. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنكسر حاجز الخوف ونبدأ أول تحدي عملي لينا في الـ HTML. هنختبر فهمنا للأساسيات اللي اتعلمناها، ونشوف إزاي نقدر نحول المعلومات دي لكود حقيقي شغال. جاهز تختبر مهاراتك؟ يلا بينا نبدأ التحدي.",
+        "caption_text": "شرح وتوضيح Coding is a skill that requires active practice. Today we start our first HTML challenge."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Coding is an active skill, not passive reading",
-          "مفهوم The danger of assuming knowledge without practice",
-          "مفهوم Challenges reveal hidden gaps in understanding",
-          "مفهوم Building muscle memory through active coding"
+          "مفهوم Coding is a skill that requires active practice",
+          "مفهوم Challenges are the best way to identify knowledge gaps",
+          "مفهوم Welcome and introduction by Mahmoud Abdelhamid",
+          "مفهوم Overview of today's goal: Testing your HTML basics"
         ]
       },
       "source_refs": [
@@ -38,18 +38,37 @@
     },
     {
       "id": "scene_2",
-      "title": "شرح Why Challenges Matter",
+      "title": "شرح Why Code Challenges Matter",
       "narration": {
-        "spoken_text": "ليه التحديات دي مهمة؟ لأنك ببساطة مش هتعرف تسوق عربية بمجرد ما تقرا كتاب عنها. الـ HTML محتاج إيدك تاخد على كتابة الـ Tags وتفهم إزاي الـ Elements بتترتب جوه بعضها. التحديات دي هي اللي بتعمل الـ Feedback Loop السريع اللي بيخليك تكتشف أخطاءك وتصلحها فوراً، وده اللي بيبني عندك الـ Muscle Memory اللي بيخليك تكتب كود احترافي من غير تفكير.",
-        "caption_text": "شرح وتوضيح Bridging the gap between theory and practice through active challenges."
+        "spoken_text": "ليه بنعمل تحديات؟ ببساطة لأن التحدي هو اللي بيخليك تخرج من مرحلة التلقي لمرحلة التنفيذ. لما بتكتب الـ Tag بإيدك وتغلط وتصلح الغلطة دي، عقلك بيحفظ الـ Syntax بشكل تلقائي. ده اللي بنسميه الـ Muscle Memory. التحديات دي مش بس عشان نختبر معلوماتنا، دي عشان تبني ثقتك بنفسك وتخليك قادر تكتب كود من الصفر من غير ما تعتمد على حد. دي الخطوة اللي بتفرق بين المبرمج اللي بيعرف يقرأ كود، والمبرمج اللي بيعرف يبني مشروع.",
+        "caption_text": "شرح وتوضيح Moving from theory to application and building muscle memory."
       },
       "visual": {
-        "type": "bullets",
-        "items": [
-          "مفهوم Theory vs Practice: The gap is closed by coding",
-          "مفهوم Immediate feedback loops for faster learning",
-          "مفهوم Building confidence through small, consistent wins",
-          "مفهوم Mastering syntax through repetition"
+        "type": "explainer",
+        "concept": "dom_tree",
+        "headline": "The Value of Active Coding",
+        "nodes": [
+          {
+            "id": "theory",
+            "tag": "Theory",
+            "parent_id": null,
+            "role": "Passive Learning",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "practice",
+            "tag": "Practice",
+            "parent_id": "theory",
+            "role": "Active Coding",
+            "color": "#38bdf8"
+          },
+          {
+            "id": "muscle_memory",
+            "tag": "Muscle Memory",
+            "parent_id": "practice",
+            "role": "Mastery",
+            "color": "#38bdf8"
+          }
         ]
       },
       "source_refs": [
@@ -58,42 +77,53 @@
     },
     {
       "id": "scene_3",
-      "title": "شرح Recap of HTML Basics",
+      "title": "شرح Recap: What We Have Covered",
       "narration": {
-        "spoken_text": "تعالوا نراجع الأساس اللي هنبني عليه. أي صفحة ويب بتبدأ بـ <html>، وجواها جزئين أساسيين: الـ <head> اللي بيشيل بيانات الصفحة والـ Metadata، والـ <body> اللي بيحتوي على كل حاجة المستخدم بيشوفها بعينه. فهمك للـ Structure ده هو اللي بيخليك تتحكم في شكل ومحتوى صفحتك. يلا بينا نفتح المحرر ونبدأ أول تحدي.",
-        "caption_text": "شرح وتوضيح The fundamental structure of an HTML document."
+        "spoken_text": "قبل ما ندخل في التحدي، خلينا نراجع سريعاً إحنا وصلنا لفين. اتكلمنا عن الـ HTML كبنية أساسية للويب، وعرفنا إزاي نجهز الـ Development Environment بتاعنا، وفهمنا الـ Structure الأساسي لأي HTML Document. كل اللي اتعلمناه في الدروس اللي فاتت هو حجر الأساس اللي هنبني عليه دلوقتي. التحدي ده هيجمع كل النقط دي مع بعض، عشان تتأكد إنك فاهم الـ Elements والـ Tags صح قبل ما ندخل في اللي جاي. ركز معايا، ويلا بينا.",
+        "caption_text": "شرح وتوضيح Reviewing the foundation: HTML structure, environment, and basic syntax."
       },
       "visual": {
         "type": "diagram",
         "nodes": [
           {
-            "id": "html",
-            "label": "<html>",
+            "id": "root",
+            "label": "HTML Basics",
             "active": true,
             "icon": null
           },
           {
-            "id": "head",
-            "label": "<head>",
+            "id": "n1",
+            "label": "Web Structure",
             "active": true,
             "icon": null
           },
           {
-            "id": "body",
-            "label": "<body>",
+            "id": "n2",
+            "label": "Dev Environment",
+            "active": true,
+            "icon": null
+          },
+          {
+            "id": "n3",
+            "label": "HTML Document",
             "active": true,
             "icon": null
           }
         ],
         "edges": [
           {
-            "source": "html",
-            "target": "head",
+            "source": "root",
+            "target": "n1",
             "label": ""
           },
           {
-            "source": "html",
-            "target": "body",
+            "source": "root",
+            "target": "n2",
+            "label": ""
+          },
+          {
+            "source": "root",
+            "target": "n3",
             "label": ""
           }
         ]
@@ -104,87 +134,10 @@
     },
     {
       "id": "scene_4",
-      "title": "شرح Approaching the Challenge",
+      "title": "شرح The Challenge: HTML Basics",
       "narration": {
-        "spoken_text": "لو فاكر إن مجرد ما الكود يرن من غير ما يطلع Error يبقى شغلك سليم، فالحقيقة غير كده تماماً! في فخ هندسي مشهور بيقع فيه مطورين كتير لما بيتعاملوا مع الـ HTML لأول مرة، وهو إنهم بيعتمدوا على الحلول السهلة من غير ما يفهموا الـ Structure. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنتعلم الأساس الصحيح اللي هيخلي شغلك احترافي ومعياري وقابل للتطوير. تعالوا نشوف إزاي بنحل الـ Challenge ده بمنهجية منظمة.",
-        "caption_text": "منهجية حل الـ HTML Challenge"
-      },
-      "visual": {
-        "type": "flowchart",
-        "nodes": [
-          {
-            "id": "start",
-            "label": "Start Challenge",
-            "kind": "start",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "read",
-            "label": "Read Requirements",
-            "kind": "process",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "write",
-            "label": "Write Code",
-            "kind": "process",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "test",
-            "label": "Test & Verify",
-            "kind": "decision",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "end",
-            "label": "Success",
-            "kind": "end",
-            "icon": null,
-            "active": false
-          }
-        ],
-        "edges": [
-          {
-            "source": "start",
-            "target": "read",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "read",
-            "target": "write",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "write",
-            "target": "test",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "test",
-            "target": "end",
-            "label": "Pass",
-            "direction": null
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
-    },
-    {
-      "id": "scene_5",
-      "title": "شرح Practical Coding Session",
-      "narration": {
-        "spoken_text": "يلا بينا نطبق عملي. قدامنا الـ Challenge ده، والمطلوب نكتب كود HTML بسيط. أول حاجة بنبدأ بالـ Structure الأساسي، الـ DOCTYPE والـ html tag. بعد كده بنحط الـ body، وجوه الـ body هنضيف الـ h1 عشان العنوان، والـ p عشان الفقرة. ركز معايا في الـ nesting، يعني كل tag بيتفتح لازم يتقفل في مكانه الصح. ده اللي بيخلي البراوزر يفهم الكود بتاعك من غير أي مشاكل.",
-        "caption_text": "كتابة الـ HTML الأساسي"
+        "spoken_text": "دلوقتي جه وقت التحدي! عشان نثبت فهمنا للـ HTML، لازم نكتب كود سليم. بص على الهيكل الأساسي ده: عندنا <html>، وجواه الـ <body> اللي بيحتوي على الـ <h1> والـ <p>. ركز جداً إن كل Tag تفتحه لازم تقفله، والـ Nesting يكون مظبوط. التحدي ده هيخليك تتعود على كتابة كود نظيف ومنظم. جرب تكتب الكود ده بنفسك، وشوف النتيجة هتطلع إزاي على المتصفح. يلا بينا!",
+        "caption_text": "شرح وتوضيح Mastering the basic HTML structure: <html>, <head>, and <body> tags."
       },
       "visual": {
         "type": "code",
@@ -206,19 +159,96 @@
       ]
     },
     {
-      "id": "scene_6",
-      "title": "شرح Common Pitfalls",
+      "id": "scene_5",
+      "title": "شرح How to Approach the Problem",
       "narration": {
-        "spoken_text": "طيب إيه أكتر الأخطاء اللي ممكن تقع فيها؟ أول حاجة نسيان الـ closing tags، زي إنك تفتح p ومتقفلهاش. تاني حاجة الـ incorrect nesting، يعني تدخل الـ tags جوه بعض بشكل غلط. تالت حاجة، تجاهل الـ case sensitivity، رغم إن الـ HTML مش حساس أوي، بس الأفضل دايماً نكتب الـ tags بحروف صغيرة. الالتزام بالمعايير دي من البداية بيوفر عليك ساعات من الـ debugging بعدين.",
-        "caption_text": "تجنب الأخطاء الشائعة"
+        "spoken_text": "عشان تحل أي Coding Challenge من غير ما تتلخبط، اتبع الخطوات دي. أول حاجة اقرأ المتطلبات بتركيز، وبعدين ارسم الـ Structure في دماغك أو على ورقة. ابدأ ضيف الـ Content جوه الـ Tags، وبعدها اعمل Verify للنتيجة في الـ Browser. لو ظهرت أي مشكلة، راجع الكود بتاعك وصلح الـ Errors. الطريقة دي هتخليك متمكن وتوفر عليك وقت ومجهود كبير في أي مشروع هتعمله بعد كده.",
+        "caption_text": "شرح وتوضيح Step-by-step strategy for solving HTML coding challenges."
+      },
+      "visual": {
+        "type": "flowchart",
+        "nodes": [
+          {
+            "id": "1",
+            "label": "Read Requirements",
+            "kind": "start",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "2",
+            "label": "Draft Structure",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "3",
+            "label": "Add Content",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "4",
+            "label": "Verify in Browser",
+            "kind": "decision",
+            "icon": null,
+            "active": false
+          },
+          {
+            "id": "5",
+            "label": "Fix Errors",
+            "kind": "process",
+            "icon": null,
+            "active": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "1",
+            "target": "2",
+            "label": "",
+            "direction": null
+          },
+          {
+            "source": "2",
+            "target": "3",
+            "label": "",
+            "direction": null
+          },
+          {
+            "source": "3",
+            "target": "4",
+            "label": "",
+            "direction": null
+          },
+          {
+            "source": "4",
+            "target": "5",
+            "label": "If errors found",
+            "direction": null
+          }
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_challenges_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "شرح Best Practices for Success",
+      "narration": {
+        "spoken_text": "عشان تنجح في رحلتك مع الـ HTML، خلي بالك من شوية نصايح ذهبية. دايماً اكتب الـ Tags بحروف صغيرة، يعني Lowercase. حافظ على الـ Indentation عشان الكود يكون مقروء وسهل التعديل عليه. ما تستعجلش، ركز في الـ Logic وفهمك للأساسيات أهم بكتير من السرعة. واستخدم الـ W3Schools editor عشان تجرب وتختبر الكود بتاعك أول بأول. دي أفضل طريقة عشان تثبت المعلومة وتطور مهاراتك بشكل حقيقي.",
+        "caption_text": "شرح وتوضيح Essential coding habits for HTML developers."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Forgetting closing tags",
-          "مفهوم Incorrect nesting of elements",
-          "مفهوم Ignoring case sensitivity in tags",
-          "مفهوم Lack of consistency in indentation"
+          "مفهوم Always use lowercase for tags",
+          "مفهوم Keep your indentation consistent",
+          "مفهوم Focus on understanding the logic",
+          "مفهوم Use the W3Schools editor to test your code"
         ]
       },
       "source_refs": [
@@ -227,18 +257,18 @@
     },
     {
       "id": "scene_7",
-      "title": "شرح Conclusion and Next Steps",
+      "title": "شرح Moving Forward",
       "narration": {
-        "spoken_text": "كده إحنا خلصنا الـ Challenge بتاعنا النهاردة، وعملنا مراجعة سريعة على الـ HTML Basics. يا بطل، اللي عملته ده خطوة مهمة جداً عشان تبني الـ Muscle Memory اللي محتاجها. نصيحتي ليك، جرب تغير في الـ Tags وتشوف إيه اللي هيحصل في الـ Browser، التجربة هي اللي بتعلم. في الدرس رقم 6، هنبدأ ندخل في تفاصيل الـ HTML Elements بشكل أعمق، فاستعد عشان اللي جاي أهم. كمل ممارسة، وأشوفك الدرس الجاي!",
-        "caption_text": "شرح وتوضيح Conclusion: Reviewing progress and preparing for HTML Elements"
+        "spoken_text": "كده يا شباب نكون خلصنا الـ Challenge بتاعنا النهاردة، برافو عليكم لكل اللي حاول يحل ويجرب بنفسه. الـ Challenge ده كان مجرد بداية عشان نثبت المعلومات الأساسية اللي اتعلمناها في الـ HTML. متوقفوش هنا، الممارسة هي اللي بتصنع المبرمج الشاطر. في الدرس الجاي، هنبدأ رحلة جديدة ومهمة جداً وهي الـ HTML Elements، وهنعرف إزاي نبني هيكل الصفحة بشكل احترافي. استنوني في الدرس رقم 6، ومتحمس جداً أشوفكم هناك. سلام يا أبطال!",
+        "caption_text": "شرح وتوضيح Challenge completed. Keep practicing and get ready for the next lesson on HTML Elements."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Reviewing HTML Basics",
-          "مفهوم Building Muscle Memory",
-          "مفهوم Encouraging Independent Practice",
-          "مفهوم Transitioning to HTML Elements in lesson 6"
+          "مفهوم Challenge Completed Successfully",
+          "مفهوم Importance of Constant Practice",
+          "مفهوم Next Topic: HTML Elements",
+          "مفهوم Ready for Lesson 6"
         ]
       },
       "source_refs": [
