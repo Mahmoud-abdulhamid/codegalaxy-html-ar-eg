@@ -1,25 +1,24 @@
-# أساسيات لغة HTML وبناء هيكل الصفحة
+# HTML Basic
 
 المصدر: https://www.w3schools.com/html/html_basic.asp
 
-## مقدمة في لغة HTML
+## شرح Myth Buster: The Browser's Perspective
 
-مرحبا بكم في دورة HTML لتعلم أساسيات بناء صفحات الويب باستخدام Tags و Elements.
+شرح وتوضيح Myth Buster: The Browser's Perspective
 
-- لغة HTML هي الأساس لبناء هيكل صفحات الويب
-- سنتعرف على كيفية كتابة أول مستند HTML
-- لا تقلق إذا واجهت مصطلحات جديدة في البداية
+- مفهوم Many developers think that just opening the browser means the code is 100 correct.
+- مفهوم The browser needs to understand the document type and structure to display it correctly without distortion.
+- مفهوم Welcome, I'm Mahmoud Abdelhamid, and today we'll learn the real foundation that makes your work professional and standard.
 
-## الهيكل الأساسي للمستند
+## شرح The HTML Document Structure
 
-يتكون مستند HTML من DOCTYPE HTML و Root Element يضم head و body.
+شرح وتوضيح Basic HTML Document Structure
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Page Title</title>
   </head>
   <body>
     <h1>My First Heading</h1>
@@ -28,9 +27,13 @@
 </html>
 ```
 
-## استخدام Headings و Paragraphs
+## شرح The <!DOCTYPE> Declaration
 
-نستخدم Headings من h1 إلى h6 لتنظيم العناوين، و p لتعريف الفقرات النصية.
+شرح وتوضيح Understanding <!DOCTYPE html>
+
+## شرح HTML Headings
+
+شرح وتوضيح Using HTML Headings
 
 ```html
 <!DOCTYPE html>
@@ -41,15 +44,31 @@
   <body>
     <h1>This is heading 1</h1>
     <h2>This is heading 2</h2>
-    <p>This is a paragraph.</p>
-    <p>Another paragraph.</p>
+    <h3>This is heading 3</h3>
   </body>
 </html>
 ```
 
-## الروابط والصور و Attributes
+## شرح HTML Paragraphs
 
-نستخدم Attributes لإضافة معلومات إضافية للعناصر مثل الروابط والصور.
+استخدام الـ p Tag لتعريف الفقرات النصية
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+  </body>
+</html>
+```
+
+## شرح Links and Images
+
+استخدام الـ Attributes مع الـ a و img Tags
 
 ```html
 <!DOCTYPE html>
@@ -59,23 +78,24 @@
   </head>
   <body>
     <a href="https://www.w3schools.com">This is a link</a>
-    <img src="image.jpg" alt="Text" width="104" height="142">
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
   </body>
 </html>
 ```
 
-## كيفية فحص الكود
+## شرح View Source and Inspect
 
-يمكن فحص كود HTML لأي صفحة عبر خيار Inspect في المتصفح.
+أدوات المطورين في المتصفح
 
-- استخدام اختصار CTRL + U لعرض كود الصفحة
-- استخدام خيار Inspect لفحص العناصر
-- إمكانية تعديل HTML و CSS مباشرة في المتصفح
+- استخدم CTRL + U لعرض الـ Source code للصفحة
+- استخدم Inspect لرؤية الـ DOM والـ CSS
+- تعديل الـ HTML والـ CSS بشكل مباشر في الـ Elements panel
 
-## خلاصة الدرس
+## شرح Summary and Next Steps
 
-تعلمنا أساسيات HTML بما في ذلك Headings و Paragraphs و Attributes.
+ملخص الدرس والخطوات القادمة
 
-- استخدام Headings و Paragraphs لتنظيم المحتوى
-- استخدام Attributes لإضافة خصائص للعناصر
-- ممارسة كتابة الكود هي مفتاح الاحتراف
+- مراجعة هيكل الـ HTML الأساسي
+- استخدام الـ Headings والـ Paragraphs
+- التعامل مع الـ Links والـ Images والـ Attributes
+- الاستعداد للتحدي العملي القادم
