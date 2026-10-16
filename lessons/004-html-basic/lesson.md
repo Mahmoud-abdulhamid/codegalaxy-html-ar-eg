@@ -2,17 +2,18 @@
 
 المصدر: https://www.w3schools.com/html/html_basic.asp
 
-## شرح Myth Buster: The Browser's Perspective
+## مقدمة في هيكلة صفحات الويب
 
-شرح وتوضيح Myth Buster: The Browser's Perspective
+مقدمة في هيكلة صفحات الويب باستخدام HTML
 
-- مفهوم Many developers think that just opening the browser means the code is 100 correct.
-- مفهوم The browser needs to understand the document type and structure to display it correctly without distortion.
-- مفهوم Welcome, I'm Mahmoud Abdelhamid, and today we'll learn the real foundation that makes your work professional and standard.
+- فهم دور الـ HTML في بناء صفحات الويب
+- التعرف على الهيكل الأساسي لأي صفحة
+- استخدام الـ tags الأساسية للعناصر
+- كيفية عرض المحتوى للمستخدم
 
-## شرح The HTML Document Structure
+## الهيكل الأساسي لملف HTML
 
-شرح وتوضيح Basic HTML Document Structure
+الهيكل الأساسي لملف HTML
 
 ```html
 <!DOCTYPE html>
@@ -27,13 +28,9 @@
 </html>
 ```
 
-## شرح The <!DOCTYPE> Declaration
+## استخدام الـ Headings
 
-شرح وتوضيح Understanding <!DOCTYPE html>
-
-## شرح HTML Headings
-
-شرح وتوضيح Using HTML Headings
+استخدام الـ Headings من h1 إلى h6
 
 ```html
 <!DOCTYPE html>
@@ -49,9 +46,9 @@
 </html>
 ```
 
-## شرح HTML Paragraphs
+## كتابة الفقرات باستخدام p
 
-استخدام الـ p Tag لتعريف الفقرات النصية
+استخدام الـ p tag للفقرات
 
 ```html
 <!DOCTYPE html>
@@ -66,9 +63,9 @@
 </html>
 ```
 
-## شرح Links and Images
+## إضافة الروابط باستخدام a
 
-استخدام الـ Attributes مع الـ a و img Tags
+استخدام الـ a tag لإنشاء الروابط مع الـ href attribute.
 
 ```html
 <!DOCTYPE html>
@@ -78,24 +75,36 @@
   </head>
   <body>
     <a href="https://www.w3schools.com">This is a link</a>
+  </body>
+</html>
+```
+
+## إدراج الصور باستخدام img
+
+إدراج الصور باستخدام الـ img tag وتحديد خصائصها.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
     <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
   </body>
 </html>
 ```
 
-## شرح View Source and Inspect
+## كيفية فحص الكود في المتصفح
 
-أدوات المطورين في المتصفح
+فحص الكود باستخدام الـ Source Code والـ Inspect tool.
 
-- استخدم CTRL + U لعرض الـ Source code للصفحة
-- استخدم Inspect لرؤية الـ DOM والـ CSS
-- تعديل الـ HTML والـ CSS بشكل مباشر في الـ Elements panel
+## خاتمة الدرس
 
-## شرح Summary and Next Steps
+ملخص أساسيات الـ HTML.
 
-ملخص الدرس والخطوات القادمة
-
-- مراجعة هيكل الـ HTML الأساسي
-- استخدام الـ Headings والـ Paragraphs
-- التعامل مع الـ Links والـ Images والـ Attributes
-- الاستعداد للتحدي العملي القادم
+- فهمنا الـ DOCTYPE والـ html والـ body.
+- استخدمنا الـ tags الأساسية: h1, p, a, img.
+- تعلمنا إزاي نستخدم الـ attributes.
+- عرفنا إزاي نعمل Inspect لأي صفحة ويب.
+- استعدوا للـ Code Challenge في الدرس الجاي!
