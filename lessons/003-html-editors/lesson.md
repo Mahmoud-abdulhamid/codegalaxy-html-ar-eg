@@ -2,37 +2,34 @@
 
 المصدر: https://www.w3schools.com/html/html_editors.asp
 
-## شرح The Myth of Complex Tools
+## شرح Introduction to HTML Editors
 
-شرح وتوضيح Debunking the myth that expensive IDEs are required for beginners.
+شرح وتوضيح Introduction to HTML Editors: Starting with simple tools.
 
-- مفهوم Debunking the myth that expensive IDEs are required for beginners
-- مفهوم Introduction to simple text editors as the best learning tool
-- مفهوم Overview of the lesson: Setup, Write, Save, View
+- مفهوم Debunking the myth: You do not need expensive software to code
+- مفهوم The power of starting with simple Text Editors
+- مفهوم Overview: From writing code to viewing in the Browser
 
-## شرح Simple Tools for Learning
+## شرح Why Simple Editors?
 
-شرح وتوضيح Why simple editors help focus on the code structure.
+شرح وتوضيح Why we recommend simple text editors for beginners.
 
-- مفهوم Notepad for PC users
-- مفهوم TextEdit for Mac users
-- مفهوم Why simple editors help focus on the code structure
+- مفهوم Focus on manual coding fundamentals
+- مفهوم No auto-correction or code completion
+- مفهوم Better understanding of HTML Tags and Structure
 
-## شرح Setting up Notepad (PC)
+## شرح Setting Up Your Editor
 
-شرح وتوضيح Opening Notepad via Start Screen or Accessories.
+شرح وتوضيح Configuring Notepad and TextEdit for HTML development.
 
-## شرح Setting up TextEdit (Mac)
-
-شرح وتوضيح Configuring TextEdit for HTML development.
-
-- مفهوم Accessing TextEdit via Finder
-- مفهوم Configuring Preferences to Plain Text
-- مفهوم Enabling Display HTML files as HTML code
+- مفهوم Windows: Open Start Screen > Notepad
+- مفهوم Mac: Finder > Applications > TextEdit
+- مفهوم Mac Configuration: Preferences > Format > Plain Text
+- مفهوم Mac Configuration: Display HTML files as HTML code
 
 ## شرح Writing Your First HTML
 
-كتابة هيكل الـ HTML الأساسي
+شرح وتوضيح Writing and saving your first HTML file.
 
 ```html
 <!DOCTYPE html>
@@ -49,26 +46,25 @@
 
 ## شرح Saving the HTML File
 
-حفظ الملف بامتداد .html
+شرح وتوضيح Saving the file as index.htm with UTF-8 encoding
 
-## شرح Viewing in Browser
+## شرح Viewing in the Browser
 
-معاينة النتيجة في المتصفح
+شرح وتوضيح Opening the HTML file in the browser
 
 ## شرح W3Schools Online Editor
 
-استخدام الـ Online Editor للتجربة السريعة
+شرح وتوضيح Using W3Schools Online Editor
 
-- تجربة الكود فورا بدون إعدادات
-- ميزة الـ Color Coding لتنظيم الكود
-- إمكانية حفظ ومشاركة الكود بسهولة
-- أداة مثالية للاختبار السريع
+- مفهوم Quick testing of HTML code
+- مفهوم Built-in color coding for readability
+- مفهوم Save and share code functionality
+- مفهوم No local file setup required
 
-## شرح Summary and Next Steps
+## شرح Conclusion and Next Steps
 
-ملخص خطوات العمل: 1. استخدام Text Editor بسيط. 2. كتابة وحفظ ملف HTML. 3. معاينة الملف في الـ Browser. 4. الاستعداد للدرس القادم: HTML Basic.
+شرح وتوضيح Summary of the workflow and next steps
 
-- استخدام Text Editor بسيط للتعلم
-- كتابة وحفظ ملفات HTML بامتداد .html
-- معاينة النتائج مباشرة في الـ Browser
-- الاستعداد للدرس القادم: HTML Basic
+- مفهوم Recap: Write, Save, View
+- مفهوم Practice manual file creation
+- مفهوم Transition to HTML Basic
