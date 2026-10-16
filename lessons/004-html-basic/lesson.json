@@ -1,13 +1,15 @@
 {
   "schema_version": "1.0",
   "lesson_id": "4",
-  "title": "أساسيات لغة HTML وبناء هيكل الصفحة",
+  "title": "HTML Basic",
   "course": "HTML",
+  "language": "ar",
+  "dialect": "egyptian",
   "objectives": [
-    "فهم الهيكل الأساسي لمستند HTML",
-    "التعرف على دور DOCTYPE HTML",
-    "استخدام Headings و Paragraphs في المحتوى",
-    "التعامل مع Attributes في Links و Images"
+    "Understand the basic structure of an HTML document",
+    "Learn the purpose of the <!DOCTYPE html> declaration",
+    "Identify and use basic HTML tags like headings, paragraphs, links, and images",
+    "Learn how to inspect and view the source code of web pages"
   ],
   "sources": [
     "https://www.w3schools.com/html/html_basic.asp"
@@ -20,22 +22,38 @@
       "license": "Source example rendered for educational explanation",
       "attribution": "W3Schools · https://www.w3schools.com/html/html_basic.asp",
       "source_url": "https://www.w3schools.com/html/html_basic.asp"
+    },
+    {
+      "id": "html_example_2",
+      "path": "assets/html-c77e5168dffda66b.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_basic.asp",
+      "source_url": "https://www.w3schools.com/html/html_basic.asp"
+    },
+    {
+      "id": "html_example_3",
+      "path": "assets/html-324209dba7109328.png",
+      "kind": "image",
+      "license": "Source example rendered for educational explanation",
+      "attribution": "W3Schools · https://www.w3schools.com/html/html_basic.asp",
+      "source_url": "https://www.w3schools.com/html/html_basic.asp"
     }
   ],
   "scenes": [
     {
-      "id": "intro",
-      "title": "مقدمة في لغة HTML",
+      "id": "scene_1",
+      "title": "شرح Myth Buster: The Browser's Perspective",
       "narration": {
-        "spoken_text": "مَرْحَباً بِكُمْ فِي دَوْرَة إِتْش تِي إِم إِل. سَنَتَعَلَّمُ الْيَوْمَ كَيْفِيَّة بِنَاءِ صَفْحَاتِ الْوِيبِ بِاسْتِخْدَامِ الْهَيْكَلِ الْأَسَاسِيِّ لِلُغَة إِتْش تِي إِم إِل، وَسَنَسْتَعْرِضُ مَفَاهِيمَ مُهِمَّة مِثْل تَاجْز و إِلِيمِنْتْس لِتَكُونَ بَدَايَتُكُمْ قَوِيَّة وَمُحْتَرِفَة فِي هَذَا الْمَجَالِ.",
-        "caption_text": "مرحبا بكم في دورة HTML لتعلم أساسيات بناء صفحات الويب باستخدام Tags و Elements."
+        "spoken_text": "كتير من المطورين فاكرين إن مجرد ما المتصفح يفتح صفحتك، كودك كده سليم 100! لكن في الحقيقة، المتصفح محتاج يفهم نوع الصفحة وترتيبها عشان يعرض نتيجتك صح وما يحصلش أي تشويه في العرض. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنتعلم الأساس الحقيقي اللي هيخلي شغلك احترافي ومعياري، وهنشوف إزاي المتصفح بيقرأ الكود بتاعك من أول سطر.",
+        "caption_text": "شرح وتوضيح Myth Buster: The Browser's Perspective"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "لغة HTML هي الأساس لبناء هيكل صفحات الويب",
-          "سنتعرف على كيفية كتابة أول مستند HTML",
-          "لا تقلق إذا واجهت مصطلحات جديدة في البداية"
+          "مفهوم Many developers think that just opening the browser means the code is 100 correct.",
+          "مفهوم The browser needs to understand the document type and structure to display it correctly without distortion.",
+          "مفهوم Welcome, I'm Mahmoud Abdelhamid, and today we'll learn the real foundation that makes your work professional and standard."
         ]
       },
       "source_refs": [
@@ -43,81 +61,71 @@
       ]
     },
     {
-      "id": "structure",
-      "title": "الهيكل الأساسي للمستند",
+      "id": "scene_2",
+      "title": "شرح The HTML Document Structure",
       "narration": {
-        "spoken_text": "كُلُّ مُسْتَنَد إِتْش تِي إِم إِل يَبْدَأُ بِـ دُوكْتَايْب إِتْش تِي إِم إِل لِتَحْدِيدِ نَوْعِ الْمُسْتَنَدِ. بَعْدَ ذَلِكَ نَسْتَخْدِم إِتْش تِي إِم إِل كَـ Root إِلِيمِنْت، وَيَنْقَسِمُ الْمُحْتَوَى إِلَى قِسْم هِيد لِلْمَعْلُومَاتِ الْعَامَّه، وَقِسْم بُودِي لِكِتَابَة الْمُحْتَوَى الْمَرْئِيِّ الَّذِي يَظْهَرُ لِلْمُسْتَخْدِمِ.",
-        "caption_text": "يتكون مستند HTML من DOCTYPE HTML و Root Element يضم head و body."
+        "spoken_text": "بص معايا على الهيكل الأساسي لأي صفحة HTML. لازم نبدأ بـ <!DOCTYPE html> عشان المتصفح يعرف إحنا شغالين بـ HTML5. بعد كده بيجي الـ <html> Tag اللي بيحتوي علي كل حاجة، وجوه الـ <body> Tag بنكتب المحتوى اللي بيظهر فعلاً للمستخدم. ده الهيكل اللي بيتبني عليه أي موقع محترف، ومن غيره المتصفح ممكن يتلخبط في العرض.",
+        "caption_text": "شرح وتوضيح Basic HTML Document Structure"
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          7
+        ],
+        "output": "My First Heading\nMy first paragraph.",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
       },
       "source_refs": [
         "https://www.w3schools.com/html/html_basic.asp"
       ]
     },
     {
-      "id": "headings_paragraphs",
-      "title": "استخدام Headings و Paragraphs",
+      "id": "scene_3",
+      "title": "شرح The <!DOCTYPE> Declaration",
       "narration": {
-        "spoken_text": "لِتَنْظِيمِ النُّصُوصِ نَسْتَخْدِم هِيدِينْج مِنْ إِتْش وَاحِد إِلَى إِتْش سِتَّة، حَيْث إِتْش وَاحِد هُوَ الْأَهَمُّ. كَمَا نَسْتَخْدِم بِي لِتَعْرِيفِ الْفِقَرَاتِ. هَذِه إِلِيمِنْتْس تُسَاعِدُ الْمُتَصَفِّحَ عَلَى فَهْمِ تَرْتِيبِ وَأَهَمِّيَّة الْمُحْتَوَى دَاخِلَ الصَّفْحَة بِشَكْلٍ سَلِيمٍ.",
-        "caption_text": "نستخدم Headings من h1 إلى h6 لتنظيم العناوين، و p لتعريف الفقرات النصية."
+        "spoken_text": "ليه بنكتب <!DOCTYPE html> في أول سطر؟ الـ DOCTYPE ده هو اللي بيعرف المتصفح إيه نوع المستند اللي بيقرأه، وده بيخليه يعرض الصفحة بشكل صحيح ومن غير أخطاء. لازم يظهر مرة واحدة بس في أول الصفحة وقبل أي Tag تاني. هو مش Case sensitive، يعني مش بيفرق بين الحروف الكبيرة والصغيرة، بس لازم يكون موجود عشان شغلك يكون معاييري.",
+        "caption_text": "شرح وتوضيح Understanding <!DOCTYPE html>"
       },
       "visual": {
-        "type": "code",
-        "language": "html",
-        "filename": "content.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>This is heading 1</h1>\n    <h2>This is heading 2</h2>\n    <p>This is a paragraph.</p>\n    <p>Another paragraph.</p>\n  </body>\n</html>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_basic.asp"
-      ]
-    },
-    {
-      "id": "links_images",
-      "title": "الروابط والصور و Attributes",
-      "narration": {
-        "spoken_text": "لِإِضَافَة رَوَابِطَ نَسْتَخْدِم a مَع أَتْرِيبْيُوت يُسَمَّى إِتْش رِيف. أَمَّا الصُّوَرُ فَنَسْتَخْدِم إِيمِج مَع أَتْرِيبْيُوتْس مِثْل سُورْس لِمَسَارِ الصُّورَه، و أَلْت لِلنَّصِّ الْبَدِيلِ، بِالْإِضَافَة إِلَى width و height لِتَحْدِيدِ أَبْعَادِ الصُّورَه.",
-        "caption_text": "نستخدم Attributes لإضافة معلومات إضافية للعناصر مثل الروابط والصور."
-      },
-      "visual": {
-        "type": "code",
-        "language": "html",
-        "filename": "media.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com\">This is a link</a>\n    <img src=\"image.jpg\" alt=\"Text\" width=\"104\" height=\"142\">\n  </body>\n</html>",
-        "highlight_lines": [],
-        "output": null,
-        "output_status": "not_applicable",
-        "verification_ref": null
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_basic.asp"
-      ]
-    },
-    {
-      "id": "view_source",
-      "title": "كيفية فحص الكود",
-      "narration": {
-        "spoken_text": "يُمْكِنُكُمْ رُؤْيَة كُودِ أَيِّ صَفْحَة وِيبٍ بِالضَّغْطِ عَلَى CTRL + U، أَوْ بِاسْتِخْدَامِ خَاصِيَّة Inspect عِنْدَ النَّقْرِ بِزِرِّ الْفَأْرَة الْأَيْمَنِ. هَذِهِ الْأَدَوَاتُ تُسَاعِدُ الْمُطَوِّرِينَ عَلَى فَهْمِ كَيْفِيَّة بِنَاءِ الصَّفْحَاتِ وَتَعْدِيلِ الْعَنَاصِرِ مُبَاشَرَه.",
-        "caption_text": "يمكن فحص كود HTML لأي صفحة عبر خيار Inspect في المتصفح."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "استخدام اختصار CTRL + U لعرض كود الصفحة",
-          "استخدام خيار Inspect لفحص العناصر",
-          "إمكانية تعديل HTML و CSS مباشرة في المتصفح"
+        "type": "diagram",
+        "nodes": [
+          {
+            "id": "doctype",
+            "label": "<!DOCTYPE html>",
+            "active": true,
+            "icon": null
+          },
+          {
+            "id": "html",
+            "label": "<html>",
+            "active": false,
+            "icon": null
+          },
+          {
+            "id": "body",
+            "label": "<body>",
+            "active": false,
+            "icon": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "doctype",
+            "target": "html",
+            "label": "Top of page"
+          },
+          {
+            "source": "html",
+            "target": "body",
+            "label": "Contains"
+          }
         ]
       },
       "source_refs": [
@@ -125,18 +133,118 @@
       ]
     },
     {
-      "id": "summary",
-      "title": "خلاصة الدرس",
+      "id": "scene_4",
+      "title": "شرح HTML Headings",
       "narration": {
-        "spoken_text": "تَعَلَّمْنَا الْيَوْمَ الْهَيْكَلَ الْأَسَاسِيَّ لِـ إِتْش تِي إِم إِل، وَكَيْفِيَّة اسْتِخْدَام هِيدِينْج و بَرَاجْرَاف، وَأَهَمِّيَّة أَتْرِيبْيُوتْس فِي الروابط والصور. أَدْعُوكُمْ لِتَجْرِبَة هَذِهِ الْأَكْوَادِ بِنَفْسِكُمْ لِتَعْزِيزِ مَهَارَاتِكُمُ الْبَرْمَجِيَّة وَتَطْوِيرِ مَوَاقِعِكُمْ.",
-        "caption_text": "تعلمنا أساسيات HTML بما في ذلك Headings و Paragraphs و Attributes."
+        "spoken_text": "دلوقتي هنتكلم عن الـ Headings، ودي بنستخدمها عشان نحدد العناوين في الصفحة. عندنا من <h1> لحد <h6>. الـ <h1> هو أهم عنوان في الصفحة، والـ <h6> هو الأقل أهمية. المتصفح بيعرض الـ <h1> بخط كبير وواضح، وكل ما الرقم بيزيد، حجم الخط بيصغر. ده بيساعد المتصفح ومحركات البحث يفهموا ترتيب وهيكلية المحتوى بتاعك.",
+        "caption_text": "شرح وتوضيح Using HTML Headings"
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "headings.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>This is heading 1</h1>\n    <h2>This is heading 2</h2>\n    <h3>This is heading 3</h3>\n  </body>\n</html>",
+        "highlight_lines": [
+          7
+        ],
+        "output": "This is heading 1\nThis is heading 2\nThis is heading 3",
+        "output_status": "illustrative",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_5",
+      "title": "شرح HTML Paragraphs",
+      "narration": {
+        "spoken_text": "دلوقتي جه الدور على الـ Paragraphs، ودي بنستخدم لها الـ Tag اللي اسمه p. الـ p Tag ده هو المسؤول عن أي نص عادي بتكتبه في صفحتك. الميزة هنا إن كل ما تفتح p Tag جديد، المتصفح بيفهم تلقائياً إن ده بلوك نصي جديد وبيحطه في سطر لوحده. جرب تكتب كذا p Tag ورا بعض وشوف النتيجة بنفسك، هتلاقي كل واحد فيهم واخد مساحته ومستقل عن التاني، وده أساس تنظيم النصوص في أي موقع.",
+        "caption_text": "استخدام الـ p Tag لتعريف الفقرات النصية"
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <p>This is a paragraph.</p>\n    <p>This is another paragraph.</p>\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_6",
+      "title": "شرح Links and Images",
+      "narration": {
+        "spoken_text": "طيب إزاي نضيف روابط أو صور؟ هنا بيجي دور الـ Attributes. الـ Attribute ده عبارة عن معلومة إضافية بنديها للـ Tag. مثلاً الـ a Tag بيحتاج Attribute اسمه href عشان يعرف المتصفح الرابط ده رايح فين. ونفس الكلام مع الـ img Tag، بنستخدم src عشان نحدد مكان الصورة، وكمان alt عشان لو الصورة ما ظهرتش، وwidth وheight عشان نتحكم في مقاساتها. دي أدوات قوية جداً بتخلي صفحتك تفاعلية ومفيدة للمستخدم.",
+        "caption_text": "استخدام الـ Attributes مع الـ a و img Tags"
+      },
+      "visual": {
+        "type": "code",
+        "language": "html",
+        "filename": "index.html",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <a href=\"https://www.w3schools.com\">This is a link</a>\n    <img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">\n  </body>\n</html>",
+        "highlight_lines": [
+          7,
+          8
+        ],
+        "output": null,
+        "output_status": "not_applicable",
+        "verification_ref": null,
+        "secondary_code": null,
+        "secondary_filename": null,
+        "secondary_language": null
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_7",
+      "title": "شرح View Source and Inspect",
+      "narration": {
+        "spoken_text": "ساعات بتشوف موقع بيعجبك وبتقول يا ترى ده اتعمل إزاي؟ المتصفح بيوفرلك أدوات قوية جداً. لو دوست CTRL + U، هتفتح صفحة فيها الـ HTML Source كود بتاع الموقع كله. والأقوى من كده، لو عملت Right-click على أي عنصر واخترت Inspect، هيفتحلك الـ Elements panel. هنا تقدر تشوف الـ HTML والـ CSS اللي بيتحكموا في شكل العنصر، بل وتقدر تعدل فيهم وتشوف النتيجة فوراً قدام عينك من غير ما تغير الكود الأصلي.",
+        "caption_text": "أدوات المطورين في المتصفح"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "استخدام Headings و Paragraphs لتنظيم المحتوى",
-          "استخدام Attributes لإضافة خصائص للعناصر",
-          "ممارسة كتابة الكود هي مفتاح الاحتراف"
+          "استخدم CTRL + U لعرض الـ Source code للصفحة",
+          "استخدم Inspect لرؤية الـ DOM والـ CSS",
+          "تعديل الـ HTML والـ CSS بشكل مباشر في الـ Elements panel"
+        ]
+      },
+      "source_refs": [
+        "https://www.w3schools.com/html/html_basic.asp"
+      ]
+    },
+    {
+      "id": "scene_8",
+      "title": "شرح Summary and Next Steps",
+      "narration": {
+        "spoken_text": "كده إحنا غطينا الأساسيات المهمة جداً. عرفنا إزاي نبدأ الـ HTML Document، وإزاي نستخدم الـ Headings والـ Paragraphs، وكمان عرفنا إزاي نضيف روابط وصور باستخدام الـ Attributes. دي هي الطوب اللي بتبني بيه أي موقع على الإنترنت. دلوقتي دورك تجرب وتطبق كل اللي اتعلمناه ده بإيدك. جهز نفسك، لأن الدرس اللي جاي هيكون تحدي عملي هيخليك تطبق كل ده في مشروع صغير. أشوفكم الدرس الجاي!",
+        "caption_text": "ملخص الدرس والخطوات القادمة"
+      },
+      "visual": {
+        "type": "bullets",
+        "items": [
+          "مراجعة هيكل الـ HTML الأساسي",
+          "استخدام الـ Headings والـ Paragraphs",
+          "التعامل مع الـ Links والـ Images والـ Attributes",
+          "الاستعداد للتحدي العملي القادم"
         ]
       },
       "source_refs": [
