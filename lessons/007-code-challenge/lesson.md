@@ -1,27 +1,27 @@
 # Code Challenge
 
-المصدر: https://www.w3schools.com/html/html_challenges_basic.asp
+المصدر: https://www.w3schools.com/html/html_challenges_elements.asp
 
-## شرح Ready to Test Your Skills?
+## شرح Welcome to the Challenge
 
-شرح وتوضيح Coding is a skill that requires active practice. Today we start our first HTML challenge.
+شرح وتوضيح Welcome to the HTML Elements Code Challenge
 
-- مفهوم Coding is a skill that requires active practice
-- مفهوم Challenges are the best way to identify knowledge gaps
-- مفهوم Welcome and introduction by Mahmoud Abdelhamid
-- مفهوم Overview of today's goal: Testing your HTML basics
+- مفهوم Importance of practice in programming
+- مفهوم Transition from theory to application
+- مفهوم Overview of the Code Challenge goals
+- مفهوم Testing your HTML knowledge
 
-## شرح Why Code Challenges Matter
+## شرح Recap: HTML Elements Structure
 
-شرح وتوضيح Moving from theory to application and building muscle memory.
+شرح وتوضيح Understanding HTML Element Structure
 
-## شرح Recap: What We Have Covered
+## شرح The Empty Elements Trap
 
-شرح وتوضيح Reviewing the foundation: HTML structure, environment, and basic syntax.
+شرح وتوضيح Empty Elements vs Standard Elements
 
-## شرح The Challenge: HTML Basics
+## شرح Challenge: Identify and Fix
 
-شرح وتوضيح Mastering the basic HTML structure: <html>, <head>, and <body> tags.
+تحليل وتصحيح كود HTML: التمييز بين العناصر العادية وEmpty Elements.
 
 ```html
 <!DOCTYPE html>
@@ -30,30 +30,21 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <br>
+    <img src="image.jpg" alt="Example">
+    <hr>
   </body>
 </html>
 ```
 
-## شرح How to Approach the Problem
+## شرح Review and Conclusion
 
-شرح وتوضيح Step-by-step strategy for solving HTML coding challenges.
+مراجعة سريعة: Empty Elements والخطوات القادمة.
 
-## شرح Best Practices for Success
-
-شرح وتوضيح Essential coding habits for HTML developers.
-
-- مفهوم Always use lowercase for tags
-- مفهوم Keep your indentation consistent
-- مفهوم Focus on understanding the logic
-- مفهوم Use the W3Schools editor to test your code
-
-## شرح Moving Forward
-
-شرح وتوضيح Challenge completed. Keep practicing and get ready for the next lesson on HTML Elements.
-
-- مفهوم Challenge Completed Successfully
-- مفهوم Importance of Constant Practice
-- مفهوم Next Topic: HTML Elements
-- مفهوم Ready for Lesson 6
+- الـ Empty Elements لا تحتاج إلى End Tags.
+- الـ br, img, hr هي أمثلة شائعة للعناصر الفارغة.
+- الـ Syntax الصحيح يضمن استقرار الصفحة.
+- التطبيق العملي هو مفتاح الاحتراف.
+- الدرس القادم: مقدمة في الـ HTML Attributes.
