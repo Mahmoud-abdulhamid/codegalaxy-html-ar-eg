@@ -1,153 +1,136 @@
 {
   "schema_version": "1.0",
-  "lesson_id": "5",
+  "lesson_id": "7",
   "title": "Code Challenge",
   "course": "HTML",
   "language": "ar",
   "dialect": "egyptian",
   "objectives": [
-    "Understand the importance of coding challenges in mastering HTML",
-    "Review basic HTML structure and syntax",
-    "Apply knowledge from previous lessons to solve practical problems",
-    "Prepare for upcoming lessons on HTML Elements"
+    "Test understanding of HTML Elements structure",
+    "Differentiate between standard elements and Empty Elements",
+    "Practice correct usage of End Tags",
+    "Identify common syntax errors in HTML"
   ],
   "sources": [
-    "https://www.w3schools.com/html/html_challenges_basic.asp"
+    "https://www.w3schools.com/html/html_challenges_elements.asp"
   ],
   "assets": [],
   "scenes": [
     {
-      "id": "scene_1",
-      "title": "شرح Ready to Test Your Skills?",
+      "id": "1",
+      "title": "شرح Welcome to the Challenge",
       "narration": {
-        "spoken_text": "عمرك سألت نفسك ليه مهما قريت عن الـ HTML بتحس إنك لسه مش متمكن؟ الحقيقة إن البرمجة مش مجرد قراءة، دي مهارة بتتبني بالإيد. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنكسر حاجز الخوف ونبدأ أول تحدي عملي لينا في الـ HTML. هنختبر فهمنا للأساسيات اللي اتعلمناها، ونشوف إزاي نقدر نحول المعلومات دي لكود حقيقي شغال. جاهز تختبر مهاراتك؟ يلا بينا نبدأ التحدي.",
-        "caption_text": "شرح وتوضيح Coding is a skill that requires active practice. Today we start our first HTML challenge."
+        "spoken_text": "عمرك سألت نفسك ليه ساعات الكود بيشتغل وساعات لأ؟ الفرق كله في تفصيلة صغيرة، زي الـ End Tag أو الـ Empty Elements. أهلاً بيكم، أنا محمود عبد الحميد، والنهاردة هنعمل Code Challenge سريع عشان نختبر فهمنا لهيكل الـ HTML ونشوف مين فينا هيقدر يكتب كود سليم من غير أي أخطاء. جهز الـ Editor بتاعك، ويلا بينا نبدأ التحدي ونشوف إزاي بنتعامل مع الـ Elements بشكل احترافي.",
+        "caption_text": "شرح وتوضيح Welcome to the HTML Elements Code Challenge"
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Coding is a skill that requires active practice",
-          "مفهوم Challenges are the best way to identify knowledge gaps",
-          "مفهوم Welcome and introduction by Mahmoud Abdelhamid",
-          "مفهوم Overview of today's goal: Testing your HTML basics"
+          "مفهوم Importance of practice in programming",
+          "مفهوم Transition from theory to application",
+          "مفهوم Overview of the Code Challenge goals",
+          "مفهوم Testing your HTML knowledge"
         ]
       },
       "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ],
+      "motion_data": null,
+      "archetype": null
     },
     {
-      "id": "scene_2",
-      "title": "شرح Why Code Challenges Matter",
+      "id": "2",
+      "title": "شرح Recap: HTML Elements Structure",
       "narration": {
-        "spoken_text": "ليه بنعمل تحديات؟ ببساطة لأن التحدي هو اللي بيخليك تخرج من مرحلة التلقي لمرحلة التنفيذ. لما بتكتب الـ Tag بإيدك وتغلط وتصلح الغلطة دي، عقلك بيحفظ الـ Syntax بشكل تلقائي. ده اللي بنسميه الـ Muscle Memory. التحديات دي مش بس عشان نختبر معلوماتنا، دي عشان تبني ثقتك بنفسك وتخليك قادر تكتب كود من الصفر من غير ما تعتمد على حد. دي الخطوة اللي بتفرق بين المبرمج اللي بيعرف يقرأ كود، والمبرمج اللي بيعرف يبني مشروع.",
-        "caption_text": "شرح وتوضيح Moving from theory to application and building muscle memory."
+        "spoken_text": "عشان نكسب التحدي ده، لازم نفتكر الأساس. أي HTML Element بيتكون من 3 أجزاء: الـ Start Tag، والمحتوى اللي جوه، والـ End Tag اللي بيقفل العنصر. الـ Browser بيعتمد على الـ End Tag عشان يعرف فين العنصر بيبدأ وفين بينتهي. لو نسيت الـ End Tag، الـ Browser ممكن يفسر الكود بطريقة غلط تماماً. ركز دايماً إن كل Tag بتفتحه، لازم تقفله بشكل صحيح عشان الـ Structure بتاع الصفحة يفضل مظبوط.",
+        "caption_text": "شرح وتوضيح Understanding HTML Element Structure"
       },
       "visual": {
         "type": "explainer",
         "concept": "dom_tree",
-        "headline": "The Value of Active Coding",
+        "headline": "Standard HTML Element Structure",
         "nodes": [
           {
-            "id": "theory",
-            "tag": "Theory",
+            "id": "1",
+            "tag": "<p>",
             "parent_id": null,
-            "role": "Passive Learning",
+            "role": "Start Tag",
             "color": "#38bdf8"
           },
           {
-            "id": "practice",
-            "tag": "Practice",
-            "parent_id": "theory",
-            "role": "Active Coding",
+            "id": "2",
+            "tag": "Content",
+            "parent_id": "1",
+            "role": "Content",
             "color": "#38bdf8"
           },
           {
-            "id": "muscle_memory",
-            "tag": "Muscle Memory",
-            "parent_id": "practice",
-            "role": "Mastery",
+            "id": "3",
+            "tag": "</p>",
+            "parent_id": "1",
+            "role": "End Tag",
             "color": "#38bdf8"
           }
         ]
       },
       "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ],
+      "motion_data": null,
+      "archetype": null
     },
     {
-      "id": "scene_3",
-      "title": "شرح Recap: What We Have Covered",
+      "id": "3",
+      "title": "شرح The Empty Elements Trap",
       "narration": {
-        "spoken_text": "قبل ما ندخل في التحدي، خلينا نراجع سريعاً إحنا وصلنا لفين. اتكلمنا عن الـ HTML كبنية أساسية للويب، وعرفنا إزاي نجهز الـ Development Environment بتاعنا، وفهمنا الـ Structure الأساسي لأي HTML Document. كل اللي اتعلمناه في الدروس اللي فاتت هو حجر الأساس اللي هنبني عليه دلوقتي. التحدي ده هيجمع كل النقط دي مع بعض، عشان تتأكد إنك فاهم الـ Elements والـ Tags صح قبل ما ندخل في اللي جاي. ركز معايا، ويلا بينا.",
-        "caption_text": "شرح وتوضيح Reviewing the foundation: HTML structure, environment, and basic syntax."
+        "spoken_text": "طيب، إيه حكاية الـ Empty Elements؟ دي عناصر استثنائية، زي الـ <img> أو الـ <br> أو الـ <hr>. العناصر دي مش بتحتاج End Tag، لأنها ببساطة مش بتحتوي على أي نص أو عناصر تانية جواها. هي بتأدي وظيفتها بمجرد وجودها في الـ Code. لو حاولت تحط لها End Tag، ده يعتبر خطأ في الـ Syntax. الجدول ده بيوضح الفرق بين العناصر العادية والعناصر اللي مش بتحتاج قفل.",
+        "caption_text": "شرح وتوضيح Empty Elements vs Standard Elements"
       },
       "visual": {
-        "type": "diagram",
-        "nodes": [
-          {
-            "id": "root",
-            "label": "HTML Basics",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "n1",
-            "label": "Web Structure",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "n2",
-            "label": "Dev Environment",
-            "active": true,
-            "icon": null
-          },
-          {
-            "id": "n3",
-            "label": "HTML Document",
-            "active": true,
-            "icon": null
-          }
+        "type": "table",
+        "columns": [
+          "Element Type",
+          "Requires End Tag",
+          "Examples"
         ],
-        "edges": [
-          {
-            "source": "root",
-            "target": "n1",
-            "label": ""
-          },
-          {
-            "source": "root",
-            "target": "n2",
-            "label": ""
-          },
-          {
-            "source": "root",
-            "target": "n3",
-            "label": ""
-          }
+        "rows": [
+          [
+            "Standard Element",
+            "Yes",
+            "<p>, <div>, <h1>"
+          ],
+          [
+            "Empty Element",
+            "No",
+            "<img>, <br>, <hr>"
+          ]
         ]
       },
       "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ],
+      "motion_data": null,
+      "archetype": null
     },
     {
-      "id": "scene_4",
-      "title": "شرح The Challenge: HTML Basics",
+      "id": "4",
+      "title": "شرح Challenge: Identify and Fix",
       "narration": {
-        "spoken_text": "دلوقتي جه وقت التحدي! عشان نثبت فهمنا للـ HTML، لازم نكتب كود سليم. بص على الهيكل الأساسي ده: عندنا <html>، وجواه الـ <body> اللي بيحتوي على الـ <h1> والـ <p>. ركز جداً إن كل Tag تفتحه لازم تقفله، والـ Nesting يكون مظبوط. التحدي ده هيخليك تتعود على كتابة كود نظيف ومنظم. جرب تكتب الكود ده بنفسك، وشوف النتيجة هتطلع إزاي على المتصفح. يلا بينا!",
-        "caption_text": "شرح وتوضيح Mastering the basic HTML structure: <html>, <head>, and <body> tags."
+        "spoken_text": "دلوقتي جه وقت التحدي العملي، ركز معايا في الكود اللي قدامك ده. عندنا مجموعة من الـ HTML Elements، بعضها سليم وبعضها محتاج يتصلح. بص على الـ h1 والـ p، هتلاقي الـ Tags بتاعتهم مظبوطة، لكن ركز كويس في الـ br والـ img والـ hr. هل دول محتاجين End Tags؟ ولا هما من نوع الـ Empty Elements اللي مش بيحتاجوا قفلة؟ فكر ثانية، وشوف لو في أي Syntax Error ممكن يوقعنا في مشاكل لما الصفحة تترندر في الـ Browser.",
+        "caption_text": "تحليل وتصحيح كود HTML: التمييز بين العناصر العادية وEmpty Elements."
       },
       "visual": {
         "type": "code",
         "language": "html",
         "filename": "index.html",
-        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>",
+        "code": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph.</p>\n    <br>\n    <img src=\"image.jpg\" alt=\"Example\">\n    <hr>\n  </body>\n</html>",
         "highlight_lines": [
-          7
+          7,
+          9,
+          10,
+          11
         ],
-        "output": "My First Heading\nMy first paragraph.",
+        "output": "<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n<br>\n<img src=\"image.jpg\" alt=\"Example\">\n<hr>",
         "output_status": "illustrative",
         "verification_ref": null,
         "secondary_code": null,
@@ -155,125 +138,35 @@
         "secondary_language": null
       },
       "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ],
+      "motion_data": null,
+      "archetype": null
     },
     {
-      "id": "scene_5",
-      "title": "شرح How to Approach the Problem",
+      "id": "5",
+      "title": "شرح Review and Conclusion",
       "narration": {
-        "spoken_text": "عشان تحل أي Coding Challenge من غير ما تتلخبط، اتبع الخطوات دي. أول حاجة اقرأ المتطلبات بتركيز، وبعدين ارسم الـ Structure في دماغك أو على ورقة. ابدأ ضيف الـ Content جوه الـ Tags، وبعدها اعمل Verify للنتيجة في الـ Browser. لو ظهرت أي مشكلة، راجع الكود بتاعك وصلح الـ Errors. الطريقة دي هتخليك متمكن وتوفر عليك وقت ومجهود كبير في أي مشروع هتعمله بعد كده.",
-        "caption_text": "شرح وتوضيح Step-by-step strategy for solving HTML coding challenges."
-      },
-      "visual": {
-        "type": "flowchart",
-        "nodes": [
-          {
-            "id": "1",
-            "label": "Read Requirements",
-            "kind": "start",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "2",
-            "label": "Draft Structure",
-            "kind": "process",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "3",
-            "label": "Add Content",
-            "kind": "process",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "4",
-            "label": "Verify in Browser",
-            "kind": "decision",
-            "icon": null,
-            "active": false
-          },
-          {
-            "id": "5",
-            "label": "Fix Errors",
-            "kind": "process",
-            "icon": null,
-            "active": false
-          }
-        ],
-        "edges": [
-          {
-            "source": "1",
-            "target": "2",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "2",
-            "target": "3",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "3",
-            "target": "4",
-            "label": "",
-            "direction": null
-          },
-          {
-            "source": "4",
-            "target": "5",
-            "label": "If errors found",
-            "direction": null
-          }
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
-    },
-    {
-      "id": "scene_6",
-      "title": "شرح Best Practices for Success",
-      "narration": {
-        "spoken_text": "عشان تنجح في رحلتك مع الـ HTML، خلي بالك من شوية نصايح ذهبية. دايماً اكتب الـ Tags بحروف صغيرة، يعني Lowercase. حافظ على الـ Indentation عشان الكود يكون مقروء وسهل التعديل عليه. ما تستعجلش، ركز في الـ Logic وفهمك للأساسيات أهم بكتير من السرعة. واستخدم الـ W3Schools editor عشان تجرب وتختبر الكود بتاعك أول بأول. دي أفضل طريقة عشان تثبت المعلومة وتطور مهاراتك بشكل حقيقي.",
-        "caption_text": "شرح وتوضيح Essential coding habits for HTML developers."
+        "spoken_text": "برافو عليك لو قدرت تحدد إن الـ br والـ img والـ hr هما فعلاً Empty Elements ومش بيحتاجوا End Tags. دي قاعدة أساسية في الـ HTML لازم تكون في دماغك دايماً. اتعلمنا النهاردة إزاي نفرق بين العناصر اللي ليها قفلة والعناصر اللي بتكتفي بالـ Tag الأساسي بتاعها. الممارسة هي اللي بتثبت المعلومة، فجرب تكتب أكواد أكتر وتغلط وتصلح بنفسك. استنوني في الدرس الجاي، هنتكلم عن الـ HTML Attributes وإزاي نضيف تفاصيل أكتر لعناصرنا.",
+        "caption_text": "مراجعة سريعة: Empty Elements والخطوات القادمة."
       },
       "visual": {
         "type": "bullets",
         "items": [
-          "مفهوم Always use lowercase for tags",
-          "مفهوم Keep your indentation consistent",
-          "مفهوم Focus on understanding the logic",
-          "مفهوم Use the W3Schools editor to test your code"
+          "الـ Empty Elements لا تحتاج إلى End Tags.",
+          "الـ br, img, hr هي أمثلة شائعة للعناصر الفارغة.",
+          "الـ Syntax الصحيح يضمن استقرار الصفحة.",
+          "التطبيق العملي هو مفتاح الاحتراف.",
+          "الدرس القادم: مقدمة في الـ HTML Attributes."
         ]
       },
       "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
-    },
-    {
-      "id": "scene_7",
-      "title": "شرح Moving Forward",
-      "narration": {
-        "spoken_text": "كده يا شباب نكون خلصنا الـ Challenge بتاعنا النهاردة، برافو عليكم لكل اللي حاول يحل ويجرب بنفسه. الـ Challenge ده كان مجرد بداية عشان نثبت المعلومات الأساسية اللي اتعلمناها في الـ HTML. متوقفوش هنا، الممارسة هي اللي بتصنع المبرمج الشاطر. في الدرس الجاي، هنبدأ رحلة جديدة ومهمة جداً وهي الـ HTML Elements، وهنعرف إزاي نبني هيكل الصفحة بشكل احترافي. استنوني في الدرس رقم 6، ومتحمس جداً أشوفكم هناك. سلام يا أبطال!",
-        "caption_text": "شرح وتوضيح Challenge completed. Keep practicing and get ready for the next lesson on HTML Elements."
-      },
-      "visual": {
-        "type": "bullets",
-        "items": [
-          "مفهوم Challenge Completed Successfully",
-          "مفهوم Importance of Constant Practice",
-          "مفهوم Next Topic: HTML Elements",
-          "مفهوم Ready for Lesson 6"
-        ]
-      },
-      "source_refs": [
-        "https://www.w3schools.com/html/html_challenges_basic.asp"
-      ]
+        "https://www.w3schools.com/html/html_challenges_elements.asp"
+      ],
+      "motion_data": null,
+      "archetype": null
     }
-  ]
+  ],
+  "visual_mode": "motion_engine",
+  "motion_archetype": null
 }
